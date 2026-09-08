@@ -415,6 +415,103 @@ def _lowercase_segment_mid_sentence(text: str, segment_label: str) -> str:
     return t
 
 
+# change for b2c questionarie -- CHECK (user directive, 2026-09-08): "in a
+# typical week/day/month" is stiff survey-speak, not plain English -- user
+# said to ban it strictly. It had ALSO been listed as a GOOD example in
+# question_architect.py's own prompt (fixed there too), so this deterministic
+# rewrite is the backstop: a prompt instruction alone was already shown this
+# session to be unreliable for banned-phrase classes (the {segment}
+# Title-Case leak needed the same treatment). Rewrites "In a typical
+# week/day/month, <rest>?" and the mid-sentence form "<rest> in a typical
+# week/day/month?" into the plain "<count> a week/day/month" phrasing a
+# person would actually say.
+_TYPICAL_PERIOD_LEAD_RE = re.compile(
+    r"(?i)^\s*in\s+a\s+typical\s+(week|day|month|year),?\s*(.*)$"
+)
+_TYPICAL_PERIOD_TAIL_RE = re.compile(
+    r"(?i)^(.*?)\s+in\s+a\s+typical\s+(week|day|month|year)\s*\?\s*$"
+)
+_PERIOD_NOUN = {"week": "week", "day": "day", "month": "month", "year": "year"}
+
+
+def _delitteral_typical_period(text: str) -> str:
+    """Rewrite "in a typical week/day/month/year" to plain "a week/day/...".
+
+    Moves the period to the END of the sentence rather than dropping it --
+    "In a typical week, how many days do you use X?" must keep meaning "out
+    of a week", not become the now-ambiguous "how many days do you use X?".
+    """
+    t = (text or "").strip()
+    if not t:
+        return text
+    m = _TYPICAL_PERIOD_LEAD_RE.match(t)
+    if m:
+        period, rest = m.group(1), m.group(2).strip()
+        if not rest:
+            return text
+        rest = rest[0].upper() + rest[1:]
+        noun = _PERIOD_NOUN[period.lower()]
+        if rest.endswith("?"):
+            return f"{rest[:-1].rstrip()} a {noun}?"
+        return f"{rest} a {noun}"
+    m = _TYPICAL_PERIOD_TAIL_RE.match(t)
+    if m:
+        head, period = m.group(1).rstrip(), m.group(2)
+        return f"{head} a {_PERIOD_NOUN[period.lower()]}?"
+    return text
+
+
+# change for b2c questionarie -- CHECK (user directive, 2026-09-08): "What
+# usually prompts you to buy X?" shipped live -- "prompts" is not a word a
+# 6-year-old uses, even though the underlying prompt guidance already said
+# "what specifically made them buy" in plain words. The model substituted a
+# fancier synonym on its own; prompt wording alone was not strict enough to
+# stop it, matching this session's repeated pattern (Title-Case segment
+# leak, "in a typical week") of needing a deterministic backstop for a
+# banned-word class rather than trusting compliance. Whole-word,
+# case-preserving replacement of known stiff verbs with the plain
+# equivalent a person would actually say.
+_STIFF_WORD_RE = re.compile(
+    r"\b(utilize[sd]?|utilizing|indicate[sd]?|indicating)\b",
+    re.IGNORECASE,
+)
+_STIFF_WORD_MAP = {
+    "utilize": "use", "utilizes": "use", "utilized": "used", "utilizing": "using",
+    "indicate": "show", "indicates": "shows", "indicated": "showed", "indicating": "showing",
+}
+# "prompt(s)/prompted you TO buy" needs the "to" dropped when swapped for
+# "make(s)/made you buy" -- "make" doesn't take "to" the way "prompt" does
+# ("makes you TO buy" is broken English) -- handled as its own pattern
+# rather than the generic single-word swap above.
+_PROMPTS_YOU_TO_RE = re.compile(
+    r"\bprompt(s|ed|ing)?\s+you\s+to\b", re.IGNORECASE,
+)
+_PROMPTS_YOU_TO_MAP = {"s": "makes", "ed": "made", "ing": "making", "": "make"}
+
+
+def _plain_word_substitute(text: str) -> str:
+    """Swap a small set of known stiff/formal verbs for the plain equivalent."""
+    if not text:
+        return text
+
+    def _sub_prompts(m: "re.Match") -> str:
+        suffix = (m.group(1) or "").lower()
+        return f"{_PROMPTS_YOU_TO_MAP[suffix]} you"
+
+    text = _PROMPTS_YOU_TO_RE.sub(_sub_prompts, text)
+
+    def _sub_word(m: "re.Match") -> str:
+        word = m.group(0)
+        plain = _STIFF_WORD_MAP.get(word.lower())
+        if not plain:
+            return word
+        if word[0].isupper():
+            plain = plain[0].upper() + plain[1:]
+        return plain
+
+    return _STIFF_WORD_RE.sub(_sub_word, text)
+
+
 def _to_frontend_question(
     q: dict,
     *,
@@ -1659,7 +1756,13 @@ def _build_delivery_json(
     # a capped section's existing narrative order (last-in-order first)
     # since sections are already ordered broadest/earliest to narrowest/
     # latest, so the earliest, most load-bearing questions are always kept.
-    _MAX_QUESTIONS_PER_BEHAVIOURAL_SECTION = 7
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
+    # lowered 7 -> 4 to match the hardcoded 16-question format
+    # (question_plan.QUESTIONS_PER_TAB_TARGET = 4). At 7 this cap was dead
+    # code for the short format -- a section that over-generated to 5 or 6
+    # sailed straight through, which is why published files kept coming out
+    # at 17-19 behavioural questions instead of a clean 16.
+    _MAX_QUESTIONS_PER_BEHAVIOURAL_SECTION = 4
     for tb in tabs_out:
         if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
             continue
@@ -1706,8 +1809,12 @@ def _build_delivery_json(
             questions_out.append({
                 "id": f"Q{qn}",
                 "text": _lowercase_segment_mid_sentence(
-                    _apply_manager_wording_rewrite(
-                        _clean_stem(_tighten_stem(q.get("text")))
+                    _delitteral_typical_period(
+                        _plain_word_substitute(
+                            _apply_manager_wording_rewrite(
+                                _clean_stem(_tighten_stem(q.get("text")))
+                            )
+                        )
                     ),
                     segment_label,
                 ),
@@ -1773,6 +1880,12 @@ def build_survey_json(state: SurveyState) -> dict:
         _suspicious_multiselect_sum_issue as _val_multiselect_sum_issue,
     )
     from src.nodes.validator_critic import find_construct_duplicates
+    from src.nodes.validator_critic import (
+        find_missing_required_slots as _val_find_missing_required_slots,
+    )
+    from src.nodes.validator_critic import (
+        find_nps_shape_issue as _val_find_nps_shape_issue,
+    )
 
     def _is_zero_tolerance_clean(qs: list) -> bool:
         expected = standard_sections.currency_for(
@@ -1802,7 +1915,24 @@ def build_survey_json(state: SurveyState) -> dict:
         # match validator_critic.py's known_duplicate_fail exactly, using the
         # SAME shared find_construct_duplicates() so the two call sites
         # cannot disagree on what counts as a known duplicate.
-        return not find_construct_duplicates(qs)
+        if find_construct_duplicates(qs):
+            return False
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
+        # mirror validator_critic.py's required_slot_fail using the SAME
+        # shared helpers, so a pass missing one of the 16 required question
+        # types (or with a malformed NPS scale) can never be crowned "best"
+        # at final restore either.
+        _canon_to_market = {}
+        for _s in ((state.get("survey_blueprint") or {}).get("sections") or []):
+            _c = (_s.get("canonical") or "").strip()
+            _sid = (_s.get("section_id") or "").strip()
+            if _c and _sid:
+                _canon_to_market[_c] = _sid
+        if _val_find_missing_required_slots(qs, _canon_to_market):
+            return False
+        if _val_find_nps_shape_issue(qs):
+            return False
+        return True
 
     restored_from = None
     best_score = state.get("best_score")

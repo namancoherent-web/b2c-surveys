@@ -133,9 +133,20 @@ CONSTRUCTS = (
     # complaint/friction battery) however the verb or noun is phrased.
     # Widened to catch "disappoints" anywhere in the stem, not only right
     # after "what", which is what let Q22/Q23/Q24 all ship unmerged.
+    # change for b2c questionarie -- CHECK (live, Skincare/Germany,
+    # 2026-09-08): "what would make you SWITCH from X" and "what
+    # disappoints you about X" shipped as two separate questions with
+    # near-identical option lists ("it causes a reaction/irritation" vs
+    # "they irritate my skin", "stops working" vs "don't deliver results").
+    # The pain point IS the switch trigger for a repeat-use consumable --
+    # this is one construct, not two, however the stem is framed (complaint
+    # vs. hypothetical future action). Merged "switch" phrasing into this
+    # same construct so find_construct_duplicates() catches the pair.
     ("disappointment",
      r"(?i)(disappoints?\b|which (frustrations|problems)|"
-     r"problems .{0,20}(experienced|had)|biggest disappointment)"),
+     r"problems .{0,20}(experienced|had)|biggest disappointment|"
+     r"(would make you|makes? you) switch|switch (from|to|away)|"
+     r"switch to a different)"),
     ("usage_frequency",
      r"(?i)(how often do you (wear|use)|in the last \d+ days,? how many days)"),
     # change for b2c questionarie -- CHECK (Section 28c): "how confident
@@ -183,6 +194,134 @@ def find_construct_duplicates(answered: list) -> dict[str, list]:
                 by_construct.setdefault(name, []).append(q)
                 break
     return {name: qs for name, qs in by_construct.items() if len(qs) >= 2}
+
+
+# change for b2c questionarie -- CHECK (user directive, 2026-09-08): the 16
+# required question types (4 per behavioural section) existed ONLY as
+# advisory text in question_architect.py's _TAB_GUIDANCE. Nothing in code
+# ever checked whether they were actually generated, which is why -- across
+# several live runs -- the price question went missing entirely, the NPS
+# question shipped as a 5-option single_select instead of an 11-point 0-10
+# scale, and a section quietly shipped 3 questions instead of 4. Prompt
+# text alone is a suggestion; this table is the gate.
+#
+# Each entry: (slot_key, human_label, regex that must match >=1 question
+# stem in that section). Keyed by CANONICAL section id so a market-specific
+# section label (e.g. "Product / Ecosystem Experience") still maps back.
+REQUIRED_SLOTS: dict[str, tuple] = {
+    "consumer_profile": (
+        ("usage_frequency", "usage frequency (how often/how many days)",
+         r"(?i)how (often|many (days|times))\b"),
+        ("primary_use_case", "primary use case (what they mainly use it for)",
+         r"(?i)(mainly|mostly|most often|primarily)\s+use|what do you use .{0,40}\bfor\b"),
+        ("ownership_tenure", "ownership tenure (how long they have had it)",
+         r"(?i)how long (have|has) you|how long .{0,25}(had|owned|kept)"),
+        ("usage_context", "usage context (situations/occasions)",
+         r"(?i)(when|where|which situations|what situations|what occasions)\b.{0,60}"
+         r"(use|wear|using|wearing)|(use|wear)\b.{0,40}\b(for|during|at)\b"),
+    ),
+    "buying_behavior": (
+        ("purchase_trigger", "purchase trigger (what made them buy)",
+         r"(?i)(what (made|makes)|why did|what prompted) you\s+"
+         r"(\w+\s+){0,3}?(buy|get|choose|purchase)"),
+        ("price_paid", "price paid (how much they spent)",
+         r"(?i)how much did you (spend|pay)|how much .{0,20}(spend|pay)\b"),
+        ("top_decision_driver", "top decision driver (what mattered most)",
+         r"(?i)(matter(s|ed)? most|most important|biggest influence)"),
+        ("purchase_channel", "purchase channel (where they bought/looked)",
+         r"(?i)where (did|do) you\s+(\w+\s+){0,2}?(buy|get|look|shop|find|purchase)"),
+    ),
+    "preferences_expectations": (
+        ("must_have_features", "must-have features",
+         r"(?i)(must|need to) (a |an )?.{0,30}(have|do|include)|"
+         r"what (features|must)\b|which features"),
+        ("quality_signal", "quality signal (what tells them it is well made)",
+         r"(?i)(well made|good quality|high quality|tells you .{0,30}(quality|work|made))"),
+        ("price_tradeoff", "price trade-off (what they would give up)",
+         r"(?i)(give up|compromise|trade off|willing to (give up|sacrifice))"),
+        ("expectation_match", "expectation match (performance vs expected)",
+         r"(?i)(as (well as )?you expected|compared to what you expected|"
+         r"meet .{0,25}expectations?|live up to)"),
+    ),
+    "satisfaction_future_intent": (
+        ("overall_satisfaction", "overall satisfaction",
+         r"(?i)how satisf"),
+        ("advocacy_nps", "advocacy / NPS (recommend, 0-10 scale)",
+         r"(?i)(recommend|tell a friend|tell .{0,15}(others|someone))"),
+        ("top_pain_point", "top pain point / switching trigger",
+         r"(?i)(biggest (problem|issue|frustration)|most often disappoints|"
+         r"disappoints?\b|problem .{0,25}(bothers|most)|would make you switch)"),
+        ("future_intent", "future purchase intent (likely to buy again)",
+         r"(?i)how likely are you to (buy|purchase)|would you buy .{0,25}again"),
+    ),
+}
+
+
+def _canonical_tab(q: dict) -> str:
+    """Canonical section id for a question, falling back to its raw tab."""
+    return (q.get("beat_canonical") or q.get("tab") or "").strip()
+
+
+def find_missing_required_slots(answered: list, section_ids: dict) -> dict:
+    """Which required question types are MISSING, per canonical section.
+
+    ``section_ids`` maps canonical id -> the market's actual section id, so a
+    renamed section still resolves. Returns
+    {canonical_id: [(slot_key, human_label), ...]} for sections that are
+    short. Shared by validator_critic() (to force a regeneration with
+    explicit feedback) and assembler.py's zero-tolerance gate (so a pass
+    missing a required question can never be crowned "best").
+    """
+    by_canon: dict[str, list] = {}
+    for q in answered:
+        if (q.get("question_layer") or "") in ("screening", "profiling"):
+            continue
+        canon = _canonical_tab(q)
+        # Map a market-specific section id back to its canonical id.
+        for cid, market_id in (section_ids or {}).items():
+            if canon == market_id:
+                canon = cid
+                break
+        by_canon.setdefault(canon, []).append(q.get("text") or "")
+
+    missing: dict[str, list] = {}
+    for canon, slots in REQUIRED_SLOTS.items():
+        stems = by_canon.get(canon) or []
+        gaps = [
+            (key, label) for key, label, pat in slots
+            if not any(re.search(pat, s) for s in stems)
+        ]
+        if gaps:
+            missing[canon] = gaps
+    return missing
+
+
+def find_nps_shape_issue(answered: list) -> str | None:
+    """The advocacy/NPS question must be an 11-point 0-10 scale.
+
+    Shape-detected the same way assembler._is_rating_0_10 does it (that is
+    what actually turns it into rating_0_10 at publication), so a 5-option
+    "Would you recommend...?" is caught here rather than shipping as an
+    ordinary single_select.
+    """
+    for q in answered:
+        if (q.get("question_layer") or "") in ("screening", "profiling"):
+            continue
+        text = q.get("text") or ""
+        if not re.search(r"(?i)(recommend|tell a friend)", text):
+            continue
+        opts = q.get("options") or []
+        if len(opts) == 11 and str(opts[0]).strip().startswith("0") \
+                and str(opts[-1]).strip().startswith("10"):
+            return None  # correct shape found
+        return (
+            f"advocacy/NPS question must be an 11-option 0-10 scale "
+            f"(\"0 - Not at all likely\" ... \"10 - Extremely likely\"), "
+            f"got {len(opts)} options: {text[:70]}"
+        )
+    return None
+
+
 # Soft semantic dedup — higher threshold + segment-aware tokens so on-topic
 # questions aren't mis-flagged just for sharing the segment name (BUG 5).
 # change for b2c questionarie — thresholds live in question_similarity.py
@@ -2020,6 +2159,11 @@ def validator_critic(state: SurveyState) -> dict:
     # by internal validation" is now a hard blocker on being crowned best,
     # exactly like those two defect classes.
     known_duplicate_fail = False
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
+    # set when any of the 16 required question types is missing, or the
+    # advocacy/NPS question is not an 11-point 0-10 scale. Feeds the
+    # zero-tolerance gate below so an incomplete pass cannot be crowned best.
+    required_slot_fail = False
     total_opts = grounded = direct = adjacent = 0
     likert_dirs = []  # track scale direction consistency across survey
 
@@ -2793,6 +2937,38 @@ def validator_critic(state: SurveyState) -> dict:
     feedback = []
     quota_fail = False
     blueprint = state.get("survey_blueprint")
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-08): the
+    # 16 required question types are now GATED, not merely suggested in the
+    # architect prompt. A pass missing any required slot is marked dirty
+    # (required_slot_fail) so the best-pass restore can never crown it, and
+    # each gap is fed back to the architect BY NAME so the regeneration
+    # knows exactly which question to write. Confirmed necessary: across
+    # several live runs the price question went missing entirely, a section
+    # shipped 3 questions instead of 4, and the NPS question shipped as a
+    # 5-option single_select instead of an 11-point 0-10 scale -- with
+    # nothing in code to stop any of it from being published.
+    _canon_to_market = {}
+    for _s in ((blueprint or {}).get("sections") or []):
+        _c = (_s.get("canonical") or "").strip()
+        _sid = (_s.get("section_id") or "").strip()
+        if _c and _sid:
+            _canon_to_market[_c] = _sid
+    for _canon, _gaps in find_missing_required_slots(answered, _canon_to_market).items():
+        _labels = "; ".join(label for _key, label in _gaps)
+        feedback.append(
+            f"coverage: section '{_canon}' is missing required question "
+            f"type(s): {_labels}. All 4 required types per section must be "
+            "present — write the missing one(s)."
+        )
+        required_slot_fail = True
+        hygiene_fail = True
+
+    _nps_issue = find_nps_shape_issue(answered)
+    if _nps_issue:
+        feedback.append(f"coverage: {_nps_issue}")
+        required_slot_fail = True
+        hygiene_fail = True
     for tab in narrative.section_ids(blueprint):
         c = counts_by_tab.get(tab)
         if c is None:
@@ -2949,7 +3125,10 @@ def validator_critic(state: SurveyState) -> dict:
     # fix for.
     previous_best = state.get("best_score")
     previous_zero_tolerance_clean = state.get("best_zero_tolerance_clean")
-    this_zero_tolerance_clean = not (currency_fail or multiselect_sum_fail or known_duplicate_fail)
+    this_zero_tolerance_clean = not (
+        currency_fail or multiselect_sum_fail or known_duplicate_fail
+        or required_slot_fail
+    )
     if previous_best is None:
         is_better = True
     elif this_zero_tolerance_clean != previous_zero_tolerance_clean:

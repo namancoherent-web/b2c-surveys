@@ -60,6 +60,20 @@ from src.state import SurveyState
 # version bump forces every core batch to regenerate under the new rule.
 _Q_SCHEMA_V = "questionnaire_v18"
 
+# change for b2c questionarie -- CHECK (user directive, 2026-09-08): short-
+# survey format (16 questions: 4 per behavioural section, no anchors). Set
+# QUESTIONS_PER_TAB_TARGET=4 in question_plan.py made this the ONLY mode --
+# the satisfaction+NPS anchors used to sit OUTSIDE the 4 generated slots,
+# which would make the satisfaction section 6 questions instead of 4. User's
+# explicit choice: drop the anchors, let all 4 slots in that section be
+# freshly generated (satisfaction/NPS/pain-point/future-intent guidance is
+# now baked into _TAB_GUIDANCE below instead). REVERT NOTE: if this format
+# is ever rolled back, restore by setting this to False and reverting
+# question_plan.py's QUESTIONS_PER_TAB_MIN/MAX/TARGET back to env-driven
+# 5/10/8 -- both changes must move together, the anchors were only safe to
+# drop because the guidance list replaces what they used to guarantee.
+_SHORT_SURVEY_NO_ANCHORS = True
+
 # Temp-id prefixes per tab.
 _TAB_PREFIX = {
     "consumer_profile": "cp",
@@ -88,29 +102,85 @@ def _prefix_for(tab: str, blueprint: dict | None = None) -> str:
 
 # What each tab should cover (kept distinct to avoid cross-tab duplication).
 # change for b2c questionarie — consulting-grade; NO age/income/brand-name items
+#
+# change for b2c questionarie -- CHECK (user directive, 2026-09-08): survey
+# length is now hardcoded to EXACTLY 4 questions per section (16 total, see
+# question_plan.py QUESTIONS_PER_TAB_TARGET=4). At 4 slots there is no room
+# for the architect to freely explore a section's remit -- it must spend
+# every slot on the single highest-value question of its kind, not whatever
+# it generates first. Each tab's guidance below now names the 4 EXACT
+# question types that must fill those 4 slots, in this order, so a short
+# survey always keeps the questions that actually drive a business decision
+# instead of four random ones. This is advisory, not code-enforced (the
+# model still writes the actual wording) -- the construct-level duplicate
+# detector already in this file's generation loop is the backstop if the
+# model drifts from this list.
 _TAB_GUIDANCE = {
     "consumer_profile": (
-        "category relationship and usage context only: who uses the product in "
-        "the household, occasions/meals, frequency of use, lifestyle/need-state "
-        "that drives category entry, storage/prep habits — NOT age, income, or "
-        "where they live. Every question must be specific to the target product."
+        "category relationship and usage context only — NOT age, income, or "
+        "where they live. Every question must be specific to the target "
+        "product. This section has EXACTLY 4 slots and ALL 4 are required — "
+        "fill them with these 4 question types, one each, in this order: "
+        "(1) USAGE FREQUENCY — how often/how many days they use the product; "
+        "(2) PRIMARY USE CASE — what they mainly use it for; "
+        "(3) OWNERSHIP TENURE — literally how LONG they have had their "
+        "current one (\"how long have you had...\"). This is NOT a count of "
+        "how many they own — a count question here is the wrong slot even if "
+        "the category genuinely varies in count, that would belong in slot 4 "
+        "instead, never slot 3; "
+        "(4) USAGE CONTEXT — the situations/occasions where they use it."
     ),
     "buying_behavior": (
-        "purchase journey for the target product: buy frequency, channels/retail "
-        "formats, trip mission, decision triggers, category spend band (not "
-        "household income), what prompts repurchase — NEVER ask which brand or "
-        "company they buy (no manufacturer/name lists)."
+        "purchase journey for the target product — NEVER ask which brand or "
+        "company they buy (no manufacturer/name lists). This section has "
+        "EXACTLY 4 slots and ALL 4 are required — fill them with these 4 "
+        "question types, one each, in this order: "
+        "(1) PURCHASE TRIGGER — what specifically made them buy their "
+        "current/most recent one; "
+        "(2) PRICE PAID — how much they spent on it, in real local-currency "
+        "bands; "
+        "(3) TOP DECISION DRIVER — the single factor that mattered most when "
+        "choosing; "
+        "(4) PURCHASE CHANNEL — where they bought it or looked for options "
+        "before buying."
     ),
     "preferences_expectations": (
-        "product attributes for the target product: quality cues, sensory/"
-        "functional must-haves, packaging/format, sustainability/origin claims, "
-        "trade-offs respondents actually make — never named competitor brands "
-        "or companies."
+        "product attributes for the target product — never named competitor "
+        "brands or companies. This section has EXACTLY 4 slots and ALL 4 are "
+        "required — fill them with these 4 question types, one each, in this "
+        "order: "
+        "(1) MUST-HAVE FEATURES — what the product must have for them to buy "
+        "it (multi-select); "
+        "(2) QUALITY SIGNAL — what tells them a product in this category is "
+        "well made, before they buy it; "
+        "(3) PRICE TRADE-OFF — what they'd give up to get a lower price; "
+        "(4) EXPECTATION MATCH — how well their current product performs "
+        "compared to what they expected when they bought it."
     ),
     "satisfaction_future_intent": (
-        "outcomes with the target product: satisfaction drivers, friction/unmet "
-        "needs, switching triggers (category-level, not brand-name lists), "
-        "recommend intent, future category use — no age/income/brand-name items."
+        "outcomes with the target product — no age/income/brand-name items. "
+        "This section has EXACTLY 4 slots; fill them with these 4 question "
+        "types, one each, in this order — all 4 are required, this section "
+        "has NO standard/anchor questions inserted automatically, so leaving "
+        "any of these 4 out is a real gap in the survey: "
+        "(1) OVERALL SATISFACTION — how satisfied they are with their "
+        "current product; "
+        "(2) ADVOCACY / NPS — how likely they are to recommend it to others. "
+        "This MUST be single_choice with EXACTLY 11 options, one per whole "
+        "number from 0 to 10 in order (\"0 - Not at all likely\", \"1\", "
+        "\"2\", ... \"9\", \"10 - Extremely likely\") — this exact 11-point "
+        "shape is what turns it into the standard 0-10 recommend scale at "
+        "publication; any other option count or wording will NOT be "
+        "recognised as that scale; "
+        "(3) TOP PAIN POINT — the single biggest problem or frustration with "
+        "it (this doubles as the switching-trigger signal — do not also add "
+        "a separate generic switching question); "
+        "(4) FUTURE PURCHASE INTENT — directly ask how LIKELY they are to "
+        "buy the same kind of product, or from the same brand, again (a "
+        "likelihood/propensity question, e.g. \"How likely are you to buy "
+        "X again?\" -> Very unlikely...Very likely). This is NOT a question "
+        "about what would make them buy SOONER or what would accelerate a "
+        "purchase — that is a different construct (urgency), not intent."
     ),
 }
 
@@ -449,15 +519,22 @@ QUESTION CRAFT — this is where most drafts go wrong. Read carefully.
    understood on the first reading is.
 
    SIMPLICITY RULES:
-   - Everyday words a 15-year-old would understand. No research vocabulary in
-     the question itself — never "attributes", "drivers", "criteria",
-     "consumption occasion", "purchase journey", "trade-off". Those words belong
-     in the section heading, never in what a respondent reads.
+   - Everyday words a 6-year-old would understand (see THE FINAL TEST later
+     in this brief — that bar applies here too). No research vocabulary in
+     "attributes", "drivers", "criteria", "consumption occasion", "purchase
+     journey", "trade-off". Those words belong in the section heading, never
+     in what a respondent reads.
    - SELF-CONTAINED. Name the product in the stem — a question must make sense
      on its own, without the section heading above it. Never "them", "it" or
      "this product" where the category name would do.
-   - Give the timeframe when it changes the answer ("in a typical week", "in the
-     last year"). Leave it out when it does not.
+   - Give the timeframe when it changes the answer, but say it the plain way,
+     never "in a typical week/day/month" — that phrasing is BANNED, it is
+     stiff survey-speak, not how a person talks:
+       BANNED: "In a typical week, how many days do you use X?"
+       PLAIN:  "How many days a week do you use X?"
+       BANNED: "In a typical month, how often do you buy X?"
+       PLAIN:  "How often do you buy X each month?"
+     Leave the timeframe out entirely when it does not change the answer.
    - ONE clause and one idea. If your stem needs a comma to survive, cut it down.
    - BANNED OPENERS. "Thinking about...", "Which of the following best
      describes...", and "Which of these best describes..." are the same padded
@@ -1152,6 +1229,25 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
         f"- REVISION: a prior review flagged issues — address this feedback: {feedback}\n"
         if feedback else ""
     )
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-08): a
+    # "coverage:" line means a REQUIRED question type is missing entirely.
+    # Generic "address this feedback" buries it among style notes, and the
+    # run then burns revisions re-polishing wording while the same slot stays
+    # empty. Hoist it to the top as a hard, unmissable instruction.
+    if feedback and "coverage:" in str(feedback).lower():
+        _cov = [
+            ln.strip() for ln in str(feedback).replace(";", "\n").splitlines()
+            if "coverage:" in ln.lower()
+        ]
+        if _cov:
+            base_feedback = (
+                "- MANDATORY FIX FIRST — a REQUIRED question type is missing "
+                "from this section. Writing it is the single most important "
+                "job of this revision; do not spend slots on anything else "
+                "until every required type below exists:\n"
+                + "".join(f"    * {c}\n" for c in _cov)
+                + base_feedback
+            )
     llm = get_structured_llm(TabQuestionBatch, temperature=0.4, max_tokens=16000)
 
     # Regional modules pick their own beats (few questions, placed where the
@@ -1616,7 +1712,7 @@ def question_architect(state: SurveyState) -> dict:
     # detector in validator_critic.py already catches this on a revision
     # pass, but seeding the anchor text up front stops it at first generation
     # instead of relying solely on a later drop-and-regenerate cycle.
-    _anchor_avoid = [
+    _anchor_avoid = [] if _SHORT_SURVEY_NO_ANCHORS else [
         q.get("text") or ""
         for q in standard_sections.satisfaction_anchor_questions(segment)
     ]
@@ -1793,27 +1889,28 @@ def question_architect(state: SurveyState) -> dict:
     # satisfaction section instead of trailing the demographics. They lead that
     # section (broadest judgement first), so the generated questions there
     # narrow into drivers, friction and switching behind them.
-    sat_tab = None
-    for tab_id in narrative.section_ids(blueprint):
-        if "satisfaction" in tab_id or "intent" in tab_id:
-            sat_tab = tab_id
-            break
-    if sat_tab:
-        anchors = [
-            {
-                **q, "tab": sat_tab, "chart_type": "bar",
-                "evidence_aligned": False, "options_from_evidence": False,
-                "question_layer": "core", "funnel_position": 0,
-                "narrative_order": 0,
-            }
-            for q in standard_sections.satisfaction_anchor_questions(segment)
-        ]
-        # Push the generated questions down so the anchors sit first.
-        for q in questions:
-            if q.get("tab") == sat_tab:
-                q["funnel_position"] = (q.get("funnel_position") or 1) + len(anchors)
-        questions = questions + anchors
-        counts_by_tab[sat_tab] = counts_by_tab.get(sat_tab, 0) + len(anchors)
+    if not _SHORT_SURVEY_NO_ANCHORS:
+        sat_tab = None
+        for tab_id in narrative.section_ids(blueprint):
+            if "satisfaction" in tab_id or "intent" in tab_id:
+                sat_tab = tab_id
+                break
+        if sat_tab:
+            anchors = [
+                {
+                    **q, "tab": sat_tab, "chart_type": "bar",
+                    "evidence_aligned": False, "options_from_evidence": False,
+                    "question_layer": "core", "funnel_position": 0,
+                    "narrative_order": 0,
+                }
+                for q in standard_sections.satisfaction_anchor_questions(segment)
+            ]
+            # Push the generated questions down so the anchors sit first.
+            for q in questions:
+                if q.get("tab") == sat_tab:
+                    q["funnel_position"] = (q.get("funnel_position") or 1) + len(anchors)
+            questions = questions + anchors
+            counts_by_tab[sat_tab] = counts_by_tab.get(sat_tab, 0) + len(anchors)
 
     questions = questions + profiling
     counts_by_tab[standard_sections.PROFILING_SECTION_ID] = len(profiling)

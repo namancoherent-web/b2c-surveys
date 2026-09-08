@@ -126,16 +126,20 @@ if REGION_QUESTION_MODE not in ("core_plus_module", "fully_distinct"):
 # anchors + 4 profiling = 38 screens, inside the 40 ceiling with room for a
 # section that runs long. Profiling is excluded from the segment model
 # (see standard_sections).
-# change for b2c questionarie — a HARD per-section target makes the model pad.
-# Asked for exactly 8 it will produce 8, inventing near-duplicates to hit the
-# count ("what matters most" / "what was most important" / "which must it do"
-# were three slots for one construct). A floor with room above it lets a section
-# stop when it has said everything: 7 real questions beat 8 with a filler.
-# Floor 7 x 4 sections = 28 generated, + 2 satisfaction anchors + 4 profiling
-# = 34 minimum; sections that genuinely carry more take it to the low 40s.
-QUESTIONS_PER_TAB_MIN = int(os.getenv("QUESTIONS_PER_TAB_MIN", "5"))
-QUESTIONS_PER_TAB_MAX = int(os.getenv("QUESTIONS_PER_TAB_MAX", "10"))
-QUESTIONS_PER_TAB_TARGET = int(os.getenv("QUESTIONS_PER_TAB_TARGET", "8"))
+# change for b2c questionarie -- CHECK (user directive, 2026-09-08): survey
+# length hardcoded to exactly 4 questions per behavioural section (16 total,
+# NOT counting Profiling) -- deliberately NOT env-configurable, per explicit
+# instruction. A hard target with no slack risks the model padding with
+# near-duplicates to hit the count (see the old comment this replaced,
+# "what matters most" / "what was most important" / "which must it do" was
+# three slots for one construct) -- mitigated here by PRIORITY_QUESTION_TYPES
+# below, which tells the architect prompt EXACTLY which 4 question types each
+# section must fill, so there is no open slot left for invented padding, plus
+# the construct-level duplicate detector already in question_architect.py's
+# generation loop as a backstop.
+QUESTIONS_PER_TAB_MIN = 4
+QUESTIONS_PER_TAB_MAX = 4
+QUESTIONS_PER_TAB_TARGET = 4
 
 # Hard ceiling on the whole instrument, including the standard sections.
 TOTAL_QUESTION_CAP = int(os.getenv("TOTAL_QUESTION_CAP", "45"))

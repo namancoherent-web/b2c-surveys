@@ -236,7 +236,14 @@ def _income_bands(currency: str = "$", geography: str = "") -> list[str]:
 
 
 def profiling_questions(segment: str, currency: str = "$", geography: str = "") -> list[dict]:
-    """Standard cross-tab items. Asked last; never used for segmentation."""
+    """Standard cross-tab items. Asked last; never used for segmentation.
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
+    # capped to the 3 most-used cross-tab cuts (age, gender, income) as part
+    # of the 15-16-question short-survey format. household_composition
+    # ("who else lives in your household") dropped -- least frequently
+    # analysed of the four, per explicit instruction.
+    """
     return [
         {
             "id": "d1", "beat_id": "age_band",
@@ -257,20 +264,7 @@ def profiling_questions(segment: str, currency: str = "$", geography: str = "") 
             "profiling": True,
         },
         {
-            "id": "d3", "beat_id": "household_composition",
-            "text": "Who else lives in your household?",
-            "type": "single_choice",
-            "options": [
-                "I live alone",
-                "I live with a partner, no children at home",
-                "I live with children under 18",
-                "I live with other adults (family or housemates), no children",
-                "Other",
-            ],
-            "profiling": True,
-        },
-        {
-            "id": "d4", "beat_id": "income_band",
+            "id": "d3", "beat_id": "income_band",
             "text": "What was your total household income before tax last year?",
             "type": "single_choice",
             # change for b2c questionarie — bands are rendered in the local

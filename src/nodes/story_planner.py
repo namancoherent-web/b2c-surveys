@@ -49,7 +49,16 @@ from src.state import SurveyState
 # concept on every separate regeneration of the same category+geography).
 # v11: "Advocates" recognised as a valid segment head-noun, fixing a doubled
 # noun ("Clean-Beauty Advocates Owners") that shipped from a stale cache.
-_SCHEMA_V = "storyline_v11"
+# v12: cmi_frameworks.py's "Brand / Product Experience & Satisfaction" label
+# was renamed to "Product Experience & Satisfaction" (per instruction) --
+# the blueprint's cached `sections` (built from cmi_match.blueprint_sections,
+# which reads that label) kept serving the OLD slash name from cache,
+# because this schema version never changed when the label did. Confirmed
+# live: 10 of 12 on-disk storyline cache entries still had the stale label.
+# Blueprint section labels are cached under `sections_key` (below), which
+# also uses _SCHEMA_V, so bumping it here invalidates both the per-geography
+# blueprint cache AND the per-segment pinned-sections cache in one move.
+_SCHEMA_V = "storyline_v12"
 
 _TAB_REMIT = {
     "consumer_profile": (

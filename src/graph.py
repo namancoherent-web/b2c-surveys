@@ -67,6 +67,14 @@ def route_after_validator(state) -> str:
         or "irrelevant" in feedback_blob
         or "geo-residence" in feedback_blob
         or "geography" in feedback_blob
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
+        # validator_critic now emits "coverage: ..." feedback when one of the
+        # 16 required question types is missing or the NPS scale is malformed.
+        # Only the architect can write a missing question, so this MUST route
+        # here -- without it the gate would mark the pass dirty but never
+        # actually regenerate, and the run would burn all 6 revisions still
+        # missing the same question.
+        or "coverage:" in feedback_blob
     )
     if needs_architect:
         return "question_architect"

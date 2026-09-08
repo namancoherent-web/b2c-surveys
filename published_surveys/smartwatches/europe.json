@@ -1,0 +1,1867 @@
+{
+  "surveyDefinition": {
+    "title": "Smartwatches — consumer survey (Europe)",
+    "category": "Smartwatches",
+    "region": "Europe",
+    "audienceType": "B2C consumer",
+    "whatThisSurveyIs": "A business-to-consumer (B2C) market research questionnaire about Smartwatches. Every question asks about Smartwatches specifically — not the wider market, not adjacent categories, and not any named brand. It is designed to tell a client what buyers in Europe actually do and want in this category.",
+    "whoseContextThisIs": "Adults in Europe who buy or use Smartwatches for personal or household use. Respondents qualify if they: Owns or intends to purchase a smartwatch within the next 12 months; Uses a compatible smartphone (iOS or Android); Age 18 or older; Able to make purchasing decisions for personal use. Excluded: Children under 18 (unless purchasing for them, but they are not the primary decision-maker); Businesses or institutions purchasing smartwatches in bulk for employees (B2B use); Individuals who only use basic fitness bands without smart features.",
+    "whyTheseRespondents": "Smartwatches are consumer wearable devices purchased by individuals for personal use, fitness tracking, notifications, and health monitoring. While some enterprise or medical applications exist, the primary market is everyday consumers.",
+    "respondentBehaviours": [
+      "Uses smartphone regularly (iOS or Android)",
+      "Engages in fitness or health tracking activities",
+      "Values convenience and connectivity (notifications, calls, payments)",
+      "Tends to adopt new technology early or early-majority",
+      "May use health apps or fitness wearables"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income — these define who was recruited, not what is measured, so they appear in the audience definition rather than as questions.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 31,
+      "sections": [
+        {
+          "id": "profile",
+          "label": "Consumer Profile",
+          "covers": "how they relate to and use the category",
+          "questions": 8
+        },
+        {
+          "id": "behavior",
+          "label": "Buying Behavior",
+          "covers": "how they shop for and buy it",
+          "questions": 8
+        },
+        {
+          "id": "preferences",
+          "label": "Preferences & Expectations",
+          "covers": "what they want from the product",
+          "questions": 8
+        },
+        {
+          "id": "satisfaction",
+          "label": "Satisfaction & Future Intent",
+          "covers": "how they feel about it and what they will do next",
+          "questions": 7
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's relationship with smartwatches — ownership and usage context — then moves through the purchase journey from triggers and discovery to channel, cycle, decision drivers, and spend. It then explores what they demand from the product, from must-haves to trade-offs and value expectations, and closes with satisfaction, friction, switching triggers, advocacy, and future intent. The arc is progressive: broad and safe at the start, specific and sensitive (money, satisfaction, switching) toward the end."
+    },
+    "_backfilled": true
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Smartwatches in Europe — who Owns or intends to purchase a smartwatch within the next 12 months; Uses a compatible smartphone (iOS or Android); Age 18 or older; Able to make purchasing decisions for personal use. Smartwatches are a consumer electronics product with a broad demographic appeal. The audience is defined by personal ownership and usage, with emphasis on tech adoption and health/fitness orientation. Excluding bulk B2B purchases keeps the focus on individual consumer behavior.",
+    "marketSegment": "Smartwatches",
+    "region": "Europe",
+    "inclusionCriteria": [
+      "Owns or intends to purchase a smartwatch within the next 12 months",
+      "Uses a compatible smartphone (iOS or Android)",
+      "Age 18 or older",
+      "Able to make purchasing decisions for personal use"
+    ],
+    "behaviors": [
+      "Uses smartphone regularly (iOS or Android)",
+      "Engages in fitness or health tracking activities",
+      "Values convenience and connectivity (notifications, calls, payments)",
+      "Tends to adopt new technology early or early-majority",
+      "May use health apps or fitness wearables"
+    ],
+    "exclusions": [
+      "Children under 18 (unless purchasing for them, but they are not the primary decision-maker)",
+      "Businesses or institutions purchasing smartwatches in bulk for employees (B2B use)",
+      "Individuals who only use basic fitness bands without smart features"
+    ],
+    "contextDemographics": {
+      "age_range": "18-65",
+      "income_level": "Middle to high income (household income > $40k/year)",
+      "gender": "All genders",
+      "tech_savviness": "Moderate to high",
+      "urbanicity": "Urban and suburban"
+    },
+    "assumptions": [
+      "The segment refers to consumer smartwatches (e.g., Apple Watch, Samsung Galaxy Watch, Garmin) rather than specialized medical or industrial wearables.",
+      "The survey targets individual consumers, not corporate procurement.",
+      "Global scope implies a diverse set of markets, but common consumer behaviors apply."
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Smartwatches",
+  "slug": "smartwatches",
+  "region": "europe",
+  "frontend": {
+    "sections": [
+      {
+        "id": "profile",
+        "label": "Consumer Profile",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "Which of the following best describes your current use of smartwatches?",
+            "options": [
+              "I currently use a smartwatch",
+              "I have used one in the past but do not currently",
+              "I have never used one but am considering buying one",
+              "I have never used one and am not considering buying one"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I currently use a smartwatch",
+                "value": 62.0
+              },
+              {
+                "label": "I have used one in the past but do not currently",
+                "value": 18.0
+              },
+              {
+                "label": "I have never used one but am considering buying one",
+                "value": 15.0
+              },
+              {
+                "label": "I have never used one and am not considering buying one",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I currently use a smartwatch (62.00%).",
+            "distributionNote": "Mainstream adoption plus health-focused personas (Urban Health Optimizer, Fitness Enthusiast, Family Fitness Coordinator) drive current usage; Budget-Conscious Commuter and Senior Health Monitor contribute to consideration and past use.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "In a typical week, how often do you wear a smartwatch?",
+            "options": [
+              "Every day",
+              "Most days (4–6 days a week)",
+              "A few days a week (1–3 days a week)",
+              "Less than once a week",
+              "I do not wear a smartwatch"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Every day",
+                "value": 55.0
+              },
+              {
+                "label": "Most days (4–6 days a week)",
+                "value": 25.0
+              },
+              {
+                "label": "A few days a week (1–3 days a week)",
+                "value": 12.0
+              },
+              {
+                "label": "Less than once a week",
+                "value": 5.0
+              },
+              {
+                "label": "I do not wear a smartwatch",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Every day (55.00%).",
+            "distributionNote": "Daily wear is driven by health and convenience personas; occasional wear from Style-Conscious and Luxury Status Seekers who treat it as an accessory.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "In which of the following situations do you typically wear a smartwatch? Select all that apply.",
+            "options": [
+              "During exercise or workouts",
+              "At work or during the workday",
+              "At home, for everyday activities",
+              "While sleeping (for sleep tracking)",
+              "During formal or social occasions",
+              "On outdoor adventures or travel",
+              "I do not wear a smartwatch"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "During exercise or workouts",
+                "value": 68.0
+              },
+              {
+                "label": "At work or during the workday",
+                "value": 55.0
+              },
+              {
+                "label": "At home, for everyday activities",
+                "value": 60.0
+              },
+              {
+                "label": "While sleeping (for sleep tracking)",
+                "value": 45.0
+              },
+              {
+                "label": "During formal or social occasions",
+                "value": 18.0
+              },
+              {
+                "label": "On outdoor adventures or travel",
+                "value": 25.0
+              },
+              {
+                "label": "I do not wear a smartwatch",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: During exercise or workouts (68.00%).",
+            "distributionNote": "Exercise and home use are high across fitness and family personas; sleep tracking is strong among health optimizers; formal occasions are niche, driven by style/luxury personas.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "usage_occasions",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In the last 30 days, which of the following smartwatch features have you used at least once a week? Select all that apply.",
+            "options": [
+              "Health and fitness tracking (e.g., steps, heart rate, workouts)",
+              "Sleep monitoring",
+              "Convenience of notifications and calls (e.g., seeing messages, answering calls)",
+              "Continuous health monitoring for chronic conditions (e.g., alerts for irregular heart rhythm)",
+              "Integration with smartphone and other devices (e.g., controlling music, smart home)",
+              "Navigation or maps (e.g., GPS, turn-by-turn directions)",
+              "None of the above"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Health and fitness tracking (e.g., steps, heart rate, workouts)",
+                "value": 75.0
+              },
+              {
+                "label": "Sleep monitoring",
+                "value": 50.0
+              },
+              {
+                "label": "Convenience of notifications and calls (e.g., seeing messages, answering calls)",
+                "value": 65.0
+              },
+              {
+                "label": "Continuous health monitoring for chronic conditions (e.g., alerts for irregular heart rhythm)",
+                "value": 25.0
+              },
+              {
+                "label": "Integration with smartphone and other devices (e.g., controlling music, smart home)",
+                "value": 40.0
+              },
+              {
+                "label": "Navigation or maps (e.g., GPS, turn-by-turn directions)",
+                "value": 20.0
+              },
+              {
+                "label": "None of the above",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Health and fitness tracking (e.g., steps, heart rate, workouts) (75.00%).",
+            "distributionNote": "Health tracking is universal; notifications are key for commuters and professionals; chronic monitoring is driven by Senior and Urban Health personas; navigation is niche for outdoor adventurers.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "multiSelect": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In your household, who typically uses or wears the smartwatch? Select all that apply.",
+            "options": [
+              "I am the only one who uses it",
+              "My partner or spouse also uses it",
+              "My children also use it",
+              "My parents or other adult relatives also use it",
+              "Other household members also use it",
+              "No one else in my household uses it"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I am the only one who uses it",
+                "value": 70.0
+              },
+              {
+                "label": "My partner or spouse also uses it",
+                "value": 20.0
+              },
+              {
+                "label": "My children also use it",
+                "value": 8.0
+              },
+              {
+                "label": "My parents or other adult relatives also use it",
+                "value": 5.0
+              },
+              {
+                "label": "Other household members also use it",
+                "value": 3.0
+              },
+              {
+                "label": "No one else in my household uses it",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: I am the only one who uses it (70.00%).",
+            "distributionNote": "Most smartwatches are personal devices; family sharing is more common among Family Fitness Coordinators and Senior Health Monitors.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "household_role",
+            "beatTitle": "Who is involved",
+            "beatCanonical": "household_role",
+            "multiSelect": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Who was involved in the decision to buy the smartwatch you most recently purchased? Select all that apply.",
+            "options": [
+              "I decided on my own",
+              "My partner or spouse was involved",
+              "My children were involved",
+              "My parents or other adult relatives were involved",
+              "A friend or colleague was involved",
+              "No one else was involved"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I decided on my own",
+                "value": 65.0
+              },
+              {
+                "label": "My partner or spouse was involved",
+                "value": 25.0
+              },
+              {
+                "label": "My children were involved",
+                "value": 5.0
+              },
+              {
+                "label": "My parents or other adult relatives were involved",
+                "value": 4.0
+              },
+              {
+                "label": "A friend or colleague was involved",
+                "value": 6.0
+              },
+              {
+                "label": "No one else was involved",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: I decided on my own (65.00%).",
+            "distributionNote": "Self-purchase dominates across personas; partner involvement is higher among Family Fitness Coordinators and Senior Health Monitors.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "household_role",
+            "beatTitle": "Who is involved",
+            "beatCanonical": "household_role",
+            "multiSelect": true
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "In the last 30 days, how often did you share or borrow a smartwatch with another person in your household?",
+            "options": [
+              "Never",
+              "Once or twice",
+              "About once a week",
+              "Several times a week",
+              "Daily or almost daily"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Never",
+                "value": 80.0
+              },
+              {
+                "label": "Once or twice",
+                "value": 12.0
+              },
+              {
+                "label": "About once a week",
+                "value": 4.0
+              },
+              {
+                "label": "Several times a week",
+                "value": 3.0
+              },
+              {
+                "label": "Daily or almost daily",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Never (80.00%).",
+            "distributionNote": "Sharing is rare; occasional sharing occurs in households with multiple users, especially Family Fitness Coordinators.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "household_role",
+            "beatTitle": "Who is involved",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Which of the following best describes the main way you use your smartwatch during a typical day?",
+            "options": [
+              "As a fitness and health companion (tracking workouts, steps, heart rate)",
+              "As a convenience tool (checking notifications, calls, and messages without my phone)",
+              "As a safety device (fall detection, emergency SOS, location sharing)",
+              "As a style and status accessory (complements my outfit, signals the latest tech)",
+              "As a productivity aid (managing schedules, reminders, and work tasks)",
+              "Other"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "As a fitness and health companion (tracking workouts, steps, heart rate)",
+                "value": 45.0
+              },
+              {
+                "label": "As a convenience tool (checking notifications, calls, and messages without my phone)",
+                "value": 30.0
+              },
+              {
+                "label": "As a safety device (fall detection, emergency SOS, location sharing)",
+                "value": 8.0
+              },
+              {
+                "label": "As a style and status accessory (complements my outfit, signals the latest tech)",
+                "value": 10.0
+              },
+              {
+                "label": "As a productivity aid (managing schedules, reminders, and work tasks)",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: As a fitness and health companion (tracking workouts, steps, heart rate) (45.00%).",
+            "distributionNote": "Fitness/health is the primary use for most personas; convenience is strong among commuters and professionals; safety is key for seniors; style is niche for luxury/style personas.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "need_state",
+            "beatTitle": "Need state and motivation",
+            "beatCanonical": "need_state"
+          }
+        ]
+      },
+      {
+        "id": "behavior",
+        "label": "Buying Behavior",
+        "questions": [
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Which of the following situations most closely matches the reason you last bought a smartwatch?",
+            "options": [
+              "My previous smartwatch broke or stopped working properly",
+              "I wanted to start or improve a health or fitness goal (e.g., daily activity, sleep, heart health)",
+              "I upgraded my smartphone and wanted a watch that works better with it",
+              "I was attracted by new features or capabilities not available on my old watch",
+              "I received it as a gift or bought it for a special occasion",
+              "Other"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "My previous smartwatch broke or stopped working properly",
+                "value": 18.0
+              },
+              {
+                "label": "I wanted to start or improve a health or fitness goal (e.g., daily activity, sleep, heart health)",
+                "value": 42.0
+              },
+              {
+                "label": "I upgraded my smartphone and wanted a watch that works better with it",
+                "value": 15.0
+              },
+              {
+                "label": "I was attracted by new features or capabilities not available on my old watch",
+                "value": 12.0
+              },
+              {
+                "label": "I received it as a gift or bought it for a special occasion",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I wanted to start or improve a health or fitness goal (e.g., daily activity, sleep, heart health) (42.00%).",
+            "distributionNote": "Health/fitness personas (Urban Health Optimizer, Fitness Enthusiast, Family Fitness Coordinator, Senior Health Monitor) dominate with 39% combined, driving the top reason. Replacement due to breakage is elevated by Eco-Conscious Minimalist and Budget-Conscious Commuter. Tech-savvy and style personas contribute to upgrade/feature reasons.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Which of the following events or situations would most likely prompt you to buy a new smartwatch in the next 12 months? Select all that apply.",
+            "options": [
+              "My current smartwatch battery no longer lasts through a full day",
+              "A new health feature I want becomes available (e.g., blood pressure monitoring, blood glucose tracking)",
+              "My smartphone changes and my current watch is no longer compatible",
+              "My current smartwatch breaks or is lost",
+              "A new model offers noticeably better battery life or durability",
+              "I want a watch that looks more appropriate for formal or professional settings",
+              "None of the above – I do not plan to buy a smartwatch in the next 12 months"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "My current smartwatch battery no longer lasts through a full day",
+                "value": 45.0
+              },
+              {
+                "label": "A new health feature I want becomes available (e.g., blood pressure monitoring, blood glucose tracking)",
+                "value": 38.0
+              },
+              {
+                "label": "My smartphone changes and my current watch is no longer compatible",
+                "value": 22.0
+              },
+              {
+                "label": "My current smartwatch breaks or is lost",
+                "value": 20.0
+              },
+              {
+                "label": "A new model offers noticeably better battery life or durability",
+                "value": 35.0
+              },
+              {
+                "label": "I want a watch that looks more appropriate for formal or professional settings",
+                "value": 18.0
+              },
+              {
+                "label": "None of the above – I do not plan to buy a smartwatch in the next 12 months",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: My current smartwatch battery no longer lasts through a full day (45.00%).",
+            "distributionNote": "Battery pain points are strong across Urban Health Optimizer, Outdoor Adventurer, and Budget-Conscious Commuter. Health feature interest is driven by Senior Health Monitor, Tech-Savvy Early Adopter, and Urban Health Optimizer. Style-related trigger is from Style-Conscious Urbanite and Luxury Status Seeker. The 'none' option is lower due to overall positive sentiment and replacement cycle.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger",
+            "multiSelect": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Before buying a smartwatch, where do you typically go to learn about or compare different options? Select all that apply.",
+            "options": [
+              "Search engines (e.g., Google, Bing)",
+              "Online videos or reviews (e.g., YouTube, TikTok)",
+              "Social media posts or influencer recommendations",
+              "Friends, family, or colleagues",
+              "Retail store staff or in-store displays",
+              "Brand websites or official product pages",
+              "Tech forums or online communities",
+              "None of the above"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Search engines (e.g., Google, Bing)",
+                "value": 68.0
+              },
+              {
+                "label": "Online videos or reviews (e.g., YouTube, TikTok)",
+                "value": 55.0
+              },
+              {
+                "label": "Social media posts or influencer recommendations",
+                "value": 30.0
+              },
+              {
+                "label": "Friends, family, or colleagues",
+                "value": 40.0
+              },
+              {
+                "label": "Retail store staff or in-store displays",
+                "value": 25.0
+              },
+              {
+                "label": "Brand websites or official product pages",
+                "value": 45.0
+              },
+              {
+                "label": "Tech forums or online communities",
+                "value": 20.0
+              },
+              {
+                "label": "None of the above",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Search engines (e.g., Google, Bing) (68.00%).",
+            "distributionNote": "Mainstream and early adopters rely heavily on search and video reviews. Brand websites are important for brand-loyal personas (Urban Health Optimizer, Outdoor Adventurer, Luxury Status Seeker). Social media is higher among younger/style personas. In-store is moderate due to mature market and desire to see design.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "discovery",
+            "beatTitle": "Discovery and information",
+            "beatCanonical": "discovery",
+            "multiSelect": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "In the past 12 months, where have you bought a smartwatch? Select all that apply.",
+            "options": [
+              "Online marketplace (e.g., Amazon, eBay)",
+              "Brand's own website or app",
+              "Electronics or tech retailer (online or in-store)",
+              "Department store or hypermarket",
+              "Specialty sports or outdoor retailer",
+              "Secondhand or refurbished marketplace",
+              "I have not bought a smartwatch in the past 12 months"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Online marketplace (e.g., Amazon, eBay)",
+                "value": 40.0
+              },
+              {
+                "label": "Brand's own website or app",
+                "value": 25.0
+              },
+              {
+                "label": "Electronics or tech retailer (online or in-store)",
+                "value": 35.0
+              },
+              {
+                "label": "Department store or hypermarket",
+                "value": 10.0
+              },
+              {
+                "label": "Specialty sports or outdoor retailer",
+                "value": 12.0
+              },
+              {
+                "label": "Secondhand or refurbished marketplace",
+                "value": 8.0
+              },
+              {
+                "label": "I have not bought a smartwatch in the past 12 months",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Online marketplace (e.g., Amazon, eBay) (40.00%).",
+            "distributionNote": "Online marketplaces are popular across price-sensitive personas (Budget-Conscious Commuter, Eco-Conscious Minimalist). Brand websites are used by brand-loyal and luxury personas. Electronics retailers remain strong for mainstream buyers. Specialty sports/outdoor is driven by Outdoor Adventurer and Fitness Enthusiast. Secondhand is niche but supported by Eco-Conscious Minimalist.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel",
+            "multiSelect": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "How long do you typically keep a smartwatch before replacing or upgrading it?",
+            "options": [
+              "Less than 1 year",
+              "1 to 2 years",
+              "2 to 3 years",
+              "3 to 4 years",
+              "More than 4 years",
+              "I have never owned a smartwatch"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "Less than 1 year",
+                "value": 8.0
+              },
+              {
+                "label": "1 to 2 years",
+                "value": 30.0
+              },
+              {
+                "label": "2 to 3 years",
+                "value": 30.0
+              },
+              {
+                "label": "3 to 4 years",
+                "value": 15.0
+              },
+              {
+                "label": "More than 4 years",
+                "value": 10.0
+              },
+              {
+                "label": "I have never owned a smartwatch",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 1 to 2 years (30.00%).",
+            "distributionNote": "Mainstream replacement cycle is 2-3 years, with tech-savvy and style personas upgrading sooner (1-2 years). Eco-Conscious Minimalist and Senior Health Monitor keep devices longer (3+ years). A small segment of non-owners includes budget-conscious and privacy-focused individuals.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "purchase_cycle",
+            "beatTitle": "Purchase frequency and cycle",
+            "beatCanonical": "purchase_cycle"
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "In the past 12 months, how many smartwatches have you bought for yourself?",
+            "options": [
+              "None",
+              "1",
+              "2",
+              "3 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "None",
+                "value": 15.0
+              },
+              {
+                "label": "1",
+                "value": 70.0
+              },
+              {
+                "label": "2",
+                "value": 12.0
+              },
+              {
+                "label": "3 or more",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: 1 (70.00%).",
+            "distributionNote": "Most respondents bought one watch in the past year. Multiple purchases are driven by Tech-Savvy Early Adopter, Style-Conscious Urbanite, and Luxury Status Seeker. Non-buyers include those who already own a watch and are not in the market, plus some budget/privacy personas.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "purchase_cycle",
+            "beatTitle": "Purchase frequency and cycle",
+            "beatCanonical": "purchase_cycle"
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "Thinking about your most recent smartwatch purchase, which of the following factors most influenced your final choice?",
+            "options": [
+              "Battery life that lasts through a full week of heavy use",
+              "Health and fitness tracking features (e.g., heart rate, sleep, GPS)",
+              "Integration with my smartphone and its apps",
+              "Design and materials that suit both casual and formal settings",
+              "Price relative to the features offered",
+              "Other"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Battery life that lasts through a full week of heavy use",
+                "value": 25.0
+              },
+              {
+                "label": "Health and fitness tracking features (e.g., heart rate, sleep, GPS)",
+                "value": 35.0
+              },
+              {
+                "label": "Integration with my smartphone and its apps",
+                "value": 15.0
+              },
+              {
+                "label": "Design and materials that suit both casual and formal settings",
+                "value": 12.0
+              },
+              {
+                "label": "Price relative to the features offered",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Health and fitness tracking features (e.g., heart rate, sleep, GPS) (35.00%).",
+            "distributionNote": "Health/fitness features are the top driver across many personas (Urban Health Optimizer, Fitness Enthusiast, Family Fitness Coordinator, Senior Health Monitor). Battery life is critical for Outdoor Adventurer, Budget-Conscious Commuter, and Eco-Conscious Minimalist. Integration is key for tech-savvy and style personas. Design is important for Style-Conscious Urbanite and Luxury Status Seeker.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers"
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Thinking about the smartwatch you most recently bought, approximately how much did you spend on it?",
+            "options": [
+              "Less than €100",
+              "€100 to €199",
+              "€200 to €299",
+              "€300 to €399",
+              "€400 to €499",
+              "€500 or more"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "Less than €100",
+                "value": 10.0
+              },
+              {
+                "label": "€100 to €199",
+                "value": 25.0
+              },
+              {
+                "label": "€200 to €299",
+                "value": 25.0
+              },
+              {
+                "label": "€300 to €399",
+                "value": 18.0
+              },
+              {
+                "label": "€400 to €499",
+                "value": 12.0
+              },
+              {
+                "label": "€500 or more",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: €100 to €199 (25.00%).",
+            "distributionNote": "Price-sensitive personas (Budget-Conscious Commuter, Eco-Conscious Minimalist, Family Fitness Coordinator) cluster in €100-€299. Upper-middle and high-income personas (Urban Health Optimizer, Style-Conscious Urbanite, Luxury Status Seeker, Tech-Savvy Early Adopter) push the upper end. The distribution is centered around €200-€299, reflecting the mature market with a mix of mainstream and premium buyers.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "spend",
+            "beatTitle": "Category spend",
+            "beatCanonical": "spend"
+          }
+        ]
+      },
+      {
+        "id": "preferences",
+        "label": "Preferences & Expectations",
+        "questions": [
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which of the following features would you consider a must-have on any smartwatch you would buy? Select all that apply.",
+            "options": [
+              "Heart rate monitoring",
+              "Sleep tracking",
+              "Notifications and calls from your phone",
+              "Battery life that lasts at least a full day",
+              "Water resistance for swimming or rain",
+              "GPS for outdoor workouts",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Heart rate monitoring",
+                "value": 82.0
+              },
+              {
+                "label": "Sleep tracking",
+                "value": 74.0
+              },
+              {
+                "label": "Notifications and calls from your phone",
+                "value": 68.0
+              },
+              {
+                "label": "Battery life that lasts at least a full day",
+                "value": 91.0
+              },
+              {
+                "label": "Water resistance for swimming or rain",
+                "value": 55.0
+              },
+              {
+                "label": "GPS for outdoor workouts",
+                "value": 48.0
+              },
+              {
+                "label": "None of the above",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Battery life that lasts at least a full day (91.00%).",
+            "distributionNote": "Battery life is near-universal across all personas, especially Outdoor Adventurer, Family Fitness Coordinator, and Budget-Conscious Commuter. Health tracking (heart rate, sleep) is driven by Urban Health Optimizer, Fitness Enthusiast, and Senior Health Monitor. Notifications are important for commuters and professionals. GPS is niche for fitness and outdoor personas.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "When you first handle a smartwatch in a store or when it arrives, which signals most strongly tell you it is a high-quality product? Select up to three.",
+            "options": [
+              "The weight and feel of the case and band",
+              "The sharpness and brightness of the screen",
+              "How smoothly the touchscreen responds",
+              "The number of sensors and health features listed",
+              "The quality of the materials used for the band and case",
+              "The clarity of the instruction manual and setup process",
+              "None of the above"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "The weight and feel of the case and band",
+                "value": 61.0
+              },
+              {
+                "label": "The sharpness and brightness of the screen",
+                "value": 72.0
+              },
+              {
+                "label": "How smoothly the touchscreen responds",
+                "value": 68.0
+              },
+              {
+                "label": "The number of sensors and health features listed",
+                "value": 55.0
+              },
+              {
+                "label": "The quality of the materials used for the band and case",
+                "value": 64.0
+              },
+              {
+                "label": "The clarity of the instruction manual and setup process",
+                "value": 22.0
+              },
+              {
+                "label": "None of the above",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: The sharpness and brightness of the screen (72.00%).",
+            "distributionNote": "Screen sharpness and touchscreen smoothness are key for Tech-Savvy Early Adopter and Style-Conscious Urbanite. Material quality and weight/feel are important for Luxury Status Seeker, Fashion-Forward Professional, and Eco-Conscious Minimalist. Health sensors matter for Urban Health Optimizer and Fitness Enthusiast. Manual clarity is more relevant for Senior Health Monitor and Family Fitness Coordinator.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "multiSelect": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "Which of the following packaging and format options would make you more likely to choose one smartwatch over another? Select all that apply.",
+            "options": [
+              "A compact, recyclable box with minimal plastic",
+              "Included extra band in a different size or material",
+              "A travel charging case included in the box",
+              "Clear labeling of materials and repairability on the package",
+              "A quick-start guide with large text and simple diagrams",
+              "None of the above"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "A compact, recyclable box with minimal plastic",
+                "value": 58.0
+              },
+              {
+                "label": "Included extra band in a different size or material",
+                "value": 47.0
+              },
+              {
+                "label": "A travel charging case included in the box",
+                "value": 39.0
+              },
+              {
+                "label": "Clear labeling of materials and repairability on the package",
+                "value": 52.0
+              },
+              {
+                "label": "A quick-start guide with large text and simple diagrams",
+                "value": 34.0
+              },
+              {
+                "label": "None of the above",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: A compact, recyclable box with minimal plastic (58.00%).",
+            "distributionNote": "Eco-Conscious Minimalist and Privacy-Focused Individual drive recyclable packaging and repairability labeling. Extra band appeals to Style-Conscious Urbanite and Fashion-Forward Professional. Travel charging case is valued by Outdoor Adventurer and Budget-Conscious Commuter. Quick-start guide is important for Senior Health Monitor and Family Fitness Coordinator.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and design",
+            "beatCanonical": "format_packaging",
+            "multiSelect": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which of the following claims or credentials would increase your trust in a smartwatch? Select all that apply.",
+            "options": [
+              "Repairability score and availability of spare parts",
+              "Recycled or sustainably sourced materials",
+              "Data privacy certification (e.g., health data stored locally or encrypted)",
+              "Made in a country known for precision manufacturing",
+              "Medical-grade accuracy for heart rate or blood oxygen",
+              "None of the above"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Repairability score and availability of spare parts",
+                "value": 63.0
+              },
+              {
+                "label": "Recycled or sustainably sourced materials",
+                "value": 49.0
+              },
+              {
+                "label": "Data privacy certification (e.g., health data stored locally or encrypted)",
+                "value": 58.0
+              },
+              {
+                "label": "Made in a country known for precision manufacturing",
+                "value": 27.0
+              },
+              {
+                "label": "Medical-grade accuracy for heart rate or blood oxygen",
+                "value": 66.0
+              },
+              {
+                "label": "None of the above",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Medical-grade accuracy for heart rate or blood oxygen (66.00%).",
+            "distributionNote": "Medical-grade accuracy is critical for Urban Health Optimizer, Senior Health Monitor, and Fitness Enthusiast. Repairability and sustainable materials are driven by Eco-Conscious Minimalist and Privacy-Focused Individual. Data privacy certification is key for Privacy-Focused Individual and Tech-Savvy Early Adopter. Country of origin matters less but is slightly higher for Luxury Status Seeker.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "claims_credentials",
+            "beatTitle": "Claims and credentials",
+            "beatCanonical": "claims_credentials",
+            "multiSelect": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "If you had to choose between a smartwatch with a longer battery life or one with a brighter, higher-resolution screen, which would you prioritize?",
+            "options": [
+              "Much longer battery life",
+              "Somewhat longer battery life",
+              "A balance between the two",
+              "Somewhat better screen quality",
+              "Much better screen quality"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "Much longer battery life",
+                "value": 32.0
+              },
+              {
+                "label": "Somewhat longer battery life",
+                "value": 24.0
+              },
+              {
+                "label": "A balance between the two",
+                "value": 30.0
+              },
+              {
+                "label": "Somewhat better screen quality",
+                "value": 9.0
+              },
+              {
+                "label": "Much better screen quality",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Much longer battery life (32.00%).",
+            "distributionNote": "Outdoor Adventurer, Family Fitness Coordinator, and Budget-Conscious Commuter strongly prefer longer battery life. Tech-Savvy Early Adopter and Style-Conscious Urbanite lean toward screen quality but still value balance. Overall, battery life dominates due to widespread pain point about short battery life.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "When choosing a smartwatch, which trade-off are you most willing to make to keep the price lower?",
+            "options": [
+              "Fewer advanced health sensors (e.g., ECG, blood oxygen)",
+              "Shorter battery life between charges",
+              "Fewer premium materials (e.g., plastic instead of metal)",
+              "Fewer smart features (e.g., no contactless payments)",
+              "Less accurate GPS tracking",
+              "I am not willing to give up any features to lower the price"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Fewer advanced health sensors (e.g., ECG, blood oxygen)",
+                "value": 22.0
+              },
+              {
+                "label": "Shorter battery life between charges",
+                "value": 11.0
+              },
+              {
+                "label": "Fewer premium materials (e.g., plastic instead of metal)",
+                "value": 28.0
+              },
+              {
+                "label": "Fewer smart features (e.g., no contactless payments)",
+                "value": 19.0
+              },
+              {
+                "label": "Less accurate GPS tracking",
+                "value": 9.0
+              },
+              {
+                "label": "I am not willing to give up any features to lower the price",
+                "value": 11.0
+              }
+            ],
+            "insight": "Top response: Fewer premium materials (e.g., plastic instead of metal) (28.00%).",
+            "distributionNote": "Budget-Conscious Commuter and Eco-Conscious Minimalist are most willing to give up premium materials. Urban Health Optimizer and Senior Health Monitor are reluctant to give up health sensors. Fitness Enthusiast and Outdoor Adventurer resist giving up GPS. Luxury Status Seeker and Tech-Savvy Early Adopter are less price-sensitive and choose not to give up features.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "If a smartwatch could not have both a premium, elegant design and the most advanced health-tracking features, which would you choose?",
+            "options": [
+              "Definitely the premium, elegant design",
+              "Probably the premium, elegant design",
+              "I would want both equally",
+              "Probably the most advanced health-tracking features",
+              "Definitely the most advanced health-tracking features"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Definitely the premium, elegant design",
+                "value": 12.0
+              },
+              {
+                "label": "Probably the premium, elegant design",
+                "value": 18.0
+              },
+              {
+                "label": "I would want both equally",
+                "value": 34.0
+              },
+              {
+                "label": "Probably the most advanced health-tracking features",
+                "value": 22.0
+              },
+              {
+                "label": "Definitely the most advanced health-tracking features",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: I would want both equally (34.00%).",
+            "distributionNote": "Style-Conscious Urbanite, Luxury Status Seeker, and Fashion-Forward Professional lean toward design. Urban Health Optimizer, Fitness Enthusiast, and Senior Health Monitor lean toward health features. Many personas (Eco-Conscious Minimalist, Family Fitness Coordinator) want both equally, reflecting a desire for balance.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "If a smartwatch cost €500, which of the following would you expect it to include as standard?",
+            "options": [
+              "Advanced health sensors (e.g., blood oxygen, ECG, skin temperature)",
+              "Multi-day battery life (at least 3 days on a single charge)",
+              "Premium materials (e.g., metal case, sapphire glass, leather band)",
+              "Repairability and long-term software support (e.g., replaceable battery, updates for 5+ years)",
+              "Seamless integration with my smartphone and health apps",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Advanced health sensors (e.g., blood oxygen, ECG, skin temperature)",
+                "value": 78.0
+              },
+              {
+                "label": "Multi-day battery life (at least 3 days on a single charge)",
+                "value": 85.0
+              },
+              {
+                "label": "Premium materials (e.g., metal case, sapphire glass, leather band)",
+                "value": 52.0
+              },
+              {
+                "label": "Repairability and long-term software support (e.g., replaceable battery, updates for 5+ years)",
+                "value": 68.0
+              },
+              {
+                "label": "Seamless integration with my smartphone and health apps",
+                "value": 81.0
+              },
+              {
+                "label": "None of the above",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Multi-day battery life (at least 3 days on a single charge) (85.00%).",
+            "distributionNote": "At €500, most expect multi-day battery and seamless integration as standard, driven by all personas. Advanced health sensors are expected by health-focused personas. Repairability and software support are important to Eco-Conscious Minimalist and Tech-Savvy Early Adopter. Premium materials are expected by style and luxury personas but less by budget-conscious.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "value_expectation",
+            "beatTitle": "Value and willingness to pay",
+            "beatCanonical": "value_expectation",
+            "multiSelect": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction",
+        "label": "Satisfaction & Future Intent",
+        "questions": [
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Overall, how satisfied are you with your current smartwatch?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 5.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 22.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 38.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (38.00%).",
+            "distributionNote": "Mixed satisfaction: Eco-Conscious Minimalist and Budget-Conscious Commuter report dissatisfaction; Urban Health Optimizer and Fitness Enthusiast are more satisfied; overall positive sentiment from MKP.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "ordered": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "How satisfied are you with each of the following aspects of your current smartwatch?",
+            "options": [
+              "Battery life",
+              "Accuracy of health and fitness tracking",
+              "Comfort of the watch on your wrist",
+              "Design and appearance",
+              "Integration with your phone and apps"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Battery life",
+                "value": 28.0
+              },
+              {
+                "label": "Accuracy of health and fitness tracking",
+                "value": 22.0
+              },
+              {
+                "label": "Comfort of the watch on your wrist",
+                "value": 18.0
+              },
+              {
+                "label": "Design and appearance",
+                "value": 15.0
+              },
+              {
+                "label": "Integration with your phone and apps",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: Battery life (28.00%).",
+            "distributionNote": "Battery life is the most common dissatisfaction across personas (Urban Health Optimizer, Outdoor Adventurer, Budget Commuter); integration is a relative strength for tech-savvy and style personas.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "ordered": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "In the last 30 days, which of the following frustrations have you experienced with your smartwatch? Select all that apply.",
+            "options": [
+              "Battery life doesn't last through a full week of heavy use",
+              "Health data is fragmented across multiple apps and not actionable",
+              "Wristband causes skin irritation during long wear",
+              "Setup or pairing with my phone was complicated",
+              "Small text and icons are hard to read",
+              "GPS accuracy is poor in dense urban areas",
+              "None of the above"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Battery life doesn't last through a full week of heavy use",
+                "value": 45.0
+              },
+              {
+                "label": "Health data is fragmented across multiple apps and not actionable",
+                "value": 30.0
+              },
+              {
+                "label": "Wristband causes skin irritation during long wear",
+                "value": 18.0
+              },
+              {
+                "label": "Setup or pairing with my phone was complicated",
+                "value": 15.0
+              },
+              {
+                "label": "Small text and icons are hard to read",
+                "value": 12.0
+              },
+              {
+                "label": "GPS accuracy is poor in dense urban areas",
+                "value": 20.0
+              },
+              {
+                "label": "None of the above",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Battery life doesn't last through a full week of heavy use (45.00%).",
+            "distributionNote": "Battery life frustration is widespread; health data fragmentation hits Urban Health Optimizer and Fitness Enthusiast; GPS issue is specific to Fitness and Outdoor personas; senior and family personas report readability and setup issues.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Which of the following problems, if any, have you experienced with your smartwatch in the last 12 months? Select all that apply.",
+            "options": [
+              "Battery degradation after two years makes the device unusable",
+              "The watch is not repairable and becomes e-waste quickly",
+              "Lack of transparency about materials and supply chain",
+              "Software updates are slow and infrequent",
+              "Limited compatibility with my phone's ecosystem",
+              "None of the above"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Battery degradation after two years makes the device unusable",
+                "value": 35.0
+              },
+              {
+                "label": "The watch is not repairable and becomes e-waste quickly",
+                "value": 28.0
+              },
+              {
+                "label": "Lack of transparency about materials and supply chain",
+                "value": 20.0
+              },
+              {
+                "label": "Software updates are slow and infrequent",
+                "value": 25.0
+              },
+              {
+                "label": "Limited compatibility with my phone's ecosystem",
+                "value": 22.0
+              },
+              {
+                "label": "None of the above",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Battery degradation after two years makes the device unusable (35.00%).",
+            "distributionNote": "Eco-Conscious Minimalist and Budget-Conscious Commuter drive battery degradation and repairability concerns; Tech-Savvy Early Adopter and Privacy-Focused Individual drive software and compatibility issues.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "Which of the following would most likely make you switch to a different smartwatch?",
+            "options": [
+              "Better battery life",
+              "More accurate health data",
+              "A more repairable design",
+              "Lower price",
+              "None of the above – I would not switch"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Better battery life",
+                "value": 35.0
+              },
+              {
+                "label": "More accurate health data",
+                "value": 25.0
+              },
+              {
+                "label": "A more repairable design",
+                "value": 15.0
+              },
+              {
+                "label": "Lower price",
+                "value": 15.0
+              },
+              {
+                "label": "None of the above – I would not switch",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Better battery life (35.00%).",
+            "distributionNote": "Battery life is the top switch trigger across many personas; health accuracy is key for Health Optimizer and Fitness Enthusiast; repairability is important to Eco-Conscious Minimalist; price matters to Budget and Family personas.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "switching",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "How likely are you to recommend a smartwatch to a friend or colleague?",
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "diverging",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 6.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 14.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 38.0
+              },
+              {
+                "label": "Very likely",
+                "value": 22.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely (38.00%).",
+            "distributionNote": "Overall positive sentiment (MKP) and satisfied personas (Urban Health Optimizer, Fitness Enthusiast) drive likelihood; detractors include Eco-Conscious Minimalist and Budget-Conscious Commuter.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "advocacy",
+            "beatTitle": "Recommend intent",
+            "beatCanonical": "advocacy",
+            "ordered": true
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "In the next 12 months, which of the following best describes how you expect your use of smartwatches to change?",
+            "options": [
+              "I will use it more for health monitoring",
+              "I will use it more for notifications and calls",
+              "I will use it more for sleep tracking",
+              "I will use it about the same as now",
+              "I will use it less",
+              "I will stop using it"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "I will use it more for health monitoring",
+                "value": 40.0
+              },
+              {
+                "label": "I will use it more for notifications and calls",
+                "value": 15.0
+              },
+              {
+                "label": "I will use it more for sleep tracking",
+                "value": 20.0
+              },
+              {
+                "label": "I will use it about the same as now",
+                "value": 18.0
+              },
+              {
+                "label": "I will use it less",
+                "value": 5.0
+              },
+              {
+                "label": "I will stop using it",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: I will use it more for health monitoring (40.00%).",
+            "distributionNote": "Health monitoring growth is driven by Urban Health Optimizer, Senior Health Monitor, and Family Fitness Coordinator; sleep tracking is important to many; notifications are key for Style-Conscious and Budget Commuter; a small minority will reduce usage.",
+            "N": 350,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "future_use",
+            "beatTitle": "Future category use",
+            "beatCanonical": "future_use"
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 31,
+    "counts_by_tab": {
+      "consumer_profile": 8,
+      "buying_behavior": 8,
+      "preferences_expectations": 8,
+      "satisfaction_future_intent": 7
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": false,
+    "warnings": [
+      "Tab 'satisfaction_future_intent' under target: 7/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "profile": [
+        {
+          "beatId": "category_entry",
+          "title": "Category relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "usage_occasions",
+          "title": "Usage occasions",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "usage_frequency",
+          "title": "Usage frequency and intensity",
+          "canonical": "usage_frequency",
+          "order": 3
+        },
+        {
+          "beatId": "household_role",
+          "title": "Who is involved",
+          "canonical": "household_role",
+          "order": 4
+        },
+        {
+          "beatId": "need_state",
+          "title": "Need state and motivation",
+          "canonical": "need_state",
+          "order": 5
+        }
+      ],
+      "behavior": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "What starts a purchase",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery",
+          "title": "Discovery and information",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "channel",
+          "title": "Where they buy",
+          "canonical": "channel",
+          "order": 3
+        },
+        {
+          "beatId": "purchase_cycle",
+          "title": "Purchase frequency and cycle",
+          "canonical": "purchase_cycle",
+          "order": 4
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "Decision drivers",
+          "canonical": "decision_drivers",
+          "order": 5
+        },
+        {
+          "beatId": "spend",
+          "title": "Category spend",
+          "canonical": "spend",
+          "order": 6
+        }
+      ],
+      "preferences": [
+        {
+          "beatId": "must_haves",
+          "title": "Must-have attributes",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Quality cues",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "format_packaging",
+          "title": "Format and design",
+          "canonical": "format_packaging",
+          "order": 3
+        },
+        {
+          "beatId": "claims_credentials",
+          "title": "Claims and credentials",
+          "canonical": "claims_credentials",
+          "order": 4
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs",
+          "canonical": "tradeoffs",
+          "order": 5
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value and willingness to pay",
+          "canonical": "value_expectation",
+          "order": 6
+        }
+      ],
+      "satisfaction": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What drives satisfaction",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching",
+          "title": "Switching triggers",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "advocacy",
+          "title": "Recommend intent",
+          "canonical": "advocacy",
+          "order": 5
+        },
+        {
+          "beatId": "future_use",
+          "title": "Future category use",
+          "canonical": "future_use",
+          "order": 6
+        }
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing the respondent's relationship with smartwatches — ownership and usage context — then moves through the purchase journey from triggers and discovery to channel, cycle, decision drivers, and spend. It then explores what they demand from the product, from must-haves to trade-offs and value expectations, and closes with satisfaction, friction, switching triggers, advocacy, and future intent. The arc is progressive: broad and safe at the start, specific and sensitive (money, satisfaction, switching) toward the end.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "For a durable like smartwatches, I dropped the canonical 'repurchase' beat (habitual repurchase is not relevant) and instead emphasized the upgrade/replacement cycle in 'purchase_cycle'.",
+      "I added a category-specific 'format_packaging' beat that covers watch size, materials, and band interchangeability, which is critical for smartwatch buyers and maps to the canonical 'format_packaging'.",
+      "In buying_behavior, I placed 'decision_drivers' before 'spend' to keep the monetary question last, and I omitted 'repurchase' because smartwatch purchases are infrequent and considered, not routine.",
+      "In consumer_profile, I kept the canonical five beats but adapted 'usage_occasion' to include formal vs. sporty contexts, which is relevant for the European market and the style-conscious persona.",
+      "In preferences_expectations, I added a 'claims_credentials' beat that includes repairability and sustainability claims, reflecting the Eco-Conscious Minimalist persona and European environmental awareness.",
+      "In satisfaction_future_intent, I kept the canonical order but ensured 'switching' is category-level (not brand-level) and placed it after friction, before advocacy and future use, to respect the sensitivity of switching intentions."
+    ],
+    "classification_reason": "Smartwatches are consumer wearable devices purchased by individuals for personal use, fitness tracking, notifications, and health monitoring. While some enterprise or medical applications exist, the primary market is everyday consumers.",
+    "generated_at": "2026-08-03T09:10:34.748804+00:00",
+    "current_date": "2026-08-03",
+    "sample_size": 2500,
+    "N": 350,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "radar",
+      "stacked",
+      "vbar",
+      "vbar-likert"
+    ]
+  }
+}

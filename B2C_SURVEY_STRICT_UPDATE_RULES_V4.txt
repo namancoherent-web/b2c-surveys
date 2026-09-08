@@ -1,0 +1,469 @@
+B2C SURVEY — STRICT UPDATE RULES FOR CLAUDE CODE
+Based on the latest Skin Care Products / India output
+
+PURPOSE
+The latest output is structurally closer, but errors are still recurring. These rules are intended to be implemented in the B2C survey generation/validation code so the same errors do not keep appearing.
+
+============================================================
+1. EXACTLY FOUR BEHAVIORAL SEGMENTS / PERSONAS
+============================================================
+
+There must be exactly FOUR behavioral personas used anywhere in the survey's distribution notes.
+
+Use these four and ONLY these four for this survey:
+1. High-Involvement Users
+2. Targeted Concern Solvers
+3. Value-Driven Routine Users
+4. Minimalist Occasional Users
+
+STRICT RULES:
+- Never invent a fifth or sixth persona.
+- Never introduce names such as Prestige Segments, Premium-Luxury Buyers, Sensitive-Skin Sufferers, Clean-Conscious Shoppers, Budget-Conscious Segments, Brand-Loyal Segments, Family-Oriented Segments, or similar names.
+- Never use shortened variants such as "High-Involvement" or "Value-Driven" when the full persona name is required. Use the exact canonical name consistently.
+- A segment name must come from the predefined four-persona set, not be generated dynamically from an answer option.
+- Persona behavior must remain logically consistent across all distribution notes.
+- A persona can appear in some notes and not others when relevant; all referenced personas must still belong to the same fixed four-persona set.
+
+============================================================
+2. FOUR SECTION STRUCTURE ONLY
+============================================================
+
+The behavioral survey must always have exactly these four sections:
+
+1. Consumer Profile, Ownership & Usage Behavior
+2. Purchase Journey & Decision Drivers
+3. Brand / Product Experience & Satisfaction
+4. Unmet Needs, Switching & Future Purchase Intent
+
+Profiling & Classification is NOT a fifth behavioral segment. Age, gender, household and income questions remain at the end and are used only for cross-tabulation.
+
+IMPORTANT:
+The slash in "Brand / Product Experience & Satisfaction" is OPTIONAL.
+It is not required to use "/". The section name may be rendered as "Brand & Product Experience & Satisfaction" or another natural equivalent appropriate to the market/language, as long as it clearly represents the same underlying segment.
+
+Do not create additional behavioral sections.
+
+============================================================
+3. QUESTION WORDING — DIRECT, NATURAL, EVERYDAY LANGUAGE
+============================================================
+
+This is a strict rule.
+
+Questions must sound like something a normal consumer would naturally answer.
+
+DO NOT unnecessarily start questions with:
+- "In the past year, ..."
+- "In the last 12 months, ..."
+- "Thinking about the past year, ..."
+- "When considering ..."
+- "If you think about ..."
+- "For yourself, ..."
+- "Personally, ..."
+- "In your opinion, ..."
+- other setup phrases that add no meaning.
+
+Use the simplest direct form instead.
+
+BAD:
+"In the past year, how often have you used skin care products?"
+
+BETTER:
+"How often do you usually use skin care products?"
+
+BAD:
+"In the past year, what most often disappointed you about a skin care product?"
+
+BETTER:
+"What most often disappoints you about skin care products?"
+
+Only add a timeframe when the timeframe is genuinely required by the research question. If a timeframe is required, keep it short and natural.
+
+GENERAL QUESTION STYLE RULES:
+- Lead with the actual question.
+- Use everyday consumer wording.
+- Keep questions short.
+- Avoid unnecessary setup clauses.
+- Avoid business/consulting language.
+- Avoid awkward formal wording.
+- Do not add filler such as "for you", "personally", or "in your opinion" unless it changes the meaning.
+- Every question must be understandable without reading the methodology.
+
+============================================================
+4. QUESTION TYPE MUST MATCH THE ANSWER OPTIONS
+============================================================
+
+Every question must explicitly have a backend type:
+- single-select
+- multi-select
+- ranking
+- rating scale
+
+Never infer type from the percentage totals.
+
+STRICT VALIDATION:
+- Single-select: exactly one answer; options represent one dimension.
+- Multi-select: explicitly say "Select all that apply." and options can coexist.
+- Ranking: the output/data representation must clearly define how ranking results are converted into percentages. Do not pretend simple percentages are a ranking unless the backend has a valid ranking calculation.
+- Rating: options must form a clean ordered scale.
+
+Never use the same wording template for questions that have different answer types without making the type clear in the text.
+
+============================================================
+5. ONE QUESTION = ONE DIMENSION
+============================================================
+
+This is mandatory.
+
+Do not mix dimensions in one single-select question.
+
+BAD example:
+"When do you usually apply skin care products?"
+with options such as:
+- Morning
+- Evening
+- Both morning and evening
+- When my skin feels dry
+- Before going out
+
+This mixes TIME OF DAY with TRIGGER/OCCASION.
+
+FIX:
+Either ask about time:
+"When do you usually apply skin care products?"
+- Morning
+- Evening
+- Both morning and evening
+- No set time
+
+OR ask about trigger:
+"When are you most likely to apply skin care products?"
+- As part of my morning routine
+- As part of my evening routine
+- After showering or bathing
+- When my skin feels dry or uncomfortable
+- Before going out or for special occasions
+
+Do not combine both dimensions in one single-select list.
+
+============================================================
+6. ANSWER OPTIONS MUST BE LOGICALLY CONSISTENT
+============================================================
+
+For every question, verify:
+- all options answer the exact same question;
+- options are mutually exclusive for single-select;
+- options are not accidentally different dimensions;
+- options are complete enough for normal respondents;
+- wording is natural;
+- there is no accidental overlap;
+- percentages match the declared answer type.
+
+Every option should sound like something a real person could select.
+
+Avoid internal/category labels that consumers would not naturally understand.
+
+============================================================
+7. ALWAYS USE A REAL OPT-OUT WHEN MULTI-SELECT NEEDS ONE
+============================================================
+
+For multi-select questions asking what respondents MUST have, CARE about, or consider requirements, include an honest opt-out when appropriate.
+
+Examples:
+- "None of these are must-haves for me"
+- "None of these matter to me"
+- "None of these"
+
+The opt-out must not be selected together with substantive options in a valid response.
+
+============================================================
+8. DO NOT CREATE REDUNDANT QUESTIONS
+============================================================
+
+Do NOT use a B2B-style rule where similar B2C questions are automatically deleted.
+
+Keep two questions when they measure genuinely different constructs, for example:
+- usage frequency
+- routine length
+- purchase trigger
+- research source
+- final decision driver
+- product must-have
+- quality cue
+- claim credibility
+- satisfaction
+- disappointment
+- switching trigger
+- future intent
+
+However, remove or merge questions that ask essentially the same thing from the same angle.
+
+Example:
+If one question asks which product categories someone uses and another asks which product categories they are willing to use, check whether the second adds a clear new business use. If not, remove it.
+
+Every question must pass this test:
+"What specific business decision does this question support?"
+If there is no clear answer, remove it.
+
+============================================================
+9. PURCHASE / USAGE QUESTIONS MUST NOT BE OVERLOADED
+============================================================
+
+Do not turn one question into multiple concepts.
+
+Avoid questions that simultaneously ask:
+- frequency + occasion
+- product type + purpose
+- price + willingness to pay
+- quality + satisfaction
+- switching + loyalty
+
+When two constructs are both important, use two clearly separate questions only when both have a distinct business purpose.
+
+============================================================
+10. RANKING QUESTIONS — STRICT RULE
+============================================================
+
+If a question says "Rank these...", the system must actually treat it as a ranking question.
+
+Do not produce a normal list of percentages such as:
+- 30%
+- 25%
+- 20%
+- 15%
+- 10%
+without stating what those percentages mean.
+
+Preferred alternatives:
+A. Change it to a single-select question:
+"Which factor has the biggest influence on your final choice?"
+OR
+B. Keep a ranking question only if the backend/data model properly supports ranking and the percentage calculation is explicitly defined.
+
+Do not use fake ranking percentages.
+
+============================================================
+11. CURRENCY AND REGIONAL FORMATTING — HARD VALIDATION
+============================================================
+
+For an India survey, every monetary question must use INR and a valid rendered rupee symbol.
+
+NEVER output:
+- n500
+- n1,000
+- $500
+- £500
+- any broken replacement character.
+
+Use:
+- ₹500
+- ₹1,000
+- ₹1,500
+etc.
+
+Before finalizing, programmatically check every monetary option for the correct currency symbol.
+
+Also check that the monetary ranges are realistic for the market and for the specific question.
+
+Do not use the same price bands blindly across different markets.
+
+============================================================
+12. INCOME QUESTION — KEEP DISTINCT FROM MONTHLY SPEND
+============================================================
+
+Monthly skincare spending and annual household income are different constructs and may both exist.
+
+But the annual household income bands must be realistic for the stated country/market.
+
+Do not use unexplained low bands that contradict the stated target profile.
+
+The income question is profiling only.
+Its result must NOT be used to write behavioral distribution notes or define a behavioral segment.
+
+============================================================
+13. PROFILING QUESTIONS MUST STAY PROFILING QUESTIONS
+============================================================
+
+Age, gender, household and income belong in the final profiling section.
+
+STRICT RULE:
+Do not put behavioral persona interpretations into their distribution notes.
+
+BAD:
+"Younger High-Involvement Users skew the panel toward 18-34."
+
+BAD:
+"Value-Driven Routine Users cluster at lower income levels."
+
+BAD:
+"Family-oriented segments drive the largest share living with children."
+
+These turn demographic questions into behavioral explanations.
+
+For profiling questions, either:
+- omit the distribution note entirely; or
+- use only neutral descriptive wording about the modeled profile, without attributing it to behavioral personas.
+
+============================================================
+14. DO NOT INVENT NEW PERSONAS FROM DEMOGRAPHICS
+============================================================
+
+Do not create personas such as:
+- younger users
+- family-oriented users
+- premium users
+- budget-conscious users
+- female-led segments
+- middle-income segments
+
+These are demographic or descriptive characteristics, not additional behavioral personas.
+
+Use the fixed four behavioral personas only.
+
+============================================================
+15. CLAIM / GRAMMAR VALIDATION
+============================================================
+
+Run a grammar pass on EVERY generated question and every answer option.
+
+Examples of errors that must be caught:
+- "Which claims most strongly convinces you..." → "Which claims most strongly convince you..."
+- "Which must a product be..." when the intended meaning is product features → use natural wording such as "Which of these must a product have..."
+- "Select all that apply.?" → "Select all that apply."
+
+The text must be grammatically correct and natural for a consumer respondent.
+
+============================================================
+16. QUESTION STEMS MUST NOT BE AWKWARD OR UNNECESSARILY TIME-BOUND
+============================================================
+
+A question does not need a timeframe just because the survey concerns a purchase category.
+
+Do NOT automatically add "past year" or "last 12 months" to question stems.
+
+Use a timeframe only when it is necessary to distinguish current behavior from historical behavior.
+
+Examples:
+
+BAD:
+"In the past year, how often have you used skin care products?"
+
+BETTER:
+"How often do you usually use skin care products?"
+
+BAD:
+"Compared to a year ago, how much are you now spending..."
+
+This is valid only when change over time is actually a required research construct.
+
+The generator must decide whether a timeframe adds analytical value before including one.
+
+============================================================
+17. A QUESTION MUST BE REQUIRED — NOT JUST INTERESTING
+============================================================
+
+Before adding any question, ask:
+1. What business decision does it support?
+2. Is that decision already covered by another question?
+3. Is the question specific enough to produce an actionable finding?
+4. Is it appropriate for B2C rather than B2B?
+5. Does it belong naturally in the selected segment?
+
+If the answer to these checks is weak, do not add the question.
+
+============================================================
+18. DISTRIBUTION NOTES — STRICT FORMAT
+============================================================
+
+Every behavioral distribution note must:
+- reference only the four approved personas;
+- describe behavior that is logically supported by the question;
+- not contradict another question;
+- not introduce demographic personas;
+- not introduce new segment labels;
+- not claim causal relationships that the survey question cannot support.
+
+BAD:
+"Growth in the region pushes spending upward."
+This is causal and not measured by the question.
+
+BETTER:
+"Higher-spending responses are more common among High-Involvement Users and Targeted Concern Solvers."
+
+Only make a distribution statement that matches the question being asked.
+
+============================================================
+19. NO UNSUPPORTED CAUSAL CLAIMS IN DISTRIBUTION NOTES
+============================================================
+
+Do not say that a market trend, income level, age group, or regional growth "causes" an answer unless the survey actually measures that relationship.
+
+Avoid wording like:
+- "growth in the region pushes..."
+- "women drive..." unless this is a neutral descriptive profiling result
+- "younger users cause..."
+- "income explains..."
+
+Distribution notes should describe modeled response patterns, not invent explanations.
+
+============================================================
+20. QUESTION COUNT RECONCILIATION
+============================================================
+
+After generation:
+- count every actual question;
+- count questions under each section;
+- verify the section totals add to the grand total;
+- verify the Profiling total is included in the grand total;
+- verify the printed structure matches the actual body exactly.
+
+Never allow a header saying 31 questions when the actual body has 30 or 32.
+
+============================================================
+21. FINAL AUTOMATED VALIDATION — MUST RUN BEFORE OUTPUT
+============================================================
+
+Claude Code should run these checks before finalizing any B2C survey:
+
+CHECK 1 — Four sections only
+CHECK 2 — Four personas only
+CHECK 3 — No unauthorized persona names anywhere
+CHECK 4 — Question count matches structure
+CHECK 5 — Every question has an explicit answer type
+CHECK 6 — Multi-select questions explicitly say "Select all that apply."
+CHECK 7 — Single-select options represent one dimension
+CHECK 8 — Ranking questions use a valid ranking model OR are converted to single-select
+CHECK 9 — Currency matches region
+CHECK 10 — Currency symbols render correctly
+CHECK 11 — No broken characters such as "n500"
+CHECK 12 — Profiling notes contain no behavioral persona interpretation
+CHECK 13 — No demographic persona names are created
+CHECK 14 — No unnecessary timeframes such as "in the past year" unless analytically required
+CHECK 15 — No unnecessary setup phrases
+CHECK 16 — Grammar and subject-verb agreement are correct
+CHECK 17 — No duplicated/near-duplicated question from the same analytical angle
+CHECK 18 — Every question has a clear business use
+CHECK 19 — Every option is natural consumer language
+CHECK 20 — Distribution notes are consistent with the question and fixed personas
+CHECK 21 — No unsupported causal statements
+
+============================================================
+22. IMPORTANT: APPLY THESE RULES DURING GENERATION, NOT ONLY AFTER
+============================================================
+
+Do not rely only on a post-generation cleanup pass.
+
+The generation logic itself must enforce these rules while creating:
+- section names
+- persona names
+- question stems
+- answer options
+- answer types
+- percentages
+- distribution notes
+- profiling notes
+
+Then run a separate validation pass after the survey is generated.
+
+The final survey must fail validation and be regenerated/fixed if any of the strict checks above fail.
+
+END OF STRICT B2C RULES

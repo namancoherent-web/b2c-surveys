@@ -1,0 +1,1677 @@
+{
+  "surveyDefinition": {
+    "title": "Organic Milk — consumer survey (Europe)",
+    "category": "Organic Milk",
+    "region": "Europe",
+    "audienceType": "B2C consumer",
+    "whatThisSurveyIs": "A business-to-consumer (B2C) market research questionnaire about Organic Milk. Every question asks about Organic Milk specifically — not the wider market, not adjacent categories, and not any named brand. It is designed to tell a client what buyers in Europe actually do and want in this category.",
+    "whoseContextThisIs": "Adults in Europe who buy or use Organic Milk for personal or household use. Respondents qualify if they: Primary or shared grocery decision-maker in the household; Purchases organic milk at least once in the past 3 months; Consumes milk or serves it to household members. Excluded: Institutional buyers (restaurants, cafeterias, schools); Dairy farmers or processors; People who never buy milk or dairy alternatives.",
+    "whyTheseRespondents": "Organic milk is a retail grocery product purchased by households for personal consumption, making it a clear B2C market.",
+    "respondentBehaviours": [
+      "Regularly purchases organic or premium food products",
+      "Reads nutrition labels and seeks out certifications (USDA Organic, EU Organic)",
+      "Willing to pay a premium for perceived health and environmental benefits",
+      "Shoppers at supermarkets, natural food stores, and online grocery delivery"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income — these define who was recruited, not what is measured, so they appear in the audience definition rather than as questions.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 28,
+      "sections": [
+        {
+          "id": "profile",
+          "label": "Consumer Profile",
+          "covers": "how they relate to and use the category",
+          "questions": 7
+        },
+        {
+          "id": "behavior",
+          "label": "Buying Behavior",
+          "covers": "how they shop for and buy it",
+          "questions": 7
+        },
+        {
+          "id": "preferences",
+          "label": "Preferences & Expectations",
+          "covers": "what they want from the product",
+          "questions": 7
+        },
+        {
+          "id": "satisfaction",
+          "label": "Satisfaction & Future Intent",
+          "covers": "how they feel about it and what they will do next",
+          "questions": 7
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's relationship with organic milk, then moves through their usage occasions, frequency, household roles, and underlying motivations. It then traces the purchase journey from triggers and discovery through channels, cycle, decision drivers, spend, and routine. Next, it explores product expectations from must-haves and quality cues to packaging, claims, trade-offs, and value. Finally, it assesses satisfaction, friction, switching triggers, advocacy, and future intent, ending on a forward-looking note."
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Organic Milk in Europe — who Primary or shared grocery decision-maker in the household; Purchases organic milk at least once in the past 3 months; Consumes milk or serves it to household members. The consumer audience for organic milk is defined by household grocery shoppers who prioritize health, sustainability, and product quality, and who actively choose organic over conventional milk.",
+    "marketSegment": "Organic Milk",
+    "region": "Europe",
+    "inclusionCriteria": [
+      "Primary or shared grocery decision-maker in the household",
+      "Purchases organic milk at least once in the past 3 months",
+      "Consumes milk or serves it to household members"
+    ],
+    "behaviors": [
+      "Regularly purchases organic or premium food products",
+      "Reads nutrition labels and seeks out certifications (USDA Organic, EU Organic)",
+      "Willing to pay a premium for perceived health and environmental benefits",
+      "Shoppers at supermarkets, natural food stores, and online grocery delivery"
+    ],
+    "exclusions": [
+      "Institutional buyers (restaurants, cafeterias, schools)",
+      "Dairy farmers or processors",
+      "People who never buy milk or dairy alternatives"
+    ],
+    "contextDemographics": {
+      "age_range": "25-65",
+      "income_level": "Middle to upper-middle income",
+      "household_type": "Families with children, health-conscious singles/couples",
+      "education": "College-educated or higher",
+      "geography": "Urban and suburban areas with access to specialty grocery stores"
+    },
+    "assumptions": [
+      "Organic milk is assumed to be a retail product, not a bulk ingredient",
+      "Consumers are assumed to be in regions where organic milk is widely available",
+      "The survey targets the end consumer, not retailers or distributors"
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Organic Milk",
+  "slug": "organic-milk",
+  "region": "europe",
+  "frontend": {
+    "sections": [
+      {
+        "id": "profile",
+        "label": "Consumer Profile",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "In the last 30 days, how often did your household use organic dairy milk?",
+            "options": [
+              "Every day or almost every day",
+              "Several times a week",
+              "About once a week",
+              "A few times in the month",
+              "Once in the month",
+              "Not in the last 30 days"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Every day or almost every day",
+                "value": 24.0
+              },
+              {
+                "label": "Several times a week",
+                "value": 31.0
+              },
+              {
+                "label": "About once a week",
+                "value": 18.0
+              },
+              {
+                "label": "A few times in the month",
+                "value": 12.0
+              },
+              {
+                "label": "Once in the month",
+                "value": 6.0
+              },
+              {
+                "label": "Not in the last 30 days",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: Several times a week (31.00%).",
+            "distributionNote": "Frequent usage driven by Urban Eco Parents, Affluent Quality Seekers, and Traditional Premium Buyers; occasional/non-users include Budget Family Shoppers and Skeptical Converts.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "category_relationship",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "Which of the following best describes how organic dairy milk fits into your household's routine?",
+            "options": [
+              "It is the main milk we drink and use for everything",
+              "We use it for some things but also use conventional milk",
+              "We use it occasionally, for specific recipes or occasions",
+              "We tried it but have gone back to conventional milk",
+              "We don't use organic dairy milk"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "It is the main milk we drink and use for everything",
+                "value": 28.0
+              },
+              {
+                "label": "We use it for some things but also use conventional milk",
+                "value": 34.0
+              },
+              {
+                "label": "We use it occasionally, for specific recipes or occasions",
+                "value": 18.0
+              },
+              {
+                "label": "We tried it but have gone back to conventional milk",
+                "value": 10.0
+              },
+              {
+                "label": "We don't use organic dairy milk",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: We use it for some things but also use conventional milk (34.00%).",
+            "distributionNote": "Main milk usage from Eco Activists and Health-Conscious Singles; mixed usage from Budget Family Shoppers and Value-Conscious Environmentalists; non-users from Skeptical Converts and Budget Family Shoppers.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "category_relationship",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "In the last 30 days, on which of the following occasions did your household consume or serve organic dairy milk? Select all that apply.",
+            "options": [
+              "With breakfast cereal or oatmeal",
+              "In coffee, tea, or hot chocolate",
+              "As a drink on its own (glass with meals or snacks)",
+              "In cooking or baking (sauces, pancakes, etc.)",
+              "In children's lunchboxes or school snacks",
+              "In smoothies or protein shakes",
+              "None of the above — we did not consume organic dairy milk in the last 30 days"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "With breakfast cereal or oatmeal",
+                "value": 52.0
+              },
+              {
+                "label": "In coffee, tea, or hot chocolate",
+                "value": 44.0
+              },
+              {
+                "label": "As a drink on its own (glass with meals or snacks)",
+                "value": 38.0
+              },
+              {
+                "label": "In cooking or baking (sauces, pancakes, etc.)",
+                "value": 30.0
+              },
+              {
+                "label": "In children's lunchboxes or school snacks",
+                "value": 22.0
+              },
+              {
+                "label": "In smoothies or protein shakes",
+                "value": 18.0
+              },
+              {
+                "label": "None of the above — we did not consume organic dairy milk in the last 30 days",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: With breakfast cereal or oatmeal (52.00%).",
+            "distributionNote": "Breakfast and coffee occasions high due to Health-Conscious Singles and Urban Eco Parents; children's lunchboxes from Urban Eco Parents and Budget Family Shoppers; non-use from Skeptical Converts.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "usage_occasions",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In the last 30 days, about how many half-gallon (or 2-liter) containers of organic dairy milk did your household use?",
+            "options": [
+              "None",
+              "1 container",
+              "2–3 containers",
+              "4–5 containers",
+              "6–7 containers",
+              "8 or more containers"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "None",
+                "value": 9.0
+              },
+              {
+                "label": "1 container",
+                "value": 18.0
+              },
+              {
+                "label": "2–3 containers",
+                "value": 35.0
+              },
+              {
+                "label": "4–5 containers",
+                "value": 22.0
+              },
+              {
+                "label": "6–7 containers",
+                "value": 10.0
+              },
+              {
+                "label": "8 or more containers",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: 2–3 containers (35.00%).",
+            "distributionNote": "Moderate consumption (2-3) from Health-Conscious Singles and Convenience Seekers; higher volumes from Urban Eco Parents and Budget Family Shoppers; none from non-users.",
+            "N": 340,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and volume",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "Who in your household drinks organic dairy milk? Select all that apply.",
+            "options": [
+              "Adults (18 and over)",
+              "Teenagers (13–17)",
+              "Children (6–12)",
+              "Toddlers (1–5)",
+              "No one in my household drinks it"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Adults (18 and over)",
+                "value": 72.0
+              },
+              {
+                "label": "Teenagers (13–17)",
+                "value": 18.0
+              },
+              {
+                "label": "Children (6–12)",
+                "value": 22.0
+              },
+              {
+                "label": "Toddlers (1–5)",
+                "value": 12.0
+              },
+              {
+                "label": "No one in my household drinks it",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: Adults (18 and over) (72.00%).",
+            "distributionNote": "Adults dominate across all personas; children/toddlers from Urban Eco Parents and Budget Family Shoppers; no one from non-users.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "household_role",
+            "beatTitle": "Who is involved",
+            "beatCanonical": "household_role",
+            "multiSelect": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Who in your household is mainly responsible for deciding which organic dairy milk to buy?",
+            "options": [
+              "I am",
+              "My partner or spouse",
+              "I share the decision with someone else",
+              "Another adult in the household",
+              "My children",
+              "No one in particular"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "I am",
+                "value": 55.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 20.0
+              },
+              {
+                "label": "I share the decision with someone else",
+                "value": 15.0
+              },
+              {
+                "label": "Another adult in the household",
+                "value": 5.0
+              },
+              {
+                "label": "My children",
+                "value": 2.0
+              },
+              {
+                "label": "No one in particular",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I am (55.00%).",
+            "distributionNote": "Self-decision high among single-person households and primary shoppers; shared decisions from couples in Urban Eco Parent and Affluent Quality Seeker segments.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "household_role",
+            "beatTitle": "Who is involved",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "How important are each of the following reasons for choosing organic dairy milk over conventional milk?",
+            "options": [
+              "Health benefits and nutrition",
+              "Organic and clean-label appeal",
+              "Sustainability and ethical sourcing",
+              "Lactose intolerance and dairy-free alternatives"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Health benefits and nutrition",
+                "value": 38.0
+              },
+              {
+                "label": "Organic and clean-label appeal",
+                "value": 27.0
+              },
+              {
+                "label": "Sustainability and ethical sourcing",
+                "value": 22.0
+              },
+              {
+                "label": "Lactose intolerance and dairy-free alternatives",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Health benefits and nutrition (38.00%).",
+            "distributionNote": "Health benefits top for Health-Conscious Singles and Urban Eco Parents; sustainability for Eco Activists and Value-Conscious Environmentalists; lactose-free from Lactose-Intolerant Alternative Seekers.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "need_state",
+            "beatTitle": "Need state and motivation",
+            "beatCanonical": "need_state",
+            "ordered": true
+          }
+        ]
+      },
+      {
+        "id": "behavior",
+        "label": "Buying Behavior",
+        "questions": [
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Which of the following most often prompts you to buy organic dairy milk?",
+            "options": [
+              "We run out of it at home",
+              "It's part of my regular weekly grocery shop",
+              "I see it on special offer or discount",
+              "A specific meal or recipe calls for it",
+              "I buy it when I'm already in the store for other items",
+              "Other"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "We run out of it at home",
+                "value": 18.0
+              },
+              {
+                "label": "It's part of my regular weekly grocery shop",
+                "value": 42.0
+              },
+              {
+                "label": "I see it on special offer or discount",
+                "value": 22.0
+              },
+              {
+                "label": "A specific meal or recipe calls for it",
+                "value": 8.0
+              },
+              {
+                "label": "I buy it when I'm already in the store for other items",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: It's part of my regular weekly grocery shop (42.00%).",
+            "distributionNote": "Regular weekly shopping driven by Urban Eco Parent, Affluent Quality Seeker, Traditional Premium Buyer; special offers pulled by Budget Family Shopper and Value-Conscious Environmentalist.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Before buying a new type of organic dairy milk, where do you typically look for information about it?",
+            "options": [
+              "In-store labels and packaging",
+              "Online reviews or retailer websites",
+              "Recommendations from friends or family",
+              "Social media or food blogs",
+              "I don't look for information; I just pick one",
+              "Other"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "In-store labels and packaging",
+                "value": 35.0
+              },
+              {
+                "label": "Online reviews or retailer websites",
+                "value": 20.0
+              },
+              {
+                "label": "Recommendations from friends or family",
+                "value": 18.0
+              },
+              {
+                "label": "Social media or food blogs",
+                "value": 12.0
+              },
+              {
+                "label": "I don't look for information; I just pick one",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: In-store labels and packaging (35.00%).",
+            "distributionNote": "In-store labels dominate due to high in-store purchase behavior; online reviews from Digital Native Urbanite and Health-Conscious Single; social media from Eco Activist and Digital Native.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "How often do you typically buy organic dairy milk?",
+            "options": [
+              "More than once a week",
+              "About once a week",
+              "Every two to three weeks",
+              "About once a month",
+              "Less than once a month"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "More than once a week",
+                "value": 15.0
+              },
+              {
+                "label": "About once a week",
+                "value": 45.0
+              },
+              {
+                "label": "Every two to three weeks",
+                "value": 22.0
+              },
+              {
+                "label": "About once a month",
+                "value": 12.0
+              },
+              {
+                "label": "Less than once a month",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: About once a week (45.00%).",
+            "distributionNote": "Weekly purchasing is common across families and health-focused personas; less frequent from singles and lactose-intolerant due to smaller consumption.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "When you are standing in the dairy aisle, how much do the following factors influence your decision to buy organic dairy milk?",
+            "options": [
+              "Price compared to conventional milk",
+              "Certified organic label (e.g., EU Organic)",
+              "Freshness or best-before date",
+              "Packaging type (e.g., glass, plastic, carton)",
+              "Origin or local farm source"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Price compared to conventional milk",
+                "value": 28.0
+              },
+              {
+                "label": "Certified organic label (e.g., EU Organic)",
+                "value": 30.0
+              },
+              {
+                "label": "Freshness or best-before date",
+                "value": 22.0
+              },
+              {
+                "label": "Packaging type (e.g., glass, plastic, carton)",
+                "value": 12.0
+              },
+              {
+                "label": "Origin or local farm source",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Certified organic label (e.g., EU Organic) (30.00%).",
+            "distributionNote": "Price and organic label are top factors; freshness important for Convenience Seeker and Health-Conscious Single; packaging and origin driven by Eco Activist and Urban Eco Parent.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "purchase_cycle",
+            "beatTitle": "Purchase frequency and cycle",
+            "beatCanonical": "purchase_cycle",
+            "ordered": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Approximately how much does your household spend on organic dairy milk in a typical month?",
+            "options": [
+              "Less than €10",
+              "€10 to €19",
+              "€20 to €29",
+              "€30 to €39",
+              "€40 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Less than €10",
+                "value": 15.0
+              },
+              {
+                "label": "€10 to €19",
+                "value": 35.0
+              },
+              {
+                "label": "€20 to €29",
+                "value": 28.0
+              },
+              {
+                "label": "€30 to €39",
+                "value": 14.0
+              },
+              {
+                "label": "€40 or more",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: €10 to €19 (35.00%).",
+            "distributionNote": "Middle spending bands reflect medium income; higher spend from Affluent Quality Seeker and Urban Eco Parent; lower from singles and budget-conscious.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers"
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "Which of the following best describes how you decide which organic dairy milk to buy?",
+            "options": [
+              "I always buy the same type without thinking about it",
+              "I usually buy the same type but occasionally switch",
+              "I compare options each time I buy",
+              "I buy whatever is on offer or available",
+              "I try different types regularly"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "I always buy the same type without thinking about it",
+                "value": 20.0
+              },
+              {
+                "label": "I usually buy the same type but occasionally switch",
+                "value": 40.0
+              },
+              {
+                "label": "I compare options each time I buy",
+                "value": 18.0
+              },
+              {
+                "label": "I buy whatever is on offer or available",
+                "value": 12.0
+              },
+              {
+                "label": "I try different types regularly",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: I usually buy the same type but occasionally switch (40.00%).",
+            "distributionNote": "Habitual buying from Traditional Premium and Affluent; occasional switching from most; comparison from Health-Conscious and Gourmet; offer-driven from Budget and Value-Conscious.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "spend",
+            "beatTitle": "Category spend",
+            "beatCanonical": "spend"
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "How likely are you to switch to a different organic dairy milk if your usual choice is unavailable?",
+            "options": [
+              "Very likely — I'd pick any other organic option",
+              "Somewhat likely — I'd pick a different brand but same type",
+              "Not very likely — I'd wait until my usual choice is back in stock",
+              "Not at all likely — I'd buy conventional milk instead"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Very likely — I'd pick any other organic option",
+                "value": 30.0
+              },
+              {
+                "label": "Somewhat likely — I'd pick a different brand but same type",
+                "value": 40.0
+              },
+              {
+                "label": "Not very likely — I'd wait until my usual choice is back in stock",
+                "value": 15.0
+              },
+              {
+                "label": "Not at all likely — I'd buy conventional milk instead",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely — I'd pick a different brand but same type (40.00%).",
+            "distributionNote": "Most will switch within organic due to high organic commitment; some brand-loyal (Urban Eco Parent, Traditional Premium) wait; budget-conscious may buy conventional.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "repurchase",
+            "beatTitle": "Repeat and routine",
+            "beatCanonical": "repurchase"
+          }
+        ]
+      },
+      {
+        "id": "preferences",
+        "label": "Preferences & Expectations",
+        "questions": [
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "When buying organic dairy milk, which of the following attributes are non-negotiable for you? Select all that apply.",
+            "options": [
+              "Carries a certified organic label (e.g., EU Organic, Bio)",
+              "Fresh taste with no off-flavors",
+              "Produced without antibiotics or added hormones",
+              "Sourced from pasture-raised cows",
+              "Long enough shelf life to avoid waste",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Carries a certified organic label (e.g., EU Organic, Bio)",
+                "value": 82.0
+              },
+              {
+                "label": "Fresh taste with no off-flavors",
+                "value": 68.0
+              },
+              {
+                "label": "Produced without antibiotics or added hormones",
+                "value": 75.0
+              },
+              {
+                "label": "Sourced from pasture-raised cows",
+                "value": 61.0
+              },
+              {
+                "label": "Long enough shelf life to avoid waste",
+                "value": 45.0
+              },
+              {
+                "label": "None of the above",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Carries a certified organic label (e.g., EU Organic, Bio) (82.00%).",
+            "distributionNote": "Organic certification and no-antibiotics are near-universal across personas; pasture-raised driven by Eco Activist, Urban Eco Parent, and Gourmet Foodie; shelf life driven by Health-Conscious Single and Convenience Seeker.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "How important is a rich, creamy taste when you judge the quality of organic dairy milk?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "diverging",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 4.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 12.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 30.0
+              },
+              {
+                "label": "Very important",
+                "value": 36.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 18.0
+              }
+            ],
+            "insight": "Top response: Very important (36.00%).",
+            "distributionNote": "Creamy taste is important to Affluent Quality Seeker, Gourmet Foodie, and Traditional Premium Buyer; Budget Family and Eco Activist are less focused on texture, pulling toward moderate ratings.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "ordered": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which visual or sensory cue most strongly signals freshness to you when buying organic dairy milk?",
+            "options": [
+              "Pure white color",
+              "Thick, creamy consistency",
+              "High fat content (whole or 3.5%)",
+              "Sell-by date far in the future",
+              "Cold temperature in the store",
+              "Other"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Pure white color",
+                "value": 15.0
+              },
+              {
+                "label": "Thick, creamy consistency",
+                "value": 28.0
+              },
+              {
+                "label": "High fat content (whole or 3.5%)",
+                "value": 18.0
+              },
+              {
+                "label": "Sell-by date far in the future",
+                "value": 22.0
+              },
+              {
+                "label": "Cold temperature in the store",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Thick, creamy consistency (28.00%).",
+            "distributionNote": "Creamy consistency signals quality to Affluent and Gourmet; sell-by date important to Convenience Seeker and Health-Conscious Single; high fat content favored by Traditional Premium Buyer and Gourmet.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues"
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which packaging format do you prefer for organic dairy milk?",
+            "options": [
+              "Glass bottle (returnable)",
+              "Glass bottle (one-way)",
+              "Plastic bottle (recyclable)",
+              "Carton (Tetra Pak or similar)",
+              "Pouch",
+              "No preference"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "Glass bottle (returnable)",
+                "value": 18.0
+              },
+              {
+                "label": "Glass bottle (one-way)",
+                "value": 12.0
+              },
+              {
+                "label": "Plastic bottle (recyclable)",
+                "value": 20.0
+              },
+              {
+                "label": "Carton (Tetra Pak or similar)",
+                "value": 35.0
+              },
+              {
+                "label": "Pouch",
+                "value": 5.0
+              },
+              {
+                "label": "No preference",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Carton (Tetra Pak or similar) (35.00%).",
+            "distributionNote": "Carton preferred by Eco Activist and Value-Conscious Environmentalist for lower weight/eco credentials; glass favored by Traditional Premium Buyer and Gourmet; plastic chosen by Budget Family and Convenience Seeker for practicality.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and packaging",
+            "beatCanonical": "format_packaging"
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "Which of the following claims or certifications would most increase your trust in an organic dairy milk product? Select all that apply.",
+            "options": [
+              "USDA Organic or EU Organic certification",
+              "Grass-fed or pasture-raised claim",
+              "Non-GMO verified",
+              "Animal welfare certified (e.g., Certified Humane)",
+              "Carbon-neutral or regenerative farming claim",
+              "Local or regional dairy origin",
+              "None of the above"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "USDA Organic or EU Organic certification",
+                "value": 78.0
+              },
+              {
+                "label": "Grass-fed or pasture-raised claim",
+                "value": 55.0
+              },
+              {
+                "label": "Non-GMO verified",
+                "value": 42.0
+              },
+              {
+                "label": "Animal welfare certified (e.g., Certified Humane)",
+                "value": 48.0
+              },
+              {
+                "label": "Carbon-neutral or regenerative farming claim",
+                "value": 35.0
+              },
+              {
+                "label": "Local or regional dairy origin",
+                "value": 52.0
+              },
+              {
+                "label": "None of the above",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: USDA Organic or EU Organic certification (78.00%).",
+            "distributionNote": "EU Organic is baseline trust for all; grass-fed and animal welfare driven by Eco Activist and Urban Eco Parent; local origin important to Traditional Premium Buyer and Eco Activist; carbon-neutral resonates with Eco Activist and Value-Conscious Environmentalist.",
+            "N": 340,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "claims_credentials",
+            "beatTitle": "Claims and credentials",
+            "beatCanonical": "claims_credentials",
+            "multiSelect": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "If you had to choose between a locally sourced organic milk in plastic packaging and a non-local organic milk in glass packaging at the same price, which would you choose?",
+            "options": [
+              "Local origin in plastic packaging",
+              "Non-local origin in glass packaging",
+              "I would not buy either",
+              "I would need more information to decide"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "Local origin in plastic packaging",
+                "value": 42.0
+              },
+              {
+                "label": "Non-local origin in glass packaging",
+                "value": 25.0
+              },
+              {
+                "label": "I would not buy either",
+                "value": 8.0
+              },
+              {
+                "label": "I would need more information to decide",
+                "value": 25.0
+              }
+            ],
+            "insight": "Top response: Local origin in plastic packaging (42.00%).",
+            "distributionNote": "Local origin wins for Traditional Premium Buyer, Eco Activist, and Urban Eco Parent; glass packaging appeals to Affluent and Gourmet but not enough to override local; skeptics and convenience seekers need more info.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Compared to conventional dairy milk, how much more would you be willing to pay for organic dairy milk?",
+            "options": [
+              "I would not pay more for organic",
+              "Up to 10% more",
+              "11–25% more",
+              "26–50% more",
+              "More than 50% more"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I would not pay more for organic",
+                "value": 8.0
+              },
+              {
+                "label": "Up to 10% more",
+                "value": 28.0
+              },
+              {
+                "label": "11–25% more",
+                "value": 38.0
+              },
+              {
+                "label": "26–50% more",
+                "value": 18.0
+              },
+              {
+                "label": "More than 50% more",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 11–25% more (38.00%).",
+            "distributionNote": "Budget Family and Value-Conscious Environmentalist cap at 10%; most personas accept 11-25%; Affluent Quality Seeker and Gourmet Foodie willing to pay 26-50%+; Skeptical Convert and Budget Family anchor the 'not pay more' segment.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "value_expectation",
+            "beatTitle": "Value and willingness to pay",
+            "beatCanonical": "value_expectation"
+          }
+        ]
+      },
+      {
+        "id": "satisfaction",
+        "label": "Satisfaction & Future Intent",
+        "questions": [
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Overall, how satisfied are you with the organic dairy milk you currently buy?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 5.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 22.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 38.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (38.00%).",
+            "distributionNote": "Health-focused and premium personas (Affluent Quality Seeker, Gourmet Foodie, Urban Eco Parent) skew satisfied; budget and skeptical personas (Budget Family Shopper, Skeptical Convert) add mid/low tail.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "ordered": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which of the following aspects of organic dairy milk most contribute to your satisfaction? Select up to three.",
+            "options": [
+              "Taste",
+              "Price",
+              "Availability in stores",
+              "Packaging",
+              "Nutritional value",
+              "Organic certification",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Taste",
+                "value": 68.0
+              },
+              {
+                "label": "Price",
+                "value": 45.0
+              },
+              {
+                "label": "Availability in stores",
+                "value": 30.0
+              },
+              {
+                "label": "Packaging",
+                "value": 22.0
+              },
+              {
+                "label": "Nutritional value",
+                "value": 55.0
+              },
+              {
+                "label": "Organic certification",
+                "value": 50.0
+              },
+              {
+                "label": "None of the above",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Taste (68.00%).",
+            "distributionNote": "Taste and nutritional value lead across premium and health personas; price is key for budget and value-conscious; packaging resonates with eco groups.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "multiSelect": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "In the last 30 days, how often did you experience any of the following frustrations with the organic dairy milk you bought? Select all that apply.",
+            "options": [
+              "It spoiled before I could finish it",
+              "It was out of stock at my usual store",
+              "The plastic packaging felt wasteful",
+              "The carton was difficult to open or pour from",
+              "The taste or quality was inconsistent between purchases",
+              "I was unsure what the organic certification labels meant",
+              "None of these — I had no frustrations"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "It spoiled before I could finish it",
+                "value": 28.0
+              },
+              {
+                "label": "It was out of stock at my usual store",
+                "value": 25.0
+              },
+              {
+                "label": "The plastic packaging felt wasteful",
+                "value": 35.0
+              },
+              {
+                "label": "The carton was difficult to open or pour from",
+                "value": 12.0
+              },
+              {
+                "label": "The taste or quality was inconsistent between purchases",
+                "value": 18.0
+              },
+              {
+                "label": "I was unsure what the organic certification labels meant",
+                "value": 15.0
+              },
+              {
+                "label": "None of these — I had no frustrations",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: The plastic packaging felt wasteful (35.00%).",
+            "distributionNote": "Eco personas drive plastic waste; health singles and small households drive spoilage; convenience and digital natives drive out-of-stock.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Thinking about the last time you were disappointed with an organic dairy milk purchase, which single issue bothered you the most?",
+            "options": [
+              "It went bad before the sell-by date",
+              "The taste was weaker or more watery than I expected",
+              "The price felt too high for the quality I got",
+              "The packaging was damaged or leaked",
+              "It was not available in the size I wanted",
+              "I could not tell if it was truly fresh",
+              "None of these — I have not been disappointed"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "It went bad before the sell-by date",
+                "value": 22.0
+              },
+              {
+                "label": "The taste was weaker or more watery than I expected",
+                "value": 18.0
+              },
+              {
+                "label": "The price felt too high for the quality I got",
+                "value": 25.0
+              },
+              {
+                "label": "The packaging was damaged or leaked",
+                "value": 8.0
+              },
+              {
+                "label": "It was not available in the size I wanted",
+                "value": 10.0
+              },
+              {
+                "label": "I could not tell if it was truly fresh",
+                "value": 9.0
+              },
+              {
+                "label": "None of these — I have not been disappointed",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: The price felt too high for the quality I got (25.00%).",
+            "distributionNote": "Price-quality gap is top for budget and skeptical personas; spoilage is high for singles and small households; taste issues hit premium and gourmet.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction"
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "Which of the following would most likely make you switch away from the organic dairy milk you currently buy?",
+            "options": [
+              "A noticeable drop in taste or freshness",
+              "A price increase of 10% or more",
+              "Frequent out-of-stock at my regular store",
+              "A switch to less recyclable packaging",
+              "A loss of the organic certification on the label",
+              "I would not switch for any of these reasons"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "A noticeable drop in taste or freshness",
+                "value": 30.0
+              },
+              {
+                "label": "A price increase of 10% or more",
+                "value": 28.0
+              },
+              {
+                "label": "Frequent out-of-stock at my regular store",
+                "value": 15.0
+              },
+              {
+                "label": "A switch to less recyclable packaging",
+                "value": 12.0
+              },
+              {
+                "label": "A loss of the organic certification on the label",
+                "value": 10.0
+              },
+              {
+                "label": "I would not switch for any of these reasons",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: A noticeable drop in taste or freshness (30.00%).",
+            "distributionNote": "Taste and price are the biggest switch triggers across personas; eco groups care about packaging; loyal premium buyers are less likely to switch.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "switching",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "How likely are you to recommend organic dairy milk to a friend or family member?",
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 4.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 10.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 40.0
+              },
+              {
+                "label": "Very likely",
+                "value": 28.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely (40.00%).",
+            "distributionNote": "High satisfaction among eco and premium personas drives recommendation; budget and skeptical groups are more neutral.",
+            "N": 340,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "advocacy",
+            "beatTitle": "Recommend intent",
+            "beatCanonical": "advocacy",
+            "ordered": true
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Looking ahead 12 months, how do you expect your household's use of organic dairy milk to change?",
+            "options": [
+              "Increase significantly",
+              "Increase slightly",
+              "Stay about the same",
+              "Decrease slightly",
+              "Decrease significantly",
+              "Stop buying organic dairy milk altogether"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Increase significantly",
+                "value": 12.0
+              },
+              {
+                "label": "Increase slightly",
+                "value": 32.0
+              },
+              {
+                "label": "Stay about the same",
+                "value": 40.0
+              },
+              {
+                "label": "Decrease slightly",
+                "value": 10.0
+              },
+              {
+                "label": "Decrease significantly",
+                "value": 4.0
+              },
+              {
+                "label": "Stop buying organic dairy milk altogether",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Stay about the same (40.00%).",
+            "distributionNote": "Growth driven by eco and health personas; budget and skeptical groups may reduce due to price; overall positive sentiment supports slight increase.",
+            "N": 340,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "future_use",
+            "beatTitle": "Future category use",
+            "beatCanonical": "future_use"
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 28,
+    "counts_by_tab": {
+      "consumer_profile": 7,
+      "buying_behavior": 7,
+      "preferences_expectations": 7,
+      "satisfaction_future_intent": 7
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": true,
+    "warnings": [
+      "Grounding is thin — most answers are inferred, not data-backed.",
+      "Tab 'consumer_profile' under target: 7/8.",
+      "Tab 'buying_behavior' under target: 7/8.",
+      "Tab 'preferences_expectations' under target: 7/8.",
+      "Tab 'satisfaction_future_intent' under target: 7/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "profile": [
+        {
+          "beatId": "category_relationship",
+          "title": "Category relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "usage_occasions",
+          "title": "Usage occasions",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "usage_frequency",
+          "title": "Usage frequency and volume",
+          "canonical": "usage_frequency",
+          "order": 3
+        },
+        {
+          "beatId": "household_role",
+          "title": "Who is involved",
+          "canonical": "household_role",
+          "order": 4
+        },
+        {
+          "beatId": "need_state",
+          "title": "Need state and motivation",
+          "canonical": "need_state",
+          "order": 5
+        }
+      ],
+      "behavior": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "What starts a purchase",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery",
+          "title": "Discovery and information",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "channel",
+          "title": "Where they buy",
+          "canonical": "channel",
+          "order": 3
+        },
+        {
+          "beatId": "purchase_cycle",
+          "title": "Purchase frequency and cycle",
+          "canonical": "purchase_cycle",
+          "order": 4
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "Decision drivers",
+          "canonical": "decision_drivers",
+          "order": 5
+        },
+        {
+          "beatId": "spend",
+          "title": "Category spend",
+          "canonical": "spend",
+          "order": 6
+        },
+        {
+          "beatId": "repurchase",
+          "title": "Repeat and routine",
+          "canonical": "repurchase",
+          "order": 7
+        }
+      ],
+      "preferences": [
+        {
+          "beatId": "must_haves",
+          "title": "Must-have attributes",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Quality cues",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "format_packaging",
+          "title": "Format and packaging",
+          "canonical": "format_packaging",
+          "order": 3
+        },
+        {
+          "beatId": "claims_credentials",
+          "title": "Claims and credentials",
+          "canonical": "claims_credentials",
+          "order": 4
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs",
+          "canonical": "tradeoffs",
+          "order": 5
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value and willingness to pay",
+          "canonical": "value_expectation",
+          "order": 6
+        }
+      ],
+      "satisfaction": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What drives satisfaction",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching",
+          "title": "Switching triggers",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "advocacy",
+          "title": "Recommend intent",
+          "canonical": "advocacy",
+          "order": 5
+        },
+        {
+          "beatId": "future_use",
+          "title": "Future category use",
+          "canonical": "future_use",
+          "order": 6
+        }
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing the respondent's relationship with organic milk, then moves through their usage occasions, frequency, household roles, and underlying motivations. It then traces the purchase journey from triggers and discovery through channels, cycle, decision drivers, spend, and routine. Next, it explores product expectations from must-haves and quality cues to packaging, claims, trade-offs, and value. Finally, it assesses satisfaction, friction, switching triggers, advocacy, and future intent, ending on a forward-looking note.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "For consumer_profile, kept the canonical arc largely intact but emphasized usage occasions and frequency to reflect milk's perishable, consumable nature; no need for replacement/upgrade beats.",
+      "For buying_behavior, added a distinct 'discovery' beat early to capture how European shoppers learn about organic milk options, including online and in-store, given the growing market and digital adoption. Placed 'spend' after 'decision_dri",
+      "For preferences_expectations, included 'format_packaging' to address lactose-free and UHT variants, which are relevant to European consumers and the lactose-intolerant persona. Also emphasized 'claims_credentials' due to high environmental ",
+      "For satisfaction_future_intent, followed the canonical order but placed 'advocacy' before 'future_use' to end on a forward-looking, less sensitive note. 'Switching' is kept late as it involves hypothetical behavior change.",
+      "No beats were dropped; all canonical beats were used where applicable, with no duplicate canonical mappings."
+    ],
+    "classification_reason": "Organic milk is a retail grocery product purchased by households for personal consumption, making it a clear B2C market.",
+    "generated_at": "2026-08-03T10:58:27.530573+00:00",
+    "current_date": "2026-08-03",
+    "sample_size": 2500,
+    "N": 340,
+    "chart_kinds_used": [
+      "donut",
+      "gauge",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "radar",
+      "stacked",
+      "vbar",
+      "vbar-likert"
+    ]
+  }
+}

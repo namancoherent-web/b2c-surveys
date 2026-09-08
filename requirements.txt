@@ -1,0 +1,15 @@
+langgraph==0.2.74
+langchain-anthropic==0.3.3
+langchain-openai==0.2.14
+pydantic==2.10.4
+psycopg2-binary==2.9.10
+python-dotenv==1.0.1
+beautifulsoup4==4.12.3
+ddgs==9.0.0
+requests==2.32.3
+streamlit==1.41.1
+matplotlib>=3.8
+reportlab>=4.0
+rq>=2.0
+redis>=5.0
+rq-dashboard>=0.8

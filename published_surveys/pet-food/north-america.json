@@ -1,0 +1,2624 @@
+{
+  "surveyDefinition": {
+    "title": "Pet Food — consumer survey (North America)",
+    "category": "Pet Food",
+    "region": "North America",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 4 behavioural segments each pet-owning household belongs to, based on feeding routines, purchase behaviour, and the balance of health, convenience, and price motivations.",
+    "segments": [
+      {
+        "id": "health_led_managers",
+        "name": "Health-Led Managers",
+        "description": "Households that actively manage their pet's diet for health reasons, often with a vet's input, and are willing to pay a premium for specialized or prescription food. They research ingredients and are loyal to brands that address their pet's specific condition."
+      },
+      {
+        "id": "value_driven_routine_buyers",
+        "name": "Value-Driven Routine Buyers",
+        "description": "Households that buy the same food on a regular schedule, prioritizing price and availability over novelty. They are not deeply engaged with ingredients but will switch if the price rises or a coupon appears."
+      },
+      {
+        "id": "convenience_seeking_subscribers",
+        "name": "Convenience-Seeking Subscribers",
+        "description": "Households that use auto-delivery or online shopping to avoid running out and carrying heavy bags. They value time-saving and reliability over price or ingredient exploration, and are open to trying new brands if the subscription is easy."
+      },
+      {
+        "id": "premium_indulgence_owners",
+        "name": "Premium Indulgence Owners",
+        "description": "Households that treat pet food as an extension of care and pampering, choosing premium, natural, or eco-friendly options regardless of cost. They are influenced by branding, ingredient stories, and sustainability claims."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Pet Food buyers in North America. It asks how people use Pet Food, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+    "whoseContextThisIs": "Adults in North America who buy or use Pet Food for personal or household use. Respondents qualify if they: Primary decision-maker for pet food purchases in the household; Currently owns at least one pet that requires commercial pet food; Has purchased pet food within the last 3 months. Excluded: Professional breeders, kennels, shelters, or veterinary clinics purchasing for commercial use; People who do not own pets; People who feed pets exclusively homemade or raw diets with no commercial pet food purchases.",
+    "whyTheseRespondents": "Household pet owners buy pet food, pay for it themselves, and decide which brand to purchase, typically at the store or online. While some businesses (kennels, shelters) also buy pet food, the dominant consumer market is individual pet owners purchasing for their own pets.",
+    "respondentBehaviours": [
+      "Purchases pet food regularly (weekly, bi-weekly, or monthly)",
+      "Chooses between dry, wet, raw, or specialty diets",
+      "Influenced by brand, ingredients, price, and pet health needs",
+      "May subscribe to auto-delivery or buy in bulk"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 33,
+      "sections": [
+        {
+          "id": "pet_household_profile",
+          "label": "Pet Household Profile & Feeding Context",
+          "covers": "Establish the pet household composition, feeding routines, and the role of the respondent as decision-maker, to segment by management style and need state.",
+          "questions": 7
+        },
+        {
+          "id": "purchase_journey_and_channels",
+          "label": "Purchase Journey & Channel Behaviour",
+          "covers": "Map how households buy pet food: triggers, channels, frequency, spend, and the decision drivers at the shelf or online.",
+          "questions": 7
+        },
+        {
+          "id": "product_requirements_and_tradeoffs",
+          "label": "Product Requirements & Value Trade-offs",
+          "covers": "Understand what households require from pet food—format, ingredients, claims—and how they trade off price, health, and convenience.",
+          "questions": 8
+        },
+        {
+          "id": "satisfaction_and_switching_risk",
+          "label": "Satisfaction, Loyalty & Switching Risk",
+          "covers": "Measure satisfaction with current food, identify friction points, and assess the likelihood of switching or recommending.",
+          "questions": 5
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by profiling the pet household and feeding routine, establishing who the pet is and how the household manages its diet. It then moves through the purchase journey—triggers, channels, frequency, spend, and decision drivers—to reveal how and why they buy. Next, it explores product requirements and trade-offs, including must-haves, quality cues, and price-value expectations, to understand what they want from the food. Finally, it measures satisfaction, friction, and switching risk to identify loyalty and future intent. This arc separates the four segments by their management…"
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Pet Food in North America — who Primary decision-maker for pet food purchases in the household; Currently owns at least one pet that requires commercial pet food; Has purchased pet food within the last 3 months. The survey targets the individual consumer who buys pet food for their own pets, as they are the primary purchasers and decision-makers in the B2C pet food market.",
+    "marketSegment": "Pet Food",
+    "region": "North America",
+    "inclusionCriteria": [
+      "Primary decision-maker for pet food purchases in the household",
+      "Currently owns at least one pet that requires commercial pet food",
+      "Has purchased pet food within the last 3 months"
+    ],
+    "behaviors": [
+      "Purchases pet food regularly (weekly, bi-weekly, or monthly)",
+      "Chooses between dry, wet, raw, or specialty diets",
+      "Influenced by brand, ingredients, price, and pet health needs",
+      "May subscribe to auto-delivery or buy in bulk"
+    ],
+    "exclusions": [
+      "Professional breeders, kennels, shelters, or veterinary clinics purchasing for commercial use",
+      "People who do not own pets",
+      "People who feed pets exclusively homemade or raw diets with no commercial pet food purchases"
+    ],
+    "contextDemographics": {
+      "age": "18-75",
+      "income": "All income levels, but higher spend among middle-to-upper income households",
+      "household": "Households with at least one pet (dog, cat, or other companion animal)"
+    },
+    "assumptions": [
+      "The category includes all types of pet food (dog, cat, other) and all formats (dry, wet, treats).",
+      "The consumer market is the focus; commercial buyers are excluded."
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Pet Food",
+  "slug": "pet-food",
+  "region": "north-america",
+  "frontend": {
+    "sections": [
+      {
+        "id": "pet_household_profile",
+        "label": "Pet Household Profile & Feeding Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "How many pets do you currently feed at home?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "1 pet",
+              "2 pets",
+              "3 pets",
+              "4 or more pets"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "1 pet",
+                "value": 44.0
+              },
+              {
+                "label": "2 pets",
+                "value": 33.0
+              },
+              {
+                "label": "3 pets",
+                "value": 14.0
+              },
+              {
+                "label": "4 or more pets",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: 1 pet (44.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "pet_household_composition",
+            "beatTitle": "Pets in the household",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "Which pets live in your household?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Dog only",
+              "Cat only",
+              "Both dogs and cats",
+              "Dogs and other pets",
+              "Cats and other pets",
+              "Dogs, cats, and other pets",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Dog only",
+                "value": 38.0
+              },
+              {
+                "label": "Cat only",
+                "value": 27.0
+              },
+              {
+                "label": "Both dogs and cats",
+                "value": 18.0
+              },
+              {
+                "label": "Dogs and other pets",
+                "value": 6.0
+              },
+              {
+                "label": "Cats and other pets",
+                "value": 5.0
+              },
+              {
+                "label": "Dogs, cats, and other pets",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Dog only (38.00%).",
+            "distributionNote": "Dog-only households are the largest group, led by Value-Driven Routine Buyers and Premium Indulgence Owners.",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "pet_household_composition",
+            "beatTitle": "Pets in the household",
+            "beatCanonical": "category_entry",
+            "multiSelect": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "How would you describe your pet's main meal routine?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Free-fed — food is always available",
+              "Scheduled meals — set times each day",
+              "Mixed — scheduled meals plus treats/snacks",
+              "Special diet — vet-prescribed or medical",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Free-fed — food is always available",
+                "value": 21.0
+              },
+              {
+                "label": "Scheduled meals — set times each day",
+                "value": 38.0
+              },
+              {
+                "label": "Mixed — scheduled meals plus treats/snacks",
+                "value": 27.0
+              },
+              {
+                "label": "Special diet — vet-prescribed or medical",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Scheduled meals — set times each day (38.00%).",
+            "distributionNote": "Health-Led Managers Households drive the Special diet segment.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "pet_household_composition",
+            "beatTitle": "Pets in the household",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In the last 30 days, how often did you buy pet food?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Once",
+              "Twice",
+              "Three times",
+              "Four or more times"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Once",
+                "value": 35.0
+              },
+              {
+                "label": "Twice",
+                "value": 34.0
+              },
+              {
+                "label": "Three times",
+                "value": 17.0
+              },
+              {
+                "label": "Four or more times",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: Once (35.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "feeding_routine",
+            "beatTitle": "Feeding routine",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "Who recommended the food your pet eats most often?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "My veterinarian",
+              "A breeder or shelter",
+              "A friend or family member",
+              "Online reviews or social media",
+              "No one — I chose it myself",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "My veterinarian",
+                "value": 28.0
+              },
+              {
+                "label": "A breeder or shelter",
+                "value": 9.0
+              },
+              {
+                "label": "A friend or family member",
+                "value": 18.0
+              },
+              {
+                "label": "Online reviews or social media",
+                "value": 15.0
+              },
+              {
+                "label": "No one — I chose it myself",
+                "value": 25.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: My veterinarian (28.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "dietary_management",
+            "beatTitle": "Dietary management",
+            "beatCanonical": "need_state"
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How would you describe your main goal when choosing pet food?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Keeping my pet healthy and active",
+              "Managing a specific health issue",
+              "Feeding my pet as naturally as possible",
+              "Getting the best value for my money",
+              "Convenience — making feeding easy",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Keeping my pet healthy and active",
+                "value": 34.0
+              },
+              {
+                "label": "Managing a specific health issue",
+                "value": 18.0
+              },
+              {
+                "label": "Feeding my pet as naturally as possible",
+                "value": 12.0
+              },
+              {
+                "label": "Getting the best value for my money",
+                "value": 22.0
+              },
+              {
+                "label": "Convenience — making feeding easy",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Keeping my pet healthy and active (34.00%).",
+            "distributionNote": "Health-Led Managers Households and Premium Indulgence Owners prioritize health and natural feeding.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "dietary_management",
+            "beatTitle": "Dietary management",
+            "beatCanonical": "need_state"
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Who in your household decides which pet food to buy?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I do",
+              "My partner or another adult does",
+              "We decide together",
+              "My children or other family members do"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I do",
+                "value": 62.0
+              },
+              {
+                "label": "My partner or another adult does",
+                "value": 12.0
+              },
+              {
+                "label": "We decide together",
+                "value": 22.0
+              },
+              {
+                "label": "My children or other family members do",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I do (62.00%).",
+            "distributionNote": "Joint decisions are more common in family-oriented segments like Value-Driven Routine Buyers.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "decision_maker_role",
+            "beatTitle": "Decision-maker role",
+            "beatCanonical": "household_role"
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey_and_channels",
+        "label": "Purchase Journey & Channel Behaviour",
+        "questions": [
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "What usually makes you decide it's time to buy more pet food?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "The bag or container is almost empty",
+              "My pet starts acting hungry or begging more",
+              "I notice a sale or discount at the store",
+              "It's just part of my regular shopping routine",
+              "I run out completely and have to make an emergency trip",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "The bag or container is almost empty",
+                "value": 38.0
+              },
+              {
+                "label": "My pet starts acting hungry or begging more",
+                "value": 12.0
+              },
+              {
+                "label": "I notice a sale or discount at the store",
+                "value": 10.0
+              },
+              {
+                "label": "It's just part of my regular shopping routine",
+                "value": 28.0
+              },
+              {
+                "label": "I run out completely and have to make an emergency trip",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: The bag or container is almost empty (38.00%).",
+            "distributionNote": "Health-Led Managers and Premium Indulgence Owners are more likely to notice hunger cues or run out due to specialized diets.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_triggers",
+            "beatTitle": "What starts a pet food purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "In the last 30 days, which of these started a pet food purchase for you?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "We were almost out of food",
+              "A vet recommended a change",
+              "A sale or coupon appeared",
+              "We got a new pet",
+              "The pet refused the current food",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "We were almost out of food",
+                "value": 38.0
+              },
+              {
+                "label": "A vet recommended a change",
+                "value": 14.0
+              },
+              {
+                "label": "A sale or coupon appeared",
+                "value": 22.0
+              },
+              {
+                "label": "We got a new pet",
+                "value": 8.0
+              },
+              {
+                "label": "The pet refused the current food",
+                "value": 13.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: We were almost out of food (38.00%).",
+            "distributionNote": "Health-Led Managers and Premium Indulgence Owners contribute to vet-recommended and refusal triggers; sale/coupon is elevated by price-sensitive segments.",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "purchase_triggers",
+            "beatTitle": "What starts a pet food purchase",
+            "beatCanonical": "purchase_trigger",
+            "multiSelect": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Where do you typically buy your pet food?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Large supermarket or hypermarket",
+              "Pet specialty store",
+              "Online retailer (e.g., Amazon, Chewy)",
+              "Discount or warehouse club",
+              "Veterinarian's office",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Large supermarket or hypermarket",
+                "value": 30.0
+              },
+              {
+                "label": "Pet specialty store",
+                "value": 25.0
+              },
+              {
+                "label": "Online retailer (e.g., Amazon, Chewy)",
+                "value": 25.0
+              },
+              {
+                "label": "Discount or warehouse club",
+                "value": 10.0
+              },
+              {
+                "label": "Veterinarian's office",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Large supermarket or hypermarket (30.00%).",
+            "distributionNote": "Value-Driven Routine Buyers favor supermarkets and warehouse clubs; Health-Led Managers are more likely to buy from vets.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "shopping_channels",
+            "beatTitle": "Where pet food is bought",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How much pet food do you usually buy at one time?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "One small bag or can (enough for a few days)",
+              "One medium bag (enough for 1-2 weeks)",
+              "One large bag (enough for 3-4 weeks)",
+              "Multiple bags or cans (enough for a month or more)",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "One small bag or can (enough for a few days)",
+                "value": 10.0
+              },
+              {
+                "label": "One medium bag (enough for 1-2 weeks)",
+                "value": 30.0
+              },
+              {
+                "label": "One large bag (enough for 3-4 weeks)",
+                "value": 35.0
+              },
+              {
+                "label": "Multiple bags or cans (enough for a month or more)",
+                "value": 20.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: One large bag (enough for 3-4 weeks) (35.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "purchase_frequency_and_cycle",
+            "beatTitle": "How often pet food is bought",
+            "beatCanonical": "purchase_cycle"
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "On average, how much do you spend on pet food in a typical month?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $20",
+              "$20-$39",
+              "$40-$59",
+              "$60-$79",
+              "$80-$99",
+              "$100 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Under $20",
+                "value": 10.0
+              },
+              {
+                "label": "$20-$39",
+                "value": 25.0
+              },
+              {
+                "label": "$40-$59",
+                "value": 25.0
+              },
+              {
+                "label": "$60-$79",
+                "value": 15.0
+              },
+              {
+                "label": "$80-$99",
+                "value": 10.0
+              },
+              {
+                "label": "$100 or more",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: $20-$39 (25.00%).",
+            "distributionNote": "Premium Indulgence Owners and Health-Led Managers drive the higher spend brackets.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "category_spend",
+            "beatTitle": "Monthly pet food spend",
+            "beatCanonical": "spend"
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "It is the cheapest option",
+              "It is on sale or I have a coupon",
+              "It is the easiest to find in my usual store",
+              "It has the ingredient list I trust most",
+              "It is recommended by my vet",
+              "It is from a brand I already know and trust",
+              "It has the most appealing packaging or story"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "It is the cheapest option",
+                "value": 15.0
+              },
+              {
+                "label": "It is on sale or I have a coupon",
+                "value": 18.0
+              },
+              {
+                "label": "It is the easiest to find in my usual store",
+                "value": 12.0
+              },
+              {
+                "label": "It has the ingredient list I trust most",
+                "value": 20.0
+              },
+              {
+                "label": "It is recommended by my vet",
+                "value": 15.0
+              },
+              {
+                "label": "It is from a brand I already know and trust",
+                "value": 15.0
+              },
+              {
+                "label": "It has the most appealing packaging or story",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: It has the ingredient list I trust most (20.00%).",
+            "distributionNote": "Value-Driven Routine Buyers prioritize price and sales; Health-Led Managers and Premium Indulgence Owners are driven by ingredients and vet recommendations.",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "decision_drivers",
+            "beatTitle": "What decides the choice",
+            "beatCanonical": "decision_drivers"
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "When choosing between pet foods at the store, which factor most often decides what you put in your cart?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "The price compared to other options",
+              "The ingredient list and nutritional content",
+              "Whether my pet has eaten it before and liked it",
+              "The brand's reputation or past recall history",
+              "Special claims like 'grain-free' or 'organic'",
+              "It's what's on sale or has a coupon",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The price compared to other options",
+                "value": 20.0
+              },
+              {
+                "label": "The ingredient list and nutritional content",
+                "value": 25.0
+              },
+              {
+                "label": "Whether my pet has eaten it before and liked it",
+                "value": 25.0
+              },
+              {
+                "label": "The brand's reputation or past recall history",
+                "value": 10.0
+              },
+              {
+                "label": "Special claims like 'grain-free' or 'organic'",
+                "value": 10.0
+              },
+              {
+                "label": "It's what's on sale or has a coupon",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: The ingredient list and nutritional content (25.00%).",
+            "distributionNote": "Health-Led Managers and Premium Indulgence Owners focus on ingredients and claims; Value-Driven Routine Buyers are price- and pet-acceptance-driven.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "decision_drivers",
+            "beatTitle": "What decides the choice",
+            "beatCanonical": "decision_drivers"
+          }
+        ]
+      },
+      {
+        "id": "product_requirements_and_tradeoffs",
+        "label": "Product Requirements & Value Trade-offs",
+        "questions": [
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "Which must a pet food have for you to buy it?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "My pet will eat it",
+              "It helps with a specific health issue",
+              "It uses natural ingredients",
+              "It is affordable for my budget",
+              "It is easy to find in stores",
+              "It comes in a size that fits my pet",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "My pet will eat it",
+                "value": 78.0
+              },
+              {
+                "label": "It helps with a specific health issue",
+                "value": 45.0
+              },
+              {
+                "label": "It uses natural ingredients",
+                "value": 38.0
+              },
+              {
+                "label": "It is affordable for my budget",
+                "value": 52.0
+              },
+              {
+                "label": "It is easy to find in stores",
+                "value": 30.0
+              },
+              {
+                "label": "It comes in a size that fits my pet",
+                "value": 22.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: My pet will eat it (78.00%).",
+            "distributionNote": "Health-Led Managers Households and Value-Driven Routine Buyers both prioritize palatability; Value-Driven and Premium Indulgence Owners split on affordability vs. natural ingredients.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_have_attributes",
+            "beatTitle": "Non-negotiable product attributes",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "When you first open a new bag of pet food, what tells you it is good quality?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "The smell",
+              "The texture of the kibble",
+              "The ingredient list on the bag",
+              "The brand name",
+              "The price",
+              "The packaging looks premium",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The smell",
+                "value": 18.0
+              },
+              {
+                "label": "The texture of the kibble",
+                "value": 12.0
+              },
+              {
+                "label": "The ingredient list on the bag",
+                "value": 35.0
+              },
+              {
+                "label": "The brand name",
+                "value": 20.0
+              },
+              {
+                "label": "The price",
+                "value": 8.0
+              },
+              {
+                "label": "The packaging looks premium",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: The ingredient list on the bag (35.00%).",
+            "distributionNote": "Health-Led Managers and Premium Indulgence Owners rely on ingredient lists and brand reputation; Value-Driven Routine Buyers lean on brand familiarity.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Signals of quality",
+            "beatCanonical": "quality_cues"
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "How would you describe the food your pet eats most often?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Dry kibble only",
+              "Wet food only",
+              "A mix of dry and wet",
+              "Raw or fresh-prepared food",
+              "Vet-prescribed or therapeutic diet",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Dry kibble only",
+                "value": 45.0
+              },
+              {
+                "label": "Wet food only",
+                "value": 12.0
+              },
+              {
+                "label": "A mix of dry and wet",
+                "value": 28.0
+              },
+              {
+                "label": "Raw or fresh-prepared food",
+                "value": 8.0
+              },
+              {
+                "label": "Vet-prescribed or therapeutic diet",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Dry kibble only (45.00%).",
+            "distributionNote": "Premium Indulgence Owners and Health-Led Managers are more likely to mix or use fresh/premium formats.",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "format_and_packaging_preferences",
+            "beatTitle": "Preferred formats and pack sizes",
+            "beatCanonical": "format_packaging"
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which packaging features matter most to you when buying pet food?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Easy to open and close",
+              "Resealable to keep food fresh",
+              "Light enough to carry",
+              "Comes in a large bulk size",
+              "Comes in single-serving pouches",
+              "Recyclable or compostable packaging",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Easy to open and close",
+                "value": 55.0
+              },
+              {
+                "label": "Resealable to keep food fresh",
+                "value": 62.0
+              },
+              {
+                "label": "Light enough to carry",
+                "value": 35.0
+              },
+              {
+                "label": "Comes in a large bulk size",
+                "value": 28.0
+              },
+              {
+                "label": "Comes in single-serving pouches",
+                "value": 18.0
+              },
+              {
+                "label": "Recyclable or compostable packaging",
+                "value": 25.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Resealable to keep food fresh (62.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "format_and_packaging_preferences",
+            "beatTitle": "Preferred formats and pack sizes",
+            "beatCanonical": "format_packaging",
+            "multiSelect": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "How important is it that your pet food is certified organic, sustainable, or grain-free?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 15.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 25.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 30.0
+              },
+              {
+                "label": "Very important",
+                "value": 20.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Moderately important (30.00%).",
+            "distributionNote": "Premium Indulgence Owners and Health-Led Managers pull toward very/extremely important.",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "claims_and_credentials",
+            "beatTitle": "Claims that matter",
+            "beatCanonical": "claims_credentials",
+            "ordered": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which claims on a pet food package would make you more likely to buy it?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Made with real meat as the first ingredient",
+              "Certified organic",
+              "Sustainably sourced ingredients",
+              "Made in your country",
+              "No artificial colors or preservatives",
+              "Veterinarian recommended",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Made with real meat as the first ingredient",
+                "value": 65.0
+              },
+              {
+                "label": "Certified organic",
+                "value": 25.0
+              },
+              {
+                "label": "Sustainably sourced ingredients",
+                "value": 30.0
+              },
+              {
+                "label": "Made in your country",
+                "value": 40.0
+              },
+              {
+                "label": "No artificial colors or preservatives",
+                "value": 50.0
+              },
+              {
+                "label": "Veterinarian recommended",
+                "value": 45.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Made with real meat as the first ingredient (65.00%).",
+            "distributionNote": "Health-Led Managers and Value-Driven Routine Buyers respond to vet recommendation and real meat.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "claims_and_credentials",
+            "beatTitle": "Claims that matter",
+            "beatCanonical": "claims_credentials",
+            "multiSelect": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "If you had to give up one thing to stay within your pet food budget, which would it be?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Premium ingredients",
+              "A brand my pet already likes",
+              "Convenient packaging",
+              "Eco-friendly sourcing",
+              "A specific flavor or formula",
+              "Buying in bulk",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Premium ingredients",
+                "value": 30.0
+              },
+              {
+                "label": "A brand my pet already likes",
+                "value": 20.0
+              },
+              {
+                "label": "Convenient packaging",
+                "value": 15.0
+              },
+              {
+                "label": "Eco-friendly sourcing",
+                "value": 10.0
+              },
+              {
+                "label": "A specific flavor or formula",
+                "value": 12.0
+              },
+              {
+                "label": "Buying in bulk",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Premium ingredients (30.00%).",
+            "distributionNote": "Value-Driven Routine Buyers and Budget-conscious segments would give up premium ingredients first; Premium Indulgence Owners are less willing to sacrifice eco-friendly sourcing.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price, health, and convenience",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "How much more would you pay per bag for pet food that meets all your must-haves?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Nothing extra",
+              "Up to 10% more",
+              "11% to 25% more",
+              "26% to 50% more",
+              "More than 50% extra"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Nothing extra",
+                "value": 20.0
+              },
+              {
+                "label": "Up to 10% more",
+                "value": 35.0
+              },
+              {
+                "label": "11% to 25% more",
+                "value": 25.0
+              },
+              {
+                "label": "26% to 50% more",
+                "value": 12.0
+              },
+              {
+                "label": "More than 50% extra",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Up to 10% more (35.00%).",
+            "distributionNote": "Health-Led Managers and Premium Indulgence Owners are willing to pay more for specialized or premium options.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "value_expectation",
+            "beatTitle": "Value for money expectations",
+            "beatCanonical": "value_expectation"
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_and_switching_risk",
+        "label": "Satisfaction, Loyalty & Switching Risk",
+        "questions": [
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which of the following most often disappoints you about the pet food you buy?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "My pet refuses to eat it",
+              "It causes digestive issues",
+              "The quality seems inconsistent between bags",
+              "It costs more than I think it should",
+              "The ingredients are not what I expected",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "My pet refuses to eat it",
+                "value": 24.0
+              },
+              {
+                "label": "It causes digestive issues",
+                "value": 16.0
+              },
+              {
+                "label": "The quality seems inconsistent between bags",
+                "value": 12.0
+              },
+              {
+                "label": "It costs more than I think it should",
+                "value": 27.0
+              },
+              {
+                "label": "The ingredients are not what I expected",
+                "value": 13.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: It costs more than I think it should (27.00%).",
+            "distributionNote": "Price-sensitive segments drive the cost complaint; picky-eater pain points from Health-Led and Premium segments elevate refusal and ingredient concerns.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What satisfies or disappoints",
+            "beatCanonical": "satisfaction_drivers"
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "In the last 30 days, which of these problems have you had with pet food?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "My pet went on a hunger strike and refused to eat",
+              "The bag was torn or damaged when it arrived",
+              "I ran out before I could get to the store",
+              "The food gave my pet an upset stomach",
+              "I had to carry a heavy bag home from the store",
+              "I couldn't find the specific food my pet needs",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "My pet went on a hunger strike and refused to eat",
+                "value": 18.0
+              },
+              {
+                "label": "The bag was torn or damaged when it arrived",
+                "value": 9.0
+              },
+              {
+                "label": "I ran out before I could get to the store",
+                "value": 22.0
+              },
+              {
+                "label": "The food gave my pet an upset stomach",
+                "value": 12.0
+              },
+              {
+                "label": "I had to carry a heavy bag home from the store",
+                "value": 15.0
+              },
+              {
+                "label": "I couldn't find the specific food my pet needs",
+                "value": 10.0
+              },
+              {
+                "label": "None of these",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: I ran out before I could get to the store (22.00%).",
+            "distributionNote": "Health-Led Managers report refusal and digestive problems.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "friction_points",
+            "beatTitle": "Frustrations and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "How likely are you to switch to a different pet food in the next 12 months?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 22.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 24.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 22.0
+              },
+              {
+                "label": "Very likely",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Somewhat unlikely (24.00%).",
+            "distributionNote": "Brand-loyal Health-Led and Premium segments are unlikely to switch; price-sensitive and convenience segments show moderate switching intent.",
+            "N": 490,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "switching_triggers",
+            "beatTitle": "What would make them switch",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "What would most likely make you switch to a different pet food?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "A recall or safety warning",
+              "My pet stops eating it",
+              "The price goes up noticeably",
+              "A vet recommends something else",
+              "I find a food with better ingredients",
+              "I would not switch"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "A recall or safety warning",
+                "value": 28.0
+              },
+              {
+                "label": "My pet stops eating it",
+                "value": 22.0
+              },
+              {
+                "label": "The price goes up noticeably",
+                "value": 18.0
+              },
+              {
+                "label": "A vet recommends something else",
+                "value": 15.0
+              },
+              {
+                "label": "I find a food with better ingredients",
+                "value": 12.0
+              },
+              {
+                "label": "I would not switch",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: A recall or safety warning (28.00%).",
+            "distributionNote": "Safety concerns dominate across segments; Health-Led Managers are swayed by vet recommendations, while Value-Driven and Convenience segments respond to price and pet refusal.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "switching_triggers",
+            "beatTitle": "What would make them switch",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "In the next 12 months, how do you expect your pet food buying to change?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I will spend more on higher-quality food",
+              "I will look for cheaper options",
+              "I will buy the same as I do now",
+              "I will try new brands or types",
+              "I will buy less overall",
+              "I am not sure"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I will spend more on higher-quality food",
+                "value": 22.0
+              },
+              {
+                "label": "I will look for cheaper options",
+                "value": 24.0
+              },
+              {
+                "label": "I will buy the same as I do now",
+                "value": 30.0
+              },
+              {
+                "label": "I will try new brands or types",
+                "value": 14.0
+              },
+              {
+                "label": "I will buy less overall",
+                "value": 4.0
+              },
+              {
+                "label": "I am not sure",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: I will buy the same as I do now (30.00%).",
+            "distributionNote": "Premium Indulgence and Health-Led segments plan to spend more; Value-Driven and Senior Budget segments seek cheaper options; routine buyers stay the same.",
+            "N": 490,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "future_intent",
+            "beatTitle": "Future feeding plans",
+            "beatCanonical": "future_use"
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Which age group are you in?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 8.0
+              },
+              {
+                "label": "25-34",
+                "value": 22.0
+              },
+              {
+                "label": "35-44",
+                "value": 26.0
+              },
+              {
+                "label": "45-54",
+                "value": 20.0
+              },
+              {
+                "label": "55-64",
+                "value": 14.0
+              },
+              {
+                "label": "65 or older",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 35-44 (26.00%).",
+            "distributionNote": "Panel skews to middle-age pet-owning households; younger segments are smaller, older segments include budget-conscious guardians.",
+            "N": 490,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "age_band"
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "What is your gender?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 52.0
+              },
+              {
+                "label": "Man",
+                "value": 45.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (52.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "gender"
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "Who else lives in your household?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 30.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 28.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 20.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I live with a partner, no children at home (30.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "household_composition"
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "What was your total household income before tax last year?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 10.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 22.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 26.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 18.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 14.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 7.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (26.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "income_band"
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "How likely are you to recommend the Pet Food you currently use to a friend or colleague?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 3.0
+              },
+              {
+                "label": "1",
+                "value": 2.0
+              },
+              {
+                "label": "2",
+                "value": 4.0
+              },
+              {
+                "label": "3",
+                "value": 6.0
+              },
+              {
+                "label": "4",
+                "value": 7.0
+              },
+              {
+                "label": "5",
+                "value": 15.0
+              },
+              {
+                "label": "6",
+                "value": 12.0
+              },
+              {
+                "label": "7",
+                "value": 18.0
+              },
+              {
+                "label": "8",
+                "value": 18.0
+              },
+              {
+                "label": "9",
+                "value": 10.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: 7 (18.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "advocacy_nps"
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "Overall, how satisfied are you with the Pet Food you currently use?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 5.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 12.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 45.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (45.00%).",
+            "distributionNote": "",
+            "N": 490,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "overall_satisfaction_profile",
+            "ordered": true
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 33,
+    "counts_by_tab": {
+      "pet_household_profile": 7,
+      "purchase_journey_and_channels": 7,
+      "product_requirements_and_tradeoffs": 8,
+      "satisfaction_and_switching_risk": 5,
+      "profiling": 6
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": true,
+    "warnings": [
+      "Grounding is thin — most answers are inferred, not data-backed.",
+      "1 duplicate/overlapping question(s) removed at assembly.",
+      "duplicate question removed (cp4 overlaps cp1): In a typical week, how many times do you feed your pet?",
+      "Tab 'pet_household_profile' under target: 7/8.",
+      "Tab 'purchase_journey_and_channels' under target: 7/8.",
+      "Tab 'satisfaction_and_switching_risk' under target: 5/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "pet_household_profile": [
+        {
+          "beatId": "pet_household_composition",
+          "title": "Pets in the household",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "feeding_routine",
+          "title": "Feeding routine",
+          "canonical": "usage_frequency",
+          "order": 2
+        },
+        {
+          "beatId": "dietary_management",
+          "title": "Dietary management",
+          "canonical": "need_state",
+          "order": 3
+        },
+        {
+          "beatId": "decision_maker_role",
+          "title": "Decision-maker role",
+          "canonical": "household_role",
+          "order": 4
+        }
+      ],
+      "purchase_journey_and_channels": [
+        {
+          "beatId": "purchase_triggers",
+          "title": "What starts a pet food purchase",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "shopping_channels",
+          "title": "Where pet food is bought",
+          "canonical": "channel",
+          "order": 2
+        },
+        {
+          "beatId": "purchase_frequency_and_cycle",
+          "title": "How often pet food is bought",
+          "canonical": "purchase_cycle",
+          "order": 3
+        },
+        {
+          "beatId": "category_spend",
+          "title": "Monthly pet food spend",
+          "canonical": "spend",
+          "order": 4
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "What decides the choice",
+          "canonical": "decision_drivers",
+          "order": 5
+        }
+      ],
+      "product_requirements_and_tradeoffs": [
+        {
+          "beatId": "must_have_attributes",
+          "title": "Non-negotiable product attributes",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Signals of quality",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "format_and_packaging_preferences",
+          "title": "Preferred formats and pack sizes",
+          "canonical": "format_packaging",
+          "order": 3
+        },
+        {
+          "beatId": "claims_and_credentials",
+          "title": "Claims that matter",
+          "canonical": "claims_credentials",
+          "order": 4
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs between price, health, and convenience",
+          "canonical": "tradeoffs",
+          "order": 5
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value for money expectations",
+          "canonical": "value_expectation",
+          "order": 6
+        }
+      ],
+      "satisfaction_and_switching_risk": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction with current food",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What satisfies or disappoints",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction_points",
+          "title": "Frustrations and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching_triggers",
+          "title": "What would make them switch",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "recommend_intent",
+          "title": "Likelihood to recommend",
+          "canonical": "advocacy",
+          "order": 5
+        },
+        {
+          "beatId": "future_intent",
+          "title": "Future feeding plans",
+          "canonical": "future_use",
+          "order": 6
+        }
+      ]
+    },
+    "studyPurpose": "Identify which of 4 behavioural segments each pet-owning household belongs to, based on feeding routines, purchase behaviour, and the balance of health, convenience, and price motivations.",
+    "segmentation_lens": "Combination of usage/behavioural and jobs-to-be-done: the key axis separating buyers is how they manage their pet's diet (routine vs. actively managed) and what they hire the food to do (basic nutrition, health management, indulgence, or convenience). This fits because pet food is a recurring purcha",
+    "must_cover_topics": [
+      "pet type and count",
+      "food format (dry, wet, raw)",
+      "special diet (vet-prescribed, allergy, grain-free)",
+      "purchase channel (online, big-box, specialty)",
+      "price per bag or can",
+      "auto-delivery subscription"
+    ],
+    "segments": [
+      {
+        "segment_id": "health_led_managers",
+        "name": "Health-Led Managers Households",
+        "description": "Households that actively manage their pet's diet for health reasons, often with a vet's input, and are willing to pay a premium for specialized or prescription food. They research ingredients and are loyal to brands that address their pet's specific condition.",
+        "hypothesis": "This group will report higher spend, more frequent vet consultations, and a strong preference for specialized formats (e.g., prescription, limited-ingredient) over standard dry food."
+      },
+      {
+        "segment_id": "value_driven_routine_buyers",
+        "name": "Value-Driven Routine Buyers",
+        "description": "Households that buy the same food on a regular schedule, prioritizing price and availability over novelty. They are not deeply engaged with ingredients but will switch if the price rises or a coupon appears.",
+        "hypothesis": "This group will show high purchase frequency, low brand switching, and high price sensitivity, with the majority buying in bulk or on promotion."
+      },
+      {
+        "segment_id": "convenience_seeking_subscribers",
+        "name": "Convenience-Seeking Subscribers",
+        "description": "Households that use auto-delivery or online shopping to avoid running out and carrying heavy bags. They value time-saving and reliability over price or ingredient exploration, and are open to trying new brands if the subscription is easy.",
+        "hypothesis": "This group will report high use of online channels and subscriptions, and will rate convenience and delivery reliability as top decision drivers."
+      },
+      {
+        "segment_id": "premium_indulgence_owners",
+        "name": "Premium Indulgence Owners",
+        "description": "Households that treat pet food as an extension of care and pampering, choosing premium, natural, or eco-friendly options regardless of cost. They are influenced by branding, ingredient stories, and sustainability claims.",
+        "hypothesis": "This group will show low price sensitivity, high engagement with premium claims, and a willingness to pay more for perceived quality and ethical production."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "health_led_managers",
+          "name": "Health-Led Managers Households",
+          "description": "Households that actively manage their pet's diet for health reasons, often with a vet's input, and are willing to pay a premium for specialized or prescription food. They research ingredients and are loyal to brands that address their pet's specific condition.",
+          "hypothesis": "This group will report higher spend, more frequent vet consultations, and a strong preference for specialized formats (e.g., prescription, limited-ingredient) over standard dry food."
+        },
+        {
+          "segment_id": "value_driven_routine_buyers",
+          "name": "Value-Driven Routine Buyers",
+          "description": "Households that buy the same food on a regular schedule, prioritizing price and availability over novelty. They are not deeply engaged with ingredients but will switch if the price rises or a coupon appears.",
+          "hypothesis": "This group will show high purchase frequency, low brand switching, and high price sensitivity, with the majority buying in bulk or on promotion."
+        },
+        {
+          "segment_id": "convenience_seeking_subscribers",
+          "name": "Convenience-Seeking Subscribers",
+          "description": "Households that use auto-delivery or online shopping to avoid running out and carrying heavy bags. They value time-saving and reliability over price or ingredient exploration, and are open to trying new brands if the subscription is easy.",
+          "hypothesis": "This group will report high use of online channels and subscriptions, and will rate convenience and delivery reliability as top decision drivers."
+        },
+        {
+          "segment_id": "premium_indulgence_owners",
+          "name": "Premium Indulgence Owners",
+          "description": "Households that treat pet food as an extension of care and pampering, choosing premium, natural, or eco-friendly options regardless of cost. They are influenced by branding, ingredient stories, and sustainability claims.",
+          "hypothesis": "This group will show low price sensitivity, high engagement with premium claims, and a willingness to pay more for perceived quality and ethical production."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q3",
+          "question_text": "Which of these best describes your pet's main meal routine?",
+          "option_label": "Special diet — vet-prescribed or medical",
+          "segment_id": "health_led_managers",
+          "points": 3
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Who recommended the food your pet eats most often?",
+          "option_label": "My veterinarian",
+          "segment_id": "health_led_managers",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Which of these best describes your main goal when choosing pet food?",
+          "option_label": "Managing a specific health issue",
+          "segment_id": "health_led_managers",
+          "points": 3
+        },
+        {
+          "question_id": "q9",
+          "question_text": "In the last 30 days, which of these started a pet food purchase for you?",
+          "option_label": "A vet recommended a change",
+          "segment_id": "health_led_managers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+          "option_label": "It is recommended by my vet",
+          "segment_id": "health_led_managers",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these must a pet food have for you to buy it?",
+          "option_label": "It helps with a specific health issue",
+          "segment_id": "health_led_managers",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these best describes the food your pet eats most often?",
+          "option_label": "Vet-prescribed or therapeutic diet",
+          "segment_id": "health_led_managers",
+          "points": 3
+        },
+        {
+          "question_id": "q20",
+          "question_text": "Which claims on a pet food package would make you more likely to buy it?",
+          "option_label": "Veterinarian recommended",
+          "segment_id": "health_led_managers",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different pet food?",
+          "option_label": "A vet recommends something else",
+          "segment_id": "health_led_managers",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Which of these best describes your main goal when choosing pet food?",
+          "option_label": "Getting the best value for my money",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What usually makes you decide it's time to buy more pet food?",
+          "option_label": "I notice a sale or discount at the store",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What usually makes you decide it's time to buy more pet food?",
+          "option_label": "It's just part of my regular shopping routine",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "In the last 30 days, which of these started a pet food purchase for you?",
+          "option_label": "A sale or coupon appeared",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Where do you typically buy your pet food?",
+          "option_label": "Discount or warehouse club",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+          "option_label": "It is the cheapest option",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+          "option_label": "It is on sale or I have a coupon",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "When choosing between pet foods at the store, which factor most often decides what you put in your cart?",
+          "option_label": "The price compared to other options",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "When choosing between pet foods at the store, which factor most often decides what you put in your cart?",
+          "option_label": "It's what's on sale or has a coupon",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these must a pet food have for you to buy it?",
+          "option_label": "It is affordable for my budget",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q21",
+          "question_text": "If you had to give up one thing to stay within your pet food budget, which would it be?",
+          "option_label": "Premium ingredients",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q22",
+          "question_text": "How much more would you pay per bag for pet food that meets all your must-haves?",
+          "option_label": "Nothing extra",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of the following most often disappoints you about the pet food you buy?",
+          "option_label": "It costs more than I think it should",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different pet food?",
+          "option_label": "The price goes up noticeably",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "In the next 12 months, how do you expect your pet food buying to change?",
+          "option_label": "I will look for cheaper options",
+          "segment_id": "value_driven_routine_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Which of these best describes your main goal when choosing pet food?",
+          "option_label": "Convenience — making feeding easy",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What usually makes you decide it's time to buy more pet food?",
+          "option_label": "The bag or container is almost empty",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What usually makes you decide it's time to buy more pet food?",
+          "option_label": "I run out completely and have to make an emergency trip",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Where do you typically buy your pet food?",
+          "option_label": "Online retailer (e.g., Amazon, Chewy)",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q11",
+          "question_text": "How much pet food do you usually buy at one time?",
+          "option_label": "Multiple bags or cans (enough for a month or more)",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+          "option_label": "It is the easiest to find in my usual store",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these must a pet food have for you to buy it?",
+          "option_label": "It is easy to find in stores",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which packaging features matter most to you when buying pet food?",
+          "option_label": "Easy to open and close",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which packaging features matter most to you when buying pet food?",
+          "option_label": "Resealable to keep food fresh",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which packaging features matter most to you when buying pet food?",
+          "option_label": "Light enough to carry",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which packaging features matter most to you when buying pet food?",
+          "option_label": "Comes in single-serving pouches",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q21",
+          "question_text": "If you had to give up one thing to stay within your pet food budget, which would it be?",
+          "option_label": "Convenient packaging",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "In the last 30 days, which of these problems have you had with pet food?",
+          "option_label": "I ran out before I could get to the store",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "In the last 30 days, which of these problems have you had with pet food?",
+          "option_label": "I had to carry a heavy bag home from the store",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "In the next 12 months, how do you expect your pet food buying to change?",
+          "option_label": "I will try new brands or types",
+          "segment_id": "convenience_seeking_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q6",
+          "question_text": "Which of these best describes your main goal when choosing pet food?",
+          "option_label": "Feeding my pet as naturally as possible",
+          "segment_id": "premium_indulgence_owners",
+          "points": 3
+        },
+        {
+          "question_id": "q13",
+          "question_text": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+          "option_label": "It has the ingredient list I trust most",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "When you are choosing between pet foods that all fit your budget, which factor most often makes you pick one over the others?",
+          "option_label": "It has the most appealing packaging or story",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "When choosing between pet foods at the store, which factor most often decides what you put in your cart?",
+          "option_label": "The ingredient list and nutritional content",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "When choosing between pet foods at the store, which factor most often decides what you put in your cart?",
+          "option_label": "Special claims like 'grain-free' or 'organic'",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these must a pet food have for you to buy it?",
+          "option_label": "It uses natural ingredients",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "When you first open a new bag of pet food, what tells you it is good quality?",
+          "option_label": "The ingredient list on the bag",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "When you first open a new bag of pet food, what tells you it is good quality?",
+          "option_label": "The packaging looks premium",
+          "segment_id": "premium_indulgence_owners",
+          "points": 1
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these best describes the food your pet eats most often?",
+          "option_label": "Raw or fresh-prepared food",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which packaging features matter most to you when buying pet food?",
+          "option_label": "Recyclable or compostable packaging",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "How important is it that your pet food is certified organic, sustainable, or grain-free?",
+          "option_label": "Very important",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "How important is it that your pet food is certified organic, sustainable, or grain-free?",
+          "option_label": "Extremely important",
+          "segment_id": "premium_indulgence_owners",
+          "points": 3
+        },
+        {
+          "question_id": "q20",
+          "question_text": "Which claims on a pet food package would make you more likely to buy it?",
+          "option_label": "Certified organic",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "Which claims on a pet food package would make you more likely to buy it?",
+          "option_label": "Sustainably sourced ingredients",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "Which claims on a pet food package would make you more likely to buy it?",
+          "option_label": "No artificial colors or preservatives",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q21",
+          "question_text": "If you had to give up one thing to stay within your pet food budget, which would it be?",
+          "option_label": "Eco-friendly sourcing",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "How much more would you pay per bag for pet food that meets all your must-haves?",
+          "option_label": "26% to 50% more",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "How much more would you pay per bag for pet food that meets all your must-haves?",
+          "option_label": "More than 50% extra",
+          "segment_id": "premium_indulgence_owners",
+          "points": 3
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of the following most often disappoints you about the pet food you buy?",
+          "option_label": "The ingredients are not what I expected",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different pet food?",
+          "option_label": "I find a food with better ingredients",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "In the next 12 months, how do you expect your pet food buying to change?",
+          "option_label": "I will spend more on higher-quality food",
+          "segment_id": "premium_indulgence_owners",
+          "points": 2
+        }
+      ],
+      "tie_break": "Question cp7 (main goal when choosing pet food) is the most direct behavioural self-report because it forces respondents to state their primary motivation, cleanly separating health management, value, convenience, and natural/premium indulgence.",
+      "notes": [
+        "Weights are assigned only to options that clearly discriminate between segments; neutral or common options are left unscored.",
+        "Each segment has at least two scoring options and at least one 3-point option.",
+        "Some options like 'Other' or generic 'My pet will eat it' are not scored because they do not discriminate.",
+        "The duplicate question bb4 was not scored to avoid double counting."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "nonDiscriminatingQuestions": [
+      {
+        "id": "q1",
+        "qNum": 1,
+        "question": "How many pets do you currently feed at home?"
+      },
+      {
+        "id": "q2",
+        "qNum": 2,
+        "question": "Which pets live in your household?"
+      },
+      {
+        "id": "q4",
+        "qNum": 4,
+        "question": "In the last 30 days, how often did you buy pet food?"
+      },
+      {
+        "id": "q7",
+        "qNum": 7,
+        "question": "Who in your household decides which pet food to buy?"
+      },
+      {
+        "id": "q12",
+        "qNum": 12,
+        "question": "On average, how much do you spend on pet food in a typical month?"
+      },
+      {
+        "id": "q25",
+        "qNum": 25,
+        "question": "How likely are you to switch to a different pet food in the next 12 months?"
+      }
+    ],
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "storyline_summary": "The survey opens by profiling the pet household and feeding routine, establishing who the pet is and how the household manages its diet. It then moves through the purchase journey—triggers, channels, frequency, spend, and decision drivers—to reveal how and why they buy. Next, it explores product requirements and trade-offs, including must-haves, quality cues, and price-value expectations, to understand what they want from the food. Finally, it measures satisfaction, friction, and switching risk to identify loyalty and future intent. This arc separates the four segments by their management…",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "Replaced the generic 'consumer_profile' section with 'Pet Household Profile & Feeding Context' to emphasize the pet as the user and the household as the decision unit, which is the correct unit of analysis for pet food.",
+      "Added a beat on 'dietary management' early to capture the health-led segment, as special diets are a key differentiator in this category.",
+      "In the purchase journey, included 'purchase triggers' and 'shopping channels' to reflect the growing importance of online and subscription channels in North America, which is essential for the convenience-seeking segment.",
+      "In the preferences section, included a dedicated 'trade-offs' beat to force respondents to prioritize price, health, and convenience—critical for separating value-driven from premium and health-led segments.",
+      "The satisfaction section includes both 'switching triggers' and 'future intent' to capture churn risk and growth potential, which are key commercial questions for a mature market with premiumization trends."
+    ],
+    "classification_reason": "Household pet owners buy pet food, pay for it themselves, and decide which brand to purchase, typically at the store or online. While some businesses (kennels, shelters) also buy pet food, the dominant consumer market is individual pet owners purchasing for their own pets.",
+    "generated_at": "2026-08-05T03:37:35.251543+00:00",
+    "current_date": "2026-08-05",
+    "sample_size": 2500,
+    "N": 490,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "lollipop",
+      "stacked",
+      "vbar",
+      "waffle"
+    ]
+  }
+}

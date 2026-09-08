@@ -1,0 +1,2242 @@
+{
+  "frontend": {
+    "sections": [
+      {
+        "id": "ev_relationship",
+        "label": "EV Ownership & Usage Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "How would you describe your household's current situation with electric vehicles?",
+            "options": [
+              "We own at least one EV",
+              "We are actively considering buying an EV",
+              "We have owned an EV in the past but don't now",
+              "We have decided not to buy an EV",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "We own at least one EV",
+                "value": 38.0
+              },
+              {
+                "label": "We are actively considering buying an EV",
+                "value": 41.0
+              },
+              {
+                "label": "We have owned an EV in the past but don't now",
+                "value": 4.0
+              },
+              {
+                "label": "We have decided not to buy an EV",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: We are actively considering buying an EV (41.00%).",
+            "distributionNote": "Lifestyle-Driven and Convenience-Seeking Buyers drive ownership, while Value-Optimizing and Range-Prioritizing Buyers are still in the consideration phase.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How many electric vehicles does your household currently own or lease?",
+            "options": [
+              "1",
+              "2",
+              "3 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1",
+                "value": 82.0
+              },
+              {
+                "label": "2",
+                "value": 15.0
+              },
+              {
+                "label": "3 or more",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: 1 (82.00%).",
+            "distributionNote": "Most EV-owning households have a single EV, typical of Convenience-Seeking and Value-Optimizing Buyers who use it as a primary or secondary vehicle.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "What is the main purpose of the electric vehicle in your household?",
+            "options": [
+              "Daily commute to work or school",
+              "Running errands and local trips",
+              "Long-distance travel and road trips",
+              "Carpooling or driving other people",
+              "Work-related driving (deliveries, sales calls)",
+              "Recreational or weekend driving"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Daily commute to work or school",
+                "value": 52.0
+              },
+              {
+                "label": "Running errands and local trips",
+                "value": 24.0
+              },
+              {
+                "label": "Long-distance travel and road trips",
+                "value": 10.0
+              },
+              {
+                "label": "Carpooling or driving other people",
+                "value": 5.0
+              },
+              {
+                "label": "Work-related driving (deliveries, sales calls)",
+                "value": 4.0
+              },
+              {
+                "label": "Recreational or weekend driving",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Daily commute to work or school (52.00%).",
+            "distributionNote": "Daily commuting is the dominant use case, driven by Convenience-Seeking and Value-Optimizing Buyers; Range-Prioritizing Buyers account for the long-distance share.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "What is the main reason you use an electric vehicle for most of your trips?",
+            "options": [
+              "Lower running costs than gas",
+              "Reducing my environmental impact",
+              "Access to carpool lanes or parking perks",
+              "The driving experience and technology",
+              "It's the only car we have",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Lower running costs than gas",
+                "value": 44.0
+              },
+              {
+                "label": "Reducing my environmental impact",
+                "value": 22.0
+              },
+              {
+                "label": "Access to carpool lanes or parking perks",
+                "value": 8.0
+              },
+              {
+                "label": "The driving experience and technology",
+                "value": 16.0
+              },
+              {
+                "label": "It's the only car we have",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Lower running costs than gas (44.00%).",
+            "distributionNote": "Cost savings are the primary driver for Value-Optimizing Buyers, while Lifestyle-Driven Buyers split between environmental and technology motivations.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In a typical week, how many days do you drive the electric vehicle?",
+            "options": [
+              "1-2 days",
+              "3-4 days",
+              "5-6 days",
+              "Every day",
+              "Less than once a week"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "1-2 days",
+                "value": 12.0
+              },
+              {
+                "label": "3-4 days",
+                "value": 18.0
+              },
+              {
+                "label": "5-6 days",
+                "value": 35.0
+              },
+              {
+                "label": "Every day",
+                "value": 30.0
+              },
+              {
+                "label": "Less than once a week",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: 5-6 days (35.00%).",
+            "distributionNote": "EVs are used frequently, with Convenience-Seeking and Value-Optimizing Buyers relying on them for daily commutes.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How often do you drive your electric vehicle on a trip longer than 150 miles one way?",
+            "options": [
+              "Never",
+              "Less than once a year",
+              "A few times a year",
+              "About once a month",
+              "Every week or more"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Never",
+                "value": 10.0
+              },
+              {
+                "label": "Less than once a year",
+                "value": 15.0
+              },
+              {
+                "label": "A few times a year",
+                "value": 40.0
+              },
+              {
+                "label": "About once a month",
+                "value": 22.0
+              },
+              {
+                "label": "Every week or more",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: A few times a year (40.00%).",
+            "distributionNote": "Long trips are occasional for most, but Range-Prioritizing Buyers take them more frequently, while Convenience-Seeking Buyers avoid them when possible.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Who in your household makes the final decision on which car to buy?",
+            "options": [
+              "I do",
+              "My partner or spouse does",
+              "We decide together",
+              "Another household member",
+              "Other"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "I do",
+                "value": 45.0
+              },
+              {
+                "label": "My partner or spouse does",
+                "value": 10.0
+              },
+              {
+                "label": "We decide together",
+                "value": 38.0
+              },
+              {
+                "label": "Another household member",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I do (45.00%).",
+            "distributionNote": "Decisions are largely individual or joint, reflecting the diverse household structures across all buyer segments.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "ev_purchase_journey",
+        "label": "EV Purchase Journey & Decision Drivers",
+        "questions": [
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "How long did you research before buying your most recent electric vehicle?",
+            "options": [
+              "Less than a month",
+              "1 to 3 months",
+              "4 to 6 months",
+              "7 to 12 months",
+              "More than a year"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Less than a month",
+                "value": 18.0
+              },
+              {
+                "label": "1 to 3 months",
+                "value": 34.0
+              },
+              {
+                "label": "4 to 6 months",
+                "value": 26.0
+              },
+              {
+                "label": "7 to 12 months",
+                "value": 14.0
+              },
+              {
+                "label": "More than a year",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 1 to 3 months (34.00%).",
+            "distributionNote": "Value-Optimizing Buyers and Range-Prioritizing Buyers dominate, leading to a moderate research period as they compare costs and range; Lifestyle-Driven Buyers extend the tail with longer research for premium features.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "purchase_triggers",
+            "beatTitle": "Purchase triggers",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Which event would most likely prompt you to start seriously looking at electric vehicles?",
+            "options": [
+              "My current car needs major repairs",
+              "My daily fuel costs have become too high",
+              "A new EV model with the range I need is released",
+              "A government or utility incentive becomes available",
+              "I want to reduce my personal emissions",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "My current car needs major repairs",
+                "value": 15.0
+              },
+              {
+                "label": "My daily fuel costs have become too high",
+                "value": 28.0
+              },
+              {
+                "label": "A new EV model with the range I need is released",
+                "value": 20.0
+              },
+              {
+                "label": "A government or utility incentive becomes available",
+                "value": 22.0
+              },
+              {
+                "label": "I want to reduce my personal emissions",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: My daily fuel costs have become too high (28.00%).",
+            "distributionNote": "Value-Optimizing Buyers are strongly driven by fuel costs and incentives; Range-Prioritizing Buyers respond to new models with adequate range; Lifestyle-Driven Buyers contribute to the emissions motivation.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "purchase_triggers",
+            "beatTitle": "Purchase triggers",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "When comparing electric vehicles, which source do you trust most for accurate range and charging information?",
+            "options": [
+              "Independent online reviews and range tests",
+              "Current EV owners in online forums or social media",
+              "Dealership staff during a test drive",
+              "Government or energy agency ratings",
+              "Friends or family who own an EV",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Independent online reviews and range tests",
+                "value": 38.0
+              },
+              {
+                "label": "Current EV owners in online forums or social media",
+                "value": 24.0
+              },
+              {
+                "label": "Dealership staff during a test drive",
+                "value": 12.0
+              },
+              {
+                "label": "Government or energy agency ratings",
+                "value": 15.0
+              },
+              {
+                "label": "Friends or family who own an EV",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Independent online reviews and range tests (38.00%).",
+            "distributionNote": "Range-Prioritizing and Value-Optimizing Buyers rely on independent tests and owner experiences for trustworthy range data; Convenience-Seeking Buyers also consult government ratings for reliability.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "information_sources",
+            "beatTitle": "Information sources",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Where did you first learn about the electric vehicle you bought?",
+            "options": [
+              "Online search or comparison websites",
+              "Social media or online forums",
+              "Dealership visit or test drive",
+              "Recommendation from friends or family",
+              "News articles or reviews",
+              "Advertising (TV, online, billboard)",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Online search or comparison websites",
+                "value": 34.0
+              },
+              {
+                "label": "Social media or online forums",
+                "value": 18.0
+              },
+              {
+                "label": "Dealership visit or test drive",
+                "value": 16.0
+              },
+              {
+                "label": "Recommendation from friends or family",
+                "value": 12.0
+              },
+              {
+                "label": "News articles or reviews",
+                "value": 12.0
+              },
+              {
+                "label": "Advertising (TV, online, billboard)",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Online search or comparison websites (34.00%).",
+            "distributionNote": "Value-Optimizing and Range-Prioritizing Buyers start with online research; Convenience-Seeking Buyers may discover through dealerships; Lifestyle-Driven Buyers are influenced by news and reviews.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "information_sources",
+            "beatTitle": "Information sources",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Where did you buy your most recent electric vehicle?",
+            "options": [
+              "Brand dealership (new)",
+              "Independent used-car dealer",
+              "Online car retailer (e.g., Carvana, Vroom)",
+              "Private seller (e.g., Craigslist, Facebook Marketplace)",
+              "Direct from manufacturer (online order)",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Brand dealership (new)",
+                "value": 62.0
+              },
+              {
+                "label": "Independent used-car dealer",
+                "value": 12.0
+              },
+              {
+                "label": "Online car retailer (e.g., Carvana, Vroom)",
+                "value": 10.0
+              },
+              {
+                "label": "Private seller (e.g., Craigslist, Facebook Marketplace)",
+                "value": 6.0
+              },
+              {
+                "label": "Direct from manufacturer (online order)",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Brand dealership (new) (62.00%).",
+            "distributionNote": "Convenience-Seeking and Lifestyle-Driven Buyers prefer traditional dealerships for seamless service; Value-Optimizing Buyers explore used and online channels for affordability.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "purchase_channel",
+            "beatTitle": "Purchase channel",
+            "beatCanonical": "channel",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "What is the highest price you are considering paying for your next electric vehicle?",
+            "options": [
+              "Under $30,000",
+              "$30,000 - $39,999",
+              "$40,000 - $54,999",
+              "$55,000 - $69,999",
+              "$70,000 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Under $30,000",
+                "value": 22.0
+              },
+              {
+                "label": "$30,000 - $39,999",
+                "value": 28.0
+              },
+              {
+                "label": "$40,000 - $54,999",
+                "value": 27.0
+              },
+              {
+                "label": "$55,000 - $69,999",
+                "value": 13.0
+              },
+              {
+                "label": "$70,000 or more",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: $30,000 - $39,999 (28.00%).",
+            "distributionNote": "Value-Optimizing Buyers concentrate in the lower brackets; Range-Prioritizing Buyers spread across mid-to-high for adequate range; Lifestyle-Driven Buyers pull the premium end.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "budget_and_spend",
+            "beatTitle": "Budget and spend",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "Which factors most influenced your final choice of electric vehicle?",
+            "options": [
+              "Driving range on a full charge",
+              "Upfront purchase price",
+              "Availability of fast charging",
+              "Eligibility for tax credits or rebates",
+              "Technology features (autopilot, software)",
+              "Environmental impact",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Driving range on a full charge",
+                "value": 32.0
+              },
+              {
+                "label": "Upfront purchase price",
+                "value": 22.0
+              },
+              {
+                "label": "Availability of fast charging",
+                "value": 14.0
+              },
+              {
+                "label": "Eligibility for tax credits or rebates",
+                "value": 12.0
+              },
+              {
+                "label": "Technology features (autopilot, software)",
+                "value": 10.0
+              },
+              {
+                "label": "Environmental impact",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Driving range on a full charge (32.00%).",
+            "distributionNote": "Range-Prioritizing Buyers dominate the range response; Value-Optimizing Buyers emphasize price and incentives; Lifestyle-Driven Buyers choose technology and environmental impact.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "decision_factors",
+            "beatTitle": "Decision factors",
+            "beatCanonical": "decision_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "ev_requirements",
+        "label": "EV Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "What is the minimum driving range you would accept for your next electric vehicle?",
+            "options": [
+              "Under 150 miles",
+              "150 to 199 miles",
+              "200 to 249 miles",
+              "250 to 299 miles",
+              "300 miles or more"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Under 150 miles",
+                "value": 8.0
+              },
+              {
+                "label": "150 to 199 miles",
+                "value": 12.0
+              },
+              {
+                "label": "200 to 249 miles",
+                "value": 22.0
+              },
+              {
+                "label": "250 to 299 miles",
+                "value": 28.0
+              },
+              {
+                "label": "300 miles or more",
+                "value": 30.0
+              }
+            ],
+            "insight": "Top response: 300 miles or more (30.00%).",
+            "distributionNote": "Range-Prioritizing Buyers and Value-Optimizing Buyers split the middle; a substantial share of Range-Prioritizing Buyers demands 300+ miles, while Value-Optimizing Buyers accept lower ranges for affordability.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which must your next electric vehicle have?",
+            "options": [
+              "Fast charging (10% to 80% in under 30 minutes)",
+              "Home charging setup included or affordable",
+              "Battery warranty of at least 8 years or 100,000 miles",
+              "A lower total cost of ownership than a comparable gas car",
+              "A price under $35,000 before incentives",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Fast charging (10% to 80% in under 30 minutes)",
+                "value": 62.0
+              },
+              {
+                "label": "Home charging setup included or affordable",
+                "value": 70.0
+              },
+              {
+                "label": "Battery warranty of at least 8 years or 100,000 miles",
+                "value": 75.0
+              },
+              {
+                "label": "A lower total cost of ownership than a comparable gas car",
+                "value": 68.0
+              },
+              {
+                "label": "A price under $35,000 before incentives",
+                "value": 55.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Battery warranty of at least 8 years or 100,000 miles (75.00%).",
+            "distributionNote": "Value-Optimizing Buyers drive the need for TCO and price; Range-Prioritizing Buyers emphasize fast charging and warranty; Convenience-Seeking Buyers push home charging.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "How important is a battery warranty of at least 8 years or 100,000 miles when you judge an electric vehicle's quality?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 3.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 8.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 22.0
+              },
+              {
+                "label": "Very important",
+                "value": 38.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 29.0
+              }
+            ],
+            "insight": "Top response: Very important (38.00%).",
+            "distributionNote": "Warranty is a top concern across most segments, especially Value-Optimizing and Range-Prioritizing Buyers, leading to a strong concentration at the high end.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "When you inspect an electric vehicle in person, which detail most strongly signals that it is well-built?",
+            "options": [
+              "The way the doors and panels close",
+              "The quality of the interior materials",
+              "The clarity and responsiveness of the touchscreen",
+              "The fit and finish of the exterior trim",
+              "The feel of the steering and suspension",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The way the doors and panels close",
+                "value": 24.0
+              },
+              {
+                "label": "The quality of the interior materials",
+                "value": 31.0
+              },
+              {
+                "label": "The clarity and responsiveness of the touchscreen",
+                "value": 18.0
+              },
+              {
+                "label": "The fit and finish of the exterior trim",
+                "value": 15.0
+              },
+              {
+                "label": "The feel of the steering and suspension",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: The quality of the interior materials (31.00%).",
+            "distributionNote": "Lifestyle-Driven Buyers and Convenience-Seeking Buyers focus on interior quality and tactile feel; tech-oriented segments weight the touchscreen more heavily.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ]
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "What would most make you question an electric vehicle's build quality?",
+            "options": [
+              "Panel gaps or uneven paint",
+              "A noisy or rattling cabin at highway speed",
+              "A stiff or uncomfortable ride",
+              "Doors or trunk that feel flimsy when closing",
+              "Interior materials that feel cheap to the touch",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Panel gaps or uneven paint",
+                "value": 32.0
+              },
+              {
+                "label": "A noisy or rattling cabin at highway speed",
+                "value": 26.0
+              },
+              {
+                "label": "A stiff or uncomfortable ride",
+                "value": 12.0
+              },
+              {
+                "label": "Doors or trunk that feel flimsy when closing",
+                "value": 18.0
+              },
+              {
+                "label": "Interior materials that feel cheap to the touch",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Panel gaps or uneven paint (32.00%).",
+            "distributionNote": "Panel gaps and cabin noise are the strongest negative signals across segments, with Value-Optimizing Buyers especially sensitive to perceived build flaws.",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ]
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which battery size would you prefer for your next electric vehicle?",
+            "options": [
+              "Standard range (enough for daily commuting)",
+              "Long range (enough for 300+ mile road trips)",
+              "Maximum range (the largest battery offered)",
+              "I don't have a preference"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Standard range (enough for daily commuting)",
+                "value": 18.0
+              },
+              {
+                "label": "Long range (enough for 300+ mile road trips)",
+                "value": 45.0
+              },
+              {
+                "label": "Maximum range (the largest battery offered)",
+                "value": 27.0
+              },
+              {
+                "label": "I don't have a preference",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Long range (enough for 300+ mile road trips) (45.00%).",
+            "distributionNote": "Range-Prioritizing Buyers dominate, preferring long or maximum range; Value-Optimizing Buyers accept standard range to save cost.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and packaging",
+            "beatCanonical": "format_packaging",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which claims would most increase your trust in an electric vehicle's battery?",
+            "options": [
+              "Battery is warrantied for 8 years or 100,000 miles",
+              "Battery is designed to retain at least 80% capacity after 10 years",
+              "Battery is made with recycled or responsibly sourced materials",
+              "Battery has passed independent safety and durability testing",
+              "Battery is backed by the manufacturer's reputation for reliability",
+              "None of these claims would change my trust"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Battery is warrantied for 8 years or 100,000 miles",
+                "value": 30.0
+              },
+              {
+                "label": "Battery is designed to retain at least 80% capacity after 10 years",
+                "value": 28.0
+              },
+              {
+                "label": "Battery is made with recycled or responsibly sourced materials",
+                "value": 10.0
+              },
+              {
+                "label": "Battery has passed independent safety and durability testing",
+                "value": 22.0
+              },
+              {
+                "label": "Battery is backed by the manufacturer's reputation for reliability",
+                "value": 7.0
+              },
+              {
+                "label": "None of these claims would change my trust",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Battery is warrantied for 8 years or 100,000 miles (30.00%).",
+            "distributionNote": "Warranty and long-term capacity retention are the most trust-building claims for Value-Optimizing and Range-Prioritizing Buyers; independent testing also resonates.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and packaging",
+            "beatCanonical": "format_packaging",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "ev_satisfaction",
+        "label": "Satisfaction, Loyalty & Future Intent",
+        "questions": [
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Which aspects of your electric vehicle most often falls short of your expectations?",
+            "options": [
+              "Battery range in cold weather",
+              "Charging speed at public stations",
+              "Availability of charging stations on long trips",
+              "Home charging setup cost or hassle",
+              "Software or app reliability",
+              "Service or repair wait times",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Battery range in cold weather",
+                "value": 24.0
+              },
+              {
+                "label": "Charging speed at public stations",
+                "value": 18.0
+              },
+              {
+                "label": "Availability of charging stations on long trips",
+                "value": 26.0
+              },
+              {
+                "label": "Home charging setup cost or hassle",
+                "value": 12.0
+              },
+              {
+                "label": "Software or app reliability",
+                "value": 10.0
+              },
+              {
+                "label": "Service or repair wait times",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Availability of charging stations on long trips (26.00%).",
+            "distributionNote": "Range-Prioritizing Buyers dominate concerns about cold-weather range and long-trip charging; Convenience-Seeking Buyers also weigh in on home charging.",
+            "questionLayer": "module",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which aspects of your electric vehicle are you most satisfied with?",
+            "options": [
+              "Driving range on a full charge",
+              "Charging speed and convenience",
+              "Running costs and fuel savings",
+              "Performance and driving feel",
+              "Technology and software features",
+              "Environmental benefits",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Driving range on a full charge",
+                "value": 20.0
+              },
+              {
+                "label": "Charging speed and convenience",
+                "value": 12.0
+              },
+              {
+                "label": "Running costs and fuel savings",
+                "value": 28.0
+              },
+              {
+                "label": "Performance and driving feel",
+                "value": 15.0
+              },
+              {
+                "label": "Technology and software features",
+                "value": 13.0
+              },
+              {
+                "label": "Environmental benefits",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Running costs and fuel savings (28.00%).",
+            "distributionNote": "Value-Optimizing Buyers highlight running costs; Lifestyle-Driven Buyers support performance and technology satisfaction.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "How satisfied are you with your electric vehicle's driving range on a single charge?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 12.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 22.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 30.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 16.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (30.00%).",
+            "distributionNote": "Range-Prioritizing Buyers pull dissatisfaction upward; Value-Optimizing Buyers are mixed; Lifestyle-Driven Buyers are more satisfied.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Which problems have you experienced with your electric vehicle?",
+            "options": [
+              "Charging stations are too few or unreliable",
+              "Home charging installation was difficult or costly",
+              "Range drops noticeably in cold weather",
+              "Charging takes longer than expected",
+              "Software glitches or app connection issues",
+              "Battery degradation or range loss over time",
+              "Long wait times for service appointments",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Charging stations are too few or unreliable",
+                "value": 45.0
+              },
+              {
+                "label": "Home charging installation was difficult or costly",
+                "value": 25.0
+              },
+              {
+                "label": "Range drops noticeably in cold weather",
+                "value": 40.0
+              },
+              {
+                "label": "Charging takes longer than expected",
+                "value": 35.0
+              },
+              {
+                "label": "Software glitches or app connection issues",
+                "value": 20.0
+              },
+              {
+                "label": "Battery degradation or range loss over time",
+                "value": 15.0
+              },
+              {
+                "label": "Long wait times for service appointments",
+                "value": 10.0
+              },
+              {
+                "label": "None of these",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Charging stations are too few or unreliable (45.00%).",
+            "distributionNote": "Range-Prioritizing and Convenience-Seeking Buyers drive high incidence of charging and range issues; Lifestyle-Driven Buyers report more software glitches.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "What would most likely make you switch back to a gas-powered car?",
+            "options": [
+              "Battery replacement cost",
+              "Insufficient range for long trips",
+              "Unreliable public charging network",
+              "Long charging times",
+              "Higher upfront cost than expected",
+              "Nothing would make me switch",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Battery replacement cost",
+                "value": 18.0
+              },
+              {
+                "label": "Insufficient range for long trips",
+                "value": 22.0
+              },
+              {
+                "label": "Unreliable public charging network",
+                "value": 20.0
+              },
+              {
+                "label": "Long charging times",
+                "value": 12.0
+              },
+              {
+                "label": "Higher upfront cost than expected",
+                "value": 8.0
+              },
+              {
+                "label": "Nothing would make me switch",
+                "value": 14.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Insufficient range for long trips (22.00%).",
+            "distributionNote": "Range-Prioritizing Buyers are most likely to switch due to range and charging; Value-Optimizing Buyers worry about battery cost; Lifestyle-Driven Buyers are more loyal.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 8.0
+              },
+              {
+                "label": "25-34",
+                "value": 22.0
+              },
+              {
+                "label": "35-44",
+                "value": 26.0
+              },
+              {
+                "label": "45-54",
+                "value": 20.0
+              },
+              {
+                "label": "55-64",
+                "value": 15.0
+              },
+              {
+                "label": "65 or older",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: 35-44 (26.00%).",
+            "distributionNote": "Age distribution skews to working-age segments; younger and older groups are smaller.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 48.0
+              },
+              {
+                "label": "Man",
+                "value": 49.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Man (49.00%).",
+            "distributionNote": "Lifestyle-Driven Buyers and Convenience-Seeking Buyers are slightly more likely to identify as women, while Range-Prioritizing Buyers skew male; overall the panel is nearly balanced.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 12.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 28.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 38.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 17.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (38.00%).",
+            "distributionNote": "Convenience-Seeking Buyers and Value-Optimizing Buyers are more likely to have children at home, while Lifestyle-Driven Buyers and Range-Prioritizing Buyers skew toward partner-only or solo households.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 5.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 15.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 22.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 20.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 20.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 15.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (22.00%).",
+            "distributionNote": "Value-Optimizing Buyers concentrate in the lower-middle bands, while Lifestyle-Driven Buyers pull the upper-income tail; the overall panel is middle-income with a notable premium segment.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "How likely are you to recommend the Electric Vehicles you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 1.0
+              },
+              {
+                "label": "2",
+                "value": 2.0
+              },
+              {
+                "label": "3",
+                "value": 3.0
+              },
+              {
+                "label": "4",
+                "value": 4.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 8.0
+              },
+              {
+                "label": "7",
+                "value": 15.0
+              },
+              {
+                "label": "8",
+                "value": 22.0
+              },
+              {
+                "label": "9",
+                "value": 16.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: 8 (22.00%).",
+            "distributionNote": "Lifestyle-Driven Buyers and Convenience-Seeking Buyers are more likely to give high scores, while Value-Optimizing Buyers and Range-Prioritizing Buyers are more mixed due to charging and cost concerns.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "Overall, how satisfied are you with the Electric Vehicles you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 4.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 10.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 15.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 45.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 26.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (45.00%).",
+            "distributionNote": "Lifestyle-Driven Buyers and Convenience-Seeking Buyers are more satisfied, while Value-Optimizing Buyers and Range-Prioritizing Buyers are more likely to be neutral or dissatisfied due to cost and infrastructure gaps.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      }
+    ]
+  },
+  "survey": {
+    "market_segment": "Electric Vehicles",
+    "region": "Global",
+    "metadata": {
+      "total_questions": 32,
+      "selection": {
+        "mode": "core_plus_module",
+        "source_regions": [
+          "north-america"
+        ],
+        "total_questions": 32,
+        "method": "select_and_blend"
+      },
+      "storyline": {
+        "ev_relationship": [
+          {
+            "beatId": "category_entry",
+            "title": "Category relationship",
+            "canonical": "category_entry",
+            "order": 1
+          },
+          {
+            "beatId": "usage_occasion",
+            "title": "Usage occasions",
+            "canonical": "usage_occasion",
+            "order": 2
+          },
+          {
+            "beatId": "usage_frequency",
+            "title": "Usage frequency and intensity",
+            "canonical": "usage_frequency",
+            "order": 3
+          }
+        ],
+        "ev_purchase_journey": [
+          {
+            "beatId": "purchase_triggers",
+            "title": "Purchase triggers",
+            "canonical": "purchase_trigger",
+            "order": 1
+          },
+          {
+            "beatId": "information_sources",
+            "title": "Information sources",
+            "canonical": "discovery",
+            "order": 2
+          },
+          {
+            "beatId": "purchase_channel",
+            "title": "Purchase channel",
+            "canonical": "channel",
+            "order": 3
+          },
+          {
+            "beatId": "budget_and_spend",
+            "title": "Budget and spend",
+            "canonical": "spend",
+            "order": 4
+          },
+          {
+            "beatId": "decision_factors",
+            "title": "Decision factors",
+            "canonical": "decision_drivers",
+            "order": 5
+          }
+        ],
+        "ev_requirements": [
+          {
+            "beatId": "must_haves",
+            "title": "Must-have attributes",
+            "canonical": "must_haves",
+            "order": 1
+          },
+          {
+            "beatId": "quality_cues",
+            "title": "Quality cues",
+            "canonical": "quality_cues",
+            "order": 2
+          },
+          {
+            "beatId": "format_packaging",
+            "title": "Format and packaging",
+            "canonical": "format_packaging",
+            "order": 3
+          }
+        ],
+        "ev_satisfaction": [
+          {
+            "beatId": "overall_satisfaction",
+            "title": "Overall satisfaction",
+            "canonical": "overall_satisfaction",
+            "order": 1
+          },
+          {
+            "beatId": "satisfaction_drivers",
+            "title": "What drives satisfaction",
+            "canonical": "satisfaction_drivers",
+            "order": 2
+          },
+          {
+            "beatId": "friction",
+            "title": "Friction and unmet needs",
+            "canonical": "friction",
+            "order": 3
+          }
+        ]
+      },
+      "storyline_source": "planner",
+      "storyline_summary": "The survey begins by understanding the respondent's current driving context and where they are in the EV consideration journey. It then walks through the purchase journey, from triggers and research to budget and decision factors. Next, it explores the specific requirements and trade-offs around range, charging, and value. Finally, it measures satisfaction, friction, and future adoption intent, allowing us to segment respondents by their value orientation and charging/range needs.",
+      "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on their EV purchase journey, charging and range requirements, and value orientation.",
+      "segmentation_lens": "Price sensitivity / value orientation combined with usage/behavioural (charging and range needs). This lens separates buyers because the high upfront premium and ongoing charging costs create distinct value-driven trade-offs that directly shape purchase behaviour, more than usage frequency alone.",
+      "must_cover_topics": [
+        "range anxiety",
+        "charging access",
+        "upfront price",
+        "total cost of ownership",
+        "incentives",
+        "battery warranty"
+      ],
+      "segments": [
+        {
+          "segment_id": "value_optimizers",
+          "name": "Value-Optimizing Buyers",
+          "description": "Highly price-sensitive, compare total cost of ownership against gas vehicles, seek incentives and low running costs, willing to compromise on range or features for a lower price.",
+          "hypothesis": "They will prioritize price and incentives over brand or performance, and will be more likely to consider used EVs or smaller battery options."
+        },
+        {
+          "segment_id": "range_prioritizers",
+          "name": "Range-Prioritizing Buyers",
+          "description": "Need maximum range and reliable charging for long commutes or rural driving, less price-sensitive if range needs are met, will reject EVs that cannot cover their typical trips.",
+          "hypothesis": "They will rank range and charging speed as non-negotiable, and will be more likely to consider premium or long-range models despite higher cost."
+        },
+        {
+          "segment_id": "convenience_seekers",
+          "name": "Convenience-Seeking Buyers",
+          "description": "Value seamless charging at home or work, prefer EVs that integrate into their daily routine with minimal effort, moderate price sensitivity, prioritize ease of ownership.",
+          "hypothesis": "They will prioritize home charging access and charging network reliability over raw range, and will be less willing to tolerate public charging inconvenience."
+        },
+        {
+          "segment_id": "lifestyle_drivers",
+          "name": "Lifestyle-Driven Buyers",
+          "description": "Motivated by environmental values, technology, or status, less price-sensitive, willing to pay a premium for the latest features, brand image, or sustainability credentials.",
+          "hypothesis": "They will prioritize brand, technology, and environmental impact over cost, and will be more likely to consider luxury or early-adopter models."
+        }
+      ],
+      "segmentModel": {
+        "segments": [
+          {
+            "segment_id": "value_optimizers",
+            "name": "Value-Optimizing Buyers",
+            "description": "Highly price-sensitive, compare total cost of ownership against gas vehicles, seek incentives and low running costs, willing to compromise on range or features for a lower price.",
+            "hypothesis": "They will prioritize price and incentives over brand or performance, and will be more likely to consider used EVs or smaller battery options."
+          },
+          {
+            "segment_id": "range_prioritizers",
+            "name": "Range-Prioritizing Buyers",
+            "description": "Need maximum range and reliable charging for long commutes or rural driving, less price-sensitive if range needs are met, will reject EVs that cannot cover their typical trips.",
+            "hypothesis": "They will rank range and charging speed as non-negotiable, and will be more likely to consider premium or long-range models despite higher cost."
+          },
+          {
+            "segment_id": "convenience_seekers",
+            "name": "Convenience-Seeking Buyers",
+            "description": "Value seamless charging at home or work, prefer EVs that integrate into their daily routine with minimal effort, moderate price sensitivity, prioritize ease of ownership.",
+            "hypothesis": "They will prioritize home charging access and charging network reliability over raw range, and will be less willing to tolerate public charging inconvenience."
+          },
+          {
+            "segment_id": "lifestyle_drivers",
+            "name": "Lifestyle-Driven Buyers",
+            "description": "Motivated by environmental values, technology, or status, less price-sensitive, willing to pay a premium for the latest features, brand image, or sustainability credentials.",
+            "hypothesis": "They will prioritize brand, technology, and environmental impact over cost, and will be more likely to consider luxury or early-adopter models."
+          }
+        ],
+        "weights": [
+          {
+            "question_id": "q3",
+            "question_text": "What is the main purpose of the electric vehicle in your household?",
+            "option_label": "Long-distance travel and road trips",
+            "segment_id": "range_prioritizers",
+            "points": 3
+          },
+          {
+            "question_id": "q3",
+            "question_text": "What is the main purpose of the electric vehicle in your household?",
+            "option_label": "Daily commute to work or school",
+            "segment_id": "convenience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q4",
+            "question_text": "What is the main reason you use an electric vehicle for most of your trips?",
+            "option_label": "Lower running costs than gas",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q4",
+            "question_text": "What is the main reason you use an electric vehicle for most of your trips?",
+            "option_label": "Reducing my environmental impact",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q4",
+            "question_text": "What is the main reason you use an electric vehicle for most of your trips?",
+            "option_label": "The driving experience and technology",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "How often do you drive your electric vehicle on a trip longer than 150 miles one way?",
+            "option_label": "Every week or more",
+            "segment_id": "range_prioritizers",
+            "points": 3
+          },
+          {
+            "question_id": "q6",
+            "question_text": "How often do you drive your electric vehicle on a trip longer than 150 miles one way?",
+            "option_label": "About once a month",
+            "segment_id": "range_prioritizers",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Which event would most likely prompt you to start seriously looking at electric vehicles?",
+            "option_label": "My daily fuel costs have become too high",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Which event would most likely prompt you to start seriously looking at electric vehicles?",
+            "option_label": "A new EV model with the range I need is released",
+            "segment_id": "range_prioritizers",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Which event would most likely prompt you to start seriously looking at electric vehicles?",
+            "option_label": "A government or utility incentive becomes available",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Which event would most likely prompt you to start seriously looking at electric vehicles?",
+            "option_label": "I want to reduce my personal emissions",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "What is the highest price you are considering paying for your next electric vehicle?",
+            "option_label": "Under $30,000",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q13",
+            "question_text": "What is the highest price you are considering paying for your next electric vehicle?",
+            "option_label": "$30,000 - $39,999",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "What is the highest price you are considering paying for your next electric vehicle?",
+            "option_label": "$70,000 or more",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these factors most influenced your final choice of electric vehicle?",
+            "option_label": "Driving range on a full charge",
+            "segment_id": "range_prioritizers",
+            "points": 3
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these factors most influenced your final choice of electric vehicle?",
+            "option_label": "Upfront purchase price",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these factors most influenced your final choice of electric vehicle?",
+            "option_label": "Eligibility for tax credits or rebates",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these factors most influenced your final choice of electric vehicle?",
+            "option_label": "Technology features (autopilot, software)",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these factors most influenced your final choice of electric vehicle?",
+            "option_label": "Environmental impact",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these is the minimum driving range you would accept for your next electric vehicle?",
+            "option_label": "300 miles or more",
+            "segment_id": "range_prioritizers",
+            "points": 3
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these is the minimum driving range you would accept for your next electric vehicle?",
+            "option_label": "250 to 299 miles",
+            "segment_id": "range_prioritizers",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these is the minimum driving range you would accept for your next electric vehicle?",
+            "option_label": "Under 150 miles",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these must your next electric vehicle have?",
+            "option_label": "Fast charging (10% to 80% in under 30 minutes)",
+            "segment_id": "range_prioritizers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these must your next electric vehicle have?",
+            "option_label": "Home charging setup included or affordable",
+            "segment_id": "convenience_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these must your next electric vehicle have?",
+            "option_label": "A lower total cost of ownership than a comparable gas car",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these must your next electric vehicle have?",
+            "option_label": "A price under $35,000 before incentives",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q20",
+            "question_text": "Which battery size would you prefer for your next electric vehicle?",
+            "option_label": "Standard range (enough for daily commuting)",
+            "segment_id": "convenience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q20",
+            "question_text": "Which battery size would you prefer for your next electric vehicle?",
+            "option_label": "Long range (enough for 300+ mile road trips)",
+            "segment_id": "range_prioritizers",
+            "points": 2
+          },
+          {
+            "question_id": "q20",
+            "question_text": "Which battery size would you prefer for your next electric vehicle?",
+            "option_label": "Maximum range (the largest battery offered)",
+            "segment_id": "range_prioritizers",
+            "points": 3
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of these aspects of your electric vehicle most often falls short of your expectations?",
+            "option_label": "Availability of charging stations on long trips",
+            "segment_id": "range_prioritizers",
+            "points": 2
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of these aspects of your electric vehicle most often falls short of your expectations?",
+            "option_label": "Home charging setup cost or hassle",
+            "segment_id": "convenience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "Which of these aspects of your electric vehicle are you most satisfied with?",
+            "option_label": "Running costs and fuel savings",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "Which of these aspects of your electric vehicle are you most satisfied with?",
+            "option_label": "Technology and software features",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "Which of these aspects of your electric vehicle are you most satisfied with?",
+            "option_label": "Environmental benefits",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "What would most likely make you switch back to a gas-powered car?",
+            "option_label": "Insufficient range for long trips",
+            "segment_id": "range_prioritizers",
+            "points": 3
+          },
+          {
+            "question_id": "q26",
+            "question_text": "What would most likely make you switch back to a gas-powered car?",
+            "option_label": "Higher upfront cost than expected",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "What would most likely make you switch back to a gas-powered car?",
+            "option_label": "Nothing would make me switch",
+            "segment_id": "lifestyle_drivers",
+            "points": 2
+          }
+        ],
+        "tie_break": "Question bb8 (most influential factor in final choice) is the most direct behavioural self-report because it forces respondents to pick the single factor that actually drove their purchase decision, cleanly separating range, price, technology, and environmental motives.",
+        "notes": [
+          "Convenience seekers are primarily identified by home charging preference and daily commute use; they have fewer explicit signals because the survey focuses more on range and value.",
+          "Lifestyle drivers are identified by environmental/tech motivations and willingness to pay premium.",
+          "Value optimizers are identified by price sensitivity and cost-related motivations.",
+          "Range prioritizers are identified by long-distance needs and high range requirements."
+        ],
+        "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+      },
+      "fieldingNotes": {
+        "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+        "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+        "estimatedLength": "8-10 minutes.",
+        "scriptingNotes": [
+          "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+          "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+          "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+          "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+          "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+          "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+        ],
+        "caveats": [
+          "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+          "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+          "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

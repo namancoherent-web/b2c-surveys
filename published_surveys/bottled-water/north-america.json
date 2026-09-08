@@ -1,0 +1,2253 @@
+{
+  "surveyDefinition": {
+    "title": "Bottled Water — consumer survey (North America)",
+    "category": "Bottled Water",
+    "region": "North America",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on consumption occasions, purchase behaviour, product requirements and satisfaction drivers.",
+    "segments": [
+      {
+        "id": "convenience_on_the_go",
+        "name": "Convenience-Led Buyers",
+        "description": "Buy single-serve bottles for immediate consumption while commuting, traveling, or out of the home. Prioritize availability and portability over price. Often purchase from convenience stores, vending machines, or food service."
+      },
+      {
+        "id": "family_bulk_buyers",
+        "name": "Bulk-Purchase Households",
+        "description": "Buy large multi-packs or gallon jugs for home consumption by multiple household members. Price-sensitive, driven by value for money and consistent quality. Typically shop at supermarkets or warehouse clubs."
+      },
+      {
+        "id": "premium_enthusiasts",
+        "name": "Premium Quality Buyers",
+        "description": "Choose premium or enhanced waters (e.g., mineral, alkaline, functional) for taste, health benefits, or lifestyle. Low price sensitivity, high interest in provenance and quality cues. Often buy single-serve premium bottles."
+      },
+      {
+        "id": "eco_conscious_switchers",
+        "name": "Eco-Conscious Customers",
+        "description": "Concerned about plastic waste and environmental impact. May buy bottled water out of necessity but actively seek recycled packaging, larger formats, or alternative brands. Open to switching to filtered or tap water if quality is assured."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Bottled Water buyers in North America. It asks how people use Bottled Water, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+    "whoseContextThisIs": "Adults in North America who buy or use Bottled Water for personal or household use. Respondents qualify if they: Individuals who buy bottled water for their own consumption; Households that regularly purchase bottled water for home use. Excluded: Businesses purchasing bottled water for office supply or resale; Institutional buyers (e.g., hospitals, schools) purchasing for patients or staff.",
+    "whyTheseRespondents": "Everyday consumers buy bottled water for personal consumption, pay for it themselves at retail, and decide which brand to purchase at the point of sale. While businesses may purchase bottled water for offices, the dominant and defining buyer is the individual consumer.",
+    "respondentBehaviours": [
+      "Purchases bottled water at least weekly",
+      "Chooses between still, sparkling, flavored, and functional waters",
+      "Influenced by convenience, taste, brand trust, and health perceptions",
+      "May buy in bulk (multi-packs) or single-serve on-the-go"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 28,
+      "sections": [
+        {
+          "id": "consumption_context",
+          "label": "Consumption Behaviour & Occasion Context",
+          "covers": "Establishes how respondents use bottled water, in what situations, and with what frequency, to segment by usage context.",
+          "questions": 5
+        },
+        {
+          "id": "purchase_journey",
+          "label": "Purchase Journey & Channel Behaviour",
+          "covers": "Covers what triggers a purchase, where they buy, how often they restock, and what they typically spend.",
+          "questions": 5
+        },
+        {
+          "id": "product_requirements",
+          "label": "Product, Packaging & Value Requirements",
+          "covers": "Explores must-have product attributes, packaging preferences, sustainability claims, and price-value trade-offs.",
+          "questions": 6
+        },
+        {
+          "id": "satisfaction_switching",
+          "label": "Satisfaction, Loyalty & Switching Risk",
+          "covers": "Measures overall satisfaction, identifies friction points, and assesses likelihood to switch or reduce bottled water use.",
+          "questions": 6
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing who drinks bottled water and in what situations, then moves through the purchase journey from trigger to channel to spend, then explores product and packaging preferences including sustainability, and closes with satisfaction and switching risk. This arc separates the four segments by their consumption context, purchase patterns, and product priorities."
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Bottled Water in North America — who Individuals who buy bottled water for their own consumption; Households that regularly purchase bottled water for home use. The core consumer market for bottled water is individual drinkers who make personal purchase decisions. Excluding business/institutional purchases keeps the study focused on the primary B2C motion.",
+    "marketSegment": "Bottled Water",
+    "region": "North America",
+    "inclusionCriteria": [
+      "Individuals who buy bottled water for their own consumption",
+      "Households that regularly purchase bottled water for home use"
+    ],
+    "behaviors": [
+      "Purchases bottled water at least weekly",
+      "Chooses between still, sparkling, flavored, and functional waters",
+      "Influenced by convenience, taste, brand trust, and health perceptions",
+      "May buy in bulk (multi-packs) or single-serve on-the-go"
+    ],
+    "exclusions": [
+      "Businesses purchasing bottled water for office supply or resale",
+      "Institutional buyers (e.g., hospitals, schools) purchasing for patients or staff"
+    ],
+    "contextDemographics": {
+      "age": "18-65+",
+      "income": "All income levels, with higher consumption among middle and upper income",
+      "gender": "All genders",
+      "geography": "Global, with higher penetration in urban areas and regions with tap water quality concerns"
+    },
+    "assumptions": [
+      "Bottled water is a consumer staple with a broad demographic appeal; no narrow demographic targeting is needed for a general population survey."
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Bottled Water",
+  "slug": "bottled-water",
+  "region": "north-america",
+  "frontend": {
+    "sections": [
+      {
+        "id": "consumption_context",
+        "label": "Consumption Behaviour & Occasion Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "How often do you personally drink bottled water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Several times a day",
+              "About once a day",
+              "A few times a week",
+              "About once a week",
+              "A few times a month",
+              "Less often than that"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Several times a day",
+                "value": 24.0
+              },
+              {
+                "label": "About once a day",
+                "value": 28.0
+              },
+              {
+                "label": "A few times a week",
+                "value": 26.0
+              },
+              {
+                "label": "About once a week",
+                "value": 12.0
+              },
+              {
+                "label": "A few times a month",
+                "value": 7.0
+              },
+              {
+                "label": "Less often than that",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: About once a day (28.00%).",
+            "distributionNote": "Convenience-Led Buyers and Bulk-Purchase Households drive frequent daily consumption, while occasional usage is spread across all segments.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Bottled water usage",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "Where do you typically drink bottled water?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "At home",
+              "At work or school",
+              "In the car or while commuting",
+              "At the gym or during exercise",
+              "While traveling or on trips",
+              "At restaurants or cafes",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "At home",
+                "value": 72.0
+              },
+              {
+                "label": "At work or school",
+                "value": 48.0
+              },
+              {
+                "label": "In the car or while commuting",
+                "value": 55.0
+              },
+              {
+                "label": "At the gym or during exercise",
+                "value": 30.0
+              },
+              {
+                "label": "While traveling or on trips",
+                "value": 62.0
+              },
+              {
+                "label": "At restaurants or cafes",
+                "value": 38.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: At home (72.00%).",
+            "distributionNote": "Bulk-Purchase Households anchor home consumption; Convenience-Led Buyers drive on-the-go locations like commuting and travel.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "usage_occasions",
+            "beatTitle": "Occasions for drinking bottled water",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "In a typical week, how many bottles of bottled water do you drink?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "1 to 2",
+              "3 to 5",
+              "6 to 10",
+              "11 to 15",
+              "More than 15"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1 to 2",
+                "value": 18.0
+              },
+              {
+                "label": "3 to 5",
+                "value": 30.0
+              },
+              {
+                "label": "6 to 10",
+                "value": 28.0
+              },
+              {
+                "label": "11 to 15",
+                "value": 14.0
+              },
+              {
+                "label": "More than 15",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 3 to 5 (30.00%).",
+            "distributionNote": "Bulk-Purchase Households and Convenience-Led Buyers push higher weekly volumes; lighter users are more occasional.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "usage_frequency",
+            "beatTitle": "Frequency and volume consumed",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "Who are you usually buying bottled water for?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Just myself",
+              "Myself and one other person",
+              "Myself and my children",
+              "My whole household",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Just myself",
+                "value": 48.0
+              },
+              {
+                "label": "Myself and one other person",
+                "value": 15.0
+              },
+              {
+                "label": "Myself and my children",
+                "value": 14.0
+              },
+              {
+                "label": "My whole household",
+                "value": 20.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Just myself (48.00%).",
+            "distributionNote": "Individual consumption is led by Convenience-Led Buyers and Premium Quality Buyers; household buying is driven by Bulk-Purchase Households.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "household_role",
+            "beatTitle": "Who drinks and who buys",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "What is the main reason you choose bottled water over tap or filtered water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "It tastes better",
+              "It is more convenient to carry around",
+              "I do not trust the safety of tap water",
+              "It is healthier than tap water",
+              "I like the added minerals or electrolytes",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "It tastes better",
+                "value": 32.0
+              },
+              {
+                "label": "It is more convenient to carry around",
+                "value": 30.0
+              },
+              {
+                "label": "I do not trust the safety of tap water",
+                "value": 18.0
+              },
+              {
+                "label": "It is healthier than tap water",
+                "value": 12.0
+              },
+              {
+                "label": "I like the added minerals or electrolytes",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: It tastes better (32.00%).",
+            "distributionNote": "Taste and convenience are the top drivers across Convenience-Led and Premium Quality Buyers.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "need_state",
+            "beatTitle": "Reasons for choosing bottled water",
+            "beatCanonical": "need_state"
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey",
+        "label": "Purchase Journey & Channel Behaviour",
+        "questions": [
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "What usually makes you decide to buy bottled water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I'm thirsty away from home",
+              "I've run out of tap or filtered water",
+              "I'm stocking up for home or family",
+              "I want something flavored or sparkling",
+              "I'm buying it for a workout or sports",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I'm thirsty away from home",
+                "value": 40.0
+              },
+              {
+                "label": "I've run out of tap or filtered water",
+                "value": 12.0
+              },
+              {
+                "label": "I'm stocking up for home or family",
+                "value": 22.0
+              },
+              {
+                "label": "I want something flavored or sparkling",
+                "value": 12.0
+              },
+              {
+                "label": "I'm buying it for a workout or sports",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I'm thirsty away from home (40.00%).",
+            "distributionNote": "Immediate thirst away from home is the top trigger for Convenience-Led Buyers; stocking up is driven by Bulk-Purchase Households.",
+            "N": 420,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What triggers a bottled water purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Where do you usually buy bottled water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Supermarket or hypermarket",
+              "Convenience or corner store",
+              "Gas station or travel stop",
+              "Online grocery delivery",
+              "Vending machine or kiosk",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Supermarket or hypermarket",
+                "value": 45.0
+              },
+              {
+                "label": "Convenience or corner store",
+                "value": 20.0
+              },
+              {
+                "label": "Gas station or travel stop",
+                "value": 12.0
+              },
+              {
+                "label": "Online grocery delivery",
+                "value": 10.0
+              },
+              {
+                "label": "Vending machine or kiosk",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Supermarket or hypermarket (45.00%).",
+            "distributionNote": "Bulk-Purchase Households and Eco-Conscious Customers favor supermarkets; Convenience-Led Buyers skew to convenience and gas stations.",
+            "N": 420,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "purchase_channel",
+            "beatTitle": "Where bottled water is bought",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "What size bottle of water do you usually buy?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Small single-serve (under 1 liter)",
+              "Large single-serve (1 liter or more)",
+              "Multi-pack of single-serve bottles",
+              "Gallon jug or larger",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Small single-serve (under 1 liter)",
+                "value": 35.0
+              },
+              {
+                "label": "Large single-serve (1 liter or more)",
+                "value": 15.0
+              },
+              {
+                "label": "Multi-pack of single-serve bottles",
+                "value": 35.0
+              },
+              {
+                "label": "Gallon jug or larger",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Small single-serve (under 1 liter) (35.00%).",
+            "distributionNote": "Convenience-Led Buyers prefer small single-serve; Bulk-Purchase Households and Eco-Conscious Customers drive multi-packs and larger formats.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "pack_size",
+            "beatTitle": "Typical pack size and format"
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "How much do you spend on bottled water in a typical month?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $10",
+              "$10 to $24",
+              "$25 to $49",
+              "$50 to $99",
+              "$100 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Under $10",
+                "value": 20.0
+              },
+              {
+                "label": "$10 to $24",
+                "value": 35.0
+              },
+              {
+                "label": "$25 to $49",
+                "value": 25.0
+              },
+              {
+                "label": "$50 to $99",
+                "value": 13.0
+              },
+              {
+                "label": "$100 or more",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: $10 to $24 (35.00%).",
+            "distributionNote": "Value-sensitive segments cluster in the lower bands; Premium Quality Buyers and Bulk-Purchase Households push the higher spend tiers.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "spend",
+            "beatTitle": "Typical spend on bottled water",
+            "beatCanonical": "spend"
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Which one factor most often decides which bottled water you buy?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Taste",
+              "Price",
+              "Brand trust",
+              "Packaging or bottle size",
+              "Added minerals or electrolytes",
+              "Availability in the store",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Taste",
+                "value": 25.0
+              },
+              {
+                "label": "Price",
+                "value": 20.0
+              },
+              {
+                "label": "Brand trust",
+                "value": 18.0
+              },
+              {
+                "label": "Packaging or bottle size",
+                "value": 10.0
+              },
+              {
+                "label": "Added minerals or electrolytes",
+                "value": 12.0
+              },
+              {
+                "label": "Availability in the store",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Taste (25.00%).",
+            "distributionNote": "Premium Quality Buyers and Convenience-Led Buyers emphasize taste; Bulk-Purchase Households and value seekers weigh price; brand trust is strong among loyal segments.",
+            "N": 420,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "decision_drivers",
+            "beatTitle": "What decides the brand and type",
+            "beatCanonical": "decision_drivers"
+          }
+        ]
+      },
+      {
+        "id": "product_requirements",
+        "label": "Product, Packaging & Value Requirements",
+        "questions": [
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Which must a bottled water meet for you to buy it regularly?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Consistent taste every time",
+              "No plastic aftertaste or smell",
+              "Clear, clean appearance",
+              "Secure, leak-proof cap",
+              "Easy to open and reseal",
+              "None of these are must-haves"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Consistent taste every time",
+                "value": 55.0
+              },
+              {
+                "label": "No plastic aftertaste or smell",
+                "value": 45.0
+              },
+              {
+                "label": "Clear, clean appearance",
+                "value": 40.0
+              },
+              {
+                "label": "Secure, leak-proof cap",
+                "value": 35.0
+              },
+              {
+                "label": "Easy to open and reseal",
+                "value": 30.0
+              },
+              {
+                "label": "None of these are must-haves",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Consistent taste every time (55.00%).",
+            "distributionNote": "Quality-focused segments drive consistent taste and no aftertaste; convenience and safety concerns are also widespread across segments.",
+            "N": 420,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "water_type_preference",
+            "beatTitle": "Preferred type of bottled water",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Which type of bottled water do you usually buy?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Still (flat) water",
+              "Sparkling water",
+              "Flavored water (no sugar)",
+              "Functional water (electrolytes, vitamins, etc.)",
+              "Mineral or spring water",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Still (flat) water",
+                "value": 55.0
+              },
+              {
+                "label": "Sparkling water",
+                "value": 15.0
+              },
+              {
+                "label": "Flavored water (no sugar)",
+                "value": 10.0
+              },
+              {
+                "label": "Functional water (electrolytes, vitamins, etc.)",
+                "value": 12.0
+              },
+              {
+                "label": "Mineral or spring water",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 0.0
+              }
+            ],
+            "insight": "Top response: Still (flat) water (55.00%).",
+            "distributionNote": "Still water dominates across most segments.",
+            "N": 420,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "water_type_preference",
+            "beatTitle": "Preferred type of bottled water",
+            "beatCanonical": "must_haves"
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "Which signals quality to you in bottled water?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Source (e.g., spring, glacier, artesian)",
+              "Mineral content listed on the label",
+              "Brand reputation",
+              "Taste",
+              "Packaging (e.g., glass vs. plastic)",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Source (e.g., spring, glacier, artesian)",
+                "value": 35.0
+              },
+              {
+                "label": "Mineral content listed on the label",
+                "value": 20.0
+              },
+              {
+                "label": "Brand reputation",
+                "value": 25.0
+              },
+              {
+                "label": "Taste",
+                "value": 15.0
+              },
+              {
+                "label": "Packaging (e.g., glass vs. plastic)",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Source (e.g., spring, glacier, artesian) (35.00%).",
+            "distributionNote": "Premium Quality Buyers and Bulk-Purchase Households emphasize source and brand reputation; Convenience-Led Buyers weight taste more.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Signals of quality in bottled water",
+            "beatCanonical": "quality_cues",
+            "multiSelect": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "Which claims on a bottled water label make you more likely to buy it?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Natural spring or mineral source",
+              "Purified or reverse osmosis",
+              "Recyclable or eco-friendly packaging",
+              "Added electrolytes or minerals",
+              "pH balanced or alkaline",
+              "None of these influence me"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Natural spring or mineral source",
+                "value": 30.0
+              },
+              {
+                "label": "Purified or reverse osmosis",
+                "value": 25.0
+              },
+              {
+                "label": "Recyclable or eco-friendly packaging",
+                "value": 20.0
+              },
+              {
+                "label": "Added electrolytes or minerals",
+                "value": 15.0
+              },
+              {
+                "label": "pH balanced or alkaline",
+                "value": 7.0
+              },
+              {
+                "label": "None of these influence me",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Natural spring or mineral source (30.00%).",
+            "distributionNote": "Premium Quality Buyers and Bulk-Purchase Households respond to source and purification claims; Eco-Conscious Customers are drawn to packaging claims.",
+            "N": 420,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "sustainability_claims",
+            "beatTitle": "Importance of sustainability claims",
+            "beatCanonical": "claims_credentials",
+            "multiSelect": true
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "If you had to give up one of these, which would you give up first?",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "options": [
+              "Premium quality (e.g., mineral, alkaline)",
+              "Convenient packaging (e.g., single-serve, easy-open)",
+              "Eco-friendly packaging (e.g., recycled plastic, glass)",
+              "Low price",
+              "Wide availability (e.g., at gas stations, vending machines)"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Premium quality (e.g., mineral, alkaline)",
+                "value": 25.0
+              },
+              {
+                "label": "Convenient packaging (e.g., single-serve, easy-open)",
+                "value": 20.0
+              },
+              {
+                "label": "Eco-friendly packaging (e.g., recycled plastic, glass)",
+                "value": 18.0
+              },
+              {
+                "label": "Low price",
+                "value": 22.0
+              },
+              {
+                "label": "Wide availability (e.g., at gas stations, vending machines)",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Premium quality (e.g., mineral, alkaline) (25.00%).",
+            "distributionNote": "Price-sensitive segments give up premium quality first; Convenience-Led Buyers are more reluctant to give up availability and packaging.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price, quality and convenience",
+            "beatCanonical": "tradeoffs",
+            "ordered": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "How much more would you pay for a premium water (e.g., mineral, alkaline) over a standard one?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I wouldn't pay more",
+              "Up to 25% more",
+              "26% to 50% more",
+              "51% to 100% more",
+              "More than double",
+              "I don't buy premium water"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "I wouldn't pay more",
+                "value": 30.0
+              },
+              {
+                "label": "Up to 25% more",
+                "value": 35.0
+              },
+              {
+                "label": "26% to 50% more",
+                "value": 15.0
+              },
+              {
+                "label": "51% to 100% more",
+                "value": 5.0
+              },
+              {
+                "label": "More than double",
+                "value": 2.0
+              },
+              {
+                "label": "I don't buy premium water",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Up to 25% more (35.00%).",
+            "distributionNote": "Bulk-Purchase Households and Convenience-Led Buyers are unwilling to pay much; Premium Quality Buyers accept a moderate premium.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "value_expectation",
+            "beatTitle": "Value for money expectations",
+            "beatCanonical": "value_expectation"
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_switching",
+        "label": "Satisfaction, Loyalty & Switching Risk",
+        "questions": [
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "How does the bottled water you buy now compare with what you expected?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Much worse than expected",
+              "Somewhat worse than expected",
+              "About as expected",
+              "Somewhat better than expected",
+              "Much better than expected"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Much worse than expected",
+                "value": 6.0
+              },
+              {
+                "label": "Somewhat worse than expected",
+                "value": 15.0
+              },
+              {
+                "label": "About as expected",
+                "value": 45.0
+              },
+              {
+                "label": "Somewhat better than expected",
+                "value": 25.0
+              },
+              {
+                "label": "Much better than expected",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: About as expected (45.00%).",
+            "distributionNote": "Most segments find the product about as expected; Premium Quality Buyers and brand-loyal households report better-than-expected experiences.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction with bottled water",
+            "beatCanonical": "overall_satisfaction"
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which one aspect of bottled water most often disappoints you?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "The price",
+              "The taste",
+              "The plastic waste",
+              "Inconsistent quality between bottles",
+              "Not being available where I shop",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The price",
+                "value": 33.0
+              },
+              {
+                "label": "The taste",
+                "value": 12.0
+              },
+              {
+                "label": "The plastic waste",
+                "value": 18.0
+              },
+              {
+                "label": "Inconsistent quality between bottles",
+                "value": 17.0
+              },
+              {
+                "label": "Not being available where I shop",
+                "value": 14.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: The price (33.00%).",
+            "distributionNote": "Eco-Conscious Customers drive the plastic waste share; availability concerns come from Convenience-Led Buyers.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What satisfies or disappoints",
+            "beatCanonical": "satisfaction_drivers"
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "Which one of these matters most to your overall satisfaction with bottled water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Taste",
+              "Price",
+              "Packaging",
+              "Availability",
+              "Consistent quality",
+              "Health benefits"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Taste",
+                "value": 22.0
+              },
+              {
+                "label": "Price",
+                "value": 26.0
+              },
+              {
+                "label": "Packaging",
+                "value": 8.0
+              },
+              {
+                "label": "Availability",
+                "value": 12.0
+              },
+              {
+                "label": "Consistent quality",
+                "value": 18.0
+              },
+              {
+                "label": "Health benefits",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: Price (26.00%).",
+            "distributionNote": "Bulk-Purchase Households and Convenience-Led Buyers emphasize price and availability; Premium Quality Buyers and Eco-Conscious Customers split between taste, health benefits, and packaging.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What satisfies or disappoints",
+            "beatCanonical": "satisfaction_drivers"
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which frustrations have you had with bottled water in the last 30 days?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Price of Bottled Water",
+              "Availability",
+              "Product quality consistency",
+              "Bottle leaks or is hard to open",
+              "No option in the size I wanted",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Price of Bottled Water",
+                "value": 62.0
+              },
+              {
+                "label": "Availability",
+                "value": 38.0
+              },
+              {
+                "label": "Product quality consistency",
+                "value": 35.0
+              },
+              {
+                "label": "Bottle leaks or is hard to open",
+                "value": 22.0
+              },
+              {
+                "label": "No option in the size I wanted",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Price of Bottled Water (62.00%).",
+            "distributionNote": "Price frustration is widespread across price-sensitive segments; availability and quality issues are reported by Convenience-Led and Premium Quality Buyers; physical bottle issues are more common among parents and seniors.",
+            "N": 420,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "friction",
+            "beatTitle": "Problems and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "What would most likely make you switch to a different bottled water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "A lower price for the same quality",
+              "A new type of water (e.g., mineral, alkaline, functional)",
+              "Packaging that is easier to recycle or uses less plastic",
+              "Better taste compared with what I buy now",
+              "More consistent quality between bottles",
+              "None of these would make me switch"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "A lower price for the same quality",
+                "value": 30.0
+              },
+              {
+                "label": "A new type of water (e.g., mineral, alkaline, functional)",
+                "value": 12.0
+              },
+              {
+                "label": "Packaging that is easier to recycle or uses less plastic",
+                "value": 18.0
+              },
+              {
+                "label": "Better taste compared with what I buy now",
+                "value": 15.0
+              },
+              {
+                "label": "More consistent quality between bottles",
+                "value": 14.0
+              },
+              {
+                "label": "None of these would make me switch",
+                "value": 11.0
+              }
+            ],
+            "insight": "Top response: A lower price for the same quality (30.00%).",
+            "distributionNote": "Price-sensitive segments would switch for lower price; Eco-Conscious Customers are drawn to better packaging; Premium Quality Buyers and taste-driven segments respond to taste and quality consistency.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "switching",
+            "beatTitle": "What would make them switch",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "In the next 12 months, do you expect to drink more, less, or about the same amount of bottled water?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Much more than now",
+              "Somewhat more than now",
+              "About the same as now",
+              "Somewhat less than now",
+              "Much less than now"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Much more than now",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat more than now",
+                "value": 24.0
+              },
+              {
+                "label": "About the same as now",
+                "value": 42.0
+              },
+              {
+                "label": "Somewhat less than now",
+                "value": 18.0
+              },
+              {
+                "label": "Much less than now",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: About the same as now (42.00%).",
+            "distributionNote": "Growth is driven by Convenience-Led Buyers and Premium Quality Buyers; Eco-Conscious Customers and some price-sensitive households expect to reduce consumption.",
+            "N": 420,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "future_use",
+            "beatTitle": "Future bottled water consumption",
+            "beatCanonical": "future_use"
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which age group are you in?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 14.0
+              },
+              {
+                "label": "25-34",
+                "value": 22.0
+              },
+              {
+                "label": "35-44",
+                "value": 24.0
+              },
+              {
+                "label": "45-54",
+                "value": 18.0
+              },
+              {
+                "label": "55-64",
+                "value": 13.0
+              },
+              {
+                "label": "65 or older",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: 35-44 (24.00%).",
+            "distributionNote": "The panel skews toward family and commuter age groups, with a notable student segment in the youngest bracket.",
+            "N": 420,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "age_band"
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "What is your gender?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 52.0
+              },
+              {
+                "label": "Man",
+                "value": 46.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (52.00%).",
+            "distributionNote": "The panel is roughly balanced by gender, with a slight majority of women reflecting primary household shoppers.",
+            "N": 420,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "gender"
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Who else lives in your household?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 28.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 32.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 17.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (32.00%).",
+            "distributionNote": "Households with children are well represented, aligning with family-oriented bulk buyers; singles and shared households reflect commuter and student segments.",
+            "N": 420,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "household_composition"
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "What was your total household income before tax last year?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 8.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 18.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 27.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 22.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 15.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 7.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (27.00%).",
+            "distributionNote": "Middle-income segments (Bulk-Purchase Households, Convenience-Led Buyers) dominate the middle bands; Premium Quality Buyers and Eco-Conscious Customers add upper-middle mass.",
+            "N": 420,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "income_band"
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "How likely are you to recommend the Bottled Water you currently use to a friend or colleague?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 1.0
+              },
+              {
+                "label": "2",
+                "value": 2.0
+              },
+              {
+                "label": "3",
+                "value": 3.0
+              },
+              {
+                "label": "4",
+                "value": 4.0
+              },
+              {
+                "label": "5",
+                "value": 10.0
+              },
+              {
+                "label": "6",
+                "value": 9.0
+              },
+              {
+                "label": "7",
+                "value": 15.0
+              },
+              {
+                "label": "8",
+                "value": 22.0
+              },
+              {
+                "label": "9",
+                "value": 18.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: 8 (22.00%).",
+            "distributionNote": "Bulk-Purchase Households and Premium Quality Buyers anchor the high end; Convenience-Led Buyers and Eco-Conscious Customers spread across the middle.",
+            "N": 420,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "advocacy_nps"
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Overall, how satisfied are you with the Bottled Water you currently use?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 3.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 15.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 32.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "Bulk-Purchase Households and Premium Quality Buyers drive satisfaction; Convenience-Led Buyers and Eco-Conscious Customers contribute to the middle.",
+            "N": 420,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "overall_satisfaction_profile",
+            "ordered": true
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 28,
+    "counts_by_tab": {
+      "consumption_context": 5,
+      "purchase_journey": 5,
+      "product_requirements": 6,
+      "satisfaction_switching": 6,
+      "profiling": 6
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": true,
+    "warnings": [
+      "Grounding is thin — most answers are inferred, not data-backed.",
+      "Tab 'consumption_context' under target: 5/8.",
+      "Tab 'purchase_journey' under target: 5/8.",
+      "Tab 'product_requirements' under target: 6/8.",
+      "Tab 'satisfaction_switching' under target: 6/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "consumption_context": [
+        {
+          "beatId": "category_entry",
+          "title": "Bottled water usage",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "usage_occasions",
+          "title": "Occasions for drinking bottled water",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "usage_frequency",
+          "title": "Frequency and volume consumed",
+          "canonical": "usage_frequency",
+          "order": 3
+        },
+        {
+          "beatId": "household_role",
+          "title": "Who drinks and who buys",
+          "canonical": "household_role",
+          "order": 4
+        },
+        {
+          "beatId": "need_state",
+          "title": "Reasons for choosing bottled water",
+          "canonical": "need_state",
+          "order": 5
+        }
+      ],
+      "purchase_journey": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "What triggers a bottled water purchase",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "purchase_channel",
+          "title": "Where bottled water is bought",
+          "canonical": "channel",
+          "order": 2
+        },
+        {
+          "beatId": "purchase_cycle",
+          "title": "How often bottled water is restocked",
+          "canonical": "purchase_cycle",
+          "order": 3
+        },
+        {
+          "beatId": "pack_size",
+          "title": "Typical pack size and format",
+          "canonical": null,
+          "order": 4
+        },
+        {
+          "beatId": "spend",
+          "title": "Typical spend on bottled water",
+          "canonical": "spend",
+          "order": 5
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "What decides the brand and type",
+          "canonical": "decision_drivers",
+          "order": 6
+        }
+      ],
+      "product_requirements": [
+        {
+          "beatId": "water_type_preference",
+          "title": "Preferred type of bottled water",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Signals of quality in bottled water",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "packaging_preferences",
+          "title": "Packaging and format preferences",
+          "canonical": "format_packaging",
+          "order": 3
+        },
+        {
+          "beatId": "sustainability_claims",
+          "title": "Importance of sustainability claims",
+          "canonical": "claims_credentials",
+          "order": 4
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs between price, quality and convenience",
+          "canonical": "tradeoffs",
+          "order": 5
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value for money expectations",
+          "canonical": "value_expectation",
+          "order": 6
+        }
+      ],
+      "satisfaction_switching": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction with bottled water",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What satisfies or disappoints",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction",
+          "title": "Problems and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching",
+          "title": "What would make them switch",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "future_use",
+          "title": "Future bottled water consumption",
+          "canonical": "future_use",
+          "order": 5
+        }
+      ]
+    },
+    "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on consumption occasions, purchase behaviour, product requirements and satisfaction drivers.",
+    "segmentation_lens": "Jobs-to-be-done combined with usage/behavioural: bottled water is hired for distinct jobs (hydration on the go, family staple, premium experience, fitness recovery) that drive different purchase patterns and product priorities. Usage frequency alone would not separate the Premium Water Enthusiast fr",
+    "must_cover_topics": [
+      "bottled water type",
+      "pack size",
+      "price paid",
+      "purchase channel",
+      "replacement cycle",
+      "sustainability concern"
+    ],
+    "segments": [
+      {
+        "segment_id": "convenience_on_the_go",
+        "name": "Convenience-Led Buyers",
+        "description": "Buy single-serve bottles for immediate consumption while commuting, traveling, or out of the home. Prioritize availability and portability over price. Often purchase from convenience stores, vending machines, or food service.",
+        "hypothesis": "This group will report high frequency of single-serve purchases, low price sensitivity, and high importance of availability and portability."
+      },
+      {
+        "segment_id": "family_bulk_buyers",
+        "name": "Bulk-Purchase Households",
+        "description": "Buy large multi-packs or gallon jugs for home consumption by multiple household members. Price-sensitive, driven by value for money and consistent quality. Typically shop at supermarkets or warehouse clubs.",
+        "hypothesis": "This group will report large pack sizes, high purchase frequency, high price sensitivity, and high importance of value for money and consistent quality."
+      },
+      {
+        "segment_id": "premium_enthusiasts",
+        "name": "Premium Quality Buyers",
+        "description": "Choose premium or enhanced waters (e.g., mineral, alkaline, functional) for taste, health benefits, or lifestyle. Low price sensitivity, high interest in provenance and quality cues. Often buy single-serve premium bottles.",
+        "hypothesis": "This group will report low price sensitivity, high importance of taste and quality cues, and willingness to pay a premium for specific water types."
+      },
+      {
+        "segment_id": "eco_conscious_switchers",
+        "name": "Eco-Conscious Customers",
+        "description": "Concerned about plastic waste and environmental impact. May buy bottled water out of necessity but actively seek recycled packaging, larger formats, or alternative brands. Open to switching to filtered or tap water if quality is assured.",
+        "hypothesis": "This group will report high environmental concern, high importance of sustainable packaging, and higher likelihood of considering alternatives to single-use plastic."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "convenience_on_the_go",
+          "name": "Convenience-Led Buyers",
+          "description": "Buy single-serve bottles for immediate consumption while commuting, traveling, or out of the home. Prioritize availability and portability over price. Often purchase from convenience stores, vending machines, or food service.",
+          "hypothesis": "This group will report high frequency of single-serve purchases, low price sensitivity, and high importance of availability and portability."
+        },
+        {
+          "segment_id": "family_bulk_buyers",
+          "name": "Bulk-Purchase Households",
+          "description": "Buy large multi-packs or gallon jugs for home consumption by multiple household members. Price-sensitive, driven by value for money and consistent quality. Typically shop at supermarkets or warehouse clubs.",
+          "hypothesis": "This group will report large pack sizes, high purchase frequency, high price sensitivity, and high importance of value for money and consistent quality."
+        },
+        {
+          "segment_id": "premium_enthusiasts",
+          "name": "Premium Quality Buyers",
+          "description": "Choose premium or enhanced waters (e.g., mineral, alkaline, functional) for taste, health benefits, or lifestyle. Low price sensitivity, high interest in provenance and quality cues. Often buy single-serve premium bottles.",
+          "hypothesis": "This group will report low price sensitivity, high importance of taste and quality cues, and willingness to pay a premium for specific water types."
+        },
+        {
+          "segment_id": "eco_conscious_switchers",
+          "name": "Eco-Conscious Customers",
+          "description": "Concerned about plastic waste and environmental impact. May buy bottled water out of necessity but actively seek recycled packaging, larger formats, or alternative brands. Open to switching to filtered or tap water if quality is assured.",
+          "hypothesis": "This group will report high environmental concern, high importance of sustainable packaging, and higher likelihood of considering alternatives to single-use plastic."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q2",
+          "question_text": "Where do you typically drink bottled water?",
+          "option_label": "In the car or while commuting",
+          "segment_id": "convenience_on_the_go",
+          "points": 3
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Where do you typically drink bottled water?",
+          "option_label": "While traveling or on trips",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Where do you typically drink bottled water?",
+          "option_label": "At the gym or during exercise",
+          "segment_id": "convenience_on_the_go",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Who are you usually buying bottled water for?",
+          "option_label": "My whole household",
+          "segment_id": "family_bulk_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Who are you usually buying bottled water for?",
+          "option_label": "Myself and my children",
+          "segment_id": "family_bulk_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "What usually makes you decide to buy bottled water?",
+          "option_label": "I'm stocking up for home or family",
+          "segment_id": "family_bulk_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Where do you usually buy bottled water?",
+          "option_label": "Supermarket or hypermarket",
+          "segment_id": "family_bulk_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What size bottle of water do you usually buy?",
+          "option_label": "Multi-pack of single-serve bottles",
+          "segment_id": "family_bulk_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What size bottle of water do you usually buy?",
+          "option_label": "Gallon jug or larger",
+          "segment_id": "family_bulk_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Which one factor most often decides which bottled water you buy?",
+          "option_label": "Price",
+          "segment_id": "family_bulk_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which one aspect of bottled water most often disappoints you?",
+          "option_label": "The price",
+          "segment_id": "family_bulk_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which type of bottled water do you usually buy?",
+          "option_label": "Mineral or spring water",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which type of bottled water do you usually buy?",
+          "option_label": "Functional water (electrolytes, vitamins, etc.)",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Which of these signals quality to you in bottled water?",
+          "option_label": "Source (e.g., spring, glacier, artesian)",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Which of these signals quality to you in bottled water?",
+          "option_label": "Mineral content listed on the label",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Which claims on a bottled water label make you more likely to buy it?",
+          "option_label": "Natural spring or mineral source",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Which claims on a bottled water label make you more likely to buy it?",
+          "option_label": "Added electrolytes or minerals",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Which claims on a bottled water label make you more likely to buy it?",
+          "option_label": "pH balanced or alkaline",
+          "segment_id": "premium_enthusiasts",
+          "points": 3
+        },
+        {
+          "question_id": "q16",
+          "question_text": "How much more would you pay for a premium water (e.g., mineral, alkaline) over a standard one?",
+          "option_label": "Up to 25% more",
+          "segment_id": "premium_enthusiasts",
+          "points": 1
+        },
+        {
+          "question_id": "q16",
+          "question_text": "How much more would you pay for a premium water (e.g., mineral, alkaline) over a standard one?",
+          "option_label": "26% to 50% more",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "How much more would you pay for a premium water (e.g., mineral, alkaline) over a standard one?",
+          "option_label": "51% to 100% more",
+          "segment_id": "premium_enthusiasts",
+          "points": 3
+        },
+        {
+          "question_id": "q16",
+          "question_text": "How much more would you pay for a premium water (e.g., mineral, alkaline) over a standard one?",
+          "option_label": "More than double",
+          "segment_id": "premium_enthusiasts",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which of these would most likely make you switch to a different bottled water?",
+          "option_label": "A new type of water (e.g., mineral, alkaline, functional)",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Which claims on a bottled water label make you more likely to buy it?",
+          "option_label": "Recyclable or eco-friendly packaging",
+          "segment_id": "eco_conscious_switchers",
+          "points": 3
+        },
+        {
+          "question_id": "q15",
+          "question_text": "If you had to give up one of these, which would you give up first?",
+          "option_label": "Eco-friendly packaging (e.g., recycled plastic, glass)",
+          "segment_id": "eco_conscious_switchers",
+          "points": 3
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which one aspect of bottled water most often disappoints you?",
+          "option_label": "The plastic waste",
+          "segment_id": "eco_conscious_switchers",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which of these would most likely make you switch to a different bottled water?",
+          "option_label": "Packaging that is easier to recycle or uses less plastic",
+          "segment_id": "eco_conscious_switchers",
+          "points": 3
+        },
+        {
+          "question_id": "q22",
+          "question_text": "In the next 12 months, do you expect to drink more, less, or about the same amount of bottled water?",
+          "option_label": "Somewhat less than now",
+          "segment_id": "eco_conscious_switchers",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "In the next 12 months, do you expect to drink more, less, or about the same amount of bottled water?",
+          "option_label": "Much less than now",
+          "segment_id": "eco_conscious_switchers",
+          "points": 3
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Which of these must a bottled water meet for you to buy it regularly?",
+          "option_label": "No plastic aftertaste or smell",
+          "segment_id": "premium_enthusiasts",
+          "points": 1
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Which of these must a bottled water meet for you to buy it regularly?",
+          "option_label": "No plastic aftertaste or smell",
+          "segment_id": "eco_conscious_switchers",
+          "points": 1
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Where do you usually buy bottled water?",
+          "option_label": "Convenience or corner store",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Where do you usually buy bottled water?",
+          "option_label": "Gas station or travel stop",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "Where do you usually buy bottled water?",
+          "option_label": "Vending machine or kiosk",
+          "segment_id": "convenience_on_the_go",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What size bottle of water do you usually buy?",
+          "option_label": "Small single-serve (under 1 liter)",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What size bottle of water do you usually buy?",
+          "option_label": "Large single-serve (1 liter or more)",
+          "segment_id": "convenience_on_the_go",
+          "points": 1
+        },
+        {
+          "question_id": "q5",
+          "question_text": "What is the main reason you choose bottled water over tap or filtered water?",
+          "option_label": "It is more convenient to carry around",
+          "segment_id": "convenience_on_the_go",
+          "points": 3
+        },
+        {
+          "question_id": "q6",
+          "question_text": "What usually makes you decide to buy bottled water?",
+          "option_label": "I'm thirsty away from home",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Which one factor most often decides which bottled water you buy?",
+          "option_label": "Availability in the store",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which one of these matters most to your overall satisfaction with bottled water?",
+          "option_label": "Availability",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "Which of these frustrations have you had with bottled water in the last 30 days?",
+          "option_label": "No option in the size I wanted",
+          "segment_id": "convenience_on_the_go",
+          "points": 1
+        },
+        {
+          "question_id": "q5",
+          "question_text": "What is the main reason you choose bottled water over tap or filtered water?",
+          "option_label": "I like the added minerals or electrolytes",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Which one factor most often decides which bottled water you buy?",
+          "option_label": "Added minerals or electrolytes",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which one of these matters most to your overall satisfaction with bottled water?",
+          "option_label": "Health benefits",
+          "segment_id": "premium_enthusiasts",
+          "points": 1
+        },
+        {
+          "question_id": "q15",
+          "question_text": "If you had to give up one of these, which would you give up first?",
+          "option_label": "Low price",
+          "segment_id": "family_bulk_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "If you had to give up one of these, which would you give up first?",
+          "option_label": "Wide availability (e.g., at gas stations, vending machines)",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "If you had to give up one of these, which would you give up first?",
+          "option_label": "Premium quality (e.g., mineral, alkaline)",
+          "segment_id": "premium_enthusiasts",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "If you had to give up one of these, which would you give up first?",
+          "option_label": "Convenient packaging (e.g., single-serve, easy-open)",
+          "segment_id": "convenience_on_the_go",
+          "points": 2
+        }
+      ],
+      "tie_break": "Question bb5 (What size bottle of water do you usually buy?) is the most direct behavioural self-report to settle ties: single-serve signals convenience, multi-pack/gallon signals bulk household, and premium sizes are less relevant, while eco-conscious often choose larger formats to reduce plastic.",
+      "notes": [
+        "Scoring focuses on explicit behavioural choices (location, trigger, size, type, packaging concern) rather than generic frequency or satisfaction.",
+        "Eco-conscious segment is identified primarily through stated concern about plastic waste and preference for eco-friendly packaging, plus intention to reduce consumption.",
+        "Premium segment is identified through choice of enhanced/mineral/alkaline waters, willingness to pay more, and quality cues.",
+        "Convenience segment is identified through out-of-home consumption, single-serve purchases, and purchase triggers of thirst while out.",
+        "Family bulk buyers are identified through buying for household, stocking up, and large formats.",
+        "14 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "nonDiscriminatingQuestions": [
+      {
+        "id": "q1",
+        "qNum": 1,
+        "question": "How often do you personally drink bottled water?"
+      },
+      {
+        "id": "q3",
+        "qNum": 3,
+        "question": "In a typical week, how many bottles of bottled water do you drink?"
+      },
+      {
+        "id": "q9",
+        "qNum": 9,
+        "question": "How much do you spend on bottled water in a typical month?"
+      },
+      {
+        "id": "q17",
+        "qNum": 17,
+        "question": "How does the bottled water you buy now compare with what you expected?"
+      }
+    ],
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing who drinks bottled water and in what situations, then moves through the purchase journey from trigger to channel to spend, then explores product and packaging preferences including sustainability, and closes with satisfaction and switching risk. This arc separates the four segments by their consumption context, purchase patterns, and product priorities.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "Chose jobs-to-be-done as the primary lens because bottled water serves distinct needs (hydration, convenience, premium experience, family staple) that usage frequency alone would not separate.",
+      "Added a dedicated beat on pack size and format in the purchase journey because it is a key differentiator between single-serve and bulk buyers.",
+      "Included sustainability claims as a beat in product requirements to capture the Eco-Conscious Switchers segment.",
+      "Dropped the 'discovery' beat from the canonical buying_behavior arc because bottled water is a low-involvement, habitual purchase with little pre-purchase research.",
+      "Kept the satisfaction section focused on switching and future use rather than advocacy, as recommending bottled water is less relevant than in other categories."
+    ],
+    "classification_reason": "Everyday consumers buy bottled water for personal consumption, pay for it themselves at retail, and decide which brand to purchase at the point of sale. While businesses may purchase bottled water for offices, the dominant and defining buyer is the individual consumer.",
+    "generated_at": "2026-08-05T04:55:47.930069+00:00",
+    "current_date": "2026-08-05",
+    "sample_size": 2500,
+    "N": 420,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "lollipop",
+      "stacked",
+      "vbar",
+      "waffle"
+    ]
+  }
+}

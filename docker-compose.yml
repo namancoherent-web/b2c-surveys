@@ -1,0 +1,39 @@
+services:
+  redis:
+    image: redis:7
+    # Host 6380 — 6379 is often taken by cmi-redis / other stacks
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis-data:/data
+
+  worker:
+    build: .
+    command: rq worker --url redis://redis:6379 --with-scheduler surveys
+    # --with-scheduler is required so Retry(interval=…) jobs leave SCHEDULED
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379
+      FRONTEND_SURVEYS_DIR: /app/frontend-surveys
+      PYTHONPATH: /app
+      VPN_ROTATE_URL: http://host.docker.internal:8765
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./output:/app/output
+      - ${FRONTEND_SURVEYS_HOST_DIR:-../cmi-platform-ai/frontend-v2/apps/web/public/surveys}:/app/frontend-surveys
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  dashboard:
+    image: eoranged/rq-dashboard
+    ports:
+      - "9181:9181"
+    environment:
+      RQ_DASHBOARD_REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis
+
+volumes:
+  redis-data:

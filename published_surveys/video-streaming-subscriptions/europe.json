@@ -1,0 +1,1610 @@
+{
+  "surveyDefinition": {
+    "title": "Video Streaming Subscriptions — consumer survey (Europe)",
+    "category": "Video Streaming Subscriptions",
+    "region": "Europe",
+    "audienceType": "B2C consumer",
+    "whatThisSurveyIs": "A business-to-consumer (B2C) market research questionnaire about Video Streaming Subscriptions. Every question asks about Video Streaming Subscriptions specifically — not the wider market, not adjacent categories, and not any named brand. It is designed to tell a client what buyers in Europe actually do and want in this category.",
+    "whoseContextThisIs": "Adults in Europe who buy or use Video Streaming Subscriptions for personal or household use. Respondents qualify if they: Currently has an active paid subscription to at least one video streaming service (e.g., Netflix, Amazon Prime Video, Disney+, Hulu, HBO Max, etc.); Primary decision-maker or co-decision-maker for household streaming subscriptions; Aged 18 or older; Able to complete an online survey in the relevant language. Excluded: Individuals who only use free ad-supported streaming (e.g., free tier of Pluto TV, YouTube without subscription); Businesses or institutions purchasing streaming for commercial use (e.g., bars, hotels, offices); Cable/satellite TV subscribers who do not also have a streaming subscription; Children under 18 (unless surveyed via parent proxy, which is out of scope for this consumer survey).",
+    "whyTheseRespondents": "Video streaming subscriptions are purchased by individual consumers and households for personal entertainment use. While some business plans exist, the dominant and defining market is consumer subscription services (e.g., Netflix, Disney+, Hulu).",
+    "respondentBehaviours": [
+      "Streams video content at least weekly",
+      "Subscribes to one or more paid streaming services",
+      "Uses multiple devices for streaming",
+      "Engages with original content and on-demand viewing",
+      "May churn or rotate subscriptions based on content library"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income — these define who was recruited, not what is measured, so they appear in the audience definition rather than as questions.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 26,
+      "sections": [
+        {
+          "id": "profile",
+          "label": "Consumer Profile",
+          "covers": "how they relate to and use the category",
+          "questions": 6
+        },
+        {
+          "id": "behavior",
+          "label": "Buying Behavior",
+          "covers": "how they shop for and buy it",
+          "questions": 7
+        },
+        {
+          "id": "preferences",
+          "label": "Preferences & Expectations",
+          "covers": "what they want from the product",
+          "questions": 7
+        },
+        {
+          "id": "satisfaction",
+          "label": "Satisfaction & Future Intent",
+          "covers": "how they feel about it and what they will do next",
+          "questions": 6
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's relationship with video streaming subscriptions and their viewing context, then moves into the practical details of how they discover, choose, and pay for subscriptions, including rotation and spend. It then explores their preferences and expectations for content, features, and value, before finally assessing satisfaction, friction, switching triggers, and future intent. The story progresses from broad, safe questions about usage to more sensitive topics like spend, trade-offs, and satisfaction, ending with forward-looking intentions."
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Video Streaming Subscriptions in Europe — who Currently has an active paid subscription to at least one video streaming service (e.g., Netflix, Amazon Prime Video, Disney+, Hulu, HBO Max, etc.); Primary decision-maker or co-decision-maker for household streaming subscriptions; Aged 18 or older; Able to complete an online survey in the relevant language. The core consumer market for video streaming subscriptions is individuals and households who pay for access to on-demand video content. This audience is defined by active paid subscription and personal use, excluding free tiers and commercial buyers.",
+    "marketSegment": "Video Streaming Subscriptions",
+    "region": "Europe",
+    "inclusionCriteria": [
+      "Currently has an active paid subscription to at least one video streaming service (e.g., Netflix, Amazon Prime Video, Disney+, Hulu, HBO Max, etc.)",
+      "Primary decision-maker or co-decision-maker for household streaming subscriptions",
+      "Aged 18 or older",
+      "Able to complete an online survey in the relevant language"
+    ],
+    "behaviors": [
+      "Streams video content at least weekly",
+      "Subscribes to one or more paid streaming services",
+      "Uses multiple devices for streaming",
+      "Engages with original content and on-demand viewing",
+      "May churn or rotate subscriptions based on content library"
+    ],
+    "exclusions": [
+      "Individuals who only use free ad-supported streaming (e.g., free tier of Pluto TV, YouTube without subscription)",
+      "Businesses or institutions purchasing streaming for commercial use (e.g., bars, hotels, offices)",
+      "Cable/satellite TV subscribers who do not also have a streaming subscription",
+      "Children under 18 (unless surveyed via parent proxy, which is out of scope for this consumer survey)"
+    ],
+    "contextDemographics": {
+      "age_range": "18-64",
+      "income_band": "Middle to upper income (household income $40k+ in developed markets)",
+      "household": "Individuals and households with internet access and connected devices (smart TV, smartphone, tablet, computer)",
+      "geography": "Global, with higher penetration in urban and suburban areas"
+    },
+    "assumptions": [
+      "The segment refers to consumer-facing streaming services (e.g., Netflix, Hulu, Disney+) rather than B2B white-label or enterprise streaming platforms.",
+      "The survey targets the individual subscriber or household decision-maker, not all household members.",
+      "Geographic scope is global, but survey feasibility may require country-specific sampling."
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Video Streaming Subscriptions",
+  "slug": "video-streaming-subscriptions",
+  "region": "europe",
+  "frontend": {
+    "sections": [
+      {
+        "id": "profile",
+        "label": "Consumer Profile",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "Which of the following best describes your current situation with paid video streaming subscriptions?",
+            "options": [
+              "I have one paid video streaming subscription",
+              "I have more than one paid video streaming subscription",
+              "I do not have any paid video streaming subscription right now, but I have had one in the past 12 months",
+              "I have never had a paid video streaming subscription"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I have one paid video streaming subscription",
+                "value": 28.0
+              },
+              {
+                "label": "I have more than one paid video streaming subscription",
+                "value": 52.0
+              },
+              {
+                "label": "I do not have any paid video streaming subscription right now, but I have had one in the past 12 months",
+                "value": 12.0
+              },
+              {
+                "label": "I have never had a paid video streaming subscription",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: I have more than one paid video streaming subscription (52.00%).",
+            "distributionNote": "Family planners, mainstream entertainers, and premium enthusiasts drive multi-subscription; budget-conscious and value-seeking rotators contribute to churn/never groups.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "streaming_relationship",
+            "beatTitle": "Streaming relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How central is video streaming to your overall TV and movie viewing?",
+            "options": [
+              "It is my main way of watching TV and movies",
+              "It is one of several ways I watch TV and movies",
+              "It is a small part of how I watch TV and movies",
+              "I rarely or never watch TV and movies through streaming"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "It is my main way of watching TV and movies",
+                "value": 55.0
+              },
+              {
+                "label": "It is one of several ways I watch TV and movies",
+                "value": 33.0
+              },
+              {
+                "label": "It is a small part of how I watch TV and movies",
+                "value": 9.0
+              },
+              {
+                "label": "I rarely or never watch TV and movies through streaming",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: It is my main way of watching TV and movies (55.00%).",
+            "distributionNote": "Cord-never urbanites, tech-savvy cord-cutters, and budget bingers rely heavily on streaming; older mainstream personas still use linear TV.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "streaming_relationship",
+            "beatTitle": "Streaming relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "In the last 30 days, which of the following situations have you watched streaming content in? Select all that apply.",
+            "options": [
+              "Watching alone, fully focused on the screen",
+              "Watching with family or household members",
+              "Watching with friends or guests",
+              "Watching while doing other things (e.g., chores, working, scrolling)",
+              "Watching on a mobile device while out of the house",
+              "None of the above"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Watching alone, fully focused on the screen",
+                "value": 78.0
+              },
+              {
+                "label": "Watching with family or household members",
+                "value": 62.0
+              },
+              {
+                "label": "Watching with friends or guests",
+                "value": 25.0
+              },
+              {
+                "label": "Watching while doing other things (e.g., chores, working, scrolling)",
+                "value": 55.0
+              },
+              {
+                "label": "Watching on a mobile device while out of the house",
+                "value": 30.0
+              },
+              {
+                "label": "None of the above",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Watching alone, fully focused on the screen (78.00%).",
+            "distributionNote": "Alone and background viewing are high across all personas; family co-viewing driven by family planners and mainstream entertainers; mobile viewing by young urbanites and tech-savvy.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "viewing_context",
+            "beatTitle": "Viewing contexts and occasions",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In a typical week, how many hours in total do you spend watching content on video streaming subscriptions?",
+            "options": [
+              "Less than 1 hour",
+              "1 to 3 hours",
+              "4 to 6 hours",
+              "7 to 10 hours",
+              "11 to 15 hours",
+              "More than 15 hours"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Less than 1 hour",
+                "value": 5.0
+              },
+              {
+                "label": "1 to 3 hours",
+                "value": 20.0
+              },
+              {
+                "label": "4 to 6 hours",
+                "value": 30.0
+              },
+              {
+                "label": "7 to 10 hours",
+                "value": 25.0
+              },
+              {
+                "label": "11 to 15 hours",
+                "value": 12.0
+              },
+              {
+                "label": "More than 15 hours",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 4 to 6 hours (30.00%).",
+            "distributionNote": "Budget bingers and cord-never urbanites skew higher hours; family planners moderate; older mainstream lower.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "viewing_frequency",
+            "beatTitle": "Viewing frequency and intensity",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "Who in your household is mainly responsible for choosing which video streaming subscriptions to have?",
+            "options": [
+              "I am",
+              "My partner or spouse",
+              "I share this responsibility with someone else in my household",
+              "Another household member",
+              "No one in particular / it just happened"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I am",
+                "value": 55.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 15.0
+              },
+              {
+                "label": "I share this responsibility with someone else in my household",
+                "value": 20.0
+              },
+              {
+                "label": "Another household member",
+                "value": 5.0
+              },
+              {
+                "label": "No one in particular / it just happened",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I am (55.00%).",
+            "distributionNote": "Individualistic personas (young urbanites, tech-savvy) say 'I am'; family personas share or defer to partner.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "household_streaming_role",
+            "beatTitle": "Household streaming role",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How much do you agree or disagree with the following statement: 'I often watch streaming content just to have something on in the background while I do other things.'",
+            "options": [
+              "Strongly disagree",
+              "Disagree",
+              "Neither agree nor disagree",
+              "Agree",
+              "Strongly agree"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Strongly disagree",
+                "value": 8.0
+              },
+              {
+                "label": "Disagree",
+                "value": 20.0
+              },
+              {
+                "label": "Neither agree nor disagree",
+                "value": 22.0
+              },
+              {
+                "label": "Agree",
+                "value": 35.0
+              },
+              {
+                "label": "Strongly agree",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Agree (35.00%).",
+            "distributionNote": "Budget bingers and young urbanites often watch in background; cinephiles and premium enthusiasts disagree.",
+            "N": 360,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "streaming_motivations",
+            "beatTitle": "Streaming motivations and needs",
+            "beatCanonical": "need_state",
+            "ordered": true
+          }
+        ]
+      },
+      {
+        "id": "behavior",
+        "label": "Buying Behavior",
+        "questions": [
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Which of the following events or situations most recently prompted you to start or add a new video streaming subscription?",
+            "options": [
+              "A specific new show, movie, or season I wanted to watch",
+              "A free trial or promotional offer",
+              "A recommendation from friends or family",
+              "A bundle with my phone, internet, or TV package",
+              "A live sports event or match I wanted to watch",
+              "I don't remember / None of the above"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "A specific new show, movie, or season I wanted to watch",
+                "value": 42.0
+              },
+              {
+                "label": "A free trial or promotional offer",
+                "value": 18.0
+              },
+              {
+                "label": "A recommendation from friends or family",
+                "value": 14.0
+              },
+              {
+                "label": "A bundle with my phone, internet, or TV package",
+                "value": 12.0
+              },
+              {
+                "label": "A live sports event or match I wanted to watch",
+                "value": 8.0
+              },
+              {
+                "label": "I don't remember / None of the above",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: A specific new show, movie, or season I wanted to watch (42.00%).",
+            "distributionNote": "Content-driven personas (Family Planner, Mainstream Family, Cinephile, International Explorer) dominate; sports fans and bundle beneficiaries contribute smaller shares.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "subscription_triggers",
+            "beatTitle": "Subscription triggers",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "In the last 12 months, which of the following have you done with your video streaming subscriptions? Select all that apply.",
+            "options": [
+              "Started a new subscription",
+              "Paused a subscription",
+              "Cancelled a subscription",
+              "Re-subscribed to a service I had cancelled before",
+              "Rotated between services (cancelled one and started another)",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Started a new subscription",
+                "value": 65.0
+              },
+              {
+                "label": "Paused a subscription",
+                "value": 25.0
+              },
+              {
+                "label": "Cancelled a subscription",
+                "value": 45.0
+              },
+              {
+                "label": "Re-subscribed to a service I had cancelled before",
+                "value": 30.0
+              },
+              {
+                "label": "Rotated between services (cancelled one and started another)",
+                "value": 35.0
+              },
+              {
+                "label": "None of the above",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Started a new subscription (65.00%).",
+            "distributionNote": "High churn and rotation driven by Value-Seeking Rotator, Budget-Conscious Binger, and Cord-Never Young Urbanite; family personas less likely to cancel.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "subscription_triggers",
+            "beatTitle": "Subscription triggers",
+            "beatCanonical": "purchase_trigger",
+            "multiSelect": true
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Before you decided on your most recent video streaming subscription, where did you learn about or compare your options? Select all that apply.",
+            "options": [
+              "Recommendations from friends or family",
+              "Online reviews or comparison websites",
+              "Social media posts or ads",
+              "Streaming service websites or apps themselves",
+              "News articles or entertainment blogs",
+              "Word of mouth at work or school",
+              "I didn't compare options—I just picked one",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Recommendations from friends or family",
+                "value": 55.0
+              },
+              {
+                "label": "Online reviews or comparison websites",
+                "value": 40.0
+              },
+              {
+                "label": "Social media posts or ads",
+                "value": 35.0
+              },
+              {
+                "label": "Streaming service websites or apps themselves",
+                "value": 30.0
+              },
+              {
+                "label": "News articles or entertainment blogs",
+                "value": 20.0
+              },
+              {
+                "label": "Word of mouth at work or school",
+                "value": 15.0
+              },
+              {
+                "label": "I didn't compare options—I just picked one",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Recommendations from friends or family (55.00%).",
+            "distributionNote": "Social proof and online research are common across most personas; tech-savvy and value seekers use comparison sites, while mainstream family relies on word of mouth.",
+            "N": 360,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "discovery_and_evaluation",
+            "beatTitle": "Discovery and evaluation",
+            "beatCanonical": "discovery",
+            "multiSelect": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "In the past 12 months, which of the following ways have you used to sign up for or pay for a video streaming subscription? Select all that apply.",
+            "options": [
+              "Directly through the streaming service's own website or app",
+              "Through an app store (like Apple App Store or Google Play)",
+              "As part of a bundle with my internet or mobile phone provider",
+              "Through a third-party streaming aggregator or platform",
+              "With a prepaid gift card or subscription card from a retail store",
+              "Through a cable or satellite TV provider",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Directly through the streaming service's own website or app",
+                "value": 70.0
+              },
+              {
+                "label": "Through an app store (like Apple App Store or Google Play)",
+                "value": 25.0
+              },
+              {
+                "label": "As part of a bundle with my internet or mobile phone provider",
+                "value": 20.0
+              },
+              {
+                "label": "Through a third-party streaming aggregator or platform",
+                "value": 10.0
+              },
+              {
+                "label": "With a prepaid gift card or subscription card from a retail store",
+                "value": 8.0
+              },
+              {
+                "label": "Through a cable or satellite TV provider",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Directly through the streaming service's own website or app (70.00%).",
+            "distributionNote": "Direct sign-up is dominant across all personas; app store and bundles are secondary, with Bundle Beneficiary and less tech-savvy users more likely to use bundles.",
+            "N": 360,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "subscription_channels",
+            "beatTitle": "Subscription channels",
+            "beatCanonical": "channel",
+            "multiSelect": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "In total, approximately how much do you spend per month on all video streaming subscriptions for your household? Please include the cost of any add-ons or premium tiers.",
+            "options": [
+              "Less than €10",
+              "€10 to under €20",
+              "€20 to under €30",
+              "€30 to under €40",
+              "€40 to under €50",
+              "€50 or more",
+              "Prefer not to say"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "Less than €10",
+                "value": 15.0
+              },
+              {
+                "label": "€10 to under €20",
+                "value": 30.0
+              },
+              {
+                "label": "€20 to under €30",
+                "value": 25.0
+              },
+              {
+                "label": "€30 to under €40",
+                "value": 15.0
+              },
+              {
+                "label": "€40 to under €50",
+                "value": 8.0
+              },
+              {
+                "label": "€50 or more",
+                "value": 5.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: €10 to under €20 (30.00%).",
+            "distributionNote": "Middle-income personas cluster in €10-30 range; premium and tech-savvy users push upper end, budget-conscious keep low.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "subscription_spend",
+            "beatTitle": "Subscription spend",
+            "beatCanonical": "spend"
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "When choosing which video streaming service to subscribe to, how important is each of the following factors?",
+            "options": [
+              "Access to a wide variety of content",
+              "Convenience of on-demand viewing",
+              "Exclusive original programming",
+              "Ad-free experience",
+              "Flexible subscription plans"
+            ],
+            "chart": "diverging",
+            "data": [
+              {
+                "label": "Access to a wide variety of content",
+                "value": 35.0
+              },
+              {
+                "label": "Convenience of on-demand viewing",
+                "value": 25.0
+              },
+              {
+                "label": "Exclusive original programming",
+                "value": 15.0
+              },
+              {
+                "label": "Ad-free experience",
+                "value": 15.0
+              },
+              {
+                "label": "Flexible subscription plans",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Access to a wide variety of content (35.00%).",
+            "distributionNote": "Content variety and convenience are top drivers across all personas; exclusivity and ad-free are more important to premium and cinephile segments.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "subscription_decision_drivers",
+            "beatTitle": "Subscription decision drivers",
+            "beatCanonical": "decision_drivers",
+            "ordered": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "Which of the following best describes how you typically decide whether to keep or cancel a video streaming subscription?",
+            "options": [
+              "I review each subscription regularly and decide based on what I've watched recently",
+              "I only reconsider when I get a price increase or billing notice",
+              "I keep subscriptions on autopilot and rarely think about them",
+              "I cancel as soon as I finish the show I subscribed for",
+              "I rotate subscriptions based on what new content is coming out",
+              "Other"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "I review each subscription regularly and decide based on what I've watched recently",
+                "value": 30.0
+              },
+              {
+                "label": "I only reconsider when I get a price increase or billing notice",
+                "value": 20.0
+              },
+              {
+                "label": "I keep subscriptions on autopilot and rarely think about them",
+                "value": 15.0
+              },
+              {
+                "label": "I cancel as soon as I finish the show I subscribed for",
+                "value": 15.0
+              },
+              {
+                "label": "I rotate subscriptions based on what new content is coming out",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I review each subscription regularly and decide based on what I've watched recently (30.00%).",
+            "distributionNote": "Value seekers and budget bingers actively manage; mainstream family and premium enthusiasts are more passive; rotators drive the rotation option.",
+            "N": 360,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "subscription_routine",
+            "beatTitle": "Subscription routine and reconsideration",
+            "beatCanonical": "repurchase"
+          }
+        ]
+      },
+      {
+        "id": "preferences",
+        "label": "Preferences & Expectations",
+        "questions": [
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "Which of the following features would you consider a must-have for any video streaming subscription you pay for? Select all that apply.",
+            "options": [
+              "Offline downloads to watch without internet",
+              "Multiple user profiles for different household members",
+              "Ultra HD / 4K picture quality",
+              "Ability to watch on multiple devices at the same time",
+              "Parental controls to restrict what children can watch",
+              "None of the above — I don't consider any feature a must-have"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Offline downloads to watch without internet",
+                "value": 38.0
+              },
+              {
+                "label": "Multiple user profiles for different household members",
+                "value": 52.0
+              },
+              {
+                "label": "Ultra HD / 4K picture quality",
+                "value": 31.0
+              },
+              {
+                "label": "Ability to watch on multiple devices at the same time",
+                "value": 61.0
+              },
+              {
+                "label": "Parental controls to restrict what children can watch",
+                "value": 34.0
+              },
+              {
+                "label": "None of the above — I don't consider any feature a must-have",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Ability to watch on multiple devices at the same time (61.00%).",
+            "distributionNote": "Family planners and mainstream family entertainers drive parental controls and profiles; tech-savvy and premium users drive 4K and multi-device; budget-conscious and rotators are less demanding.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_have_content_features",
+            "beatTitle": "Must-have content and features",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "How important is it that a video streaming service offers a large library of titles from different countries and languages?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 4.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 12.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 28.0
+              },
+              {
+                "label": "Very important",
+                "value": 36.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Very important (36.00%).",
+            "distributionNote": "International content explorer and cord-never young urbanite strongly value international libraries; mainstream family and budget segments are moderate; premium cinephiles also push importance.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "must_have_content_features",
+            "beatTitle": "Must-have content and features",
+            "beatCanonical": "must_haves",
+            "ordered": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "When deciding whether a show or movie on a streaming service is worth your time, how much do you rely on each of the following signals?",
+            "options": [
+              "User ratings and reviews",
+              "Critical reviews from professional critics",
+              "Awards and nominations",
+              "Recommendations from friends or family",
+              "Production quality (cinematography, acting, writing)",
+              "Popularity / trending status"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "User ratings and reviews",
+                "value": 22.0
+              },
+              {
+                "label": "Critical reviews from professional critics",
+                "value": 12.0
+              },
+              {
+                "label": "Awards and nominations",
+                "value": 10.0
+              },
+              {
+                "label": "Recommendations from friends or family",
+                "value": 24.0
+              },
+              {
+                "label": "Production quality (cinematography, acting, writing)",
+                "value": 18.0
+              },
+              {
+                "label": "Popularity / trending status",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: Recommendations from friends or family (24.00%).",
+            "distributionNote": "Social recommendations dominate across family and budget segments; cinephiles and premium enthusiasts weight production quality and critics; trend-driven young urbanites boost popularity.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "content_quality_cues",
+            "beatTitle": "Content quality cues",
+            "beatCanonical": "quality_cues",
+            "ordered": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Thinking about how you watch, which of the following best describes your preferred way to access a streaming subscription?",
+            "options": [
+              "A single, all-in-one subscription that includes everything",
+              "A basic subscription that I can add extra channels or content packs to",
+              "A subscription that lets me rent or buy individual titles on demand",
+              "A free, ad-supported subscription that I don't pay for",
+              "A subscription that I share with friends or family to split the cost",
+              "Other"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "A single, all-in-one subscription that includes everything",
+                "value": 38.0
+              },
+              {
+                "label": "A basic subscription that I can add extra channels or content packs to",
+                "value": 22.0
+              },
+              {
+                "label": "A subscription that lets me rent or buy individual titles on demand",
+                "value": 8.0
+              },
+              {
+                "label": "A free, ad-supported subscription that I don't pay for",
+                "value": 12.0
+              },
+              {
+                "label": "A subscription that I share with friends or family to split the cost",
+                "value": 16.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: A single, all-in-one subscription that includes everything (38.00%).",
+            "distributionNote": "All-in-one appeals to mainstream families and premium users; add-on model fits tech-savvy and rotators; sharing is strong among budget-conscious and young urbanites; free tier attracts budget segment.",
+            "N": 360,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "plan_format_preferences",
+            "beatTitle": "Plan format and packaging preferences",
+            "beatCanonical": "format_packaging"
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "How important is it to you that a video streaming service offers a substantial amount of content originally produced in Europe (including your own country)?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "diverging",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 6.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 14.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 28.0
+              },
+              {
+                "label": "Very important",
+                "value": 30.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 22.0
+              }
+            ],
+            "insight": "Top response: Very important (30.00%).",
+            "distributionNote": "International content explorer and quality cinephile drive high importance; mainstream family and eco-conscious also value local content; premium enthusiasts are less focused on origin.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "content_credentials",
+            "beatTitle": "Content credentials and origin",
+            "beatCanonical": "claims_credentials",
+            "ordered": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "If you had to choose between two streaming services that cost the same each month, which would you pick?",
+            "options": [
+              "The one with more titles, even if many are older or less well-known",
+              "The one with fewer titles, but a higher share of new and exclusive releases",
+              "The one with better video and audio quality (e.g., 4K, HDR, Dolby Atmos)",
+              "The one with a more user-friendly interface and better recommendations",
+              "The one with more content in languages other than English",
+              "The one with stronger parental controls and family-friendly content"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The one with more titles, even if many are older or less well-known",
+                "value": 25.0
+              },
+              {
+                "label": "The one with fewer titles, but a higher share of new and exclusive releases",
+                "value": 28.0
+              },
+              {
+                "label": "The one with better video and audio quality (e.g., 4K, HDR, Dolby Atmos)",
+                "value": 15.0
+              },
+              {
+                "label": "The one with a more user-friendly interface and better recommendations",
+                "value": 18.0
+              },
+              {
+                "label": "The one with more content in languages other than English",
+                "value": 8.0
+              },
+              {
+                "label": "The one with stronger parental controls and family-friendly content",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: The one with fewer titles, but a higher share of new and exclusive releases (28.00%).",
+            "distributionNote": "Budget and value rotators favor quantity; premium and cinephiles favor exclusives and quality; tech-savvy favor interface; international explorers favor language diversity; family planners favor parental controls.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "streaming_tradeoffs",
+            "beatTitle": "Streaming trade-offs",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "How much would you be willing to pay per month for a video streaming subscription that includes everything you want (no ads, 4K quality, offline downloads, and a large library of both local and international content)?",
+            "options": [
+              "Less than €5",
+              "€5 to €9.99",
+              "€10 to €14.99",
+              "€15 to €19.99",
+              "€20 or more",
+              "I would not pay for a subscription under any circumstances"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Less than €5",
+                "value": 8.0
+              },
+              {
+                "label": "€5 to €9.99",
+                "value": 22.0
+              },
+              {
+                "label": "€10 to €14.99",
+                "value": 30.0
+              },
+              {
+                "label": "€15 to €19.99",
+                "value": 20.0
+              },
+              {
+                "label": "€20 or more",
+                "value": 15.0
+              },
+              {
+                "label": "I would not pay for a subscription under any circumstances",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: €10 to €14.99 (30.00%).",
+            "distributionNote": "Budget-conscious and value rotators cluster at lower price points; mainstream families and international explorers are in the mid-range; premium and tech-savvy are willing to pay €15+.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "value_expectation",
+            "beatTitle": "Value and willingness to pay",
+            "beatCanonical": "value_expectation"
+          }
+        ]
+      },
+      {
+        "id": "satisfaction",
+        "label": "Satisfaction & Future Intent",
+        "questions": [
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Overall, how satisfied are you with your main video streaming subscription?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 6.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 38.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 18.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (38.00%).",
+            "distributionNote": "Mixed sentiment: Budget-conscious and value-seeking personas lean dissatisfied due to cost; family and premium personas pull toward satisfied.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "ordered": true
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Compared with what you expected when you first subscribed, how would you rate your main video streaming subscription?",
+            "options": [
+              "Much worse than expected",
+              "Somewhat worse than expected",
+              "About as expected",
+              "Somewhat better than expected",
+              "Much better than expected"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Much worse than expected",
+                "value": 5.0
+              },
+              {
+                "label": "Somewhat worse than expected",
+                "value": 17.0
+              },
+              {
+                "label": "About as expected",
+                "value": 45.0
+              },
+              {
+                "label": "Somewhat better than expected",
+                "value": 24.0
+              },
+              {
+                "label": "Much better than expected",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: About as expected (45.00%).",
+            "distributionNote": "Mainstream and family personas find service about as expected; premium and cinephile personas slightly better due to content quality.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "ordered": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "In the last 30 days, which of the following frustrations have you experienced with your video streaming subscriptions? Select all that apply.",
+            "options": [
+              "Content I want is spread across too many different services",
+              "Shows or movies disappear before I get a chance to watch them",
+              "Offline downloads are not available or are too limited",
+              "The service is too expensive for what I get",
+              "Video or audio quality is inconsistent",
+              "The interface makes it hard to find something to watch",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Content I want is spread across too many different services",
+                "value": 62.0
+              },
+              {
+                "label": "Shows or movies disappear before I get a chance to watch them",
+                "value": 38.0
+              },
+              {
+                "label": "Offline downloads are not available or are too limited",
+                "value": 24.0
+              },
+              {
+                "label": "The service is too expensive for what I get",
+                "value": 41.0
+              },
+              {
+                "label": "Video or audio quality is inconsistent",
+                "value": 18.0
+              },
+              {
+                "label": "The interface makes it hard to find something to watch",
+                "value": 22.0
+              },
+              {
+                "label": "None of the above",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Content I want is spread across too many different services (62.00%).",
+            "distributionNote": "Fragmentation is the top pain point across all personas; cost concerns driven by budget and value seekers; offline issues from travelers and tech-savvy.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "friction_points",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "Which one of the following would be most likely to make you cancel or switch your main video streaming subscription?",
+            "options": [
+              "A significant price increase",
+              "Losing access to shows or movies I regularly watch",
+              "Too many ads being introduced",
+              "A better overall offer from another service",
+              "Technical problems that are not fixed quickly",
+              "Reduced video or audio quality",
+              "None of the above – I am unlikely to cancel or switch"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "A significant price increase",
+                "value": 34.0
+              },
+              {
+                "label": "Losing access to shows or movies I regularly watch",
+                "value": 24.0
+              },
+              {
+                "label": "Too many ads being introduced",
+                "value": 12.0
+              },
+              {
+                "label": "A better overall offer from another service",
+                "value": 12.0
+              },
+              {
+                "label": "Technical problems that are not fixed quickly",
+                "value": 8.0
+              },
+              {
+                "label": "Reduced video or audio quality",
+                "value": 5.0
+              },
+              {
+                "label": "None of the above – I am unlikely to cancel or switch",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: A significant price increase (34.00%).",
+            "distributionNote": "Price sensitivity is high among budget and value personas; content loss triggers family and mainstream; premium less likely to switch.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "How likely are you to recommend your main video streaming subscription to a friend or family member?",
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "diverging",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 5.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 12.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 38.0
+              },
+              {
+                "label": "Very likely",
+                "value": 25.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely (38.00%).",
+            "distributionNote": "Family and premium enthusiasts are strong promoters; budget and rotators are more neutral due to cost concerns.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "recommend_intent",
+            "beatTitle": "Recommend intent",
+            "beatCanonical": "advocacy",
+            "ordered": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "In the next 12 months, how do you expect your overall use of video streaming subscriptions to change?",
+            "options": [
+              "I expect to increase the number of subscriptions I pay for",
+              "I expect to keep the same number of subscriptions",
+              "I expect to reduce the number of subscriptions I pay for",
+              "I expect to cancel all subscriptions and not resubscribe",
+              "I expect to keep the same number but rotate which ones I have more often",
+              "Not sure"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "I expect to increase the number of subscriptions I pay for",
+                "value": 18.0
+              },
+              {
+                "label": "I expect to keep the same number of subscriptions",
+                "value": 38.0
+              },
+              {
+                "label": "I expect to reduce the number of subscriptions I pay for",
+                "value": 16.0
+              },
+              {
+                "label": "I expect to cancel all subscriptions and not resubscribe",
+                "value": 3.0
+              },
+              {
+                "label": "I expect to keep the same number but rotate which ones I have more often",
+                "value": 18.0
+              },
+              {
+                "label": "Not sure",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: I expect to keep the same number of subscriptions (38.00%).",
+            "distributionNote": "Growth outlook is positive but cost pressure leads to rotation; budget and value seekers drive reduction/rotation, premium and family keep or increase.",
+            "N": 360,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "future_streaming_use",
+            "beatTitle": "Future streaming use",
+            "beatCanonical": "future_use"
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 26,
+    "counts_by_tab": {
+      "consumer_profile": 7,
+      "buying_behavior": 7,
+      "preferences_expectations": 7,
+      "satisfaction_future_intent": 6
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": true,
+    "warnings": [
+      "Grounding is thin — most answers are inferred, not data-backed.",
+      "Tab 'consumer_profile' under target: 7/8.",
+      "Tab 'buying_behavior' under target: 7/8.",
+      "Tab 'preferences_expectations' under target: 7/8.",
+      "Tab 'satisfaction_future_intent' under target: 6/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues.",
+      "1 repeated question(s) removed in re-dedup.",
+      "Q7 dropped (same beat 'streaming_motivations' restated, repeats Q6): How much do you agree or disagree with the following statement: 'I"
+    ],
+    "storyline": {
+      "profile": [
+        {
+          "beatId": "streaming_relationship",
+          "title": "Streaming relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "viewing_context",
+          "title": "Viewing contexts and occasions",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "viewing_frequency",
+          "title": "Viewing frequency and intensity",
+          "canonical": "usage_frequency",
+          "order": 3
+        },
+        {
+          "beatId": "household_streaming_role",
+          "title": "Household streaming role",
+          "canonical": "household_role",
+          "order": 4
+        },
+        {
+          "beatId": "streaming_motivations",
+          "title": "Streaming motivations and needs",
+          "canonical": "need_state",
+          "order": 5
+        }
+      ],
+      "behavior": [
+        {
+          "beatId": "subscription_triggers",
+          "title": "Subscription triggers",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery_and_evaluation",
+          "title": "Discovery and evaluation",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "subscription_channels",
+          "title": "Subscription channels",
+          "canonical": "channel",
+          "order": 3
+        },
+        {
+          "beatId": "subscription_cycle",
+          "title": "Subscription cycle and rotation",
+          "canonical": "purchase_cycle",
+          "order": 4
+        },
+        {
+          "beatId": "subscription_spend",
+          "title": "Subscription spend",
+          "canonical": "spend",
+          "order": 5
+        },
+        {
+          "beatId": "subscription_decision_drivers",
+          "title": "Subscription decision drivers",
+          "canonical": "decision_drivers",
+          "order": 6
+        },
+        {
+          "beatId": "subscription_routine",
+          "title": "Subscription routine and reconsideration",
+          "canonical": "repurchase",
+          "order": 7
+        }
+      ],
+      "preferences": [
+        {
+          "beatId": "must_have_content_features",
+          "title": "Must-have content and features",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "content_quality_cues",
+          "title": "Content quality cues",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "plan_format_preferences",
+          "title": "Plan format and packaging preferences",
+          "canonical": "format_packaging",
+          "order": 3
+        },
+        {
+          "beatId": "content_credentials",
+          "title": "Content credentials and origin",
+          "canonical": "claims_credentials",
+          "order": 4
+        },
+        {
+          "beatId": "streaming_tradeoffs",
+          "title": "Streaming trade-offs",
+          "canonical": "tradeoffs",
+          "order": 5
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value and willingness to pay",
+          "canonical": "value_expectation",
+          "order": 6
+        }
+      ],
+      "satisfaction": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "Satisfaction drivers",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction_points",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching_triggers",
+          "title": "Switching triggers",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "recommend_intent",
+          "title": "Recommend intent",
+          "canonical": "advocacy",
+          "order": 5
+        },
+        {
+          "beatId": "future_streaming_use",
+          "title": "Future streaming use",
+          "canonical": "future_use",
+          "order": 6
+        }
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing the respondent's relationship with video streaming subscriptions and their viewing context, then moves into the practical details of how they discover, choose, and pay for subscriptions, including rotation and spend. It then explores their preferences and expectations for content, features, and value, before finally assessing satisfaction, friction, switching triggers, and future intent. The story progresses from broad, safe questions about usage to more sensitive topics like spend, trade-offs, and satisfaction, ending with forward-looking intentions.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "Adapted the canonical arc for a subscription service: replaced 'restock/replacement' with 'subscription cycle and rotation' to capture churn and rotation behavior, which is key in streaming.",
+      "Added a beat on 'subscription channels' to reflect the reality that streaming subscriptions are often obtained through bundles (telecom, device) in Europe, not just direct sign-ups.",
+      "In the preferences section, replaced generic 'format and packaging' with 'plan format and packaging preferences' to address ad-supported tiers, bundles, and family plans, which are central to streaming.",
+      "Added 'content credentials and origin' to reflect the European emphasis on local and original content, and the growing creator economy.",
+      "In the satisfaction section, kept the canonical order but ensured 'switching triggers' comes after 'friction' and before 'recommend intent' to maintain a logical flow from problems to actions.",
+      "All beats are answerable with closed questions and avoid asking age, income, geography, or brand names, per the rules."
+    ],
+    "classification_reason": "Video streaming subscriptions are purchased by individual consumers and households for personal entertainment use. While some business plans exist, the dominant and defining market is consumer subscription services (e.g., Netflix, Disney+, Hulu).",
+    "generated_at": "2026-08-03T09:58:31.672270+00:00",
+    "current_date": "2026-08-03",
+    "sample_size": 2500,
+    "N": 360,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "radar",
+      "stacked",
+      "vbar",
+      "vbar-likert"
+    ]
+  }
+}

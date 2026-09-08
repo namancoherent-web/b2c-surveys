@@ -1,0 +1,2392 @@
+{
+  "surveyDefinition": {
+    "title": "Organic Milk — consumer survey (North America)",
+    "category": "Organic Milk",
+    "region": "North America",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on their organic milk purchase frequency, price sensitivity, and the motivations (health, ethics, taste) that drive their choice.",
+    "segments": [
+      {
+        "id": "price_sensitive_households",
+        "name": "Price-Sensitive Households",
+        "description": "Buy organic milk regularly but are highly attentive to price, often comparing with conventional milk and switching to the cheapest organic option or reducing purchase frequency when prices rise. They buy for family health but are constrained by budget."
+      },
+      {
+        "id": "committed_organic_buyers",
+        "name": "Committed Organic Buyers",
+        "description": "Buy organic milk consistently and are willing to pay a premium without much hesitation. They are driven by strong beliefs about health, animal welfare, and environmental sustainability, and are loyal to the organic category and often to specific brands."
+      },
+      {
+        "id": "occasional_organic_buyers",
+        "name": "Occasional Organic Buyers",
+        "description": "Buy organic milk infrequently, often as a treat or for a specific use (e.g., for a child, for coffee), but mostly buy conventional milk. They are not committed to organic and are easily swayed by price or availability."
+      },
+      {
+        "id": "health_quality_driven_buyers",
+        "name": "Health & Quality-Driven Buyers",
+        "description": "Buy organic milk primarily for perceived health and nutritional benefits, and for superior taste and quality. They are less motivated by environmental or ethical concerns and more by personal and family wellbeing. They are willing to pay a premium for quality but may not be loyal to organic per se if a better-tasting or more nutritious alternative appears."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Organic Milk buyers in North America. It asks how people use Organic Milk, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+    "whoseContextThisIs": "Adults in North America who buy or use Organic Milk for personal or household use. Respondents qualify if they: Primary or shared grocery shopper in the household; Buys milk at least once a month; Has purchased organic milk in the past 3 months. Excluded: Institutional buyers (restaurants, cafeterias, food service); People who never buy milk or exclusively buy non-dairy alternatives.",
+    "whyTheseRespondents": "Household shoppers buy organic milk, pay for it themselves, and decide at the shelf. Retailers and supermarkets sell it, but the end consumer is the individual household. There is no meaningful business-only purchase channel for organic milk.",
+    "respondentBehaviours": [
+      "Purchases organic milk regularly (weekly or bi-weekly)",
+      "Reads labels for organic certification and freshness",
+      "Willing to pay a premium for perceived health and environmental benefits",
+      "May also buy other organic dairy or grocery products"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 31,
+      "sections": [
+        {
+          "id": "consumption_context",
+          "label": "Household Consumption & Usage Context",
+          "covers": "Establishes who drinks organic milk, how often, and in what situations, to separate daily users from occasional ones.",
+          "questions": 7
+        },
+        {
+          "id": "purchase_journey",
+          "label": "Grocery Purchase Behaviour & Channel",
+          "covers": "Covers how and where organic milk is bought, including restock cycle, spend, and what triggers a purchase.",
+          "questions": 5
+        },
+        {
+          "id": "product_requirements",
+          "label": "Product, Provenance & Claim Requirements",
+          "covers": "Explores what attributes matter most, including fat content, packaging, certifications, and trade-offs against price.",
+          "questions": 7
+        },
+        {
+          "id": "satisfaction_switching",
+          "label": "Satisfaction, Loyalty & Switching Risk",
+          "covers": "Measures overall satisfaction, what drives it, and what would make buyers switch away from organic milk.",
+          "questions": 6
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the household's overall milk consumption and the role of organic within it, then moves to the purchase journey—what triggers a buy, how often, where, and what decides the choice. It then probes product expectations, including certifications and price trade-offs, and closes with satisfaction, loyalty, and switching risk. The arc moves from broad, safe questions about usage to more sensitive topics like price tolerance and switching intent, allowing the segmentation to emerge from behavioural and motivational data."
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Organic Milk in North America — who Primary or shared grocery shopper in the household; Buys milk at least once a month; Has purchased organic milk in the past 3 months. The audience is the household consumer who makes the purchase decision and pays for organic milk at retail. This aligns with the B2C nature of the category.",
+    "marketSegment": "Organic Milk",
+    "region": "North America",
+    "inclusionCriteria": [
+      "Primary or shared grocery shopper in the household",
+      "Buys milk at least once a month",
+      "Has purchased organic milk in the past 3 months"
+    ],
+    "behaviors": [
+      "Purchases organic milk regularly (weekly or bi-weekly)",
+      "Reads labels for organic certification and freshness",
+      "Willing to pay a premium for perceived health and environmental benefits",
+      "May also buy other organic dairy or grocery products"
+    ],
+    "exclusions": [
+      "Institutional buyers (restaurants, cafeterias, food service)",
+      "People who never buy milk or exclusively buy non-dairy alternatives"
+    ],
+    "contextDemographics": {
+      "age": "25-64",
+      "income": "Middle to upper income, as organic milk carries a price premium",
+      "household": "Families with children, health-conscious adults, and households with regular dairy consumption"
+    },
+    "assumptions": [
+      "Organic milk is sold primarily through retail channels to households",
+      "The consumer is the decision-maker and payer, though other household members may influence the choice"
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Organic Milk",
+  "slug": "organic-milk",
+  "region": "north-america",
+  "frontend": {
+    "sections": [
+      {
+        "id": "consumption_context",
+        "label": "Household Consumption & Usage Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "In your household, who usually drinks organic milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Only adults",
+              "Only children",
+              "Both adults and children",
+              "Mostly me, alone",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Only adults",
+                "value": 30.0
+              },
+              {
+                "label": "Only children",
+                "value": 18.0
+              },
+              {
+                "label": "Both adults and children",
+                "value": 38.0
+              },
+              {
+                "label": "Mostly me, alone",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Both adults and children (38.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers dominate the both-adults-and-children segment; Occasional Organic Buyers skew toward only adults or mostly me.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How long has your household been buying organic milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Less than 6 months",
+              "6 to 12 months",
+              "1 to 3 years",
+              "More than 3 years"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Less than 6 months",
+                "value": 12.0
+              },
+              {
+                "label": "6 to 12 months",
+                "value": 18.0
+              },
+              {
+                "label": "1 to 3 years",
+                "value": 35.0
+              },
+              {
+                "label": "More than 3 years",
+                "value": 35.0
+              }
+            ],
+            "insight": "Top response: 1 to 3 years (35.00%).",
+            "distributionNote": "Committed Organic Buyers anchor the long-tenure end; Occasional Organic Buyers and Price-Sensitive Households pull the shorter-tenure options.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "For which of these uses do you typically serve organic milk?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "As a drink with meals",
+              "In coffee or tea",
+              "Over cereal or oatmeal",
+              "In cooking or baking",
+              "For children's lunches",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "As a drink with meals",
+                "value": 72.0
+              },
+              {
+                "label": "In coffee or tea",
+                "value": 45.0
+              },
+              {
+                "label": "Over cereal or oatmeal",
+                "value": 58.0
+              },
+              {
+                "label": "In cooking or baking",
+                "value": 35.0
+              },
+              {
+                "label": "For children's lunches",
+                "value": 40.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: As a drink with meals (72.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers drive high usage across meals and cereal.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "When you run out of organic milk, how do you usually handle it?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Buy conventional milk as a substitute",
+              "Go without until the next grocery trip",
+              "Make a special trip to buy organic milk",
+              "Switch to a non-dairy alternative temporarily",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Buy conventional milk as a substitute",
+                "value": 35.0
+              },
+              {
+                "label": "Go without until the next grocery trip",
+                "value": 20.0
+              },
+              {
+                "label": "Make a special trip to buy organic milk",
+                "value": 25.0
+              },
+              {
+                "label": "Switch to a non-dairy alternative temporarily",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Buy conventional milk as a substitute (35.00%).",
+            "distributionNote": "Price-Sensitive Households and Occasional Organic Buyers are more likely to substitute conventional; Committed Organic Buyers make special trips.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion"
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In the last 30 days, how many times did you buy organic milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "1 to 2 times",
+              "3 to 4 times",
+              "5 to 6 times",
+              "7 or more times"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "1 to 2 times",
+                "value": 25.0
+              },
+              {
+                "label": "3 to 4 times",
+                "value": 40.0
+              },
+              {
+                "label": "5 to 6 times",
+                "value": 20.0
+              },
+              {
+                "label": "7 or more times",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: 3 to 4 times (40.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers concentrate in the 3–4 and 5–6 range; Occasional Organic Buyers pull the 1–2 option.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How many glasses or bowls of organic milk do you have in a typical day?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "None",
+              "1",
+              "2",
+              "3",
+              "4 or more"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "None",
+                "value": 8.0
+              },
+              {
+                "label": "1",
+                "value": 35.0
+              },
+              {
+                "label": "2",
+                "value": 35.0
+              },
+              {
+                "label": "3",
+                "value": 15.0
+              },
+              {
+                "label": "4 or more",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 1 (35.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers drive the 1–2 glasses per day; heavier consumption is seen in households with children.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "What is the main reason you choose organic milk over regular milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "To avoid antibiotics and hormones",
+              "To support sustainable farming",
+              "For better taste",
+              "For my children's health",
+              "To reduce my environmental impact",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "To avoid antibiotics and hormones",
+                "value": 40.0
+              },
+              {
+                "label": "To support sustainable farming",
+                "value": 15.0
+              },
+              {
+                "label": "For better taste",
+                "value": 12.0
+              },
+              {
+                "label": "For my children's health",
+                "value": 20.0
+              },
+              {
+                "label": "To reduce my environmental impact",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: To avoid antibiotics and hormones (40.00%).",
+            "distributionNote": "Avoiding antibiotics/hormones is the top driver across Health & Quality-Driven Buyers and Committed Organic Buyers.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency"
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey",
+        "label": "Grocery Purchase Behaviour & Channel",
+        "questions": [
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "What usually makes you decide to buy organic milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I run out and need to restock",
+              "I see it on sale or with a discount",
+              "I plan a weekly grocery trip",
+              "I want it for a specific recipe or drink",
+              "I notice a new or different organic milk product",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I run out and need to restock",
+                "value": 18.0
+              },
+              {
+                "label": "I see it on sale or with a discount",
+                "value": 16.0
+              },
+              {
+                "label": "I plan a weekly grocery trip",
+                "value": 42.0
+              },
+              {
+                "label": "I want it for a specific recipe or drink",
+                "value": 12.0
+              },
+              {
+                "label": "I notice a new or different organic milk product",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I plan a weekly grocery trip (42.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers anchor the planned weekly trip; Price-Sensitive Households add the sale-driven spike.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Before buying organic milk, which of these have you done in the last 30 days?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Checked the use-by date on the carton",
+              "Compared prices between organic and regular milk",
+              "Looked for a specific organic certification label",
+              "Checked if it was produced locally or regionally",
+              "Read the ingredient list or nutrition facts",
+              "None of these",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Checked the use-by date on the carton",
+                "value": 62.0
+              },
+              {
+                "label": "Compared prices between organic and regular milk",
+                "value": 58.0
+              },
+              {
+                "label": "Looked for a specific organic certification label",
+                "value": 45.0
+              },
+              {
+                "label": "Checked if it was produced locally or regionally",
+                "value": 30.0
+              },
+              {
+                "label": "Read the ingredient list or nutrition facts",
+                "value": 38.0
+              },
+              {
+                "label": "None of these",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Checked the use-by date on the carton (62.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers drive label and ingredient checks; Price-Sensitive Households drive price comparisons.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "discovery",
+            "beatTitle": "Discovery and information",
+            "beatCanonical": "discovery",
+            "multiSelect": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Where do you usually first hear about or learn about organic milk options?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "In-store displays or signs",
+              "Online articles or social media",
+              "Recommendations from friends or family",
+              "Product reviews or ratings",
+              "Nutritionist or health professional",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "In-store displays or signs",
+                "value": 28.0
+              },
+              {
+                "label": "Online articles or social media",
+                "value": 24.0
+              },
+              {
+                "label": "Recommendations from friends or family",
+                "value": 22.0
+              },
+              {
+                "label": "Product reviews or ratings",
+                "value": 12.0
+              },
+              {
+                "label": "Nutritionist or health professional",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: In-store displays or signs (28.00%).",
+            "distributionNote": "Committed Organic Buyers rely on in-store and professional sources; Occasional and Health & Quality-Driven Buyers are more influenced by online and social channels.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "discovery",
+            "beatTitle": "Discovery and information",
+            "beatCanonical": "discovery"
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Where do you usually buy organic milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Large supermarket chain",
+              "Discount or warehouse store",
+              "Natural or specialty grocery store",
+              "Farmers market or direct from farm",
+              "Online grocery delivery",
+              "Convenience or corner store",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Large supermarket chain",
+                "value": 45.0
+              },
+              {
+                "label": "Discount or warehouse store",
+                "value": 15.0
+              },
+              {
+                "label": "Natural or specialty grocery store",
+                "value": 18.0
+              },
+              {
+                "label": "Farmers market or direct from farm",
+                "value": 8.0
+              },
+              {
+                "label": "Online grocery delivery",
+                "value": 10.0
+              },
+              {
+                "label": "Convenience or corner store",
+                "value": 2.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Large supermarket chain (45.00%).",
+            "distributionNote": "Committed and Health & Quality-Driven Buyers favor supermarkets and specialty stores; Price-Sensitive Households lean toward warehouse/discount channels.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Which of the following most influences your choice of organic milk at the store?",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "options": [
+              "Price",
+              "Taste",
+              "Brand reputation",
+              "Organic certification",
+              "Packaging and sustainability",
+              "Freshness or use-by date"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Price",
+                "value": 22.0
+              },
+              {
+                "label": "Taste",
+                "value": 18.0
+              },
+              {
+                "label": "Brand reputation",
+                "value": 14.0
+              },
+              {
+                "label": "Organic certification",
+                "value": 20.0
+              },
+              {
+                "label": "Packaging and sustainability",
+                "value": 12.0
+              },
+              {
+                "label": "Freshness or use-by date",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: Price (22.00%).",
+            "distributionNote": "Price-Sensitive Households rank price first; Committed Organic Buyers put certification and brand first; Health & Quality-Driven Buyers emphasize taste and freshness.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel",
+            "ordered": true
+          }
+        ]
+      },
+      {
+        "id": "product_requirements",
+        "label": "Product, Provenance & Claim Requirements",
+        "questions": [
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "What do you consider a must-have in the organic milk you buy?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Certified organic label",
+              "No added hormones or antibiotics",
+              "Cows grazed on pasture",
+              "Fresh taste",
+              "Creamy texture",
+              "Long use-by date",
+              "None of these are must-haves for me"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Certified organic label",
+                "value": 68.0
+              },
+              {
+                "label": "No added hormones or antibiotics",
+                "value": 82.0
+              },
+              {
+                "label": "Cows grazed on pasture",
+                "value": 45.0
+              },
+              {
+                "label": "Fresh taste",
+                "value": 61.0
+              },
+              {
+                "label": "Creamy texture",
+                "value": 38.0
+              },
+              {
+                "label": "Long use-by date",
+                "value": 29.0
+              },
+              {
+                "label": "None of these are must-haves for me",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: No added hormones or antibiotics (82.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers dominate the must-have list, with high endorsement of no-hormone and certified organic claims; Price-Sensitive Households are less likely to demand pasture or creamy texture.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_haves",
+            "beatTitle": "Non-negotiable attributes of organic milk",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "How do you judge the quality of organic milk before buying it?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Check the use-by date",
+              "Look at the color and thickness",
+              "Smell it after opening",
+              "Check the fat content on the label",
+              "Trust the brand",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Check the use-by date",
+                "value": 22.0
+              },
+              {
+                "label": "Look at the color and thickness",
+                "value": 18.0
+              },
+              {
+                "label": "Smell it after opening",
+                "value": 15.0
+              },
+              {
+                "label": "Check the fat content on the label",
+                "value": 12.0
+              },
+              {
+                "label": "Trust the brand",
+                "value": 28.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Trust the brand (28.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers rely on brand trust and sensory cues; Price-Sensitive Households are more likely to check use-by dates to avoid waste.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Signals of quality in organic milk",
+            "beatCanonical": "quality_cues"
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "Which packaging size do you usually buy for organic milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Half-gallon (64 oz)",
+              "Gallon (128 oz)",
+              "Quart (32 oz)",
+              "Pint (16 oz)",
+              "Single-serve bottle",
+              "Other"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Half-gallon (64 oz)",
+                "value": 45.0
+              },
+              {
+                "label": "Gallon (128 oz)",
+                "value": 30.0
+              },
+              {
+                "label": "Quart (32 oz)",
+                "value": 12.0
+              },
+              {
+                "label": "Pint (16 oz)",
+                "value": 5.0
+              },
+              {
+                "label": "Single-serve bottle",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Half-gallon (64 oz) (45.00%).",
+            "distributionNote": "Family-oriented segments (Price-Sensitive and Committed Organic Buyers) favor half-gallon and gallon sizes; singles and smaller households pull toward quarts and pints.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "packaging_preferences",
+            "beatTitle": "Preferred pack sizes and formats",
+            "beatCanonical": "format_packaging"
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which claims on organic milk packaging do you trust most?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Certified organic",
+              "Grass-fed",
+              "Local farm",
+              "Carbon neutral",
+              "Animal welfare certified",
+              "None of these"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Certified organic",
+                "value": 48.0
+              },
+              {
+                "label": "Grass-fed",
+                "value": 22.0
+              },
+              {
+                "label": "Local farm",
+                "value": 14.0
+              },
+              {
+                "label": "Carbon neutral",
+                "value": 4.0
+              },
+              {
+                "label": "Animal welfare certified",
+                "value": 9.0
+              },
+              {
+                "label": "None of these",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Certified organic (48.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers trust certified organic most; environmental claims like carbon neutral resonate only with a niche segment, while Price-Sensitive Households are less swayed by any claim.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "claims_credentials",
+            "beatTitle": "Importance of certifications and provenance",
+            "beatCanonical": "claims_credentials"
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "If the price of your usual organic milk rose by 20%, which would you most likely do?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Switch to a cheaper organic brand",
+              "Buy organic less often",
+              "Switch to regular milk",
+              "Keep buying the same organic milk",
+              "Switch to a plant-based milk",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Switch to a cheaper organic brand",
+                "value": 35.0
+              },
+              {
+                "label": "Buy organic less often",
+                "value": 18.0
+              },
+              {
+                "label": "Switch to regular milk",
+                "value": 12.0
+              },
+              {
+                "label": "Keep buying the same organic milk",
+                "value": 28.0
+              },
+              {
+                "label": "Switch to a plant-based milk",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Switch to a cheaper organic brand (35.00%).",
+            "distributionNote": "Price-Sensitive Households drive switching to cheaper organic brands or reducing frequency; Committed Organic Buyers and Health & Quality-Driven Buyers largely absorb the price increase and stay loyal.",
+            "N": 460,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price, taste, and ethics",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "If you had to give up one thing about your current organic milk, which would it be?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Creamy taste",
+              "Long use-by date",
+              "Glass packaging",
+              "Local farm origin",
+              "Low price",
+              "None of these"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Creamy taste",
+                "value": 18.0
+              },
+              {
+                "label": "Long use-by date",
+                "value": 24.0
+              },
+              {
+                "label": "Glass packaging",
+                "value": 8.0
+              },
+              {
+                "label": "Local farm origin",
+                "value": 12.0
+              },
+              {
+                "label": "Low price",
+                "value": 22.0
+              },
+              {
+                "label": "None of these",
+                "value": 16.0
+              }
+            ],
+            "insight": "Top response: Long use-by date (24.00%).",
+            "distributionNote": "Price-Sensitive Households are most willing to give up creamy taste and local origin to save money; Committed Organic Buyers are least willing to give up any attribute, while Health & Quality-Driven Buyers value taste and freshness.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price, taste, and ethics",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "What would you be willing to pay more for in organic milk?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Grass-fed certification",
+              "Local farm origin",
+              "Glass bottle packaging",
+              "Lactose-free version",
+              "Higher fat content (whole or 2%)",
+              "None of these are worth extra to me"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Grass-fed certification",
+                "value": 42.0
+              },
+              {
+                "label": "Local farm origin",
+                "value": 31.0
+              },
+              {
+                "label": "Glass bottle packaging",
+                "value": 18.0
+              },
+              {
+                "label": "Lactose-free version",
+                "value": 22.0
+              },
+              {
+                "label": "Higher fat content (whole or 2%)",
+                "value": 25.0
+              },
+              {
+                "label": "None of these are worth extra to me",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Grass-fed certification (42.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers are willing to pay extra for grass-fed and local origin.",
+            "N": 460,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "willingness_to_pay",
+            "beatTitle": "Acceptable price premium for organic",
+            "beatCanonical": "value_expectation",
+            "multiSelect": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_switching",
+        "label": "Satisfaction, Loyalty & Switching Risk",
+        "questions": [
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "How likely are you to keep buying organic milk over the next 12 months?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 3.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 7.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 12.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 38.0
+              },
+              {
+                "label": "Very likely",
+                "value": 40.0
+              }
+            ],
+            "insight": "Top response: Very likely (40.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers anchor the high likelihood; Price-Sensitive Households add a modest tail of uncertainty.",
+            "N": 460,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction"
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "How well does the organic milk you buy meet your expectations?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Falls far short of expectations",
+              "Falls somewhat short of expectations",
+              "Meets expectations",
+              "Exceeds expectations somewhat",
+              "Exceeds expectations greatly"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Falls far short of expectations",
+                "value": 3.0
+              },
+              {
+                "label": "Falls somewhat short of expectations",
+                "value": 9.0
+              },
+              {
+                "label": "Meets expectations",
+                "value": 45.0
+              },
+              {
+                "label": "Exceeds expectations somewhat",
+                "value": 32.0
+              },
+              {
+                "label": "Exceeds expectations greatly",
+                "value": 11.0
+              }
+            ],
+            "insight": "Top response: Meets expectations (45.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers push toward 'meets/exceeds'; Occasional Organic Buyers are more neutral.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "ordered": true
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "How satisfied are you with the taste of the organic milk you usually buy?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 3.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 15.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 40.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 34.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (40.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers are taste-satisfied; Price-Sensitive and Occasional Organic Buyers are less enthusiastic.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "ordered": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which aspects of organic milk most affects how satisfied you are with it?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Taste and freshness",
+              "Nutritional value and health benefits",
+              "Animal welfare and farming practices",
+              "Environmental impact and packaging",
+              "Price relative to regular milk",
+              "Consistent availability in stores"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Taste and freshness",
+                "value": 28.0
+              },
+              {
+                "label": "Nutritional value and health benefits",
+                "value": 32.0
+              },
+              {
+                "label": "Animal welfare and farming practices",
+                "value": 12.0
+              },
+              {
+                "label": "Environmental impact and packaging",
+                "value": 10.0
+              },
+              {
+                "label": "Price relative to regular milk",
+                "value": 12.0
+              },
+              {
+                "label": "Consistent availability in stores",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Nutritional value and health benefits (32.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers prioritize nutrition and taste; Price-Sensitive Households elevate price; environmental concerns are secondary.",
+            "N": 460,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers"
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "What would most likely make you switch from organic milk back to regular milk?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Price of organic milk rises too much",
+              "Organic milk is out of stock at my usual store",
+              "A new non-organic milk claims better nutrition or taste",
+              "Someone in my household develops lactose intolerance",
+              "I lose trust in organic certification",
+              "None of these would make me switch"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Price of organic milk rises too much",
+                "value": 35.0
+              },
+              {
+                "label": "Organic milk is out of stock at my usual store",
+                "value": 12.0
+              },
+              {
+                "label": "A new non-organic milk claims better nutrition or taste",
+                "value": 8.0
+              },
+              {
+                "label": "Someone in my household develops lactose intolerance",
+                "value": 7.0
+              },
+              {
+                "label": "I lose trust in organic certification",
+                "value": 13.0
+              },
+              {
+                "label": "None of these would make me switch",
+                "value": 25.0
+              }
+            ],
+            "insight": "Top response: Price of organic milk rises too much (35.00%).",
+            "distributionNote": "Price-Sensitive Households are most likely to switch on price; Committed Organic Buyers are resilient, but trust erosion is a notable trigger.",
+            "N": 460,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction"
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Which problems have you had with organic milk in the last 30 days?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Out of stock at my usual store",
+              "Price increased noticeably",
+              "Taste was inconsistent between cartons",
+              "Spoiled before the use-by date",
+              "Packaging leaked or was hard to open",
+              "No lactose-free organic option",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Out of stock at my usual store",
+                "value": 22.0
+              },
+              {
+                "label": "Price increased noticeably",
+                "value": 38.0
+              },
+              {
+                "label": "Taste was inconsistent between cartons",
+                "value": 14.0
+              },
+              {
+                "label": "Spoiled before the use-by date",
+                "value": 12.0
+              },
+              {
+                "label": "Packaging leaked or was hard to open",
+                "value": 9.0
+              },
+              {
+                "label": "No lactose-free organic option",
+                "value": 8.0
+              },
+              {
+                "label": "None of these",
+                "value": 18.0
+              }
+            ],
+            "insight": "Top response: Price increased noticeably (38.00%).",
+            "distributionNote": "Price increases are widely noticed, especially by Price-Sensitive Households; availability issues affect Committed and Occasional Organic Buyers.",
+            "N": 460,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "Which age group are you in?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 8.0
+              },
+              {
+                "label": "25-34",
+                "value": 27.0
+              },
+              {
+                "label": "35-44",
+                "value": 29.0
+              },
+              {
+                "label": "45-54",
+                "value": 17.0
+              },
+              {
+                "label": "55-64",
+                "value": 12.0
+              },
+              {
+                "label": "65 or older",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 35-44 (29.00%).",
+            "distributionNote": "Health & Quality-Driven Buyers and Committed Organic Buyers skew toward the 25-44 age range; Occasional Organic Buyers add a younger tail.",
+            "N": 460,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "age_band"
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "What is your gender?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 56.0
+              },
+              {
+                "label": "Man",
+                "value": 41.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (56.00%).",
+            "distributionNote": "Primary grocery decision-makers skew female across all buyer segments, with a small non-binary/self-describe share.",
+            "N": 460,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "gender"
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Who else lives in your household?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 12.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 30.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 38.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (38.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers are more likely to have children; Occasional Organic Buyers include more singles and childless couples.",
+            "N": 460,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "household_composition"
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "What was your total household income before tax last year?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 6.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 18.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 24.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 22.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 18.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 9.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (24.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers are concentrated in upper-middle and high income bands; Price-Sensitive Households pull the middle and lower-middle.",
+            "N": 460,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "income_band"
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "How likely are you to recommend the Organic Milk you currently use to a friend or colleague?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 1.0
+              },
+              {
+                "label": "2",
+                "value": 2.0
+              },
+              {
+                "label": "3",
+                "value": 3.0
+              },
+              {
+                "label": "4",
+                "value": 4.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 10.0
+              },
+              {
+                "label": "7",
+                "value": 18.0
+              },
+              {
+                "label": "8",
+                "value": 22.0
+              },
+              {
+                "label": "9",
+                "value": 14.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: 8 (22.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers cluster at the high end; Price-Sensitive and Occasional Organic Buyers pull the middle.",
+            "N": 460,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "advocacy_nps"
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "Overall, how satisfied are you with the Organic Milk you currently use?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 3.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 15.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 32.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "Committed Organic Buyers and Health & Quality-Driven Buyers are mostly satisfied; Price-Sensitive Households and Occasional Organic Buyers show more neutrality and some dissatisfaction.",
+            "N": 460,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "overall_satisfaction_profile",
+            "ordered": true
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 31,
+    "counts_by_tab": {
+      "consumption_context": 7,
+      "purchase_journey": 5,
+      "product_requirements": 7,
+      "satisfaction_switching": 6,
+      "profiling": 6
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": true,
+    "warnings": [
+      "Restored the best revision (score 0.368) — the final pass scored 0.216 and was discarded.",
+      "Grounding is thin — most answers are inferred, not data-backed.",
+      "1 duplicate/overlapping question(s) removed at assembly.",
+      "duplicate question removed (bb5 overlaps bb4): Where do you usually compare organic milk options before buying?",
+      "Tab 'consumption_context' under target: 7/8.",
+      "Tab 'purchase_journey' under target: 5/8.",
+      "Tab 'product_requirements' under target: 7/8.",
+      "Tab 'satisfaction_switching' under target: 6/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "consumption_context": [
+        {
+          "beatId": "category_entry",
+          "title": "Category relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "usage_occasion",
+          "title": "Usage occasions",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "usage_frequency",
+          "title": "Usage frequency and intensity",
+          "canonical": "usage_frequency",
+          "order": 3
+        }
+      ],
+      "purchase_journey": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "What starts a purchase",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery",
+          "title": "Discovery and information",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "channel",
+          "title": "Where they buy",
+          "canonical": "channel",
+          "order": 3
+        }
+      ],
+      "product_requirements": [
+        {
+          "beatId": "must_haves",
+          "title": "Non-negotiable attributes of organic milk",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Signals of quality in organic milk",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "packaging_preferences",
+          "title": "Preferred pack sizes and formats",
+          "canonical": "format_packaging",
+          "order": 3
+        },
+        {
+          "beatId": "claims_credentials",
+          "title": "Importance of certifications and provenance",
+          "canonical": "claims_credentials",
+          "order": 4
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs between price, taste, and ethics",
+          "canonical": "tradeoffs",
+          "order": 5
+        },
+        {
+          "beatId": "willingness_to_pay",
+          "title": "Acceptable price premium for organic",
+          "canonical": "value_expectation",
+          "order": 6
+        }
+      ],
+      "satisfaction_switching": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What drives satisfaction",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        }
+      ]
+    },
+    "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on their organic milk purchase frequency, price sensitivity, and the motivations (health, ethics, taste) that drive their choice.",
+    "segmentation_lens": "Price sensitivity combined with purchase motivation (jobs-to-be-done). Organic milk is a premium staple where the core behavioural difference is how much of a price premium buyers will tolerate and what job they hire the milk to do (family health, personal ethics, or taste).",
+    "must_cover_topics": [
+      "price premium",
+      "organic certification",
+      "lactose-free",
+      "pack size",
+      "purchase frequency",
+      "brand loyalty"
+    ],
+    "segments": [
+      {
+        "segment_id": "price_sensitive_households",
+        "name": "Price-Sensitive Households",
+        "description": "Buy organic milk regularly but are highly attentive to price, often comparing with conventional milk and switching to the cheapest organic option or reducing purchase frequency when prices rise. They buy for family health but are constrained by budget.",
+        "hypothesis": "This group will show high price sensitivity in trade-off questions, lower willingness to pay a premium, and a tendency to buy larger pack sizes to reduce per-unit cost."
+      },
+      {
+        "segment_id": "committed_organic_buyers",
+        "name": "Committed Organic Buyers",
+        "description": "Buy organic milk consistently and are willing to pay a premium without much hesitation. They are driven by strong beliefs about health, animal welfare, and environmental sustainability, and are loyal to the organic category and often to specific brands.",
+        "hypothesis": "This group will show low price sensitivity, high importance on organic certification and ethical claims, and high loyalty and advocacy."
+      },
+      {
+        "segment_id": "occasional_organic_buyers",
+        "name": "Occasional Organic Buyers",
+        "description": "Buy organic milk infrequently, often as a treat or for a specific use (e.g., for a child, for coffee), but mostly buy conventional milk. They are not committed to organic and are easily swayed by price or availability.",
+        "hypothesis": "This group will show low purchase frequency, high price sensitivity, and lower importance on organic claims; they may switch back to conventional easily."
+      },
+      {
+        "segment_id": "health_quality_driven_buyers",
+        "name": "Health & Quality-Driven Buyers",
+        "description": "Buy organic milk primarily for perceived health and nutritional benefits, and for superior taste and quality. They are less motivated by environmental or ethical concerns and more by personal and family wellbeing. They are willing to pay a premium for quality but may not be loyal to organic per se if a better-tasting or more nutritious alternative appears.",
+        "hypothesis": "This group will rate health and taste attributes highly, show moderate price sensitivity, and be less concerned with sustainability claims."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "price_sensitive_households",
+          "name": "Price-Sensitive Households",
+          "description": "Buy organic milk regularly but are highly attentive to price, often comparing with conventional milk and switching to the cheapest organic option or reducing purchase frequency when prices rise. They buy for family health but are constrained by budget.",
+          "hypothesis": "This group will show high price sensitivity in trade-off questions, lower willingness to pay a premium, and a tendency to buy larger pack sizes to reduce per-unit cost."
+        },
+        {
+          "segment_id": "committed_organic_buyers",
+          "name": "Committed Organic Buyers",
+          "description": "Buy organic milk consistently and are willing to pay a premium without much hesitation. They are driven by strong beliefs about health, animal welfare, and environmental sustainability, and are loyal to the organic category and often to specific brands.",
+          "hypothesis": "This group will show low price sensitivity, high importance on organic certification and ethical claims, and high loyalty and advocacy."
+        },
+        {
+          "segment_id": "occasional_organic_buyers",
+          "name": "Occasional Organic Buyers",
+          "description": "Buy organic milk infrequently, often as a treat or for a specific use (e.g., for a child, for coffee), but mostly buy conventional milk. They are not committed to organic and are easily swayed by price or availability.",
+          "hypothesis": "This group will show low purchase frequency, high price sensitivity, and lower importance on organic claims; they may switch back to conventional easily."
+        },
+        {
+          "segment_id": "health_quality_driven_buyers",
+          "name": "Health & Quality-Driven Buyers",
+          "description": "Buy organic milk primarily for perceived health and nutritional benefits, and for superior taste and quality. They are less motivated by environmental or ethical concerns and more by personal and family wellbeing. They are willing to pay a premium for quality but may not be loyal to organic per se if a better-tasting or more nutritious alternative appears.",
+          "hypothesis": "This group will rate health and taste attributes highly, show moderate price sensitivity, and be less concerned with sustainability claims."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many days does your household drink organic milk?",
+          "option_label": "Every day",
+          "segment_id": "committed_organic_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many days does your household drink organic milk?",
+          "option_label": "5-6 days",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many days does your household drink organic milk?",
+          "option_label": "1-2 days",
+          "segment_id": "occasional_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many days does your household drink organic milk?",
+          "option_label": "Less than once a week",
+          "segment_id": "occasional_organic_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How long has your household been buying organic milk?",
+          "option_label": "More than 3 years",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q2",
+          "question_text": "How long has your household been buying organic milk?",
+          "option_label": "Less than 6 months",
+          "segment_id": "occasional_organic_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "When you run out of organic milk, how do you usually handle it?",
+          "option_label": "Make a special trip to buy organic milk",
+          "segment_id": "committed_organic_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q4",
+          "question_text": "When you run out of organic milk, how do you usually handle it?",
+          "option_label": "Buy conventional milk as a substitute",
+          "segment_id": "occasional_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q5",
+          "question_text": "In the last 30 days, how many half-gallon containers of organic milk did your household buy?",
+          "option_label": "7 or more",
+          "segment_id": "committed_organic_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q5",
+          "question_text": "In the last 30 days, how many half-gallon containers of organic milk did your household buy?",
+          "option_label": "None",
+          "segment_id": "occasional_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "What is the main reason you choose organic milk over regular milk?",
+          "option_label": "To avoid antibiotics and hormones",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "What is the main reason you choose organic milk over regular milk?",
+          "option_label": "To support sustainable farming",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "What is the main reason you choose organic milk over regular milk?",
+          "option_label": "For better taste",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "What is the main reason you choose organic milk over regular milk?",
+          "option_label": "For my children's health",
+          "segment_id": "price_sensitive_households",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "What is the main reason you choose organic milk over regular milk?",
+          "option_label": "To reduce my environmental impact",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q8",
+          "question_text": "What usually makes you decide to buy organic milk?",
+          "option_label": "I see it on sale or with a discount",
+          "segment_id": "price_sensitive_households",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Before buying organic milk, which of these have you done in the last 30 days?",
+          "option_label": "Compared prices between organic and regular milk",
+          "segment_id": "price_sensitive_households",
+          "points": 3
+        },
+        {
+          "question_id": "q10",
+          "question_text": "Before buying organic milk, which of these have you done in the last 30 days?",
+          "option_label": "Looked for a specific organic certification label",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Where do you usually compare organic milk options before buying?",
+          "option_label": "I don't compare, I just buy my usual one",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of the following most influences your choice of organic milk at the store?",
+          "option_label": "Price",
+          "segment_id": "price_sensitive_households",
+          "points": 3
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of the following most influences your choice of organic milk at the store?",
+          "option_label": "Taste",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of the following most influences your choice of organic milk at the store?",
+          "option_label": "Organic certification",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Which of these do you consider a must-have in the organic milk you buy?",
+          "option_label": "Certified organic label",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Which of these do you consider a must-have in the organic milk you buy?",
+          "option_label": "No added hormones or antibiotics",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Which of these do you consider a must-have in the organic milk you buy?",
+          "option_label": "Cows grazed on pasture",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Which of these do you consider a must-have in the organic milk you buy?",
+          "option_label": "Fresh taste",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these claims on organic milk packaging do you trust most?",
+          "option_label": "Certified organic",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these claims on organic milk packaging do you trust most?",
+          "option_label": "Grass-fed",
+          "segment_id": "committed_organic_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these claims on organic milk packaging do you trust most?",
+          "option_label": "Local farm",
+          "segment_id": "committed_organic_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these claims on organic milk packaging do you trust most?",
+          "option_label": "Animal welfare certified",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "If the price of your usual organic milk rose by 20%, which would you most likely do?",
+          "option_label": "Switch to a cheaper organic brand",
+          "segment_id": "price_sensitive_households",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "If the price of your usual organic milk rose by 20%, which would you most likely do?",
+          "option_label": "Buy organic less often",
+          "segment_id": "price_sensitive_households",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "If the price of your usual organic milk rose by 20%, which would you most likely do?",
+          "option_label": "Switch to regular milk",
+          "segment_id": "price_sensitive_households",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "If the price of your usual organic milk rose by 20%, which would you most likely do?",
+          "option_label": "Keep buying the same organic milk",
+          "segment_id": "committed_organic_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which of these would you be willing to pay more for in organic milk?",
+          "option_label": "Grass-fed certification",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which of these would you be willing to pay more for in organic milk?",
+          "option_label": "Local farm origin",
+          "segment_id": "committed_organic_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which of these would you be willing to pay more for in organic milk?",
+          "option_label": "None of these are worth extra to me",
+          "segment_id": "price_sensitive_households",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "How likely are you to keep buying organic milk over the next 12 months?",
+          "option_label": "Very likely",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "How likely are you to keep buying organic milk over the next 12 months?",
+          "option_label": "Somewhat likely",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 1
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which of these matters most to your satisfaction with organic milk?",
+          "option_label": "Taste",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which of these matters most to your satisfaction with organic milk?",
+          "option_label": "Nutritional value",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which of these matters most to your satisfaction with organic milk?",
+          "option_label": "Animal welfare standards",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which of these matters most to your satisfaction with organic milk?",
+          "option_label": "Environmental impact",
+          "segment_id": "committed_organic_buyers",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which of these matters most to your satisfaction with organic milk?",
+          "option_label": "Price",
+          "segment_id": "price_sensitive_households",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "What would most likely make you switch from organic milk back to regular milk?",
+          "option_label": "Price of organic milk rises too much",
+          "segment_id": "price_sensitive_households",
+          "points": 3
+        },
+        {
+          "question_id": "q24",
+          "question_text": "What would most likely make you switch from organic milk back to regular milk?",
+          "option_label": "A new non-organic milk claims better nutrition or taste",
+          "segment_id": "health_quality_driven_buyers",
+          "points": 3
+        },
+        {
+          "question_id": "q24",
+          "question_text": "What would most likely make you switch from organic milk back to regular milk?",
+          "option_label": "None of these would make me switch",
+          "segment_id": "committed_organic_buyers",
+          "points": 3
+        }
+      ],
+      "tie_break": "Question pe6 (If the price of your usual organic milk rose by 20%, which would you most likely do?) is the most direct behavioural self-report because it forces respondents to choose between price sensitivity and commitment, cleanly separating price_sensitive_households from committed_organic_buyers and health_quality_driven_buyers.",
+      "notes": [
+        "Occasional buyers are identified by low frequency (cp1, cp6) and willingness to substitute (cp5).",
+        "Price-sensitive households are identified by price comparison behaviour (bb4) and reaction to price increases (pe6, sf6).",
+        "Committed organic buyers show high frequency, loyalty, and ethical motivations (cp1, cp5, cp8, pe5, sf6).",
+        "Health & quality-driven buyers focus on taste, nutrition, and personal benefits (cp8, pe1, pe2, sf4, sf6).",
+        "6 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "nonDiscriminatingQuestions": [
+      {
+        "id": "q3",
+        "qNum": 3,
+        "question": "For which of these uses do you typically serve organic milk?"
+      },
+      {
+        "id": "q6",
+        "qNum": 6,
+        "question": "How many glasses or bowls of organic milk do you have in a typical day?"
+      },
+      {
+        "id": "q9",
+        "qNum": 9,
+        "question": "Before buying organic milk, which of these have you done in the last 30 days?"
+      },
+      {
+        "id": "q14",
+        "qNum": 14,
+        "question": "How do you judge the quality of organic milk before buying it?"
+      },
+      {
+        "id": "q15",
+        "qNum": 15,
+        "question": "Which packaging size do you usually buy for organic milk?"
+      },
+      {
+        "id": "q18",
+        "qNum": 18,
+        "question": "If you had to give up one thing about your current organic milk, which would it be?"
+      },
+      {
+        "id": "q21",
+        "qNum": 21,
+        "question": "How well does the organic milk you buy meet your expectations?"
+      },
+      {
+        "id": "q23",
+        "qNum": 23,
+        "question": "Which aspects of organic milk most affects how satisfied you are with it?"
+      },
+      {
+        "id": "q25",
+        "qNum": 25,
+        "question": "Which problems have you had with organic milk in the last 30 days?"
+      }
+    ],
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing the household's overall milk consumption and the role of organic within it, then moves to the purchase journey—what triggers a buy, how often, where, and what decides the choice. It then probes product expectations, including certifications and price trade-offs, and closes with satisfaction, loyalty, and switching risk. The arc moves from broad, safe questions about usage to more sensitive topics like price tolerance and switching intent, allowing the segmentation to emerge from behavioural and motivational data.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "Chose price sensitivity + motivation as the lens because organic milk is a premium staple where the key behavioural difference is how much premium buyers will tolerate and what job they hire the milk for (family health, ethics, taste).",
+      "Added a 'lactose-free' beat in friction points because the target audience includes lactose-intolerant seekers and the market profile notes dairy-free alternatives as a driver.",
+      "Included 'pack size' as a must-cover topic and a beat in product requirements because household size and consumption volume directly affect pack size preferences and price per unit.",
+      "The 'willingness to pay' beat is placed late in the product requirements section, as it is the most sensitive item in that tab.",
+      "The satisfaction section includes a switching trigger beat that explicitly mentions plant-based alternatives, reflecting the competitive threat from non-dairy options in North America.",
+      "The segments are designed to be separable by closed questions on purchase frequency, price sensitivity (via trade-off and willingness-to-pay), and motivations (health vs. ethics vs. taste)."
+    ],
+    "classification_reason": "Household shoppers buy organic milk, pay for it themselves, and decide at the shelf. Retailers and supermarkets sell it, but the end consumer is the individual household. There is no meaningful business-only purchase channel for organic milk.",
+    "generated_at": "2026-08-04T13:29:43.804816+00:00",
+    "current_date": "2026-08-04",
+    "sample_size": 2500,
+    "N": 460,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "lollipop",
+      "radar",
+      "stacked",
+      "vbar",
+      "vbar-likert",
+      "waffle"
+    ]
+  }
+}

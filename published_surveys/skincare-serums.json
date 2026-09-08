@@ -1,0 +1,2131 @@
+{
+  "frontend": {
+    "sections": [
+      {
+        "id": "serum_usage_context",
+        "label": "Serum Usage & Skin Concerns",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "How often do you currently use a skincare serum?",
+            "options": [
+              "Daily",
+              "Several times a week",
+              "About once a week",
+              "A few times a month",
+              "Less than once a month"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Daily",
+                "value": 52.0
+              },
+              {
+                "label": "Several times a week",
+                "value": 27.0
+              },
+              {
+                "label": "About once a week",
+                "value": 10.0
+              },
+              {
+                "label": "A few times a month",
+                "value": 7.0
+              },
+              {
+                "label": "Less than once a month",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Daily (52.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Luxury Experience Buyers drive the daily usage majority; Value-Driven Buyers and Sensitive-Skin Managers contribute to the occasional-use tail.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "serum_category_entry",
+            "beatTitle": "Serum usage in the routine",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How would you describe your serum routine?",
+            "options": [
+              "I use one serum every day",
+              "I rotate between two or more serums",
+              "I use serum only when my skin feels off",
+              "I use serum only as part of a special routine"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I use one serum every day",
+                "value": 45.0
+              },
+              {
+                "label": "I rotate between two or more serums",
+                "value": 28.0
+              },
+              {
+                "label": "I use serum only when my skin feels off",
+                "value": 15.0
+              },
+              {
+                "label": "I use serum only as part of a special routine",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: I use one serum every day (45.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Luxury Experience Buyers anchor the daily single-serum group; Sensitive-Skin Managers and Value-Driven Buyers are more likely to use conditionally.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "serum_category_entry",
+            "beatTitle": "Serum usage in the routine",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "When do you usually apply a serum?",
+            "options": [
+              "Morning only",
+              "Evening only",
+              "Both morning and evening",
+              "Only before an event or special occasion",
+              "Whenever I remember"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Morning only",
+                "value": 18.0
+              },
+              {
+                "label": "Evening only",
+                "value": 35.0
+              },
+              {
+                "label": "Both morning and evening",
+                "value": 32.0
+              },
+              {
+                "label": "Only before an event or special occasion",
+                "value": 5.0
+              },
+              {
+                "label": "Whenever I remember",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Evening only (35.00%).",
+            "distributionNote": "Evening application is most common across segments.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "usage_occasions",
+            "beatTitle": "When and why serums are applied",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In a typical week, how many times do you apply a serum?",
+            "options": [
+              "1-2 times",
+              "3-4 times",
+              "5-6 times",
+              "7 times or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1-2 times",
+                "value": 12.0
+              },
+              {
+                "label": "3-4 times",
+                "value": 25.0
+              },
+              {
+                "label": "5-6 times",
+                "value": 28.0
+              },
+              {
+                "label": "7 times or more",
+                "value": 35.0
+              }
+            ],
+            "insight": "Top response: 7 times or more (35.00%).",
+            "distributionNote": "High-frequency usage is driven by Clinical Efficacy Buyers and Luxury Experience Buyers; occasional users are more common among Value-Driven Buyers and Sensitive-Skin Managers.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "usage_frequency",
+            "beatTitle": "Frequency and intensity of use",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In the last 30 days, how many days did you use a serum?",
+            "options": [
+              "0-5 days",
+              "6-10 days",
+              "11-20 days",
+              "21-29 days",
+              "Every day"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "0-5 days",
+                "value": 10.0
+              },
+              {
+                "label": "6-10 days",
+                "value": 14.0
+              },
+              {
+                "label": "11-20 days",
+                "value": 22.0
+              },
+              {
+                "label": "21-29 days",
+                "value": 24.0
+              },
+              {
+                "label": "Every day",
+                "value": 30.0
+              }
+            ],
+            "insight": "Top response: Every day (30.00%).",
+            "distributionNote": "Daily and near-daily usage is concentrated among Clinical Efficacy Buyers and Luxury Experience Buyers; Value-Driven Buyers and Sensitive-Skin Managers are more likely to be in the lower-day buckets.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "usage_frequency",
+            "beatTitle": "Frequency and intensity of use",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How would you describe what you hope a serum will do for your skin?",
+            "options": [
+              "Reduce fine lines and wrinkles",
+              "Improve skin texture and tone",
+              "Hydrate and plump dry skin",
+              "Calm redness and irritation",
+              "Clear breakouts and prevent new ones",
+              "Fade dark spots and even out skin tone",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Reduce fine lines and wrinkles",
+                "value": 30.0
+              },
+              {
+                "label": "Improve skin texture and tone",
+                "value": 24.0
+              },
+              {
+                "label": "Hydrate and plump dry skin",
+                "value": 18.0
+              },
+              {
+                "label": "Calm redness and irritation",
+                "value": 12.0
+              },
+              {
+                "label": "Clear breakouts and prevent new ones",
+                "value": 9.0
+              },
+              {
+                "label": "Fade dark spots and even out skin tone",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Reduce fine lines and wrinkles (30.00%).",
+            "distributionNote": "Sensitive-Skin Managers and Clean-Conscious Consumers elevate the calming and hydration options.",
+            "questionLayer": "module",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "skin_concerns",
+            "beatTitle": "Skin concerns and goals",
+            "beatCanonical": "need_state",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey",
+        "label": "Purchase Journey & Decision Drivers",
+        "questions": [
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "What usually makes you decide to buy a new serum?",
+            "options": [
+              "I run out of my current one",
+              "I see a new product or trend online",
+              "I notice a skin concern (wrinkles, dark spots, breakouts)",
+              "A dermatologist or esthetician recommends it",
+              "It goes on sale or I have a coupon",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I run out of my current one",
+                "value": 18.0
+              },
+              {
+                "label": "I see a new product or trend online",
+                "value": 15.0
+              },
+              {
+                "label": "I notice a skin concern (wrinkles, dark spots, breakouts)",
+                "value": 34.0
+              },
+              {
+                "label": "A dermatologist or esthetician recommends it",
+                "value": 21.0
+              },
+              {
+                "label": "It goes on sale or I have a coupon",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I notice a skin concern (wrinkles, dark spots, breakouts) (34.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Sensitive-Skin Managers drive the skin-concern and dermatologist-recommendation responses; Value-Driven Buyers contribute to the sale/coupon share.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What triggers a new serum purchase",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Where do you usually learn about serums before buying one?",
+            "options": [
+              "Social media (Instagram, TikTok, YouTube)",
+              "Online reviews or beauty forums",
+              "Dermatologist or skincare professional",
+              "Friends or family",
+              "In-store displays or sales staff",
+              "Brand websites or email newsletters",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Social media (Instagram, TikTok, YouTube)",
+                "value": 28.0
+              },
+              {
+                "label": "Online reviews or beauty forums",
+                "value": 24.0
+              },
+              {
+                "label": "Dermatologist or skincare professional",
+                "value": 18.0
+              },
+              {
+                "label": "Friends or family",
+                "value": 12.0
+              },
+              {
+                "label": "In-store displays or sales staff",
+                "value": 6.0
+              },
+              {
+                "label": "Brand websites or email newsletters",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Social media (Instagram, TikTok, YouTube) (28.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Sensitive-Skin Managers lean on professional and clinical sources, while Value-Driven Buyers and younger segments concentrate on social media and peer reviews; Luxury Experience Buyers add a smaller in-store and brand-site share.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "discovery_channels",
+            "beatTitle": "Where they learn about serums",
+            "beatCanonical": "discovery",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Where do you usually buy your skincare serums?",
+            "options": [
+              "Online (brand website, Amazon, DTC)",
+              "Drugstore or pharmacy",
+              "Department store or beauty retailer (Sephora, Ulta)",
+              "Supermarket or mass retailer",
+              "Dermatologist office or medical spa",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Online (brand website, Amazon, DTC)",
+                "value": 48.0
+              },
+              {
+                "label": "Drugstore or pharmacy",
+                "value": 16.0
+              },
+              {
+                "label": "Department store or beauty retailer (Sephora, Ulta)",
+                "value": 22.0
+              },
+              {
+                "label": "Supermarket or mass retailer",
+                "value": 6.0
+              },
+              {
+                "label": "Dermatologist office or medical spa",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Online (brand website, Amazon, DTC) (48.00%).",
+            "distributionNote": "Convenience and DTC preference dominate across segments; Luxury Experience Buyers and Clinical Efficacy Buyers skew to beauty retailers and professional channels.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "purchase_channels",
+            "beatTitle": "Where they buy serums",
+            "beatCanonical": "channel",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "How often do you buy a new serum?",
+            "options": [
+              "Every 1-2 months",
+              "Every 3-4 months",
+              "Every 5-6 months",
+              "Less than every 6 months"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Every 1-2 months",
+                "value": 22.0
+              },
+              {
+                "label": "Every 3-4 months",
+                "value": 38.0
+              },
+              {
+                "label": "Every 5-6 months",
+                "value": 26.0
+              },
+              {
+                "label": "Less than every 6 months",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: Every 3-4 months (38.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Luxury Experience Buyers purchase more frequently; Value-Driven Buyers and Clean-Conscious Consumers stretch intervals.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "purchase_cycle",
+            "beatTitle": "How often they restock",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How much do you typically spend on serums in a month?",
+            "options": [
+              "Under $20",
+              "$20–$39",
+              "$40–$59",
+              "$60–$99",
+              "$100 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $20",
+                "value": 18.0
+              },
+              {
+                "label": "$20–$39",
+                "value": 32.0
+              },
+              {
+                "label": "$40–$59",
+                "value": 24.0
+              },
+              {
+                "label": "$60–$99",
+                "value": 16.0
+              },
+              {
+                "label": "$100 or more",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: $20–$39 (32.00%).",
+            "distributionNote": "Value-Driven Buyers concentrate in the lower bands; Luxury Experience Buyers and Clinical Efficacy Buyers support the premium end.",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "category_spend",
+            "beatTitle": "Typical spend on serums",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "What matters most when you choose a serum?",
+            "options": [
+              "Anti-aging benefits (reducing fine lines and wrinkles)",
+              "Dermatologist recommendations and clinical backing",
+              "Ingredient transparency and clean formulations",
+              "Visible improvements in skin texture and tone",
+              "Brand reputation and peer reviews"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Anti-aging benefits (reducing fine lines and wrinkles)",
+                "value": 28.0
+              },
+              {
+                "label": "Dermatologist recommendations and clinical backing",
+                "value": 24.0
+              },
+              {
+                "label": "Ingredient transparency and clean formulations",
+                "value": 20.0
+              },
+              {
+                "label": "Visible improvements in skin texture and tone",
+                "value": 18.0
+              },
+              {
+                "label": "Brand reputation and peer reviews",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Anti-aging benefits (reducing fine lines and wrinkles) (28.00%).",
+            "distributionNote": "Clean-Conscious Consumers elevate ingredient transparency.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "decision_drivers",
+            "beatTitle": "What decides the final choice",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "product_requirements",
+        "label": "Product Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "What is a must-have for you in a skincare serum?",
+            "options": [
+              "Visible results without irritation",
+              "Fragrance-free and hypoallergenic",
+              "High concentration of active ingredients",
+              "Transparent ingredient list",
+              "Dermatologist recommended",
+              "None of these are must-haves"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Visible results without irritation",
+                "value": 34.0
+              },
+              {
+                "label": "Fragrance-free and hypoallergenic",
+                "value": 18.0
+              },
+              {
+                "label": "High concentration of active ingredients",
+                "value": 12.0
+              },
+              {
+                "label": "Transparent ingredient list",
+                "value": 14.0
+              },
+              {
+                "label": "Dermatologist recommended",
+                "value": 19.0
+              },
+              {
+                "label": "None of these are must-haves",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Visible results without irritation (34.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Sensitive-Skin Managers dominate, driving the top choice; Clean-Conscious Consumers and Luxury Experience Buyers split the rest.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_attributes",
+            "beatTitle": "Non-negotiable serum attributes",
+            "beatCanonical": "must_haves",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "What tells you a serum is high quality before you buy it?",
+            "options": [
+              "Clinical study results on the label",
+              "Dermatologist recommendation",
+              "Peer reviews and word of mouth",
+              "Ingredient list transparency",
+              "Brand reputation",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Clinical study results on the label",
+                "value": 32.0
+              },
+              {
+                "label": "Dermatologist recommendation",
+                "value": 28.0
+              },
+              {
+                "label": "Peer reviews and word of mouth",
+                "value": 18.0
+              },
+              {
+                "label": "Ingredient list transparency",
+                "value": 14.0
+              },
+              {
+                "label": "Brand reputation",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Clinical study results on the label (32.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Sensitive-Skin Managers prioritize clinical evidence and dermatologist input.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Signals of a quality serum",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "Which serum packaging format do you prefer?",
+            "options": [
+              "Dropper bottle",
+              "Pump bottle",
+              "Airless pump",
+              "Tube",
+              "Single-use ampoules",
+              "Other"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Dropper bottle",
+                "value": 38.0
+              },
+              {
+                "label": "Pump bottle",
+                "value": 24.0
+              },
+              {
+                "label": "Airless pump",
+                "value": 22.0
+              },
+              {
+                "label": "Tube",
+                "value": 9.0
+              },
+              {
+                "label": "Single-use ampoules",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Dropper bottle (38.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Luxury Experience Buyers prefer dropper bottles for precision and ritual; Sensitive-Skin Managers and Clean-Conscious Consumers favor pump/airless for hygiene and preservation.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "format_and_packaging",
+            "beatTitle": "Preferred formats and packaging",
+            "beatCanonical": "format_packaging",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which claims on a serum label do you trust most?",
+            "options": [
+              "Clinically proven",
+              "Dermatologist tested",
+              "Fragrance-free",
+              "Non-comedogenic",
+              "Vegan and cruelty-free",
+              "Sustainable sourcing",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Clinically proven",
+                "value": 68.0
+              },
+              {
+                "label": "Dermatologist tested",
+                "value": 61.0
+              },
+              {
+                "label": "Fragrance-free",
+                "value": 45.0
+              },
+              {
+                "label": "Non-comedogenic",
+                "value": 38.0
+              },
+              {
+                "label": "Vegan and cruelty-free",
+                "value": 29.0
+              },
+              {
+                "label": "Sustainable sourcing",
+                "value": 22.0
+              },
+              {
+                "label": "None of these",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Clinically proven (68.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Sensitive-Skin Managers drive high trust in clinical and dermatologist claims; Clean-Conscious Consumers boost vegan and sustainable claims.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "claims_and_credentials",
+            "beatTitle": "Claims that carry weight",
+            "beatCanonical": "claims_credentials",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "What would you give up to get a serum that is gentler on your skin?",
+            "options": [
+              "Visible anti-aging results",
+              "Fast absorption",
+              "A pleasant scent",
+              "Higher concentration of active ingredients",
+              "A lower price",
+              "Sustainable packaging"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Visible anti-aging results",
+                "value": 24.0
+              },
+              {
+                "label": "Fast absorption",
+                "value": 18.0
+              },
+              {
+                "label": "A pleasant scent",
+                "value": 26.0
+              },
+              {
+                "label": "Higher concentration of active ingredients",
+                "value": 17.0
+              },
+              {
+                "label": "A lower price",
+                "value": 9.0
+              },
+              {
+                "label": "Sustainable packaging",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: A pleasant scent (26.00%).",
+            "distributionNote": "Sensitive-Skin Managers and Clean-Conscious Consumers are most willing to give up scent and actives for gentleness; Clinical Efficacy Buyers hold onto visible results and actives.",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between efficacy, safety, and price",
+            "beatCanonical": "tradeoffs",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_loyalty",
+        "label": "Satisfaction, Loyalty & Switching Risk",
+        "questions": [
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which frustrations have you had with your current serum?",
+            "options": [
+              "It feels sticky or doesn't absorb well",
+              "It broke me out or caused irritation",
+              "I don't see visible results",
+              "It's too expensive for what you get",
+              "The ingredient list is confusing",
+              "The packaging isn't sustainable",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "It feels sticky or doesn't absorb well",
+                "value": 18.0
+              },
+              {
+                "label": "It broke me out or caused irritation",
+                "value": 22.0
+              },
+              {
+                "label": "I don't see visible results",
+                "value": 26.0
+              },
+              {
+                "label": "It's too expensive for what you get",
+                "value": 17.0
+              },
+              {
+                "label": "The ingredient list is confusing",
+                "value": 10.0
+              },
+              {
+                "label": "The packaging isn't sustainable",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I don't see visible results (26.00%).",
+            "distributionNote": "Lack of visible results and irritation are the most common frustrations, reflecting the top pain points of Sensitive-Skin Managers and Clinical Efficacy Buyers.",
+            "questionLayer": "module",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "friction_points",
+            "beatTitle": "Frustrations and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "What would most likely make you switch to a different serum?",
+            "options": [
+              "A serum that delivers visible results without irritation",
+              "A more affordable option with similar results",
+              "A fragrance-free and hypoallergenic formulation",
+              "Higher concentrations of active ingredients",
+              "Personalized formulations based on skin type",
+              "More sustainable and refillable packaging",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "A serum that delivers visible results without irritation",
+                "value": 30.0
+              },
+              {
+                "label": "A more affordable option with similar results",
+                "value": 22.0
+              },
+              {
+                "label": "A fragrance-free and hypoallergenic formulation",
+                "value": 14.0
+              },
+              {
+                "label": "Higher concentrations of active ingredients",
+                "value": 12.0
+              },
+              {
+                "label": "Personalized formulations based on skin type",
+                "value": 13.0
+              },
+              {
+                "label": "More sustainable and refillable packaging",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: A serum that delivers visible results without irritation (30.00%).",
+            "distributionNote": "Clinical Efficacy Buyers and Sensitive-Skin Managers drive the demand for effective, non-irritating formulas; Value-Driven Buyers pull the affordable option.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "switching_triggers",
+            "beatTitle": "What would make them switch",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Compared to today, how do you expect your serum use to change in the next 12 months?",
+            "options": [
+              "I will use serums more often",
+              "I will use serums about the same",
+              "I will use serums less often",
+              "I will stop using serums altogether"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I will use serums more often",
+                "value": 38.0
+              },
+              {
+                "label": "I will use serums about the same",
+                "value": 48.0
+              },
+              {
+                "label": "I will use serums less often",
+                "value": 10.0
+              },
+              {
+                "label": "I will stop using serums altogether",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I will use serums about the same (48.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "future_usage",
+            "beatTitle": "Where their serum use is heading",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 14.0
+              },
+              {
+                "label": "25-34",
+                "value": 26.0
+              },
+              {
+                "label": "35-44",
+                "value": 22.0
+              },
+              {
+                "label": "45-54",
+                "value": 17.0
+              },
+              {
+                "label": "55-64",
+                "value": 13.0
+              },
+              {
+                "label": "65 or older",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 25-34 (26.00%).",
+            "distributionNote": "Age distribution reflects a broad consumer base with a slight concentration in the 25-44 range, consistent with the diverse persona mix.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 68.0
+              },
+              {
+                "label": "Man",
+                "value": 27.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 3.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (68.00%).",
+            "distributionNote": "Skincare serum category skews female across all segments; Sensitive-Skin Managers and Clean-Conscious Consumers have the highest female share.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 32.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 28.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 17.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with a partner, no children at home (32.00%).",
+            "distributionNote": "Mix of household types across segments.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 12.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 20.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 22.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 18.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 16.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 9.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (22.00%).",
+            "distributionNote": "Income distribution reflects a middle-to-upper-middle skew.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "How likely are you to recommend the Skincare Serums you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 2.0
+              },
+              {
+                "label": "2",
+                "value": 3.0
+              },
+              {
+                "label": "3",
+                "value": 5.0
+              },
+              {
+                "label": "4",
+                "value": 6.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 10.0
+              },
+              {
+                "label": "7",
+                "value": 16.0
+              },
+              {
+                "label": "8",
+                "value": 20.0
+              },
+              {
+                "label": "9",
+                "value": 14.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 8 (20.00%).",
+            "distributionNote": "Overall positive sentiment; Clinical Efficacy Buyers and Luxury Experience Buyers anchor the high end, while Value-Driven Buyers and Sensitive-Skin Managers are more cautious, pulling the middle.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "Overall, how satisfied are you with the Skincare Serums you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 4.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 10.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 26.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "Satisfaction skews positive but not overwhelmingly; Clinical Efficacy Buyers and Luxury Experience Buyers drive 'Very satisfied', while Sensitive-Skin Managers and Value-Driven Buyers are more likely to be neutral or dissatisfied.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      }
+    ]
+  },
+  "survey": {
+    "market_segment": "Skincare Serums",
+    "region": "Global",
+    "metadata": {
+      "total_questions": 26,
+      "selection": {
+        "mode": "core_plus_module",
+        "source_regions": [
+          "north-america"
+        ],
+        "total_questions": 26,
+        "method": "select_and_blend"
+      },
+      "storyline": {
+        "serum_usage_context": [
+          {
+            "beatId": "serum_category_entry",
+            "title": "Serum usage in the routine",
+            "canonical": "category_entry",
+            "order": 1
+          },
+          {
+            "beatId": "skin_concerns",
+            "title": "Skin concerns and goals",
+            "canonical": "need_state",
+            "order": 2
+          },
+          {
+            "beatId": "usage_occasions",
+            "title": "When and why serums are applied",
+            "canonical": "usage_occasion",
+            "order": 3
+          },
+          {
+            "beatId": "usage_frequency",
+            "title": "Frequency and intensity of use",
+            "canonical": "usage_frequency",
+            "order": 4
+          },
+          {
+            "beatId": "household_role",
+            "title": "Who chooses and uses serums",
+            "canonical": "household_role",
+            "order": 5
+          }
+        ],
+        "purchase_journey": [
+          {
+            "beatId": "purchase_trigger",
+            "title": "What triggers a new serum purchase",
+            "canonical": "purchase_trigger",
+            "order": 1
+          },
+          {
+            "beatId": "discovery_channels",
+            "title": "Where they learn about serums",
+            "canonical": "discovery",
+            "order": 2
+          },
+          {
+            "beatId": "purchase_channels",
+            "title": "Where they buy serums",
+            "canonical": "channel",
+            "order": 3
+          },
+          {
+            "beatId": "purchase_cycle",
+            "title": "How often they restock",
+            "canonical": "purchase_cycle",
+            "order": 4
+          },
+          {
+            "beatId": "category_spend",
+            "title": "Typical spend on serums",
+            "canonical": "spend",
+            "order": 5
+          },
+          {
+            "beatId": "decision_drivers",
+            "title": "What decides the final choice",
+            "canonical": "decision_drivers",
+            "order": 6
+          },
+          {
+            "beatId": "repurchase_routine",
+            "title": "Habit vs reconsideration",
+            "canonical": "repurchase",
+            "order": 7
+          }
+        ],
+        "product_requirements": [
+          {
+            "beatId": "must_have_attributes",
+            "title": "Non-negotiable serum attributes",
+            "canonical": "must_haves",
+            "order": 1
+          },
+          {
+            "beatId": "quality_cues",
+            "title": "Signals of a quality serum",
+            "canonical": "quality_cues",
+            "order": 2
+          },
+          {
+            "beatId": "format_and_packaging",
+            "title": "Preferred formats and packaging",
+            "canonical": "format_packaging",
+            "order": 3
+          },
+          {
+            "beatId": "claims_and_credentials",
+            "title": "Claims that carry weight",
+            "canonical": "claims_credentials",
+            "order": 4
+          },
+          {
+            "beatId": "tradeoffs",
+            "title": "Trade-offs between efficacy, safety, and price",
+            "canonical": "tradeoffs",
+            "order": 5
+          },
+          {
+            "beatId": "value_expectation",
+            "title": "Price and value expectations",
+            "canonical": "value_expectation",
+            "order": 6
+          }
+        ],
+        "satisfaction_loyalty": [
+          {
+            "beatId": "overall_satisfaction",
+            "title": "Overall satisfaction with current serum",
+            "canonical": "overall_satisfaction",
+            "order": 1
+          },
+          {
+            "beatId": "satisfaction_drivers",
+            "title": "What satisfies or disappoints",
+            "canonical": "satisfaction_drivers",
+            "order": 2
+          },
+          {
+            "beatId": "friction_points",
+            "title": "Frustrations and unmet needs",
+            "canonical": "friction",
+            "order": 3
+          },
+          {
+            "beatId": "switching_triggers",
+            "title": "What would make them switch",
+            "canonical": "switching",
+            "order": 4
+          },
+          {
+            "beatId": "recommend_intent",
+            "title": "Likelihood to recommend",
+            "canonical": "advocacy",
+            "order": 5
+          },
+          {
+            "beatId": "future_usage",
+            "title": "Where their serum use is heading",
+            "canonical": "future_use",
+            "order": 6
+          }
+        ]
+      },
+      "storyline_source": "planner",
+      "storyline_summary": "The survey opens by establishing the respondent's relationship with serums — whether they use them, for what skin concerns, and how often. It then moves through the purchase journey, from what triggers a buy to where they shop and what ultimately decides the choice. Next, it explores their product requirements, including must-have attributes, quality cues, and the trade-offs they make between efficacy, safety, and price. Finally, it measures satisfaction, friction, switching triggers, and future intent, allowing the data to segment respondents into five behavioural groups based on their usage…",
+      "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on serum usage patterns, purchase behaviour, ingredient and efficacy priorities, and satisfaction drivers.",
+      "segmentation_lens": "Combination of usage/behavioural and jobs-to-be-done: the category is split by how intensively and frequently people use serums (daily ritual vs occasional treatment) and by the primary job the serum is hired to do (clinical anti-aging, clean/safe, budget-friendly, luxury experience, or sensitive-sk",
+      "must_cover_topics": [
+        "visible results",
+        "ingredient transparency",
+        "irritation and breakouts",
+        "price per ounce",
+        "dermatologist recommendation",
+        "sustainable packaging"
+      ],
+      "segments": [
+        {
+          "segment_id": "clinical_efficacy_seekers",
+          "name": "Clinical Efficacy Buyers",
+          "description": "High-frequency daily users who prioritise proven, dermatologist-backed results and are willing to pay premium prices for visible anti-aging or skin-improvement outcomes. They research ingredients and clinical evidence before buying.",
+          "hypothesis": "They will show high usage frequency, high spend, low price sensitivity, and strong preference for clinical claims and active ingredients like retinol and vitamin C."
+        },
+        {
+          "segment_id": "clean_conscious_consumers",
+          "name": "Clean-Conscious Consumers",
+          "description": "Regular users who prioritise ingredient safety, transparency, and sustainability. They avoid harsh chemicals and prefer fragrance-free, hypoallergenic, and refillable options, even if it means trading some efficacy.",
+          "hypothesis": "They will show medium-high usage frequency, medium spend, and strong preference for clean labels, sustainable packaging, and absence of irritants."
+        },
+        {
+          "segment_id": "value_driven_buyers",
+          "name": "Value-Driven Buyers",
+          "description": "Occasional to regular users who are highly price-sensitive and seek effective serums at accessible price points. They compare options carefully, wait for promotions, and are willing to switch brands for better value.",
+          "hypothesis": "They will show lower spend, higher price sensitivity, and greater responsiveness to price promotions and value-size formats."
+        },
+        {
+          "segment_id": "luxury_experience_seekers",
+          "name": "Luxury Experience Buyers",
+          "description": "High-frequency users who treat serum application as a self-care ritual and are drawn to premium textures, elegant packaging, and brand prestige. They are less price-sensitive and value the sensory experience as much as results.",
+          "hypothesis": "They will show high usage frequency, high spend, low price sensitivity, and strong preference for premium packaging and sensorial attributes."
+        },
+        {
+          "segment_id": "sensitive_skin_managers",
+          "name": "Sensitive-Skin Managers",
+          "description": "Users who have reactive or sensitive skin and use serums cautiously to address hydration and irritation without triggering breakouts. They prioritise gentle, fragrance-free, hypoallergenic formulations and are wary of new products.",
+          "hypothesis": "They will show medium usage frequency, medium spend, and strong preference for gentle, non-irritating claims, with high switching due to adverse reactions."
+        }
+      ],
+      "segmentModel": {
+        "segments": [
+          {
+            "segment_id": "clinical_efficacy_seekers",
+            "name": "Clinical Efficacy Buyers",
+            "description": "High-frequency daily users who prioritise proven, dermatologist-backed results and are willing to pay premium prices for visible anti-aging or skin-improvement outcomes. They research ingredients and clinical evidence before buying.",
+            "hypothesis": "They will show high usage frequency, high spend, low price sensitivity, and strong preference for clinical claims and active ingredients like retinol and vitamin C."
+          },
+          {
+            "segment_id": "clean_conscious_consumers",
+            "name": "Clean-Conscious Consumers",
+            "description": "Regular users who prioritise ingredient safety, transparency, and sustainability. They avoid harsh chemicals and prefer fragrance-free, hypoallergenic, and refillable options, even if it means trading some efficacy.",
+            "hypothesis": "They will show medium-high usage frequency, medium spend, and strong preference for clean labels, sustainable packaging, and absence of irritants."
+          },
+          {
+            "segment_id": "value_driven_buyers",
+            "name": "Value-Driven Buyers",
+            "description": "Occasional to regular users who are highly price-sensitive and seek effective serums at accessible price points. They compare options carefully, wait for promotions, and are willing to switch brands for better value.",
+            "hypothesis": "They will show lower spend, higher price sensitivity, and greater responsiveness to price promotions and value-size formats."
+          },
+          {
+            "segment_id": "luxury_experience_seekers",
+            "name": "Luxury Experience Buyers",
+            "description": "High-frequency users who treat serum application as a self-care ritual and are drawn to premium textures, elegant packaging, and brand prestige. They are less price-sensitive and value the sensory experience as much as results.",
+            "hypothesis": "They will show high usage frequency, high spend, low price sensitivity, and strong preference for premium packaging and sensorial attributes."
+          },
+          {
+            "segment_id": "sensitive_skin_managers",
+            "name": "Sensitive-Skin Managers",
+            "description": "Users who have reactive or sensitive skin and use serums cautiously to address hydration and irritation without triggering breakouts. They prioritise gentle, fragrance-free, hypoallergenic formulations and are wary of new products.",
+            "hypothesis": "They will show medium usage frequency, medium spend, and strong preference for gentle, non-irritating claims, with high switching due to adverse reactions."
+          }
+        ],
+        "weights": [
+          {
+            "question_id": "q1",
+            "question_text": "How often do you currently use a skincare serum?",
+            "option_label": "Daily",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q1",
+            "question_text": "How often do you currently use a skincare serum?",
+            "option_label": "Daily",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q1",
+            "question_text": "How often do you currently use a skincare serum?",
+            "option_label": "Several times a week",
+            "segment_id": "clean_conscious_consumers",
+            "points": 1
+          },
+          {
+            "question_id": "q1",
+            "question_text": "How often do you currently use a skincare serum?",
+            "option_label": "Several times a week",
+            "segment_id": "sensitive_skin_managers",
+            "points": 1
+          },
+          {
+            "question_id": "q1",
+            "question_text": "How often do you currently use a skincare serum?",
+            "option_label": "A few times a month",
+            "segment_id": "value_driven_buyers",
+            "points": 2
+          },
+          {
+            "question_id": "q2",
+            "question_text": "Which of these best describes your serum routine?",
+            "option_label": "I rotate between two or more serums",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q2",
+            "question_text": "Which of these best describes your serum routine?",
+            "option_label": "I use serum only when my skin feels off",
+            "segment_id": "sensitive_skin_managers",
+            "points": 2
+          },
+          {
+            "question_id": "q3",
+            "question_text": "Which of these best describes what you hope a serum will do for your skin?",
+            "option_label": "Reduce fine lines and wrinkles",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q3",
+            "question_text": "Which of these best describes what you hope a serum will do for your skin?",
+            "option_label": "Calm redness and irritation",
+            "segment_id": "sensitive_skin_managers",
+            "points": 3
+          },
+          {
+            "question_id": "q3",
+            "question_text": "Which of these best describes what you hope a serum will do for your skin?",
+            "option_label": "Hydrate and plump dry skin",
+            "segment_id": "sensitive_skin_managers",
+            "points": 1
+          },
+          {
+            "question_id": "q4",
+            "question_text": "When do you usually apply a serum?",
+            "option_label": "Both morning and evening",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q4",
+            "question_text": "When do you usually apply a serum?",
+            "option_label": "Both morning and evening",
+            "segment_id": "luxury_experience_seekers",
+            "points": 1
+          },
+          {
+            "question_id": "q5",
+            "question_text": "In a typical week, how many times do you apply a serum?",
+            "option_label": "7 times or more",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "In a typical week, how many times do you apply a serum?",
+            "option_label": "7 times or more",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "In the last 30 days, how many days did you use a serum?",
+            "option_label": "Every day",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "In the last 30 days, how many days did you use a serum?",
+            "option_label": "Every day",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What usually makes you decide to buy a new serum?",
+            "option_label": "A dermatologist or esthetician recommends it",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What usually makes you decide to buy a new serum?",
+            "option_label": "It goes on sale or I have a coupon",
+            "segment_id": "value_driven_buyers",
+            "points": 3
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What usually makes you decide to buy a new serum?",
+            "option_label": "I see a new product or trend online",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "Where do you usually learn about serums before buying one?",
+            "option_label": "Dermatologist or skincare professional",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "Where do you usually learn about serums before buying one?",
+            "option_label": "Social media (Instagram, TikTok, YouTube)",
+            "segment_id": "luxury_experience_seekers",
+            "points": 1
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Where do you usually buy your skincare serums?",
+            "option_label": "Dermatologist office or medical spa",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Where do you usually buy your skincare serums?",
+            "option_label": "Drugstore or pharmacy",
+            "segment_id": "value_driven_buyers",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "Where do you usually buy your skincare serums?",
+            "option_label": "Department store or beauty retailer (Sephora, Ulta)",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q10",
+            "question_text": "How often do you buy a new serum?",
+            "option_label": "Every 1-2 months",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 1
+          },
+          {
+            "question_id": "q10",
+            "question_text": "How often do you buy a new serum?",
+            "option_label": "Every 1-2 months",
+            "segment_id": "luxury_experience_seekers",
+            "points": 1
+          },
+          {
+            "question_id": "q10",
+            "question_text": "How often do you buy a new serum?",
+            "option_label": "Less than every 6 months",
+            "segment_id": "value_driven_buyers",
+            "points": 2
+          },
+          {
+            "question_id": "q11",
+            "question_text": "How much do you typically spend on serums in a month?",
+            "option_label": "$100 or more",
+            "segment_id": "luxury_experience_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q11",
+            "question_text": "How much do you typically spend on serums in a month?",
+            "option_label": "Under $20",
+            "segment_id": "value_driven_buyers",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "Which of these matters most when you choose a serum?",
+            "option_label": "Dermatologist recommendations and clinical backing",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "Which of these matters most when you choose a serum?",
+            "option_label": "Ingredient transparency and clean formulations",
+            "segment_id": "clean_conscious_consumers",
+            "points": 3
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these is a must-have for you in a skincare serum?",
+            "option_label": "Fragrance-free and hypoallergenic",
+            "segment_id": "sensitive_skin_managers",
+            "points": 3
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these is a must-have for you in a skincare serum?",
+            "option_label": "Fragrance-free and hypoallergenic",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these is a must-have for you in a skincare serum?",
+            "option_label": "Dermatologist recommended",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these is a must-have for you in a skincare serum?",
+            "option_label": "Transparent ingredient list",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "What tells you a serum is high quality before you buy it?",
+            "option_label": "Clinical study results on the label",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q14",
+            "question_text": "What tells you a serum is high quality before you buy it?",
+            "option_label": "Dermatologist recommendation",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "What tells you a serum is high quality before you buy it?",
+            "option_label": "Ingredient list transparency",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "What tells you a serum is high quality before you buy it?",
+            "option_label": "Brand reputation",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which claims on a serum label do you trust most?",
+            "option_label": "Clinically proven",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which claims on a serum label do you trust most?",
+            "option_label": "Dermatologist tested",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which claims on a serum label do you trust most?",
+            "option_label": "Fragrance-free",
+            "segment_id": "sensitive_skin_managers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which claims on a serum label do you trust most?",
+            "option_label": "Non-comedogenic",
+            "segment_id": "sensitive_skin_managers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which claims on a serum label do you trust most?",
+            "option_label": "Vegan and cruelty-free",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which claims on a serum label do you trust most?",
+            "option_label": "Sustainable sourcing",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these would you give up to get a serum that is gentler on your skin?",
+            "option_label": "A pleasant scent",
+            "segment_id": "sensitive_skin_managers",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these would you give up to get a serum that is gentler on your skin?",
+            "option_label": "A pleasant scent",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these would you give up to get a serum that is gentler on your skin?",
+            "option_label": "A lower price",
+            "segment_id": "value_driven_buyers",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these would you give up to get a serum that is gentler on your skin?",
+            "option_label": "Sustainable packaging",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which of these frustrations have you had with your current serum?",
+            "option_label": "It broke me out or caused irritation",
+            "segment_id": "sensitive_skin_managers",
+            "points": 3
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which of these frustrations have you had with your current serum?",
+            "option_label": "It's too expensive for what you get",
+            "segment_id": "value_driven_buyers",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which of these frustrations have you had with your current serum?",
+            "option_label": "The packaging isn't sustainable",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "What would most likely make you switch to a different serum?",
+            "option_label": "A serum that delivers visible results without irritation",
+            "segment_id": "clinical_efficacy_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "What would most likely make you switch to a different serum?",
+            "option_label": "A more affordable option with similar results",
+            "segment_id": "value_driven_buyers",
+            "points": 3
+          },
+          {
+            "question_id": "q19",
+            "question_text": "What would most likely make you switch to a different serum?",
+            "option_label": "A fragrance-free and hypoallergenic formulation",
+            "segment_id": "sensitive_skin_managers",
+            "points": 3
+          },
+          {
+            "question_id": "q19",
+            "question_text": "What would most likely make you switch to a different serum?",
+            "option_label": "A fragrance-free and hypoallergenic formulation",
+            "segment_id": "clean_conscious_consumers",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "What would most likely make you switch to a different serum?",
+            "option_label": "More sustainable and refillable packaging",
+            "segment_id": "clean_conscious_consumers",
+            "points": 3
+          },
+          {
+            "question_id": "q19",
+            "question_text": "What would most likely make you switch to a different serum?",
+            "option_label": "Personalized formulations based on skin type",
+            "segment_id": "luxury_experience_seekers",
+            "points": 2
+          }
+        ],
+        "tie_break": "Question bb7 (Which of these matters most when you choose a serum?) is the tie-breaker because it directly asks respondents to rank their top priority among the key differentiators (clinical backing, clean ingredients, price, brand, results), making it the most explicit self-report of segment identity.",
+        "notes": [
+          "Frequency questions (cp1, cp6, cp7) help distinguish high-frequency users (clinical, luxury) from occasional users (value) and cautious users (sensitive).",
+          "Price questions (bb5, bb6, pe8) are strong discriminators for value-driven and luxury segments.",
+          "Ingredient safety and fragrance-free options consistently point to clean-conscious and sensitive-skin segments.",
+          "Clinical backing and dermatologist recommendations consistently point to clinical efficacy seekers.",
+          "Sensory and brand-related options point to luxury experience seekers.",
+          "27 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+        ],
+        "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+      },
+      "fieldingNotes": {
+        "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=250 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+        "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+        "estimatedLength": "8-10 minutes.",
+        "scriptingNotes": [
+          "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+          "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+          "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+          "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+          "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+          "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+        ],
+        "caveats": [
+          "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+          "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+          "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

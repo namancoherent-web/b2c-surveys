@@ -1,0 +1,2713 @@
+{
+  "frontend": {
+    "sections": [
+      {
+        "id": "mobile_gaming_usage",
+        "label": "Mobile Gaming Usage & Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "In the last 3 months, how often did you play mobile games?",
+            "options": [
+              "Daily or almost daily",
+              "A few times a week",
+              "About once a week",
+              "Less than once a week"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Daily or almost daily",
+                "value": 38.0
+              },
+              {
+                "label": "A few times a week",
+                "value": 32.0
+              },
+              {
+                "label": "About once a week",
+                "value": 17.0
+              },
+              {
+                "label": "Less than once a week",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Daily or almost daily (38.00%).",
+            "distributionNote": "High-Engagement Spenders and Committed Users drive the daily/almost daily share; Casual Freemium Users and Price-Sensitive Players split the lower frequency tiers.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Mobile gaming participation",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "In a typical week, how many separate sessions do you play mobile games?",
+            "options": [
+              "1-2 sessions",
+              "3-5 sessions",
+              "6-10 sessions",
+              "11-20 sessions",
+              "More than 20 sessions"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1-2 sessions",
+                "value": 10.0
+              },
+              {
+                "label": "3-5 sessions",
+                "value": 24.0
+              },
+              {
+                "label": "6-10 sessions",
+                "value": 28.0
+              },
+              {
+                "label": "11-20 sessions",
+                "value": 22.0
+              },
+              {
+                "label": "More than 20 sessions",
+                "value": 16.0
+              }
+            ],
+            "insight": "Top response: 6-10 sessions (28.00%).",
+            "distributionNote": "High-Engagement Spenders concentrate in the 11+ session bands; Casual Freemium Users pull the lower end; Price-Sensitive Players sit in the middle.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Mobile gaming participation",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "How long does a typical mobile gaming session last?",
+            "options": [
+              "Under 5 minutes",
+              "5-15 minutes",
+              "16-30 minutes",
+              "31-60 minutes",
+              "Over an hour"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under 5 minutes",
+                "value": 8.0
+              },
+              {
+                "label": "5-15 minutes",
+                "value": 27.0
+              },
+              {
+                "label": "16-30 minutes",
+                "value": 35.0
+              },
+              {
+                "label": "31-60 minutes",
+                "value": 20.0
+              },
+              {
+                "label": "Over an hour",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 16-30 minutes (35.00%).",
+            "distributionNote": "Casual Freemium Users drive the short-session share; Committed Users and High-Engagement Spenders extend session length; Price-Sensitive Players cluster in the mid-range.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "usage_occasion",
+            "beatTitle": "Play contexts and sessions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "When do you usually play mobile games?",
+            "options": [
+              "While commuting or waiting",
+              "At home in the evening",
+              "During work or study breaks",
+              "In bed before sleep",
+              "While watching TV or doing other things",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "While commuting or waiting",
+                "value": 58.0
+              },
+              {
+                "label": "At home in the evening",
+                "value": 72.0
+              },
+              {
+                "label": "During work or study breaks",
+                "value": 45.0
+              },
+              {
+                "label": "In bed before sleep",
+                "value": 61.0
+              },
+              {
+                "label": "While watching TV or doing other things",
+                "value": 49.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: At home in the evening (72.00%).",
+            "distributionNote": "High-Engagement Spenders and Committed Users play across multiple contexts; Casual Freemium Users favor short breaks and waiting times; Price-Sensitive Players are also multi-context but slightly less at home.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "usage_occasion",
+            "beatTitle": "Play contexts and sessions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "Who in your household decides which mobile games to download?",
+            "options": [
+              "I do",
+              "My partner does",
+              "My children do",
+              "We decide together",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I do",
+                "value": 74.0
+              },
+              {
+                "label": "My partner does",
+                "value": 8.0
+              },
+              {
+                "label": "My children do",
+                "value": 7.0
+              },
+              {
+                "label": "We decide together",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I do (74.00%).",
+            "distributionNote": "Individual decision-making dominates across all segments; family-influenced decisions are a small minority.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "usage_frequency",
+            "beatTitle": "Play frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Which types of mobile games do you play regularly?",
+            "options": [
+              "Puzzle or word games",
+              "Strategy or simulation",
+              "Action or shooter",
+              "Role-playing or adventure",
+              "Sports or racing",
+              "Card or board games",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Puzzle or word games",
+                "value": 52.0
+              },
+              {
+                "label": "Strategy or simulation",
+                "value": 38.0
+              },
+              {
+                "label": "Action or shooter",
+                "value": 31.0
+              },
+              {
+                "label": "Role-playing or adventure",
+                "value": 35.0
+              },
+              {
+                "label": "Sports or racing",
+                "value": 22.0
+              },
+              {
+                "label": "Card or board games",
+                "value": 27.0
+              },
+              {
+                "label": "Other",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Puzzle or word games (52.00%).",
+            "distributionNote": "Casual Freemium Users and Price-Sensitive Players drive puzzle/card games; High-Engagement Spenders and Committed Users boost strategy, RPG, and action genres.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "genre_preferences",
+            "beatTitle": "Genres and game types",
+            "beatCanonical": "need_state",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "What is the main reason you play mobile games?",
+            "options": [
+              "To fill short gaps in my day",
+              "To relax and unwind",
+              "To compete with other players",
+              "To progress and achieve goals",
+              "To connect with friends",
+              "To escape from everyday stress",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "To fill short gaps in my day",
+                "value": 28.0
+              },
+              {
+                "label": "To relax and unwind",
+                "value": 34.0
+              },
+              {
+                "label": "To compete with other players",
+                "value": 10.0
+              },
+              {
+                "label": "To progress and achieve goals",
+                "value": 13.0
+              },
+              {
+                "label": "To connect with friends",
+                "value": 7.0
+              },
+              {
+                "label": "To escape from everyday stress",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: To relax and unwind (34.00%).",
+            "distributionNote": "Relaxation and filling short gaps dominate across all segments; High-Engagement Spenders and Committed Users add progression/competition; Casual Freemium Users skew to relaxation.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "genre_preferences",
+            "beatTitle": "Genres and game types",
+            "beatCanonical": "need_state",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "What keeps you coming back to a mobile game?",
+            "options": [
+              "Relaxing and unwinding",
+              "Competing against other players",
+              "Playing with friends or a community",
+              "Progressing and leveling up",
+              "Escaping from everyday life",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Relaxing and unwinding",
+                "value": 62.0
+              },
+              {
+                "label": "Competing against other players",
+                "value": 28.0
+              },
+              {
+                "label": "Playing with friends or a community",
+                "value": 33.0
+              },
+              {
+                "label": "Progressing and leveling up",
+                "value": 41.0
+              },
+              {
+                "label": "Escaping from everyday life",
+                "value": 22.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Relaxing and unwinding (62.00%).",
+            "distributionNote": "Relaxation is a universal driver; High-Engagement Spenders and Committed Users strongly endorse progression and community; Price-Sensitive Players also value progression but less social competition.",
+            "questionLayer": "full",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "play_motivations",
+            "beatTitle": "Motivations for playing",
+            "beatCanonical": "need_state",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "monetization_behaviour",
+        "label": "Monetization Behaviour & Spend",
+        "questions": [
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "What usually makes you decide to download a new mobile game?",
+            "options": [
+              "A friend or family member recommended it",
+              "I saw an ad for it on social media or a website",
+              "It was featured in the app store",
+              "I was bored and looking for something new to play",
+              "I wanted to play a specific type of game I couldn't find elsewhere",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "A friend or family member recommended it",
+                "value": 28.0
+              },
+              {
+                "label": "I saw an ad for it on social media or a website",
+                "value": 24.0
+              },
+              {
+                "label": "It was featured in the app store",
+                "value": 18.0
+              },
+              {
+                "label": "I was bored and looking for something new to play",
+                "value": 15.0
+              },
+              {
+                "label": "I wanted to play a specific type of game I couldn't find elsewhere",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: A friend or family member recommended it (28.00%).",
+            "distributionNote": "Casual Freemium Users and Price-Sensitive Players are heavily influenced by social recommendations and ads; Committed Users are more likely to seek specific genres.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "monetization_engagement",
+            "beatTitle": "Engagement with monetization models",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Which monetization models have you used in mobile games in the last 30 days?",
+            "options": [
+              "Free-to-play with optional in-app purchases",
+              "Battle pass or season pass",
+              "Subscription (e.g., Apple Arcade, Google Play Pass)",
+              "Paid upfront game",
+              "Rewarded ads (watch ads for bonuses)",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Free-to-play with optional in-app purchases",
+                "value": 78.0
+              },
+              {
+                "label": "Battle pass or season pass",
+                "value": 32.0
+              },
+              {
+                "label": "Subscription (e.g., Apple Arcade, Google Play Pass)",
+                "value": 18.0
+              },
+              {
+                "label": "Paid upfront game",
+                "value": 12.0
+              },
+              {
+                "label": "Rewarded ads (watch ads for bonuses)",
+                "value": 55.0
+              },
+              {
+                "label": "None of these",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Free-to-play with optional in-app purchases (78.00%).",
+            "distributionNote": "High-Engagement Spenders drive battle pass and subscription usage; Price-Sensitive Players and Casual Freemium Users skew toward rewarded ads and free-to-play.",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "monetization_engagement",
+            "beatTitle": "Engagement with monetization models",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Before downloading a new mobile game, where do you usually check information about it?",
+            "options": [
+              "App store description and screenshots",
+              "Gameplay videos on YouTube or Twitch",
+              "Reviews from other players",
+              "Social media communities or forums",
+              "I don't check anything before downloading",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "App store description and screenshots",
+                "value": 45.0
+              },
+              {
+                "label": "Gameplay videos on YouTube or Twitch",
+                "value": 38.0
+              },
+              {
+                "label": "Reviews from other players",
+                "value": 52.0
+              },
+              {
+                "label": "Social media communities or forums",
+                "value": 30.0
+              },
+              {
+                "label": "I don't check anything before downloading",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Reviews from other players (52.00%).",
+            "distributionNote": "Committed Users and High-Engagement Spenders are more likely to research via videos and reviews; Casual Freemium Users often rely on app store descriptions or skip checking.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "discovery_channels",
+            "beatTitle": "Game discovery and acquisition",
+            "beatCanonical": "discovery",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Where do you usually download mobile games from?",
+            "options": [
+              "The official app store on my device",
+              "A third-party app store or website",
+              "A link from a social media post or ad",
+              "A friend's recommendation via a direct link",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "The official app store on my device",
+                "value": 88.0
+              },
+              {
+                "label": "A third-party app store or website",
+                "value": 4.0
+              },
+              {
+                "label": "A link from a social media post or ad",
+                "value": 5.0
+              },
+              {
+                "label": "A friend's recommendation via a direct link",
+                "value": 2.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: The official app store on my device (88.00%).",
+            "distributionNote": "All segments predominantly use official app stores.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "discovery_channels",
+            "beatTitle": "Game discovery and acquisition",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "In the last 30 days, how many times did you spend money on a mobile game?",
+            "options": [
+              "None",
+              "1-2 times",
+              "3-5 times",
+              "6-10 times",
+              "More than 10 times"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "None",
+                "value": 30.0
+              },
+              {
+                "label": "1-2 times",
+                "value": 28.0
+              },
+              {
+                "label": "3-5 times",
+                "value": 22.0
+              },
+              {
+                "label": "6-10 times",
+                "value": 12.0
+              },
+              {
+                "label": "More than 10 times",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: None (30.00%).",
+            "distributionNote": "Casual Freemium Users and Price-Sensitive Players dominate the non-spending and low-frequency groups; High-Engagement Spenders concentrate in the higher frequency brackets.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "purchase_frequency",
+            "beatTitle": "In-app purchase frequency",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "In the last 30 days, how much did you spend on mobile games in total?",
+            "options": [
+              "$0",
+              "$1-$9",
+              "$10-$24",
+              "$25-$49",
+              "$50-$99",
+              "$100 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "$0",
+                "value": 30.0
+              },
+              {
+                "label": "$1-$9",
+                "value": 22.0
+              },
+              {
+                "label": "$10-$24",
+                "value": 20.0
+              },
+              {
+                "label": "$25-$49",
+                "value": 14.0
+              },
+              {
+                "label": "$50-$99",
+                "value": 9.0
+              },
+              {
+                "label": "$100 or more",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: $0 (30.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users keep the lower end high; High-Engagement Spenders and Committed Users drive the premium tiers.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "spend_band",
+            "beatTitle": "Monthly spend on mobile games",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "In the last 30 days, which of these prompted you to spend money on a mobile game?",
+            "options": [
+              "New content or event",
+              "Limited-time offer or sale",
+              "Progressing past a difficult level",
+              "Competitive or social pressure",
+              "Removing ads",
+              "I did not spend money on mobile games"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "New content or event",
+                "value": 42.0
+              },
+              {
+                "label": "Limited-time offer or sale",
+                "value": 46.0
+              },
+              {
+                "label": "Progressing past a difficult level",
+                "value": 28.0
+              },
+              {
+                "label": "Competitive or social pressure",
+                "value": 18.0
+              },
+              {
+                "label": "Removing ads",
+                "value": 24.0
+              },
+              {
+                "label": "I did not spend money on mobile games",
+                "value": 30.0
+              }
+            ],
+            "insight": "Top response: Limited-time offer or sale (46.00%).",
+            "distributionNote": "High-Engagement Spenders respond to events and limited-time offers; Price-Sensitive Players are more likely to spend to remove ads or on sales; Casual Freemium Users often report no spending.",
+            "questionLayer": "module",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "purchase_triggers",
+            "beatTitle": "Triggers for spending",
+            "beatCanonical": "decision_drivers",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which features most influences your decision to keep playing a new mobile game?",
+            "options": [
+              "Free-to-play with optional in-app purchases",
+              "Social and multiplayer features",
+              "Regular content updates and events",
+              "High-quality graphics and immersive gameplay",
+              "Cross-platform play and cloud saves"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Free-to-play with optional in-app purchases",
+                "value": 28.0
+              },
+              {
+                "label": "Social and multiplayer features",
+                "value": 22.0
+              },
+              {
+                "label": "Regular content updates and events",
+                "value": 20.0
+              },
+              {
+                "label": "High-quality graphics and immersive gameplay",
+                "value": 18.0
+              },
+              {
+                "label": "Cross-platform play and cloud saves",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Free-to-play with optional in-app purchases (28.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users prioritize free-to-play; High-Engagement Spenders and Committed Users value social features, updates, and graphics.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "purchase_triggers",
+            "beatTitle": "Triggers for spending",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "game_requirements",
+        "label": "Game & Monetization Requirements",
+        "questions": [
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which features would you refuse to give up in a mobile game?",
+            "options": [
+              "Offline mode",
+              "Cross-platform play",
+              "Cloud saves",
+              "Customizable controls",
+              "Anti-cheat",
+              "None of these are must-haves"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Offline mode",
+                "value": 34.0
+              },
+              {
+                "label": "Cross-platform play",
+                "value": 28.0
+              },
+              {
+                "label": "Cloud saves",
+                "value": 22.0
+              },
+              {
+                "label": "Customizable controls",
+                "value": 18.0
+              },
+              {
+                "label": "Anti-cheat",
+                "value": 25.0
+              },
+              {
+                "label": "None of these are must-haves",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Offline mode (34.00%).",
+            "distributionNote": "Casual Freemium Users and Price-Sensitive Players prioritize offline mode and anti-cheat; Committed Users value cross-platform play and cloud saves.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have game features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "How do you usually judge a mobile game's quality before downloading it?",
+            "options": [
+              "Graphics and visual style",
+              "User reviews and ratings",
+              "Gameplay videos or trailers",
+              "Developer reputation",
+              "Word of mouth from friends",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Graphics and visual style",
+                "value": 22.0
+              },
+              {
+                "label": "User reviews and ratings",
+                "value": 38.0
+              },
+              {
+                "label": "Gameplay videos or trailers",
+                "value": 18.0
+              },
+              {
+                "label": "Developer reputation",
+                "value": 12.0
+              },
+              {
+                "label": "Word of mouth from friends",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: User reviews and ratings (38.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users rely heavily on reviews; Committed Users and High-Engagement Spenders weigh graphics and gameplay videos more.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality signals in games",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "Which one signal most tells you a mobile game is high quality?",
+            "options": [
+              "High-quality graphics",
+              "Gameplay depth",
+              "Story and narrative",
+              "Overall polish and smoothness",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "High-quality graphics",
+                "value": 25.0
+              },
+              {
+                "label": "Gameplay depth",
+                "value": 35.0
+              },
+              {
+                "label": "Story and narrative",
+                "value": 15.0
+              },
+              {
+                "label": "Overall polish and smoothness",
+                "value": 22.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Gameplay depth (35.00%).",
+            "distributionNote": "Committed Users and High-Engagement Spenders prioritize gameplay depth; Casual Freemium Users and Price-Sensitive Players value polish and graphics.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality signals in games",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "What would make you trust a mobile game more?",
+            "options": [
+              "Awards or editor's choice badges",
+              "Privacy policy and no data selling",
+              "Developer transparency about updates",
+              "Certified fair-play or anti-cheat",
+              "Positive reviews from trusted sources",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Awards or editor's choice badges",
+                "value": 18.0
+              },
+              {
+                "label": "Privacy policy and no data selling",
+                "value": 35.0
+              },
+              {
+                "label": "Developer transparency about updates",
+                "value": 28.0
+              },
+              {
+                "label": "Certified fair-play or anti-cheat",
+                "value": 22.0
+              },
+              {
+                "label": "Positive reviews from trusted sources",
+                "value": 40.0
+              },
+              {
+                "label": "None of these",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Positive reviews from trusted sources (40.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users are most swayed by privacy and reviews; Committed Users value developer transparency and fair-play certifications.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "monetization_fairness",
+            "beatTitle": "Monetization fairness expectations",
+            "beatCanonical": "claims_credentials",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "How much do you agree: 'A game that lets players pay to win is unfair.'",
+            "options": [
+              "Strongly disagree",
+              "Somewhat disagree",
+              "Neither agree nor disagree",
+              "Somewhat agree",
+              "Strongly agree"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Strongly disagree",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat disagree",
+                "value": 12.0
+              },
+              {
+                "label": "Neither agree nor disagree",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat agree",
+                "value": 28.0
+              },
+              {
+                "label": "Strongly agree",
+                "value": 32.0
+              }
+            ],
+            "insight": "Top response: Strongly agree (32.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users strongly agree that pay-to-win is unfair; High-Engagement Spenders are more split.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "monetization_fairness",
+            "beatTitle": "Monetization fairness expectations",
+            "beatCanonical": "claims_credentials",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "If you had to give up one of these, which would you choose?",
+            "options": [
+              "High-quality graphics",
+              "Battery life",
+              "Regular content updates",
+              "Free-to-play with ads",
+              "Cross-platform play"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "High-quality graphics",
+                "value": 25.0
+              },
+              {
+                "label": "Battery life",
+                "value": 20.0
+              },
+              {
+                "label": "Regular content updates",
+                "value": 22.0
+              },
+              {
+                "label": "Free-to-play with ads",
+                "value": 18.0
+              },
+              {
+                "label": "Cross-platform play",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: High-quality graphics (25.00%).",
+            "distributionNote": "Committed Users and High-Engagement Spenders would give up graphics before content updates; Price-Sensitive Players and Casual Freemium Users are more willing to sacrifice cross-platform play.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs in game choice",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "How much would you consider a fair price for a monthly subscription that removes all ads?",
+            "options": [
+              "Under $3",
+              "$3-$5",
+              "$6-$10",
+              "$11-$15",
+              "More than $15"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $3",
+                "value": 22.0
+              },
+              {
+                "label": "$3-$5",
+                "value": 38.0
+              },
+              {
+                "label": "$6-$10",
+                "value": 25.0
+              },
+              {
+                "label": "$11-$15",
+                "value": 10.0
+              },
+              {
+                "label": "More than $15",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: $3-$5 (38.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users cluster at the lower price points; High-Engagement Spenders and Committed Users are willing to pay a bit more.",
+            "questionLayer": "full",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "value_expectation",
+            "beatTitle": "Value for money expectations",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_churn",
+        "label": "Satisfaction & Churn Risk",
+        "questions": [
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "How satisfied are you with your current mobile gaming experience?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 22.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 28.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 32.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (32.00%).",
+            "distributionNote": "Mixed sentiment across segments: Price-Sensitive Players and Casual Freemium Users skew toward dissatisfaction due to monetization and ads, while Committed Users and High-Engagement Spenders are more satisfied.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction with mobile gaming",
+            "beatCanonical": "overall_satisfaction",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Which aspects of mobile gaming most affects how satisfied you are with a game?",
+            "options": [
+              "Gameplay quality and variety",
+              "Fairness of in-app purchases",
+              "Graphics and performance",
+              "Social and multiplayer features",
+              "Regular content updates and events",
+              "Cross-platform play and cloud saves",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Gameplay quality and variety",
+                "value": 30.0
+              },
+              {
+                "label": "Fairness of in-app purchases",
+                "value": 18.0
+              },
+              {
+                "label": "Graphics and performance",
+                "value": 15.0
+              },
+              {
+                "label": "Social and multiplayer features",
+                "value": 12.0
+              },
+              {
+                "label": "Regular content updates and events",
+                "value": 14.0
+              },
+              {
+                "label": "Cross-platform play and cloud saves",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Gameplay quality and variety (30.00%).",
+            "distributionNote": "Gameplay quality dominates across all segments, but Price-Sensitive Players elevate fairness of monetization; Committed Users value content updates and cross-platform play.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "Which aspects of a mobile game most often disappoints you?",
+            "options": [
+              "Gameplay becomes repetitive or grindy",
+              "Monetization feels unfair or pay-to-win",
+              "Performance issues like battery drain or crashes",
+              "Community is toxic or matchmaking is unbalanced",
+              "Content updates are too slow or infrequent",
+              "None of these disappoint me"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Gameplay becomes repetitive or grindy",
+                "value": 28.0
+              },
+              {
+                "label": "Monetization feels unfair or pay-to-win",
+                "value": 24.0
+              },
+              {
+                "label": "Performance issues like battery drain or crashes",
+                "value": 16.0
+              },
+              {
+                "label": "Community is toxic or matchmaking is unbalanced",
+                "value": 12.0
+              },
+              {
+                "label": "Content updates are too slow or infrequent",
+                "value": 14.0
+              },
+              {
+                "label": "None of these disappoint me",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Gameplay becomes repetitive or grindy (28.00%).",
+            "distributionNote": "Repetitive content and unfair monetization are top pain points across segments, with Price-Sensitive Players especially reacting to pay-to-win; Committed Users are more bothered by slow updates.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "Which frustrations have you had with mobile gaming in the last 30 days?",
+            "options": [
+              "Pay-to-win mechanics and aggressive monetization",
+              "Battery drain and device overheating during long sessions",
+              "Repetitive content and lack of innovation",
+              "Poor matchmaking and unbalanced gameplay",
+              "Intrusive ads and pop-ups",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Pay-to-win mechanics and aggressive monetization",
+                "value": 62.0
+              },
+              {
+                "label": "Battery drain and device overheating during long sessions",
+                "value": 48.0
+              },
+              {
+                "label": "Repetitive content and lack of innovation",
+                "value": 55.0
+              },
+              {
+                "label": "Poor matchmaking and unbalanced gameplay",
+                "value": 35.0
+              },
+              {
+                "label": "Intrusive ads and pop-ups",
+                "value": 58.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Pay-to-win mechanics and aggressive monetization (62.00%).",
+            "distributionNote": "High endorsement of monetization and ad frustrations across all segments; Casual Freemium Users strongly report intrusive ads, while High-Engagement Spenders also note battery drain.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "pain_points",
+            "beatTitle": "Frustrations and pain points",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "What would most likely make you stop playing a mobile game?",
+            "options": [
+              "Pay-to-win mechanics become too dominant",
+              "Too many intrusive ads interrupt play",
+              "Battery drain or overheating gets worse",
+              "Content updates stop or become repetitive",
+              "Matchmaking becomes unfair or unbalanced",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Pay-to-win mechanics become too dominant",
+                "value": 30.0
+              },
+              {
+                "label": "Too many intrusive ads interrupt play",
+                "value": 24.0
+              },
+              {
+                "label": "Battery drain or overheating gets worse",
+                "value": 12.0
+              },
+              {
+                "label": "Content updates stop or become repetitive",
+                "value": 18.0
+              },
+              {
+                "label": "Matchmaking becomes unfair or unbalanced",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Pay-to-win mechanics become too dominant (30.00%).",
+            "distributionNote": "Pay-to-win is the top churn trigger, especially for Price-Sensitive Players; Casual Freemium Users are driven away by ads, while Committed Users cite content stagnation.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "In the next year, do you expect to play mobile games more often, less often, or about the same?",
+            "options": [
+              "Much more often",
+              "Somewhat more often",
+              "About the same",
+              "Somewhat less often",
+              "Much less often"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Much more often",
+                "value": 12.0
+              },
+              {
+                "label": "Somewhat more often",
+                "value": 24.0
+              },
+              {
+                "label": "About the same",
+                "value": 38.0
+              },
+              {
+                "label": "Somewhat less often",
+                "value": 18.0
+              },
+              {
+                "label": "Much less often",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: About the same (38.00%).",
+            "distributionNote": "",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "future_engagement",
+            "beatTitle": "Future engagement intent",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 18.0
+              },
+              {
+                "label": "25-34",
+                "value": 28.0
+              },
+              {
+                "label": "35-44",
+                "value": 22.0
+              },
+              {
+                "label": "45-54",
+                "value": 14.0
+              },
+              {
+                "label": "55-64",
+                "value": 11.0
+              },
+              {
+                "label": "65 or older",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 25-34 (28.00%).",
+            "distributionNote": "Age distribution skews younger, consistent with mobile gaming's core audience; older segments are smaller but present.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 48.0
+              },
+              {
+                "label": "Man",
+                "value": 47.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 2.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Woman (48.00%).",
+            "distributionNote": "Gender split is roughly balanced, reflecting the broad mobile gaming audience; small shares for non-binary and prefer-not-to-say.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 28.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 30.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (30.00%).",
+            "distributionNote": "Casual Freemium Users and Price-Sensitive Players skew toward households with children; Committed Users and High-Engagement Spenders are more likely to live alone or with a partner.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 12.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 22.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 24.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 18.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 14.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 7.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (24.00%).",
+            "distributionNote": "Price-Sensitive Players and Casual Freemium Users concentrate in lower income bands; High-Engagement Spenders and Committed Users are more evenly spread with a slight upper-middle tilt.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q34",
+            "qNum": 34,
+            "question": "How likely are you to recommend the Mobile Gaming you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 5.0
+              },
+              {
+                "label": "1",
+                "value": 3.0
+              },
+              {
+                "label": "2",
+                "value": 4.0
+              },
+              {
+                "label": "3",
+                "value": 6.0
+              },
+              {
+                "label": "4",
+                "value": 7.0
+              },
+              {
+                "label": "5",
+                "value": 15.0
+              },
+              {
+                "label": "6",
+                "value": 12.0
+              },
+              {
+                "label": "7",
+                "value": 18.0
+              },
+              {
+                "label": "8",
+                "value": 17.0
+              },
+              {
+                "label": "9",
+                "value": 8.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: 7 (18.00%).",
+            "distributionNote": "Committed Users and High-Engagement Spenders drive the upper end; Price-Sensitive Players and Casual Freemium Users cluster around the middle and lower scores due to monetization frustrations.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q35",
+            "qNum": 35,
+            "question": "Overall, how satisfied are you with the Mobile Gaming you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 22.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 36.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 16.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (36.00%).",
+            "distributionNote": "Committed Users and High-Engagement Spenders are more satisfied; Price-Sensitive Players and Casual Freemium Users are more likely to be dissatisfied due to ads and pay-to-win concerns.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      }
+    ]
+  },
+  "survey": {
+    "market_segment": "Mobile Gaming",
+    "region": "Global",
+    "metadata": {
+      "total_questions": 35,
+      "selection": {
+        "mode": "core_plus_module",
+        "source_regions": [
+          "north-america"
+        ],
+        "total_questions": 35,
+        "method": "select_and_blend"
+      },
+      "storyline": {
+        "mobile_gaming_usage": [
+          {
+            "beatId": "category_entry",
+            "title": "Mobile gaming participation",
+            "canonical": "category_entry",
+            "order": 1
+          },
+          {
+            "beatId": "usage_occasion",
+            "title": "Play contexts and sessions",
+            "canonical": "usage_occasion",
+            "order": 2
+          },
+          {
+            "beatId": "usage_frequency",
+            "title": "Play frequency and intensity",
+            "canonical": "usage_frequency",
+            "order": 3
+          },
+          {
+            "beatId": "genre_preferences",
+            "title": "Genres and game types",
+            "canonical": "need_state",
+            "order": 4
+          },
+          {
+            "beatId": "play_motivations",
+            "title": "Motivations for playing",
+            "canonical": "need_state",
+            "order": 5
+          }
+        ],
+        "monetization_behaviour": [
+          {
+            "beatId": "monetization_engagement",
+            "title": "Engagement with monetization models",
+            "canonical": "purchase_trigger",
+            "order": 1
+          },
+          {
+            "beatId": "purchase_frequency",
+            "title": "In-app purchase frequency",
+            "canonical": "purchase_cycle",
+            "order": 2
+          },
+          {
+            "beatId": "spend_band",
+            "title": "Monthly spend on mobile games",
+            "canonical": "spend",
+            "order": 3
+          },
+          {
+            "beatId": "discovery_channels",
+            "title": "Game discovery and acquisition",
+            "canonical": "discovery",
+            "order": 4
+          },
+          {
+            "beatId": "purchase_triggers",
+            "title": "Triggers for spending",
+            "canonical": "decision_drivers",
+            "order": 5
+          }
+        ],
+        "game_requirements": [
+          {
+            "beatId": "must_have_features",
+            "title": "Must-have game features",
+            "canonical": "must_haves",
+            "order": 1
+          },
+          {
+            "beatId": "quality_cues",
+            "title": "Quality signals in games",
+            "canonical": "quality_cues",
+            "order": 2
+          },
+          {
+            "beatId": "monetization_fairness",
+            "title": "Monetization fairness expectations",
+            "canonical": "claims_credentials",
+            "order": 3
+          },
+          {
+            "beatId": "tradeoffs",
+            "title": "Trade-offs in game choice",
+            "canonical": "tradeoffs",
+            "order": 4
+          },
+          {
+            "beatId": "value_expectation",
+            "title": "Value for money expectations",
+            "canonical": "value_expectation",
+            "order": 5
+          }
+        ],
+        "satisfaction_churn": [
+          {
+            "beatId": "overall_satisfaction",
+            "title": "Overall satisfaction with mobile gaming",
+            "canonical": "overall_satisfaction",
+            "order": 1
+          },
+          {
+            "beatId": "satisfaction_drivers",
+            "title": "What drives satisfaction",
+            "canonical": "satisfaction_drivers",
+            "order": 2
+          },
+          {
+            "beatId": "pain_points",
+            "title": "Frustrations and pain points",
+            "canonical": "friction",
+            "order": 3
+          },
+          {
+            "beatId": "switching_triggers",
+            "title": "Switching triggers",
+            "canonical": "switching",
+            "order": 4
+          },
+          {
+            "beatId": "future_engagement",
+            "title": "Future engagement intent",
+            "canonical": "future_use",
+            "order": 5
+          }
+        ]
+      },
+      "storyline_source": "planner",
+      "storyline_summary": "The survey opens by establishing who plays mobile games and how — frequency, contexts, genres, and motivations — which immediately separates casual from committed players. It then moves into monetization behaviour, capturing how players engage with IAPs, subscriptions, and ads, and what they spend, which distinguishes spenders from free players. Next, it explores what players demand from games and monetization models, including fairness and technical performance, revealing the criteria that drive satisfaction and switching. Finally, it measures satisfaction, pain points, and churn triggers…",
+      "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on play frequency, monetization engagement, content motivations, and response to monetization friction.",
+      "segmentation_lens": "Usage/behavioural combined with price sensitivity — because in mobile gaming, how often and how deeply people play directly drives their willingness to spend and their tolerance for monetization, and the category's core commercial tension is between engagement and monetization friction.",
+      "must_cover_topics": [
+        "pay-to-win",
+        "in-app purchases",
+        "battery drain",
+        "ads",
+        "cross-platform play",
+        "content updates"
+      ],
+      "segments": [
+        {
+          "segment_id": "high_engagement_spenders",
+          "name": "High-Engagement Spenders",
+          "description": "Play daily or almost daily, across multiple genres, and regularly spend on in-app purchases, battle passes, or subscriptions. They are driven by progression, competition, and social features, and are the most tolerant of monetization as long as it feels fair.",
+          "hypothesis": "This group will report the highest frequency and spend, and will be most likely to cite social/multiplayer features and content updates as key drivers."
+        },
+        {
+          "segment_id": "price_sensitive_players",
+          "name": "Price-Sensitive Players",
+          "description": "Play frequently but are highly reactive to monetization — they avoid pay-to-win mechanics, are driven by free-to-play options and rewarded ads, and will churn or switch games if they feel pressured to spend. They may spend occasionally but only on perceived value.",
+          "hypothesis": "This group will report high frustration with pay-to-win and intrusive ads, and will be more likely to switch games due to monetization friction."
+        },
+        {
+          "segment_id": "casual_freemium_users",
+          "name": "Casual Freemium Users",
+          "description": "Play occasionally, often in short sessions, and rarely or never spend money. They are driven by casual, low-commitment games and are highly sensitive to ads and battery drain. They are the largest group but the least valuable commercially.",
+          "hypothesis": "This group will report low frequency, low spend, and high sensitivity to ads and battery drain, and will be least engaged with social or competitive features."
+        },
+        {
+          "segment_id": "committed_enthusiasts",
+          "name": "Committed Users",
+          "description": "Play regularly and are deeply invested in specific games or genres, often seeking high-quality graphics, immersive gameplay, and cross-platform play. They are willing to spend but are selective and demand fair monetization and regular content updates.",
+          "hypothesis": "This group will report high engagement and moderate-to-high spend, but will be more critical of pay-to-win and more likely to value quality and innovation over price."
+        }
+      ],
+      "segmentModel": {
+        "segments": [
+          {
+            "segment_id": "high_engagement_spenders",
+            "name": "High-Engagement Spenders",
+            "description": "Play daily or almost daily, across multiple genres, and regularly spend on in-app purchases, battle passes, or subscriptions. They are driven by progression, competition, and social features, and are the most tolerant of monetization as long as it feels fair.",
+            "hypothesis": "This group will report the highest frequency and spend, and will be most likely to cite social/multiplayer features and content updates as key drivers."
+          },
+          {
+            "segment_id": "price_sensitive_players",
+            "name": "Price-Sensitive Players",
+            "description": "Play frequently but are highly reactive to monetization — they avoid pay-to-win mechanics, are driven by free-to-play options and rewarded ads, and will churn or switch games if they feel pressured to spend. They may spend occasionally but only on perceived value.",
+            "hypothesis": "This group will report high frustration with pay-to-win and intrusive ads, and will be more likely to switch games due to monetization friction."
+          },
+          {
+            "segment_id": "casual_freemium_users",
+            "name": "Casual Freemium Users",
+            "description": "Play occasionally, often in short sessions, and rarely or never spend money. They are driven by casual, low-commitment games and are highly sensitive to ads and battery drain. They are the largest group but the least valuable commercially.",
+            "hypothesis": "This group will report low frequency, low spend, and high sensitivity to ads and battery drain, and will be least engaged with social or competitive features."
+          },
+          {
+            "segment_id": "committed_enthusiasts",
+            "name": "Committed Users",
+            "description": "Play regularly and are deeply invested in specific games or genres, often seeking high-quality graphics, immersive gameplay, and cross-platform play. They are willing to spend but are selective and demand fair monetization and regular content updates.",
+            "hypothesis": "This group will report high engagement and moderate-to-high spend, but will be more critical of pay-to-win and more likely to value quality and innovation over price."
+          }
+        ],
+        "weights": [
+          {
+            "question_id": "q1",
+            "question_text": "In the last 3 months, how often did you play mobile games?",
+            "option_label": "Daily or almost daily",
+            "segment_id": "high_engagement_spenders",
+            "points": 3
+          },
+          {
+            "question_id": "q1",
+            "question_text": "In the last 3 months, how often did you play mobile games?",
+            "option_label": "A few times a week",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q1",
+            "question_text": "In the last 3 months, how often did you play mobile games?",
+            "option_label": "About once a week",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q1",
+            "question_text": "In the last 3 months, how often did you play mobile games?",
+            "option_label": "Less than once a week",
+            "segment_id": "casual_freemium_users",
+            "points": 3
+          },
+          {
+            "question_id": "q2",
+            "question_text": "In a typical week, how many separate sessions do you play mobile games?",
+            "option_label": "More than 20 sessions",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q2",
+            "question_text": "In a typical week, how many separate sessions do you play mobile games?",
+            "option_label": "11-20 sessions",
+            "segment_id": "high_engagement_spenders",
+            "points": 1
+          },
+          {
+            "question_id": "q2",
+            "question_text": "In a typical week, how many separate sessions do you play mobile games?",
+            "option_label": "1-2 sessions",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q3",
+            "question_text": "How long does a typical mobile gaming session last?",
+            "option_label": "Over an hour",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q3",
+            "question_text": "How long does a typical mobile gaming session last?",
+            "option_label": "31-60 minutes",
+            "segment_id": "committed_enthusiasts",
+            "points": 1
+          },
+          {
+            "question_id": "q3",
+            "question_text": "How long does a typical mobile gaming session last?",
+            "option_label": "Under 5 minutes",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "Which types of mobile games do you play regularly?",
+            "option_label": "Strategy or simulation",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "Which types of mobile games do you play regularly?",
+            "option_label": "Role-playing or adventure",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "Which types of mobile games do you play regularly?",
+            "option_label": "Action or shooter",
+            "segment_id": "high_engagement_spenders",
+            "points": 1
+          },
+          {
+            "question_id": "q6",
+            "question_text": "Which types of mobile games do you play regularly?",
+            "option_label": "Puzzle or word games",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What is the main reason you play mobile games?",
+            "option_label": "To compete with other players",
+            "segment_id": "high_engagement_spenders",
+            "points": 3
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What is the main reason you play mobile games?",
+            "option_label": "To progress and achieve goals",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What is the main reason you play mobile games?",
+            "option_label": "To fill short gaps in my day",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "What is the main reason you play mobile games?",
+            "option_label": "To relax and unwind",
+            "segment_id": "casual_freemium_users",
+            "points": 1
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What keeps you coming back to a mobile game?",
+            "option_label": "Competing against other players",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What keeps you coming back to a mobile game?",
+            "option_label": "Progressing and leveling up",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What keeps you coming back to a mobile game?",
+            "option_label": "Playing with friends or a community",
+            "segment_id": "high_engagement_spenders",
+            "points": 1
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which of these monetization models have you used in mobile games in the last 30 days?",
+            "option_label": "Battle pass or season pass",
+            "segment_id": "high_engagement_spenders",
+            "points": 3
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which of these monetization models have you used in mobile games in the last 30 days?",
+            "option_label": "Subscription (e.g., Apple Arcade, Google Play Pass)",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which of these monetization models have you used in mobile games in the last 30 days?",
+            "option_label": "Rewarded ads (watch ads for bonuses)",
+            "segment_id": "price_sensitive_players",
+            "points": 3
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which of these monetization models have you used in mobile games in the last 30 days?",
+            "option_label": "Free-to-play with optional in-app purchases",
+            "segment_id": "price_sensitive_players",
+            "points": 1
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which of these monetization models have you used in mobile games in the last 30 days?",
+            "option_label": "None of these",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q11",
+            "question_text": "In the last 30 days, how many times did you spend money on a mobile game?",
+            "option_label": "None",
+            "segment_id": "casual_freemium_users",
+            "points": 3
+          },
+          {
+            "question_id": "q11",
+            "question_text": "In the last 30 days, how many times did you spend money on a mobile game?",
+            "option_label": "1-2 times",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q11",
+            "question_text": "In the last 30 days, how many times did you spend money on a mobile game?",
+            "option_label": "3-5 times",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q11",
+            "question_text": "In the last 30 days, how many times did you spend money on a mobile game?",
+            "option_label": "6-10 times",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q11",
+            "question_text": "In the last 30 days, how many times did you spend money on a mobile game?",
+            "option_label": "More than 10 times",
+            "segment_id": "high_engagement_spenders",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "In the last 30 days, how much did you spend on mobile games in total?",
+            "option_label": "$0",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "In the last 30 days, how much did you spend on mobile games in total?",
+            "option_label": "$1-$9",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "In the last 30 days, how much did you spend on mobile games in total?",
+            "option_label": "$10-$24",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "In the last 30 days, how much did you spend on mobile games in total?",
+            "option_label": "$25-$49",
+            "segment_id": "committed_enthusiasts",
+            "points": 1
+          },
+          {
+            "question_id": "q12",
+            "question_text": "In the last 30 days, how much did you spend on mobile games in total?",
+            "option_label": "$50-$99",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "In the last 30 days, how much did you spend on mobile games in total?",
+            "option_label": "$100 or more",
+            "segment_id": "high_engagement_spenders",
+            "points": 3
+          },
+          {
+            "question_id": "q15",
+            "question_text": "In the last 30 days, which of these prompted you to spend money on a mobile game?",
+            "option_label": "Limited-time offer or sale",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "In the last 30 days, which of these prompted you to spend money on a mobile game?",
+            "option_label": "New content or event",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "In the last 30 days, which of these prompted you to spend money on a mobile game?",
+            "option_label": "Removing ads",
+            "segment_id": "price_sensitive_players",
+            "points": 1
+          },
+          {
+            "question_id": "q15",
+            "question_text": "In the last 30 days, which of these prompted you to spend money on a mobile game?",
+            "option_label": "Competitive or social pressure",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "In the last 30 days, which of these prompted you to spend money on a mobile game?",
+            "option_label": "I did not spend money on mobile games",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features most influences your decision to keep playing a new mobile game?",
+            "option_label": "Regular content updates and events",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features most influences your decision to keep playing a new mobile game?",
+            "option_label": "High-quality graphics and immersive gameplay",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features most influences your decision to keep playing a new mobile game?",
+            "option_label": "Social and multiplayer features",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features most influences your decision to keep playing a new mobile game?",
+            "option_label": "Free-to-play with optional in-app purchases",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these features would you refuse to give up in a mobile game?",
+            "option_label": "Cross-platform play",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these features would you refuse to give up in a mobile game?",
+            "option_label": "Cloud saves",
+            "segment_id": "committed_enthusiasts",
+            "points": 1
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these features would you refuse to give up in a mobile game?",
+            "option_label": "Offline mode",
+            "segment_id": "casual_freemium_users",
+            "points": 1
+          },
+          {
+            "question_id": "q19",
+            "question_text": "Which one signal most tells you a mobile game is high quality?",
+            "option_label": "High-quality graphics",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "Which one signal most tells you a mobile game is high quality?",
+            "option_label": "Gameplay depth",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "Which one signal most tells you a mobile game is high quality?",
+            "option_label": "Overall polish and smoothness",
+            "segment_id": "committed_enthusiasts",
+            "points": 1
+          },
+          {
+            "question_id": "q21",
+            "question_text": "How much do you agree: 'A game that lets players pay to win is unfair.'",
+            "option_label": "Strongly agree",
+            "segment_id": "price_sensitive_players",
+            "points": 3
+          },
+          {
+            "question_id": "q21",
+            "question_text": "How much do you agree: 'A game that lets players pay to win is unfair.'",
+            "option_label": "Somewhat agree",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q21",
+            "question_text": "How much do you agree: 'A game that lets players pay to win is unfair.'",
+            "option_label": "Strongly disagree",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q21",
+            "question_text": "How much do you agree: 'A game that lets players pay to win is unfair.'",
+            "option_label": "Somewhat disagree",
+            "segment_id": "high_engagement_spenders",
+            "points": 1
+          },
+          {
+            "question_id": "q22",
+            "question_text": "If you had to give up one of these, which would you choose?",
+            "option_label": "Free-to-play with ads",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q22",
+            "question_text": "If you had to give up one of these, which would you choose?",
+            "option_label": "High-quality graphics",
+            "segment_id": "casual_freemium_users",
+            "points": 1
+          },
+          {
+            "question_id": "q22",
+            "question_text": "If you had to give up one of these, which would you choose?",
+            "option_label": "Regular content updates",
+            "segment_id": "casual_freemium_users",
+            "points": 1
+          },
+          {
+            "question_id": "q23",
+            "question_text": "How much would you consider a fair price for a monthly subscription that removes all ads?",
+            "option_label": "Under $3",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "How much would you consider a fair price for a monthly subscription that removes all ads?",
+            "option_label": "$3-$5",
+            "segment_id": "price_sensitive_players",
+            "points": 1
+          },
+          {
+            "question_id": "q23",
+            "question_text": "How much would you consider a fair price for a monthly subscription that removes all ads?",
+            "option_label": "$6-$10",
+            "segment_id": "committed_enthusiasts",
+            "points": 1
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects of mobile gaming most affects how satisfied you are with a game?",
+            "option_label": "Fairness of in-app purchases",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects of mobile gaming most affects how satisfied you are with a game?",
+            "option_label": "Social and multiplayer features",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects of mobile gaming most affects how satisfied you are with a game?",
+            "option_label": "Regular content updates and events",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these aspects of a mobile game most often disappoints you?",
+            "option_label": "Monetization feels unfair or pay-to-win",
+            "segment_id": "price_sensitive_players",
+            "points": 3
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these aspects of a mobile game most often disappoints you?",
+            "option_label": "Content updates are too slow or infrequent",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these aspects of a mobile game most often disappoints you?",
+            "option_label": "Performance issues like battery drain or crashes",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q27",
+            "question_text": "Which of these frustrations have you had with mobile gaming in the last 30 days?",
+            "option_label": "Pay-to-win mechanics and aggressive monetization",
+            "segment_id": "price_sensitive_players",
+            "points": 2
+          },
+          {
+            "question_id": "q27",
+            "question_text": "Which of these frustrations have you had with mobile gaming in the last 30 days?",
+            "option_label": "Battery drain and device overheating during long sessions",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q27",
+            "question_text": "Which of these frustrations have you had with mobile gaming in the last 30 days?",
+            "option_label": "Intrusive ads and pop-ups",
+            "segment_id": "casual_freemium_users",
+            "points": 2
+          },
+          {
+            "question_id": "q28",
+            "question_text": "Which of these would most likely make you stop playing a mobile game?",
+            "option_label": "Pay-to-win mechanics become too dominant",
+            "segment_id": "price_sensitive_players",
+            "points": 3
+          },
+          {
+            "question_id": "q28",
+            "question_text": "Which of these would most likely make you stop playing a mobile game?",
+            "option_label": "Too many intrusive ads interrupt play",
+            "segment_id": "casual_freemium_users",
+            "points": 3
+          },
+          {
+            "question_id": "q28",
+            "question_text": "Which of these would most likely make you stop playing a mobile game?",
+            "option_label": "Content updates stop or become repetitive",
+            "segment_id": "committed_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q29",
+            "question_text": "In the next year, do you expect to play mobile games more often, less often, or about the same?",
+            "option_label": "Much more often",
+            "segment_id": "high_engagement_spenders",
+            "points": 2
+          },
+          {
+            "question_id": "q29",
+            "question_text": "In the next year, do you expect to play mobile games more often, less often, or about the same?",
+            "option_label": "Somewhat more often",
+            "segment_id": "committed_enthusiasts",
+            "points": 1
+          },
+          {
+            "question_id": "q29",
+            "question_text": "In the next year, do you expect to play mobile games more often, less often, or about the same?",
+            "option_label": "Much less often",
+            "segment_id": "casual_freemium_users",
+            "points": 1
+          }
+        ],
+        "tie_break": "The question that settles a tie is cp1 (play frequency), because it is the most direct behavioural self-report of overall engagement, which is the primary axis separating the segments.",
+        "notes": [
+          "Each segment has at least two scoring options and at least one 3-point option.",
+          "Weights are assigned only where the option clearly discriminates toward a segment.",
+          "Some options are intentionally left unscored because they are not diagnostic.",
+          "3 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+        ],
+        "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+      },
+      "fieldingNotes": {
+        "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+        "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+        "estimatedLength": "8-10 minutes.",
+        "scriptingNotes": [
+          "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+          "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+          "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+          "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+          "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+          "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+        ],
+        "caveats": [
+          "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+          "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+          "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

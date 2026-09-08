@@ -1,0 +1,2476 @@
+{
+  "frontend": {
+    "sections": [
+      {
+        "id": "ride_usage_context",
+        "label": "Ride-Hailing Usage & Trip Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "When you open a ride-hailing app, what is the main reason for that trip?",
+            "options": [
+              "Commuting to or from work or school",
+              "Going out socially (dinner, drinks, events)",
+              "Airport or long-distance travel",
+              "Running errands or appointments",
+              "Getting home late at night",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Commuting to or from work or school",
+                "value": 31.0
+              },
+              {
+                "label": "Going out socially (dinner, drinks, events)",
+                "value": 24.0
+              },
+              {
+                "label": "Airport or long-distance travel",
+                "value": 18.0
+              },
+              {
+                "label": "Running errands or appointments",
+                "value": 12.0
+              },
+              {
+                "label": "Getting home late at night",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Commuting to or from work or school (31.00%).",
+            "distributionNote": "Convenience-Driven Buyers and Premium Comfort Buyers dominate commuting and airport trips.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Ride-hailing usage",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "In the past 6 months, which ride-hailing apps have you used at least once?",
+            "options": [
+              "Uber",
+              "Lyft",
+              "DoorDash",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Uber",
+                "value": 92.0
+              },
+              {
+                "label": "Lyft",
+                "value": 78.0
+              },
+              {
+                "label": "DoorDash",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Uber (92.00%).",
+            "distributionNote": "Uber and Lyft are near-universal due to market maturity and low brand loyalty; DoorDash is not a ride-hailing app and is rarely selected.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Ride-hailing usage",
+            "beatCanonical": "category_entry",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "Which situations have you used a ride-hailing app for in the past 3 months?",
+            "options": [
+              "Getting to or from the airport",
+              "Going out at night with friends",
+              "Commuting to work or school",
+              "Running errands or shopping",
+              "Getting to a medical appointment",
+              "When my own car was unavailable",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Getting to or from the airport",
+                "value": 55.0
+              },
+              {
+                "label": "Going out at night with friends",
+                "value": 48.0
+              },
+              {
+                "label": "Commuting to work or school",
+                "value": 42.0
+              },
+              {
+                "label": "Running errands or shopping",
+                "value": 30.0
+              },
+              {
+                "label": "Getting to a medical appointment",
+                "value": 18.0
+              },
+              {
+                "label": "When my own car was unavailable",
+                "value": 35.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Getting to or from the airport (55.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "trip_purpose",
+            "beatTitle": "Trip purposes",
+            "beatCanonical": "usage_occasion",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "When you take a ride-hailing trip, what time of day does it usually start?",
+            "options": [
+              "Early morning (5am–9am)",
+              "Midday (9am–3pm)",
+              "Afternoon rush (3pm–7pm)",
+              "Evening (7pm–11pm)",
+              "Late night (11pm–5am)",
+              "It varies too much to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Early morning (5am–9am)",
+                "value": 18.0
+              },
+              {
+                "label": "Midday (9am–3pm)",
+                "value": 15.0
+              },
+              {
+                "label": "Afternoon rush (3pm–7pm)",
+                "value": 24.0
+              },
+              {
+                "label": "Evening (7pm–11pm)",
+                "value": 27.0
+              },
+              {
+                "label": "Late night (11pm–5am)",
+                "value": 12.0
+              },
+              {
+                "label": "It varies too much to say",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Evening (7pm–11pm) (27.00%).",
+            "distributionNote": "Evening and afternoon rush dominate due to commuting and social trips.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "trip_context",
+            "beatTitle": "Trip context",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "Who in your household typically decides which ride-hailing app to use?",
+            "options": [
+              "I do, always",
+              "I do, most of the time",
+              "Shared equally with someone else",
+              "Someone else in my household",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I do, always",
+                "value": 48.0
+              },
+              {
+                "label": "I do, most of the time",
+                "value": 34.0
+              },
+              {
+                "label": "Shared equally with someone else",
+                "value": 12.0
+              },
+              {
+                "label": "Someone else in my household",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: I do, always (48.00%).",
+            "distributionNote": "Most panelists are primary decision-makers.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "trip_frequency",
+            "beatTitle": "Trip frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How many ride-hailing trips have you taken in the past 30 days?",
+            "options": [
+              "1–2 trips",
+              "3–5 trips",
+              "6–10 trips",
+              "11–15 trips",
+              "16 or more trips"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1–2 trips",
+                "value": 28.0
+              },
+              {
+                "label": "3–5 trips",
+                "value": 34.0
+              },
+              {
+                "label": "6–10 trips",
+                "value": 22.0
+              },
+              {
+                "label": "11–15 trips",
+                "value": 10.0
+              },
+              {
+                "label": "16 or more trips",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: 3–5 trips (34.00%).",
+            "distributionNote": "Convenience-Driven Buyers and Premium Comfort Buyers pull the middle and upper frequencies.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "trip_frequency",
+            "beatTitle": "Trip frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "modal_choice_journey",
+        "label": "Modal Choice & Purchase Journey",
+        "questions": [
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "In the last 3 months, which of these situations made you choose a ride-hailing app over other ways of getting around?",
+            "options": [
+              "Bad weather made walking or transit unappealing",
+              "I was running late and needed a ride immediately",
+              "No parking available at my destination",
+              "Public transit wasn't running or didn't go where I needed",
+              "I'd been drinking and didn't want to drive",
+              "I felt safer in a ride-hail than walking or taking transit",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Bad weather made walking or transit unappealing",
+                "value": 18.0
+              },
+              {
+                "label": "I was running late and needed a ride immediately",
+                "value": 24.0
+              },
+              {
+                "label": "No parking available at my destination",
+                "value": 10.0
+              },
+              {
+                "label": "Public transit wasn't running or didn't go where I needed",
+                "value": 20.0
+              },
+              {
+                "label": "I'd been drinking and didn't want to drive",
+                "value": 15.0
+              },
+              {
+                "label": "I felt safer in a ride-hail than walking or taking transit",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I was running late and needed a ride immediately (24.00%).",
+            "distributionNote": "Convenience-Driven Buyers and Price-Sensitive Occasionals Users drive the top reasons: time pressure and transit gaps.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "mode_selection_trigger",
+            "beatTitle": "What triggers a ride-hailing trip",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Before booking a ride, how do you usually compare your options?",
+            "options": [
+              "Check prices on two or more apps",
+              "Look at estimated wait times",
+              "Read driver ratings or reviews",
+              "Check the type of vehicle offered",
+              "See if surge pricing is in effect",
+              "I don't compare — I open my usual app"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Check prices on two or more apps",
+                "value": 28.0
+              },
+              {
+                "label": "Look at estimated wait times",
+                "value": 18.0
+              },
+              {
+                "label": "Read driver ratings or reviews",
+                "value": 15.0
+              },
+              {
+                "label": "Check the type of vehicle offered",
+                "value": 12.0
+              },
+              {
+                "label": "See if surge pricing is in effect",
+                "value": 17.0
+              },
+              {
+                "label": "I don't compare — I open my usual app",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Check prices on two or more apps (28.00%).",
+            "distributionNote": "Price-Sensitive Occasionals Users and Convenience-Driven Buyers drive the multi-app price and wait-time checks.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "app_comparison",
+            "beatTitle": "App comparison behaviour",
+            "beatCanonical": "discovery",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "In the last 30 days, how often did you compare prices or wait times across more than one ride-hailing app before booking?",
+            "options": [
+              "Every time",
+              "Most of the time",
+              "About half the time",
+              "Sometimes",
+              "Never"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Every time",
+                "value": 18.0
+              },
+              {
+                "label": "Most of the time",
+                "value": 27.0
+              },
+              {
+                "label": "About half the time",
+                "value": 20.0
+              },
+              {
+                "label": "Sometimes",
+                "value": 22.0
+              },
+              {
+                "label": "Never",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Most of the time (27.00%).",
+            "distributionNote": "",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "app_comparison",
+            "beatTitle": "App comparison behaviour",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Which ways have you used to book a ride-hailing trip in the past 3 months?",
+            "options": [
+              "Ride-hailing app on my phone",
+              "App on someone else's phone",
+              "Website on a computer",
+              "In-app chat or phone call to the driver",
+              "Text message or link from the app",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Ride-hailing app on my phone",
+                "value": 88.0
+              },
+              {
+                "label": "App on someone else's phone",
+                "value": 12.0
+              },
+              {
+                "label": "Website on a computer",
+                "value": 5.0
+              },
+              {
+                "label": "In-app chat or phone call to the driver",
+                "value": 8.0
+              },
+              {
+                "label": "Text message or link from the app",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Ride-hailing app on my phone (88.00%).",
+            "distributionNote": "Overwhelmingly app-based across all segments.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "app_comparison",
+            "beatTitle": "App comparison behaviour",
+            "beatCanonical": "discovery",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How often do you use a ride-hailing app in a typical month?",
+            "options": [
+              "Less than once a month",
+              "1–3 times a month",
+              "4–8 times a month",
+              "9–15 times a month",
+              "More than 15 times a month"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Less than once a month",
+                "value": 15.0
+              },
+              {
+                "label": "1–3 times a month",
+                "value": 35.0
+              },
+              {
+                "label": "4–8 times a month",
+                "value": 28.0
+              },
+              {
+                "label": "9–15 times a month",
+                "value": 14.0
+              },
+              {
+                "label": "More than 15 times a month",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 1–3 times a month (35.00%).",
+            "distributionNote": "The panel skews moderate-frequency: Price-Sensitive Occasionals Users are in the lower buckets, while Convenience-Driven Buyers and Premium Comfort Buyers concentrate in the 4–8 and 9–15 buckets.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "monthly_spend",
+            "beatTitle": "Monthly ride-hailing spend",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "When you compare ride-hailing apps, how much does each factor affect your choice?",
+            "options": [
+              "No effect",
+              "Small effect",
+              "Moderate effect",
+              "Large effect",
+              "Deciding factor"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "No effect",
+                "value": 5.0
+              },
+              {
+                "label": "Small effect",
+                "value": 15.0
+              },
+              {
+                "label": "Moderate effect",
+                "value": 30.0
+              },
+              {
+                "label": "Large effect",
+                "value": 35.0
+              },
+              {
+                "label": "Deciding factor",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Large effect (35.00%).",
+            "distributionNote": "The distribution is skewed toward 'Large effect' because price and wait time are key for Price-Sensitive Occasionals and Convenience-Driven Buyers; a smaller group of Premium Comfort Buyers still rates comfort as a deciding factor.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "app_selection_drivers",
+            "beatTitle": "What decides the app choice",
+            "beatCanonical": "decision_drivers",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "When choosing between ride-hailing apps, which one matters most to you?",
+            "options": [
+              "Lower total fare",
+              "Shorter wait time",
+              "Driver rating and safety features",
+              "Vehicle type and comfort",
+              "Predictable pricing without surges",
+              "Rewards or discounts",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Lower total fare",
+                "value": 25.0
+              },
+              {
+                "label": "Shorter wait time",
+                "value": 22.0
+              },
+              {
+                "label": "Driver rating and safety features",
+                "value": 18.0
+              },
+              {
+                "label": "Vehicle type and comfort",
+                "value": 12.0
+              },
+              {
+                "label": "Predictable pricing without surges",
+                "value": 13.0
+              },
+              {
+                "label": "Rewards or discounts",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Lower total fare (25.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "app_selection_drivers",
+            "beatTitle": "What decides the app choice",
+            "beatCanonical": "decision_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "When you need a ride, how do you usually decide which ride-hailing app to open?",
+            "options": [
+              "I open the same app every time without thinking",
+              "I check two or more apps and pick the cheapest fare",
+              "I check two or more apps and pick the one with the shortest wait",
+              "I check two or more apps and pick the best balance of price and wait",
+              "I use whichever app I have a promo or reward for",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I open the same app every time without thinking",
+                "value": 18.0
+              },
+              {
+                "label": "I check two or more apps and pick the cheapest fare",
+                "value": 22.0
+              },
+              {
+                "label": "I check two or more apps and pick the one with the shortest wait",
+                "value": 14.0
+              },
+              {
+                "label": "I check two or more apps and pick the best balance of price and wait",
+                "value": 30.0
+              },
+              {
+                "label": "I use whichever app I have a promo or reward for",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I check two or more apps and pick the best balance of price and wait (30.00%).",
+            "distributionNote": "Price-Sensitive Occasionals Users and Convenience-Driven Buyers drive the 'best balance' and 'cheapest fare' choices.",
+            "questionLayer": "full",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "booking_routine",
+            "beatTitle": "Booking routine",
+            "beatCanonical": "repurchase",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "service_requirements",
+        "label": "Service Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "Which must a ride-hailing trip include for you to consider it acceptable?",
+            "options": [
+              "Driver follows the app's navigation route",
+              "Clean and well-maintained vehicle",
+              "Driver matches the name and photo in the app",
+              "No unexpected fees at the end of the trip",
+              "Reasonable wait time after booking",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Driver follows the app's navigation route",
+                "value": 62.0
+              },
+              {
+                "label": "Clean and well-maintained vehicle",
+                "value": 71.0
+              },
+              {
+                "label": "Driver matches the name and photo in the app",
+                "value": 85.0
+              },
+              {
+                "label": "No unexpected fees at the end of the trip",
+                "value": 78.0
+              },
+              {
+                "label": "Reasonable wait time after booking",
+                "value": 66.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Driver matches the name and photo in the app (85.00%).",
+            "distributionNote": "Price-Sensitive Occasionals Users also prioritize fee transparency.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have service features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which features are non-negotiable for you in a ride-hailing trip?",
+            "options": [
+              "Upfront total price before booking",
+              "Driver rating visible before pickup",
+              "In-app emergency button",
+              "Verified driver identity",
+              "Option to choose a green vehicle",
+              "Ability to schedule a ride in advance",
+              "None of these are non-negotiable"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Upfront total price before booking",
+                "value": 82.0
+              },
+              {
+                "label": "Driver rating visible before pickup",
+                "value": 58.0
+              },
+              {
+                "label": "In-app emergency button",
+                "value": 74.0
+              },
+              {
+                "label": "Verified driver identity",
+                "value": 88.0
+              },
+              {
+                "label": "Option to choose a green vehicle",
+                "value": 31.0
+              },
+              {
+                "label": "Ability to schedule a ride in advance",
+                "value": 44.0
+              },
+              {
+                "label": "None of these are non-negotiable",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Verified driver identity (88.00%).",
+            "distributionNote": "",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have service features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Before booking, how important is it that the app shows the driver's verified photo and license plate?",
+            "options": [
+              "Essential — I check it every time",
+              "Very important — I usually check it",
+              "Somewhat important — I glance at it",
+              "Not very important — I rarely look",
+              "Not important at all"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Essential — I check it every time",
+                "value": 45.0
+              },
+              {
+                "label": "Very important — I usually check it",
+                "value": 33.0
+              },
+              {
+                "label": "Somewhat important — I glance at it",
+                "value": 15.0
+              },
+              {
+                "label": "Not very important — I rarely look",
+                "value": 5.0
+              },
+              {
+                "label": "Not important at all",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Essential — I check it every time (45.00%).",
+            "distributionNote": "Price-Sensitive Occasionals Users are less vigilant.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "safety_importance",
+            "beatTitle": "Safety expectations",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "How reassuring is it to have an in-app emergency button available during a trip?",
+            "options": [
+              "Extremely reassuring",
+              "Somewhat reassuring",
+              "Neither reassuring nor concerning",
+              "Somewhat concerning",
+              "Extremely concerning"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Extremely reassuring",
+                "value": 52.0
+              },
+              {
+                "label": "Somewhat reassuring",
+                "value": 34.0
+              },
+              {
+                "label": "Neither reassuring nor concerning",
+                "value": 9.0
+              },
+              {
+                "label": "Somewhat concerning",
+                "value": 3.0
+              },
+              {
+                "label": "Extremely concerning",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Extremely reassuring (52.00%).",
+            "distributionNote": "",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "safety_importance",
+            "beatTitle": "Safety expectations",
+            "beatCanonical": "quality_cues",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "How much more would you pay to ride in an electric or hybrid vehicle instead of a standard gas one?",
+            "options": [
+              "Nothing — I'd only pick it if it's the same price",
+              "Up to $1 more per trip",
+              "$1 to $2 more per trip",
+              "$2 to $4 more per trip",
+              "More than $4 per trip"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Nothing — I'd only pick it if it's the same price",
+                "value": 41.0
+              },
+              {
+                "label": "Up to $1 more per trip",
+                "value": 28.0
+              },
+              {
+                "label": "$1 to $2 more per trip",
+                "value": 18.0
+              },
+              {
+                "label": "$2 to $4 more per trip",
+                "value": 9.0
+              },
+              {
+                "label": "More than $4 per trip",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Nothing — I'd only pick it if it's the same price (41.00%).",
+            "distributionNote": "Price-Sensitive Occasionals Users and Convenience-Driven Buyers dominate the no-premium end.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "green_options",
+            "beatTitle": "Green ride preferences",
+            "beatCanonical": "claims_credentials",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which vehicle features do you expect as standard in a ride-hailing trip?",
+            "options": [
+              "Phone charging cable available",
+              "Working seatbelts in the back",
+              "Climate control you can adjust",
+              "Enough legroom for your height",
+              "Space for a child car seat",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Phone charging cable available",
+                "value": 48.0
+              },
+              {
+                "label": "Working seatbelts in the back",
+                "value": 92.0
+              },
+              {
+                "label": "Climate control you can adjust",
+                "value": 55.0
+              },
+              {
+                "label": "Enough legroom for your height",
+                "value": 61.0
+              },
+              {
+                "label": "Space for a child car seat",
+                "value": 22.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Working seatbelts in the back (92.00%).",
+            "distributionNote": "Working seatbelts are near-universal across all segments; legroom and climate control are expected by Convenience-Driven Buyers and Premium Comfort Buyers; child car seat space is niche.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price, wait, and comfort",
+            "beatCanonical": "tradeoffs",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "If you could only keep one of these, which would you choose?",
+            "options": [
+              "The lowest possible price, even if it means a longer wait",
+              "The shortest possible wait, even if it costs more",
+              "A more comfortable vehicle, even if it costs more",
+              "A verified, highly-rated driver, even if it costs more"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The lowest possible price, even if it means a longer wait",
+                "value": 22.0
+              },
+              {
+                "label": "The shortest possible wait, even if it costs more",
+                "value": 30.0
+              },
+              {
+                "label": "A more comfortable vehicle, even if it costs more",
+                "value": 12.0
+              },
+              {
+                "label": "A verified, highly-rated driver, even if it costs more",
+                "value": 36.0
+              }
+            ],
+            "insight": "Top response: A verified, highly-rated driver, even if it costs more (36.00%).",
+            "distributionNote": "Price-Sensitive Occasionals Users split between price and wait; Premium Comfort Buyers pull comfort.",
+            "questionLayer": "full",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price, wait, and comfort",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Compared to the cost of driving and parking, how fair do you find current ride-hailing prices?",
+            "options": [
+              "Much cheaper than driving",
+              "Somewhat cheaper than driving",
+              "About the same as driving",
+              "Somewhat more expensive than driving",
+              "Much more expensive than driving"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Much cheaper than driving",
+                "value": 6.0
+              },
+              {
+                "label": "Somewhat cheaper than driving",
+                "value": 18.0
+              },
+              {
+                "label": "About the same as driving",
+                "value": 32.0
+              },
+              {
+                "label": "Somewhat more expensive than driving",
+                "value": 31.0
+              },
+              {
+                "label": "Much more expensive than driving",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: About the same as driving (32.00%).",
+            "distributionNote": "Convenience-Driven Buyers and Premium Comfort Buyers see it as comparable or cheaper.",
+            "questionLayer": "full",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "value_expectation",
+            "beatTitle": "Value for money",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_switching_risk",
+        "label": "Satisfaction, Loyalty & Switching Risk",
+        "questions": [
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which aspects most affects your satisfaction with a ride-hailing trip?",
+            "options": [
+              "Total cost after fees and surge",
+              "How quickly the driver arrives",
+              "Driver professionalism and safety",
+              "Vehicle cleanliness and comfort",
+              "App ease of use and transparency",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Total cost after fees and surge",
+                "value": 30.0
+              },
+              {
+                "label": "How quickly the driver arrives",
+                "value": 25.0
+              },
+              {
+                "label": "Driver professionalism and safety",
+                "value": 22.0
+              },
+              {
+                "label": "Vehicle cleanliness and comfort",
+                "value": 12.0
+              },
+              {
+                "label": "App ease of use and transparency",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Total cost after fees and surge (30.00%).",
+            "distributionNote": "Price-Sensitive Occasionals and Convenience-Driven Buyers split between cost and speed; Premium Comfort Buyers add vehicle comfort.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "In the last 30 days, which of these frustrations have you experienced with ride-hailing apps?",
+            "options": [
+              "Surge pricing felt unfair",
+              "Driver canceled after a long wait",
+              "Wait time was longer than shown",
+              "Driver took a wrong route or poor navigation",
+              "Vehicle was not as clean or comfortable as expected",
+              "App showed unclear or hidden fees",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Surge pricing felt unfair",
+                "value": 68.0
+              },
+              {
+                "label": "Driver canceled after a long wait",
+                "value": 45.0
+              },
+              {
+                "label": "Wait time was longer than shown",
+                "value": 52.0
+              },
+              {
+                "label": "Driver took a wrong route or poor navigation",
+                "value": 28.0
+              },
+              {
+                "label": "Vehicle was not as clean or comfortable as expected",
+                "value": 24.0
+              },
+              {
+                "label": "App showed unclear or hidden fees",
+                "value": 38.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Surge pricing felt unfair (68.00%).",
+            "distributionNote": "Convenience-Driven Buyers also report wait-time issues.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "pain_points",
+            "beatTitle": "Pain points and frustrations",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Which frustrations would make you stop using ride-hailing apps altogether?",
+            "options": [
+              "Surge pricing that feels like a rip-off",
+              "Drivers canceling after a long wait",
+              "Long wait times during peak hours",
+              "Concerns about driver identity and safety",
+              "Hidden fees and charges",
+              "Inconsistent vehicle quality",
+              "None of these would make me stop"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Surge pricing that feels like a rip-off",
+                "value": 42.0
+              },
+              {
+                "label": "Drivers canceling after a long wait",
+                "value": 30.0
+              },
+              {
+                "label": "Long wait times during peak hours",
+                "value": 18.0
+              },
+              {
+                "label": "Concerns about driver identity and safety",
+                "value": 22.0
+              },
+              {
+                "label": "Hidden fees and charges",
+                "value": 25.0
+              },
+              {
+                "label": "Inconsistent vehicle quality",
+                "value": 10.0
+              },
+              {
+                "label": "None of these would make me stop",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Surge pricing that feels like a rip-off (42.00%).",
+            "distributionNote": "Price-Sensitive Occasionals are most likely to quit over surge and fees; a core of Convenience-Driven Buyers would not stop.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "pain_points",
+            "beatTitle": "Pain points and frustrations",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "What would most likely make you switch to a different ride-hailing app?",
+            "options": [
+              "Consistently lower prices on another app",
+              "Shorter wait times on another app",
+              "More reliable drivers who don't cancel",
+              "Better safety features on another app",
+              "More electric or hybrid vehicle options",
+              "I would not switch for any of these reasons"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Consistently lower prices on another app",
+                "value": 38.0
+              },
+              {
+                "label": "Shorter wait times on another app",
+                "value": 18.0
+              },
+              {
+                "label": "More reliable drivers who don't cancel",
+                "value": 20.0
+              },
+              {
+                "label": "Better safety features on another app",
+                "value": 12.0
+              },
+              {
+                "label": "More electric or hybrid vehicle options",
+                "value": 6.0
+              },
+              {
+                "label": "I would not switch for any of these reasons",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Consistently lower prices on another app (38.00%).",
+            "distributionNote": "Price-Sensitive Occasionals are the main switchers on price; Convenience-Driven Buyers switch for reliability.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "In the next 12 months, do you expect to use ride-hailing apps more, less, or about the same as you do now?",
+            "options": [
+              "Much more",
+              "Somewhat more",
+              "About the same",
+              "Somewhat less",
+              "Much less"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Much more",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat more",
+                "value": 22.0
+              },
+              {
+                "label": "About the same",
+                "value": 42.0
+              },
+              {
+                "label": "Somewhat less",
+                "value": 20.0
+              },
+              {
+                "label": "Much less",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: About the same (42.00%).",
+            "distributionNote": "Convenience-Driven Buyers and Premium Comfort Buyers drive the increase.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "future_usage",
+            "beatTitle": "Future ride-hailing use",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 18.0
+              },
+              {
+                "label": "25-34",
+                "value": 29.0
+              },
+              {
+                "label": "35-44",
+                "value": 23.0
+              },
+              {
+                "label": "45-54",
+                "value": 15.0
+              },
+              {
+                "label": "55-64",
+                "value": 10.0
+              },
+              {
+                "label": "65 or older",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: 25-34 (29.00%).",
+            "distributionNote": "",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 51.0
+              },
+              {
+                "label": "Man",
+                "value": 47.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.5
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 0.5
+              }
+            ],
+            "insight": "Top response: Woman (51.00%).",
+            "distributionNote": "",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 28.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 27.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 22.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with a partner, no children at home (28.00%).",
+            "distributionNote": "Suburban family-oriented segments drive the children-at-home share; younger urban segments contribute to the housemates share.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 12.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 20.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 24.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 18.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 15.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 8.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (24.00%).",
+            "distributionNote": "Premium Comfort Buyers pull the upper end.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "How likely are you to recommend the Ride-Hailing Apps you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 5.0
+              },
+              {
+                "label": "1",
+                "value": 3.0
+              },
+              {
+                "label": "2",
+                "value": 5.0
+              },
+              {
+                "label": "3",
+                "value": 7.0
+              },
+              {
+                "label": "4",
+                "value": 8.0
+              },
+              {
+                "label": "5",
+                "value": 15.0
+              },
+              {
+                "label": "6",
+                "value": 12.0
+              },
+              {
+                "label": "7",
+                "value": 16.0
+              },
+              {
+                "label": "8",
+                "value": 15.0
+              },
+              {
+                "label": "9",
+                "value": 8.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: 7 (16.00%).",
+            "distributionNote": "Mixed sentiment with a slight positive tilt; Premium Comfort Buyers are more likely to recommend, while Price-Sensitive Occasionals are more neutral.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "Overall, how satisfied are you with the Ride-Hailing Apps you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 22.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 36.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 16.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (36.00%).",
+            "distributionNote": "Satisfaction is moderate overall; Convenience-Driven Buyers and Premium Comfort Buyers are more satisfied, while Price-Sensitive Occasionals express more dissatisfaction.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      }
+    ]
+  },
+  "survey": {
+    "market_segment": "Ride-Hailing Apps",
+    "region": "Global",
+    "metadata": {
+      "total_questions": 33,
+      "selection": {
+        "mode": "core_plus_module",
+        "source_regions": [
+          "north-america"
+        ],
+        "total_questions": 33,
+        "method": "select_and_blend"
+      },
+      "storyline": {
+        "ride_usage_context": [
+          {
+            "beatId": "category_entry",
+            "title": "Ride-hailing usage",
+            "canonical": "category_entry",
+            "order": 1
+          },
+          {
+            "beatId": "trip_frequency",
+            "title": "Trip frequency",
+            "canonical": "usage_frequency",
+            "order": 2
+          },
+          {
+            "beatId": "trip_purpose",
+            "title": "Trip purposes",
+            "canonical": "usage_occasion",
+            "order": 3
+          },
+          {
+            "beatId": "trip_context",
+            "title": "Trip context",
+            "canonical": "usage_occasion",
+            "order": 4
+          },
+          {
+            "beatId": "modal_alternatives",
+            "title": "Alternative transport modes",
+            "canonical": "need_state",
+            "order": 5
+          }
+        ],
+        "modal_choice_journey": [
+          {
+            "beatId": "mode_selection_trigger",
+            "title": "What triggers a ride-hailing trip",
+            "canonical": "purchase_trigger",
+            "order": 1
+          },
+          {
+            "beatId": "app_comparison",
+            "title": "App comparison behaviour",
+            "canonical": "discovery",
+            "order": 2
+          },
+          {
+            "beatId": "app_selection_drivers",
+            "title": "What decides the app choice",
+            "canonical": "decision_drivers",
+            "order": 3
+          },
+          {
+            "beatId": "monthly_spend",
+            "title": "Monthly ride-hailing spend",
+            "canonical": "spend",
+            "order": 4
+          },
+          {
+            "beatId": "booking_routine",
+            "title": "Booking routine",
+            "canonical": "repurchase",
+            "order": 5
+          }
+        ],
+        "service_requirements": [
+          {
+            "beatId": "must_have_features",
+            "title": "Must-have service features",
+            "canonical": "must_haves",
+            "order": 1
+          },
+          {
+            "beatId": "safety_importance",
+            "title": "Safety expectations",
+            "canonical": "quality_cues",
+            "order": 2
+          },
+          {
+            "beatId": "green_options",
+            "title": "Green ride preferences",
+            "canonical": "claims_credentials",
+            "order": 3
+          },
+          {
+            "beatId": "tradeoffs",
+            "title": "Trade-offs between price, wait, and comfort",
+            "canonical": "tradeoffs",
+            "order": 4
+          },
+          {
+            "beatId": "value_expectation",
+            "title": "Value for money",
+            "canonical": "value_expectation",
+            "order": 5
+          }
+        ],
+        "satisfaction_switching_risk": [
+          {
+            "beatId": "overall_satisfaction",
+            "title": "Overall satisfaction",
+            "canonical": "overall_satisfaction",
+            "order": 1
+          },
+          {
+            "beatId": "pain_points",
+            "title": "Pain points and frustrations",
+            "canonical": "friction",
+            "order": 2
+          },
+          {
+            "beatId": "satisfaction_drivers",
+            "title": "What drives satisfaction",
+            "canonical": "satisfaction_drivers",
+            "order": 3
+          },
+          {
+            "beatId": "switching_triggers",
+            "title": "Switching triggers",
+            "canonical": "switching",
+            "order": 4
+          },
+          {
+            "beatId": "recommend_intent",
+            "title": "Recommend intent",
+            "canonical": "advocacy",
+            "order": 5
+          },
+          {
+            "beatId": "future_usage",
+            "title": "Future ride-hailing use",
+            "canonical": "future_use",
+            "order": 6
+          }
+        ]
+      },
+      "storyline_source": "planner",
+      "storyline_summary": "The survey opens by establishing who uses ride-hailing and how often, then moves into the trip context and modal alternatives. It then explores the purchase journey — what triggers a ride, how apps are compared, and what drives the final choice — along with spend. Next, it captures service requirements and trade-offs, including safety, green options, and value. It closes with satisfaction, pain points, and switching risk, allowing segmentation by price sensitivity and usage intensity.",
+      "studyPurpose": "Identify which of 4 behavioural segments each ride-hailing app user belongs to, based on trip frequency, price sensitivity, modal choice, and feature priorities.",
+      "segmentation_lens": "Price sensitivity combined with usage intensity — because in a mature, competitive market with low brand loyalty, the key axis separating buyers is how they trade off cost against convenience and comfort, and how often they actually use the service.",
+      "must_cover_topics": [
+        "surge pricing",
+        "wait times",
+        "driver cancellations",
+        "trip frequency",
+        "modal choice",
+        "safety features"
+      ],
+      "segments": [
+        {
+          "segment_id": "price_sensitive_occasional",
+          "name": "Price-Sensitive Occasionals Users",
+          "description": "Use ride-hailing rarely, mostly for airport trips or late-night outings when no other option works. They compare prices across apps, avoid surge pricing, and often choose public transit or driving if cheaper.",
+          "hypothesis": "They will report low trip frequency, high price sensitivity, and will prioritize cost over wait time or comfort."
+        },
+        {
+          "segment_id": "convenience_driven_commuters",
+          "name": "Convenience-Driven Buyers",
+          "description": "Use ride-hailing regularly for commuting and errands, valuing reliability and short wait times over price. They are willing to pay moderate premiums to avoid being late, but still compare apps for the best balance.",
+          "hypothesis": "They will report high trip frequency, moderate price sensitivity, and will prioritize wait time and driver reliability over cost."
+        },
+        {
+          "segment_id": "premium_comfort_seekers",
+          "name": "Premium Comfort Buyers",
+          "description": "Frequent users who choose premium ride options for comfort, vehicle quality, and professional drivers. They are the least price-sensitive and will pay for a consistently high-quality experience.",
+          "hypothesis": "They will report high trip frequency, low price sensitivity, and will prioritize vehicle quality and driver professionalism over cost."
+        },
+        {
+          "segment_id": "safety_and_eco_conscious",
+          "name": "Safety & Eco-Conscious Riders",
+          "description": "Moderate-frequency users who actively choose ride-hailing for safety (especially at night) and prefer green vehicle options. They are willing to pay more for safety features and EVs, and are sensitive to driver identity verification.",
+          "hypothesis": "They will report moderate trip frequency, medium price sensitivity, and will prioritize safety features and green options over cost or speed."
+        }
+      ],
+      "segmentModel": {
+        "segments": [
+          {
+            "segment_id": "price_sensitive_occasional",
+            "name": "Price-Sensitive Occasionals Users",
+            "description": "Use ride-hailing rarely, mostly for airport trips or late-night outings when no other option works. They compare prices across apps, avoid surge pricing, and often choose public transit or driving if cheaper.",
+            "hypothesis": "They will report low trip frequency, high price sensitivity, and will prioritize cost over wait time or comfort."
+          },
+          {
+            "segment_id": "convenience_driven_commuters",
+            "name": "Convenience-Driven Buyers",
+            "description": "Use ride-hailing regularly for commuting and errands, valuing reliability and short wait times over price. They are willing to pay moderate premiums to avoid being late, but still compare apps for the best balance.",
+            "hypothesis": "They will report high trip frequency, moderate price sensitivity, and will prioritize wait time and driver reliability over cost."
+          },
+          {
+            "segment_id": "premium_comfort_seekers",
+            "name": "Premium Comfort Buyers",
+            "description": "Frequent users who choose premium ride options for comfort, vehicle quality, and professional drivers. They are the least price-sensitive and will pay for a consistently high-quality experience.",
+            "hypothesis": "They will report high trip frequency, low price sensitivity, and will prioritize vehicle quality and driver professionalism over cost."
+          },
+          {
+            "segment_id": "safety_and_eco_conscious",
+            "name": "Safety & Eco-Conscious Riders",
+            "description": "Moderate-frequency users who actively choose ride-hailing for safety (especially at night) and prefer green vehicle options. They are willing to pay more for safety features and EVs, and are sensitive to driver identity verification.",
+            "hypothesis": "They will report moderate trip frequency, medium price sensitivity, and will prioritize safety features and green options over cost or speed."
+          }
+        ],
+        "weights": [
+          {
+            "question_id": "q4",
+            "question_text": "How many ride-hailing trips have you taken in the past 30 days?",
+            "option_label": "1–2 trips",
+            "segment_id": "price_sensitive_occasional",
+            "points": 3
+          },
+          {
+            "question_id": "q4",
+            "question_text": "How many ride-hailing trips have you taken in the past 30 days?",
+            "option_label": "3–5 trips",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q4",
+            "question_text": "How many ride-hailing trips have you taken in the past 30 days?",
+            "option_label": "6–10 trips",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q4",
+            "question_text": "How many ride-hailing trips have you taken in the past 30 days?",
+            "option_label": "11–15 trips",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q4",
+            "question_text": "How many ride-hailing trips have you taken in the past 30 days?",
+            "option_label": "16 or more trips",
+            "segment_id": "premium_comfort_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Which of these situations have you used a ride-hailing app for in the past 3 months?",
+            "option_label": "Getting to or from the airport",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Which of these situations have you used a ride-hailing app for in the past 3 months?",
+            "option_label": "Commuting to work or school",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Which of these situations have you used a ride-hailing app for in the past 3 months?",
+            "option_label": "Going out at night with friends",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 1
+          },
+          {
+            "question_id": "q6",
+            "question_text": "When you take a ride-hailing trip, what time of day does it usually start?",
+            "option_label": "Late night (11pm–5am)",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "In the last 3 months, which of these situations made you choose a ride-hailing app over other ways of getting around?",
+            "option_label": "I'd been drinking and didn't want to drive",
+            "segment_id": "price_sensitive_occasional",
+            "points": 1
+          },
+          {
+            "question_id": "q7",
+            "question_text": "In the last 3 months, which of these situations made you choose a ride-hailing app over other ways of getting around?",
+            "option_label": "I felt safer in a ride-hail than walking or taking transit",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 3
+          },
+          {
+            "question_id": "q8",
+            "question_text": "Before booking a ride, how do you usually compare your options?",
+            "option_label": "Check prices on two or more apps",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "Before booking a ride, how do you usually compare your options?",
+            "option_label": "Look at estimated wait times",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "Before booking a ride, how do you usually compare your options?",
+            "option_label": "Check the type of vehicle offered",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "Before booking a ride, how do you usually compare your options?",
+            "option_label": "See if surge pricing is in effect",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In the last 30 days, how often did you compare prices or wait times across more than one ride-hailing app before booking?",
+            "option_label": "Every time",
+            "segment_id": "price_sensitive_occasional",
+            "points": 3
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In the last 30 days, how often did you compare prices or wait times across more than one ride-hailing app before booking?",
+            "option_label": "Most of the time",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In the last 30 days, how often did you compare prices or wait times across more than one ride-hailing app before booking?",
+            "option_label": "Never",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "When choosing between ride-hailing apps, which one matters most to you?",
+            "option_label": "Lower total fare",
+            "segment_id": "price_sensitive_occasional",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "When choosing between ride-hailing apps, which one matters most to you?",
+            "option_label": "Shorter wait time",
+            "segment_id": "convenience_driven_commuters",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "When choosing between ride-hailing apps, which one matters most to you?",
+            "option_label": "Driver rating and safety features",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "When choosing between ride-hailing apps, which one matters most to you?",
+            "option_label": "Vehicle type and comfort",
+            "segment_id": "premium_comfort_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "When choosing between ride-hailing apps, which one matters most to you?",
+            "option_label": "Predictable pricing without surges",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "How often do you use a ride-hailing app in a typical month?",
+            "option_label": "Less than once a month",
+            "segment_id": "price_sensitive_occasional",
+            "points": 3
+          },
+          {
+            "question_id": "q13",
+            "question_text": "How often do you use a ride-hailing app in a typical month?",
+            "option_label": "1–3 times a month",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "How often do you use a ride-hailing app in a typical month?",
+            "option_label": "4–8 times a month",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "How often do you use a ride-hailing app in a typical month?",
+            "option_label": "9–15 times a month",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "How often do you use a ride-hailing app in a typical month?",
+            "option_label": "More than 15 times a month",
+            "segment_id": "premium_comfort_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When you need a ride, how do you usually decide which ride-hailing app to open?",
+            "option_label": "I open the same app every time without thinking",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When you need a ride, how do you usually decide which ride-hailing app to open?",
+            "option_label": "I check two or more apps and pick the cheapest fare",
+            "segment_id": "price_sensitive_occasional",
+            "points": 3
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When you need a ride, how do you usually decide which ride-hailing app to open?",
+            "option_label": "I check two or more apps and pick the one with the shortest wait",
+            "segment_id": "convenience_driven_commuters",
+            "points": 3
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When you need a ride, how do you usually decide which ride-hailing app to open?",
+            "option_label": "I check two or more apps and pick the best balance of price and wait",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these must a ride-hailing trip include for you to consider it acceptable?",
+            "option_label": "Driver matches the name and photo in the app",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features are non-negotiable for you in a ride-hailing trip?",
+            "option_label": "In-app emergency button",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features are non-negotiable for you in a ride-hailing trip?",
+            "option_label": "Verified driver identity",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 3
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these features are non-negotiable for you in a ride-hailing trip?",
+            "option_label": "Option to choose a green vehicle",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 3
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Before booking, how important is it that the app shows the driver's verified photo and license plate?",
+            "option_label": "Essential — I check it every time",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 3
+          },
+          {
+            "question_id": "q19",
+            "question_text": "How much more would you pay to ride in an electric or hybrid vehicle instead of a standard gas one?",
+            "option_label": "Nothing — I'd only pick it if it's the same price",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "How much more would you pay to ride in an electric or hybrid vehicle instead of a standard gas one?",
+            "option_label": "Up to $1 more per trip",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "How much more would you pay to ride in an electric or hybrid vehicle instead of a standard gas one?",
+            "option_label": "$1 to $2 more per trip",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "How much more would you pay to ride in an electric or hybrid vehicle instead of a standard gas one?",
+            "option_label": "$2 to $4 more per trip",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q19",
+            "question_text": "How much more would you pay to ride in an electric or hybrid vehicle instead of a standard gas one?",
+            "option_label": "More than $4 per trip",
+            "segment_id": "premium_comfort_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q21",
+            "question_text": "If you could only keep one of these, which would you choose?",
+            "option_label": "The lowest possible price, even if it means a longer wait",
+            "segment_id": "price_sensitive_occasional",
+            "points": 3
+          },
+          {
+            "question_id": "q21",
+            "question_text": "If you could only keep one of these, which would you choose?",
+            "option_label": "The shortest possible wait, even if it costs more",
+            "segment_id": "convenience_driven_commuters",
+            "points": 3
+          },
+          {
+            "question_id": "q21",
+            "question_text": "If you could only keep one of these, which would you choose?",
+            "option_label": "A more comfortable vehicle, even if it costs more",
+            "segment_id": "premium_comfort_seekers",
+            "points": 3
+          },
+          {
+            "question_id": "q21",
+            "question_text": "If you could only keep one of these, which would you choose?",
+            "option_label": "A verified, highly-rated driver, even if it costs more",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 3
+          },
+          {
+            "question_id": "q23",
+            "question_text": "In the last 30 days, which of these frustrations have you experienced with ride-hailing apps?",
+            "option_label": "Surge pricing felt unfair",
+            "segment_id": "price_sensitive_occasional",
+            "points": 1
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of these frustrations would make you stop using ride-hailing apps altogether?",
+            "option_label": "Concerns about driver identity and safety",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects most affects your satisfaction with a ride-hailing trip?",
+            "option_label": "Total cost after fees and surge",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects most affects your satisfaction with a ride-hailing trip?",
+            "option_label": "How quickly the driver arrives",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects most affects your satisfaction with a ride-hailing trip?",
+            "option_label": "Driver professionalism and safety",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "Which of these aspects most affects your satisfaction with a ride-hailing trip?",
+            "option_label": "Vehicle cleanliness and comfort",
+            "segment_id": "premium_comfort_seekers",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different ride-hailing app?",
+            "option_label": "Consistently lower prices on another app",
+            "segment_id": "price_sensitive_occasional",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different ride-hailing app?",
+            "option_label": "Shorter wait times on another app",
+            "segment_id": "convenience_driven_commuters",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different ride-hailing app?",
+            "option_label": "Better safety features on another app",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different ride-hailing app?",
+            "option_label": "More electric or hybrid vehicle options",
+            "segment_id": "safety_and_eco_conscious",
+            "points": 2
+          }
+        ],
+        "tie_break": "The question that best settles a tie is bb6 (\"When choosing between ride-hailing apps, which one matters most to you?\") because it directly asks the respondent to prioritize the single most important attribute (price, wait, safety, or comfort), which is the core differentiator among the four segments.",
+        "notes": [
+          "Frequency questions (cp4, bb7) are used as strong signals but not decisive alone because they are correlated with multiple segments.",
+          "Some options like 'Going out at night' are scored only weakly for safety segment because they are common across segments.",
+          "The scoring model ensures each segment has at least one 3-point option and multiple 2-point options."
+        ],
+        "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+      },
+      "fieldingNotes": {
+        "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+        "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+        "estimatedLength": "8-10 minutes.",
+        "scriptingNotes": [
+          "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+          "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+          "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+          "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+          "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+          "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+        ],
+        "caveats": [
+          "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+          "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+          "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

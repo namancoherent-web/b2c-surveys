@@ -1,4 +1,4 @@
-# Survey Agent
+# b2c-surveys
 
 An agentic market-research **survey generator** built on
 [LangGraph](https://github.com/langchain-ai/langgraph). Given a market segment,
@@ -443,4 +443,4 @@ Two dials:
 | --- | --- |
 | Segments in parallel | `--scale worker=N` |
 | API calls / sec | `LLM_RATE_PER_SEC` / `WEB_RATE_PER_SEC` |
-# b2c-surveys
+

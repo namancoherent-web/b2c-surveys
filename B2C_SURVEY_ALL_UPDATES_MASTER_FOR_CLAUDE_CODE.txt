@@ -1,0 +1,1446 @@
+B2C SURVEY — MASTER UPDATE & VALIDATION RULES
+==============================================
+FOR CLAUDE CODE
+
+PURPOSE
+-------
+This file combines ALL B2C survey updates agreed so far.
+Apply these rules during generation AND run them again as automated validation
+before the survey is finalized.
+
+The goal is not to make B2C surveys look like B2B surveys. B2C attitudinal,
+behavioral and psychographic questions may legitimately cover different angles
+of the same product/category. Remove only questions that test essentially the
+same construct from the same angle or that fail the value test.
+
+====================================================================
+1. EXACTLY FOUR MAIN B2C BEHAVIORAL SECTIONS
+====================================================================
+
+The B2C Consumer Goods structure uses these four main behavioral sections:
+
+1. Consumer Profile, Ownership & Usage Behavior
+2. Purchase Journey & Decision Drivers
+3. Brand / Product Experience & Satisfaction
+4. Unmet Needs, Switching & Future Purchase Intent
+
+These are the FOUR main behavioral sections.
+
+Profiling & Classification is NOT a fifth behavioral segment.
+Age, gender, household composition and household income may appear in a final
+Profiling block when required, but they are classification variables only and
+must be asked at the end.
+
+IMPORTANT ABOUT THE SLASH:
+--------------------------
+The slash in "Brand / Product Experience & Satisfaction" is OPTIONAL.
+It is not mandatory to use "/". It is acceptable to render this as, for example,
+"Brand & Product Experience & Satisfaction" or another natural market/language
+form, provided that it still clearly represents the same underlying segment.
+Do NOT create an additional segment just because the slash is removed.
+
+Do not add a fifth behavioral section.
+Do not revert to old names such as:
+- Consumer Profile
+- Buying Behavior
+- Preferences & Expectations
+- Satisfaction & Future Intent
+unless a market-specific configuration explicitly requires a natural localized
+label. The underlying four-part structure must remain intact.
+
+====================================================================
+2. EXACTLY FOUR BEHAVIORAL PERSONAS / SEGMENT NAMES IN DISTRIBUTION NOTES
+====================================================================
+
+Use exactly these four behavioral personas throughout distribution notes:
+
+1. High-Involvement Users
+2. Targeted Concern Solvers
+3. Value-Driven Routine Users
+4. Minimalist Occasional Users
+
+STRICT RULES:
+- These four names are the only behavioral persona names allowed unless a
+  market-specific input explicitly overrides them.
+- Spell the names consistently everywhere.
+- Never introduce a fifth or sixth persona halfway through the survey.
+- Never rename an existing persona in one question.
+- Never use shortened variants such as "High-Involvement" or "Value-Driven"
+  as if they were separate persona names.
+- Never create personas from demographics, income, gender, age, household type,
+  geography, or other profiling attributes.
+- Never use names such as "Premium-Luxury Buyers", "Clean-Conscious Shoppers",
+  "Sensitive-Skin Sufferers", "Budget Consumers", "Younger Users",
+  "Family-Oriented Consumers", etc. unless explicitly added to the approved
+  persona set by a separate market-specific configuration.
+
+Before finalizing, scan every distribution note and extract all persona names.
+The set must contain exactly the four approved names above.
+
+A persona must also behave consistently. If a persona is described as
+price-sensitive in one question, do not describe the same persona as strongly
+premium-seeking in another question without a real analytical reason.
+
+====================================================================
+3. B2C VS B2B — DO NOT APPLY THE WRONG REDUNDANCY RULE
+====================================================================
+
+B2C questions may probe different psychological/business constructs even when
+answer options overlap.
+
+Examples of legitimate distinct B2C constructs:
+- usage frequency
+- routine length
+- purchase trigger
+- research source
+- purchase channel
+- final decision driver
+- product must-have
+- quality cue
+- claim credibility
+- retention condition
+- satisfaction
+- disappointment
+- unmet need
+- switching trigger
+- advocacy
+- future intent
+- willingness to pay
+
+Keep two questions when they clearly support different business decisions,
+such as positioning, formulation, messaging, acquisition, retention or
+channel strategy.
+
+REMOVE or MERGE a question only when:
+- it tests essentially the same construct as another question;
+- it asks from the same angle;
+- it produces no additional actionable insight;
+- or it is not required for a clear business decision.
+
+For every question ask:
+1. What business decision does it support?
+2. Is that decision already covered elsewhere?
+3. Is it actionable enough?
+4. Is it genuinely B2C?
+5. Does it fit the section where it appears?
+
+If there is no good answer, remove the question.
+
+====================================================================
+4. QUESTION WORDING — DIRECT, NATURAL, SIMPLE
+====================================================================
+
+This is a HARD RULE.
+
+Questions must sound like something a normal consumer would naturally answer.
+
+DO NOT unnecessarily start questions with:
+- "In the past year, ..."
+- "In the last 12 months, ..."
+- "Thinking about the past year, ..."
+- "When considering ..."
+- "If you think about ..."
+- "For yourself, ..."
+- "Personally, ..."
+- "In your opinion, ..."
+- other setup phrases that add no meaning.
+
+Example:
+BAD: "In the past year, how often have you used skin care products?"
+BETTER: "How often do you usually use skin care products?"
+
+BAD: "In the past year, what most often disappointed you about a skin care product?"
+BETTER: "What most often disappoints you about skin care products?"
+
+A timeframe should be included ONLY when it is analytically necessary.
+If a timeframe is genuinely required, keep it short and natural.
+
+GENERAL STYLE RULES:
+- Lead with the actual question.
+- Use everyday consumer language.
+- Keep wording short.
+- Avoid unnecessary setup clauses.
+- Avoid business/consulting jargon.
+- Avoid filler such as "for you", "personally", "in your opinion" unless
+  removing it changes the meaning.
+- Use active voice.
+- Use complete natural sentences.
+- Do not use fragments.
+- Every answer option must sound like something a real person would naturally say.
+- Do not make options sound like internal database labels.
+
+====================================================================
+5. ONE QUESTION = ONE DIMENSION
+====================================================================
+
+This is mandatory.
+
+A single-select question must measure one clear dimension.
+Do not mix time-of-day, occasion, trigger, reason, frequency, motivation,
+product type, or other dimensions in the same answer list.
+
+BAD:
+"When do you usually apply skin care products?"
+Options:
+- Morning
+- Evening
+- Both morning and evening
+- When my skin feels dry
+- Before going out
+
+This mixes TIME with TRIGGER/OCCASION.
+
+Correct approach: choose ONE dimension.
+
+Example TIME question:
+"When do you usually apply skin care products?"
+- Morning
+- Evening
+- Both morning and evening
+- No set time
+
+OR a TRIGGER question:
+"When are you most likely to apply skin care products?"
+- As part of my morning routine
+- As part of my evening routine
+- After showering or bathing
+- When my skin feels dry or uncomfortable
+- Before going out or for special occasions
+
+Do not combine both.
+
+====================================================================
+6. QUESTION TYPES MUST BE EXPLICIT AND CORRECT
+====================================================================
+
+Every question must have an explicit backend type:
+- single-select
+- multi-select
+- ranking
+- rating scale
+
+Never make the reader infer type from percentages or wording.
+
+SINGLE-SELECT:
+- respondent chooses exactly one answer;
+- all options must describe the same dimension;
+- options should be mutually exclusive.
+
+MULTI-SELECT:
+- question wording must explicitly say "Select all that apply.";
+- options may coexist;
+- use a genuine opt-out where appropriate.
+
+RATING SCALE:
+- options must form a clear ordered scale;
+- wording must be consistent from low to high.
+
+RANKING:
+- only use a ranking question if the backend actually supports ranking;
+- ranking output must define what the displayed percentages mean;
+- do NOT show arbitrary percentages against ranked options and imply that
+  they are ordinary single-select shares.
+
+If ranking support is weak, replace a ranking question with:
+"Which factor has the biggest influence on your final choice?"
+
+====================================================================
+7. MULTI-SELECT OPT-OUT RULE
+====================================================================
+
+For multi-select questions asking about must-haves, requirements, concerns,
+preferences or similar constructs, include a genuine opt-out when a respondent
+may honestly have none.
+
+Examples:
+- "None of these are must-haves for me"
+- "None of these matter to me"
+- "None of these"
+
+Do not force a low-involvement/minimalist respondent to select an attribute
+that does not actually matter to them.
+
+If the system supports validation logic, the opt-out should be mutually
+exclusive with substantive choices.
+
+====================================================================
+8. ANSWER OPTION VALIDATION
+====================================================================
+
+Every question must pass all of these checks:
+- options answer the exact same question;
+- single-select options are mutually exclusive;
+- multi-select options can logically coexist;
+- categories do not overlap unnecessarily;
+- options are complete enough for normal respondents;
+- wording is natural;
+- no clipped/incomplete phrases;
+- no internal category labels;
+- no contradictory choices;
+- no missing honest opt-out where required;
+- percentages match the declared question type.
+
+For single-select questions, ask:
+"Could one real respondent reasonably fit more than one option?"
+If yes, redesign the options.
+
+====================================================================
+9. FIXED QUESTION-QUALITY RULES FROM THE PRIOR REVIEW
+====================================================================
+
+The following recurring defects must never reappear:
+
+A. MIXED DIMENSION OPTIONS
+Do not mix time-of-day with occasion/trigger in one single-select question.
+
+B. WRONG RELATIONSHIP REGISTER
+For consumer personal-care/household categories, recommendation questions
+should use natural relationships such as "friend or family member" rather than
+B2B-style "friend or colleague".
+
+C. SUBJECT-VERB AGREEMENT
+Example:
+WRONG: "Which aspects ... most disappoints you?"
+RIGHT: "Which aspects ... most disappoint you?"
+
+Run a grammar check, especially when the subject is plural.
+
+D. NEAR-IDENTICAL WORDING WITH DIFFERENT TYPES
+If one question is multi-select and another is single-select, the wording must
+make the distinction obvious.
+Example:
+"Select all that apply." must appear in the multi-select version.
+
+E. NO FORCED ANSWERS
+Include "None of these" or equivalent when appropriate.
+
+F. NO MALFORMED PUNCTUATION
+Never output:
+"Select all that apply.?"
+Correct it to:
+"Select all that apply."
+
+====================================================================
+10. SEGMENT PLACEMENT RULE
+====================================================================
+
+A question can be non-redundant and still be in the wrong segment.
+
+Check whether its analytical angle matches the section:
+
+SEGMENT 1 — Consumer Profile, Ownership & Usage Behavior
+Use for who uses/buys the category and how they use it:
+usage frequency, routine, product usage context, usage purpose, household use.
+
+SEGMENT 2 — Purchase Journey & Decision Drivers
+Use for purchase mechanics:
+purchase trigger, research, discovery, channel, replenishment, spend,
+comparison, decision drivers.
+
+SEGMENT 3 — Brand / Product Experience & Satisfaction
+Use for product/brand expectations and evaluation:
+must-haves, quality cues, claims, sensory experience, packaging when relevant,
+trade-offs, price expectations, perceived value.
+
+SEGMENT 4 — Unmet Needs, Switching & Future Purchase Intent
+Use for:
+satisfaction, disappointment, unmet needs, switching, loyalty/advocacy,
+repurchase, future intent and future spending behavior.
+
+Do not put a purchase-mechanics question into a product-perception section,
+or a satisfaction question into a purchase-trigger section, just because the
+answer options overlap.
+
+====================================================================
+11. CURRENTLY KNOWN HIGH-VALUE QUESTION DECISIONS
+====================================================================
+
+These are examples from the reviewed Skin Care Products survey and should guide
+the generator when the same patterns appear again.
+
+Q1 — GENERAL USAGE / ROUTINE COUNT
+Keep if it measures a clear usage dimension.
+Natural wording example:
+"How many skin care products do you use on a typical day?"
+Avoid unnecessary time setup.
+
+Q2 — NARROW SINGLE-PRODUCT SUBTYPE USAGE
+A general skincare survey should not over-focus on one product subtype unless
+that subtype is an explicit market objective.
+Replace or broaden if it is only asking cleanser-specific behavior.
+
+Q3 — SKIN CONCERN
+A question asking the single most important/bothersome concern is useful if
+Q4-type questions separately measure the full range of concerns.
+Keep a "None of these" option where appropriate.
+
+Q4 — ROUTINE STEPS
+Useful as a multi-select if it measures breadth of routine.
+Phrase cleanly:
+"Which steps are part of your usual skin care routine? Select all that apply."
+
+PURCHASE TRIGGER vs RECENT PURCHASE:
+A question about what caused the most recent purchase and a question about
+future purchase triggers can both stay because they measure different things.
+
+RESEARCH / DISCOVERY:
+"Where do you usually learn about..." and "Which sources do you use to compare..."
+can both stay only if they clearly measure discovery vs comparison.
+
+PACKAGING:
+Do not create multiple packaging questions that ask the same basic preference.
+Keep packaging only when it supports a real product/packaging decision.
+Specify the product context when packaging depends strongly on product type.
+
+PRODUCT FORMAT:
+A broad "Which skin care formats are you willing to use?" question is often
+low-value and can be redundant with product-usage questions. Remove it unless
+there is an explicit market-specific reason to measure format adoption.
+
+MUST-HAVE vs RETENTION:
+"What must a product have/be for me to buy it?" and "What must it do for me to
+keep using it?" can be legitimate separate B2C constructs. Do not delete one
+automatically.
+
+QUALITY CUE:
+"What tells you a product is high quality before you buy it?" is useful and
+distinct from must-haves and claim persuasion.
+
+CLAIM PERSUASION:
+A question such as "Which single claim most strongly convinces you to try a
+new product?" is useful.
+Avoid keeping another near-identical question about the same exact claim unless
+there is a clear separate analytical purpose.
+
+TRADE-OFF:
+A "what would you give up to pay less?" question is useful only if all answer
+options belong to the same conceptual dimension and each is a plausible trade-off.
+Do not mix product attributes with unrelated recommendation/channel concepts.
+
+SATISFACTION:
+Overall satisfaction is distinct from satisfaction drivers.
+
+DISAPPOINTMENT / UNMET NEED:
+A disappointment question is distinct from overall satisfaction and can be
+retained when it provides actionable unmet-need detail.
+
+SWITCHING:
+A switching trigger is a distinct business decision from satisfaction.
+
+ADVOCACY:
+A recommendation/NPS-style item can be retained if useful. For personal-care
+products use natural consumer relationships such as "friend or family member".
+
+FUTURE INTENT:
+Future purchase/routine intent can be retained when it supports a separate
+forecasting or innovation decision.
+
+====================================================================
+12. CURRENCY AND REGIONAL CONSISTENCY — HARD RULE
+====================================================================
+
+Every geography-bearing field must match the survey's stated market/region.
+
+If Region = India:
+- every price, spend and income question must use INR;
+- use a valid rendered rupee symbol: ₹;
+- use India-appropriate price/income bands;
+- do not default to USD;
+- do not reuse US/Europe price bands blindly.
+
+NEVER output broken forms such as:
+- n500
+- n1,000
+- n25,000
+- $500 in an India survey
+- broken replacement characters
+
+Before finalizing, run an encoding check over every monetary option label.
+
+Also check all geography-bearing metadata fields for contradictions.
+If the header says India, another metadata block must not say Global or another
+region unless the survey is explicitly configured that way.
+
+====================================================================
+13. MONTHLY SPEND VS HOUSEHOLD INCOME
+====================================================================
+
+These are different constructs and may both exist.
+
+Monthly category spend = behavioral/purchase measure.
+Household income = profiling/classification measure.
+
+Do not use the income answer to create a behavioral finding.
+
+Household income bands must be realistic for the stated country and target
+population. Do not use implausibly low bands that contradict the survey's own
+audience description.
+
+====================================================================
+14. PROFILING RULES
+====================================================================
+
+Age, gender, household composition and income belong in the final profiling
+block when the survey requires them.
+
+They are used for cross-tabulation, NOT qualification/gating unless the market
+configuration explicitly requires a qualification criterion.
+
+Do NOT attribute behavioral findings to profiling answers inside the profiling
+question's distribution note.
+
+BAD:
+"Younger High-Involvement Users skew the panel toward 18-34."
+
+BAD:
+"Value-Driven Routine Users cluster at lower income levels."
+
+BAD:
+"Family-oriented segments drive the largest share living with children."
+
+Preferred:
+- no distribution note for profiling questions; OR
+- a neutral descriptive note only, with no behavioral persona attribution.
+
+Do not invent demographic personas such as:
+- Younger Users
+- Family-Oriented Consumers
+- Premium Users
+- Budget Consumers
+- Female-led Segments
+- Middle-Income Shoppers
+
+====================================================================
+15. DISTRIBUTION NOTES — STRICT RULES
+====================================================================
+
+Distribution notes must:
+- use only the four approved persona names;
+- be consistent with the question and answer options;
+- explain meaningful skew or pattern, not just repeat the options;
+- avoid invented causes;
+- avoid demographic interpretation unless the note is outside profiling and the
+  survey methodology explicitly supports such an inference;
+- never introduce a new persona name.
+
+Do not write unsupported causal claims such as:
+"Growth in the region pushes spending upward"
+or
+"Social media causes this segment to spend more"
+unless the source/model explicitly supports that causal statement.
+
+Safer form:
+"High-Involvement Users and Targeted Concern Solvers are more represented in
+the higher-spend bands in the modeled distribution."
+
+Distribution notes should describe the modeled distribution, not invent causal
+stories.
+
+====================================================================
+16. QUESTION TYPE + PERCENTAGE CONSISTENCY
+====================================================================
+
+The survey disclosure may say:
+- single-choice, ranking and rating-scale questions sum to 100%;
+- multi-select questions do not.
+
+But this only works if the actual question type matches the wording and data.
+
+Validation:
+- Single-select percentages must sum to 100%.
+- Rating-scale percentages must sum to 100%.
+- A true ranking must use a valid ranking calculation; do not fake it as simple
+  single-choice percentages.
+- Multi-select percentages may exceed 100% in total.
+
+Never let a question's answer type be inferred by looking at percentages.
+The backend must declare the type explicitly.
+
+====================================================================
+17. STRUCTURE / QUESTION COUNT RECONCILIATION
+====================================================================
+
+The survey header and actual body must be generated from the same source data.
+
+Before finalizing:
+1. Count every question under every section.
+2. Confirm each section's stated question count matches the body.
+3. Confirm the four behavioral section counts add correctly.
+4. Confirm the profiling count matches the actual profiling block.
+5. Confirm the grand total matches the actual total.
+6. Confirm section names are consistent with the structure.
+
+Do not write a structure summary independently from the generated body.
+
+====================================================================
+18. QUESTION COUNT IS NOT A GOAL BY ITSELF
+====================================================================
+
+Do not add questions merely to hit a target count.
+Do not keep a weak question just because the structure says a section should
+have a certain number.
+
+If a question is not needed, remove it and let the final count reflect the real
+survey design. If a specific configuration requires a fixed count, only fill the
+count with questions that pass the value test.
+
+====================================================================
+19. PLAIN-LANGUAGE + ACCURACY STANDARD
+====================================================================
+
+Apply the same strict simplicity and accuracy standard used for B2B work, while
+keeping B2C vocabulary consumer-friendly.
+
+Rules:
+- lead with the actual question;
+- cut unnecessary setup;
+- use active voice;
+- use complete sentences;
+- remove filler;
+- use ordinary consumer terms;
+- every question must precisely describe what it measures;
+- every answer option must be a complete natural phrase;
+- simplicity must not reduce accuracy.
+
+====================================================================
+20. MARKET-SPECIFIC QUESTIONS
+====================================================================
+
+A question may be removed, broadened or added only when justified by the market,
+category or explicit survey input.
+
+Do not assume that every skincare market needs packaging, devices, premium tiers,
+clinical products, influencer questions, etc.
+
+The question must fit the actual category and the stated market.
+
+====================================================================
+21. AUTOMATED VALIDATION — MUST RUN BEFORE OUTPUT
+====================================================================
+
+The generator must run these checks automatically before returning the survey:
+
+CHECK 1  — Exactly four behavioral sections.
+CHECK 2  — Profiling is separate and last.
+CHECK 3  — Exactly four approved behavioral persona names.
+CHECK 4  — No unauthorized persona names anywhere.
+CHECK 5  — Four section names and actual section headers reconcile.
+CHECK 6  — Actual question counts match the structure summary.
+CHECK 7  — Grand total matches the actual generated questions.
+CHECK 8  — Every question has an explicit answer type.
+CHECK 9  — Multi-select wording explicitly says "Select all that apply.".
+CHECK 10 — Single-select options represent one dimension.
+CHECK 11 — Multi-select options can logically coexist.
+CHECK 12 — Rating scales are ordered and sum to 100%.
+CHECK 13 — Ranking questions use a valid ranking model or are converted to
+             single-select.
+CHECK 14 — No fake ranking percentages.
+CHECK 15 — No mixed time/occasion/reason dimensions.
+CHECK 16 — No unnecessary duplicate questions from the same construct/angle.
+CHECK 17 — Every question has a clear business use.
+CHECK 18 — Currency matches the stated region.
+CHECK 19 — Currency symbols render correctly.
+CHECK 20 — No broken characters such as "n500".
+CHECK 21 — Monetary bands are realistic for the market.
+CHECK 22 — Geography metadata is internally consistent.
+CHECK 23 — Profiling questions do not drive behavioral conclusions.
+CHECK 24 — No demographic personas are created.
+CHECK 25 — No unnecessary timeframes such as "in the past year" unless required.
+CHECK 26 — No unnecessary setup phrases.
+CHECK 27 — Grammar and subject-verb agreement are correct.
+CHECK 28 — No malformed punctuation such as "Select all that apply.?".
+CHECK 29 — Every option is natural consumer language.
+CHECK 30 — Every question is logically accurate.
+CHECK 31 — Distribution notes use only approved persona names.
+CHECK 32 — Distribution notes are consistent with the actual options.
+CHECK 33 — No unsupported causal claims in distribution notes.
+CHECK 34 — Questions are placed in the section matching their analytical angle.
+CHECK 35 — Low-value product-format questions are removed unless explicitly
+             required by the market.
+
+====================================================================
+22. IMPORTANT: APPLY RULES DURING GENERATION, NOT ONLY AFTER
+====================================================================
+
+Do not rely only on a post-generation cleanup pass.
+
+The generator itself must:
+- select the four sections before writing questions;
+- define the four approved personas before generating distribution notes;
+- assign every question a type before generating answer options;
+- generate options that match that type;
+- generate wording naturally;
+- apply regional currency before output;
+- keep profiling separate;
+- create the structure summary from the actual generated sections;
+- run the full automated validation before final output.
+
+If any validation check fails, regenerate/fix the affected question before
+returning the survey.
+
+====================================================================
+23. FINAL B2C QUALITY TEST
+====================================================================
+
+Before accepting a generated question, ask:
+
+1. Is this question genuinely required?
+2. What real business decision will it support?
+3. Is that decision already covered elsewhere?
+4. Is the question simple enough for an ordinary consumer?
+5. Is the wording natural without unnecessary setup or timeframe?
+6. Does the answer set measure exactly one dimension?
+7. Is the declared question type correct?
+8. Are the options mutually exclusive where required?
+9. Is there an honest opt-out where appropriate?
+10. Does the question belong in the selected segment?
+11. Does the distribution note use only an approved persona?
+12. Does the distribution note logically follow from the answers?
+13. Does it avoid unsupported causal claims?
+14. Is regional/currency information correct?
+15. Is there any simpler or more accurate way to ask the same thing?
+
+If the answer to any of these is NO, fix the question before output.
+
+====================================================================
+24. IMPORTANT PRINCIPLE
+====================================================================
+
+The goal is NOT to make every B2C survey contain fewer questions.
+The goal is to make every remaining question:
+- necessary,
+- simple,
+- accurate,
+- analytically useful,
+- correctly typed,
+- correctly segmented,
+- regionally consistent,
+- and supported by valid answer options.
+
+Different B2C questions can legitimately overlap in vocabulary while measuring
+different constructs. Preserve those when they support different decisions.
+Remove only genuinely redundant or low-value questions.
+
+====================================================================
+25. GAPS FOUND IN THE MASTER RULES FILE ITSELF
+(found on review, before the Running Shoes run — these are gaps in the
+RULES, not in a specific survey)
+====================================================================
+
+25a. SLASH-HANDLING RULE CONTRADICTS THE B2B PRECEDENT
+Section 1 says the slash in "Brand / Product Experience & Satisfaction"
+is optional formatting and can become "Brand & Product Experience" —
+i.e. KEEP both words. But the B2B rule set (switchgear/thermal power
+surveys) treated a slash as "pick ONE word" (e.g. "Technology /
+Solution Adoption" became "Technology Adoption," dropping "Solution").
+These are opposite resolutions of the same symbol.
+FIX: State explicitly that B2C segment-name slashes mean "both terms
+apply, join naturally" while B2B segment-name slashes mean "choose the
+one term that matches the segment's actual question content." Do not
+apply the B2B slash rule to B2C segment names, or vice versa.
+
+25b. NO AUTOMATED CHECK FOR THE MULTI-SELECT OPT-OUT RULE
+Section 7 mandates a genuine opt-out ("None of these") on must-have/
+attribute multi-select questions. No check number in Section 21's list
+of 35 verifies this exists. A rule with no matching check will not be
+enforced by the "run all checks before output" process.
+FIX: Add to the automated check list:
+"CHECK 36 — Every multi-select question about must-haves, requirements,
+concerns, or preferences includes a genuine opt-out option where a
+respondent could honestly have none."
+
+25c. CURRENCY RULE ONLY WORKED-EXAMPLES INDIA
+Section 12 is written as "If Region = India: [rules]" with no explicit
+statement that the same logic must be applied to ANY stated region.
+FIX: Add: "This rule applies to every region, not only India. For any
+stated region, use that region's real currency and realistic local
+price/income bands — e.g. Region = China -> CNY (¥); Region = UK ->
+GBP (£); Region = US -> USD ($). Never default to USD as a fallback
+regardless of which region rule was most recently defined."
+
+25d. STRUCTURE RULE CHECKS THE COUNT BUT DOESN'T REQUIRE PROFILING TO
+BE LISTED
+Section 17 checks that "the profiling count matches the actual
+profiling block" but doesn't require Profiling to be named and counted
+in the structure summary itself. The original bug wasn't bad math —
+Profiling was omitted from the summary entirely.
+FIX: Add to Section 17: "The structure summary must explicitly name
+and count the Profiling block separately from the four behavioral
+sections, even though Profiling is not one of the four. A structure
+summary that states only a combined total (e.g. '5 sections · 33
+questions') without breaking out what each section — including
+Profiling — contains does not satisfy this rule."
+Add to the automated check list:
+"CHECK 37 — The structure summary explicitly names and counts the
+Profiling block on its own, separate from the four behavioral
+sections."
+
+25e. PERSONA-NAME RULE NEEDS CATEGORY SCOPING
+Section 2 locks in exactly four persona names (High-Involvement Users,
+Targeted Concern Solvers, Value-Driven Routine Users, Minimalist
+Occasional Users) as if they are the fixed global set for ALL B2C
+surveys. But those names are skincare-specific concepts. A running
+shoes survey correctly invented its own four category-appropriate
+personas (Performance-Focused Runners, Value-Oriented Joggers,
+Comfort-Driven Walkers, Style-Led Owners) instead of reusing the
+skincare names — which is the right outcome, but the rule as literally
+written could mislead a future run into forcing skincare-specific
+persona names onto an unrelated category.
+FIX: Reword Section 2 to say: "The four named personas above are the
+approved set for the [skincare / this specific] category. For any NEW
+category, define a NEW fixed set of exactly four category-appropriate
+personas at the very start of generation, before writing any question,
+and hold that exact set consistent throughout the entire survey — do
+not reuse another category's persona names, and do not invent a fifth
+persona partway through."
+
+====================================================================
+26. NEW ISSUES FOUND — Running Shoes (China) Survey
+====================================================================
+
+26a. RUNNING HEADER MISLABELS THE SURVEY AS B2B
+FOUND: Every page's running header reads "Coherent Market Insights —
+Customer Intelligence (B2B)" while the report's own subtitle correctly
+states "CONSUMER INTELLIGENCE · B2C SEGMENTATION SURVEY." This
+contradiction repeats on all 15 pages.
+FIX: "The running header/footer template must be selected based on the
+survey's actual type (B2B vs. B2C) and must never default to the B2B
+label. Before finalizing, confirm every occurrence of the header
+string matches the survey's declared type — check this on every page,
+since a header is typically repeated and a single wrong template
+choice propagates everywhere."
+
+26b. STRUCTURE SUMMARY OMITS PROFILING (confirms Gap 25d is still live)
+FOUND: The cover page states "5 sections · 33 questions" with no
+breakdown of what the 5 sections are or how many questions are in each.
+Profiling is not named anywhere in this summary, even though it is a
+real section with its own header and 4 questions.
+FIX: Apply CHECK 37 (see 25d above) — this is the same defect recurring
+in a new survey, confirming the master file's structure rule needs the
+explicit fix proposed in Gap 25d.
+
+26c. OFF-CATEGORY QUESTION — Segment 1, Q5
+FOUND: "What is the main reason you run?" (train for races / stay fit
+/ manage stress / socialize with other runners / save money on
+commuting) measures general fitness/exercise motivation, not anything
+about running SHOES. The "save money on commuting" option in
+particular has no connection to the shoe category at all.
+FIX: "Every question must fit the actual product category being
+surveyed, not an adjacent lifestyle or activity category. A running
+shoes survey may ask about running frequency, terrain, or shoe
+priorities — but a question about WHY someone runs (fitness motivation
+in general) belongs in a fitness/exercise survey, not a footwear
+survey, unless the option set is clearly reframed around shoe-relevant
+consequences of that motivation (e.g. 'training for a race' tied to
+performance-shoe needs). Remove or rewrite any question that could be
+asked identically in an unrelated category survey without change."
+
+26d. SEVERE REDUNDANCY — "WHAT MATTERS MOST IN A SHOE" ASKED 3 TIMES
+FOUND: Three separate questions test the same construct (attribute
+importance) with nearly identical option sets — comfort/cushioning,
+performance, durability, brand/style appear in all three:
+   Segment 1, Q4 — single-select: "What matters most to you in a
+     running shoe?"
+   Segment 2, Q7 — ranking: "What matters most when you choose a
+     running shoe? Rank from most to least important."
+   Segment 3, Q1 — multi-select: "Which must a running shoe have for
+     you to consider buying it?"
+Only the response FORMAT changes (pick-one / rank / select-all); the
+underlying construct and options are the same. This is the exact
+"same construct, same angle, no added insight" pattern the master
+rules say to remove or merge.
+FIX: "Before finalizing, compare every question's answer-option set
+against every other question's, regardless of segment or response
+type (single-select, multi-select, ranking). If three or more
+questions share the same core set of options and measure the same
+underlying construct, keep only the ONE version that best matches the
+segment's analytical purpose (e.g. keep the ranking version in
+Purchase Journey if forcing trade-offs is the goal, OR the multi-select
+must-have version in Brand/Product Experience if presence/absence of
+attributes is the goal) — do not keep multiple response-format
+variants of the same question unless each has a distinct, stated
+analytical purpose."
+
+26e. EXACT DUPLICATE — RECOMMENDATION LIKELIHOOD ASKED TWICE IN THE
+SAME SEGMENT
+FOUND: Segment 4 contains both:
+   Q2 — "How likely are you to recommend the Running Shoes you
+     currently use to a friend or family member?" (0-10 NPS scale)
+   Q6 — "How likely are you to recommend your current running shoes to
+     a friend?" (5-point Likert: Very unlikely -> Very likely)
+These are the same construct (recommendation likelihood) asked twice
+with two different scale formats, in the same segment, with no stated
+reason for both to exist.
+FIX: "Never include two questions measuring the same construct with
+only the response scale changed, especially within the same segment.
+Pick one scale (typically the 0-10 NPS format if industry-standard
+benchmarking is the goal, or the 5-point Likert if simplicity is the
+goal) and remove the other."
+
+26f. CURRENCY INCONSISTENCY, COMPOUNDED WITH REDUNDANCY
+FOUND: Segment 2, Q6 ("How much did you pay for your last pair of
+running shoes?") correctly prices in CNY (¥200–¥399, etc.) for this
+China-region survey. Segment 3, Q7 ("How much do you usually pay for a
+pair of running shoes?") — a near-duplicate of Q6's construct — reverts
+to USD ($50–$79, etc.) in the same document.
+FIX: "Apply CHECK 18 (currency matches region) to every monetary
+question without exception — a later question in the same survey
+reverting to the wrong currency after an earlier one got it right is
+still a full violation. Additionally, since Q6 and Q7 test the same
+underlying construct (typical spend on running shoes), treat this as
+both a currency bug AND a redundancy case per Section 3 — resolve by
+keeping one spend question, correctly priced in the survey's stated
+currency."
+
+26g. MALFORMED "SELECT ALL THAT APPLY?" PUNCTUATION — 3 OCCURRENCES
+FOUND: The exact bug already named in the master file's Check 28
+appears three separate times in this survey:
+   Segment 3, Q3: "...Select all that apply?"
+   Segment 3, Q5: "...Select all that apply?"
+   Segment 4, Q3: "...Select all that apply?"
+In each case the instruction is blended into the question sentence with
+a trailing question mark, rather than appearing as a clean instruction.
+FIX: "Check 28 must run on every multi-select question without
+exception — this bug recurring three times in one survey confirms the
+check is not currently being applied consistently. The multi-select
+instruction should read as a separate, clean sentence: 'Select all
+that apply.' — never blended into the question's own question mark."
+
+26h. FAKE RANKING PERCENTAGES
+FOUND: Segment 2, Q7 is explicitly labeled a ranking question ("Rank
+from most important to least important") but its results are displayed
+as plain percentages summing to 100%, identical in format to an
+ordinary single-select "top choice" share. This is exactly the
+violation Check 14 was written to catch — a true ranking must use a
+valid ranking calculation (e.g. average rank position, or "% who
+ranked this #1"), not a simple percentage share presented the same way
+a single-select result would be.
+FIX: "Apply Check 13 and Check 14 to every question explicitly labeled
+as a ranking type. If the backend cannot produce a genuine ranking
+calculation, do not label the question as ranking — convert it to the
+single-select fallback format specified in Section 6 ('Which factor
+has the biggest influence on your final choice?') instead of displaying
+fake ranking percentages."
+
+26i. SOFT CONCERN — SOME MULTI-SELECT SUMS LAND SUSPICIOUSLY AT
+EXACTLY 100%
+FOUND: Segment 2 Q3 (multi-select, "where did you learn about shoes")
+sums to exactly 100.0%, and Segment 3 Q1 (multi-select, "which must a
+shoe have") also sums to exactly 100.0% — while other multi-select
+questions in the same survey correctly exceed 100% (e.g. Segment 3 Q3
+sums to 230%, Segment 4 Q3 sums to 236%). Both flagged questions are
+correctly typed as multi-select in their wording, so this is not a
+labeling violation, but the coincidence of landing exactly at 100%
+twice suggests the underlying percentage-generation logic may still be
+treating some multi-select questions as constrained shares rather than
+independent selection probabilities.
+FIX: "When generating multi-select percentages, model each option as
+an independent probability of selection, not as a share of a fixed
+100% pool. After generation, spot-check: if a multi-select question's
+total lands at or very near 100% while other multi-select questions in
+the same survey clearly exceed 100%, re-verify that question's
+percentages were generated independently rather than reusing
+single-select logic."
+
+26j. BORDERLINE LOW-VALUE QUESTION
+FOUND: Segment 1, Q6 ("How do you usually decide which pair of running
+shoes to wear on a given day?") measures a minor daily-rotation habit
+that has weak connection to any purchase, product, or marketing
+decision — similar in kind to the "low-value product-format" pattern
+the master rules already flag for removal (Check 35).
+FIX: "Apply the value test (Section 23) to this style of question
+specifically: does knowing which pair someone wears on a given day
+support a real business decision (positioning, formulation, channel,
+retention)? If not, remove it or replace it with a question that ties
+the same behavior to a purchase-relevant outcome (e.g. how many pairs
+they rotate BECAUSE of activity type, which is closer to a genuine
+usage-breadth measure)."
+
+====================================================================
+27. RE-CHECK RESULTS — 2nd Running Shoes Generation (China)
+This is a re-check after Sections 25-26 were sent. Confirms what
+actually got fixed, and flags new/recurring issues.
+====================================================================
+
+CONFIRMED FIXED (no further action needed):
+- Running header correctly reads "Consumer Intelligence (B2C)" — the
+  B2B mislabel from the prior generation is gone.
+- Structure summary now explicitly lists "Profiling & Classification"
+  with its own question count (4), alongside the four behavioral
+  sections — Gap 25d / CHECK 37 is confirmed working.
+- No malformed "Select all that apply?" punctuation anywhere in this
+  survey (was present 3 times in the prior generation).
+- No duplicate recommendation/NPS question — only one "how likely to
+  recommend" question exists this time (was asked twice before with
+  two different scales).
+- Multi-select must-have/concern questions now include a genuine
+  opt-out ("None of these matter to me" / "None of these interest me"
+  / "None of these have disappointed me") — Gap 25b / CHECK 36 is
+  confirmed working in at least 4 separate questions.
+- Profiling distribution notes are now neutral and descriptive, no
+  longer layering in unsupported socioeconomic interpretation (e.g. no
+  repeat of the earlier "urban middle class, active lifestyle" framing
+  attached to a raw age-band statistic).
+
+STILL OPEN / NEW:
+
+ISSUE 27a — WEAK PRODUCT-ANCHORING IN THE SURVEY OPENING
+   Found: The first four questions in Segment 1 (how long is your
+   typical run, how often you run, where you run, main purpose of your
+   runs) are entirely about the RUNNING ACTIVITY, with no mention of
+   shoes at all. The first shoe-specific question is Q5 ("how many
+   pairs of running shoes do you currently own"). A respondent could
+   answer the first four questions identically in an unrelated survey
+   about fitness trackers, gyms, or running apps — nothing anchors the
+   survey to its actual subject (running shoes) until question five.
+   FIX PROMPT TO SEND:
+   "The first question in a product-focused B2C survey's opening
+   segment must directly involve the product itself, not only the
+   activity or occasion surrounding it. For a Running Shoes survey,
+   open with a shoe-ownership or shoe-experience question (e.g. 'How
+   many pairs of running shoes do you currently own?' or 'Which type
+   of running shoe do you wear most often?'), then follow with
+   activity-context questions (frequency, duration, terrain) as
+   supporting behavioral detail — not before the product itself has
+   been introduced. Apply this ordering check to every new B2C survey:
+   confirm the product/category appears explicitly within the first
+   1-2 questions, not delayed until several questions in."
+
+ISSUE 27b — REAL BRAND/RETAILER NAMES APPEARING IN A SURVEY THAT
+SHOULD STAY CATEGORY-LEVEL
+   Found: Segment 2, Q3 and Q4 both include real, named companies as
+   parenthetical examples: "Online marketplace (e.g., Shopee,
+   Lazada)" and "Sports chain store (e.g. Decathlon, Sports Direct)."
+   The earlier skincare survey's own stated rule was "Brand, company
+   or manufacturer names — the survey stays at category level so
+   findings are not tied to one competitor set," and that survey
+   correctly complied. This running shoes survey does not.
+   FIX PROMPT TO SEND:
+   "Never name a real company, retailer, platform, or brand anywhere
+   in a B2C survey's questions or answer options, including as a
+   parenthetical example — even 'e.g.' framing still ties the finding
+   to a specific competitor set and breaks category-level neutrality.
+   Use generic category descriptions instead: 'Online marketplace'
+   (no named examples), 'Sports chain retailer,' 'Specialty running
+   store.' Apply this check to every option label in every question,
+   not only ones that look like they're naming a channel or format."
+
+ISSUE 27c — THE NAMED BRAND EXAMPLES ARE ALSO REGIONALLY WRONG FOR
+CHINA (compounds Issue 27b)
+   Found: Even setting aside Issue 27b, the specific brands chosen
+   don't fit the stated region. Shopee and Lazada are Southeast Asian
+   e-commerce platforms (Singapore, Indonesia, Philippines, Malaysia,
+   Thailand, Vietnam) with negligible presence in mainland China,
+   where Taobao, Tmall, JD.com, and Pinduoduo dominate instead. Sports
+   Direct is a UK-specific sports retailer with no meaningful presence
+   in China. Citing these examples in a China-region survey is a
+   regional mismatch on top of the brand-naming violation.
+   FIX PROMPT TO SEND:
+   "If any example (brand, platform, or standard) is ever included
+   despite the category-level rule, it must still be checked against
+   the survey's stated region before finalizing — the same regional-
+   consistency check already applied to certifications and currency
+   must also apply to any named company or platform. But the correct
+   fix here is to remove the named examples entirely per Issue 27b,
+   not merely correct them to China-appropriate names."
+
+ISSUE 27d — OFF-CATEGORY QUESTION RECURRED FROM THE PRIOR GENERATION
+   Found: Segment 1, Q4 ("What is the main purpose of your runs?" —
+   training for a race / staying fit / relieving stress / commuting /
+   socialising) is essentially the same question flagged in the prior
+   Running Shoes survey (Section 26, Issue 26c) as general fitness
+   motivation unrelated to the shoe category itself. It reappeared here
+   almost unchanged, confirming the earlier fix prompt was not applied
+   to this new generation.
+   FIX PROMPT TO SEND (re-send, unchanged from Issue 26c):
+   "Every question must fit the actual product category being
+   surveyed, not an adjacent lifestyle or activity category. A running
+   shoes survey may ask about running frequency, terrain, or shoe
+   priorities — but a question about WHY someone runs (fitness
+   motivation in general) belongs in a fitness/exercise survey, not a
+   footwear survey. Remove or rewrite any question that could be asked
+   identically in an unrelated category survey without change. NOTE:
+   this exact fix was requested once already and did not persist into
+   the next generation — treat this as a standing rule to check on
+   EVERY future survey run for this category, not a one-time
+   correction."
+
+ISSUE 27e — REDUNDANT TRADE-OFF PAIR
+   Found: Segment 2, Q6 ("Which one of these would you least give up
+   in a running shoe?") and Segment 3, Q6 ("If you had to give up one
+   thing to get a lower price, what would it be?") test the same
+   underlying sacrifice/trade-off construct from mirrored directions —
+   one asks what's most protected, the other asks what's given up for
+   a discount — with overlapping attributes (cushioning technology,
+   brand, durability) appearing in both option sets.
+   FIX PROMPT TO SEND:
+   "Compare Segment 2 Q6 and Segment 3 Q6 for genuine construct
+   difference before finalizing. If both measure 'what would you
+   sacrifice for a lower price,' keep only one — ideally the framing
+   that ties most directly to a pricing/positioning decision — and
+   remove the other, or make the analytical difference between them
+   explicit in the question wording itself."
+
+ISSUE 27f — PERSONA SET CHANGED BETWEEN SURVEY RUNS FOR THE SAME
+CATEGORY AND REGION
+   Found: An earlier Running Shoes (China) survey generation defined
+   four personas: Performance-Focused Runners, Value-Oriented Joggers,
+   Comfort-Driven Walkers, Style-Led Owners. This new generation, same
+   category and region, defines a DIFFERENT fourth persona entirely:
+   High-Frequency Performance Runners, Value-Driven Durability Buyers,
+   Comfort-Led Recreational Runners, Eco-Conscious Committed Runners —
+   swapping out the style/fashion-driven segment for a
+   sustainability-driven one. Section 25e's fix (persona names must be
+   fixed per-category) only addressed consistency WITHIN one document;
+   it did not address consistency ACROSS regenerations of the same
+   category+region combination.
+   FIX PROMPT TO SEND:
+   "When a category+region combination has been surveyed before (e.g.
+   'Running Shoes, China'), reuse the SAME four persona names and
+   definitions from the prior generation rather than inventing a new
+   set. If personas are being deliberately revised, that should be an
+   explicit, called-out decision — not an incidental difference between
+   runs. Persona sets are a segmentation scheme a business may track
+   over time; changing them silently between generations of the same
+   market breaks comparability. Store the approved persona set per
+   category+region combination and reuse it on every subsequent
+   generation for that same combination."
+
+ISSUE 27g — SOFT ARTIFACT RECURRENCE: ONE MULTI-SELECT STILL SUMS TO
+EXACTLY 100%
+   Found: Segment 2, Q2 (multi-select, "where do you usually look for
+   information before buying") sums to exactly 100.0%, while five other
+   multi-select questions in the same survey correctly exceed 100%
+   (ranging from 150% to 260%). This is the same soft artifact flagged
+   before (Issue 26i in the prior generation) — it occurs less often
+   this time (1 of 6 multi-selects vs. roughly half before) but is not
+   fully eliminated.
+   FIX PROMPT TO SEND (reinforced from Issue 26i):
+   "Continue applying the independent-probability check to every
+   multi-select question's generated percentages. This survey shows
+   the fix is partially working — most multi-select totals now
+   correctly exceed 100% — but at least one question per survey is
+   still landing at exactly 100%, suggesting the underlying generation
+   logic intermittently reverts to single-select-style constrained
+   percentages for a subset of multi-select questions. Investigate why
+   this happens inconsistently rather than only checking for its
+   presence after the fact."
+
+====================================================================
+28. RE-CHECK RESULTS — 3rd Running Shoes Generation (China),
+JSON FORMAT WITH FULL BACKEND METADATA
+This generation ships in a much richer JSON format than the prior two
+(includes funnel position, beat tagging, a segmentation scoring model,
+and self-reported generation metadata). This self-reported metadata is
+itself one of the most important findings below — treat it as
+authoritative, since it comes from the generator's own admission, not
+external inference.
+====================================================================
+
+CONFIRMED FIXED (no further action needed):
+- Product-anchoring (Issue 27a) — Q1 is now "How many pairs of running
+  shoes do you currently own?", explicitly tagged
+  beatCanonical: "category_entry" and funnelPosition: 1. The survey
+  now opens on the product itself, not the activity.
+- No real brand/retailer names anywhere in the file (Issue 27b/27c) —
+  scanned every option and question text; channels are described
+  generically ("Online specialist running retailer," "Mass
+  merchandise or discount store") with no named companies.
+- Currency fully consistent in CNY (¥) throughout, including the spend
+  question and income profiling — no USD reversion anywhere (Issue 27
+  from the 2nd generation is fully resolved here).
+- No malformed "Select all that apply" punctuation.
+- Multi-select percentage integrity is now fully correct: all three
+  multi-select questions (q14, q15, q20) sum to 333%, 141%, and 270%
+  respectively — genuine independent-probability variation, no more
+  suspicious exact-100% ties (Issue 27g is now fully resolved, not
+  just improved).
+- All 31 questions' percentage math checks out exactly (every
+  single-choice question sums to 100.0%).
+
+*** MOST IMPORTANT FINDING — THE GENERATOR'S OWN SELF-REPORT ***
+ISSUE 28a — THE FILE ADMITS IT SHIPPED INCOMPLETE
+   Found: The survey's own metadata contains this warning, verbatim:
+     "warnings": [
+       "Tab 'consumer_profile' under target: 6/8.",
+       "Tab 'buying_behavior' under target: 7/8.",
+       "Tab 'satisfaction_future_intent' under target: 6/8.",
+       "Revision cap reached (6) — shipped best-effort with remaining
+        issues."
+     ]
+   This is not an inferred defect — it is the generator directly
+   stating that it hit an internal revision limit (6 revisions) and
+   shipped the survey anyway, with three of its five sections falling
+   short of their own internal target question count (target
+   appears to be 8 per section; actual delivered was 6, 7, and 6).
+   This most likely explains several of the issues below: the
+   generator probably identified and removed duplicate/non-
+   discriminating questions during revision, hit its revision cap
+   before backfilling those sections with replacement questions, and
+   shipped the shortened result rather than continuing to a clean pass.
+   FIX PROMPT TO SEND:
+   "Treat a 'revision cap reached, shipped best-effort' warning as a
+   hard stop condition, not a soft warning to log and ignore — a
+   survey should not be marked ready for review, let alone sent to a
+   manager, while carrying this warning. When the revision cap is
+   about to be hit with sections still under target, prioritize
+   finishing content completeness (hitting each section's target
+   question count with genuinely new, non-duplicate questions) over
+   additional polish passes on sections that are already at target.
+   Surface this warning prominently in whatever human-facing summary
+   accompanies the file, rather than only in nested backend metadata —
+   a reviewer should not have to read backend JSON to discover the
+   survey shipped incomplete."
+
+ISSUE 28b — OFF-CATEGORY QUESTION RECURRED FOR THE THIRD GENERATION
+IN A ROW
+   Found: Q5 ("What is the main reason you run?" — train for races /
+   stay fit / manage stress / socialize / save money on commuting) is
+   the same defect flagged in Section 26 (Issue 26c) and again in
+   Section 27 (Issue 27d) across two prior generations of this exact
+   category+region combination. It has now appeared unchanged a third
+   time.
+   FIX PROMPT TO SEND:
+   "This exact fix has now been requested three times across three
+   generations of 'Running Shoes, China' and has not persisted once.
+   Do not treat this as a one-off correction — add an explicit
+   automated check that scans every question for category-relevance
+   before finalizing: if a question could be asked identically in an
+   unrelated survey about the general ACTIVITY rather than the
+   PRODUCT (e.g. 'why do you run' fits a fitness/exercise survey, not
+   a footwear survey), flag and rewrite or remove it. This check must
+   run as a standing validation step on every generation, not rely on
+   the fix being remembered from a prior conversation."
+
+ISSUE 28c — GENUINE DUPLICATE SURVIVED THE DEDUP PASS, CONFIRMED BY
+THE SYSTEM'S OWN SCORING DATA
+   Found: Q16 ("How confident are you that you can find running shoes
+   that fit you well?") and Q17 ("How often do you have trouble
+   finding running shoes that fit your feet?") measure the identical
+   underlying construct — fit-finding difficulty — framed as a
+   confidence scale versus a frequency-of-trouble scale. The survey's
+   own metadata field "nonDiscriminatingQuestions" already lists BOTH
+   q16 and q17 as contributing no segmentation signal. Since neither
+   question helps the survey's stated purpose (identifying which
+   behavioral segment a respondent belongs to) AND they duplicate each
+   other's content, this is a confirmed, low-risk removal: cutting one
+   loses no analytical value.
+   Additional context: the metadata notes "13 scoring weight(s)
+   removed: they scored questions that were dropped as duplicates
+   before publication" — confirming a dedup pass DID run and did
+   remove some duplicates, but missed this pair.
+   FIX PROMPT TO SEND:
+   "Cross-reference the redundancy check against the
+   nonDiscriminatingQuestions list before finalizing: if two questions
+   both appear on that list AND test a similar construct, this is a
+   high-confidence duplicate candidate — prioritize checking these
+   pairs specifically, since they have no segmentation value to lose.
+   Merge Q16 and Q17 into one question (recommend keeping the
+   frequency-of-trouble framing, as it produces a more concrete,
+   specific finding than a confidence self-rating), and use the freed
+   question slot to help close the section-count shortfalls noted in
+   Issue 28a."
+
+ISSUE 28d — PERSONA SET CHANGED AGAIN: THIRD DIFFERENT VERSION ACROSS
+THREE GENERATIONS
+   Found: Confirmed recurrence of Issue 27f, now with a third data
+   point:
+     Generation 1: Performance-Focused Runners / Value-Oriented
+       Joggers / Comfort-Driven Walkers / Style-Led Owners
+     Generation 2: High-Frequency Performance Runners / Value-Driven
+       Durability Buyers / Comfort-Led Recreational Runners /
+       Eco-Conscious Committed Runners
+     Generation 3 (this file): Performance-Focused Runners /
+       Value-Driven Versatile Buyers / Style-Led Casual Wearers /
+       Sustainability-Conscious Consumers
+   Every generation of the SAME category+region combination has
+   produced a different four-persona segmentation scheme. This is no
+   longer an isolated incident — it is a confirmed, repeating pattern
+   across three independent runs.
+   FIX PROMPT TO SEND (escalated from Issue 27f — this is now a
+   confirmed pattern, not a single occurrence):
+   "This has now recurred in 3 consecutive generations of the same
+   category+region combination. The persona-persistence rule from
+   Issue 27f must be implemented as a hard constraint, not a soft
+   guideline: before generating personas for any category+region
+   combination, check whether an approved persona set already exists
+   for that exact combination. If one exists, REUSE it exactly —
+   do not regenerate personas from scratch on every run. Persona
+   generation should only happen once per category+region combination,
+   with all subsequent generations treating that set as fixed input,
+   not a creative decision to be remade."
+
+ISSUE 28e — INTERNAL METADATA REFERENCES A PERSONA THAT DOESN'T EXIST
+   Found: The "storyline_notes" field states: "Included a dedicated
+   beat on sustainability credentials because the regional market
+   shows medium environmental awareness and the persona set includes
+   an Eco-Conscious Urbanite." No persona named "Eco-Conscious
+   Urbanite" exists anywhere in this survey's actual defined persona
+   list (the closest is "Sustainability-Conscious Consumers"). This
+   reads like leftover text from a different persona-naming pass that
+   was never reconciled with the final persona definitions.
+   FIX PROMPT TO SEND:
+   "Any internal note or rationale that references a persona name must
+   be validated against the actual final persona list before the
+   survey is finalized — treat this as a simple string-match check:
+   every persona name mentioned anywhere in metadata (storyline notes,
+   rationale text, design notes) must exactly match one of the
+   officially defined persona names. A mismatch indicates stale text
+   left over from an earlier draft and must be corrected or removed."
+
+ISSUE 28f — DESIGN-RATIONALE NOTE CONTRADICTS THE ACTUAL QUESTION
+BUILT
+   Found: "storyline_notes" states: "Kept price paid in relative terms
+   (low/mid/premium) to remain valid across all Asia Pacific
+   countries." But the actual Q12 uses concrete CNY-denominated bands
+   (Under ¥200, ¥200 to ¥399, etc.), not relative low/mid/premium
+   terms. The note describes a design decision that does not match
+   what was actually implemented. (The implemented version is
+   arguably better for a single-country survey — this is a
+   documentation-accuracy issue, not a quality issue with Q12 itself.)
+   FIX PROMPT TO SEND:
+   "Design-rationale notes must describe what was actually built, not
+   a decision inherited from a shared template that was later
+   overridden. After finalizing each question, check whether any
+   design note referencing that question's format still accurately
+   describes it — if the question was customized away from a shared
+   template default (e.g. relative price bands generalized across
+   regions, replaced with concrete region-specific bands), update or
+   remove the stale rationale note rather than leaving it to describe
+   a decision that was reversed."
+
+ISSUE 28g — REGIONAL DATA STRUCTURE NEVER USES THE ACTUAL REGION NAME
+   Found: Every question's "dataByRegion" object uses only the keys
+   "global" and "asia-pacific" — never "china," despite this being a
+   single-country China survey throughout every other part of the
+   document. This confirms the survey is generated from a shared,
+   multi-country Asia-Pacific data template with only surface-level
+   China customization applied on top (title, currency symbol), rather
+   than a genuinely dedicated per-country data structure.
+   FIX PROMPT TO SEND:
+   "When a survey is scoped to a single country (not a multi-country
+   regional rollup), the regional data-keying structure should use
+   that country's own key (e.g. 'china'), not a generic 'asia-pacific'
+   placeholder inherited from a shared template. This is lower priority
+   than the content-level issues above since it is a backend data-model
+   concern rather than something the end reader sees directly, but it
+   should be corrected so future single-country surveys are not
+   silently sharing undifferentiated regional data."
+
+ISSUE 28h — SOFT NOTE: HIGH SHARE OF NON-DISCRIMINATING QUESTIONS
+   Found: 12 of the 27 non-profiling questions (44%) are listed in the
+   survey's own metadata as "non-discriminating" — meaning they don't
+   help classify respondents into the 4 behavioral segments, which is
+   this survey's explicitly stated purpose. Some of these are
+   legitimate context/market-sizing questions worth keeping regardless
+   (e.g. "how many pairs do you own" is useful data even if it doesn't
+   predict persona) — this is not a hard violation, but combined with
+   Issue 28a (three sections already under their target question
+   count), it's worth reviewing whether some non-discriminating slots
+   could be replaced with questions that both serve the segmentation
+   purpose AND close the section shortfalls.
+   FIX PROMPT TO SEND:
+   "When a section is under its target question count (per Issue 28a)
+   and also contains non-discriminating questions that could be
+   replaced, prioritize replacing a non-discriminating question with a
+   new one that both fits the section's topic AND contributes
+   segmentation signal, rather than simply adding a new question
+   alongside the existing non-discriminating ones. This keeps survey
+   length efficient relative to the stated segmentation purpose."
+
+====================================================================
+29. SYNTHESIS — COMPARISON AGAINST AN INDEPENDENTLY-BUILT REFERENCE
+EXAMPLE (India Skincare)
+====================================================================
+
+29a. NEW RULE ADOPTED — MONETARY QUESTIONS MUST STATE THEIR TIME/UNIT
+   ADOPT AS STANDING RULE: "Every question asking about money must make
+   clear whether the amount is a one-time price, a per-purchase spend,
+   or a recurring spend over a stated period (e.g. 'per month,' 'last
+   year,' 'for a single [product]'). Never leave the time unit
+   ambiguous — a spend question with no stated period is not
+   answerable consistently across respondents."
+
+29b. NEW RULE ADOPTED — AVOID DEFAULT TIMEFRAME SCAFFOLDING
+   ADOPT AS STANDING RULE: "Do not prepend a timeframe qualifier to a
+   question by default. Only include one when the question would
+   otherwise be genuinely ambiguous. Test: if removing the timeframe
+   phrase doesn't change what's being asked, remove it."
+
+29c. CONFIRMED DEFECT IN THE EXTERNAL EXAMPLE — IT VIOLATES ITS OWN
+STATED RULE
+   Mixed-dimension answer options (Defect 9a) must be caught by an
+   automated per-question check, not left to a stated rule. Extract
+   the implied dimension of each option (time, occasion, reason,
+   product type, method, etc.) and confirm all options in a question
+   share the same dimension before finalizing.
+
+29d. RULE CLARIFICATION — PRODUCT-ANCHORING IS CATEGORY-DEPENDENT
+   CLARIFIED RULE: apply the strict "must open with a product-specific
+   question" check (Issue 27a) only to categories where the activity
+   exists independently of the product (running shoes, fitness
+   trackers). For categories where the activity IS the product
+   (skincare, cosmetics, supplements), an opening usage-frequency
+   question is already correctly anchored.
+
+29e. CONFIRMED GOOD PRACTICES — worth preserving
+   - Region-authentic monetary formatting (e.g. "lakh" for Indian
+     income bands).
+   - Avoiding ranking-type questions entirely rather than risking the
+     fake-ranking-percentage defect.
+
+====================================================================
+30. RE-CHECK RESULTS — 4th Running Shoes Generation (China)
+====================================================================
+
+CONFIRMED FIXED:
+- Recurring off-category question ("What is the main reason you
+  run?") is gone — Issue 28b fixed.
+- Persona set identical to the immediately prior generation — first
+  confirmed case of persistence holding across two consecutive runs.
+- No brand names anywhere in the document.
+- No malformed "Select all that apply" punctuation.
+- Structure reconciliation correct.
+
+STILL OPEN:
+- Revision cap reached (6) again — consumer_profile shortfall got
+  WORSE (5/8 vs 6/8 prior run).
+- q14 vs q16 (fit-finding confidence vs frequency) — the tool's own
+  diagnostic identifies this pair as duplicate for the THIRD
+  consecutive generation and ships both anyway. Self-diagnosis with
+  no enforced fix is escalated: "known duplicate identified by
+  internal validation" must be a hard blocker on shipping.
+
+NEW ISSUES:
+
+ISSUE 30a — PHANTOM PERSONA NAME IN CUSTOMER-FACING REPORT TEXT
+   "Performance-Focused Runners and HEALTH-FOCUSED BUYERS are more
+   critical of cushioning" — no such persona exists. More serious than
+   28e because this is in RENDERED takeaway text, not backend
+   metadata. The persona-name validation check must run against every
+   piece of customer-facing text (100% of rendered text), not just
+   internal planning notes.
+
+ISSUE 30b — TWO PRICE QUESTIONS TEST THE SAME THING WITH INCOMPATIBLE
+BANDS
+   "How much do you usually pay" (Under ¥300/¥300-599/¥600-899/
+   ¥900-1199/¥1200+) vs "what you expect to pay" (Under ¥200/¥200-399/
+   ¥400-599/¥600-799/¥800+) — same price construct, mismatched bands,
+   impossible to reconcile in analysis. Any two monetary questions
+   about the same product/purchase must use the SAME band boundaries,
+   or be merged if they test the same construct with no distinct
+   purpose.
+
+ISSUE 30c — UNNECESSARILY INDIRECT QUESTION WORDING
+   "How would you describe what you expect to pay for a good pair of
+   running shoes?" should collapse to "How much would you expect to
+   pay for a good pair of running shoes?" — same throat-clearing-wrapper
+   fix as filler removal, applied to indirect monetary phrasing.
+
+====================================================================
+END OF ADDENDUM — Sections 25-30 appended to the master file. Section
+numbering and CHECK numbering (36-37) continue directly from the
+master file's existing Section 24 and Check 35. Sections 27-30 add no
+new CHECK numbers — they re-verify existing checks and raise new
+issues folded into checks in this and future revisions.
+====================================================================

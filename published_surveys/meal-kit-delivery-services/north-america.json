@@ -1,0 +1,2609 @@
+{
+  "surveyDefinition": {
+    "title": "Meal Kit Delivery Services — consumer survey (North America)",
+    "category": "Meal Kit Delivery Services",
+    "region": "North America",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on meal kit usage patterns, purchase and subscription behaviour, and the motivations driving their choice of meal kit service.",
+    "segments": [
+      {
+        "id": "convenience_driven_households",
+        "name": "Convenience-Driven Households",
+        "description": "Order meal kits primarily to save time and reduce the mental load of meal planning. They value quick preparation, minimal cleanup, and reliable delivery. They are less interested in culinary exploration and more in getting dinner on the table efficiently."
+      },
+      {
+        "id": "culinary_adventurers",
+        "name": "Culinary Adventurers",
+        "description": "Use meal kits to explore new cuisines, learn cooking techniques, and access specialty ingredients. They are motivated by recipe novelty, flavour complexity, and the experience of cooking. They are less price-sensitive and more willing to try premium or seasonal menus."
+      },
+      {
+        "id": "diet_focused_users",
+        "name": "Diet-Focused Users",
+        "description": "Select meal kits that align with specific dietary needs or health goals, such as keto, vegan, or low-calorie. They are motivated by nutritional control, portion accuracy, and avoiding unwanted ingredients. They are willing to pay a premium for dietary compliance."
+      },
+      {
+        "id": "budget_conscious_planners",
+        "name": "Budget-Conscious Households",
+        "description": "Use meal kits as a way to manage household food spending and reduce food waste. They are highly price-sensitive, compare cost per meal against grocery shopping, and are motivated by promotions and family-friendly pricing. They are less loyal and more likely to pause or cancel when budgets tighten."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Meal Kit Delivery Services buyers in North America. It asks how people use Meal Kit Delivery Services, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+    "whoseContextThisIs": "Adults in North America who buy or use Meal Kit Delivery Services for personal or household use. Respondents qualify if they: Currently subscribed to or have used a meal kit delivery service in the past 12 months; Primary decision-maker for household food purchases; Aged 18 or older; Responsible for at least some household meal preparation. Excluded: Professional chefs or restaurant owners purchasing for commercial use; Individuals who have never used or considered a meal kit service; Businesses or institutions buying meal kits for employees or events; People under 18.",
+    "whyTheseRespondents": "Household consumers buy meal kits for their own home cooking, pay for them via subscription or one-time purchase, and decide which service to use based on their own preferences. Businesses do not purchase meal kits on behalf of consumers, and there is no meaningful B2B motion in this category.",
+    "respondentBehaviours": [
+      "Value convenience and time savings over grocery shopping and meal planning",
+      "Interested in cooking but lack time or inspiration for meal prep",
+      "Open to trying new recipes and cuisines",
+      "Willing to pay a premium for pre-portioned ingredients and recipe cards",
+      "Often health-conscious or have specific dietary preferences (e.g., vegetarian, keto, low-calorie)",
+      "May be influenced by promotional offers, discounts, or free trials"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 34,
+      "sections": [
+        {
+          "id": "meal_kit_usage_context",
+          "label": "Meal Kit Usage & Household Context",
+          "covers": "Establishes how respondents use meal kits, for whom, and what role they play in the household's weekly meal routine.",
+          "questions": 8
+        },
+        {
+          "id": "subscription_journey",
+          "label": "Subscription Acquisition & Management",
+          "covers": "Covers how respondents started, manage, and pay for their meal kit subscriptions, including triggers, channels, and spend.",
+          "questions": 8
+        },
+        {
+          "id": "meal_kit_requirements",
+          "label": "Meal Kit Requirements & Trade-offs",
+          "covers": "Explores what respondents need from a meal kit service—recipes, customization, packaging, and value—and the trade-offs they are willing to make.",
+          "questions": 7
+        },
+        {
+          "id": "satisfaction_retention",
+          "label": "Satisfaction, Loyalty & Churn Risk",
+          "covers": "Measures overall satisfaction, specific pain points, switching triggers, and future subscription intent.",
+          "questions": 5
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's relationship with meal kits and the context in which they are used, then moves through the purchase and subscription journey, explores product and service requirements, and closes with satisfaction and future intent. This arc allows the study to classify respondents into four behavioural segments based on their motivations and usage patterns."
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Meal Kit Delivery Services in North America — who Currently subscribed to or have used a meal kit delivery service in the past 12 months; Primary decision-maker for household food purchases; Aged 18 or older; Responsible for at least some household meal preparation. The audience is defined as household consumers who make their own food purchasing decisions and are the end users of meal kit services. The focus is on current or recent users to capture real experiences and preferences, with demographic filters to ensure relevance to the typical meal kit market.",
+    "marketSegment": "Meal Kit Delivery Services",
+    "region": "North America",
+    "inclusionCriteria": [
+      "Currently subscribed to or have used a meal kit delivery service in the past 12 months",
+      "Primary decision-maker for household food purchases",
+      "Aged 18 or older",
+      "Responsible for at least some household meal preparation"
+    ],
+    "behaviors": [
+      "Value convenience and time savings over grocery shopping and meal planning",
+      "Interested in cooking but lack time or inspiration for meal prep",
+      "Open to trying new recipes and cuisines",
+      "Willing to pay a premium for pre-portioned ingredients and recipe cards",
+      "Often health-conscious or have specific dietary preferences (e.g., vegetarian, keto, low-calorie)",
+      "May be influenced by promotional offers, discounts, or free trials"
+    ],
+    "exclusions": [
+      "Professional chefs or restaurant owners purchasing for commercial use",
+      "Individuals who have never used or considered a meal kit service",
+      "Businesses or institutions buying meal kits for employees or events",
+      "People under 18"
+    ],
+    "contextDemographics": {
+      "age": "25-55",
+      "income": "Middle to upper-middle income (household income $50k+ in developed markets)",
+      "household": "Singles, couples, and families with children; urban and suburban dwellers",
+      "education": "College-educated or higher",
+      "geography": "Primarily North America, Europe, Australia, and other developed markets with delivery infrastructure"
+    },
+    "assumptions": [
+      "The category is primarily consumer-driven with no significant B2B motion",
+      "Meal kit services are purchased by individuals for personal household use",
+      "The market is global but concentrated in developed countries with delivery infrastructure"
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Meal Kit Delivery Services",
+  "slug": "meal-kit-delivery-services",
+  "region": "north-america",
+  "frontend": {
+    "sections": [
+      {
+        "id": "meal_kit_usage_context",
+        "label": "Meal Kit Usage & Household Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "In the last 30 days, how many meal kit delivery services did you order from?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4 or more"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "1",
+                "value": 68.0
+              },
+              {
+                "label": "2",
+                "value": 22.0
+              },
+              {
+                "label": "3",
+                "value": 7.0
+              },
+              {
+                "label": "4 or more",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: 1 (68.00%).",
+            "distributionNote": "Convenience-Driven Households and Budget-Conscious Households dominate, with most sticking to a single service.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How would you describe your current meal kit subscription status?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Active subscription, ordering regularly",
+              "Active subscription, but skipping most weeks",
+              "Paused or on hold",
+              "Cancelled, but used in the last 6 months",
+              "Used occasionally without a subscription"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Active subscription, ordering regularly",
+                "value": 42.0
+              },
+              {
+                "label": "Active subscription, but skipping most weeks",
+                "value": 18.0
+              },
+              {
+                "label": "Paused or on hold",
+                "value": 12.0
+              },
+              {
+                "label": "Cancelled, but used in the last 6 months",
+                "value": 15.0
+              },
+              {
+                "label": "Used occasionally without a subscription",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Active subscription, ordering regularly (42.00%).",
+            "distributionNote": "Convenience-Driven Households and Diet-Focused Users keep regular subscriptions.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "On which of these occasions do you typically use meal kits?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Weeknight dinners",
+              "Weekend dinners",
+              "Lunches",
+              "Special occasions or entertaining",
+              "When I'm too tired to plan a meal",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Weeknight dinners",
+                "value": 82.0
+              },
+              {
+                "label": "Weekend dinners",
+                "value": 45.0
+              },
+              {
+                "label": "Lunches",
+                "value": 12.0
+              },
+              {
+                "label": "Special occasions or entertaining",
+                "value": 28.0
+              },
+              {
+                "label": "When I'm too tired to plan a meal",
+                "value": 65.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Weeknight dinners (82.00%).",
+            "distributionNote": "Convenience-Driven Households drive the high weeknight and 'too tired to plan' rates.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "usage_occasion",
+            "beatTitle": "Meal occasions and household context",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "Which situations led you to order a meal kit in the last 30 days?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "A busy weeknight when I had no time to plan dinner",
+              "Wanting to cook something new or exciting",
+              "Trying to eat healthier or meet a dietary goal",
+              "Avoiding a trip to the grocery store",
+              "Cooking together with my partner or family as an activity",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "A busy weeknight when I had no time to plan dinner",
+                "value": 75.0
+              },
+              {
+                "label": "Wanting to cook something new or exciting",
+                "value": 48.0
+              },
+              {
+                "label": "Trying to eat healthier or meet a dietary goal",
+                "value": 40.0
+              },
+              {
+                "label": "Avoiding a trip to the grocery store",
+                "value": 55.0
+              },
+              {
+                "label": "Cooking together with my partner or family as an activity",
+                "value": 30.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: A busy weeknight when I had no time to plan dinner (75.00%).",
+            "distributionNote": "Convenience-Driven and Budget-Conscious Households dominate the time-saving and grocery-avoidance triggers.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "usage_occasion",
+            "beatTitle": "Meal occasions and household context",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In a typical week, how many meals from meal kits does your household eat?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "1-2 meals",
+              "3-4 meals",
+              "5-6 meals",
+              "7 or more meals"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1-2 meals",
+                "value": 58.0
+              },
+              {
+                "label": "3-4 meals",
+                "value": 30.0
+              },
+              {
+                "label": "5-6 meals",
+                "value": 8.0
+              },
+              {
+                "label": "7 or more meals",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: 1-2 meals (58.00%).",
+            "distributionNote": "Most households use meal kits as a supplement, with Convenience-Driven and Budget-Conscious Households keeping usage low; a smaller share of Diet-Focused Users and larger families order more meals per week.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "usage_frequency",
+            "beatTitle": "Ordering frequency and volume",
+            "beatCanonical": "usage_frequency"
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Who in your household usually cooks the meal kit meals?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I do",
+              "My partner or spouse",
+              "We cook together",
+              "My children",
+              "Another household member",
+              "Other"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "I do",
+                "value": 55.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 15.0
+              },
+              {
+                "label": "We cook together",
+                "value": 25.0
+              },
+              {
+                "label": "My children",
+                "value": 2.0
+              },
+              {
+                "label": "Another household member",
+                "value": 2.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: I do (55.00%).",
+            "distributionNote": "The primary decision-maker is also the primary cook.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "household_role",
+            "beatTitle": "Decision-making and preparation roles",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Who in your household decides which meal kits to order?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I do",
+              "My partner or spouse does",
+              "We decide together",
+              "My children do",
+              "Someone else in the household",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I do",
+                "value": 52.0
+              },
+              {
+                "label": "My partner or spouse does",
+                "value": 14.0
+              },
+              {
+                "label": "We decide together",
+                "value": 30.0
+              },
+              {
+                "label": "My children do",
+                "value": 2.0
+              },
+              {
+                "label": "Someone else in the household",
+                "value": 1.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: I do (52.00%).",
+            "distributionNote": "Individual decision-making is common among Convenience-Driven and Diet-Focused Users.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "household_role",
+            "beatTitle": "Decision-making and preparation roles",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "How would you describe the main reason you use meal kit delivery services?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "To get dinner on the table fast with no planning",
+              "To cook more varied and interesting meals",
+              "To stick to a specific diet or health goal",
+              "To reduce food waste and buy only what I need",
+              "To cook together as a fun activity",
+              "To avoid grocery shopping",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "To get dinner on the table fast with no planning",
+                "value": 40.0
+              },
+              {
+                "label": "To cook more varied and interesting meals",
+                "value": 22.0
+              },
+              {
+                "label": "To stick to a specific diet or health goal",
+                "value": 15.0
+              },
+              {
+                "label": "To reduce food waste and buy only what I need",
+                "value": 10.0
+              },
+              {
+                "label": "To cook together as a fun activity",
+                "value": 7.0
+              },
+              {
+                "label": "To avoid grocery shopping",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: To get dinner on the table fast with no planning (40.00%).",
+            "distributionNote": "Convenience-Driven Households are the largest segment and anchor the top reason.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "need_state",
+            "beatTitle": "Motivations for using meal kits",
+            "beatCanonical": "need_state"
+          }
+        ]
+      },
+      {
+        "id": "subscription_journey",
+        "label": "Subscription Acquisition & Management",
+        "questions": [
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "What was the main reason you placed your most recent meal kit order?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I didn't have time to plan meals",
+              "I wanted to try a new recipe",
+              "I wanted to eat healthier",
+              "I was tired of the same meals",
+              "I had a discount or promotion",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I didn't have time to plan meals",
+                "value": 34.0
+              },
+              {
+                "label": "I wanted to try a new recipe",
+                "value": 22.0
+              },
+              {
+                "label": "I wanted to eat healthier",
+                "value": 17.0
+              },
+              {
+                "label": "I was tired of the same meals",
+                "value": 15.0
+              },
+              {
+                "label": "I had a discount or promotion",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I didn't have time to plan meals (34.00%).",
+            "distributionNote": "",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "What prompted you to start your current meal kit subscription?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "A promotional offer or discount",
+              "A recommendation from friends or family",
+              "I wanted to reduce food waste at home",
+              "I was tired of deciding what to cook each night",
+              "I wanted to try new recipes or cuisines",
+              "A specific dietary need or health goal",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "A promotional offer or discount",
+                "value": 28.0
+              },
+              {
+                "label": "A recommendation from friends or family",
+                "value": 18.0
+              },
+              {
+                "label": "I wanted to reduce food waste at home",
+                "value": 8.0
+              },
+              {
+                "label": "I was tired of deciding what to cook each night",
+                "value": 22.0
+              },
+              {
+                "label": "I wanted to try new recipes or cuisines",
+                "value": 16.0
+              },
+              {
+                "label": "A specific dietary need or health goal",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: A promotional offer or discount (28.00%).",
+            "distributionNote": "Promotional offers and decision fatigue are the top triggers, reflecting the mix of Budget-Conscious and Convenience-Driven Households.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "In the last 30 days, how many separate meal kit deliveries did you receive?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1",
+                "value": 15.0
+              },
+              {
+                "label": "2",
+                "value": 28.0
+              },
+              {
+                "label": "3",
+                "value": 25.0
+              },
+              {
+                "label": "4",
+                "value": 18.0
+              },
+              {
+                "label": "5 or more",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: 2 (28.00%).",
+            "distributionNote": "",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What starts a purchase",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Where did you first hear about the meal kit service you most recently ordered from?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Social media",
+              "Search engine",
+              "Online ad",
+              "Friend or family member",
+              "TV or podcast ad",
+              "Other"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Social media",
+                "value": 32.0
+              },
+              {
+                "label": "Search engine",
+                "value": 18.0
+              },
+              {
+                "label": "Online ad",
+                "value": 15.0
+              },
+              {
+                "label": "Friend or family member",
+                "value": 20.0
+              },
+              {
+                "label": "TV or podcast ad",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: Social media (32.00%).",
+            "distributionNote": "Social media and word-of-mouth are the leading discovery channels, with digital ads also playing a significant role.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "discovery",
+            "beatTitle": "Discovery and information",
+            "beatCanonical": "discovery"
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "Before subscribing, where did you compare meal kit options?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Search engines",
+              "Social media",
+              "Friends or family",
+              "Coupon or deal websites",
+              "The meal kit companies' own websites",
+              "Online reviews or forums",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Search engines",
+                "value": 45.0
+              },
+              {
+                "label": "Social media",
+                "value": 38.0
+              },
+              {
+                "label": "Friends or family",
+                "value": 35.0
+              },
+              {
+                "label": "Coupon or deal websites",
+                "value": 22.0
+              },
+              {
+                "label": "The meal kit companies' own websites",
+                "value": 55.0
+              },
+              {
+                "label": "Online reviews or forums",
+                "value": 40.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: The meal kit companies' own websites (55.00%).",
+            "distributionNote": "Consumers compare across multiple channels, with company websites and online reviews being the most common touchpoints.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "discovery",
+            "beatTitle": "Discovery and information",
+            "beatCanonical": "discovery",
+            "multiSelect": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "How do you usually place your meal kit orders?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Through the service's mobile app",
+              "Through the service's website",
+              "By phone or email",
+              "Through a third-party delivery platform",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Through the service's mobile app",
+                "value": 48.0
+              },
+              {
+                "label": "Through the service's website",
+                "value": 45.0
+              },
+              {
+                "label": "By phone or email",
+                "value": 2.0
+              },
+              {
+                "label": "Through a third-party delivery platform",
+                "value": 3.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Through the service's mobile app (48.00%).",
+            "distributionNote": "",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "How much did your household spend on meal kit deliveries in the last 30 days?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $50",
+              "$50 to $99",
+              "$100 to $199",
+              "$200 to $299",
+              "$300 or more"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Under $50",
+                "value": 12.0
+              },
+              {
+                "label": "$50 to $99",
+                "value": 28.0
+              },
+              {
+                "label": "$100 to $199",
+                "value": 34.0
+              },
+              {
+                "label": "$200 to $299",
+                "value": 16.0
+              },
+              {
+                "label": "$300 or more",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: $100 to $199 (34.00%).",
+            "distributionNote": "",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which factors most influenced your choice of meal kit service for your last order?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Price and value for money",
+              "Recipe variety and cuisine types",
+              "Dietary options (e.g., keto, vegan, gluten-free)",
+              "Convenience of delivery and scheduling",
+              "Quality and freshness of ingredients",
+              "Packaging and environmental impact",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Price and value for money",
+                "value": 22.0
+              },
+              {
+                "label": "Recipe variety and cuisine types",
+                "value": 24.0
+              },
+              {
+                "label": "Dietary options (e.g., keto, vegan, gluten-free)",
+                "value": 15.0
+              },
+              {
+                "label": "Convenience of delivery and scheduling",
+                "value": 20.0
+              },
+              {
+                "label": "Quality and freshness of ingredients",
+                "value": 13.0
+              },
+              {
+                "label": "Packaging and environmental impact",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Recipe variety and cuisine types (24.00%).",
+            "distributionNote": "Recipe variety and price are the top factors, with convenience and dietary options also strongly represented across segments.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "channel",
+            "beatTitle": "Where they buy",
+            "beatCanonical": "channel"
+          }
+        ]
+      },
+      {
+        "id": "meal_kit_requirements",
+        "label": "Meal Kit Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which must a meal kit meet for you to order it again?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Dinner on the table in 30 minutes or less",
+              "No ingredient goes to waste",
+              "Kids will eat it without a fight",
+              "Fits my carb or macro targets",
+              "No hidden gluten or allergens",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Dinner on the table in 30 minutes or less",
+                "value": 38.0
+              },
+              {
+                "label": "No ingredient goes to waste",
+                "value": 22.0
+              },
+              {
+                "label": "Kids will eat it without a fight",
+                "value": 18.0
+              },
+              {
+                "label": "Fits my carb or macro targets",
+                "value": 12.0
+              },
+              {
+                "label": "No hidden gluten or allergens",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Dinner on the table in 30 minutes or less (38.00%).",
+            "distributionNote": "Convenience-Driven Households dominate, with Budget-Conscious and Diet-Focused segments also contributing.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which meal kit features would you be willing to pay extra for?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Premium or seasonal ingredients",
+              "Specialty diets (keto, vegan, gluten-free)",
+              "Exact portion sizes for my household",
+              "Minimal or recyclable packaging",
+              "Chef-designed or restaurant-quality recipes",
+              "Faster or more flexible delivery",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Premium or seasonal ingredients",
+                "value": 24.0
+              },
+              {
+                "label": "Specialty diets (keto, vegan, gluten-free)",
+                "value": 18.0
+              },
+              {
+                "label": "Exact portion sizes for my household",
+                "value": 12.0
+              },
+              {
+                "label": "Minimal or recyclable packaging",
+                "value": 14.0
+              },
+              {
+                "label": "Chef-designed or restaurant-quality recipes",
+                "value": 16.0
+              },
+              {
+                "label": "Faster or more flexible delivery",
+                "value": 10.0
+              },
+              {
+                "label": "None of these",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Premium or seasonal ingredients (24.00%).",
+            "distributionNote": "Convenience-Driven Households are willing to pay for flexibility.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "How do you judge that a meal kit is fresh before cooking it?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Vegetables look crisp and unwilted",
+              "Meat or fish is cold and tightly sealed",
+              "Herbs still smell fragrant",
+              "Use-by date is several days away",
+              "I don't check freshness",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Vegetables look crisp and unwilted",
+                "value": 45.0
+              },
+              {
+                "label": "Meat or fish is cold and tightly sealed",
+                "value": 25.0
+              },
+              {
+                "label": "Herbs still smell fragrant",
+                "value": 10.0
+              },
+              {
+                "label": "Use-by date is several days away",
+                "value": 12.0
+              },
+              {
+                "label": "I don't check freshness",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Vegetables look crisp and unwilted (45.00%).",
+            "distributionNote": "Convenience-Driven Households and Budget-Conscious Households prioritize visual freshness; Diet-Focused Users also check dates.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues"
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "What would make you trust a meal kit more?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Clear use-by dates on every ingredient",
+              "Ingredients that look and feel fresh when they arrive",
+              "Packaging that keeps cold items cold until delivery",
+              "Labels showing where the ingredients come from",
+              "Recipes that list exact nutrition and allergen info",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Clear use-by dates on every ingredient",
+                "value": 28.0
+              },
+              {
+                "label": "Ingredients that look and feel fresh when they arrive",
+                "value": 32.0
+              },
+              {
+                "label": "Packaging that keeps cold items cold until delivery",
+                "value": 18.0
+              },
+              {
+                "label": "Labels showing where the ingredients come from",
+                "value": 10.0
+              },
+              {
+                "label": "Recipes that list exact nutrition and allergen info",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Ingredients that look and feel fresh when they arrive (32.00%).",
+            "distributionNote": "Convenience-Driven Households and Budget-Conscious Households focus on freshness cues; Diet-Focused Users value nutrition/allergen transparency.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "multiSelect": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which meal kit format suits your household best?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Two-person kits with smaller portions",
+              "Family-size kits for four or more",
+              "Single-serving kits for one",
+              "No-measuring, chef-style kits",
+              "No-prep, ready-to-cook trays",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Two-person kits with smaller portions",
+                "value": 25.0
+              },
+              {
+                "label": "Family-size kits for four or more",
+                "value": 30.0
+              },
+              {
+                "label": "Single-serving kits for one",
+                "value": 15.0
+              },
+              {
+                "label": "No-measuring, chef-style kits",
+                "value": 12.0
+              },
+              {
+                "label": "No-prep, ready-to-cook trays",
+                "value": 14.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Family-size kits for four or more (30.00%).",
+            "distributionNote": "Budget-Conscious and Convenience-Driven Households favor family-size; single-serving appeals to smaller households.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and packaging",
+            "beatCanonical": "format_packaging"
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Which claims would make you more likely to choose a meal kit?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Certified organic ingredients",
+              "Locally sourced produce",
+              "Plastic-free or recyclable packaging",
+              "Carbon-neutral delivery",
+              "No antibiotics or hormones in meat",
+              "None of these matter to me"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Certified organic ingredients",
+                "value": 24.0
+              },
+              {
+                "label": "Locally sourced produce",
+                "value": 31.0
+              },
+              {
+                "label": "Plastic-free or recyclable packaging",
+                "value": 28.0
+              },
+              {
+                "label": "Carbon-neutral delivery",
+                "value": 12.0
+              },
+              {
+                "label": "No antibiotics or hormones in meat",
+                "value": 18.0
+              },
+              {
+                "label": "None of these matter to me",
+                "value": 22.0
+              }
+            ],
+            "insight": "Top response: Locally sourced produce (31.00%).",
+            "distributionNote": "Convenience-Driven Households split between packaging concerns and indifference. Carbon-neutral delivery is a niche priority.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and packaging",
+            "beatCanonical": "format_packaging",
+            "multiSelect": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "If a meal kit can't have everything, which would you give up first?",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "options": [
+              "Organic ingredients",
+              "New or adventurous recipes",
+              "Minimal packaging",
+              "Lowest possible price",
+              "Fast delivery",
+              "Large portion sizes"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Organic ingredients",
+                "value": 20.0
+              },
+              {
+                "label": "New or adventurous recipes",
+                "value": 18.0
+              },
+              {
+                "label": "Minimal packaging",
+                "value": 15.0
+              },
+              {
+                "label": "Lowest possible price",
+                "value": 22.0
+              },
+              {
+                "label": "Fast delivery",
+                "value": 15.0
+              },
+              {
+                "label": "Large portion sizes",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Lowest possible price (22.00%).",
+            "distributionNote": "Budget-Conscious Households rank price as most valuable; Convenience-Driven Households sacrifice organic and packaging before speed.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "format_packaging",
+            "beatTitle": "Format and packaging",
+            "beatCanonical": "format_packaging",
+            "ordered": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_retention",
+        "label": "Satisfaction, Loyalty & Churn Risk",
+        "questions": [
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "Which aspects of your meal kit service most satisfies you?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "The meals taste better than what I'd make myself",
+              "It gets a healthy dinner on the table quickly",
+              "It introduces me to new foods and cuisines",
+              "It reduces my household's food waste",
+              "It fits my dietary needs (e.g., keto, vegan, gluten-free)",
+              "It's a fun activity to cook together",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "The meals taste better than what I'd make myself",
+                "value": 18.0
+              },
+              {
+                "label": "It gets a healthy dinner on the table quickly",
+                "value": 30.0
+              },
+              {
+                "label": "It introduces me to new foods and cuisines",
+                "value": 16.0
+              },
+              {
+                "label": "It reduces my household's food waste",
+                "value": 8.0
+              },
+              {
+                "label": "It fits my dietary needs (e.g., keto, vegan, gluten-free)",
+                "value": 14.0
+              },
+              {
+                "label": "It's a fun activity to cook together",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: It gets a healthy dinner on the table quickly (30.00%).",
+            "distributionNote": "Convenience-Driven Households dominate the quick-dinner response.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers"
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "What would most likely make you cancel a meal kit subscription?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Cost per meal becomes too high",
+              "I get bored with the recipes",
+              "The service doesn't fit my dietary needs",
+              "Too much packaging waste",
+              "I can't skip or pause weeks easily",
+              "I can find cheaper meals at the grocery store",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Cost per meal becomes too high",
+                "value": 28.0
+              },
+              {
+                "label": "I get bored with the recipes",
+                "value": 18.0
+              },
+              {
+                "label": "The service doesn't fit my dietary needs",
+                "value": 12.0
+              },
+              {
+                "label": "Too much packaging waste",
+                "value": 10.0
+              },
+              {
+                "label": "I can't skip or pause weeks easily",
+                "value": 14.0
+              },
+              {
+                "label": "I can find cheaper meals at the grocery store",
+                "value": 13.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Cost per meal becomes too high (28.00%).",
+            "distributionNote": "Budget-Conscious Households drive the cost-related cancellations; Convenience-Driven Households are sensitive to flexibility.",
+            "N": 350,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction"
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "In the last 30 days, which of these frustrations have you had with meal kits?",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "options": [
+              "Too much plastic in the packaging",
+              "Recipes were too complicated",
+              "Portions were too large or too small",
+              "Too many leftovers",
+              "The kids didn't like the meals",
+              "The app was clunky or hard to use",
+              "Delivery windows were too narrow",
+              "I couldn't easily skip a week",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Too much plastic in the packaging",
+                "value": 32.0
+              },
+              {
+                "label": "Recipes were too complicated",
+                "value": 12.0
+              },
+              {
+                "label": "Portions were too large or too small",
+                "value": 18.0
+              },
+              {
+                "label": "Too many leftovers",
+                "value": 14.0
+              },
+              {
+                "label": "The kids didn't like the meals",
+                "value": 10.0
+              },
+              {
+                "label": "The app was clunky or hard to use",
+                "value": 15.0
+              },
+              {
+                "label": "Delivery windows were too narrow",
+                "value": 22.0
+              },
+              {
+                "label": "I couldn't easily skip a week",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Too much plastic in the packaging (32.00%).",
+            "distributionNote": "Budget-Conscious Households report portion and leftover issues.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "What would most likely make you switch to a different meal kit service?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "A lower price per serving",
+              "More meals that fit my dietary needs",
+              "Less plastic and more recyclable packaging",
+              "More flexible delivery windows",
+              "More interesting or diverse recipes",
+              "Better portion sizes for my household",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "A lower price per serving",
+                "value": 26.0
+              },
+              {
+                "label": "More meals that fit my dietary needs",
+                "value": 16.0
+              },
+              {
+                "label": "Less plastic and more recyclable packaging",
+                "value": 12.0
+              },
+              {
+                "label": "More flexible delivery windows",
+                "value": 14.0
+              },
+              {
+                "label": "More interesting or diverse recipes",
+                "value": 18.0
+              },
+              {
+                "label": "Better portion sizes for my household",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: A lower price per serving (26.00%).",
+            "distributionNote": "Budget-Conscious Households lead the price-switch driver; Convenience-Driven Households value flexibility.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction"
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "In the next 6 months, how do you expect your use of meal kit delivery services to change?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I plan to order more often",
+              "I plan to order about the same",
+              "I plan to order less often",
+              "I plan to stop ordering altogether"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I plan to order more often",
+                "value": 18.0
+              },
+              {
+                "label": "I plan to order about the same",
+                "value": 46.0
+              },
+              {
+                "label": "I plan to order less often",
+                "value": 24.0
+              },
+              {
+                "label": "I plan to stop ordering altogether",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: I plan to order about the same (46.00%).",
+            "distributionNote": "Budget-Conscious and some Diet-Focused Users plan to reduce or stop.",
+            "N": 350,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction"
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "Which age group are you in?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 8.0
+              },
+              {
+                "label": "25-34",
+                "value": 22.0
+              },
+              {
+                "label": "35-44",
+                "value": 26.0
+              },
+              {
+                "label": "45-54",
+                "value": 20.0
+              },
+              {
+                "label": "55-64",
+                "value": 15.0
+              },
+              {
+                "label": "65 or older",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: 35-44 (26.00%).",
+            "distributionNote": "Age distribution reflects the persona mix: heavy concentration in family-forming and mid-career ages, with a notable senior segment.",
+            "N": 350,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "age_band"
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "What is your gender?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 52.0
+              },
+              {
+                "label": "Man",
+                "value": 46.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (52.00%).",
+            "distributionNote": "The panel skews slightly female, consistent with primary household meal decision-makers across Convenience-Driven and Diet-Focused segments.",
+            "N": 350,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "gender"
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "Who else lives in your household?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 15.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 28.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 35.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (35.00%).",
+            "distributionNote": "Households with children are the largest group, driven by Convenience-Driven Households seeking quick family meals; partner-only and other-adult households also substantial.",
+            "N": 350,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "household_composition"
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "What was your total household income before tax last year?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 5.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 12.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 20.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 22.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 23.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 15.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $100,000 - $149,999 (23.00%).",
+            "distributionNote": "",
+            "N": 350,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "income_band"
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "How likely are you to recommend the Meal Kit Delivery Services you currently use to a friend or colleague?",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 1.0
+              },
+              {
+                "label": "2",
+                "value": 2.0
+              },
+              {
+                "label": "3",
+                "value": 3.0
+              },
+              {
+                "label": "4",
+                "value": 4.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 10.0
+              },
+              {
+                "label": "7",
+                "value": 18.0
+              },
+              {
+                "label": "8",
+                "value": 24.0
+              },
+              {
+                "label": "9",
+                "value": 14.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 8 (24.00%).",
+            "distributionNote": "Recommendation likelihood is moderately positive, with a peak at 8, reflecting satisfied Convenience-Driven and Diet-Focused users, while a notable minority remains neutral or dissatisfied.",
+            "N": 350,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "advocacy_nps"
+          },
+          {
+            "id": "q34",
+            "qNum": 34,
+            "question": "Overall, how satisfied are you with the Meal Kit Delivery Services you currently use?",
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 4.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 12.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 24.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "",
+            "N": 350,
+            "questionLayer": "profiling",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "overall_satisfaction_profile",
+            "ordered": true
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 34,
+    "counts_by_tab": {
+      "meal_kit_usage_context": 8,
+      "subscription_journey": 8,
+      "meal_kit_requirements": 7,
+      "satisfaction_retention": 5,
+      "profiling": 6
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": true,
+    "warnings": [
+      "Grounding is thin — most answers are inferred, not data-backed.",
+      "Tab 'meal_kit_requirements' under target: 7/8.",
+      "Tab 'satisfaction_retention' under target: 5/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "meal_kit_usage_context": [
+        {
+          "beatId": "category_entry",
+          "title": "Category relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "usage_occasion",
+          "title": "Meal occasions and household context",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "usage_frequency",
+          "title": "Ordering frequency and volume",
+          "canonical": "usage_frequency",
+          "order": 3
+        },
+        {
+          "beatId": "household_role",
+          "title": "Decision-making and preparation roles",
+          "canonical": "household_role",
+          "order": 4
+        },
+        {
+          "beatId": "need_state",
+          "title": "Motivations for using meal kits",
+          "canonical": "need_state",
+          "order": 5
+        }
+      ],
+      "subscription_journey": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "What starts a purchase",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery",
+          "title": "Discovery and information",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "channel",
+          "title": "Where they buy",
+          "canonical": "channel",
+          "order": 3
+        }
+      ],
+      "meal_kit_requirements": [
+        {
+          "beatId": "must_haves",
+          "title": "Must-have attributes",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Quality cues",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "format_packaging",
+          "title": "Format and packaging",
+          "canonical": "format_packaging",
+          "order": 3
+        }
+      ],
+      "satisfaction_retention": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What drives satisfaction",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        }
+      ]
+    },
+    "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on meal kit usage patterns, purchase and subscription behaviour, and the motivations driving their choice of meal kit service.",
+    "segmentation_lens": "Jobs-to-be-done combined with usage intensity: the primary axis is what the meal kit is hired to do (save time, enable cooking exploration, meet dietary needs, or manage budget), because in this category the same product serves fundamentally different needs that drive distinct usage and purchase pat",
+    "must_cover_topics": [
+      "subscription management",
+      "delivery frequency",
+      "recipe variety",
+      "portion sizes",
+      "packaging waste",
+      "cost per meal"
+    ],
+    "segments": [
+      {
+        "segment_id": "convenience_driven_households",
+        "name": "Convenience-Driven Households",
+        "description": "Order meal kits primarily to save time and reduce the mental load of meal planning. They value quick preparation, minimal cleanup, and reliable delivery. They are less interested in culinary exploration and more in getting dinner on the table efficiently.",
+        "hypothesis": "They will show high frequency of ordering, low tolerance for delivery delays or complex recipes, and will prioritise speed and ease over variety or novelty."
+      },
+      {
+        "segment_id": "culinary_adventurers",
+        "name": "Culinary Adventurers Consumers",
+        "description": "Use meal kits to explore new cuisines, learn cooking techniques, and access specialty ingredients. They are motivated by recipe novelty, flavour complexity, and the experience of cooking. They are less price-sensitive and more willing to try premium or seasonal menus.",
+        "hypothesis": "They will rate recipe variety and uniqueness as top drivers, show willingness to pay more for premium ingredients, and will be more likely to try new services or add-on offerings."
+      },
+      {
+        "segment_id": "diet_focused_users",
+        "name": "Diet-Focused Users",
+        "description": "Select meal kits that align with specific dietary needs or health goals, such as keto, vegan, or low-calorie. They are motivated by nutritional control, portion accuracy, and avoiding unwanted ingredients. They are willing to pay a premium for dietary compliance.",
+        "hypothesis": "They will prioritise dietary tags, nutritional information, and ingredient sourcing, and will be more likely to churn if options do not meet their dietary requirements."
+      },
+      {
+        "segment_id": "budget_conscious_planners",
+        "name": "Budget-Conscious Households",
+        "description": "Use meal kits as a way to manage household food spending and reduce food waste. They are highly price-sensitive, compare cost per meal against grocery shopping, and are motivated by promotions and family-friendly pricing. They are less loyal and more likely to pause or cancel when budgets tighten.",
+        "hypothesis": "They will be the most responsive to discounts and value offers, will rate cost per meal as a top driver, and will show higher churn risk when prices rise or promotions lapse."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "convenience_driven_households",
+          "name": "Convenience-Driven Households",
+          "description": "Order meal kits primarily to save time and reduce the mental load of meal planning. They value quick preparation, minimal cleanup, and reliable delivery. They are less interested in culinary exploration and more in getting dinner on the table efficiently.",
+          "hypothesis": "They will show high frequency of ordering, low tolerance for delivery delays or complex recipes, and will prioritise speed and ease over variety or novelty."
+        },
+        {
+          "segment_id": "culinary_adventurers",
+          "name": "Culinary Adventurers Consumers",
+          "description": "Use meal kits to explore new cuisines, learn cooking techniques, and access specialty ingredients. They are motivated by recipe novelty, flavour complexity, and the experience of cooking. They are less price-sensitive and more willing to try premium or seasonal menus.",
+          "hypothesis": "They will rate recipe variety and uniqueness as top drivers, show willingness to pay more for premium ingredients, and will be more likely to try new services or add-on offerings."
+        },
+        {
+          "segment_id": "diet_focused_users",
+          "name": "Diet-Focused Users",
+          "description": "Select meal kits that align with specific dietary needs or health goals, such as keto, vegan, or low-calorie. They are motivated by nutritional control, portion accuracy, and avoiding unwanted ingredients. They are willing to pay a premium for dietary compliance.",
+          "hypothesis": "They will prioritise dietary tags, nutritional information, and ingredient sourcing, and will be more likely to churn if options do not meet their dietary requirements."
+        },
+        {
+          "segment_id": "budget_conscious_planners",
+          "name": "Budget-Conscious Households",
+          "description": "Use meal kits as a way to manage household food spending and reduce food waste. They are highly price-sensitive, compare cost per meal against grocery shopping, and are motivated by promotions and family-friendly pricing. They are less loyal and more likely to pause or cancel when budgets tighten.",
+          "hypothesis": "They will be the most responsive to discounts and value offers, will rate cost per meal as a top driver, and will show higher churn risk when prices rise or promotions lapse."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q4",
+          "question_text": "Which of these situations led you to order a meal kit in the last 30 days?",
+          "option_label": "A busy weeknight when I had no time to plan dinner",
+          "segment_id": "convenience_driven_households",
+          "points": 3
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which of these situations led you to order a meal kit in the last 30 days?",
+          "option_label": "Wanting to cook something new or exciting",
+          "segment_id": "culinary_adventurers",
+          "points": 3
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which of these situations led you to order a meal kit in the last 30 days?",
+          "option_label": "Trying to eat healthier or meet a dietary goal",
+          "segment_id": "diet_focused_users",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Which of these best describes the main reason you use meal kit delivery services?",
+          "option_label": "To get dinner on the table fast with no planning",
+          "segment_id": "convenience_driven_households",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Which of these best describes the main reason you use meal kit delivery services?",
+          "option_label": "To cook more varied and interesting meals",
+          "segment_id": "culinary_adventurers",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Which of these best describes the main reason you use meal kit delivery services?",
+          "option_label": "To stick to a specific diet or health goal",
+          "segment_id": "diet_focused_users",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Which of these best describes the main reason you use meal kit delivery services?",
+          "option_label": "To reduce food waste and buy only what I need",
+          "segment_id": "budget_conscious_planners",
+          "points": 3
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What was the main reason you placed your most recent meal kit order?",
+          "option_label": "I didn't have time to plan meals",
+          "segment_id": "convenience_driven_households",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What was the main reason you placed your most recent meal kit order?",
+          "option_label": "I wanted to try a new recipe",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What was the main reason you placed your most recent meal kit order?",
+          "option_label": "I wanted to eat healthier",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What was the main reason you placed your most recent meal kit order?",
+          "option_label": "I had a discount or promotion",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What prompted you to start your current meal kit subscription?",
+          "option_label": "A promotional offer or discount",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What prompted you to start your current meal kit subscription?",
+          "option_label": "I wanted to reduce food waste at home",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What prompted you to start your current meal kit subscription?",
+          "option_label": "I was tired of deciding what to cook each night",
+          "segment_id": "convenience_driven_households",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What prompted you to start your current meal kit subscription?",
+          "option_label": "I wanted to try new recipes or cuisines",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What prompted you to start your current meal kit subscription?",
+          "option_label": "A specific dietary need or health goal",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these factors most influenced your choice of meal kit service for your last order?",
+          "option_label": "Price and value for money",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these factors most influenced your choice of meal kit service for your last order?",
+          "option_label": "Recipe variety and cuisine types",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these factors most influenced your choice of meal kit service for your last order?",
+          "option_label": "Dietary options (e.g., keto, vegan, gluten-free)",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "Which of these factors most influenced your choice of meal kit service for your last order?",
+          "option_label": "Convenience of delivery and scheduling",
+          "segment_id": "convenience_driven_households",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these must a meal kit meet for you to order it again?",
+          "option_label": "Dinner on the table in 30 minutes or less",
+          "segment_id": "convenience_driven_households",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these must a meal kit meet for you to order it again?",
+          "option_label": "No ingredient goes to waste",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these must a meal kit meet for you to order it again?",
+          "option_label": "Fits my carb or macro targets",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these must a meal kit meet for you to order it again?",
+          "option_label": "No hidden gluten or allergens",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these meal kit features would you be willing to pay extra for?",
+          "option_label": "Premium or seasonal ingredients",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these meal kit features would you be willing to pay extra for?",
+          "option_label": "Specialty diets (keto, vegan, gluten-free)",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these meal kit features would you be willing to pay extra for?",
+          "option_label": "Exact portion sizes for my household",
+          "segment_id": "budget_conscious_planners",
+          "points": 1
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these meal kit features would you be willing to pay extra for?",
+          "option_label": "Chef-designed or restaurant-quality recipes",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these meal kit features would you be willing to pay extra for?",
+          "option_label": "Faster or more flexible delivery",
+          "segment_id": "convenience_driven_households",
+          "points": 1
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which meal kit format suits your household best?",
+          "option_label": "Family-size kits for four or more",
+          "segment_id": "budget_conscious_planners",
+          "points": 1
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which meal kit format suits your household best?",
+          "option_label": "No-measuring, chef-style kits",
+          "segment_id": "culinary_adventurers",
+          "points": 1
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which meal kit format suits your household best?",
+          "option_label": "No-prep, ready-to-cook trays",
+          "segment_id": "convenience_driven_households",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your meal kit service most satisfies you?",
+          "option_label": "It gets a healthy dinner on the table quickly",
+          "segment_id": "convenience_driven_households",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your meal kit service most satisfies you?",
+          "option_label": "It introduces me to new foods and cuisines",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your meal kit service most satisfies you?",
+          "option_label": "It reduces my household's food waste",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your meal kit service most satisfies you?",
+          "option_label": "It fits my dietary needs (e.g., keto, vegan, gluten-free)",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these would most likely make you cancel a meal kit subscription?",
+          "option_label": "Cost per meal becomes too high",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these would most likely make you cancel a meal kit subscription?",
+          "option_label": "I get bored with the recipes",
+          "segment_id": "culinary_adventurers",
+          "points": 1
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these would most likely make you cancel a meal kit subscription?",
+          "option_label": "The service doesn't fit my dietary needs",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these would most likely make you cancel a meal kit subscription?",
+          "option_label": "I can't skip or pause weeks easily",
+          "segment_id": "convenience_driven_households",
+          "points": 1
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these would most likely make you cancel a meal kit subscription?",
+          "option_label": "I can find cheaper meals at the grocery store",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these would most likely make you switch to a different meal kit service?",
+          "option_label": "A lower price per serving",
+          "segment_id": "budget_conscious_planners",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these would most likely make you switch to a different meal kit service?",
+          "option_label": "More meals that fit my dietary needs",
+          "segment_id": "diet_focused_users",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these would most likely make you switch to a different meal kit service?",
+          "option_label": "More flexible delivery windows",
+          "segment_id": "convenience_driven_households",
+          "points": 1
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these would most likely make you switch to a different meal kit service?",
+          "option_label": "More interesting or diverse recipes",
+          "segment_id": "culinary_adventurers",
+          "points": 2
+        }
+      ],
+      "tie_break": "Question cp8 (main reason for using meal kits) is the most direct behavioural self-report and should settle ties because it explicitly asks respondents to choose the single primary motivation that aligns with each segment's core driver.",
+      "notes": [
+        "All four segments have at least two scoring options and at least one 3-point option.",
+        "Only options that clearly discriminate were scored; many neutral options were left unscored.",
+        "Some options like 'I was tired of the same meals' were not scored because they could apply to both culinary adventurers and convenience seekers.",
+        "Budget-conscious planners are identified by price sensitivity, food waste reduction, and promotion-seeking behaviours."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "nonDiscriminatingQuestions": [
+      {
+        "id": "q1",
+        "qNum": 1,
+        "question": "In the last 30 days, how many meal kit delivery services did you order from?"
+      },
+      {
+        "id": "q2",
+        "qNum": 2,
+        "question": "How would you describe your current meal kit subscription status?"
+      },
+      {
+        "id": "q3",
+        "qNum": 3,
+        "question": "On which of these occasions do you typically use meal kits?"
+      },
+      {
+        "id": "q5",
+        "qNum": 5,
+        "question": "In a typical week, how many meals from meal kits does your household eat?"
+      },
+      {
+        "id": "q6",
+        "qNum": 6,
+        "question": "Who in your household usually cooks the meal kit meals?"
+      },
+      {
+        "id": "q7",
+        "qNum": 7,
+        "question": "Who in your household decides which meal kits to order?"
+      },
+      {
+        "id": "q11",
+        "qNum": 11,
+        "question": "In the last 30 days, how many separate meal kit deliveries did you receive?"
+      },
+      {
+        "id": "q12",
+        "qNum": 12,
+        "question": "Where did you first hear about the meal kit service you most recently ordered from?"
+      },
+      {
+        "id": "q13",
+        "qNum": 13,
+        "question": "Before subscribing, where did you compare meal kit options?"
+      },
+      {
+        "id": "q14",
+        "qNum": 14,
+        "question": "How do you usually place your meal kit orders?"
+      },
+      {
+        "id": "q15",
+        "qNum": 15,
+        "question": "How much did your household spend on meal kit deliveries in the last 30 days?"
+      },
+      {
+        "id": "q19",
+        "qNum": 19,
+        "question": "How do you judge that a meal kit is fresh before cooking it?"
+      },
+      {
+        "id": "q20",
+        "qNum": 20,
+        "question": "What would make you trust a meal kit more?"
+      },
+      {
+        "id": "q22",
+        "qNum": 22,
+        "question": "Which claims would make you more likely to choose a meal kit?"
+      },
+      {
+        "id": "q23",
+        "qNum": 23,
+        "question": "If a meal kit can't have everything, which would you give up first?"
+      },
+      {
+        "id": "q26",
+        "qNum": 26,
+        "question": "In the last 30 days, which of these frustrations have you had with meal kits?"
+      },
+      {
+        "id": "q28",
+        "qNum": 28,
+        "question": "In the next 6 months, how do you expect your use of meal kit delivery services to change?"
+      }
+    ],
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing the respondent's relationship with meal kits and the context in which they are used, then moves through the purchase and subscription journey, explores product and service requirements, and closes with satisfaction and future intent. This arc allows the study to classify respondents into four behavioural segments based on their motivations and usage patterns.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "Added a dedicated beat on subscription management (skip, pause, cancel) because meal kits are a subscription service and this behaviour is central to churn risk.",
+      "Included a beat on dietary and sustainability credentials to capture the needs of diet-focused and eco-conscious users, which are key differentiators in this category.",
+      "Emphasised delivery frequency and flexibility in the purchase behaviour section, as this is a key operational aspect of meal kits in North America.",
+      "The satisfaction section includes a beat on switching triggers specific to meal kits (menu fatigue, price increases, dietary gaps) to support churn prediction.",
+      "The segments are designed to be separable by questions on motivations (need_state), decision drivers, trade-offs, and future intent."
+    ],
+    "classification_reason": "Household consumers buy meal kits for their own home cooking, pay for them via subscription or one-time purchase, and decide which service to use based on their own preferences. Businesses do not purchase meal kits on behalf of consumers, and there is no meaningful B2B motion in this category.",
+    "generated_at": "2026-08-04T13:41:38.646916+00:00",
+    "current_date": "2026-08-04",
+    "sample_size": 2500,
+    "N": 350,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "lollipop",
+      "radar",
+      "stacked",
+      "vbar",
+      "waffle"
+    ]
+  }
+}

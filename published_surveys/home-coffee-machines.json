@@ -1,0 +1,2432 @@
+{
+  "frontend": {
+    "sections": [
+      {
+        "id": "brewing_context",
+        "label": "Brewing Context & Daily Ritual",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "Who in your household usually brews coffee at home?",
+            "options": [
+              "I do",
+              "My spouse or partner does",
+              "Another household member does",
+              "We share it equally",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I do",
+                "value": 58.0
+              },
+              {
+                "label": "My spouse or partner does",
+                "value": 18.0
+              },
+              {
+                "label": "Another household member does",
+                "value": 6.0
+              },
+              {
+                "label": "We share it equally",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I do (58.00%).",
+            "distributionNote": "Daily Ritualists and Convenience-Driven Users dominate, with the primary brewer being the respondent in most households; Family Volume Brewers contribute to shared brewing.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "home_brewing_status",
+            "beatTitle": "Home brewing status",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How involved are you in deciding which home coffee machine to buy?",
+            "options": [
+              "I make the decision on my own",
+              "I have the main say but others weigh in",
+              "I share the decision equally with someone else",
+              "Someone else decides, but I use the machine",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I make the decision on my own",
+                "value": 45.0
+              },
+              {
+                "label": "I have the main say but others weigh in",
+                "value": 28.0
+              },
+              {
+                "label": "I share the decision equally with someone else",
+                "value": 18.0
+              },
+              {
+                "label": "Someone else decides, but I use the machine",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I make the decision on my own (45.00%).",
+            "distributionNote": "Daily Ritualists and Specialty Users are highly involved in the purchase decision; Convenience-Driven Users and Occasional Users are more likely to defer.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "home_brewing_status",
+            "beatTitle": "Home brewing status",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "When do you most often use your home coffee machine?",
+            "options": [
+              "First thing in the morning, before work or errands",
+              "During breakfast or a meal",
+              "Mid-morning or afternoon break",
+              "After dinner or in the evening",
+              "When I have guests over",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "First thing in the morning, before work or errands",
+                "value": 55.0
+              },
+              {
+                "label": "During breakfast or a meal",
+                "value": 20.0
+              },
+              {
+                "label": "Mid-morning or afternoon break",
+                "value": 10.0
+              },
+              {
+                "label": "After dinner or in the evening",
+                "value": 5.0
+              },
+              {
+                "label": "When I have guests over",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: First thing in the morning, before work or errands (55.00%).",
+            "distributionNote": "Daily Ritualists and Convenience-Driven Users anchor the morning peak.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "brew_occasions",
+            "beatTitle": "Brew occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "Besides your morning cup, which of these occasions do you brew coffee for?",
+            "options": [
+              "Afternoon pick-me-up",
+              "After dinner",
+              "When entertaining guests",
+              "When working from home",
+              "On weekend mornings",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Afternoon pick-me-up",
+                "value": 35.0
+              },
+              {
+                "label": "After dinner",
+                "value": 15.0
+              },
+              {
+                "label": "When entertaining guests",
+                "value": 25.0
+              },
+              {
+                "label": "When working from home",
+                "value": 40.0
+              },
+              {
+                "label": "On weekend mornings",
+                "value": 55.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: On weekend mornings (55.00%).",
+            "distributionNote": "Weekend mornings and working-from-home are common across segments.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "brew_occasions",
+            "beatTitle": "Brew occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "How many cups of coffee do you brew at home on a typical day?",
+            "options": [
+              "1 cup",
+              "2 cups",
+              "3-4 cups",
+              "5 or more cups"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "1 cup",
+                "value": 20.0
+              },
+              {
+                "label": "2 cups",
+                "value": 32.0
+              },
+              {
+                "label": "3-4 cups",
+                "value": 30.0
+              },
+              {
+                "label": "5 or more cups",
+                "value": 18.0
+              }
+            ],
+            "insight": "Top response: 2 cups (32.00%).",
+            "distributionNote": "Daily Ritualists and Family Volume Brewers push higher cup counts, while Convenience-Driven and Occasional Users skew to one or two cups.",
+            "questionLayer": "full",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "brew_frequency",
+            "beatTitle": "Brew frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How many people in your household regularly drink the coffee you brew at home?",
+            "options": [
+              "Just me",
+              "2 people",
+              "3 people",
+              "4 or more people"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Just me",
+                "value": 30.0
+              },
+              {
+                "label": "2 people",
+                "value": 35.0
+              },
+              {
+                "label": "3 people",
+                "value": 18.0
+              },
+              {
+                "label": "4 or more people",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: 2 people (35.00%).",
+            "distributionNote": "Convenience-Driven and Occasional Users skew to single-person households; Family Volume Brewers and Daily Ritualists drive multi-person households.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "household_brewing",
+            "beatTitle": "Household brewing",
+            "beatCanonical": "household_role",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "How would you describe the role coffee plays in your daily routine?",
+            "options": [
+              "A necessary morning ritual to start the day",
+              "A quick caffeine fix to keep me going",
+              "A hobby I enjoy experimenting with",
+              "A way to bring the family together",
+              "An occasional treat for weekends or guests",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "A necessary morning ritual to start the day",
+                "value": 40.0
+              },
+              {
+                "label": "A quick caffeine fix to keep me going",
+                "value": 25.0
+              },
+              {
+                "label": "A hobby I enjoy experimenting with",
+                "value": 15.0
+              },
+              {
+                "label": "A way to bring the family together",
+                "value": 10.0
+              },
+              {
+                "label": "An occasional treat for weekends or guests",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: A necessary morning ritual to start the day (40.00%).",
+            "distributionNote": "Daily Ritualists dominate the morning ritual; Convenience-Driven Users align with quick caffeine; Specialty Users drive the hobby segment.",
+            "questionLayer": "full",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "coffee_role",
+            "beatTitle": "Role of coffee in daily life",
+            "beatCanonical": "need_state",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "machine_acquisition",
+        "label": "Machine Acquisition & Purchase Drivers",
+        "questions": [
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "What prompted you to buy your most recent home coffee machine?",
+            "options": [
+              "Old machine stopped working",
+              "Wanted to save money on takeaway coffee",
+              "Wanted milk-based drinks at the touch of a button",
+              "Wanted more variety in brew types",
+              "Moved to a new home or kitchen",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Old machine stopped working",
+                "value": 24.0
+              },
+              {
+                "label": "Wanted to save money on takeaway coffee",
+                "value": 27.0
+              },
+              {
+                "label": "Wanted milk-based drinks at the touch of a button",
+                "value": 20.0
+              },
+              {
+                "label": "Wanted more variety in brew types",
+                "value": 15.0
+              },
+              {
+                "label": "Moved to a new home or kitchen",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Wanted to save money on takeaway coffee (27.00%).",
+            "distributionNote": "Daily Ritualists and Family Volume Brewers are split between replacement and saving money; Convenience-Driven Users and Specialty Users drive the milk-based and variety motivations.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "Purchase trigger",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "Where did you first learn about the home coffee machine you bought most recently?",
+            "options": [
+              "Online search",
+              "Social media or video",
+              "Friend or family recommendation",
+              "In-store display or salesperson",
+              "Retailer website or app",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Online search",
+                "value": 32.0
+              },
+              {
+                "label": "Social media or video",
+                "value": 18.0
+              },
+              {
+                "label": "Friend or family recommendation",
+                "value": 22.0
+              },
+              {
+                "label": "In-store display or salesperson",
+                "value": 14.0
+              },
+              {
+                "label": "Retailer website or app",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Online search (32.00%).",
+            "distributionNote": "Online search is the top channel across segments, with word-of-mouth strong among Daily Ritualists and Family Volume Brewers; Specialty Users rely more on social media and video.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "research_process",
+            "beatTitle": "Research process",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "How long do you typically keep a home coffee machine before replacing it?",
+            "options": [
+              "Less than 2 years",
+              "2 to 4 years",
+              "5 to 7 years",
+              "8 to 10 years",
+              "More than 10 years"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Less than 2 years",
+                "value": 12.0
+              },
+              {
+                "label": "2 to 4 years",
+                "value": 38.0
+              },
+              {
+                "label": "5 to 7 years",
+                "value": 30.0
+              },
+              {
+                "label": "8 to 10 years",
+                "value": 13.0
+              },
+              {
+                "label": "More than 10 years",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 2 to 4 years (38.00%).",
+            "distributionNote": "Convenience-Driven Users and Occasional Users replace more frequently, while Daily Ritualists and Family Volume Brewers keep machines longer for reliability and value.",
+            "questionLayer": "module",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "purchase_cycle",
+            "beatTitle": "Purchase cycle",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How much did you pay for the home coffee machine you use most often?",
+            "options": [
+              "Under $50",
+              "$50–$99",
+              "$100–$199",
+              "$200–$499",
+              "$500–$999",
+              "$1,000 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $50",
+                "value": 10.0
+              },
+              {
+                "label": "$50–$99",
+                "value": 18.0
+              },
+              {
+                "label": "$100–$199",
+                "value": 26.0
+              },
+              {
+                "label": "$200–$499",
+                "value": 24.0
+              },
+              {
+                "label": "$500–$999",
+                "value": 14.0
+              },
+              {
+                "label": "$1,000 or more",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: $100–$199 (26.00%).",
+            "distributionNote": "",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "spend_on_machine",
+            "beatTitle": "Spend on machine",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Which factors most influenced your choice of home coffee machine?",
+            "options": [
+              "Saving money vs. takeaway coffee",
+              "One-touch milk-based drinks",
+              "Versatility (multiple brew types)",
+              "Style and design appeal",
+              "Compact size for small kitchens",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Saving money vs. takeaway coffee",
+                "value": 25.0
+              },
+              {
+                "label": "One-touch milk-based drinks",
+                "value": 22.0
+              },
+              {
+                "label": "Versatility (multiple brew types)",
+                "value": 20.0
+              },
+              {
+                "label": "Style and design appeal",
+                "value": 15.0
+              },
+              {
+                "label": "Compact size for small kitchens",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Saving money vs. takeaway coffee (25.00%).",
+            "distributionNote": "Saving money is the top driver across segments, but Convenience-Driven Users emphasize one-touch milk drinks, Specialty Users value versatility, and Occasional Users are more design- and space-conscious.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "What type of home coffee machine do you currently use most often?",
+            "options": [
+              "Drip coffee maker",
+              "Single-serve pod machine",
+              "Espresso machine",
+              "Super-automatic espresso machine",
+              "Pour-over or French press",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Drip coffee maker",
+                "value": 28.0
+              },
+              {
+                "label": "Single-serve pod machine",
+                "value": 31.0
+              },
+              {
+                "label": "Espresso machine",
+                "value": 17.0
+              },
+              {
+                "label": "Super-automatic espresso machine",
+                "value": 13.0
+              },
+              {
+                "label": "Pour-over or French press",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Single-serve pod machine (31.00%).",
+            "distributionNote": "Convenience-Driven Users and Daily Ritualists dominate, with pod machines and drip makers most common; Specialty Users account for the espresso and manual segments.",
+            "questionLayer": "module",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "current_machine",
+            "beatTitle": "Current machine type",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "product_requirements",
+        "label": "Machine Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "Which features would you refuse to give up on a home coffee machine?",
+            "options": [
+              "Milk-based drinks at the touch of a button",
+              "Multiple brew types (espresso, drip, etc.)",
+              "Compact size for small kitchens",
+              "Quiet operation",
+              "Fast heat-up time",
+              "None of these are must-haves"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Milk-based drinks at the touch of a button",
+                "value": 42.0
+              },
+              {
+                "label": "Multiple brew types (espresso, drip, etc.)",
+                "value": 38.0
+              },
+              {
+                "label": "Compact size for small kitchens",
+                "value": 27.0
+              },
+              {
+                "label": "Quiet operation",
+                "value": 35.0
+              },
+              {
+                "label": "Fast heat-up time",
+                "value": 30.0
+              },
+              {
+                "label": "None of these are must-haves",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Milk-based drinks at the touch of a button (42.00%).",
+            "distributionNote": "Milk-based drinks and multiple brew types are must-haves for Convenience-Driven and Specialty Users; quiet operation and fast heat-up are important across all segments, especially Daily Ritualists.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "What would you most like a home coffee machine to do better?",
+            "options": [
+              "Heat up faster",
+              "Run more quietly",
+              "Take up less counter space",
+              "Use better materials",
+              "Make more drink types",
+              "Other"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Heat up faster",
+                "value": 18.0
+              },
+              {
+                "label": "Run more quietly",
+                "value": 22.0
+              },
+              {
+                "label": "Take up less counter space",
+                "value": 20.0
+              },
+              {
+                "label": "Use better materials",
+                "value": 24.0
+              },
+              {
+                "label": "Make more drink types",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Use better materials (24.00%).",
+            "distributionNote": "Specialty Users and Convenience-Driven Users prioritize better materials and quieter operation, while Family Volume Brewers and Occasional Users are more concerned with counter space and heat-up time.",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have features",
+            "beatCanonical": "must_haves",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which signals a well-made coffee machine to you?",
+            "options": [
+              "Solid metal or heavy build",
+              "Quiet operation",
+              "Fast heat-up time",
+              "Consistent brew temperature",
+              "Large drip tray",
+              "Compact footprint",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Solid metal or heavy build",
+                "value": 28.0
+              },
+              {
+                "label": "Quiet operation",
+                "value": 20.0
+              },
+              {
+                "label": "Fast heat-up time",
+                "value": 12.0
+              },
+              {
+                "label": "Consistent brew temperature",
+                "value": 18.0
+              },
+              {
+                "label": "Large drip tray",
+                "value": 8.0
+              },
+              {
+                "label": "Compact footprint",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Solid metal or heavy build (28.00%).",
+            "distributionNote": "Specialty Users and Daily Ritualists strongly associate solid build and consistent temperature with quality; Convenience-Driven Users and Family Volume Brewers also value quiet operation and compact size.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which format do you prefer for a home coffee machine?",
+            "options": [
+              "Bean-to-cup with built-in grinder",
+              "Pod or capsule system",
+              "Drip coffee maker with carafe",
+              "Espresso machine with portafilter",
+              "Single-serve pod and drip combo",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Bean-to-cup with built-in grinder",
+                "value": 25.0
+              },
+              {
+                "label": "Pod or capsule system",
+                "value": 20.0
+              },
+              {
+                "label": "Drip coffee maker with carafe",
+                "value": 18.0
+              },
+              {
+                "label": "Espresso machine with portafilter",
+                "value": 15.0
+              },
+              {
+                "label": "Single-serve pod and drip combo",
+                "value": 14.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Bean-to-cup with built-in grinder (25.00%).",
+            "distributionNote": "Specialty Users and Daily Ritualists prefer bean-to-cup and espresso machines; Convenience-Driven Users and Occasional Users lean toward pod systems and combos.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "design_footprint",
+            "beatTitle": "Design and footprint",
+            "beatCanonical": "format_packaging",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which claims would most increase your trust in a home coffee machine?",
+            "options": [
+              "Made with recycled or sustainable materials",
+              "Energy-efficient operation",
+              "Designed for easy repair and long lifespan",
+              "Compatible with compostable or reusable pods",
+              "Carbon-neutral manufacturing",
+              "None of these matter to me"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Made with recycled or sustainable materials",
+                "value": 15.0
+              },
+              {
+                "label": "Energy-efficient operation",
+                "value": 20.0
+              },
+              {
+                "label": "Designed for easy repair and long lifespan",
+                "value": 35.0
+              },
+              {
+                "label": "Compatible with compostable or reusable pods",
+                "value": 12.0
+              },
+              {
+                "label": "Carbon-neutral manufacturing",
+                "value": 5.0
+              },
+              {
+                "label": "None of these matter to me",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Designed for easy repair and long lifespan (35.00%).",
+            "distributionNote": "Daily Ritualists and Family Volume Brewers are most swayed by durability and repairability.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "design_footprint",
+            "beatTitle": "Design and footprint",
+            "beatCanonical": "format_packaging",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "What would you most accept in a home coffee machine?",
+            "options": [
+              "Takes longer to heat up",
+              "Is noisier while brewing",
+              "Takes up more counter space",
+              "Makes slightly worse coffee",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Takes longer to heat up",
+                "value": 12.0
+              },
+              {
+                "label": "Is noisier while brewing",
+                "value": 18.0
+              },
+              {
+                "label": "Takes up more counter space",
+                "value": 15.0
+              },
+              {
+                "label": "Makes slightly worse coffee",
+                "value": 45.0
+              },
+              {
+                "label": "Other",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Makes slightly worse coffee (45.00%).",
+            "distributionNote": "Most segments, especially Specialty Users and Daily Ritualists, are unwilling to compromise on coffee quality; Convenience-Driven Users and Occasional Users are more tolerant of noise and longer heat-up times.",
+            "questionLayer": "module",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "What is the most you would pay for a home coffee machine that meets your needs?",
+            "options": [
+              "Under $100",
+              "$100–$199",
+              "$200–$399",
+              "$400–$699",
+              "$700–$1,199",
+              "$1,200 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $100",
+                "value": 10.0
+              },
+              {
+                "label": "$100–$199",
+                "value": 20.0
+              },
+              {
+                "label": "$200–$399",
+                "value": 30.0
+              },
+              {
+                "label": "$400–$699",
+                "value": 20.0
+              },
+              {
+                "label": "$700–$1,199",
+                "value": 12.0
+              },
+              {
+                "label": "$1,200 or more",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: $200–$399 (30.00%).",
+            "distributionNote": "",
+            "questionLayer": "full",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "value_expectation",
+            "beatTitle": "Value expectation",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which drink types do you brew at home?",
+            "options": [
+              "Espresso or lungo",
+              "Drip or filter coffee",
+              "Milk-based drinks (latte, cappuccino)",
+              "Cold brew or iced coffee",
+              "Capsule or pod coffee",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Espresso or lungo",
+                "value": 48.0
+              },
+              {
+                "label": "Drip or filter coffee",
+                "value": 55.0
+              },
+              {
+                "label": "Milk-based drinks (latte, cappuccino)",
+                "value": 52.0
+              },
+              {
+                "label": "Cold brew or iced coffee",
+                "value": 25.0
+              },
+              {
+                "label": "Capsule or pod coffee",
+                "value": 38.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Drip or filter coffee (55.00%).",
+            "distributionNote": "Daily Ritualists and Family Volume Brewers drive drip and milk-based drinks; Convenience-Driven Users boost pod coffee; Specialty Users and younger segments lift espresso and cold brew.",
+            "questionLayer": "full",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "brew_types",
+            "beatTitle": "Brew types used",
+            "beatCanonical": null,
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_outlook",
+        "label": "Satisfaction & Future Intent",
+        "questions": [
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Which of the following aspects of your home coffee machine are you most satisfied with?",
+            "options": [
+              "Speed of making a drink",
+              "Taste of the coffee",
+              "Ease of cleaning and maintenance",
+              "Noise level during operation",
+              "Design and appearance",
+              "None of these",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Speed of making a drink",
+                "value": 18.0
+              },
+              {
+                "label": "Taste of the coffee",
+                "value": 30.0
+              },
+              {
+                "label": "Ease of cleaning and maintenance",
+                "value": 15.0
+              },
+              {
+                "label": "Noise level during operation",
+                "value": 10.0
+              },
+              {
+                "label": "Design and appearance",
+                "value": 12.0
+              },
+              {
+                "label": "None of these",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Taste of the coffee (30.00%).",
+            "distributionNote": "Taste is the top satisfaction driver for Specialty Users and Daily Ritualists; Convenience-Driven Users value speed and ease of cleaning.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "Satisfaction drivers",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "What would most likely make you replace your home coffee machine sooner than planned?",
+            "options": [
+              "It starts making inconsistent coffee",
+              "It becomes too slow for your morning routine",
+              "It gets too noisy to use comfortably",
+              "It takes up too much counter space",
+              "It breaks down or needs frequent repairs",
+              "None of these would make me replace it sooner",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "It starts making inconsistent coffee",
+                "value": 28.0
+              },
+              {
+                "label": "It becomes too slow for your morning routine",
+                "value": 14.0
+              },
+              {
+                "label": "It gets too noisy to use comfortably",
+                "value": 12.0
+              },
+              {
+                "label": "It takes up too much counter space",
+                "value": 8.0
+              },
+              {
+                "label": "It breaks down or needs frequent repairs",
+                "value": 30.0
+              },
+              {
+                "label": "None of these would make me replace it sooner",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: It breaks down or needs frequent repairs (30.00%).",
+            "distributionNote": "Reliability is the top trigger across segments, especially for Daily Ritualists and Family Volume Brewers; Specialty Users are more sensitive to inconsistent coffee.",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "Which of the following would most likely make you replace your home coffee machine before it breaks?",
+            "options": [
+              "Faster heat-up time",
+              "Quieter operation",
+              "Larger drip tray",
+              "More compact design",
+              "Better build materials",
+              "More versatile brewing options",
+              "None of these",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Faster heat-up time",
+                "value": 18.0
+              },
+              {
+                "label": "Quieter operation",
+                "value": 16.0
+              },
+              {
+                "label": "Larger drip tray",
+                "value": 14.0
+              },
+              {
+                "label": "More compact design",
+                "value": 12.0
+              },
+              {
+                "label": "Better build materials",
+                "value": 20.0
+              },
+              {
+                "label": "More versatile brewing options",
+                "value": 12.0
+              },
+              {
+                "label": "None of these",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Better build materials (20.00%).",
+            "distributionNote": "Better build materials and faster heat-up lead, driven by Daily Ritualists and Specialty Users; Convenience-Driven Users also value quieter operation.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "In the next 12 months, how likely are you to buy another home coffee machine?",
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 25.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 20.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 22.0
+              },
+              {
+                "label": "Very likely",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: Somewhat unlikely (25.00%).",
+            "distributionNote": "Purchase intent is split; many Daily Ritualists and Family Volume Brewers are considering an upgrade, while Occasional Users and budget-focused segments are less likely.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "future_plans",
+            "beatTitle": "Future plans",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 10.0
+              },
+              {
+                "label": "25-34",
+                "value": 25.0
+              },
+              {
+                "label": "35-44",
+                "value": 28.0
+              },
+              {
+                "label": "45-54",
+                "value": 20.0
+              },
+              {
+                "label": "55-64",
+                "value": 12.0
+              },
+              {
+                "label": "65 or older",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: 35-44 (28.00%).",
+            "distributionNote": "Age distribution skews toward 25-44, consistent with family and professional segments; older cohorts are smaller.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 52.0
+              },
+              {
+                "label": "Man",
+                "value": 46.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.5
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 0.5
+              }
+            ],
+            "insight": "Top response: Woman (52.00%).",
+            "distributionNote": "Slight female skew, reflecting household purchasing patterns; small shares for non-binary and prefer-not-to-say.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 30.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 28.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 17.0
+              },
+              {
+                "label": "Other",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: I live with a partner, no children at home (30.00%).",
+            "distributionNote": "Family Volume Brewers and Daily Ritualists drive the share with children; Convenience-Driven and Occasional Users contribute to solo and partner-only households.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 8.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 18.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 24.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 20.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 17.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 10.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (24.00%).",
+            "distributionNote": "Middle-income bands dominate, with a meaningful premium segment from Specialty Users and Design-Oriented buyers.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "How likely are you to recommend the Home Coffee Machines you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 2.0
+              },
+              {
+                "label": "2",
+                "value": 3.0
+              },
+              {
+                "label": "3",
+                "value": 5.0
+              },
+              {
+                "label": "4",
+                "value": 6.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 10.0
+              },
+              {
+                "label": "7",
+                "value": 16.0
+              },
+              {
+                "label": "8",
+                "value": 20.0
+              },
+              {
+                "label": "9",
+                "value": 14.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 8 (20.00%).",
+            "distributionNote": "Positive sentiment is strong overall, with Daily Ritualists and Family Volume Brewers clustering at the top end; a smaller dissatisfied tail reflects value-focused buyers with reliability concerns.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "Overall, how satisfied are you with the Home Coffee Machines you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 4.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 10.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 38.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 30.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (38.00%).",
+            "distributionNote": "Satisfaction skews positive, driven by Daily Ritualists and Specialty Users who are more engaged; dissatisfaction is concentrated among Convenience-Driven and Occasional Users who cite build quality and noise issues.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      }
+    ]
+  },
+  "survey": {
+    "market_segment": "Home Coffee Machines",
+    "region": "Global",
+    "metadata": {
+      "total_questions": 31,
+      "selection": {
+        "mode": "core_plus_module",
+        "source_regions": [
+          "north-america"
+        ],
+        "total_questions": 31,
+        "method": "select_and_blend"
+      },
+      "storyline": {
+        "brewing_context": [
+          {
+            "beatId": "home_brewing_status",
+            "title": "Home brewing status",
+            "canonical": "category_entry",
+            "order": 1
+          },
+          {
+            "beatId": "brew_frequency",
+            "title": "Brew frequency",
+            "canonical": "usage_frequency",
+            "order": 2
+          },
+          {
+            "beatId": "brew_occasions",
+            "title": "Brew occasions",
+            "canonical": "usage_occasion",
+            "order": 3
+          },
+          {
+            "beatId": "household_brewing",
+            "title": "Household brewing",
+            "canonical": "household_role",
+            "order": 4
+          },
+          {
+            "beatId": "coffee_role",
+            "title": "Role of coffee in daily life",
+            "canonical": "need_state",
+            "order": 5
+          }
+        ],
+        "machine_acquisition": [
+          {
+            "beatId": "current_machine",
+            "title": "Current machine type",
+            "canonical": null,
+            "order": 1
+          },
+          {
+            "beatId": "purchase_trigger",
+            "title": "Purchase trigger",
+            "canonical": "purchase_trigger",
+            "order": 2
+          },
+          {
+            "beatId": "research_process",
+            "title": "Research process",
+            "canonical": "discovery",
+            "order": 3
+          },
+          {
+            "beatId": "purchase_channel",
+            "title": "Purchase channel",
+            "canonical": "channel",
+            "order": 4
+          },
+          {
+            "beatId": "purchase_cycle",
+            "title": "Purchase cycle",
+            "canonical": "purchase_cycle",
+            "order": 5
+          },
+          {
+            "beatId": "spend_on_machine",
+            "title": "Spend on machine",
+            "canonical": "spend",
+            "order": 6
+          },
+          {
+            "beatId": "decision_drivers",
+            "title": "Decision drivers",
+            "canonical": "decision_drivers",
+            "order": 7
+          }
+        ],
+        "product_requirements": [
+          {
+            "beatId": "brew_types",
+            "title": "Brew types used",
+            "canonical": null,
+            "order": 1
+          },
+          {
+            "beatId": "must_have_features",
+            "title": "Must-have features",
+            "canonical": "must_haves",
+            "order": 2
+          },
+          {
+            "beatId": "quality_cues",
+            "title": "Quality cues",
+            "canonical": "quality_cues",
+            "order": 3
+          },
+          {
+            "beatId": "design_footprint",
+            "title": "Design and footprint",
+            "canonical": "format_packaging",
+            "order": 4
+          },
+          {
+            "beatId": "tradeoffs",
+            "title": "Trade-offs",
+            "canonical": "tradeoffs",
+            "order": 5
+          },
+          {
+            "beatId": "value_expectation",
+            "title": "Value expectation",
+            "canonical": "value_expectation",
+            "order": 6
+          }
+        ],
+        "satisfaction_outlook": [
+          {
+            "beatId": "overall_satisfaction",
+            "title": "Overall satisfaction",
+            "canonical": "overall_satisfaction",
+            "order": 1
+          },
+          {
+            "beatId": "satisfaction_drivers",
+            "title": "Satisfaction drivers",
+            "canonical": "satisfaction_drivers",
+            "order": 2
+          },
+          {
+            "beatId": "pain_points",
+            "title": "Pain points",
+            "canonical": "friction",
+            "order": 3
+          },
+          {
+            "beatId": "switching_triggers",
+            "title": "Switching triggers",
+            "canonical": "switching",
+            "order": 4
+          },
+          {
+            "beatId": "recommend_intent",
+            "title": "Recommend intent",
+            "canonical": "advocacy",
+            "order": 5
+          },
+          {
+            "beatId": "future_plans",
+            "title": "Future plans",
+            "canonical": "future_use",
+            "order": 6
+          }
+        ]
+      },
+      "storyline_source": "planner",
+      "storyline_summary": "The survey opens by establishing the respondent's home brewing context — frequency, occasions, and household role — then moves through the acquisition journey, from trigger to channel to spend, before probing the specific product requirements and trade-offs that define their ideal machine. It closes with satisfaction, pain points, and future intent, allowing the data to separate the five segments on the basis of their brewing behaviour, purchase drivers, and priorities.",
+      "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on brewing habits, machine type and usage, purchase drivers, and satisfaction with key machine attributes.",
+      "segmentation_lens": "Usage/behavioural combined with jobs-to-be-done: the primary axis is how the machine is used (daily ritual vs. convenience vs. specialty pursuit) and what job it is hired to do (quick caffeine, milk-based drinks, espresso craft, family volume). This combination separates buyers more meaningfully tha",
+      "must_cover_topics": [
+        "Brew types used",
+        "Machine type owned",
+        "Daily brew frequency",
+        "Heat-up time",
+        "Noise level",
+        "Counter space"
+      ],
+      "segments": [
+        {
+          "segment_id": "daily_ritualists",
+          "name": "Daily Ritualists",
+          "description": "Brew multiple cups every day, treat the machine as a central kitchen appliance, and value speed and consistency over experimentation. They are the heaviest users and often own a drip or pod machine.",
+          "hypothesis": "They will report the highest daily frequency, prioritize fast heat-up and quiet operation, and be less willing to trade convenience for specialty features."
+        },
+        {
+          "segment_id": "convenience_driven",
+          "name": "Convenience-Driven Users",
+          "description": "Brew one or two cups daily, primarily for a quick caffeine fix, and rely on pod or super-automatic machines. They value one-touch operation and minimal cleanup over brew quality.",
+          "hypothesis": "They will show high satisfaction with pod machines, low interest in manual brewing, and cite convenience as the top purchase driver."
+        },
+        {
+          "segment_id": "specialty_enthusiasts",
+          "name": "Specialty Users",
+          "description": "Actively pursue better coffee at home, own espresso or manual machines, and enjoy experimenting with beans and brew methods. They are willing to invest time and money for quality.",
+          "hypothesis": "They will report higher spend, more manual brew methods, and rate brew quality and versatility as more important than convenience."
+        },
+        {
+          "segment_id": "family_volume_brewers",
+          "name": "Family Volume Brewers",
+          "description": "Brew for multiple household members, often in large batches, and need a machine that can keep up with volume. They prioritize capacity, counter space, and durability.",
+          "hypothesis": "They will report brewing for 3+ people, prefer drip machines with large carafes, and cite counter space and build quality as key pain points."
+        },
+        {
+          "segment_id": "occasional_users",
+          "name": "Occasional Users",
+          "description": "Brew only a few times a week, often on weekends or for guests, and have low engagement with the category. They may own a basic machine and are not invested in upgrading.",
+          "hypothesis": "They will report low frequency, low spend, and low interest in new features; they are the least likely to replace their machine soon."
+        }
+      ],
+      "segmentModel": {
+        "segments": [
+          {
+            "segment_id": "daily_ritualists",
+            "name": "Daily Ritualists",
+            "description": "Brew multiple cups every day, treat the machine as a central kitchen appliance, and value speed and consistency over experimentation. They are the heaviest users and often own a drip or pod machine.",
+            "hypothesis": "They will report the highest daily frequency, prioritize fast heat-up and quiet operation, and be less willing to trade convenience for specialty features."
+          },
+          {
+            "segment_id": "convenience_driven",
+            "name": "Convenience-Driven Users",
+            "description": "Brew one or two cups daily, primarily for a quick caffeine fix, and rely on pod or super-automatic machines. They value one-touch operation and minimal cleanup over brew quality.",
+            "hypothesis": "They will show high satisfaction with pod machines, low interest in manual brewing, and cite convenience as the top purchase driver."
+          },
+          {
+            "segment_id": "specialty_enthusiasts",
+            "name": "Specialty Users",
+            "description": "Actively pursue better coffee at home, own espresso or manual machines, and enjoy experimenting with beans and brew methods. They are willing to invest time and money for quality.",
+            "hypothesis": "They will report higher spend, more manual brew methods, and rate brew quality and versatility as more important than convenience."
+          },
+          {
+            "segment_id": "family_volume_brewers",
+            "name": "Family Volume Brewers",
+            "description": "Brew for multiple household members, often in large batches, and need a machine that can keep up with volume. They prioritize capacity, counter space, and durability.",
+            "hypothesis": "They will report brewing for 3+ people, prefer drip machines with large carafes, and cite counter space and build quality as key pain points."
+          },
+          {
+            "segment_id": "occasional_users",
+            "name": "Occasional Users",
+            "description": "Brew only a few times a week, often on weekends or for guests, and have low engagement with the category. They may own a basic machine and are not invested in upgrading.",
+            "hypothesis": "They will report low frequency, low spend, and low interest in new features; they are the least likely to replace their machine soon."
+          }
+        ],
+        "weights": [
+          {
+            "question_id": "q3",
+            "question_text": "How many cups of coffee do you brew at home on a typical day?",
+            "option_label": "5 or more cups",
+            "segment_id": "daily_ritualists",
+            "points": 3
+          },
+          {
+            "question_id": "q3",
+            "question_text": "How many cups of coffee do you brew at home on a typical day?",
+            "option_label": "3-4 cups",
+            "segment_id": "daily_ritualists",
+            "points": 2
+          },
+          {
+            "question_id": "q3",
+            "question_text": "How many cups of coffee do you brew at home on a typical day?",
+            "option_label": "1 cup",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q3",
+            "question_text": "How many cups of coffee do you brew at home on a typical day?",
+            "option_label": "2 cups",
+            "segment_id": "convenience_driven",
+            "points": 1
+          },
+          {
+            "question_id": "q4",
+            "question_text": "When do you most often use your home coffee machine?",
+            "option_label": "When I have guests over",
+            "segment_id": "occasional_users",
+            "points": 3
+          },
+          {
+            "question_id": "q4",
+            "question_text": "When do you most often use your home coffee machine?",
+            "option_label": "First thing in the morning, before work or errands",
+            "segment_id": "daily_ritualists",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Besides your morning cup, which of these occasions do you brew coffee for?",
+            "option_label": "When entertaining guests",
+            "segment_id": "occasional_users",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Besides your morning cup, which of these occasions do you brew coffee for?",
+            "option_label": "Afternoon pick-me-up",
+            "segment_id": "convenience_driven",
+            "points": 1
+          },
+          {
+            "question_id": "q6",
+            "question_text": "How many people in your household regularly drink the coffee you brew at home?",
+            "option_label": "4 or more people",
+            "segment_id": "family_volume_brewers",
+            "points": 3
+          },
+          {
+            "question_id": "q6",
+            "question_text": "How many people in your household regularly drink the coffee you brew at home?",
+            "option_label": "3 people",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q6",
+            "question_text": "How many people in your household regularly drink the coffee you brew at home?",
+            "option_label": "Just me",
+            "segment_id": "occasional_users",
+            "points": 1
+          },
+          {
+            "question_id": "q7",
+            "question_text": "Which of these best describes the role coffee plays in your daily routine?",
+            "option_label": "A necessary morning ritual to start the day",
+            "segment_id": "daily_ritualists",
+            "points": 3
+          },
+          {
+            "question_id": "q7",
+            "question_text": "Which of these best describes the role coffee plays in your daily routine?",
+            "option_label": "A quick caffeine fix to keep me going",
+            "segment_id": "convenience_driven",
+            "points": 3
+          },
+          {
+            "question_id": "q7",
+            "question_text": "Which of these best describes the role coffee plays in your daily routine?",
+            "option_label": "A hobby I enjoy experimenting with",
+            "segment_id": "specialty_enthusiasts",
+            "points": 3
+          },
+          {
+            "question_id": "q7",
+            "question_text": "Which of these best describes the role coffee plays in your daily routine?",
+            "option_label": "A way to bring the family together",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "Which of these best describes the role coffee plays in your daily routine?",
+            "option_label": "An occasional treat for weekends or guests",
+            "segment_id": "occasional_users",
+            "points": 3
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What type of home coffee machine do you currently use most often?",
+            "option_label": "Drip coffee maker",
+            "segment_id": "daily_ritualists",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What type of home coffee machine do you currently use most often?",
+            "option_label": "Single-serve pod machine",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What type of home coffee machine do you currently use most often?",
+            "option_label": "Espresso machine",
+            "segment_id": "specialty_enthusiasts",
+            "points": 3
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What type of home coffee machine do you currently use most often?",
+            "option_label": "Super-automatic espresso machine",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What type of home coffee machine do you currently use most often?",
+            "option_label": "Pour-over or French press",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "What prompted you to buy your most recent home coffee machine?",
+            "option_label": "Wanted milk-based drinks at the touch of a button",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "What prompted you to buy your most recent home coffee machine?",
+            "option_label": "Wanted more variety in brew types",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "How much did you pay for the home coffee machine you use most often?",
+            "option_label": "$500–$999",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q12",
+            "question_text": "How much did you pay for the home coffee machine you use most often?",
+            "option_label": "$1,000 or more",
+            "segment_id": "specialty_enthusiasts",
+            "points": 3
+          },
+          {
+            "question_id": "q12",
+            "question_text": "How much did you pay for the home coffee machine you use most often?",
+            "option_label": "Under $50",
+            "segment_id": "occasional_users",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these factors most influenced your choice of home coffee machine?",
+            "option_label": "One-touch milk-based drinks",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these factors most influenced your choice of home coffee machine?",
+            "option_label": "Versatility (multiple brew types)",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "Which of these factors most influenced your choice of home coffee machine?",
+            "option_label": "Compact size for small kitchens",
+            "segment_id": "family_volume_brewers",
+            "points": 1
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these drink types do you brew at home?",
+            "option_label": "Espresso or lungo",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these drink types do you brew at home?",
+            "option_label": "Drip or filter coffee",
+            "segment_id": "daily_ritualists",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these drink types do you brew at home?",
+            "option_label": "Milk-based drinks (latte, cappuccino)",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "Which of these drink types do you brew at home?",
+            "option_label": "Capsule or pod coffee",
+            "segment_id": "convenience_driven",
+            "points": 1
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these features would you refuse to give up on a home coffee machine?",
+            "option_label": "Milk-based drinks at the touch of a button",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these features would you refuse to give up on a home coffee machine?",
+            "option_label": "Multiple brew types (espresso, drip, etc.)",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "Which of these features would you refuse to give up on a home coffee machine?",
+            "option_label": "Compact size for small kitchens",
+            "segment_id": "family_volume_brewers",
+            "points": 1
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these would you most like a home coffee machine to do better?",
+            "option_label": "Make more drink types",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these would you most like a home coffee machine to do better?",
+            "option_label": "Take up less counter space",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these signals a well-made coffee machine to you?",
+            "option_label": "Consistent brew temperature",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q17",
+            "question_text": "Which of these signals a well-made coffee machine to you?",
+            "option_label": "Large drip tray",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which format do you prefer for a home coffee machine?",
+            "option_label": "Bean-to-cup with built-in grinder",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which format do you prefer for a home coffee machine?",
+            "option_label": "Pod or capsule system",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which format do you prefer for a home coffee machine?",
+            "option_label": "Drip coffee maker with carafe",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which format do you prefer for a home coffee machine?",
+            "option_label": "Espresso machine with portafilter",
+            "segment_id": "specialty_enthusiasts",
+            "points": 3
+          },
+          {
+            "question_id": "q18",
+            "question_text": "Which format do you prefer for a home coffee machine?",
+            "option_label": "Single-serve pod and drip combo",
+            "segment_id": "family_volume_brewers",
+            "points": 1
+          },
+          {
+            "question_id": "q20",
+            "question_text": "Which of these would you most accept in a home coffee machine?",
+            "option_label": "Makes slightly worse coffee",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q20",
+            "question_text": "Which of these would you most accept in a home coffee machine?",
+            "option_label": "Takes longer to heat up",
+            "segment_id": "daily_ritualists",
+            "points": 1
+          },
+          {
+            "question_id": "q21",
+            "question_text": "What is the most you would pay for a home coffee machine that meets your needs?",
+            "option_label": "$700–$1,199",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q21",
+            "question_text": "What is the most you would pay for a home coffee machine that meets your needs?",
+            "option_label": "$1,200 or more",
+            "segment_id": "specialty_enthusiasts",
+            "points": 3
+          },
+          {
+            "question_id": "q21",
+            "question_text": "What is the most you would pay for a home coffee machine that meets your needs?",
+            "option_label": "Under $100",
+            "segment_id": "occasional_users",
+            "points": 2
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of the following aspects of your home coffee machine are you most satisfied with?",
+            "option_label": "Speed of making a drink",
+            "segment_id": "convenience_driven",
+            "points": 2
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of the following aspects of your home coffee machine are you most satisfied with?",
+            "option_label": "Taste of the coffee",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of the following aspects of your home coffee machine are you most satisfied with?",
+            "option_label": "Ease of cleaning and maintenance",
+            "segment_id": "convenience_driven",
+            "points": 1
+          },
+          {
+            "question_id": "q23",
+            "question_text": "Which of these would most likely make you replace your home coffee machine sooner than planned?",
+            "option_label": "It becomes too slow for your morning routine",
+            "segment_id": "daily_ritualists",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "Which of these would most likely make you replace your home coffee machine sooner than planned?",
+            "option_label": "It starts making inconsistent coffee",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "Which of these would most likely make you replace your home coffee machine sooner than planned?",
+            "option_label": "It takes up too much counter space",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of the following would most likely make you replace your home coffee machine before it breaks?",
+            "option_label": "More versatile brewing options",
+            "segment_id": "specialty_enthusiasts",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of the following would most likely make you replace your home coffee machine before it breaks?",
+            "option_label": "More compact design",
+            "segment_id": "family_volume_brewers",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of the following would most likely make you replace your home coffee machine before it breaks?",
+            "option_label": "Faster heat-up time",
+            "segment_id": "daily_ritualists",
+            "points": 1
+          }
+        ],
+        "tie_break": "The question cp8 (role of coffee in daily routine) is the most direct behavioural self-report because it explicitly asks respondents to categorize their relationship with coffee, cleanly separating ritual, caffeine fix, hobby, family, and occasional treat.",
+        "notes": [
+          "Family volume brewers are identified by household size and capacity-related preferences; they may also brew multiple cups but not necessarily for themselves.",
+          "Occasional users are identified by low frequency, guest-oriented brewing, and low spend.",
+          "Specialty enthusiasts are identified by manual/espresso machines, high spend, and desire for variety and quality.",
+          "Convenience-driven users are identified by pod/super-auto machines, quick caffeine fix, and acceptance of worse coffee for convenience.",
+          "Daily ritualists are identified by high daily volume, morning ritual, and sensitivity to speed.",
+          "6 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+        ],
+        "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+      },
+      "fieldingNotes": {
+        "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=250 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+        "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+        "estimatedLength": "8-10 minutes.",
+        "scriptingNotes": [
+          "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+          "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+          "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+          "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+          "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+          "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+        ],
+        "caveats": [
+          "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+          "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+          "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,6490 @@
+{
+ "surveyDefinition": {
+  "title": "Smartwatches — consumer survey (China)",
+  "category": "Smartwatches",
+  "region": "China",
+  "audienceType": "B2C consumer",
+  "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on smartwatch usage intensity, purchase drivers, feature priorities, and upgrade/switching behaviour.",
+  "segments": [
+   {
+    "id": "health_committed_users",
+    "name": "Health-Committed Users",
+    "description": "Wear their smartwatch almost daily, primarily for continuous health and fitness tracking (heart rate, sleep, SpO2). They are willing to pay more for advanced sensors and accuracy, and are frustrated by inaccuracies and subscription fees for health metrics."
+   },
+   {
+    "id": "connectivity_driven_users",
+    "name": "Connectivity-Driven Users",
+    "description": "Use the smartwatch as an extension of their smartphone — for notifications, calls, and quick interactions. They value seamless ecosystem integration and app experience over fitness depth, and may not use all health features."
+   },
+   {
+    "id": "lifestyle_style_owners",
+    "name": "Lifestyle-Style Owners",
+    "description": "Own a smartwatch as a fashion statement or status symbol, often choosing premium designs and brands. They use basic features (steps, time) but are less engaged with deep health tracking. They are attracted by design, brand reputation, and customization."
+   },
+   {
+    "id": "price_sensitive_buyers",
+    "name": "Price-Sensitive Buyers",
+    "description": "Own a smartwatch but are highly conscious of price and value. They seek essential features at the lowest possible cost, are reluctant to pay for subscriptions, and may delay upgrades or choose older models. They are prone to switching if a better deal appears."
+   }
+  ],
+  "whatThisSurveyIs": "A segmentation study of Smartwatches buyers in China. It asks how people use Smartwatches, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+  "whoseContextThisIs": "Adults in China who buy or use Smartwatches for personal or household use. Respondents qualify if they: Individuals who currently own or have purchased a smartwatch in the past 12 months; Individuals who are actively considering purchasing a smartwatch within the next 6 months; Adults aged 18+ who make their own purchase decisions. Excluded: Businesses or institutions purchasing smartwatches in bulk for employees; Children under 18 (unless the study specifically targets kids' smartwatches, which is not the primary market); Individuals who only use basic fitness bands without smart features.",
+  "whyTheseRespondents": "Consumers buy smartwatches for personal use, pay for them out of pocket, and decide on the model and brand themselves. While some businesses may purchase smartwatches for employees, the dominant and defining purchase is by individual consumers, making this a pure B2C market.",
+  "respondentBehaviours": [
+   "Health and fitness tracking (steps, heart rate, sleep)",
+   "Smartphone integration for notifications and calls",
+   "Fashion and personal style expression",
+   "Early adoption of new technology",
+   "Brand loyalty to smartphone ecosystems (Apple, Samsung, etc.)"
+  ],
+  "whatIsDeliberatelyNotAsked": [
+   "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+   "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+   "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+  ],
+  "howToReadTheNumbers": "Percentages are modelled estimates built from published market evidence — they are not measurements from fielded interviews, and should be read as an expected shape of response rather than a result. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+  "structure": {
+   "totalQuestions": 29,
+   "sections": [
+    {
+     "id": "profile",
+     "label": "Consumer Profile",
+     "covers": "who uses the product and how — usage context, occasions, frequency, who is involved",
+     "questions": 5
+    },
+    {
+     "id": "behavior",
+     "label": "Buying Behavior",
+     "covers": "how they shop for and buy it — trigger, research, channel, spend, decision drivers",
+     "questions": 5
+    },
+    {
+     "id": "preferences",
+     "label": "Preferences & Expectations",
+     "covers": "what they need from the product — must-haves, quality cues, fit, claims, trade-offs",
+     "questions": 7
+    },
+    {
+     "id": "satisfaction",
+     "label": "Satisfaction & Future Intent",
+     "covers": "outcomes — satisfaction, problems, switching, advocacy, future purchase intent",
+     "questions": 8
+    }
+   ],
+   "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+   "storylineSummary": "The survey opens by establishing who owns a smartwatch and how they use it day-to-day, distinguishing health-focused users from connectivity-driven and style-led owners. It then traces the purchase journey — what triggered the buy, where they researched and bought, and what factors decided the choice. Next, it probes feature priorities, quality signals, and trade-offs, revealing what they value most and what they would sacrifice. Finally, it measures satisfaction, pain points, and future intent, identifying who is at risk of switching and what would retain them. The arc moves from broad usage…"
+  }
+ },
+ "targetCustomer": {
+  "summary": "Adult consumers of Smartwatches in China — who Individuals who currently own or have purchased a smartwatch in the past 12 months; Individuals who are actively considering purchasing a smartwatch within the next 6 months; Adults aged 18+ who make their own purchase decisions. The audience is defined as individual consumers who buy smartwatches for personal use, as they are the primary purchasers and decision-makers. The demographic and behavioral criteria capture both current owners and potential buyers to support a broad consumer survey.",
+  "marketSegment": "Smartwatches",
+  "region": "China",
+  "inclusionCriteria": [
+   "Individuals who currently own or have purchased a smartwatch in the past 12 months",
+   "Individuals who are actively considering purchasing a smartwatch within the next 6 months",
+   "Adults aged 18+ who make their own purchase decisions"
+  ],
+  "behaviors": [
+   "Health and fitness tracking (steps, heart rate, sleep)",
+   "Smartphone integration for notifications and calls",
+   "Fashion and personal style expression",
+   "Early adoption of new technology",
+   "Brand loyalty to smartphone ecosystems (Apple, Samsung, etc.)"
+  ],
+  "exclusions": [
+   "Businesses or institutions purchasing smartwatches in bulk for employees",
+   "Children under 18 (unless the study specifically targets kids' smartwatches, which is not the primary market)",
+   "Individuals who only use basic fitness bands without smart features"
+  ],
+  "contextDemographics": {
+   "age_range": "18-64",
+   "income": "Middle to upper-middle income, with discretionary spending for wearable tech",
+   "gender": "All genders, slight skew toward male in early adopters but balanced in mass market",
+   "geography": "Global, with higher penetration in urban and suburban areas of developed and emerging economies"
+  },
+  "assumptions": [
+   "The smartwatch market is predominantly consumer-driven, with business purchases being a minor segment.",
+   "The study focuses on the consumer end-user, not corporate procurement.",
+   "Global scope implies a diverse set of markets; regional nuances are handled downstream."
+  ],
+  "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+ },
+ "frontend": {
+  "sections": [
+   {
+    "id": "profile",
+    "label": "Consumer Profile, Ownership & Usage Behavior",
+    "questions": [
+     {
+      "id": "q1",
+      "qNum": 1,
+      "question": "What do you use your smartwatch for?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Checking notifications",
+       "Tracking workouts",
+       "Monitoring sleep",
+       "Checking the time",
+       "Contactless payments",
+       "Other"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Checking notifications",
+        "value": 78.0
+       },
+       {
+        "label": "Tracking workouts",
+        "value": 82.0
+       },
+       {
+        "label": "Monitoring sleep",
+        "value": 61.0
+       },
+       {
+        "label": "Checking the time",
+        "value": 55.0
+       },
+       {
+        "label": "Contactless payments",
+        "value": 22.0
+       },
+       {
+        "label": "Other",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: Tracking workouts (82.00%).",
+      "distributionNote": "Connectivity-Driven Users and Health-Committed Users dominate; most use the watch for notifications and workouts, with sleep tracking also common.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "smartwatch_ownership",
+      "beatTitle": "Smartwatch ownership and current device",
+      "beatCanonical": "category_entry",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Checking notifications",
+         "value": 78.0
+        },
+        {
+         "label": "Tracking workouts",
+         "value": 82.0
+        },
+        {
+         "label": "Monitoring sleep",
+         "value": 61.0
+        },
+        {
+         "label": "Checking the time",
+         "value": 55.0
+        },
+        {
+         "label": "Contactless payments",
+         "value": 22.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Checking notifications",
+         "value": 78.0
+        },
+        {
+         "label": "Tracking workouts",
+         "value": 82.0
+        },
+        {
+         "label": "Monitoring sleep",
+         "value": 61.0
+        },
+        {
+         "label": "Checking the time",
+         "value": 55.0
+        },
+        {
+         "label": "Contactless payments",
+         "value": 22.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q2",
+      "qNum": 2,
+      "question": "How long have you owned your current smartwatch?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Less than 6 months",
+       "6 to 12 months",
+       "1 to 2 years",
+       "More than 2 years"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Less than 6 months",
+        "value": 18.0
+       },
+       {
+        "label": "6 to 12 months",
+        "value": 27.0
+       },
+       {
+        "label": "1 to 2 years",
+        "value": 34.0
+       },
+       {
+        "label": "More than 2 years",
+        "value": 21.0
+       }
+      ],
+      "insight": "Top response: 1 to 2 years (34.00%).",
+      "distributionNote": "A maturing market with a mix of recent buyers and longer-term owners; the largest group has owned their watch 1–2 years.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "smartwatch_ownership",
+      "beatTitle": "Smartwatch ownership and current device",
+      "beatCanonical": "category_entry",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Less than 6 months",
+         "value": 18.0
+        },
+        {
+         "label": "6 to 12 months",
+         "value": 27.0
+        },
+        {
+         "label": "1 to 2 years",
+         "value": 34.0
+        },
+        {
+         "label": "More than 2 years",
+         "value": 21.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Less than 6 months",
+         "value": 18.0
+        },
+        {
+         "label": "6 to 12 months",
+         "value": 27.0
+        },
+        {
+         "label": "1 to 2 years",
+         "value": 34.0
+        },
+        {
+         "label": "More than 2 years",
+         "value": 21.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q3",
+      "qNum": 3,
+      "question": "In which situations do you wear your smartwatch?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "During workouts or exercise",
+       "At work or in meetings",
+       "While sleeping",
+       "On weekends or social occasions",
+       "While travelling or commuting",
+       "Other"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "During workouts or exercise",
+        "value": 72.0
+       },
+       {
+        "label": "At work or in meetings",
+        "value": 38.0
+       },
+       {
+        "label": "While sleeping",
+        "value": 55.0
+       },
+       {
+        "label": "On weekends or social occasions",
+        "value": 41.0
+       },
+       {
+        "label": "While travelling or commuting",
+        "value": 49.0
+       },
+       {
+        "label": "Other",
+        "value": 6.0
+       }
+      ],
+      "insight": "Top response: During workouts or exercise (72.00%).",
+      "distributionNote": "Health-Committed Users dominate workout and sleep wear; Connectivity-Driven Users lift work and commuting wear; Lifestyle-Style Owners contribute to social occasions.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "daily_usage_context",
+      "beatTitle": "When and where the watch is worn",
+      "beatCanonical": "usage_occasion",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "During workouts or exercise",
+         "value": 72.0
+        },
+        {
+         "label": "At work or in meetings",
+         "value": 38.0
+        },
+        {
+         "label": "While sleeping",
+         "value": 55.0
+        },
+        {
+         "label": "On weekends or social occasions",
+         "value": 41.0
+        },
+        {
+         "label": "While travelling or commuting",
+         "value": 49.0
+        },
+        {
+         "label": "Other",
+         "value": 6.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "During workouts or exercise",
+         "value": 72.0
+        },
+        {
+         "label": "At work or in meetings",
+         "value": 38.0
+        },
+        {
+         "label": "While sleeping",
+         "value": 55.0
+        },
+        {
+         "label": "On weekends or social occasions",
+         "value": 41.0
+        },
+        {
+         "label": "While travelling or commuting",
+         "value": 49.0
+        },
+        {
+         "label": "Other",
+         "value": 6.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q4",
+      "qNum": 4,
+      "question": "Which health metrics do you actively track on your smartwatch?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Heart rate",
+       "Sleep stages",
+       "Blood oxygen (SpO2)",
+       "GPS for workouts",
+       "Steps",
+       "None of these"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Heart rate",
+        "value": 88.0
+       },
+       {
+        "label": "Sleep stages",
+        "value": 62.0
+       },
+       {
+        "label": "Blood oxygen (SpO2)",
+        "value": 54.0
+       },
+       {
+        "label": "GPS for workouts",
+        "value": 48.0
+       },
+       {
+        "label": "Steps",
+        "value": 72.0
+       },
+       {
+        "label": "None of these",
+        "value": 2.0
+       }
+      ],
+      "insight": "Top response: Heart rate (88.00%).",
+      "distributionNote": "Health-Committed Users drive high tracking of heart rate and sleep; step counting is nearly universal across all segments.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "health_tracking_habits",
+      "beatTitle": "Health and fitness tracking habits",
+      "beatCanonical": "need_state",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Heart rate",
+         "value": 88.0
+        },
+        {
+         "label": "Sleep stages",
+         "value": 62.0
+        },
+        {
+         "label": "Blood oxygen (SpO2)",
+         "value": 54.0
+        },
+        {
+         "label": "GPS for workouts",
+         "value": 48.0
+        },
+        {
+         "label": "Steps",
+         "value": 72.0
+        },
+        {
+         "label": "None of these",
+         "value": 2.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Heart rate",
+         "value": 88.0
+        },
+        {
+         "label": "Sleep stages",
+         "value": 62.0
+        },
+        {
+         "label": "Blood oxygen (SpO2)",
+         "value": 54.0
+        },
+        {
+         "label": "GPS for workouts",
+         "value": 48.0
+        },
+        {
+         "label": "Steps",
+         "value": 72.0
+        },
+        {
+         "label": "None of these",
+         "value": 2.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q5",
+      "qNum": 5,
+      "question": "Is your current smartwatch your first, or a replacement?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "It's my first smartwatch",
+       "A replacement for a previous smartwatch",
+       "An upgrade from a basic fitness band",
+       "Other"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "It's my first smartwatch",
+        "value": 42.0
+       },
+       {
+        "label": "A replacement for a previous smartwatch",
+        "value": 40.0
+       },
+       {
+        "label": "An upgrade from a basic fitness band",
+        "value": 15.0
+       },
+       {
+        "label": "Other",
+        "value": 3.0
+       }
+      ],
+      "insight": "Top response: It's my first smartwatch (42.00%).",
+      "distributionNote": "Repeat buyers and first-time buyers are split almost evenly; a meaningful minority are upgrading from a basic fitness band.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "household_involvement",
+      "beatTitle": "Who in the household uses and decides",
+      "beatCanonical": "household_role",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "It's my first smartwatch",
+         "value": 42.0
+        },
+        {
+         "label": "A replacement for a previous smartwatch",
+         "value": 40.0
+        },
+        {
+         "label": "An upgrade from a basic fitness band",
+         "value": 15.0
+        },
+        {
+         "label": "Other",
+         "value": 3.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "It's my first smartwatch",
+         "value": 42.0
+        },
+        {
+         "label": "A replacement for a previous smartwatch",
+         "value": 40.0
+        },
+        {
+         "label": "An upgrade from a basic fitness band",
+         "value": 15.0
+        },
+        {
+         "label": "Other",
+         "value": 3.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "behavior",
+    "label": "Purchase Journey & Decision Drivers",
+    "questions": [
+     {
+      "id": "q6",
+      "qNum": 6,
+      "question": "What made you decide to buy your current smartwatch?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "My old one broke or stopped working",
+       "I wanted to start tracking my health more closely",
+       "I got a new phone and wanted them to work together",
+       "I wanted a nicer-looking watch to wear daily",
+       "I found a good deal or discount",
+       "It was a gift",
+       "Other"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "My old one broke or stopped working",
+        "value": 12.0
+       },
+       {
+        "label": "I wanted to start tracking my health more closely",
+        "value": 38.0
+       },
+       {
+        "label": "I got a new phone and wanted them to work together",
+        "value": 18.0
+       },
+       {
+        "label": "I wanted a nicer-looking watch to wear daily",
+        "value": 9.0
+       },
+       {
+        "label": "I found a good deal or discount",
+        "value": 14.0
+       },
+       {
+        "label": "It was a gift",
+        "value": 5.0
+       },
+       {
+        "label": "Other",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: I wanted to start tracking my health more closely (38.00%).",
+      "distributionNote": "Health-Committed Users are the primary driver, motivated by health tracking; Connectivity-Driven Users and Price-Sensitive Buyers also contribute.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "purchase_trigger",
+      "beatTitle": "What triggered the last smartwatch purchase",
+      "beatCanonical": "purchase_trigger",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "My old one broke or stopped working",
+         "value": 12.0
+        },
+        {
+         "label": "I wanted to start tracking my health more closely",
+         "value": 38.0
+        },
+        {
+         "label": "I got a new phone and wanted them to work together",
+         "value": 18.0
+        },
+        {
+         "label": "I wanted a nicer-looking watch to wear daily",
+         "value": 9.0
+        },
+        {
+         "label": "I found a good deal or discount",
+         "value": 14.0
+        },
+        {
+         "label": "It was a gift",
+         "value": 5.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "My old one broke or stopped working",
+         "value": 12.0
+        },
+        {
+         "label": "I wanted to start tracking my health more closely",
+         "value": 38.0
+        },
+        {
+         "label": "I got a new phone and wanted them to work together",
+         "value": 18.0
+        },
+        {
+         "label": "I wanted a nicer-looking watch to wear daily",
+         "value": 9.0
+        },
+        {
+         "label": "I found a good deal or discount",
+         "value": 14.0
+        },
+        {
+         "label": "It was a gift",
+         "value": 5.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q7",
+      "qNum": 7,
+      "question": "Which sources did you check before buying your smartwatch?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Online reviews or comparison sites",
+       "Social media posts or videos",
+       "Friends or family",
+       "In-store staff or displays",
+       "Brand's own website or app",
+       "Other"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "Online reviews or comparison sites",
+        "value": 72.0
+       },
+       {
+        "label": "Social media posts or videos",
+        "value": 58.0
+       },
+       {
+        "label": "Friends or family",
+        "value": 41.0
+       },
+       {
+        "label": "In-store staff or displays",
+        "value": 22.0
+       },
+       {
+        "label": "Brand's own website or app",
+        "value": 35.0
+       },
+       {
+        "label": "Other",
+        "value": 6.0
+       }
+      ],
+      "insight": "Top response: Online reviews or comparison sites (72.00%).",
+      "distributionNote": "Connectivity-Driven and Health-Committed Users rely heavily on online reviews and social media; Price-Sensitive Buyers also consult friends/family and in-store displays to compare value.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "research_and_discovery",
+      "beatTitle": "Where they researched and compared options",
+      "beatCanonical": "discovery",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Online reviews or comparison sites",
+         "value": 72.0
+        },
+        {
+         "label": "Social media posts or videos",
+         "value": 58.0
+        },
+        {
+         "label": "Friends or family",
+         "value": 41.0
+        },
+        {
+         "label": "In-store staff or displays",
+         "value": 22.0
+        },
+        {
+         "label": "Brand's own website or app",
+         "value": 35.0
+        },
+        {
+         "label": "Other",
+         "value": 6.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Online reviews or comparison sites",
+         "value": 72.0
+        },
+        {
+         "label": "Social media posts or videos",
+         "value": 58.0
+        },
+        {
+         "label": "Friends or family",
+         "value": 41.0
+        },
+        {
+         "label": "In-store staff or displays",
+         "value": 22.0
+        },
+        {
+         "label": "Brand's own website or app",
+         "value": 35.0
+        },
+        {
+         "label": "Other",
+         "value": 6.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q8",
+      "qNum": 8,
+      "question": "Where did you buy your current smartwatch?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Online from a specialist electronics retailer",
+       "Online from a general marketplace",
+       "Direct from the brand's website",
+       "In a physical electronics or department store",
+       "In a mobile phone carrier store",
+       "Other"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Online from a specialist electronics retailer",
+        "value": 28.0
+       },
+       {
+        "label": "Online from a general marketplace",
+        "value": 32.0
+       },
+       {
+        "label": "Direct from the brand's website",
+        "value": 12.0
+       },
+       {
+        "label": "In a physical electronics or department store",
+        "value": 18.0
+       },
+       {
+        "label": "In a mobile phone carrier store",
+        "value": 7.0
+       },
+       {
+        "label": "Other",
+        "value": 3.0
+       }
+      ],
+      "insight": "Top response: Online from a general marketplace (32.00%).",
+      "distributionNote": "Price-Sensitive Buyers favor general marketplaces for deals; Health-Committed Users often buy from specialist retailers or brand sites; Lifestyle-Style Owners may use physical stores for premium experience.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "purchase_channel",
+      "beatTitle": "Where they bought the watch",
+      "beatCanonical": "channel",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Online from a specialist electronics retailer",
+         "value": 28.0
+        },
+        {
+         "label": "Online from a general marketplace",
+         "value": 32.0
+        },
+        {
+         "label": "Direct from the brand's website",
+         "value": 12.0
+        },
+        {
+         "label": "In a physical electronics or department store",
+         "value": 18.0
+        },
+        {
+         "label": "In a mobile phone carrier store",
+         "value": 7.0
+        },
+        {
+         "label": "Other",
+         "value": 3.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Online from a specialist electronics retailer",
+         "value": 28.0
+        },
+        {
+         "label": "Online from a general marketplace",
+         "value": 32.0
+        },
+        {
+         "label": "Direct from the brand's website",
+         "value": 12.0
+        },
+        {
+         "label": "In a physical electronics or department store",
+         "value": 18.0
+        },
+        {
+         "label": "In a mobile phone carrier store",
+         "value": 7.0
+        },
+        {
+         "label": "Other",
+         "value": 3.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q9",
+      "qNum": 9,
+      "question": "How much did you pay for the smartwatch you currently use?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Under ¥500",
+       "¥500–¥999",
+       "¥1,000–¥1,999",
+       "¥2,000–¥2,999",
+       "¥3,000 or more"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Under ¥500",
+        "value": 18.0
+       },
+       {
+        "label": "¥500–¥999",
+        "value": 27.0
+       },
+       {
+        "label": "¥1,000–¥1,999",
+        "value": 30.0
+       },
+       {
+        "label": "¥2,000–¥2,999",
+        "value": 15.0
+       },
+       {
+        "label": "¥3,000 or more",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: ¥1,000–¥1,999 (30.00%).",
+      "distributionNote": "Price-Sensitive Buyers concentrate in the lower bands; Health-Committed and Lifestyle-Style Owners pull toward mid-to-premium pricing.",
+      "N": 370,
+      "questionLayer": "module",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "spend_and_value",
+      "beatTitle": "How much they paid and perceived value",
+      "beatCanonical": "spend",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Under ¥500",
+         "value": 18.0
+        },
+        {
+         "label": "¥500–¥999",
+         "value": 27.0
+        },
+        {
+         "label": "¥1,000–¥1,999",
+         "value": 30.0
+        },
+        {
+         "label": "¥2,000–¥2,999",
+         "value": 15.0
+        },
+        {
+         "label": "¥3,000 or more",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Under ¥500",
+         "value": 18.0
+        },
+        {
+         "label": "¥500–¥999",
+         "value": 27.0
+        },
+        {
+         "label": "¥1,000–¥1,999",
+         "value": 30.0
+        },
+        {
+         "label": "¥2,000–¥2,999",
+         "value": 15.0
+        },
+        {
+         "label": "¥3,000 or more",
+         "value": 10.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q10",
+      "qNum": 10,
+      "question": "Which mattered most when you chose your smartwatch?",
+      "questionType": "ranking",
+      "responseInstruction": "Rank these in order.",
+      "sumsTo100": true,
+      "options": [
+       "Battery life",
+       "Health and fitness tracking",
+       "Sleep monitoring",
+       "Convenience of notifications",
+       "Style and design",
+       "Brand ecosystem integration"
+      ],
+      "chart": "lollipop",
+      "data": [
+       {
+        "label": "Battery life",
+        "value": 26.0
+       },
+       {
+        "label": "Health and fitness tracking",
+        "value": 30.0
+       },
+       {
+        "label": "Sleep monitoring",
+        "value": 14.0
+       },
+       {
+        "label": "Convenience of notifications",
+        "value": 12.0
+       },
+       {
+        "label": "Style and design",
+        "value": 9.0
+       },
+       {
+        "label": "Brand ecosystem integration",
+        "value": 9.0
+       }
+      ],
+      "insight": "Top response: Health and fitness tracking (30.00%).",
+      "distributionNote": "Health-Committed Users prioritize health and sleep tracking; Connectivity-Driven Users value notifications and ecosystem; Price-Sensitive Buyers weigh battery life for value.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "decision_drivers",
+      "beatTitle": "What decided the final choice",
+      "beatCanonical": "decision_drivers",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Battery life",
+         "value": 26.0
+        },
+        {
+         "label": "Health and fitness tracking",
+         "value": 30.0
+        },
+        {
+         "label": "Sleep monitoring",
+         "value": 14.0
+        },
+        {
+         "label": "Convenience of notifications",
+         "value": 12.0
+        },
+        {
+         "label": "Style and design",
+         "value": 9.0
+        },
+        {
+         "label": "Brand ecosystem integration",
+         "value": 9.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Battery life",
+         "value": 26.0
+        },
+        {
+         "label": "Health and fitness tracking",
+         "value": 30.0
+        },
+        {
+         "label": "Sleep monitoring",
+         "value": 14.0
+        },
+        {
+         "label": "Convenience of notifications",
+         "value": 12.0
+        },
+        {
+         "label": "Style and design",
+         "value": 9.0
+        },
+        {
+         "label": "Brand ecosystem integration",
+         "value": 9.0
+        }
+       ]
+      },
+      "ordered": true
+     }
+    ]
+   },
+   {
+    "id": "preferences",
+    "label": "Brand / Product Experience & Satisfaction",
+    "questions": [
+     {
+      "id": "q11",
+      "qNum": 11,
+      "question": "Which must a smartwatch do before you would buy one?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Track workouts accurately",
+       "Monitor heart rate",
+       "Track sleep",
+       "Show phone notifications",
+       "Last at least two days on a charge",
+       "Work with any phone",
+       "Other"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Track workouts accurately",
+        "value": 62.0
+       },
+       {
+        "label": "Monitor heart rate",
+        "value": 71.0
+       },
+       {
+        "label": "Track sleep",
+        "value": 55.0
+       },
+       {
+        "label": "Show phone notifications",
+        "value": 48.0
+       },
+       {
+        "label": "Last at least two days on a charge",
+        "value": 66.0
+       },
+       {
+        "label": "Work with any phone",
+        "value": 38.0
+       },
+       {
+        "label": "Other",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: Monitor heart rate (71.00%).",
+      "distributionNote": "Health-Committed Users drive heart rate and sleep tracking; Connectivity-Driven Users require notifications; Price-Sensitive Buyers emphasize battery and cross-phone compatibility.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "must_have_features",
+      "beatTitle": "Must-have smartwatch features",
+      "beatCanonical": "must_haves",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Track workouts accurately",
+         "value": 62.0
+        },
+        {
+         "label": "Monitor heart rate",
+         "value": 71.0
+        },
+        {
+         "label": "Track sleep",
+         "value": 55.0
+        },
+        {
+         "label": "Show phone notifications",
+         "value": 48.0
+        },
+        {
+         "label": "Last at least two days on a charge",
+         "value": 66.0
+        },
+        {
+         "label": "Work with any phone",
+         "value": 38.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Track workouts accurately",
+         "value": 62.0
+        },
+        {
+         "label": "Monitor heart rate",
+         "value": 71.0
+        },
+        {
+         "label": "Track sleep",
+         "value": 55.0
+        },
+        {
+         "label": "Show phone notifications",
+         "value": 48.0
+        },
+        {
+         "label": "Last at least two days on a charge",
+         "value": 66.0
+        },
+        {
+         "label": "Work with any phone",
+         "value": 38.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q12",
+      "qNum": 12,
+      "question": "What tells you a smartwatch is well made before you buy it?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Accurate heart rate and sleep readings",
+       "Premium materials like metal or sapphire glass",
+       "A polished, easy-to-use companion app",
+       "A brand known for reliable smartwatches",
+       "Long battery life promised by the manufacturer",
+       "Other"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "Accurate heart rate and sleep readings",
+        "value": 58.0
+       },
+       {
+        "label": "Premium materials like metal or sapphire glass",
+        "value": 24.0
+       },
+       {
+        "label": "A polished, easy-to-use companion app",
+        "value": 38.0
+       },
+       {
+        "label": "A brand known for reliable smartwatches",
+        "value": 42.0
+       },
+       {
+        "label": "Long battery life promised by the manufacturer",
+        "value": 46.0
+       },
+       {
+        "label": "Other",
+        "value": 3.0
+       }
+      ],
+      "insight": "Top response: Accurate heart rate and sleep readings (58.00%).",
+      "distributionNote": "Health-Committed Users focus on accuracy; Price-Sensitive Buyers look for battery promises and brand reliability; Lifestyle-Style Owners value premium materials.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "quality_signals",
+      "beatTitle": "What signals a quality smartwatch",
+      "beatCanonical": "quality_cues",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Accurate heart rate and sleep readings",
+         "value": 58.0
+        },
+        {
+         "label": "Premium materials like metal or sapphire glass",
+         "value": 24.0
+        },
+        {
+         "label": "A polished, easy-to-use companion app",
+         "value": 38.0
+        },
+        {
+         "label": "A brand known for reliable smartwatches",
+         "value": 42.0
+        },
+        {
+         "label": "Long battery life promised by the manufacturer",
+         "value": 46.0
+        },
+        {
+         "label": "Other",
+         "value": 3.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Accurate heart rate and sleep readings",
+         "value": 58.0
+        },
+        {
+         "label": "Premium materials like metal or sapphire glass",
+         "value": 24.0
+        },
+        {
+         "label": "A polished, easy-to-use companion app",
+         "value": 38.0
+        },
+        {
+         "label": "A brand known for reliable smartwatches",
+         "value": 42.0
+        },
+        {
+         "label": "Long battery life promised by the manufacturer",
+         "value": 46.0
+        },
+        {
+         "label": "Other",
+         "value": 3.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q13",
+      "qNum": 13,
+      "question": "Which watch face size do you prefer for your next smartwatch?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Under 40mm",
+       "40-42mm",
+       "44-46mm",
+       "48mm or larger",
+       "No preference"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Under 40mm",
+        "value": 12.0
+       },
+       {
+        "label": "40-42mm",
+        "value": 34.0
+       },
+       {
+        "label": "44-46mm",
+        "value": 38.0
+       },
+       {
+        "label": "48mm or larger",
+        "value": 9.0
+       },
+       {
+        "label": "No preference",
+        "value": 7.0
+       }
+      ],
+      "insight": "Top response: 44-46mm (38.00%).",
+      "distributionNote": "Connectivity-Driven Users and Lifestyle-Style Owners favor mid-size cases; Price-Sensitive Buyers and Health-Committed Users split across smaller and larger options.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "battery_and_charging",
+      "beatTitle": "Battery life and charging expectations",
+      "beatCanonical": "format_packaging",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Under 40mm",
+         "value": 12.0
+        },
+        {
+         "label": "40-42mm",
+         "value": 34.0
+        },
+        {
+         "label": "44-46mm",
+         "value": 38.0
+        },
+        {
+         "label": "48mm or larger",
+         "value": 9.0
+        },
+        {
+         "label": "No preference",
+         "value": 7.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Under 40mm",
+         "value": 12.0
+        },
+        {
+         "label": "40-42mm",
+         "value": 34.0
+        },
+        {
+         "label": "44-46mm",
+         "value": 38.0
+        },
+        {
+         "label": "48mm or larger",
+         "value": 9.0
+        },
+        {
+         "label": "No preference",
+         "value": 7.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q14",
+      "qNum": 14,
+      "question": "How long should a smartwatch battery last on a single charge?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Less than a day",
+       "1 to 2 days",
+       "3 to 5 days",
+       "6 to 10 days",
+       "More than 10 days"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Less than a day",
+        "value": 2.0
+       },
+       {
+        "label": "1 to 2 days",
+        "value": 18.0
+       },
+       {
+        "label": "3 to 5 days",
+        "value": 45.0
+       },
+       {
+        "label": "6 to 10 days",
+        "value": 25.0
+       },
+       {
+        "label": "More than 10 days",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: 3 to 5 days (45.00%).",
+      "distributionNote": "Health-Committed Users and Price-Sensitive Buyers drive demand for multi-day battery life; Connectivity-Driven Users accept shorter battery for features.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "battery_and_charging",
+      "beatTitle": "Battery life and charging expectations",
+      "beatCanonical": "format_packaging",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Less than a day",
+         "value": 2.0
+        },
+        {
+         "label": "1 to 2 days",
+         "value": 18.0
+        },
+        {
+         "label": "3 to 5 days",
+         "value": 45.0
+        },
+        {
+         "label": "6 to 10 days",
+         "value": 25.0
+        },
+        {
+         "label": "More than 10 days",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Less than a day",
+         "value": 2.0
+        },
+        {
+         "label": "1 to 2 days",
+         "value": 18.0
+        },
+        {
+         "label": "3 to 5 days",
+         "value": 45.0
+        },
+        {
+         "label": "6 to 10 days",
+         "value": 25.0
+        },
+        {
+         "label": "More than 10 days",
+         "value": 10.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q15",
+      "qNum": 15,
+      "question": "What would make you trust a smartwatch more?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Made from recycled materials",
+       "Repairable by the user",
+       "Longer software support",
+       "Made in your country",
+       "Carbon-neutral production",
+       "None of these would matter",
+       "Other"
+      ],
+      "chart": "lollipop",
+      "data": [
+       {
+        "label": "Made from recycled materials",
+        "value": 18.0
+       },
+       {
+        "label": "Repairable by the user",
+        "value": 22.0
+       },
+       {
+        "label": "Longer software support",
+        "value": 45.0
+       },
+       {
+        "label": "Made in your country",
+        "value": 12.0
+       },
+       {
+        "label": "Carbon-neutral production",
+        "value": 10.0
+       },
+       {
+        "label": "None of these would matter",
+        "value": 8.0
+       },
+       {
+        "label": "Other",
+        "value": 2.0
+       }
+      ],
+      "insight": "Top response: Longer software support (45.00%).",
+      "distributionNote": "Longer software support is the strongest trust driver across segments, especially among Connectivity-Driven and Health-Committed Users; environmental factors are secondary.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "battery_and_charging",
+      "beatTitle": "Battery life and charging expectations",
+      "beatCanonical": "format_packaging",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Made from recycled materials",
+         "value": 18.0
+        },
+        {
+         "label": "Repairable by the user",
+         "value": 22.0
+        },
+        {
+         "label": "Longer software support",
+         "value": 45.0
+        },
+        {
+         "label": "Made in your country",
+         "value": 12.0
+        },
+        {
+         "label": "Carbon-neutral production",
+         "value": 10.0
+        },
+        {
+         "label": "None of these would matter",
+         "value": 8.0
+        },
+        {
+         "label": "Other",
+         "value": 2.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Made from recycled materials",
+         "value": 18.0
+        },
+        {
+         "label": "Repairable by the user",
+         "value": 22.0
+        },
+        {
+         "label": "Longer software support",
+         "value": 45.0
+        },
+        {
+         "label": "Made in your country",
+         "value": 12.0
+        },
+        {
+         "label": "Carbon-neutral production",
+         "value": 10.0
+        },
+        {
+         "label": "None of these would matter",
+         "value": 8.0
+        },
+        {
+         "label": "Other",
+         "value": 2.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q16",
+      "qNum": 16,
+      "question": "What would you give up to get a longer battery life?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Advanced health sensors",
+       "Larger, brighter screen",
+       "Built-in GPS",
+       "Faster charging",
+       "Thinner, lighter design",
+       "None of these"
+      ],
+      "chart": "donut",
+      "data": [
+       {
+        "label": "Advanced health sensors",
+        "value": 28.0
+       },
+       {
+        "label": "Larger, brighter screen",
+        "value": 22.0
+       },
+       {
+        "label": "Built-in GPS",
+        "value": 18.0
+       },
+       {
+        "label": "Faster charging",
+        "value": 12.0
+       },
+       {
+        "label": "Thinner, lighter design",
+        "value": 8.0
+       },
+       {
+        "label": "None of these",
+        "value": 12.0
+       }
+      ],
+      "insight": "Top response: Advanced health sensors (28.00%).",
+      "distributionNote": "Health-Committed Users are reluctant to give up health sensors; Connectivity-Driven Users and Lifestyle-Style Owners are more willing to trade screen or design.",
+      "N": 370,
+      "questionLayer": "module",
+      "isGrounded": true,
+      "funnelPosition": 6,
+      "narrativeOrder": 6,
+      "beatId": "tradeoffs",
+      "beatTitle": "Trade-offs they would make",
+      "beatCanonical": "tradeoffs",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Advanced health sensors",
+         "value": 28.0
+        },
+        {
+         "label": "Larger, brighter screen",
+         "value": 22.0
+        },
+        {
+         "label": "Built-in GPS",
+         "value": 18.0
+        },
+        {
+         "label": "Faster charging",
+         "value": 12.0
+        },
+        {
+         "label": "Thinner, lighter design",
+         "value": 8.0
+        },
+        {
+         "label": "None of these",
+         "value": 12.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Advanced health sensors",
+         "value": 28.0
+        },
+        {
+         "label": "Larger, brighter screen",
+         "value": 22.0
+        },
+        {
+         "label": "Built-in GPS",
+         "value": 18.0
+        },
+        {
+         "label": "Faster charging",
+         "value": 12.0
+        },
+        {
+         "label": "Thinner, lighter design",
+         "value": 8.0
+        },
+        {
+         "label": "None of these",
+         "value": 12.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q17",
+      "qNum": 17,
+      "question": "How much extra would you pay for a smartwatch that tracks blood pressure without a cuff?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Nothing, I wouldn't pay extra for that",
+       "Up to ¥300 more",
+       "¥301 to ¥700 more",
+       "¥701 to ¥1,400 more",
+       "More than ¥1,400"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Nothing, I wouldn't pay extra for that",
+        "value": 20.0
+       },
+       {
+        "label": "Up to ¥300 more",
+        "value": 28.0
+       },
+       {
+        "label": "¥301 to ¥700 more",
+        "value": 26.0
+       },
+       {
+        "label": "¥701 to ¥1,400 more",
+        "value": 16.0
+       },
+       {
+        "label": "More than ¥1,400",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: Up to ¥300 more (28.00%).",
+      "distributionNote": "Price-Sensitive Buyers and Budget-conscious segments cap extra spend; Health-Committed Users and Tech-Enthusiast segments show willingness to pay moderate premiums.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 7,
+      "narrativeOrder": 7,
+      "beatId": "willingness_to_pay",
+      "beatTitle": "Willingness to pay for premium features",
+      "beatCanonical": "value_expectation",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Nothing, I wouldn't pay extra for that",
+         "value": 20.0
+        },
+        {
+         "label": "Up to ¥300 more",
+         "value": 28.0
+        },
+        {
+         "label": "¥301 to ¥700 more",
+         "value": 26.0
+        },
+        {
+         "label": "¥701 to ¥1,400 more",
+         "value": 16.0
+        },
+        {
+         "label": "More than ¥1,400",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Nothing, I wouldn't pay extra for that",
+         "value": 20.0
+        },
+        {
+         "label": "Up to ¥300 more",
+         "value": 28.0
+        },
+        {
+         "label": "¥301 to ¥700 more",
+         "value": 26.0
+        },
+        {
+         "label": "¥701 to ¥1,400 more",
+         "value": 16.0
+        },
+        {
+         "label": "More than ¥1,400",
+         "value": 10.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "satisfaction",
+    "label": "Unmet Needs, Switching & Future Purchase Intent",
+    "questions": [
+     {
+      "id": "q18",
+      "qNum": 18,
+      "question": "Overall, how satisfied are you with the Smartwatches you currently use?",
+      "questionType": "likert_5",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Very dissatisfied",
+       "Somewhat dissatisfied",
+       "Neither satisfied nor dissatisfied",
+       "Somewhat satisfied",
+       "Very satisfied"
+      ],
+      "chart": "hbar-likert",
+      "data": [
+       {
+        "label": "Very dissatisfied",
+        "value": 8.0
+       },
+       {
+        "label": "Somewhat dissatisfied",
+        "value": 20.0
+       },
+       {
+        "label": "Neither satisfied nor dissatisfied",
+        "value": 22.0
+       },
+       {
+        "label": "Somewhat satisfied",
+        "value": 35.0
+       },
+       {
+        "label": "Very satisfied",
+        "value": 15.0
+       }
+      ],
+      "insight": "Top response: Somewhat satisfied (35.00%).",
+      "distributionNote": "Moderate satisfaction overall; Health-Committed Users are less satisfied due to accuracy gaps, while Lifestyle-Style Owners are more satisfied.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "overall_satisfaction",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Very dissatisfied",
+         "value": 8.0
+        },
+        {
+         "label": "Somewhat dissatisfied",
+         "value": 20.0
+        },
+        {
+         "label": "Neither satisfied nor dissatisfied",
+         "value": 22.0
+        },
+        {
+         "label": "Somewhat satisfied",
+         "value": 35.0
+        },
+        {
+         "label": "Very satisfied",
+         "value": 15.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Very dissatisfied",
+         "value": 8.0
+        },
+        {
+         "label": "Somewhat dissatisfied",
+         "value": 20.0
+        },
+        {
+         "label": "Neither satisfied nor dissatisfied",
+         "value": 22.0
+        },
+        {
+         "label": "Somewhat satisfied",
+         "value": 35.0
+        },
+        {
+         "label": "Very satisfied",
+         "value": 15.0
+        }
+       ]
+      },
+      "ordered": true
+     },
+     {
+      "id": "q19",
+      "qNum": 19,
+      "question": "How likely are you to recommend the Smartwatches you currently use to a friend or colleague?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "0 - Not at all likely",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10 - Extremely likely"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "0 - Not at all likely",
+        "value": 2.0
+       },
+       {
+        "label": "1",
+        "value": 1.0
+       },
+       {
+        "label": "2",
+        "value": 2.0
+       },
+       {
+        "label": "3",
+        "value": 3.0
+       },
+       {
+        "label": "4",
+        "value": 4.0
+       },
+       {
+        "label": "5",
+        "value": 8.0
+       },
+       {
+        "label": "6",
+        "value": 10.0
+       },
+       {
+        "label": "7",
+        "value": 18.0
+       },
+       {
+        "label": "8",
+        "value": 25.0
+       },
+       {
+        "label": "9",
+        "value": 17.0
+       },
+       {
+        "label": "10 - Extremely likely",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: 8 (25.00%).",
+      "distributionNote": "Positive sentiment and medium brand loyalty concentrate responses in the 7–9 range; Price-Sensitive Buyers temper the top-box, while Health-Committed and Connectivity-Driven Users push higher scores.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "advocacy_nps",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "0 - Not at all likely",
+         "value": 2.0
+        },
+        {
+         "label": "1",
+         "value": 1.0
+        },
+        {
+         "label": "2",
+         "value": 2.0
+        },
+        {
+         "label": "3",
+         "value": 3.0
+        },
+        {
+         "label": "4",
+         "value": 4.0
+        },
+        {
+         "label": "5",
+         "value": 8.0
+        },
+        {
+         "label": "6",
+         "value": 10.0
+        },
+        {
+         "label": "7",
+         "value": 18.0
+        },
+        {
+         "label": "8",
+         "value": 25.0
+        },
+        {
+         "label": "9",
+         "value": 17.0
+        },
+        {
+         "label": "10 - Extremely likely",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "0 - Not at all likely",
+         "value": 2.0
+        },
+        {
+         "label": "1",
+         "value": 1.0
+        },
+        {
+         "label": "2",
+         "value": 2.0
+        },
+        {
+         "label": "3",
+         "value": 3.0
+        },
+        {
+         "label": "4",
+         "value": 4.0
+        },
+        {
+         "label": "5",
+         "value": 8.0
+        },
+        {
+         "label": "6",
+         "value": 10.0
+        },
+        {
+         "label": "7",
+         "value": 18.0
+        },
+        {
+         "label": "8",
+         "value": 25.0
+        },
+        {
+         "label": "9",
+         "value": 17.0
+        },
+        {
+         "label": "10 - Extremely likely",
+         "value": 10.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q20",
+      "qNum": 20,
+      "question": "How does your smartwatch's battery life compare with what you expected?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Much worse than expected",
+       "Somewhat worse than expected",
+       "About as expected",
+       "Somewhat better than expected",
+       "Much better than expected"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Much worse than expected",
+        "value": 10.0
+       },
+       {
+        "label": "Somewhat worse than expected",
+        "value": 24.0
+       },
+       {
+        "label": "About as expected",
+        "value": 38.0
+       },
+       {
+        "label": "Somewhat better than expected",
+        "value": 20.0
+       },
+       {
+        "label": "Much better than expected",
+        "value": 8.0
+       }
+      ],
+      "insight": "Top response: About as expected (38.00%).",
+      "distributionNote": "Battery life expectations are often unmet, especially among Health-Committed Users who prioritize endurance; some segments find it better than expected.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "overall_satisfaction",
+      "beatTitle": "Overall satisfaction with current smartwatch",
+      "beatCanonical": "overall_satisfaction",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Much worse than expected",
+         "value": 10.0
+        },
+        {
+         "label": "Somewhat worse than expected",
+         "value": 24.0
+        },
+        {
+         "label": "About as expected",
+         "value": 38.0
+        },
+        {
+         "label": "Somewhat better than expected",
+         "value": 20.0
+        },
+        {
+         "label": "Much better than expected",
+         "value": 8.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Much worse than expected",
+         "value": 10.0
+        },
+        {
+         "label": "Somewhat worse than expected",
+         "value": 24.0
+        },
+        {
+         "label": "About as expected",
+         "value": 38.0
+        },
+        {
+         "label": "Somewhat better than expected",
+         "value": 20.0
+        },
+        {
+         "label": "Much better than expected",
+         "value": 8.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q21",
+      "qNum": 21,
+      "question": "Which one aspect of your smartwatch are you least satisfied with?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Battery life",
+       "Health-tracking accuracy",
+       "App or phone connection",
+       "Screen visibility outdoors",
+       "Comfort or fit",
+       "Charging speed"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Battery life",
+        "value": 34.0
+       },
+       {
+        "label": "Health-tracking accuracy",
+        "value": 22.0
+       },
+       {
+        "label": "App or phone connection",
+        "value": 14.0
+       },
+       {
+        "label": "Screen visibility outdoors",
+        "value": 12.0
+       },
+       {
+        "label": "Comfort or fit",
+        "value": 10.0
+       },
+       {
+        "label": "Charging speed",
+        "value": 8.0
+       }
+      ],
+      "insight": "Top response: Battery life (34.00%).",
+      "distributionNote": "Battery life is the dominant weak spot across segments; Health-focused users skew toward accuracy, Connectivity-driven users toward the phone connection.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "satisfaction_breakdown",
+      "beatTitle": "What satisfies and what disappoints",
+      "beatCanonical": "satisfaction_drivers",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Battery life",
+         "value": 34.0
+        },
+        {
+         "label": "Health-tracking accuracy",
+         "value": 22.0
+        },
+        {
+         "label": "App or phone connection",
+         "value": 14.0
+        },
+        {
+         "label": "Screen visibility outdoors",
+         "value": 12.0
+        },
+        {
+         "label": "Comfort or fit",
+         "value": 10.0
+        },
+        {
+         "label": "Charging speed",
+         "value": 8.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Battery life",
+         "value": 34.0
+        },
+        {
+         "label": "Health-tracking accuracy",
+         "value": 22.0
+        },
+        {
+         "label": "App or phone connection",
+         "value": 14.0
+        },
+        {
+         "label": "Screen visibility outdoors",
+         "value": 12.0
+        },
+        {
+         "label": "Comfort or fit",
+         "value": 10.0
+        },
+        {
+         "label": "Charging speed",
+         "value": 8.0
+        }
+       ]
+      },
+      "ordered": true
+     },
+     {
+      "id": "q22",
+      "qNum": 22,
+      "question": "Which frustrations have you had with your smartwatch?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Battery life doesn't last long enough",
+       "Sleep tracking accuracy is questionable",
+       "Health data not always reliable",
+       "Too expensive for the features offered",
+       "Compatibility issues with my phone",
+       "Other"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "Battery life doesn't last long enough",
+        "value": 42.0
+       },
+       {
+        "label": "Sleep tracking accuracy is questionable",
+        "value": 31.0
+       },
+       {
+        "label": "Health data not always reliable",
+        "value": 18.0
+       },
+       {
+        "label": "Too expensive for the features offered",
+        "value": 27.0
+       },
+       {
+        "label": "Compatibility issues with my phone",
+        "value": 15.0
+       },
+       {
+        "label": "Other",
+        "value": 8.0
+       }
+      ],
+      "insight": "Top response: Battery life doesn't last long enough (42.00%).",
+      "distributionNote": "Health-Committed Users and Connectivity-Driven Users report battery and sleep frustrations most; Price-Sensitive Buyers add cost concerns.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "pain_points",
+      "beatTitle": "Frustrations and unmet needs",
+      "beatCanonical": "friction",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Battery life doesn't last long enough",
+         "value": 42.0
+        },
+        {
+         "label": "Sleep tracking accuracy is questionable",
+         "value": 31.0
+        },
+        {
+         "label": "Health data not always reliable",
+         "value": 18.0
+        },
+        {
+         "label": "Too expensive for the features offered",
+         "value": 27.0
+        },
+        {
+         "label": "Compatibility issues with my phone",
+         "value": 15.0
+        },
+        {
+         "label": "Other",
+         "value": 8.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Battery life doesn't last long enough",
+         "value": 42.0
+        },
+        {
+         "label": "Sleep tracking accuracy is questionable",
+         "value": 31.0
+        },
+        {
+         "label": "Health data not always reliable",
+         "value": 18.0
+        },
+        {
+         "label": "Too expensive for the features offered",
+         "value": 27.0
+        },
+        {
+         "label": "Compatibility issues with my phone",
+         "value": 15.0
+        },
+        {
+         "label": "Other",
+         "value": 8.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q23",
+      "qNum": 23,
+      "question": "What would most likely make you switch to a different smartwatch?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "A watch with significantly longer battery life",
+       "A watch with more accurate health or sleep tracking",
+       "A watch that works better with my phone",
+       "A watch with a style I prefer",
+       "A watch with new features I can't get now",
+       "A lower price for the same features",
+       "Other"
+      ],
+      "chart": "lollipop",
+      "data": [
+       {
+        "label": "A watch with significantly longer battery life",
+        "value": 28.0
+       },
+       {
+        "label": "A watch with more accurate health or sleep tracking",
+        "value": 24.0
+       },
+       {
+        "label": "A watch that works better with my phone",
+        "value": 17.0
+       },
+       {
+        "label": "A watch with a style I prefer",
+        "value": 8.0
+       },
+       {
+        "label": "A watch with new features I can't get now",
+        "value": 10.0
+       },
+       {
+        "label": "A lower price for the same features",
+        "value": 11.0
+       },
+       {
+        "label": "Other",
+        "value": 2.0
+       }
+      ],
+      "insight": "Top response: A watch with significantly longer battery life (28.00%).",
+      "distributionNote": "Health-Committed Users prioritize accuracy; Connectivity-Driven Users prioritize phone integration; Price-Sensitive Buyers are drawn to lower price.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 6,
+      "narrativeOrder": 6,
+      "beatId": "switching_triggers",
+      "beatTitle": "What would make them switch or upgrade",
+      "beatCanonical": "switching",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "A watch with significantly longer battery life",
+         "value": 28.0
+        },
+        {
+         "label": "A watch with more accurate health or sleep tracking",
+         "value": 24.0
+        },
+        {
+         "label": "A watch that works better with my phone",
+         "value": 17.0
+        },
+        {
+         "label": "A watch with a style I prefer",
+         "value": 8.0
+        },
+        {
+         "label": "A watch with new features I can't get now",
+         "value": 10.0
+        },
+        {
+         "label": "A lower price for the same features",
+         "value": 11.0
+        },
+        {
+         "label": "Other",
+         "value": 2.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "A watch with significantly longer battery life",
+         "value": 28.0
+        },
+        {
+         "label": "A watch with more accurate health or sleep tracking",
+         "value": 24.0
+        },
+        {
+         "label": "A watch that works better with my phone",
+         "value": 17.0
+        },
+        {
+         "label": "A watch with a style I prefer",
+         "value": 8.0
+        },
+        {
+         "label": "A watch with new features I can't get now",
+         "value": 10.0
+        },
+        {
+         "label": "A lower price for the same features",
+         "value": 11.0
+        },
+        {
+         "label": "Other",
+         "value": 2.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q24",
+      "qNum": 24,
+      "question": "Which improvements would most likely make you upgrade your smartwatch?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Longer battery life (multi-week)",
+       "Non-invasive blood pressure monitoring",
+       "More accurate sleep stage detection",
+       "Offline maps and music storage",
+       "Solar charging or alternative power options",
+       "Better third-party app integration",
+       "None of these"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Longer battery life (multi-week)",
+        "value": 30.0
+       },
+       {
+        "label": "Non-invasive blood pressure monitoring",
+        "value": 18.0
+       },
+       {
+        "label": "More accurate sleep stage detection",
+        "value": 22.0
+       },
+       {
+        "label": "Offline maps and music storage",
+        "value": 9.0
+       },
+       {
+        "label": "Solar charging or alternative power options",
+        "value": 8.0
+       },
+       {
+        "label": "Better third-party app integration",
+        "value": 9.0
+       },
+       {
+        "label": "None of these",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: Longer battery life (multi-week) (30.00%).",
+      "distributionNote": "Health-Committed Users are split between battery and advanced health features; Connectivity-Driven Users value offline and app integration.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 7,
+      "narrativeOrder": 7,
+      "beatId": "switching_triggers",
+      "beatTitle": "What would make them switch or upgrade",
+      "beatCanonical": "switching",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Longer battery life (multi-week)",
+         "value": 30.0
+        },
+        {
+         "label": "Non-invasive blood pressure monitoring",
+         "value": 18.0
+        },
+        {
+         "label": "More accurate sleep stage detection",
+         "value": 22.0
+        },
+        {
+         "label": "Offline maps and music storage",
+         "value": 9.0
+        },
+        {
+         "label": "Solar charging or alternative power options",
+         "value": 8.0
+        },
+        {
+         "label": "Better third-party app integration",
+         "value": 9.0
+        },
+        {
+         "label": "None of these",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Longer battery life (multi-week)",
+         "value": 30.0
+        },
+        {
+         "label": "Non-invasive blood pressure monitoring",
+         "value": 18.0
+        },
+        {
+         "label": "More accurate sleep stage detection",
+         "value": 22.0
+        },
+        {
+         "label": "Offline maps and music storage",
+         "value": 9.0
+        },
+        {
+         "label": "Solar charging or alternative power options",
+         "value": 8.0
+        },
+        {
+         "label": "Better third-party app integration",
+         "value": 9.0
+        },
+        {
+         "label": "None of these",
+         "value": 4.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q25",
+      "qNum": 25,
+      "question": "How likely are you to buy a new smartwatch in the next 12 months?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Very unlikely",
+       "Somewhat unlikely",
+       "Neither likely nor unlikely",
+       "Somewhat likely",
+       "Very likely"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Very unlikely",
+        "value": 12.0
+       },
+       {
+        "label": "Somewhat unlikely",
+        "value": 18.0
+       },
+       {
+        "label": "Neither likely nor unlikely",
+        "value": 20.0
+       },
+       {
+        "label": "Somewhat likely",
+        "value": 30.0
+       },
+       {
+        "label": "Very likely",
+        "value": 20.0
+       }
+      ],
+      "insight": "Top response: Somewhat likely (30.00%).",
+      "distributionNote": "Positive sentiment and high growth outlook push many toward likely purchase; Price-Sensitive Buyers temper the top end.",
+      "N": 370,
+      "questionLayer": "full",
+      "isGrounded": true,
+      "funnelPosition": 8,
+      "narrativeOrder": 8,
+      "beatId": "future_intent",
+      "beatTitle": "Future purchase and upgrade plans",
+      "beatCanonical": "future_use",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Very unlikely",
+         "value": 12.0
+        },
+        {
+         "label": "Somewhat unlikely",
+         "value": 18.0
+        },
+        {
+         "label": "Neither likely nor unlikely",
+         "value": 20.0
+        },
+        {
+         "label": "Somewhat likely",
+         "value": 30.0
+        },
+        {
+         "label": "Very likely",
+         "value": 20.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Very unlikely",
+         "value": 12.0
+        },
+        {
+         "label": "Somewhat unlikely",
+         "value": 18.0
+        },
+        {
+         "label": "Neither likely nor unlikely",
+         "value": 20.0
+        },
+        {
+         "label": "Somewhat likely",
+         "value": 30.0
+        },
+        {
+         "label": "Very likely",
+         "value": 20.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "profiling",
+    "label": "Profiling",
+    "questions": [
+     {
+      "id": "q26",
+      "qNum": 26,
+      "question": "Which age group are you in?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "18-24",
+       "25-34",
+       "35-44",
+       "45-54",
+       "55-64",
+       "65 or older"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "18-24",
+        "value": 15.0
+       },
+       {
+        "label": "25-34",
+        "value": 28.0
+       },
+       {
+        "label": "35-44",
+        "value": 24.0
+       },
+       {
+        "label": "45-54",
+        "value": 16.0
+       },
+       {
+        "label": "55-64",
+        "value": 10.0
+       },
+       {
+        "label": "65 or older",
+        "value": 7.0
+       }
+      ],
+      "insight": "Top response: 25-34 (28.00%).",
+      "distributionNote": "Younger and middle-aged segments dominate, consistent with early tech adoption and health awareness in the region.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "age_band",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "18-24",
+         "value": 15.0
+        },
+        {
+         "label": "25-34",
+         "value": 28.0
+        },
+        {
+         "label": "35-44",
+         "value": 24.0
+        },
+        {
+         "label": "45-54",
+         "value": 16.0
+        },
+        {
+         "label": "55-64",
+         "value": 10.0
+        },
+        {
+         "label": "65 or older",
+         "value": 7.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "18-24",
+         "value": 15.0
+        },
+        {
+         "label": "25-34",
+         "value": 28.0
+        },
+        {
+         "label": "35-44",
+         "value": 24.0
+        },
+        {
+         "label": "45-54",
+         "value": 16.0
+        },
+        {
+         "label": "55-64",
+         "value": 10.0
+        },
+        {
+         "label": "65 or older",
+         "value": 7.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q27",
+      "qNum": 27,
+      "question": "What is your gender?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Woman",
+       "Man",
+       "Non-binary",
+       "Prefer to self-describe",
+       "Prefer not to say"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Woman",
+        "value": 48.0
+       },
+       {
+        "label": "Man",
+        "value": 50.0
+       },
+       {
+        "label": "Non-binary",
+        "value": 1.0
+       },
+       {
+        "label": "Prefer to self-describe",
+        "value": 0.0
+       },
+       {
+        "label": "Prefer not to say",
+        "value": 1.0
+       }
+      ],
+      "insight": "Top response: Man (50.00%).",
+      "distributionNote": "The panel skews slightly male, reflecting the tech-early-adopter mix in the region; non-binary and prefer-not-to-say remain small minorities.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "gender",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Woman",
+         "value": 48.0
+        },
+        {
+         "label": "Man",
+         "value": 50.0
+        },
+        {
+         "label": "Non-binary",
+         "value": 1.0
+        },
+        {
+         "label": "Prefer to self-describe",
+         "value": 0.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 1.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Woman",
+         "value": 48.0
+        },
+        {
+         "label": "Man",
+         "value": 50.0
+        },
+        {
+         "label": "Non-binary",
+         "value": 1.0
+        },
+        {
+         "label": "Prefer to self-describe",
+         "value": 0.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 1.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q28",
+      "qNum": 28,
+      "question": "Who else lives in your household?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "I live alone",
+       "I live with a partner, no children at home",
+       "I live with children under 18",
+       "I live with other adults (family or housemates), no children",
+       "Other"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "I live alone",
+        "value": 12.0
+       },
+       {
+        "label": "I live with a partner, no children at home",
+        "value": 30.0
+       },
+       {
+        "label": "I live with children under 18",
+        "value": 34.0
+       },
+       {
+        "label": "I live with other adults (family or housemates), no children",
+        "value": 20.0
+       },
+       {
+        "label": "Other",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: I live with children under 18 (34.00%).",
+      "distributionNote": "",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "household_composition",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "I live alone",
+         "value": 12.0
+        },
+        {
+         "label": "I live with a partner, no children at home",
+         "value": 30.0
+        },
+        {
+         "label": "I live with children under 18",
+         "value": 34.0
+        },
+        {
+         "label": "I live with other adults (family or housemates), no children",
+         "value": 20.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "I live alone",
+         "value": 12.0
+        },
+        {
+         "label": "I live with a partner, no children at home",
+         "value": 30.0
+        },
+        {
+         "label": "I live with children under 18",
+         "value": 34.0
+        },
+        {
+         "label": "I live with other adults (family or housemates), no children",
+         "value": 20.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q29",
+      "qNum": 29,
+      "question": "What was your total household income before tax last year?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Under ¥25,000",
+       "¥25,000 - ¥49,999",
+       "¥50,000 - ¥74,999",
+       "¥75,000 - ¥99,999",
+       "¥100,000 - ¥149,999",
+       "¥150,000 or more",
+       "Prefer not to say"
+      ],
+      "chart": "donut",
+      "data": [
+       {
+        "label": "Under ¥25,000",
+        "value": 10.0
+       },
+       {
+        "label": "¥25,000 - ¥49,999",
+        "value": 24.0
+       },
+       {
+        "label": "¥50,000 - ¥74,999",
+        "value": 28.0
+       },
+       {
+        "label": "¥75,000 - ¥99,999",
+        "value": 18.0
+       },
+       {
+        "label": "¥100,000 - ¥149,999",
+        "value": 12.0
+       },
+       {
+        "label": "¥150,000 or more",
+        "value": 5.0
+       },
+       {
+        "label": "Prefer not to say",
+        "value": 3.0
+       }
+      ],
+      "insight": "Top response: ¥50,000 - ¥74,999 (28.00%).",
+      "distributionNote": "Income skews middle and lower-middle, with a long tail of higher earners; a small share declines to answer.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "income_band",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Under ¥25,000",
+         "value": 10.0
+        },
+        {
+         "label": "¥25,000 - ¥49,999",
+         "value": 24.0
+        },
+        {
+         "label": "¥50,000 - ¥74,999",
+         "value": 28.0
+        },
+        {
+         "label": "¥75,000 - ¥99,999",
+         "value": 18.0
+        },
+        {
+         "label": "¥100,000 - ¥149,999",
+         "value": 12.0
+        },
+        {
+         "label": "¥150,000 or more",
+         "value": 5.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 3.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Under ¥25,000",
+         "value": 10.0
+        },
+        {
+         "label": "¥25,000 - ¥49,999",
+         "value": 24.0
+        },
+        {
+         "label": "¥50,000 - ¥74,999",
+         "value": 28.0
+        },
+        {
+         "label": "¥75,000 - ¥99,999",
+         "value": 18.0
+        },
+        {
+         "label": "¥100,000 - ¥149,999",
+         "value": 12.0
+        },
+        {
+         "label": "¥150,000 or more",
+         "value": 5.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 3.0
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "survey": {
+  "market_segment": "Smartwatches",
+  "segment_type": "b2c",
+  "region": "China",
+  "sample_size": 2500,
+  "surveyDefinition": {
+   "title": "Smartwatches — consumer survey (China)",
+   "category": "Smartwatches",
+   "region": "China",
+   "audienceType": "B2C consumer",
+   "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on smartwatch usage intensity, purchase drivers, feature priorities, and upgrade/switching behaviour.",
+   "segments": [
+    {
+     "id": "health_committed_users",
+     "name": "Health-Committed Users",
+     "description": "Wear their smartwatch almost daily, primarily for continuous health and fitness tracking (heart rate, sleep, SpO2). They are willing to pay more for advanced sensors and accuracy, and are frustrated by inaccuracies and subscription fees for health metrics."
+    },
+    {
+     "id": "connectivity_driven_users",
+     "name": "Connectivity-Driven Users",
+     "description": "Use the smartwatch as an extension of their smartphone — for notifications, calls, and quick interactions. They value seamless ecosystem integration and app experience over fitness depth, and may not use all health features."
+    },
+    {
+     "id": "lifestyle_style_owners",
+     "name": "Lifestyle-Style Owners",
+     "description": "Own a smartwatch as a fashion statement or status symbol, often choosing premium designs and brands. They use basic features (steps, time) but are less engaged with deep health tracking. They are attracted by design, brand reputation, and customization."
+    },
+    {
+     "id": "price_sensitive_buyers",
+     "name": "Price-Sensitive Buyers",
+     "description": "Own a smartwatch but are highly conscious of price and value. They seek essential features at the lowest possible cost, are reluctant to pay for subscriptions, and may delay upgrades or choose older models. They are prone to switching if a better deal appears."
+    }
+   ],
+   "whatThisSurveyIs": "A segmentation study of Smartwatches buyers in China. It asks how people use Smartwatches, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+   "whoseContextThisIs": "Adults in China who buy or use Smartwatches for personal or household use. Respondents qualify if they: Individuals who currently own or have purchased a smartwatch in the past 12 months; Individuals who are actively considering purchasing a smartwatch within the next 6 months; Adults aged 18+ who make their own purchase decisions. Excluded: Businesses or institutions purchasing smartwatches in bulk for employees; Children under 18 (unless the study specifically targets kids' smartwatches, which is not the primary market); Individuals who only use basic fitness bands without smart features.",
+   "whyTheseRespondents": "Consumers buy smartwatches for personal use, pay for them out of pocket, and decide on the model and brand themselves. While some businesses may purchase smartwatches for employees, the dominant and defining purchase is by individual consumers, making this a pure B2C market.",
+   "respondentBehaviours": [
+    "Health and fitness tracking (steps, heart rate, sleep)",
+    "Smartphone integration for notifications and calls",
+    "Fashion and personal style expression",
+    "Early adoption of new technology",
+    "Brand loyalty to smartphone ecosystems (Apple, Samsung, etc.)"
+   ],
+   "whatIsDeliberatelyNotAsked": [
+    "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+    "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+    "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+   ],
+   "howToReadTheNumbers": "Percentages are modelled estimates built from published market evidence — they are not measurements from fielded interviews, and should be read as an expected shape of response rather than a result. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+   "structure": {
+    "totalQuestions": 29,
+    "sections": [
+     {
+      "id": "profile",
+      "label": "Consumer Profile",
+      "covers": "who uses the product and how — usage context, occasions, frequency, who is involved",
+      "questions": 5
+     },
+     {
+      "id": "behavior",
+      "label": "Buying Behavior",
+      "covers": "how they shop for and buy it — trigger, research, channel, spend, decision drivers",
+      "questions": 5
+     },
+     {
+      "id": "preferences",
+      "label": "Preferences & Expectations",
+      "covers": "what they need from the product — must-haves, quality cues, fit, claims, trade-offs",
+      "questions": 7
+     },
+     {
+      "id": "satisfaction",
+      "label": "Satisfaction & Future Intent",
+      "covers": "outcomes — satisfaction, problems, switching, advocacy, future purchase intent",
+      "questions": 8
+     }
+    ],
+    "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+    "storylineSummary": "The survey opens by establishing who owns a smartwatch and how they use it day-to-day, distinguishing health-focused users from connectivity-driven and style-led owners. It then traces the purchase journey — what triggered the buy, where they researched and bought, and what factors decided the choice. Next, it probes feature priorities, quality signals, and trade-offs, revealing what they value most and what they would sacrifice. Finally, it measures satisfaction, pain points, and future intent, identifying who is at risk of switching and what would retain them. The arc moves from broad usage…"
+   }
+  },
+  "targetCustomer": {
+   "summary": "Adult consumers of Smartwatches in China — who Individuals who currently own or have purchased a smartwatch in the past 12 months; Individuals who are actively considering purchasing a smartwatch within the next 6 months; Adults aged 18+ who make their own purchase decisions. The audience is defined as individual consumers who buy smartwatches for personal use, as they are the primary purchasers and decision-makers. The demographic and behavioral criteria capture both current owners and potential buyers to support a broad consumer survey.",
+   "marketSegment": "Smartwatches",
+   "region": "China",
+   "inclusionCriteria": [
+    "Individuals who currently own or have purchased a smartwatch in the past 12 months",
+    "Individuals who are actively considering purchasing a smartwatch within the next 6 months",
+    "Adults aged 18+ who make their own purchase decisions"
+   ],
+   "behaviors": [
+    "Health and fitness tracking (steps, heart rate, sleep)",
+    "Smartphone integration for notifications and calls",
+    "Fashion and personal style expression",
+    "Early adoption of new technology",
+    "Brand loyalty to smartphone ecosystems (Apple, Samsung, etc.)"
+   ],
+   "exclusions": [
+    "Businesses or institutions purchasing smartwatches in bulk for employees",
+    "Children under 18 (unless the study specifically targets kids' smartwatches, which is not the primary market)",
+    "Individuals who only use basic fitness bands without smart features"
+   ],
+   "contextDemographics": {
+    "age_range": "18-64",
+    "income": "Middle to upper-middle income, with discretionary spending for wearable tech",
+    "gender": "All genders, slight skew toward male in early adopters but balanced in mass market",
+    "geography": "Global, with higher penetration in urban and suburban areas of developed and emerging economies"
+   },
+   "assumptions": [
+    "The smartwatch market is predominantly consumer-driven, with business purchases being a minor segment.",
+    "The study focuses on the consumer end-user, not corporate procurement.",
+    "Global scope implies a diverse set of markets; regional nuances are handled downstream."
+   ],
+   "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "audience_profile": {
+   "demographics": {
+    "age_range": "18-64",
+    "income": "Middle to upper-middle income, with discretionary spending for wearable tech",
+    "gender": "All genders, slight skew toward male in early adopters but balanced in mass market",
+    "geography": "Global, with higher penetration in urban and suburban areas of developed and emerging economies"
+   },
+   "behaviors": [
+    "Health and fitness tracking (steps, heart rate, sleep)",
+    "Smartphone integration for notifications and calls",
+    "Fashion and personal style expression",
+    "Early adoption of new technology",
+    "Brand loyalty to smartphone ecosystems (Apple, Samsung, etc.)"
+   ],
+   "qualifiers": [
+    "Individuals who currently own or have purchased a smartwatch in the past 12 months",
+    "Individuals who are actively considering purchasing a smartwatch within the next 6 months",
+    "Adults aged 18+ who make their own purchase decisions"
+   ],
+   "exclusions": [
+    "Businesses or institutions purchasing smartwatches in bulk for employees",
+    "Children under 18 (unless the study specifically targets kids' smartwatches, which is not the primary market)",
+    "Individuals who only use basic fitness bands without smart features"
+   ],
+   "rationale": "The audience is defined as individual consumers who buy smartwatches for personal use, as they are the primary purchasers and decision-makers. The demographic and behavioral criteria capture both current owners and potential buyers to support a broad consumer survey.",
+   "assumptions": [
+    "The smartwatch market is predominantly consumer-driven, with business purchases being a minor segment.",
+    "The study focuses on the consumer end-user, not corporate procurement.",
+    "Global scope implies a diverse set of markets; regional nuances are handled downstream."
+   ]
+  },
+  "tabs": [
+   {
+    "tab": "consumer_profile",
+    "questions": [
+     {
+      "id": "q1",
+      "text": "What do you use your smartwatch for?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "smartwatch_ownership",
+      "beat_title": "Smartwatch ownership and current device",
+      "beat_canonical": "category_entry",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Checking notifications",
+       "Tracking workouts",
+       "Monitoring sleep",
+       "Checking the time",
+       "Contactless payments",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Checking notifications",
+        "percentage": 78.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Tracking workouts",
+        "percentage": 82.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Monitoring sleep",
+        "percentage": 61.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Checking the time",
+        "percentage": 55.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Contactless payments",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": false,
+      "distribution_note": "Connectivity-Driven Users and Health-Committed Users dominate; most use the watch for notifications and workouts, with sleep tracking also common.",
+      "data_by_region": {
+       "asia-pacific": [
+        78.0,
+        82.0,
+        61.0,
+        55.0,
+        22.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q2",
+      "text": "How long have you owned your current smartwatch?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "smartwatch_ownership",
+      "beat_title": "Smartwatch ownership and current device",
+      "beat_canonical": "category_entry",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Less than 6 months",
+       "6 to 12 months",
+       "1 to 2 years",
+       "More than 2 years"
+      ],
+      "answers": [
+       {
+        "label": "Less than 6 months",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "6 to 12 months",
+        "percentage": 27.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "1 to 2 years",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "More than 2 years",
+        "percentage": 21.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "A maturing market with a mix of recent buyers and longer-term owners; the largest group has owned their watch 1–2 years.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        27.0,
+        34.0,
+        21.0
+       ]
+      }
+     },
+     {
+      "id": "q3",
+      "text": "In which situations do you wear your smartwatch?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "daily_usage_context",
+      "beat_title": "When and where the watch is worn",
+      "beat_canonical": "usage_occasion",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "During workouts or exercise",
+       "At work or in meetings",
+       "While sleeping",
+       "On weekends or social occasions",
+       "While travelling or commuting",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "During workouts or exercise",
+        "percentage": 72.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "At work or in meetings",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "While sleeping",
+        "percentage": 55.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "On weekends or social occasions",
+        "percentage": 41.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "While travelling or commuting",
+        "percentage": 49.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 6.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Health-Committed Users dominate workout and sleep wear; Connectivity-Driven Users lift work and commuting wear; Lifestyle-Style Owners contribute to social occasions.",
+      "data_by_region": {
+       "asia-pacific": [
+        72.0,
+        38.0,
+        55.0,
+        41.0,
+        49.0,
+        6.0
+       ]
+      }
+     },
+     {
+      "id": "q4",
+      "text": "Which health metrics do you actively track on your smartwatch?",
+      "type": "multiple_choice",
+      "chart_type": "stacked",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "health_tracking_habits",
+      "beat_title": "Health and fitness tracking habits",
+      "beat_canonical": "need_state",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Heart rate",
+       "Sleep stages",
+       "Blood oxygen (SpO2)",
+       "GPS for workouts",
+       "Steps",
+       "None of these"
+      ],
+      "answers": [
+       {
+        "label": "Heart rate",
+        "percentage": 88.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sleep stages",
+        "percentage": 62.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Blood oxygen (SpO2)",
+        "percentage": 54.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "GPS for workouts",
+        "percentage": 48.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Steps",
+        "percentage": 72.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "None of these",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": false,
+      "distribution_note": "Health-Committed Users drive high tracking of heart rate and sleep; step counting is nearly universal across all segments.",
+      "data_by_region": {
+       "asia-pacific": [
+        88.0,
+        62.0,
+        54.0,
+        48.0,
+        72.0,
+        2.0
+       ]
+      }
+     },
+     {
+      "id": "q5",
+      "text": "Is your current smartwatch your first, or a replacement?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "household_involvement",
+      "beat_title": "Who in the household uses and decides",
+      "beat_canonical": "household_role",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "It's my first smartwatch",
+       "A replacement for a previous smartwatch",
+       "An upgrade from a basic fitness band",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "It's my first smartwatch",
+        "percentage": 42.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A replacement for a previous smartwatch",
+        "percentage": 40.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "An upgrade from a basic fitness band",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Repeat buyers and first-time buyers are split almost evenly; a meaningful minority are upgrading from a basic fitness band.",
+      "data_by_region": {
+       "asia-pacific": [
+        42.0,
+        40.0,
+        15.0,
+        3.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "buying_behavior",
+    "questions": [
+     {
+      "id": "q6",
+      "text": "What made you decide to buy your current smartwatch?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "purchase_trigger",
+      "beat_title": "What triggered the last smartwatch purchase",
+      "beat_canonical": "purchase_trigger",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "My old one broke or stopped working",
+       "I wanted to start tracking my health more closely",
+       "I got a new phone and wanted them to work together",
+       "I wanted a nicer-looking watch to wear daily",
+       "I found a good deal or discount",
+       "It was a gift",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "My old one broke or stopped working",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I wanted to start tracking my health more closely",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I got a new phone and wanted them to work together",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I wanted a nicer-looking watch to wear daily",
+        "percentage": 9.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I found a good deal or discount",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "It was a gift",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Health-Committed Users are the primary driver, motivated by health tracking; Connectivity-Driven Users and Price-Sensitive Buyers also contribute.",
+      "data_by_region": {
+       "asia-pacific": [
+        12.0,
+        38.0,
+        18.0,
+        9.0,
+        14.0,
+        5.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q7",
+      "text": "Which sources did you check before buying your smartwatch?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "research_and_discovery",
+      "beat_title": "Where they researched and compared options",
+      "beat_canonical": "discovery",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Online reviews or comparison sites",
+       "Social media posts or videos",
+       "Friends or family",
+       "In-store staff or displays",
+       "Brand's own website or app",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Online reviews or comparison sites",
+        "percentage": 72.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Social media posts or videos",
+        "percentage": 58.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Friends or family",
+        "percentage": 41.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "In-store staff or displays",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Brand's own website or app",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 6.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Connectivity-Driven and Health-Committed Users rely heavily on online reviews and social media; Price-Sensitive Buyers also consult friends/family and in-store displays to compare value.",
+      "data_by_region": {
+       "asia-pacific": [
+        72.0,
+        58.0,
+        41.0,
+        22.0,
+        35.0,
+        6.0
+       ]
+      }
+     },
+     {
+      "id": "q8",
+      "text": "Where did you buy your current smartwatch?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "purchase_channel",
+      "beat_title": "Where they bought the watch",
+      "beat_canonical": "channel",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Online from a specialist electronics retailer",
+       "Online from a general marketplace",
+       "Direct from the brand's website",
+       "In a physical electronics or department store",
+       "In a mobile phone carrier store",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Online from a specialist electronics retailer",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Online from a general marketplace",
+        "percentage": 32.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Direct from the brand's website",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "In a physical electronics or department store",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "In a mobile phone carrier store",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Price-Sensitive Buyers favor general marketplaces for deals; Health-Committed Users often buy from specialist retailers or brand sites; Lifestyle-Style Owners may use physical stores for premium experience.",
+      "data_by_region": {
+       "asia-pacific": [
+        28.0,
+        32.0,
+        12.0,
+        18.0,
+        7.0,
+        3.0
+       ]
+      }
+     },
+     {
+      "id": "q9",
+      "text": "How much did you pay for the smartwatch you currently use?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "spend_and_value",
+      "beat_title": "How much they paid and perceived value",
+      "beat_canonical": "spend",
+      "question_layer": "module",
+      "sample_size": 2500,
+      "options": [
+       "Under ¥500",
+       "¥500–¥999",
+       "¥1,000–¥1,999",
+       "¥2,000–¥2,999",
+       "¥3,000 or more"
+      ],
+      "answers": [
+       {
+        "label": "Under ¥500",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥500–¥999",
+        "percentage": 27.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥1,000–¥1,999",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥2,000–¥2,999",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥3,000 or more",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Price-Sensitive Buyers concentrate in the lower bands; Health-Committed and Lifestyle-Style Owners pull toward mid-to-premium pricing.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        27.0,
+        30.0,
+        15.0,
+        10.0
+       ]
+      }
+     },
+     {
+      "id": "q10",
+      "text": "Which mattered most when you chose your smartwatch?",
+      "type": "ranking",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "decision_drivers",
+      "beat_title": "What decided the final choice",
+      "beat_canonical": "decision_drivers",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Battery life",
+       "Health and fitness tracking",
+       "Sleep monitoring",
+       "Convenience of notifications",
+       "Style and design",
+       "Brand ecosystem integration"
+      ],
+      "answers": [
+       {
+        "label": "Battery life",
+        "percentage": 26.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Health and fitness tracking",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sleep monitoring",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Convenience of notifications",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Style and design",
+        "percentage": 9.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Brand ecosystem integration",
+        "percentage": 9.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": false,
+      "distribution_note": "Health-Committed Users prioritize health and sleep tracking; Connectivity-Driven Users value notifications and ecosystem; Price-Sensitive Buyers weigh battery life for value.",
+      "data_by_region": {
+       "asia-pacific": [
+        26.0,
+        30.0,
+        14.0,
+        12.0,
+        9.0,
+        9.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "preferences_expectations",
+    "questions": [
+     {
+      "id": "q11",
+      "text": "Which must a smartwatch do before you would buy one?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "must_have_features",
+      "beat_title": "Must-have smartwatch features",
+      "beat_canonical": "must_haves",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Track workouts accurately",
+       "Monitor heart rate",
+       "Track sleep",
+       "Show phone notifications",
+       "Last at least two days on a charge",
+       "Work with any phone",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Track workouts accurately",
+        "percentage": 62.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Monitor heart rate",
+        "percentage": 71.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Track sleep",
+        "percentage": 55.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Show phone notifications",
+        "percentage": 48.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Last at least two days on a charge",
+        "percentage": 66.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Work with any phone",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users drive heart rate and sleep tracking; Connectivity-Driven Users require notifications; Price-Sensitive Buyers emphasize battery and cross-phone compatibility.",
+      "data_by_region": {
+       "asia-pacific": [
+        62.0,
+        71.0,
+        55.0,
+        48.0,
+        66.0,
+        38.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q12",
+      "text": "What tells you a smartwatch is well made before you buy it?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "quality_signals",
+      "beat_title": "What signals a quality smartwatch",
+      "beat_canonical": "quality_cues",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Accurate heart rate and sleep readings",
+       "Premium materials like metal or sapphire glass",
+       "A polished, easy-to-use companion app",
+       "A brand known for reliable smartwatches",
+       "Long battery life promised by the manufacturer",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Accurate heart rate and sleep readings",
+        "percentage": 58.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Premium materials like metal or sapphire glass",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A polished, easy-to-use companion app",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A brand known for reliable smartwatches",
+        "percentage": 42.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Long battery life promised by the manufacturer",
+        "percentage": 46.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users focus on accuracy; Price-Sensitive Buyers look for battery promises and brand reliability; Lifestyle-Style Owners value premium materials.",
+      "data_by_region": {
+       "asia-pacific": [
+        58.0,
+        24.0,
+        38.0,
+        42.0,
+        46.0,
+        3.0
+       ]
+      }
+     },
+     {
+      "id": "q13",
+      "text": "Which watch face size do you prefer for your next smartwatch?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "battery_and_charging",
+      "beat_title": "Battery life and charging expectations",
+      "beat_canonical": "format_packaging",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Under 40mm",
+       "40-42mm",
+       "44-46mm",
+       "48mm or larger",
+       "No preference"
+      ],
+      "answers": [
+       {
+        "label": "Under 40mm",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "40-42mm",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "44-46mm",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "48mm or larger",
+        "percentage": 9.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "No preference",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Connectivity-Driven Users and Lifestyle-Style Owners favor mid-size cases; Price-Sensitive Buyers and Health-Committed Users split across smaller and larger options.",
+      "data_by_region": {
+       "asia-pacific": [
+        12.0,
+        34.0,
+        38.0,
+        9.0,
+        7.0
+       ]
+      }
+     },
+     {
+      "id": "q14",
+      "text": "How long should a smartwatch battery last on a single charge?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "battery_and_charging",
+      "beat_title": "Battery life and charging expectations",
+      "beat_canonical": "format_packaging",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Less than a day",
+       "1 to 2 days",
+       "3 to 5 days",
+       "6 to 10 days",
+       "More than 10 days"
+      ],
+      "answers": [
+       {
+        "label": "Less than a day",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "1 to 2 days",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "3 to 5 days",
+        "percentage": 45.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "6 to 10 days",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "More than 10 days",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users and Price-Sensitive Buyers drive demand for multi-day battery life; Connectivity-Driven Users accept shorter battery for features.",
+      "data_by_region": {
+       "asia-pacific": [
+        2.0,
+        18.0,
+        45.0,
+        25.0,
+        10.0
+       ]
+      }
+     },
+     {
+      "id": "q15",
+      "text": "What would make you trust a smartwatch more?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "battery_and_charging",
+      "beat_title": "Battery life and charging expectations",
+      "beat_canonical": "format_packaging",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Made from recycled materials",
+       "Repairable by the user",
+       "Longer software support",
+       "Made in your country",
+       "Carbon-neutral production",
+       "None of these would matter",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Made from recycled materials",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Repairable by the user",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Longer software support",
+        "percentage": 45.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Made in your country",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Carbon-neutral production",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "None of these would matter",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Longer software support is the strongest trust driver across segments, especially among Connectivity-Driven and Health-Committed Users; environmental factors are secondary.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        22.0,
+        45.0,
+        12.0,
+        10.0,
+        8.0,
+        2.0
+       ]
+      }
+     },
+     {
+      "id": "q16",
+      "text": "What would you give up to get a longer battery life?",
+      "type": "single_choice",
+      "chart_type": "donut",
+      "funnel_position": 6,
+      "narrative_order": 6,
+      "beat_id": "tradeoffs",
+      "beat_title": "Trade-offs they would make",
+      "beat_canonical": "tradeoffs",
+      "question_layer": "module",
+      "sample_size": 2500,
+      "options": [
+       "Advanced health sensors",
+       "Larger, brighter screen",
+       "Built-in GPS",
+       "Faster charging",
+       "Thinner, lighter design",
+       "None of these"
+      ],
+      "answers": [
+       {
+        "label": "Advanced health sensors",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Larger, brighter screen",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Built-in GPS",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Faster charging",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Thinner, lighter design",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "None of these",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users are reluctant to give up health sensors; Connectivity-Driven Users and Lifestyle-Style Owners are more willing to trade screen or design.",
+      "data_by_region": {
+       "asia-pacific": [
+        28.0,
+        22.0,
+        18.0,
+        12.0,
+        8.0,
+        12.0
+       ]
+      }
+     },
+     {
+      "id": "q17",
+      "text": "How much extra would you pay for a smartwatch that tracks blood pressure without a cuff?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 7,
+      "narrative_order": 7,
+      "beat_id": "willingness_to_pay",
+      "beat_title": "Willingness to pay for premium features",
+      "beat_canonical": "value_expectation",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Nothing, I wouldn't pay extra for that",
+       "Up to ¥300 more",
+       "¥301 to ¥700 more",
+       "¥701 to ¥1,400 more",
+       "More than ¥1,400"
+      ],
+      "answers": [
+       {
+        "label": "Nothing, I wouldn't pay extra for that",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Up to ¥300 more",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥301 to ¥700 more",
+        "percentage": 26.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥701 to ¥1,400 more",
+        "percentage": 16.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "More than ¥1,400",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Price-Sensitive Buyers and Budget-conscious segments cap extra spend; Health-Committed Users and Tech-Enthusiast segments show willingness to pay moderate premiums.",
+      "data_by_region": {
+       "asia-pacific": [
+        20.0,
+        28.0,
+        26.0,
+        16.0,
+        10.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "satisfaction_future_intent",
+    "questions": [
+     {
+      "id": "q18",
+      "text": "Overall, how satisfied are you with the Smartwatches you currently use?",
+      "type": "likert_5",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "overall_satisfaction",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Very dissatisfied",
+       "Somewhat dissatisfied",
+       "Neither satisfied nor dissatisfied",
+       "Somewhat satisfied",
+       "Very satisfied"
+      ],
+      "answers": [
+       {
+        "label": "Very dissatisfied",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat dissatisfied",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Neither satisfied nor dissatisfied",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat satisfied",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Very satisfied",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Moderate satisfaction overall; Health-Committed Users are less satisfied due to accuracy gaps, while Lifestyle-Style Owners are more satisfied.",
+      "data_by_region": {
+       "asia-pacific": [
+        8.0,
+        20.0,
+        22.0,
+        35.0,
+        15.0
+       ]
+      }
+     },
+     {
+      "id": "q19",
+      "text": "How likely are you to recommend the Smartwatches you currently use to a friend or colleague?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "advocacy_nps",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "0 - Not at all likely",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10 - Extremely likely"
+      ],
+      "answers": [
+       {
+        "label": "0 - Not at all likely",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "1",
+        "percentage": 1.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "2",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "3",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "4",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "5",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "6",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "7",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "8",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "9",
+        "percentage": 17.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "10 - Extremely likely",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Positive sentiment and medium brand loyalty concentrate responses in the 7–9 range; Price-Sensitive Buyers temper the top-box, while Health-Committed and Connectivity-Driven Users push higher scores.",
+      "data_by_region": {
+       "asia-pacific": [
+        2.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        8.0,
+        10.0,
+        18.0,
+        25.0,
+        17.0,
+        10.0
+       ]
+      }
+     },
+     {
+      "id": "q20",
+      "text": "How does your smartwatch's battery life compare with what you expected?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "overall_satisfaction",
+      "beat_title": "Overall satisfaction with current smartwatch",
+      "beat_canonical": "overall_satisfaction",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Much worse than expected",
+       "Somewhat worse than expected",
+       "About as expected",
+       "Somewhat better than expected",
+       "Much better than expected"
+      ],
+      "answers": [
+       {
+        "label": "Much worse than expected",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat worse than expected",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "About as expected",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat better than expected",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Much better than expected",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Battery life expectations are often unmet, especially among Health-Committed Users who prioritize endurance; some segments find it better than expected.",
+      "data_by_region": {
+       "asia-pacific": [
+        10.0,
+        24.0,
+        38.0,
+        20.0,
+        8.0
+       ]
+      }
+     },
+     {
+      "id": "q21",
+      "text": "Which one aspect of your smartwatch are you least satisfied with?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "satisfaction_breakdown",
+      "beat_title": "What satisfies and what disappoints",
+      "beat_canonical": "satisfaction_drivers",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Battery life",
+       "Health-tracking accuracy",
+       "App or phone connection",
+       "Screen visibility outdoors",
+       "Comfort or fit",
+       "Charging speed"
+      ],
+      "answers": [
+       {
+        "label": "Battery life",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Health-tracking accuracy",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "App or phone connection",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Screen visibility outdoors",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Comfort or fit",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Charging speed",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Battery life is the dominant weak spot across segments; Health-focused users skew toward accuracy, Connectivity-driven users toward the phone connection.",
+      "data_by_region": {
+       "asia-pacific": [
+        34.0,
+        22.0,
+        14.0,
+        12.0,
+        10.0,
+        8.0
+       ]
+      }
+     },
+     {
+      "id": "q22",
+      "text": "Which frustrations have you had with your smartwatch?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "pain_points",
+      "beat_title": "Frustrations and unmet needs",
+      "beat_canonical": "friction",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Battery life doesn't last long enough",
+       "Sleep tracking accuracy is questionable",
+       "Health data not always reliable",
+       "Too expensive for the features offered",
+       "Compatibility issues with my phone",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Battery life doesn't last long enough",
+        "percentage": 42.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sleep tracking accuracy is questionable",
+        "percentage": 31.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Health data not always reliable",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Too expensive for the features offered",
+        "percentage": 27.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Compatibility issues with my phone",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users and Connectivity-Driven Users report battery and sleep frustrations most; Price-Sensitive Buyers add cost concerns.",
+      "data_by_region": {
+       "asia-pacific": [
+        42.0,
+        31.0,
+        18.0,
+        27.0,
+        15.0,
+        8.0
+       ]
+      }
+     },
+     {
+      "id": "q23",
+      "text": "What would most likely make you switch to a different smartwatch?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 6,
+      "narrative_order": 6,
+      "beat_id": "switching_triggers",
+      "beat_title": "What would make them switch or upgrade",
+      "beat_canonical": "switching",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "A watch with significantly longer battery life",
+       "A watch with more accurate health or sleep tracking",
+       "A watch that works better with my phone",
+       "A watch with a style I prefer",
+       "A watch with new features I can't get now",
+       "A lower price for the same features",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "A watch with significantly longer battery life",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A watch with more accurate health or sleep tracking",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A watch that works better with my phone",
+        "percentage": 17.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A watch with a style I prefer",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A watch with new features I can't get now",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A lower price for the same features",
+        "percentage": 11.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users prioritize accuracy; Connectivity-Driven Users prioritize phone integration; Price-Sensitive Buyers are drawn to lower price.",
+      "data_by_region": {
+       "asia-pacific": [
+        28.0,
+        24.0,
+        17.0,
+        8.0,
+        10.0,
+        11.0,
+        2.0
+       ]
+      }
+     },
+     {
+      "id": "q24",
+      "text": "Which improvements would most likely make you upgrade your smartwatch?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 7,
+      "narrative_order": 7,
+      "beat_id": "switching_triggers",
+      "beat_title": "What would make them switch or upgrade",
+      "beat_canonical": "switching",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Longer battery life (multi-week)",
+       "Non-invasive blood pressure monitoring",
+       "More accurate sleep stage detection",
+       "Offline maps and music storage",
+       "Solar charging or alternative power options",
+       "Better third-party app integration",
+       "None of these"
+      ],
+      "answers": [
+       {
+        "label": "Longer battery life (multi-week)",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Non-invasive blood pressure monitoring",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "More accurate sleep stage detection",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Offline maps and music storage",
+        "percentage": 9.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Solar charging or alternative power options",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Better third-party app integration",
+        "percentage": 9.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "None of these",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Health-Committed Users are split between battery and advanced health features; Connectivity-Driven Users value offline and app integration.",
+      "data_by_region": {
+       "asia-pacific": [
+        30.0,
+        18.0,
+        22.0,
+        9.0,
+        8.0,
+        9.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q25",
+      "text": "How likely are you to buy a new smartwatch in the next 12 months?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 8,
+      "narrative_order": 8,
+      "beat_id": "future_intent",
+      "beat_title": "Future purchase and upgrade plans",
+      "beat_canonical": "future_use",
+      "question_layer": "full",
+      "sample_size": 2500,
+      "options": [
+       "Very unlikely",
+       "Somewhat unlikely",
+       "Neither likely nor unlikely",
+       "Somewhat likely",
+       "Very likely"
+      ],
+      "answers": [
+       {
+        "label": "Very unlikely",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat unlikely",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Neither likely nor unlikely",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat likely",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Very likely",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Positive sentiment and high growth outlook push many toward likely purchase; Price-Sensitive Buyers temper the top end.",
+      "data_by_region": {
+       "asia-pacific": [
+        12.0,
+        18.0,
+        20.0,
+        30.0,
+        20.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "profiling",
+    "questions": [
+     {
+      "id": "q26",
+      "text": "Which age group are you in?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "age_band",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "18-24",
+       "25-34",
+       "35-44",
+       "45-54",
+       "55-64",
+       "65 or older"
+      ],
+      "answers": [
+       {
+        "label": "18-24",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "25-34",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "35-44",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "45-54",
+        "percentage": 16.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "55-64",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "65 or older",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Younger and middle-aged segments dominate, consistent with early tech adoption and health awareness in the region.",
+      "data_by_region": {
+       "asia-pacific": [
+        15.0,
+        28.0,
+        24.0,
+        16.0,
+        10.0,
+        7.0
+       ]
+      }
+     },
+     {
+      "id": "q27",
+      "text": "What is your gender?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "gender",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "Woman",
+       "Man",
+       "Non-binary",
+       "Prefer to self-describe",
+       "Prefer not to say"
+      ],
+      "answers": [
+       {
+        "label": "Woman",
+        "percentage": 48.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Man",
+        "percentage": 50.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Non-binary",
+        "percentage": 1.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Prefer to self-describe",
+        "percentage": 0.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Prefer not to say",
+        "percentage": 1.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "The panel skews slightly male, reflecting the tech-early-adopter mix in the region; non-binary and prefer-not-to-say remain small minorities.",
+      "data_by_region": {
+       "asia-pacific": [
+        48.0,
+        50.0,
+        1.0,
+        0.0,
+        1.0
+       ]
+      }
+     },
+     {
+      "id": "q28",
+      "text": "Who else lives in your household?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "household_composition",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "I live alone",
+       "I live with a partner, no children at home",
+       "I live with children under 18",
+       "I live with other adults (family or housemates), no children",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "I live alone",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I live with a partner, no children at home",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I live with children under 18",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I live with other adults (family or housemates), no children",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Family households (with children) dominate, while a notable share of young professionals and urban singles live alone or with a partner.",
+      "data_by_region": {
+       "asia-pacific": [
+        12.0,
+        30.0,
+        34.0,
+        20.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q29",
+      "text": "What was your total household income before tax last year?",
+      "type": "single_choice",
+      "chart_type": "donut",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "income_band",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "Under ¥25,000",
+       "¥25,000 - ¥49,999",
+       "¥50,000 - ¥74,999",
+       "¥75,000 - ¥99,999",
+       "¥100,000 - ¥149,999",
+       "¥150,000 or more",
+       "Prefer not to say"
+      ],
+      "answers": [
+       {
+        "label": "Under ¥25,000",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥25,000 - ¥49,999",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥50,000 - ¥74,999",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥75,000 - ¥99,999",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥100,000 - ¥149,999",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "¥150,000 or more",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Prefer not to say",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Income skews middle and lower-middle, with a long tail of higher earners; a small share declines to answer.",
+      "data_by_region": {
+       "asia-pacific": [
+        10.0,
+        24.0,
+        28.0,
+        18.0,
+        12.0,
+        5.0,
+        3.0
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "metadata": {
+   "total_questions": 29,
+   "counts_by_tab": {
+    "consumer_profile": 5,
+    "buying_behavior": 5,
+    "preferences_expectations": 7,
+    "satisfaction_future_intent": 8,
+    "profiling": 4
+   },
+   "generation_mode": "quota",
+   "grounded_pct": 100.0,
+   "direct_grounded_pct": 100.0,
+   "adjacent_grounded_pct": 0.0,
+   "revision_count": 6,
+   "grounding_thin": false,
+   "warnings": [
+    "Restored the best revision (score 0.4) — the final pass scored 0.371 and was discarded.",
+    "2 duplicate/overlapping question(s) removed at assembly.",
+    "duplicate question removed (cp4 overlaps cp3): Which of these activities do you wear your smartwatch for?",
+    "duplicate question removed (cp7 overlaps cp6): Who else in your household wears a smartwatch?",
+    "Tab 'consumer_profile' under target: 5/8.",
+    "Tab 'buying_behavior' under target: 5/8.",
+    "Tab 'preferences_expectations' under target: 7/8.",
+    "Revision cap reached (6) — shipped best-effort with remaining issues."
+   ],
+   "storyline": {
+    "profile": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ],
+    "behavior": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ],
+    "preferences": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ],
+    "satisfaction": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ]
+   },
+   "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on smartwatch usage intensity, purchase drivers, feature priorities, and upgrade/switching behaviour.",
+   "segmentation_lens": "Combination of usage/behavioural and jobs-to-be-done: the smartwatch category is split between those who use it as a fitness/health tool, those who use it as a connectivity extension, and those who use it as a lifestyle/status accessory — frequency alone would not separate these distinct purchase mo",
+   "must_cover_topics": [
+    "battery life",
+    "sleep tracking accuracy",
+    "subscription fees",
+    "health monitoring features",
+    "ecosystem compatibility",
+    "upgrade cycle"
+   ],
+   "segments": [
+    {
+     "segment_id": "health_committed_users",
+     "name": "Health-Committed Users",
+     "description": "Wear their smartwatch almost daily, primarily for continuous health and fitness tracking (heart rate, sleep, SpO2). They are willing to pay more for advanced sensors and accuracy, and are frustrated by inaccuracies and subscription fees for health metrics.",
+     "hypothesis": "This group will report high usage frequency, prioritize health features over style, and show high interest in advanced health monitoring (blood pressure, sleep stages) even at a premium price."
+    },
+    {
+     "segment_id": "connectivity_driven_users",
+     "name": "Connectivity-Driven Users",
+     "description": "Use the smartwatch as an extension of their smartphone — for notifications, calls, and quick interactions. They value seamless ecosystem integration and app experience over fitness depth, and may not use all health features.",
+     "hypothesis": "This group will show moderate usage frequency, prioritize brand ecosystem compatibility and notification reliability, and be less willing to pay for advanced health sensors they won't use."
+    },
+    {
+     "segment_id": "lifestyle_style_owners",
+     "name": "Lifestyle-Style Owners",
+     "description": "Own a smartwatch as a fashion statement or status symbol, often choosing premium designs and brands. They use basic features (steps, time) but are less engaged with deep health tracking. They are attracted by design, brand reputation, and customization.",
+     "hypothesis": "This group will show lower usage of health features, prioritize design and brand over functionality, and be willing to pay a premium for aesthetics and brand cachet."
+    },
+    {
+     "segment_id": "price_sensitive_buyers",
+     "name": "Price-Sensitive Buyers",
+     "description": "Own a smartwatch but are highly conscious of price and value. They seek essential features at the lowest possible cost, are reluctant to pay for subscriptions, and may delay upgrades or choose older models. They are prone to switching if a better deal appears.",
+     "hypothesis": "This group will report lower spend, prioritize price and battery life over advanced features, and show high sensitivity to subscription fees and promotional offers."
+    }
+   ],
+   "segmentModel": {
+    "segments": [
+     {
+      "segment_id": "health_committed_users",
+      "name": "Health-Committed Users",
+      "description": "Wear their smartwatch almost daily, primarily for continuous health and fitness tracking (heart rate, sleep, SpO2). They are willing to pay more for advanced sensors and accuracy, and are frustrated by inaccuracies and subscription fees for health metrics.",
+      "hypothesis": "This group will report high usage frequency, prioritize health features over style, and show high interest in advanced health monitoring (blood pressure, sleep stages) even at a premium price."
+     },
+     {
+      "segment_id": "connectivity_driven_users",
+      "name": "Connectivity-Driven Users",
+      "description": "Use the smartwatch as an extension of their smartphone — for notifications, calls, and quick interactions. They value seamless ecosystem integration and app experience over fitness depth, and may not use all health features.",
+      "hypothesis": "This group will show moderate usage frequency, prioritize brand ecosystem compatibility and notification reliability, and be less willing to pay for advanced health sensors they won't use."
+     },
+     {
+      "segment_id": "lifestyle_style_owners",
+      "name": "Lifestyle-Style Owners",
+      "description": "Own a smartwatch as a fashion statement or status symbol, often choosing premium designs and brands. They use basic features (steps, time) but are less engaged with deep health tracking. They are attracted by design, brand reputation, and customization.",
+      "hypothesis": "This group will show lower usage of health features, prioritize design and brand over functionality, and be willing to pay a premium for aesthetics and brand cachet."
+     },
+     {
+      "segment_id": "price_sensitive_buyers",
+      "name": "Price-Sensitive Buyers",
+      "description": "Own a smartwatch but are highly conscious of price and value. They seek essential features at the lowest possible cost, are reluctant to pay for subscriptions, and may delay upgrades or choose older models. They are prone to switching if a better deal appears.",
+      "hypothesis": "This group will report lower spend, prioritize price and battery life over advanced features, and show high sensitivity to subscription fees and promotional offers."
+     }
+    ],
+    "weights": [
+     {
+      "question_id": "q4",
+      "question_text": "How important is accurate sleep tracking to you?",
+      "option_label": "Extremely important",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q4",
+      "question_text": "How important is accurate sleep tracking to you?",
+      "option_label": "Very important",
+      "segment_id": "health_committed_users",
+      "points": 1
+     },
+     {
+      "question_id": "q6",
+      "question_text": "What made you decide to buy your current smartwatch?",
+      "option_label": "I wanted to start tracking my health more closely",
+      "segment_id": "health_committed_users",
+      "points": 3
+     },
+     {
+      "question_id": "q7",
+      "question_text": "What event or need led you to buy your current smartwatch?",
+      "option_label": "I wanted to start tracking my health or fitness",
+      "segment_id": "health_committed_users",
+      "points": 3
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Rank these from most to least important in your decision to buy your current smartwatch.",
+      "option_label": "Health and fitness tracking features",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q11",
+      "question_text": "Which of these must a smartwatch do before you would buy one?",
+      "option_label": "Track workouts accurately",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q11",
+      "question_text": "Which of these must a smartwatch do before you would buy one?",
+      "option_label": "Monitor heart rate",
+      "segment_id": "health_committed_users",
+      "points": 1
+     },
+     {
+      "question_id": "q11",
+      "question_text": "Which of these must a smartwatch do before you would buy one?",
+      "option_label": "Track sleep",
+      "segment_id": "health_committed_users",
+      "points": 1
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these do you check first when judging whether a smartwatch is well made?",
+      "option_label": "Sensor accuracy for heart rate and sleep",
+      "segment_id": "health_committed_users",
+      "points": 3
+     },
+     {
+      "question_id": "q17",
+      "question_text": "How much extra would you pay for a smartwatch with more accurate sleep tracking?",
+      "option_label": "$100 to $199 more",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q17",
+      "question_text": "How much extra would you pay for a smartwatch with more accurate sleep tracking?",
+      "option_label": "$200 or more",
+      "segment_id": "health_committed_users",
+      "points": 3
+     },
+     {
+      "question_id": "q20",
+      "question_text": "How satisfied are you with the sleep tracking accuracy of your current smartwatch?",
+      "option_label": "Very dissatisfied",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q20",
+      "question_text": "How satisfied are you with the sleep tracking accuracy of your current smartwatch?",
+      "option_label": "Somewhat dissatisfied",
+      "segment_id": "health_committed_users",
+      "points": 1
+     },
+     {
+      "question_id": "q23",
+      "question_text": "Which of these problems have you had with your smartwatch?",
+      "option_label": "Sleep tracking feels inaccurate",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q23",
+      "question_text": "Which of these problems have you had with your smartwatch?",
+      "option_label": "Subscription fees for advanced health metrics",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q24",
+      "question_text": "Which of these would most likely make you switch to a different smartwatch?",
+      "option_label": "More accurate sleep stage detection",
+      "segment_id": "health_committed_users",
+      "points": 3
+     },
+     {
+      "question_id": "q24",
+      "question_text": "Which of these would most likely make you switch to a different smartwatch?",
+      "option_label": "No subscription fee for advanced health metrics",
+      "segment_id": "health_committed_users",
+      "points": 2
+     },
+     {
+      "question_id": "q6",
+      "question_text": "What made you decide to buy your current smartwatch?",
+      "option_label": "I got a new phone and wanted them to work together",
+      "segment_id": "connectivity_driven_users",
+      "points": 3
+     },
+     {
+      "question_id": "q7",
+      "question_text": "What event or need led you to buy your current smartwatch?",
+      "option_label": "I got a new phone and wanted a compatible watch",
+      "segment_id": "connectivity_driven_users",
+      "points": 3
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Rank these from most to least important in your decision to buy your current smartwatch.",
+      "option_label": "Compatibility with my phone",
+      "segment_id": "connectivity_driven_users",
+      "points": 3
+     },
+     {
+      "question_id": "q11",
+      "question_text": "Which of these must a smartwatch do before you would buy one?",
+      "option_label": "Show phone notifications",
+      "segment_id": "connectivity_driven_users",
+      "points": 3
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these do you check first when judging whether a smartwatch is well made?",
+      "option_label": "How polished and easy to use the app is",
+      "segment_id": "connectivity_driven_users",
+      "points": 2
+     },
+     {
+      "question_id": "q23",
+      "question_text": "Which of these problems have you had with your smartwatch?",
+      "option_label": "Notifications are distracting during workouts",
+      "segment_id": "connectivity_driven_users",
+      "points": 1
+     },
+     {
+      "question_id": "q24",
+      "question_text": "Which of these would most likely make you switch to a different smartwatch?",
+      "option_label": "Better third-party app integration",
+      "segment_id": "connectivity_driven_users",
+      "points": 3
+     },
+     {
+      "question_id": "q2",
+      "question_text": "In which situations do you wear your smartwatch?",
+      "option_label": "On weekends or social occasions",
+      "segment_id": "lifestyle_style_owners",
+      "points": 2
+     },
+     {
+      "question_id": "q3",
+      "question_text": "During which activities do you wear your smartwatch?",
+      "option_label": "During social events or outings",
+      "segment_id": "lifestyle_style_owners",
+      "points": 2
+     },
+     {
+      "question_id": "q6",
+      "question_text": "What made you decide to buy your current smartwatch?",
+      "option_label": "I wanted a nicer-looking watch to wear daily",
+      "segment_id": "lifestyle_style_owners",
+      "points": 3
+     },
+     {
+      "question_id": "q7",
+      "question_text": "What event or need led you to buy your current smartwatch?",
+      "option_label": "I wanted a fashion accessory or status symbol",
+      "segment_id": "lifestyle_style_owners",
+      "points": 3
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Rank these from most to least important in your decision to buy your current smartwatch.",
+      "option_label": "Design and appearance",
+      "segment_id": "lifestyle_style_owners",
+      "points": 3
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these do you check first when judging whether a smartwatch is well made?",
+      "option_label": "Build materials and finish of the case and strap",
+      "segment_id": "lifestyle_style_owners",
+      "points": 2
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these do you check first when judging whether a smartwatch is well made?",
+      "option_label": "Brand reputation and reviews",
+      "segment_id": "lifestyle_style_owners",
+      "points": 2
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which watch face size do you prefer for your next smartwatch?",
+      "option_label": "40-42mm",
+      "segment_id": "lifestyle_style_owners",
+      "points": 1
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which watch face size do you prefer for your next smartwatch?",
+      "option_label": "44-46mm",
+      "segment_id": "lifestyle_style_owners",
+      "points": 1
+     },
+     {
+      "question_id": "q6",
+      "question_text": "What made you decide to buy your current smartwatch?",
+      "option_label": "I found a good deal or discount",
+      "segment_id": "price_sensitive_buyers",
+      "points": 3
+     },
+     {
+      "question_id": "q7",
+      "question_text": "What event or need led you to buy your current smartwatch?",
+      "option_label": "It was on sale or a good deal",
+      "segment_id": "price_sensitive_buyers",
+      "points": 3
+     },
+     {
+      "question_id": "q9",
+      "question_text": "How much did you pay for the smartwatch you currently use?",
+      "option_label": "Under ¥500",
+      "segment_id": "price_sensitive_buyers",
+      "points": 2
+     },
+     {
+      "question_id": "q9",
+      "question_text": "How much did you pay for the smartwatch you currently use?",
+      "option_label": "¥500–¥999",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Rank these from most to least important in your decision to buy your current smartwatch.",
+      "option_label": "Price",
+      "segment_id": "price_sensitive_buyers",
+      "points": 3
+     },
+     {
+      "question_id": "q14",
+      "question_text": "How long should a smartwatch battery last on a single charge?",
+      "option_label": "3 to 5 days",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     },
+     {
+      "question_id": "q14",
+      "question_text": "How long should a smartwatch battery last on a single charge?",
+      "option_label": "6 to 10 days",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     },
+     {
+      "question_id": "q14",
+      "question_text": "How long should a smartwatch battery last on a single charge?",
+      "option_label": "More than 10 days",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     },
+     {
+      "question_id": "q17",
+      "question_text": "How much extra would you pay for a smartwatch with more accurate sleep tracking?",
+      "option_label": "Nothing extra",
+      "segment_id": "price_sensitive_buyers",
+      "points": 2
+     },
+     {
+      "question_id": "q17",
+      "question_text": "How much extra would you pay for a smartwatch with more accurate sleep tracking?",
+      "option_label": "Up to ¥300 more",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     },
+     {
+      "question_id": "q23",
+      "question_text": "Which of these problems have you had with your smartwatch?",
+      "option_label": "Subscription fees for advanced health metrics",
+      "segment_id": "price_sensitive_buyers",
+      "points": 2
+     },
+     {
+      "question_id": "q24",
+      "question_text": "Which of these would most likely make you switch to a different smartwatch?",
+      "option_label": "No subscription fee for advanced health metrics",
+      "segment_id": "price_sensitive_buyers",
+      "points": 2
+     },
+     {
+      "question_id": "q25",
+      "question_text": "How likely are you to buy a new smartwatch in the next 12 months?",
+      "option_label": "Very unlikely",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     },
+     {
+      "question_id": "q25",
+      "question_text": "How likely are you to buy a new smartwatch in the next 12 months?",
+      "option_label": "Somewhat unlikely",
+      "segment_id": "price_sensitive_buyers",
+      "points": 1
+     }
+    ],
+    "tie_break": "The question 'bb1' (What made you decide to buy your current smartwatch?) is the most direct behavioural self-report because it captures the primary purchase motivation that cleanly separates the four segments: health tracking, phone integration, style, or price.",
+    "notes": [
+     "Only options that clearly discriminate were scored; many neutral options were left unscored.",
+     "Some options (e.g., subscription fees) point to both health_committed_users and price_sensitive_buyers because both segments are frustrated by fees, but for different reasons: health users want the metrics, price-sensitive users don't want to pay.",
+     "Each segment has at least two scoring options and at least one 3-point option.",
+     "11 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+    ],
+    "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+   },
+   "nonDiscriminatingQuestions": [
+    {
+     "id": "q1",
+     "qNum": 1,
+     "question": "What do you use your smartwatch for?"
+    },
+    {
+     "id": "q8",
+     "qNum": 8,
+     "question": "Where did you buy your current smartwatch?"
+    },
+    {
+     "id": "q15",
+     "qNum": 15,
+     "question": "What would make you trust a smartwatch more?"
+    },
+    {
+     "id": "q16",
+     "qNum": 16,
+     "question": "What would you give up to get a longer battery life?"
+    },
+    {
+     "id": "q18",
+     "qNum": 18,
+     "question": "Overall, how satisfied are you with the Smartwatches you currently use?"
+    },
+    {
+     "id": "q19",
+     "qNum": 19,
+     "question": "How likely are you to recommend the Smartwatches you currently use to a friend or colleague?"
+    },
+    {
+     "id": "q21",
+     "qNum": 21,
+     "question": "Which one aspect of your smartwatch are you least satisfied with?"
+    },
+    {
+     "id": "q22",
+     "qNum": 22,
+     "question": "Which frustrations have you had with your smartwatch?"
+    },
+    {
+     "id": "q5",
+     "qNum": 5,
+     "question": "Is your current smartwatch your first, or a replacement?"
+    }
+   ],
+   "fieldingNotes": {
+    "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+    "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+    "estimatedLength": "8-10 minutes.",
+    "scriptingNotes": [
+     "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+     "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+     "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+     "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+     "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+     "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+    ],
+    "caveats": [
+     "Percentages in this document are modelled from published market evidence, not measured from fielded interviews. Replace them with primary data once the study is run.",
+     "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+     "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+    ]
+   },
+   "storyline_summary": "The survey opens by establishing who owns a smartwatch and how they use it day-to-day, distinguishing health-focused users from connectivity-driven and style-led owners. It then traces the purchase journey — what triggered the buy, where they researched and bought, and what factors decided the choice. Next, it probes feature priorities, quality signals, and trade-offs, revealing what they value most and what they would sacrifice. Finally, it measures satisfaction, pain points, and future intent, identifying who is at risk of switching and what would retain them. The arc moves from broad usage…",
+   "storyline_source": "planner",
+   "storyline_notes": [
+    "Adapted the canonical arc to a durable wearable: replaced 'purchase frequency/restock' with 'purchase trigger' and 'research/discovery' to reflect the considered, infrequent nature of smartwatch buying.",
+    "Added a dedicated 'battery and charging' beat in preferences_expectations because battery life is a top pain point in the region and a key differentiator.",
+    "Included 'health tracking habits' in consumer_profile to separate health-committed users from others, as this is the primary job-to-be-done for many buyers.",
+    "In buying_behavior, emphasized research and discovery to reflect the region's mobile-first, online-review-driven shopping behaviour.",
+    "In satisfaction_future_intent, combined switching and future intent to capture both the risk of churn and the upgrade opportunity, as smartwatch owners often upgrade within the same ecosystem.",
+    "All beats are designed to be answered with closed questions and avoid asking age, income, or geography directly, in line with the segmentation rules."
+   ],
+   "classification_reason": "Consumers buy smartwatches for personal use, pay for them out of pocket, and decide on the model and brand themselves. While some businesses may purchase smartwatches for employees, the dominant and defining purchase is by individual consumers, making this a pure B2C market.",
+   "generated_at": "2026-08-13T12:34:47.487565+00:00",
+   "current_date": "2026-08-13",
+   "sample_size": 2500,
+   "N": 370,
+   "chart_kinds_used": [
+    "donut",
+    "hbar",
+    "hbar-likert",
+    "hbar-multi",
+    "lollipop",
+    "stacked",
+    "vbar",
+    "vbar-likert"
+   ]
+  }
+ }
+}

@@ -1,0 +1,2668 @@
+{
+  "segment": "Mattresses",
+  "slug": "mattresses",
+  "region": "global",
+  "surveyDefinition": {
+    "title": "Mattresses — consumer survey (Global)",
+    "category": "Mattresses",
+    "region": "Global",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on purchase journey, decision drivers, product requirements, and satisfaction/churn signals.",
+    "segments": [
+      {
+        "id": "comfort_prioritizers",
+        "name": "Comfort-Focused Buyers",
+        "description": "Buyers who prioritize comfort and support above all else, often due to pain or sleep quality concerns. They are willing to pay more for specialized materials and features that promise better sleep."
+      },
+      {
+        "id": "value_optimizers",
+        "name": "Value-Driven Shoppers",
+        "description": "Buyers who weigh price against quality and durability, seeking the best long-term value. They research extensively, compare prices, and are likely to wait for sales or use financing."
+      },
+      {
+        "id": "health_eco_conscious",
+        "name": "Health & Eco-Conscious Buyers",
+        "description": "Buyers who are motivated by health benefits and environmental impact, preferring organic, non-toxic, and sustainable materials. They are willing to pay a premium for certified products."
+      },
+      {
+        "id": "tech_innovators",
+        "name": "Tech-Savvy Innovators",
+        "description": "Buyers who are attracted to smart features, cooling technology, and adjustable bases. They are early adopters and value innovation and convenience over tradition."
+      },
+      {
+        "id": "practical_replacers",
+        "name": "Practical Replacers",
+        "description": "Buyers who purchase out of necessity, often replacing an old or worn mattress. They are less engaged with the category, prefer simple and affordable options, and are not swayed by premium features."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Mattresses buyers worldwide. It asks how people use Mattresses, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories. This global view is not a separate fieldwork exercise: it selects the strongest questions from the regional surveys and blends their percentages using population-style regional weights.",
+    "whoseContextThisIs": "Adults worldwide who buy or use Mattresses for personal or household use. Respondents qualify if they: Adults who have purchased a mattress in the last 12 months or plan to within the next 6 months; Primary decision-maker for the mattress purchase; Ages 25-64. Excluded: Business buyers (hotels, hospitals, rental properties); Children under 18; Those who have never purchased or plan to purchase a mattress.",
+    "whyTheseRespondents": "Household consumers buy mattresses for personal use, pay for them out of pocket (or via financing), and decide which mattress to purchase, typically after in-store or online research. While businesses like hotels also buy mattresses, the dominant consumer market is clear and the category is widely recognized as B2C.",
+    "respondentBehaviours": [
+      "Research online before purchase (reviews, comparison sites)",
+      "Consider factors like comfort, firmness, durability, price, and warranty",
+      "May use financing or buy during promotional periods",
+      "Increasingly open to online mattress-in-a-box purchases",
+      "Value sleep quality and health benefits"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 36,
+      "sections": [
+        {
+          "id": "sleep_context",
+          "label": "Sleep Context & Usage Profile",
+          "covers": "Establish the respondent's sleep environment, household composition, and the role they play in mattress decisions.",
+          "questions": 8
+        },
+        {
+          "id": "purchase_journey",
+          "label": "Purchase Journey & Decision Drivers",
+          "covers": "Trace the path from need recognition to purchase, including triggers, research, channels, and the factors that ultimately decide the choice.",
+          "questions": 8
+        },
+        {
+          "id": "product_requirements",
+          "label": "Product Requirements & Trade-offs",
+          "covers": "Capture must-have attributes, quality cues, and the trade-offs buyers are willing to make between features, price, and brand.",
+          "questions": 8
+        },
+        {
+          "id": "satisfaction_outlook",
+          "label": "Satisfaction, Loyalty & Replacement Intent",
+          "covers": "Measure satisfaction with the current mattress, identify friction points, and gauge likelihood to recommend and repurchase.",
+          "questions": 6
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's current sleep context and household, then moves through the purchase journey from trigger to decision, explores product requirements and trade-offs, and closes with satisfaction and future intent. This arc allows the segmentation model to distinguish buyers by their primary job-to-be-done (comfort, value, health, tech, or practicality) and their price sensitivity, while covering the category's essential topics of firmness, temperature, motion isolation, trial, warranty, and price."
+    }
+  },
+  "frontend": {
+    "sections": [
+      {
+        "id": "sleep_context",
+        "label": "Sleep Context & Usage Profile",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "How would you describe your current mattress?",
+            "options": [
+              "I bought it new for myself",
+              "I bought it new for someone else",
+              "I inherited or was given it",
+              "It came with the home or rental",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I bought it new for myself",
+                "value": 58.0
+              },
+              {
+                "label": "I bought it new for someone else",
+                "value": 4.0
+              },
+              {
+                "label": "I inherited or was given it",
+                "value": 12.0
+              },
+              {
+                "label": "It came with the home or rental",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: I bought it new for myself (58.00%).",
+            "distributionNote": "Practical Replacers and Value-Driven Shoppers dominate, with many having purchased their own mattress.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "mattress_ownership",
+            "beatTitle": "Current mattress ownership",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How long have you been sleeping on your current mattress?",
+            "options": [
+              "Less than 1 year",
+              "1 to 3 years",
+              "4 to 6 years",
+              "7 to 10 years",
+              "More than 10 years"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Less than 1 year",
+                "value": 18.0
+              },
+              {
+                "label": "1 to 3 years",
+                "value": 26.0
+              },
+              {
+                "label": "4 to 6 years",
+                "value": 24.0
+              },
+              {
+                "label": "7 to 10 years",
+                "value": 18.0
+              },
+              {
+                "label": "More than 10 years",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: 1 to 3 years (26.00%).",
+            "distributionNote": "Value-Driven Shoppers and Practical Replacers show a spread across ages, with a slight concentration in the 1-6 year range.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "mattress_ownership",
+            "beatTitle": "Current mattress ownership",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "In a typical week, how many nights do you sleep on this mattress?",
+            "options": [
+              "0 to 2 nights",
+              "3 to 4 nights",
+              "5 to 6 nights",
+              "7 nights"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "0 to 2 nights",
+                "value": 4.0
+              },
+              {
+                "label": "3 to 4 nights",
+                "value": 8.0
+              },
+              {
+                "label": "5 to 6 nights",
+                "value": 18.0
+              },
+              {
+                "label": "7 nights",
+                "value": 70.0
+              }
+            ],
+            "insight": "Top response: 7 nights (70.00%).",
+            "distributionNote": "Most personas use their mattress nightly.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "usage_patterns",
+            "beatTitle": "Usage patterns and preferences",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "How many hours do you usually sleep on this mattress each night?",
+            "options": [
+              "Less than 5 hours",
+              "5 to 6 hours",
+              "7 to 8 hours",
+              "9 hours or more"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "Less than 5 hours",
+                "value": 8.0
+              },
+              {
+                "label": "5 to 6 hours",
+                "value": 28.0
+              },
+              {
+                "label": "7 to 8 hours",
+                "value": 52.0
+              },
+              {
+                "label": "9 hours or more",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: 7 to 8 hours (52.00%).",
+            "distributionNote": "Typical sleep duration is 7-8 hours for most segments.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "usage_patterns",
+            "beatTitle": "Usage patterns and preferences",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "Who else usually sleeps on your mattress?",
+            "options": [
+              "Only me",
+              "My partner",
+              "My partner and children",
+              "My children only",
+              "Other"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Only me",
+                "value": 32.0
+              },
+              {
+                "label": "My partner",
+                "value": 38.0
+              },
+              {
+                "label": "My partner and children",
+                "value": 18.0
+              },
+              {
+                "label": "My children only",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: My partner (38.00%).",
+            "distributionNote": "",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "sleep_environment",
+            "beatTitle": "Sleep environment and household",
+            "beatCanonical": "household_role",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Who in your household decides which mattress to buy?",
+            "options": [
+              "I do",
+              "My partner or spouse",
+              "We decide together",
+              "Another household member",
+              "My landlord or property manager"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I do",
+                "value": 45.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 12.0
+              },
+              {
+                "label": "We decide together",
+                "value": 36.0
+              },
+              {
+                "label": "Another household member",
+                "value": 4.0
+              },
+              {
+                "label": "My landlord or property manager",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I do (45.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "sleep_environment",
+            "beatTitle": "Sleep environment and household",
+            "beatCanonical": "household_role",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "In the last 30 days, how often did you wake up with back or neck pain?",
+            "options": [
+              "Never",
+              "A few nights",
+              "About half the nights",
+              "Most nights",
+              "Every night"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Never",
+                "value": 22.0
+              },
+              {
+                "label": "A few nights",
+                "value": 34.0
+              },
+              {
+                "label": "About half the nights",
+                "value": 18.0
+              },
+              {
+                "label": "Most nights",
+                "value": 16.0
+              },
+              {
+                "label": "Every night",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: A few nights (34.00%).",
+            "distributionNote": "Comfort-Focused Buyers and Health & Eco-Conscious Buyers also contribute, while Value-Driven Shoppers and Practical Replacers report lower frequency.",
+            "questionLayer": "module",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "sleep_quality",
+            "beatTitle": "Sleep quality and pain points",
+            "beatCanonical": "need_state",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "How would you describe your main reason for needing a mattress?",
+            "options": [
+              "My current mattress is worn out or uncomfortable",
+              "I moved to a new home or apartment",
+              "I want better sleep quality or health support",
+              "I want a more eco-friendly or chemical-free option",
+              "I want a mattress that suits both me and my partner",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "My current mattress is worn out or uncomfortable",
+                "value": 34.0
+              },
+              {
+                "label": "I moved to a new home or apartment",
+                "value": 18.0
+              },
+              {
+                "label": "I want better sleep quality or health support",
+                "value": 22.0
+              },
+              {
+                "label": "I want a more eco-friendly or chemical-free option",
+                "value": 8.0
+              },
+              {
+                "label": "I want a mattress that suits both me and my partner",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: My current mattress is worn out or uncomfortable (34.00%).",
+            "distributionNote": "Practical Replacers and Value-Driven Shoppers drive the worn-out reason; Comfort-Focused Buyers and Health & Eco-Conscious Buyers push health and eco reasons.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "sleep_quality",
+            "beatTitle": "Sleep quality and pain points",
+            "beatCanonical": "need_state",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey",
+        "label": "Purchase Journey & Decision Drivers",
+        "questions": [
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "What first made you decide to start looking for a new mattress?",
+            "options": [
+              "Old mattress became uncomfortable",
+              "Moving to a new home",
+              "Health or pain issues",
+              "Upgrading to a better quality sleep",
+              "Change in household (new partner, child, pet)",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Old mattress became uncomfortable",
+                "value": 38.0
+              },
+              {
+                "label": "Moving to a new home",
+                "value": 18.0
+              },
+              {
+                "label": "Health or pain issues",
+                "value": 17.0
+              },
+              {
+                "label": "Upgrading to a better quality sleep",
+                "value": 15.0
+              },
+              {
+                "label": "Change in household (new partner, child, pet)",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Old mattress became uncomfortable (38.00%).",
+            "distributionNote": "Comfort-Focused Buyers and Practical Replacers dominate the top reason, while Value-Driven Shoppers and Tech-Savvy Innovators contribute to upgrade and move triggers.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "Purchase trigger",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "How long did you spend researching mattresses before your last purchase?",
+            "options": [
+              "Less than a week",
+              "1–2 weeks",
+              "3–4 weeks",
+              "More than a month",
+              "I didn't research at all"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Less than a week",
+                "value": 22.0
+              },
+              {
+                "label": "1–2 weeks",
+                "value": 30.0
+              },
+              {
+                "label": "3–4 weeks",
+                "value": 24.0
+              },
+              {
+                "label": "More than a month",
+                "value": 18.0
+              },
+              {
+                "label": "I didn't research at all",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: 1–2 weeks (30.00%).",
+            "distributionNote": "",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "research_process",
+            "beatTitle": "Research and information sources",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Where did you first learn about or compare mattresses before your last purchase?",
+            "options": [
+              "Online reviews and ratings",
+              "Friends or family recommendations",
+              "In-store visits and sales staff",
+              "Social media or influencer posts",
+              "Brand websites or ads",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Online reviews and ratings",
+                "value": 72.0
+              },
+              {
+                "label": "Friends or family recommendations",
+                "value": 45.0
+              },
+              {
+                "label": "In-store visits and sales staff",
+                "value": 38.0
+              },
+              {
+                "label": "Social media or influencer posts",
+                "value": 25.0
+              },
+              {
+                "label": "Brand websites or ads",
+                "value": 40.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Online reviews and ratings (72.00%).",
+            "distributionNote": "Tech-Savvy Innovators and Value-Driven Shoppers heavily use online reviews.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "research_process",
+            "beatTitle": "Research and information sources",
+            "beatCanonical": "discovery",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "Where did you buy your last mattress?",
+            "options": [
+              "Online mattress brand website",
+              "Online marketplace (e.g., Amazon)",
+              "Physical mattress or furniture store",
+              "Department store",
+              "Big-box retailer (e.g., Walmart, Costco)",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Online mattress brand website",
+                "value": 30.0
+              },
+              {
+                "label": "Online marketplace (e.g., Amazon)",
+                "value": 18.0
+              },
+              {
+                "label": "Physical mattress or furniture store",
+                "value": 32.0
+              },
+              {
+                "label": "Department store",
+                "value": 10.0
+              },
+              {
+                "label": "Big-box retailer (e.g., Walmart, Costco)",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Physical mattress or furniture store (32.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "purchase_channel",
+            "beatTitle": "Purchase channel",
+            "beatCanonical": "channel",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "How would you describe the urgency of your last mattress purchase?",
+            "options": [
+              "It was an emergency – my old mattress was unusable",
+              "It was planned – I knew I needed a new one soon",
+              "It was an upgrade – I wanted better sleep, not because I had to",
+              "It was a move – I needed a mattress for a new place",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "It was an emergency – my old mattress was unusable",
+                "value": 20.0
+              },
+              {
+                "label": "It was planned – I knew I needed a new one soon",
+                "value": 35.0
+              },
+              {
+                "label": "It was an upgrade – I wanted better sleep, not because I had to",
+                "value": 22.0
+              },
+              {
+                "label": "It was a move – I needed a mattress for a new place",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: It was planned – I knew I needed a new one soon (35.00%).",
+            "distributionNote": "Comfort-Focused and Tech-Savvy Innovators contribute to upgrade purchases.",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "purchase_cycle",
+            "beatTitle": "Replacement cycle",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "How often do you buy a new mattress?",
+            "options": [
+              "Every 2 years or less",
+              "Every 3-4 years",
+              "Every 5-6 years",
+              "Every 7-8 years",
+              "Every 9 years or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Every 2 years or less",
+                "value": 8.0
+              },
+              {
+                "label": "Every 3-4 years",
+                "value": 20.0
+              },
+              {
+                "label": "Every 5-6 years",
+                "value": 30.0
+              },
+              {
+                "label": "Every 7-8 years",
+                "value": 25.0
+              },
+              {
+                "label": "Every 9 years or more",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: Every 5-6 years (30.00%).",
+            "distributionNote": "Value-Driven Shoppers and Comfort-Focused Buyers replace more frequently.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "purchase_cycle",
+            "beatTitle": "Replacement cycle",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "How much did you spend on your last mattress, including any delivery or setup fees?",
+            "options": [
+              "Under $300",
+              "$300–$599",
+              "$600–$999",
+              "$1,000–$1,499",
+              "$1,500–$2,499",
+              "$2,500 or more"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Under $300",
+                "value": 12.0
+              },
+              {
+                "label": "$300–$599",
+                "value": 22.0
+              },
+              {
+                "label": "$600–$999",
+                "value": 28.0
+              },
+              {
+                "label": "$1,000–$1,499",
+                "value": 20.0
+              },
+              {
+                "label": "$1,500–$2,499",
+                "value": 12.0
+              },
+              {
+                "label": "$2,500 or more",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: $600–$999 (28.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "spend_behavior",
+            "beatTitle": "Spend and financing",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which of the following most influenced your final choice of mattress?",
+            "options": [
+              "Comfort and support",
+              "Durability and long-term quality",
+              "Price and value for money",
+              "Brand trust and reputation",
+              "Cooling or temperature regulation",
+              "Eco-friendly or non-toxic materials"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Comfort and support",
+                "value": 32.0
+              },
+              {
+                "label": "Durability and long-term quality",
+                "value": 22.0
+              },
+              {
+                "label": "Price and value for money",
+                "value": 20.0
+              },
+              {
+                "label": "Brand trust and reputation",
+                "value": 12.0
+              },
+              {
+                "label": "Cooling or temperature regulation",
+                "value": 8.0
+              },
+              {
+                "label": "Eco-friendly or non-toxic materials",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Comfort and support (32.00%).",
+            "distributionNote": "Value-Driven Shoppers and Practical Replacers weigh durability and price; Health & Eco-Conscious and Hot Sleepers drive the smaller shares.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "product_requirements",
+        "label": "Product Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which must a new mattress have for you to consider buying it?",
+            "options": [
+              "Firm enough to support my back",
+              "Soft enough to relieve pressure points",
+              "Keeps me cool while I sleep",
+              "Doesn't transfer motion when my partner moves",
+              "Made without harsh chemicals or odors",
+              "Lasts at least 7 years without sagging",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Firm enough to support my back",
+                "value": 28.0
+              },
+              {
+                "label": "Soft enough to relieve pressure points",
+                "value": 22.0
+              },
+              {
+                "label": "Keeps me cool while I sleep",
+                "value": 18.0
+              },
+              {
+                "label": "Doesn't transfer motion when my partner moves",
+                "value": 14.0
+              },
+              {
+                "label": "Made without harsh chemicals or odors",
+                "value": 9.0
+              },
+              {
+                "label": "Lasts at least 7 years without sagging",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Firm enough to support my back (28.00%).",
+            "distributionNote": "Comfort-Focused Buyers and Value-Driven Shoppers drive the emphasis on support and pressure relief.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "When you test a mattress in a store, which sign tells you it is good quality?",
+            "options": [
+              "It feels supportive but not hard",
+              "The materials feel dense and well-made",
+              "It stays cool after lying on it for a few minutes",
+              "There is no chemical smell",
+              "The edges hold firm when I sit on them",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "It feels supportive but not hard",
+                "value": 35.0
+              },
+              {
+                "label": "The materials feel dense and well-made",
+                "value": 25.0
+              },
+              {
+                "label": "It stays cool after lying on it for a few minutes",
+                "value": 15.0
+              },
+              {
+                "label": "There is no chemical smell",
+                "value": 10.0
+              },
+              {
+                "label": "The edges hold firm when I sit on them",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: It feels supportive but not hard (35.00%).",
+            "distributionNote": "Comfort-Focused Buyers and Value-Driven Shoppers prioritize immediate feel and construction quality; cooling and edge support are secondary cues for Tech-Savvy Innovators and Practical Replacers.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "How important is a trial period when choosing a new mattress?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 4.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 12.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 28.0
+              },
+              {
+                "label": "Very important",
+                "value": 36.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Very important (36.00%).",
+            "distributionNote": "Value-Driven Shoppers and Tech-Savvy Innovators drive the high importance of trial periods.",
+            "questionLayer": "module",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "trial_warranty",
+            "beatTitle": "Trial period and warranty expectations",
+            "beatCanonical": "claims_credentials",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which mattress size do you plan to buy for your next mattress?",
+            "options": [
+              "Twin / Single",
+              "Twin XL / Super Single",
+              "Full / Double",
+              "Queen",
+              "King / Eastern King",
+              "California King / Super King",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Twin / Single",
+                "value": 5.0
+              },
+              {
+                "label": "Twin XL / Super Single",
+                "value": 4.0
+              },
+              {
+                "label": "Full / Double",
+                "value": 10.0
+              },
+              {
+                "label": "Queen",
+                "value": 48.0
+              },
+              {
+                "label": "King / Eastern King",
+                "value": 22.0
+              },
+              {
+                "label": "California King / Super King",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Queen (48.00%).",
+            "distributionNote": "Queen is the dominant size across most segments.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "trial_warranty",
+            "beatTitle": "Trial period and warranty expectations",
+            "beatCanonical": "claims_credentials",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which mattress certifications or claims would make you more likely to buy?",
+            "options": [
+              "Certified free of harmful chemicals",
+              "Made with natural or organic materials",
+              "Produced in an environmentally responsible way",
+              "Made in my country",
+              "Hypoallergenic and dust-mite resistant",
+              "None of these matter to me"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Certified free of harmful chemicals",
+                "value": 35.0
+              },
+              {
+                "label": "Made with natural or organic materials",
+                "value": 28.0
+              },
+              {
+                "label": "Produced in an environmentally responsible way",
+                "value": 20.0
+              },
+              {
+                "label": "Made in my country",
+                "value": 15.0
+              },
+              {
+                "label": "Hypoallergenic and dust-mite resistant",
+                "value": 18.0
+              },
+              {
+                "label": "None of these matter to me",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Certified free of harmful chemicals (35.00%).",
+            "distributionNote": "Health & Eco-Conscious Buyers and Comfort-Focused Buyers drive the demand for chemical-free and organic certifications; Practical Replacers are less influenced by certifications.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "trial_warranty",
+            "beatTitle": "Trial period and warranty expectations",
+            "beatCanonical": "claims_credentials",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "How much more would you pay for a mattress that keeps you cool all night?",
+            "options": [
+              "Nothing extra",
+              "Up to $100 more",
+              "$101 to $250 more",
+              "$251 to $500 more",
+              "More than $500"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Nothing extra",
+                "value": 10.0
+              },
+              {
+                "label": "Up to $100 more",
+                "value": 25.0
+              },
+              {
+                "label": "$101 to $250 more",
+                "value": 32.0
+              },
+              {
+                "label": "$251 to $500 more",
+                "value": 20.0
+              },
+              {
+                "label": "More than $500",
+                "value": 13.0
+              }
+            ],
+            "insight": "Top response: $101 to $250 more (32.00%).",
+            "distributionNote": "Hot Sleepers and Tech-Savvy Innovators are willing to pay a moderate premium for cooling.",
+            "questionLayer": "module",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between features and price",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "If you had to give up one of these, which would you sacrifice to save money?",
+            "options": [
+              "Cooling features",
+              "Extra plush comfort layer",
+              "Natural or organic materials",
+              "10-year warranty",
+              "White-glove delivery and old mattress removal"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Cooling features",
+                "value": 30.0
+              },
+              {
+                "label": "Extra plush comfort layer",
+                "value": 25.0
+              },
+              {
+                "label": "Natural or organic materials",
+                "value": 20.0
+              },
+              {
+                "label": "10-year warranty",
+                "value": 15.0
+              },
+              {
+                "label": "White-glove delivery and old mattress removal",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Cooling features (30.00%).",
+            "distributionNote": "Value-Driven Shoppers and Practical Replacers are most willing to sacrifice cooling and plushness.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between features and price",
+            "beatCanonical": "tradeoffs",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "How much would you expect to pay for a queen-size mattress that meets all your needs?",
+            "options": [
+              "Under $500",
+              "$500 to $999",
+              "$1,000 to $1,999",
+              "$2,000 to $2,999",
+              "$3,000 or more"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Under $500",
+                "value": 8.0
+              },
+              {
+                "label": "$500 to $999",
+                "value": 30.0
+              },
+              {
+                "label": "$1,000 to $1,999",
+                "value": 38.0
+              },
+              {
+                "label": "$2,000 to $2,999",
+                "value": 16.0
+              },
+              {
+                "label": "$3,000 or more",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: $1,000 to $1,999 (38.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "value_perception",
+            "beatTitle": "Value and willingness to pay",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_outlook",
+        "label": "Satisfaction, Loyalty & Replacement Intent",
+        "questions": [
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Which aspects of your mattress most affects how satisfied you are with it?",
+            "options": [
+              "Comfort and support",
+              "Temperature and cooling",
+              "Durability and quality consistency",
+              "Noise and motion transfer",
+              "Value for money",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Comfort and support",
+                "value": 48.0
+              },
+              {
+                "label": "Temperature and cooling",
+                "value": 16.0
+              },
+              {
+                "label": "Durability and quality consistency",
+                "value": 18.0
+              },
+              {
+                "label": "Noise and motion transfer",
+                "value": 8.0
+              },
+              {
+                "label": "Value for money",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Comfort and support (48.00%).",
+            "distributionNote": "Comfort-Focused Buyers dominate, prioritizing support and pain relief; Value-Driven Shoppers and Practical Replacers add weight to durability and value.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "Satisfaction drivers",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "Which problems with your current mattress would most likely make you replace it?",
+            "options": [
+              "Sagging or loss of support",
+              "Sleeping too hot at night",
+              "Waking up with back or neck pain",
+              "Visible wear, stains, or damage",
+              "Motion transfer when my partner moves",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Sagging or loss of support",
+                "value": 34.0
+              },
+              {
+                "label": "Sleeping too hot at night",
+                "value": 18.0
+              },
+              {
+                "label": "Waking up with back or neck pain",
+                "value": 26.0
+              },
+              {
+                "label": "Visible wear, stains, or damage",
+                "value": 12.0
+              },
+              {
+                "label": "Motion transfer when my partner moves",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Sagging or loss of support (34.00%).",
+            "distributionNote": "Practical Replacers and Comfort-Focused Buyers drive sagging and pain responses; Hot Sleepers and Couples add to temperature and motion transfer.",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "friction_points",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "Which frustrations have you experienced with your current mattress?",
+            "options": [
+              "It sleeps too hot",
+              "It has sagged or lost shape",
+              "It makes noise when I move",
+              "It causes or worsens pain",
+              "It is difficult to clean or keep hygienic",
+              "It did not match its online description",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "It sleeps too hot",
+                "value": 28.0
+              },
+              {
+                "label": "It has sagged or lost shape",
+                "value": 32.0
+              },
+              {
+                "label": "It makes noise when I move",
+                "value": 12.0
+              },
+              {
+                "label": "It causes or worsens pain",
+                "value": 26.0
+              },
+              {
+                "label": "It is difficult to clean or keep hygienic",
+                "value": 15.0
+              },
+              {
+                "label": "It did not match its online description",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: It has sagged or lost shape (32.00%).",
+            "distributionNote": "Comfort-Focused Buyers report pain and sagging; Hot Sleepers and Pet Owners add to temperature and hygiene frustrations; Tech-Savvy Innovators note online mismatches.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "friction_points",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "What would make you replace your current mattress sooner than you planned?",
+            "options": [
+              "It becomes uncomfortable or painful to sleep on",
+              "It shows visible wear or sagging",
+              "My sleep quality noticeably declines",
+              "A new mattress offers a significant improvement",
+              "I move to a different home or room size",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "It becomes uncomfortable or painful to sleep on",
+                "value": 40.0
+              },
+              {
+                "label": "It shows visible wear or sagging",
+                "value": 22.0
+              },
+              {
+                "label": "My sleep quality noticeably declines",
+                "value": 18.0
+              },
+              {
+                "label": "A new mattress offers a significant improvement",
+                "value": 10.0
+              },
+              {
+                "label": "I move to a different home or room size",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: It becomes uncomfortable or painful to sleep on (40.00%).",
+            "distributionNote": "Comfort-Focused Buyers and Chronic Pain Sufferers drive the pain response; Practical Replacers and Value-Driven Shoppers respond to visible wear and improvement offers.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "How likely are you to buy the same type of mattress again when you replace it?",
+            "options": [
+              "Very likely",
+              "Somewhat likely",
+              "Neither likely nor unlikely",
+              "Somewhat unlikely",
+              "Very unlikely"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Very likely",
+                "value": 22.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 28.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 18.0
+              },
+              {
+                "label": "Very unlikely",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely (28.00%).",
+            "distributionNote": "Tech-Savvy Innovators and Value-Driven Shoppers are more open to switching.",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "future_intent",
+            "beatTitle": "Replacement intent",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "In the next two years, how likely are you to buy another mattress?",
+            "options": [
+              "Definitely will not",
+              "Probably will not",
+              "Might or might not",
+              "Probably will",
+              "Definitely will"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Definitely will not",
+                "value": 10.0
+              },
+              {
+                "label": "Probably will not",
+                "value": 24.0
+              },
+              {
+                "label": "Might or might not",
+                "value": 28.0
+              },
+              {
+                "label": "Probably will",
+                "value": 26.0
+              },
+              {
+                "label": "Definitely will",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Might or might not (28.00%).",
+            "distributionNote": "Practical Replacers and Value-Driven Shoppers are more likely to purchase soon due to wear or deals; satisfied Comfort-Focused Buyers are less urgent.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "future_intent",
+            "beatTitle": "Replacement intent",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 12.0
+              },
+              {
+                "label": "25-34",
+                "value": 24.0
+              },
+              {
+                "label": "35-44",
+                "value": 26.0
+              },
+              {
+                "label": "45-54",
+                "value": 18.0
+              },
+              {
+                "label": "55-64",
+                "value": 13.0
+              },
+              {
+                "label": "65 or older",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 35-44 (26.00%).",
+            "distributionNote": "The mix skews toward family and mid-career segments, with a notable younger urban segment and a smaller senior segment.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 52.0
+              },
+              {
+                "label": "Man",
+                "value": 46.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (52.00%).",
+            "distributionNote": "Slight female skew consistent with household purchasing roles; small non-binary and non-disclosure groups.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 30.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 32.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (32.00%).",
+            "distributionNote": "A substantial share lives with children, reflecting family-oriented segments; partner-only and solo households are also common.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q34",
+            "qNum": 34,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 8.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 18.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 26.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 22.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 17.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 7.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (26.00%).",
+            "distributionNote": "",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q35",
+            "qNum": 35,
+            "question": "How likely are you to recommend the Mattresses you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 3.0
+              },
+              {
+                "label": "1",
+                "value": 2.0
+              },
+              {
+                "label": "2",
+                "value": 3.0
+              },
+              {
+                "label": "3",
+                "value": 5.0
+              },
+              {
+                "label": "4",
+                "value": 6.0
+              },
+              {
+                "label": "5",
+                "value": 14.0
+              },
+              {
+                "label": "6",
+                "value": 10.0
+              },
+              {
+                "label": "7",
+                "value": 16.0
+              },
+              {
+                "label": "8",
+                "value": 20.0
+              },
+              {
+                "label": "9",
+                "value": 12.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: 8 (20.00%).",
+            "distributionNote": "Moderate-to-high likelihood dominates, but a notable dissatisfied tail exists, consistent with mixed sentiment.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q36",
+            "qNum": 36,
+            "question": "Overall, how satisfied are you with the Mattresses you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 6.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 14.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 38.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 24.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (38.00%).",
+            "distributionNote": "Satisfaction skews positive, but a meaningful share is neutral or dissatisfied, reflecting quality and price concerns.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 36,
+    "selection": {
+      "mode": "core_plus_module",
+      "source_regions": [
+        "north-america"
+      ],
+      "total_questions": 36,
+      "method": "select_and_blend"
+    },
+    "storyline": {
+      "sleep_context": [
+        {
+          "beatId": "mattress_ownership",
+          "title": "Current mattress ownership",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "sleep_environment",
+          "title": "Sleep environment and household",
+          "canonical": "household_role",
+          "order": 2
+        },
+        {
+          "beatId": "sleep_quality",
+          "title": "Sleep quality and pain points",
+          "canonical": "need_state",
+          "order": 3
+        },
+        {
+          "beatId": "usage_patterns",
+          "title": "Usage patterns and preferences",
+          "canonical": "usage_occasion",
+          "order": 4
+        }
+      ],
+      "purchase_journey": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "Purchase trigger",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "research_process",
+          "title": "Research and information sources",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "purchase_channel",
+          "title": "Purchase channel",
+          "canonical": "channel",
+          "order": 3
+        },
+        {
+          "beatId": "purchase_cycle",
+          "title": "Replacement cycle",
+          "canonical": "purchase_cycle",
+          "order": 4
+        },
+        {
+          "beatId": "spend_behavior",
+          "title": "Spend and financing",
+          "canonical": "spend",
+          "order": 5
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "Decision drivers",
+          "canonical": "decision_drivers",
+          "order": 6
+        }
+      ],
+      "product_requirements": [
+        {
+          "beatId": "must_have_features",
+          "title": "Must-have features",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Quality cues",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "trial_warranty",
+          "title": "Trial period and warranty expectations",
+          "canonical": "claims_credentials",
+          "order": 3
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs between features and price",
+          "canonical": "tradeoffs",
+          "order": 4
+        },
+        {
+          "beatId": "value_perception",
+          "title": "Value and willingness to pay",
+          "canonical": "value_expectation",
+          "order": 5
+        }
+      ],
+      "satisfaction_outlook": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "Satisfaction drivers",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction_points",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching_triggers",
+          "title": "Switching triggers",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "advocacy",
+          "title": "Recommendation intent",
+          "canonical": "advocacy",
+          "order": 5
+        },
+        {
+          "beatId": "future_intent",
+          "title": "Replacement intent",
+          "canonical": "future_use",
+          "order": 6
+        }
+      ]
+    },
+    "storyline_source": "planner",
+    "storyline_summary": "The survey opens by establishing the respondent's current sleep context and household, then moves through the purchase journey from trigger to decision, explores product requirements and trade-offs, and closes with satisfaction and future intent. This arc allows the segmentation model to distinguish buyers by their primary job-to-be-done (comfort, value, health, tech, or practicality) and their price sensitivity, while covering the category's essential topics of firmness, temperature, motion isolation, trial, warranty, and price.",
+    "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on purchase journey, decision drivers, product requirements, and satisfaction/churn signals.",
+    "segmentation_lens": "Jobs-to-be-done combined with price sensitivity. Mattress buyers are not differentiated by usage frequency (everyone sleeps on it nightly) but by what they hire the mattress to do — comfort for pain, cooling for hot sleepers, durability for families, eco-credentials for health nuts — and how much th",
+    "must_cover_topics": [
+      "firmness preference",
+      "sleep temperature",
+      "motion isolation",
+      "trial period",
+      "warranty",
+      "price paid"
+    ],
+    "segments": [
+      {
+        "segment_id": "comfort_prioritizers",
+        "name": "Comfort-Focused Buyers",
+        "description": "Buyers who prioritize comfort and support above all else, often due to pain or sleep quality concerns. They are willing to pay more for specialized materials and features that promise better sleep.",
+        "hypothesis": "This group will score highest on importance of firmness, pressure relief, and pain-related benefits, and will show lower price sensitivity when comfort is at stake."
+      },
+      {
+        "segment_id": "value_optimizers",
+        "name": "Value-Driven Shoppers",
+        "description": "Buyers who weigh price against quality and durability, seeking the best long-term value. They research extensively, compare prices, and are likely to wait for sales or use financing.",
+        "hypothesis": "This group will show high importance on price, warranty, and durability, and will be more likely to purchase during promotional periods or use financing."
+      },
+      {
+        "segment_id": "health_eco_conscious",
+        "name": "Health & Eco-Conscious Buyers",
+        "description": "Buyers who are motivated by health benefits and environmental impact, preferring organic, non-toxic, and sustainable materials. They are willing to pay a premium for certified products.",
+        "hypothesis": "This group will rate certifications, natural materials, and non-toxic claims as must-haves, and will be less price-sensitive when eco-credentials are clear."
+      },
+      {
+        "segment_id": "tech_innovators",
+        "name": "Tech-Savvy Innovators",
+        "description": "Buyers who are attracted to smart features, cooling technology, and adjustable bases. They are early adopters and value innovation and convenience over tradition.",
+        "hypothesis": "This group will show high interest in smart features, cooling, and adjustable bases, and will be willing to pay more for these innovations."
+      },
+      {
+        "segment_id": "practical_replacers",
+        "name": "Practical Replacers",
+        "description": "Buyers who purchase out of necessity, often replacing an old or worn mattress. They are less engaged with the category, prefer simple and affordable options, and are not swayed by premium features.",
+        "hypothesis": "This group will show lower importance on advanced features, higher price sensitivity, and a shorter decision journey, often buying the first adequate option."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "comfort_prioritizers",
+          "name": "Comfort-Focused Buyers",
+          "description": "Buyers who prioritize comfort and support above all else, often due to pain or sleep quality concerns. They are willing to pay more for specialized materials and features that promise better sleep.",
+          "hypothesis": "This group will score highest on importance of firmness, pressure relief, and pain-related benefits, and will show lower price sensitivity when comfort is at stake."
+        },
+        {
+          "segment_id": "value_optimizers",
+          "name": "Value-Driven Shoppers",
+          "description": "Buyers who weigh price against quality and durability, seeking the best long-term value. They research extensively, compare prices, and are likely to wait for sales or use financing.",
+          "hypothesis": "This group will show high importance on price, warranty, and durability, and will be more likely to purchase during promotional periods or use financing."
+        },
+        {
+          "segment_id": "health_eco_conscious",
+          "name": "Health & Eco-Conscious Buyers",
+          "description": "Buyers who are motivated by health benefits and environmental impact, preferring organic, non-toxic, and sustainable materials. They are willing to pay a premium for certified products.",
+          "hypothesis": "This group will rate certifications, natural materials, and non-toxic claims as must-haves, and will be less price-sensitive when eco-credentials are clear."
+        },
+        {
+          "segment_id": "tech_innovators",
+          "name": "Tech-Savvy Innovators",
+          "description": "Buyers who are attracted to smart features, cooling technology, and adjustable bases. They are early adopters and value innovation and convenience over tradition.",
+          "hypothesis": "This group will show high interest in smart features, cooling, and adjustable bases, and will be willing to pay more for these innovations."
+        },
+        {
+          "segment_id": "practical_replacers",
+          "name": "Practical Replacers",
+          "description": "Buyers who purchase out of necessity, often replacing an old or worn mattress. They are less engaged with the category, prefer simple and affordable options, and are not swayed by premium features.",
+          "hypothesis": "This group will show lower importance on advanced features, higher price sensitivity, and a shorter decision journey, often buying the first adequate option."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q5",
+          "question_text": "How would you rate your overall sleep quality over the past month?",
+          "option_label": "Very poor",
+          "segment_id": "comfort_prioritizers",
+          "points": 1
+        },
+        {
+          "question_id": "q5",
+          "question_text": "How would you rate your overall sleep quality over the past month?",
+          "option_label": "Poor",
+          "segment_id": "comfort_prioritizers",
+          "points": 1
+        },
+        {
+          "question_id": "q6",
+          "question_text": "How often do you wake up with back, neck, or shoulder pain?",
+          "option_label": "Often (a few times a week)",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "How often do you wake up with back, neck, or shoulder pain?",
+          "option_label": "Almost every morning",
+          "segment_id": "comfort_prioritizers",
+          "points": 3
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What first made you decide to start looking for a new mattress?",
+          "option_label": "Health or pain issues",
+          "segment_id": "comfort_prioritizers",
+          "points": 3
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What was the main reason you started shopping for a mattress?",
+          "option_label": "Health or pain issues",
+          "segment_id": "comfort_prioritizers",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must your next mattress have?",
+          "option_label": "Pressure-relieving support for back or joint pain",
+          "segment_id": "comfort_prioritizers",
+          "points": 3
+        },
+        {
+          "question_id": "q25",
+          "question_text": "What is the single biggest reason for your satisfaction rating?",
+          "option_label": "Comfort and pressure relief",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "What is the single biggest reason for your satisfaction rating?",
+          "option_label": "Support for my back or joints",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which one aspect of your current mattress most drives your satisfaction or disappointment?",
+          "option_label": "Comfort and pressure relief",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which one aspect of your current mattress most drives your satisfaction or disappointment?",
+          "option_label": "Support for my back or joints",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these issues would prompt you to replace your mattress sooner?",
+          "option_label": "Waking up with back or neck pain",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q28",
+          "question_text": "What would make you replace your current mattress sooner than you planned?",
+          "option_label": "It becomes uncomfortable or painful to sleep on",
+          "segment_id": "comfort_prioritizers",
+          "points": 2
+        },
+        {
+          "question_id": "q11",
+          "question_text": "How long did you spend researching mattresses before your last purchase?",
+          "option_label": "More than a month",
+          "segment_id": "value_optimizers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "How do you judge the quality of a mattress before buying?",
+          "option_label": "By independent certifications or lab test results",
+          "segment_id": "value_optimizers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "How do you judge the quality of a mattress before buying?",
+          "option_label": "By the warranty length and trial period",
+          "segment_id": "value_optimizers",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "What is the minimum trial period and warranty you would accept for a new mattress?",
+          "option_label": "120-night trial and 20-year warranty",
+          "segment_id": "value_optimizers",
+          "points": 3
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which trade-off would you make to lower the price of your next mattress?",
+          "option_label": "Give up a well-known brand",
+          "segment_id": "value_optimizers",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "If you had to give up one of these, which would you sacrifice to save money?",
+          "option_label": "White-glove delivery and old mattress removal",
+          "segment_id": "value_optimizers",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "What is the single biggest reason for your satisfaction rating?",
+          "option_label": "Value for the price I paid",
+          "segment_id": "value_optimizers",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must your next mattress have?",
+          "option_label": "Eco-friendly or non-toxic materials",
+          "segment_id": "health_eco_conscious",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which mattress certifications or claims would make you more likely to buy?",
+          "option_label": "Certified free of harmful chemicals",
+          "segment_id": "health_eco_conscious",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which mattress certifications or claims would make you more likely to buy?",
+          "option_label": "Made with natural or organic materials",
+          "segment_id": "health_eco_conscious",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which mattress certifications or claims would make you more likely to buy?",
+          "option_label": "Produced in an environmentally responsible way",
+          "segment_id": "health_eco_conscious",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which mattress certifications or claims would make you more likely to buy?",
+          "option_label": "Hypoallergenic and dust-mite resistant",
+          "segment_id": "health_eco_conscious",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which trade-off would you make to lower the price of your next mattress?",
+          "option_label": "Give up cooling technology",
+          "segment_id": "health_eco_conscious",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "If you had to give up one of these, which would you sacrifice to save money?",
+          "option_label": "Cooling features",
+          "segment_id": "health_eco_conscious",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these issues would prompt you to replace your mattress sooner?",
+          "option_label": "Allergies or asthma symptoms getting worse",
+          "segment_id": "health_eco_conscious",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must your next mattress have?",
+          "option_label": "Cooling surface that keeps me from overheating",
+          "segment_id": "tech_innovators",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must your next mattress have?",
+          "option_label": "Adjustable base compatibility",
+          "segment_id": "tech_innovators",
+          "points": 3
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which trade-off would you make to lower the price of your next mattress?",
+          "option_label": "Give up eco-friendly materials",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which trade-off would you make to lower the price of your next mattress?",
+          "option_label": "Give up a longer trial period",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which trade-off would you make to lower the price of your next mattress?",
+          "option_label": "Give up a longer warranty",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "If you had to give up one of these, which would you sacrifice to save money?",
+          "option_label": "Natural or organic materials",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "If you had to give up one of these, which would you sacrifice to save money?",
+          "option_label": "10-year warranty",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "What is the single biggest reason for your satisfaction rating?",
+          "option_label": "Temperature regulation",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which one aspect of your current mattress most drives your satisfaction or disappointment?",
+          "option_label": "Temperature regulation (sleeping hot or cool)",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q27",
+          "question_text": "Which of these issues would prompt you to replace your mattress sooner?",
+          "option_label": "Sleeping hot or sweating at night",
+          "segment_id": "tech_innovators",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What first made you decide to start looking for a new mattress?",
+          "option_label": "Old mattress became uncomfortable",
+          "segment_id": "practical_replacers",
+          "points": 2
+        },
+        {
+          "question_id": "q10",
+          "question_text": "What was the main reason you started shopping for a mattress?",
+          "option_label": "Old mattress was worn out or uncomfortable",
+          "segment_id": "practical_replacers",
+          "points": 3
+        },
+        {
+          "question_id": "q11",
+          "question_text": "How long did you spend researching mattresses before your last purchase?",
+          "option_label": "I didn't research at all",
+          "segment_id": "practical_replacers",
+          "points": 3
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must your next mattress have?",
+          "option_label": "None of these are must-haves",
+          "segment_id": "practical_replacers",
+          "points": 3
+        },
+        {
+          "question_id": "q20",
+          "question_text": "What is the minimum trial period and warranty you would accept for a new mattress?",
+          "option_label": "I don't need a trial or warranty",
+          "segment_id": "practical_replacers",
+          "points": 2
+        },
+        {
+          "question_id": "q22",
+          "question_text": "Which trade-off would you make to lower the price of your next mattress?",
+          "option_label": "Give up adjustable base compatibility",
+          "segment_id": "practical_replacers",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "If you had to give up one of these, which would you sacrifice to save money?",
+          "option_label": "Extra plush comfort layer",
+          "segment_id": "practical_replacers",
+          "points": 2
+        },
+        {
+          "question_id": "q28",
+          "question_text": "What would make you replace your current mattress sooner than you planned?",
+          "option_label": "It shows visible wear or sagging",
+          "segment_id": "practical_replacers",
+          "points": 2
+        },
+        {
+          "question_id": "q30",
+          "question_text": "When do you plan to replace your current mattress?",
+          "option_label": "Within the next 6 months",
+          "segment_id": "practical_replacers",
+          "points": 2
+        }
+      ],
+      "tie_break": "The question 'bb1' (What first made you decide to start looking for a new mattress?) is the most direct behavioural self-report because it captures the respondent's own stated trigger for entering the market, cleanly separating necessity-driven practical replacers from pain-driven comfort prioritizers, upgrade-driven tech innovators, and value-driven researchers.",
+      "notes": [
+        "Weights are assigned only to options that clearly discriminate; many options (e.g., mattress age, household composition, size, satisfaction levels) are left unscored because they do not uniquely identify a segment.",
+        "Each segment has at least two scoring options and at least one 3-point option.",
+        "Some options point to multiple segments when the behaviour genuinely overlaps (e.g., giving up eco-friendly materials signals tech innovators but also value optimizers; here we assigned to the most distinctive segment).",
+        "The tie-break question is bb1 because it is the first self-reported reason for shopping, which is the most direct behavioural signal of segment membership.",
+        "4 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=250 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "warnings": [],
+    "N": 410
+  }
+}

@@ -1,0 +1,2495 @@
+{
+  "frontend": {
+    "sections": [
+      {
+        "id": "usage_context",
+        "label": "Usage Context & Ordering Behaviour",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "In the last 30 days, how many online grocery orders did you place?",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5 or more"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "1",
+                "value": 18.0
+              },
+              {
+                "label": "2",
+                "value": 27.0
+              },
+              {
+                "label": "3",
+                "value": 23.0
+              },
+              {
+                "label": "4",
+                "value": 15.0
+              },
+              {
+                "label": "5 or more",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: 2 (27.00%).",
+            "distributionNote": "Convenience-Driven Customers and Quality-Focused Households order most frequently, while Occasional Emergency Users pull the lower end.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Online grocery delivery usage",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How would you describe your typical online grocery order?",
+            "options": [
+              "A full weekly shop for the household",
+              "A top-up shop between store trips",
+              "Heavy or bulky items I don't want to carry",
+              "A few items when I'm too busy to go to the store",
+              "Specialty or hard-to-find items",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "A full weekly shop for the household",
+                "value": 34.0
+              },
+              {
+                "label": "A top-up shop between store trips",
+                "value": 24.0
+              },
+              {
+                "label": "Heavy or bulky items I don't want to carry",
+                "value": 10.0
+              },
+              {
+                "label": "A few items when I'm too busy to go to the store",
+                "value": 22.0
+              },
+              {
+                "label": "Specialty or hard-to-find items",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: A full weekly shop for the household (34.00%).",
+            "distributionNote": "Quality-Focused Households and Convenience-Driven Customers drive the full weekly shop; Occasional Emergency Users concentrate on the few-items option.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Online grocery delivery usage",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "How would you describe the main reason you place an online grocery order?",
+            "options": [
+              "To save time on a busy week",
+              "To avoid going to the store for one or two items",
+              "To plan and stock up for the week ahead",
+              "To get items delivered when I'm sick or can't leave home",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "To save time on a busy week",
+                "value": 38.0
+              },
+              {
+                "label": "To avoid going to the store for one or two items",
+                "value": 22.0
+              },
+              {
+                "label": "To plan and stock up for the week ahead",
+                "value": 25.0
+              },
+              {
+                "label": "To get items delivered when I'm sick or can't leave home",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: To save time on a busy week (38.00%).",
+            "distributionNote": "Convenience-Driven Customers and Quality-Focused Households drive the time-saving and stock-up reasons; Occasional Emergency Users concentrate on avoiding the store for a few items.",
+            "questionLayer": "module",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "order_occasions",
+            "beatTitle": "Order occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In a typical month, how many of your online grocery orders are for a full weekly shop?",
+            "options": [
+              "None – I only order for top-ups or specific items",
+              "1",
+              "2",
+              "3",
+              "4 or more"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "None – I only order for top-ups or specific items",
+                "value": 20.0
+              },
+              {
+                "label": "1",
+                "value": 25.0
+              },
+              {
+                "label": "2",
+                "value": 28.0
+              },
+              {
+                "label": "3",
+                "value": 15.0
+              },
+              {
+                "label": "4 or more",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: 2 (28.00%).",
+            "distributionNote": "Quality-Focused Households and Convenience-Driven Customers account for the higher weekly-shop counts; Occasional Emergency Users and Value-Optimizing Shoppers pull the lower end.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "order_frequency",
+            "beatTitle": "Order frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In the last 30 days, how many of your grocery orders were delivered to your home?",
+            "options": [
+              "None",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "None",
+                "value": 8.0
+              },
+              {
+                "label": "1",
+                "value": 20.0
+              },
+              {
+                "label": "2",
+                "value": 28.0
+              },
+              {
+                "label": "3",
+                "value": 22.0
+              },
+              {
+                "label": "4",
+                "value": 12.0
+              },
+              {
+                "label": "5 or more",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 2 (28.00%).",
+            "distributionNote": "Convenience-Driven Customers and Quality-Focused Households drive the higher home-delivery counts; Occasional Emergency Users and Value-Optimizing Shoppers are more likely to have fewer deliveries.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "order_frequency",
+            "beatTitle": "Order frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Who decides which items go into your online grocery order?",
+            "options": [
+              "I do, for my own groceries",
+              "I do, for the whole household",
+              "I share the decision with someone else in the household",
+              "Someone else in the household decides",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I do, for my own groceries",
+                "value": 30.0
+              },
+              {
+                "label": "I do, for the whole household",
+                "value": 48.0
+              },
+              {
+                "label": "I share the decision with someone else in the household",
+                "value": 15.0
+              },
+              {
+                "label": "Someone else in the household decides",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: I do, for the whole household (48.00%).",
+            "distributionNote": "Household-focused segments (Quality-Focused Households, Convenience-Driven Customers) drive the whole-household decision; singles and some Occasional Emergency Users choose the own-groceries option.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "household_role",
+            "beatTitle": "Household decision role",
+            "beatCanonical": "household_role",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Why do you started using online grocery delivery?",
+            "options": [
+              "To save time on a busy schedule",
+              "To avoid carrying heavy bags",
+              "To access a wider range of products than my local store",
+              "To compare prices and find deals",
+              "To avoid going to the store during busy or unsafe times",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "To save time on a busy schedule",
+                "value": 36.0
+              },
+              {
+                "label": "To avoid carrying heavy bags",
+                "value": 14.0
+              },
+              {
+                "label": "To access a wider range of products than my local store",
+                "value": 18.0
+              },
+              {
+                "label": "To compare prices and find deals",
+                "value": 16.0
+              },
+              {
+                "label": "To avoid going to the store during busy or unsafe times",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: To save time on a busy schedule (36.00%).",
+            "distributionNote": "Convenience-Driven Customers and Quality-Focused Households drive the time-saving reason; Value-Optimizing Shoppers pull the compare-prices option; Senior and safety-conscious users drive the avoid-store reason.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "household_role",
+            "beatTitle": "Household decision role",
+            "beatCanonical": "household_role",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey",
+        "label": "Purchase Journey & Channel Choice",
+        "questions": [
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "What usually starts your online grocery order?",
+            "options": [
+              "I run out of everyday items like milk or bread",
+              "I need items for a specific meal or recipe",
+              "I see a promotion or discount on the app",
+              "I'm too busy to go to the store",
+              "I have a scheduled weekly delivery",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I run out of everyday items like milk or bread",
+                "value": 28.0
+              },
+              {
+                "label": "I need items for a specific meal or recipe",
+                "value": 18.0
+              },
+              {
+                "label": "I see a promotion or discount on the app",
+                "value": 12.0
+              },
+              {
+                "label": "I'm too busy to go to the store",
+                "value": 24.0
+              },
+              {
+                "label": "I have a scheduled weekly delivery",
+                "value": 14.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I run out of everyday items like milk or bread (28.00%).",
+            "distributionNote": "Convenience-Driven Customers and Occasional Emergency Users are most likely to be triggered by stock-outs or time pressure, while Quality-Focused Households lean toward planned meal needs and scheduled orders.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What triggers an order",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "In a typical month, how often do you place an online grocery order?",
+            "options": [
+              "Less than once a month",
+              "1–2 times a month",
+              "3–4 times a month",
+              "5–8 times a month",
+              "More than 8 times a month"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Less than once a month",
+                "value": 15.0
+              },
+              {
+                "label": "1–2 times a month",
+                "value": 30.0
+              },
+              {
+                "label": "3–4 times a month",
+                "value": 28.0
+              },
+              {
+                "label": "5–8 times a month",
+                "value": 18.0
+              },
+              {
+                "label": "More than 8 times a month",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: 1–2 times a month (30.00%).",
+            "distributionNote": "Value-Optimizing Shoppers and Quality-Focused Households drive the middle frequency bands, while Convenience-Driven Customers and Occasional Emergency Users split the extremes.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "purchase_trigger",
+            "beatTitle": "What triggers an order",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Before placing an online grocery order, where do you compare prices or check what's available?",
+            "options": [
+              "On the grocery delivery app itself",
+              "On a supermarket's website",
+              "On a price comparison website",
+              "In store flyers or apps",
+              "I don't compare before ordering",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "On the grocery delivery app itself",
+                "value": 42.0
+              },
+              {
+                "label": "On a supermarket's website",
+                "value": 25.0
+              },
+              {
+                "label": "On a price comparison website",
+                "value": 8.0
+              },
+              {
+                "label": "In store flyers or apps",
+                "value": 12.0
+              },
+              {
+                "label": "I don't compare before ordering",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: On the grocery delivery app itself (42.00%).",
+            "distributionNote": "Value-Optimizing Shoppers and Quality-Focused Households drive app and supermarket website checks; Occasional Emergency Users are less likely to compare, while Convenience-Driven Customers rely on the app's convenience.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "service_choice",
+            "beatTitle": "Service choice and comparison",
+            "beatCanonical": "discovery",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How would you describe your delivery membership status?",
+            "options": [
+              "I have a paid membership that includes free delivery",
+              "I have a free membership but still pay delivery fees",
+              "I don't have a membership and pay per order",
+              "I'm not sure if I have a membership",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I have a paid membership that includes free delivery",
+                "value": 34.0
+              },
+              {
+                "label": "I have a free membership but still pay delivery fees",
+                "value": 22.0
+              },
+              {
+                "label": "I don't have a membership and pay per order",
+                "value": 30.0
+              },
+              {
+                "label": "I'm not sure if I have a membership",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: I have a paid membership that includes free delivery (34.00%).",
+            "distributionNote": "Convenience-Driven Customers are most likely to hold paid memberships, while Occasional Emergency Users and Value-Optimizing Shoppers are split between free memberships and paying per order.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "subscription_status",
+            "beatTitle": "Membership subscription",
+            "beatCanonical": "channel",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "What do you use to buy groceries online?",
+            "options": [
+              "A dedicated grocery delivery app (e.g., Instacart, Deliveroo)",
+              "A supermarket's own website or app",
+              "A general online marketplace (e.g., Amazon)",
+              "A meal kit service with grocery add-ons",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "A dedicated grocery delivery app (e.g., Instacart, Deliveroo)",
+                "value": 48.0
+              },
+              {
+                "label": "A supermarket's own website or app",
+                "value": 36.0
+              },
+              {
+                "label": "A general online marketplace (e.g., Amazon)",
+                "value": 28.0
+              },
+              {
+                "label": "A meal kit service with grocery add-ons",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: A dedicated grocery delivery app (e.g., Instacart, Deliveroo) (48.00%).",
+            "distributionNote": "Quality-Focused Households and Convenience-Driven Customers favor dedicated apps and supermarket websites, while Value-Optimizing Shoppers also use general marketplaces for price comparison.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "subscription_status",
+            "beatTitle": "Membership subscription",
+            "beatCanonical": "channel",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "What is the typical total value of one online grocery order?",
+            "options": [
+              "Under $25",
+              "$25–$49",
+              "$50–$99",
+              "$100–$149",
+              "$150–$199",
+              "$200 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25",
+                "value": 8.0
+              },
+              {
+                "label": "$25–$49",
+                "value": 22.0
+              },
+              {
+                "label": "$50–$99",
+                "value": 34.0
+              },
+              {
+                "label": "$100–$149",
+                "value": 22.0
+              },
+              {
+                "label": "$150–$199",
+                "value": 9.0
+              },
+              {
+                "label": "$200 or more",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: $50–$99 (34.00%).",
+            "distributionNote": "Quality-Focused Households and Convenience-Driven Customers push the mid-to-higher order values, while Occasional Emergency Users and Value-Optimizing Shoppers concentrate in the lower bands.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "order_spend",
+            "beatTitle": "Typical order spend",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "When choosing an online grocery service, which of these trade-offs are you most willing to make?",
+            "options": [
+              "Pay higher item markups for a wider selection",
+              "Accept substitutions for a lower delivery fee",
+              "Wait for a later delivery window to avoid fees",
+              "Order a larger minimum to get free delivery",
+              "Pay a membership fee for lower per-order costs"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Pay higher item markups for a wider selection",
+                "value": 10.0
+              },
+              {
+                "label": "Accept substitutions for a lower delivery fee",
+                "value": 18.0
+              },
+              {
+                "label": "Wait for a later delivery window to avoid fees",
+                "value": 24.0
+              },
+              {
+                "label": "Order a larger minimum to get free delivery",
+                "value": 22.0
+              },
+              {
+                "label": "Pay a membership fee for lower per-order costs",
+                "value": 26.0
+              }
+            ],
+            "insight": "Top response: Pay a membership fee for lower per-order costs (26.00%).",
+            "distributionNote": "Value-Optimizing Shoppers are most willing to wait or increase order size to avoid fees, while Convenience-Driven Customers prefer membership fees for flexibility.",
+            "questionLayer": "module",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "decision_drivers",
+            "beatTitle": "Service selection drivers",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "When choosing between online grocery services, which matters most to you?",
+            "options": [
+              "Low delivery fees",
+              "Same-day or scheduled delivery",
+              "Wide range of stores and products",
+              "Ability to compare prices and deals",
+              "Contactless delivery and safety",
+              "Subscription benefits and free delivery"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Low delivery fees",
+                "value": 28.0
+              },
+              {
+                "label": "Same-day or scheduled delivery",
+                "value": 24.0
+              },
+              {
+                "label": "Wide range of stores and products",
+                "value": 18.0
+              },
+              {
+                "label": "Ability to compare prices and deals",
+                "value": 14.0
+              },
+              {
+                "label": "Contactless delivery and safety",
+                "value": 8.0
+              },
+              {
+                "label": "Subscription benefits and free delivery",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Low delivery fees (28.00%).",
+            "distributionNote": "Value-Optimizing Shoppers prioritize low fees and price comparison, while Convenience-Driven Customers and Quality-Focused Households emphasize delivery reliability and selection.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "decision_drivers",
+            "beatTitle": "Service selection drivers",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "service_requirements",
+        "label": "Service Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "What are must-haves for your online grocery order?",
+            "options": [
+              "Accurate delivery time window",
+              "Fresh produce and cold items arrive cold",
+              "No substitutions without my approval",
+              "Same price as in-store",
+              "No hidden fees at checkout",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Accurate delivery time window",
+                "value": 72.0
+              },
+              {
+                "label": "Fresh produce and cold items arrive cold",
+                "value": 88.0
+              },
+              {
+                "label": "No substitutions without my approval",
+                "value": 65.0
+              },
+              {
+                "label": "Same price as in-store",
+                "value": 70.0
+              },
+              {
+                "label": "No hidden fees at checkout",
+                "value": 78.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Fresh produce and cold items arrive cold (88.00%).",
+            "distributionNote": "Quality-Focused Households and Value-Optimizing Shoppers drive the high emphasis on freshness, no hidden fees, and in-store parity; Convenience-Driven Customers also prioritize accurate windows.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_haves",
+            "beatTitle": "Must-have service features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "How do you judge the quality of fresh items when they arrive?",
+            "options": [
+              "Check the use-by date",
+              "Inspect for bruises or blemishes",
+              "Check that cold items are still cold",
+              "Check the packaging for damage",
+              "I don't check, I trust the service",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Check the use-by date",
+                "value": 25.0
+              },
+              {
+                "label": "Inspect for bruises or blemishes",
+                "value": 20.0
+              },
+              {
+                "label": "Check that cold items are still cold",
+                "value": 35.0
+              },
+              {
+                "label": "Check the packaging for damage",
+                "value": 12.0
+              },
+              {
+                "label": "I don't check, I trust the service",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Check that cold items are still cold (35.00%).",
+            "distributionNote": "Quality-Focused Households and Convenience-Driven Customers emphasize cold-chain checks; a small minority of Convenience-Driven Customers trust the service without checking.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues for fresh items",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "What would you give up to avoid paying a delivery fee?",
+            "options": [
+              "A wider delivery time window (e.g., 4 hours instead of 2)",
+              "Real-time order tracking",
+              "The ability to choose substitutions in advance",
+              "Same-day delivery (waiting until the next day instead)",
+              "A lower minimum order amount",
+              "None of these — I would rather pay the fee"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "A wider delivery time window (e.g., 4 hours instead of 2)",
+                "value": 25.0
+              },
+              {
+                "label": "Real-time order tracking",
+                "value": 10.0
+              },
+              {
+                "label": "The ability to choose substitutions in advance",
+                "value": 15.0
+              },
+              {
+                "label": "Same-day delivery (waiting until the next day instead)",
+                "value": 20.0
+              },
+              {
+                "label": "A lower minimum order amount",
+                "value": 15.0
+              },
+              {
+                "label": "None of these — I would rather pay the fee",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: A wider delivery time window (e.g., 4 hours instead of 2) (25.00%).",
+            "distributionNote": "Value-Optimizing Shoppers prefer wider windows or waiting to avoid fees; Convenience-Driven Customers are more willing to pay the fee, while Quality-Focused Households value substitution control.",
+            "questionLayer": "module",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price and convenience",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "When an item is out of stock, what do you prefer?",
+            "options": [
+              "Substitute with a similar item",
+              "Substitute with a more expensive item",
+              "Substitute with a cheaper item",
+              "Cancel the item and refund me",
+              "Let me choose replacements in advance",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Substitute with a similar item",
+                "value": 25.0
+              },
+              {
+                "label": "Substitute with a more expensive item",
+                "value": 3.0
+              },
+              {
+                "label": "Substitute with a cheaper item",
+                "value": 10.0
+              },
+              {
+                "label": "Cancel the item and refund me",
+                "value": 22.0
+              },
+              {
+                "label": "Let me choose replacements in advance",
+                "value": 35.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Let me choose replacements in advance (35.00%).",
+            "distributionNote": "Quality-Focused Households and Value-Optimizing Shoppers strongly prefer pre-selected replacements; a notable share of Occasional Emergency Users prefer cancellation to avoid surprises.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs between price and convenience",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "How much extra per order would you accept in item markups before switching to a different service?",
+            "options": [
+              "No markup at all — I expect to pay the same as in-store",
+              "Up to 5% more than in-store prices",
+              "6% to 10% more than in-store prices",
+              "11% to 20% more than in-store prices",
+              "More than 20% — I don't compare item prices"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "No markup at all — I expect to pay the same as in-store",
+                "value": 45.0
+              },
+              {
+                "label": "Up to 5% more than in-store prices",
+                "value": 30.0
+              },
+              {
+                "label": "6% to 10% more than in-store prices",
+                "value": 15.0
+              },
+              {
+                "label": "11% to 20% more than in-store prices",
+                "value": 7.0
+              },
+              {
+                "label": "More than 20% — I don't compare item prices",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: No markup at all — I expect to pay the same as in-store (45.00%).",
+            "distributionNote": "Value-Optimizing Shoppers dominate the no-markup segment; Quality-Focused Households tolerate up to 5% for reliability, while a small premium segment accepts higher markups.",
+            "questionLayer": "module",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "fee_tolerance",
+            "beatTitle": "Fee and markup tolerance",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which packaging features matter most to you?",
+            "options": [
+              "Insulated cold-chain packaging",
+              "Recyclable or compostable materials",
+              "Minimal packaging waste",
+              "Tamper-evident seals",
+              "Portion-sized packaging",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Insulated cold-chain packaging",
+                "value": 82.0
+              },
+              {
+                "label": "Recyclable or compostable materials",
+                "value": 45.0
+              },
+              {
+                "label": "Minimal packaging waste",
+                "value": 50.0
+              },
+              {
+                "label": "Tamper-evident seals",
+                "value": 30.0
+              },
+              {
+                "label": "Portion-sized packaging",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Insulated cold-chain packaging (82.00%).",
+            "distributionNote": "Quality-Focused Households and Convenience-Driven Customers prioritize cold-chain integrity.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "fee_tolerance",
+            "beatTitle": "Fee and markup tolerance",
+            "beatCanonical": "value_expectation",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Which claims would make you trust an online grocery item more?",
+            "options": [
+              "Certified organic",
+              "Locally sourced",
+              "Fair trade certified",
+              "Non-GMO verified",
+              "Carbon-neutral delivery",
+              "None of these matter to me"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Certified organic",
+                "value": 35.0
+              },
+              {
+                "label": "Locally sourced",
+                "value": 45.0
+              },
+              {
+                "label": "Fair trade certified",
+                "value": 20.0
+              },
+              {
+                "label": "Non-GMO verified",
+                "value": 25.0
+              },
+              {
+                "label": "Carbon-neutral delivery",
+                "value": 18.0
+              },
+              {
+                "label": "None of these matter to me",
+                "value": 25.0
+              }
+            ],
+            "insight": "Top response: Locally sourced (45.00%).",
+            "distributionNote": "Quality-Focused Households and Value-Optimizing Shoppers show moderate interest in certifications; a substantial minority of Convenience-Driven Customers are indifferent.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "fee_tolerance",
+            "beatTitle": "Fee and markup tolerance",
+            "beatCanonical": "value_expectation",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "How much more would you pay per order for guaranteed same-day delivery?",
+            "options": [
+              "Nothing, I'd wait",
+              "Up to $5",
+              "$6 to $10",
+              "$11 to $15",
+              "More than $15"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Nothing, I'd wait",
+                "value": 35.0
+              },
+              {
+                "label": "Up to $5",
+                "value": 30.0
+              },
+              {
+                "label": "$6 to $10",
+                "value": 20.0
+              },
+              {
+                "label": "$11 to $15",
+                "value": 10.0
+              },
+              {
+                "label": "More than $15",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Nothing, I'd wait (35.00%).",
+            "distributionNote": "Value-Optimizing Shoppers and Occasional Emergency Users are unwilling to pay extra; Convenience-Driven Customers and Quality-Focused Households accept moderate fees for same-day.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "fee_tolerance",
+            "beatTitle": "Fee and markup tolerance",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_loyalty",
+        "label": "Satisfaction, Loyalty & Churn Risk",
+        "questions": [
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "What most improves your satisfaction with an online grocery order?",
+            "options": [
+              "Arriving within the promised time window",
+              "Items arriving fresh and properly cold",
+              "Getting exactly what I ordered, no substitutions",
+              "Prices matching what I'd pay in-store",
+              "Delivery fees and minimums that feel fair",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Arriving within the promised time window",
+                "value": 24.0
+              },
+              {
+                "label": "Items arriving fresh and properly cold",
+                "value": 27.0
+              },
+              {
+                "label": "Getting exactly what I ordered, no substitutions",
+                "value": 18.0
+              },
+              {
+                "label": "Prices matching what I'd pay in-store",
+                "value": 17.0
+              },
+              {
+                "label": "Delivery fees and minimums that feel fair",
+                "value": 11.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Items arriving fresh and properly cold (27.00%).",
+            "distributionNote": "Quality-Focused Households prioritize freshness and exact orders; Convenience-Driven Customers value time windows; Value-Optimizing Shoppers focus on price parity and fees.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "In the last 30 days, which of these frustrations have you had with online grocery delivery?",
+            "options": [
+              "Hidden fees or unclear pricing",
+              "Item markups compared to in-store prices",
+              "Substitutions or out-of-stock items",
+              "Delivery delays or missed time windows",
+              "Minimum order requirements",
+              "Cold items arriving warm",
+              "High delivery fees or service costs",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Hidden fees or unclear pricing",
+                "value": 35.0
+              },
+              {
+                "label": "Item markups compared to in-store prices",
+                "value": 42.0
+              },
+              {
+                "label": "Substitutions or out-of-stock items",
+                "value": 38.0
+              },
+              {
+                "label": "Delivery delays or missed time windows",
+                "value": 30.0
+              },
+              {
+                "label": "Minimum order requirements",
+                "value": 25.0
+              },
+              {
+                "label": "Cold items arriving warm",
+                "value": 22.0
+              },
+              {
+                "label": "High delivery fees or service costs",
+                "value": 40.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Item markups compared to in-store prices (42.00%).",
+            "distributionNote": "Value-Optimizing Shoppers drive high rates for markups and fees; Quality-Focused Households report substitution and cold-chain issues; Occasional Emergency Users are hit by minimums and fees.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "pain_points",
+            "beatTitle": "Pain points and frustrations",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "What would most likely make you switch to a different online grocery service?",
+            "options": [
+              "Lower delivery fees or no minimum order",
+              "More reliable delivery time windows",
+              "Better freshness and cold-chain handling",
+              "Lower item prices or price matching",
+              "More flexible substitution options",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Lower delivery fees or no minimum order",
+                "value": 30.0
+              },
+              {
+                "label": "More reliable delivery time windows",
+                "value": 22.0
+              },
+              {
+                "label": "Better freshness and cold-chain handling",
+                "value": 18.0
+              },
+              {
+                "label": "Lower item prices or price matching",
+                "value": 18.0
+              },
+              {
+                "label": "More flexible substitution options",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Lower delivery fees or no minimum order (30.00%).",
+            "distributionNote": "Value-Optimizing Shoppers and Occasional Emergency Users are most swayed by fee reductions; Convenience-Driven and Quality-Focused Households prioritize reliability and freshness.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "In the next 12 months, how do you expect your use of online grocery delivery to change?",
+            "options": [
+              "I will use it more often",
+              "I will use it about the same",
+              "I will use it less often",
+              "I will stop using it altogether"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I will use it more often",
+                "value": 45.0
+              },
+              {
+                "label": "I will use it about the same",
+                "value": 35.0
+              },
+              {
+                "label": "I will use it less often",
+                "value": 15.0
+              },
+              {
+                "label": "I will stop using it altogether",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I will use it more often (45.00%).",
+            "distributionNote": "Convenience-Driven and Quality-Focused Households expect to increase usage; Value-Optimizing and Occasional Emergency Users may reduce due to fees and service frustrations.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "future_use",
+            "beatTitle": "Future usage intent",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 8.0
+              },
+              {
+                "label": "25-34",
+                "value": 25.0
+              },
+              {
+                "label": "35-44",
+                "value": 28.0
+              },
+              {
+                "label": "45-54",
+                "value": 20.0
+              },
+              {
+                "label": "55-64",
+                "value": 12.0
+              },
+              {
+                "label": "65 or older",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 35-44 (28.00%).",
+            "distributionNote": "Distribution reflects the weighted persona mix, with a concentration in family-oriented and professional age bands.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 54.0
+              },
+              {
+                "label": "Man",
+                "value": 44.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: Woman (54.00%).",
+            "distributionNote": "Representative panel skews slightly female, consistent with primary grocery shoppers in the region.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 24.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 38.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with children under 18 (38.00%).",
+            "distributionNote": "Household composition skews toward families with children, driven by Convenience-Driven and Quality-Focused Households; singles and partner-only households are also well represented.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 8.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 18.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 24.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 20.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 17.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 9.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (24.00%).",
+            "distributionNote": "Income distribution is centered in the middle bands, with a notable upper-middle segment; Value-Optimizing Shoppers and Quality-Focused Households anchor the middle and upper-middle ranges.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "How likely are you to recommend the Online Grocery Delivery you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 3.0
+              },
+              {
+                "label": "1",
+                "value": 2.0
+              },
+              {
+                "label": "2",
+                "value": 3.0
+              },
+              {
+                "label": "3",
+                "value": 5.0
+              },
+              {
+                "label": "4",
+                "value": 6.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 11.0
+              },
+              {
+                "label": "7",
+                "value": 17.0
+              },
+              {
+                "label": "8",
+                "value": 20.0
+              },
+              {
+                "label": "9",
+                "value": 13.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 8 (20.00%).",
+            "distributionNote": "Promoter scores are moderate, with a peak at 8; detractors are a minority. Quality-Focused Households and Convenience-Driven Customers drive the upper end, while Value-Optimizing Shoppers temper enthusiasm.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "Overall, how satisfied are you with the Online Grocery Delivery you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 6.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 14.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "Satisfaction skews positive but with a meaningful dissatisfied minority, reflecting fee and reliability concerns among Value-Optimizing Shoppers and Occasional Emergency Users.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true
+          }
+        ]
+      }
+    ]
+  },
+  "survey": {
+    "market_segment": "Online Grocery Delivery",
+    "region": "Global",
+    "metadata": {
+      "total_questions": 33,
+      "selection": {
+        "mode": "core_plus_module",
+        "source_regions": [
+          "north-america"
+        ],
+        "total_questions": 33,
+        "method": "select_and_blend"
+      },
+      "storyline": {
+        "usage_context": [
+          {
+            "beatId": "category_entry",
+            "title": "Online grocery delivery usage",
+            "canonical": "category_entry",
+            "order": 1
+          },
+          {
+            "beatId": "order_frequency",
+            "title": "Order frequency",
+            "canonical": "usage_frequency",
+            "order": 2
+          },
+          {
+            "beatId": "order_occasions",
+            "title": "Order occasions",
+            "canonical": "usage_occasion",
+            "order": 3
+          },
+          {
+            "beatId": "household_role",
+            "title": "Household decision role",
+            "canonical": "household_role",
+            "order": 4
+          }
+        ],
+        "purchase_journey": [
+          {
+            "beatId": "purchase_trigger",
+            "title": "What triggers an order",
+            "canonical": "purchase_trigger",
+            "order": 1
+          },
+          {
+            "beatId": "service_choice",
+            "title": "Service choice and comparison",
+            "canonical": "discovery",
+            "order": 2
+          },
+          {
+            "beatId": "subscription_status",
+            "title": "Membership subscription",
+            "canonical": "channel",
+            "order": 3
+          },
+          {
+            "beatId": "order_spend",
+            "title": "Typical order spend",
+            "canonical": "spend",
+            "order": 4
+          },
+          {
+            "beatId": "decision_drivers",
+            "title": "Service selection drivers",
+            "canonical": "decision_drivers",
+            "order": 5
+          }
+        ],
+        "service_requirements": [
+          {
+            "beatId": "must_haves",
+            "title": "Must-have service features",
+            "canonical": "must_haves",
+            "order": 1
+          },
+          {
+            "beatId": "quality_cues",
+            "title": "Quality cues for fresh items",
+            "canonical": "quality_cues",
+            "order": 2
+          },
+          {
+            "beatId": "fee_tolerance",
+            "title": "Fee and markup tolerance",
+            "canonical": "value_expectation",
+            "order": 3
+          },
+          {
+            "beatId": "tradeoffs",
+            "title": "Trade-offs between price and convenience",
+            "canonical": "tradeoffs",
+            "order": 4
+          }
+        ],
+        "satisfaction_loyalty": [
+          {
+            "beatId": "overall_satisfaction",
+            "title": "Overall satisfaction",
+            "canonical": "overall_satisfaction",
+            "order": 1
+          },
+          {
+            "beatId": "pain_points",
+            "title": "Pain points and frustrations",
+            "canonical": "friction",
+            "order": 2
+          },
+          {
+            "beatId": "switching_triggers",
+            "title": "Switching triggers",
+            "canonical": "switching",
+            "order": 3
+          },
+          {
+            "beatId": "future_use",
+            "title": "Future usage intent",
+            "canonical": "future_use",
+            "order": 4
+          }
+        ]
+      },
+      "storyline_source": "planner",
+      "storyline_summary": "This survey covers the consumer motion of online grocery delivery in North America. It starts by establishing who the respondent is in terms of their ordering behaviour and household role, then moves through their purchase journey, including triggers, service choice, and spend. It then explores their service requirements and trade-offs, and finally measures satisfaction, pain points, and future intent. The story is designed to separate the four segments based on their frequency, price sensitivity, and quality focus.",
+      "studyPurpose": "Identify which of 4 behavioural segments each consumer respondent belongs to, based on their online grocery delivery usage patterns, price sensitivity, and service expectations.",
+      "segmentation_lens": "Price sensitivity / value orientation combined with usage/behavioural. This category is mature and highly competitive, with consumers frequently comparing online prices to in-store and complaining about fees and markups. Price sensitivity genuinely separates buyers, but it must be paired with usage",
+      "must_cover_topics": [
+        "Delivery fees",
+        "Item markups",
+        "Substitutions",
+        "Delivery time windows",
+        "Membership subscription",
+        "Minimum order"
+      ],
+      "segments": [
+        {
+          "segment_id": "convenience_driven_regulars",
+          "name": "Convenience-Driven Customers",
+          "description": "Order online at least weekly, often subscribe to a membership for free delivery, and are willing to pay for the convenience. They are less price-sensitive and prioritize time savings and reliability.",
+          "hypothesis": "This group will report high order frequency, high subscription uptake, and lower sensitivity to fees and markups."
+        },
+        {
+          "segment_id": "value_optimizers",
+          "name": "Value-Optimizing Shoppers",
+          "description": "Order regularly but actively compare prices, use promotions, and may switch between services to get the best deal. They are sensitive to fees and markups and will adjust their behaviour to minimize cost.",
+          "hypothesis": "This group will report moderate frequency, high price sensitivity, and frequent switching between services."
+        },
+        {
+          "segment_id": "occasional_emergency_users",
+          "name": "Occasional Emergency Users",
+          "description": "Order infrequently, only when too busy or in a pinch. They are price-sensitive and do not subscribe, often paying per order and complaining about fees.",
+          "hypothesis": "This group will report low frequency, low subscription uptake, and high sensitivity to fees and minimums."
+        },
+        {
+          "segment_id": "quality_focused_planners",
+          "name": "Quality-Focused Households",
+          "description": "Order regularly, often for weekly meal planning, and are willing to pay for quality and reliability. They are less price-sensitive but very concerned about substitutions, cold chain, and accurate orders.",
+          "hypothesis": "This group will report high frequency, moderate price sensitivity, and high importance on order accuracy and quality."
+        }
+      ],
+      "segmentModel": {
+        "segments": [
+          {
+            "segment_id": "convenience_driven_regulars",
+            "name": "Convenience-Driven Customers",
+            "description": "Order online at least weekly, often subscribe to a membership for free delivery, and are willing to pay for the convenience. They are less price-sensitive and prioritize time savings and reliability.",
+            "hypothesis": "This group will report high order frequency, high subscription uptake, and lower sensitivity to fees and markups."
+          },
+          {
+            "segment_id": "value_optimizers",
+            "name": "Value-Optimizing Shoppers",
+            "description": "Order regularly but actively compare prices, use promotions, and may switch between services to get the best deal. They are sensitive to fees and markups and will adjust their behaviour to minimize cost.",
+            "hypothesis": "This group will report moderate frequency, high price sensitivity, and frequent switching between services."
+          },
+          {
+            "segment_id": "occasional_emergency_users",
+            "name": "Occasional Emergency Users",
+            "description": "Order infrequently, only when too busy or in a pinch. They are price-sensitive and do not subscribe, often paying per order and complaining about fees.",
+            "hypothesis": "This group will report low frequency, low subscription uptake, and high sensitivity to fees and minimums."
+          },
+          {
+            "segment_id": "quality_focused_planners",
+            "name": "Quality-Focused Households",
+            "description": "Order regularly, often for weekly meal planning, and are willing to pay for quality and reliability. They are less price-sensitive but very concerned about substitutions, cold chain, and accurate orders.",
+            "hypothesis": "This group will report high frequency, moderate price sensitivity, and high importance on order accuracy and quality."
+          }
+        ],
+        "weights": [
+          {
+            "question_id": "q1",
+            "question_text": "In the last 30 days, how many online grocery orders did you place?",
+            "option_label": "5 or more",
+            "segment_id": "convenience_driven_regulars",
+            "points": 3
+          },
+          {
+            "question_id": "q1",
+            "question_text": "In the last 30 days, how many online grocery orders did you place?",
+            "option_label": "5 or more",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q1",
+            "question_text": "In the last 30 days, how many online grocery orders did you place?",
+            "option_label": "1",
+            "segment_id": "occasional_emergency_users",
+            "points": 2
+          },
+          {
+            "question_id": "q2",
+            "question_text": "Which of these best describes your typical online grocery order?",
+            "option_label": "A full weekly shop for the household",
+            "segment_id": "quality_focused_planners",
+            "points": 3
+          },
+          {
+            "question_id": "q2",
+            "question_text": "Which of these best describes your typical online grocery order?",
+            "option_label": "A few items when I'm too busy to go to the store",
+            "segment_id": "occasional_emergency_users",
+            "points": 3
+          },
+          {
+            "question_id": "q2",
+            "question_text": "Which of these best describes your typical online grocery order?",
+            "option_label": "A top-up shop between store trips",
+            "segment_id": "value_optimizers",
+            "points": 1
+          },
+          {
+            "question_id": "q3",
+            "question_text": "In a typical month, how many of your online grocery orders are for a full weekly shop?",
+            "option_label": "4 or more",
+            "segment_id": "quality_focused_planners",
+            "points": 3
+          },
+          {
+            "question_id": "q3",
+            "question_text": "In a typical month, how many of your online grocery orders are for a full weekly shop?",
+            "option_label": "None – I only order for top-ups or specific items",
+            "segment_id": "occasional_emergency_users",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Which of these best describes the main reason you place an online grocery order?",
+            "option_label": "To save time on a busy week",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Which of these best describes the main reason you place an online grocery order?",
+            "option_label": "To plan and stock up for the week ahead",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q5",
+            "question_text": "Which of these best describes the main reason you place an online grocery order?",
+            "option_label": "To get items delivered when I'm sick or can't leave home",
+            "segment_id": "occasional_emergency_users",
+            "points": 2
+          },
+          {
+            "question_id": "q7",
+            "question_text": "Which of these best describes why you started using online grocery delivery?",
+            "option_label": "To compare prices and find deals",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What usually starts your online grocery order?",
+            "option_label": "I see a promotion or discount on the app",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What usually starts your online grocery order?",
+            "option_label": "I have a scheduled weekly delivery",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q8",
+            "question_text": "What usually starts your online grocery order?",
+            "option_label": "I'm too busy to go to the store",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In a typical month, how often do you place an online grocery order?",
+            "option_label": "5–8 times a month",
+            "segment_id": "convenience_driven_regulars",
+            "points": 3
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In a typical month, how often do you place an online grocery order?",
+            "option_label": "More than 8 times a month",
+            "segment_id": "convenience_driven_regulars",
+            "points": 3
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In a typical month, how often do you place an online grocery order?",
+            "option_label": "3–4 times a month",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In a typical month, how often do you place an online grocery order?",
+            "option_label": "3–4 times a month",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q9",
+            "question_text": "In a typical month, how often do you place an online grocery order?",
+            "option_label": "Less than once a month",
+            "segment_id": "occasional_emergency_users",
+            "points": 3
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which situation most often makes you place an online grocery order instead of going to the store?",
+            "option_label": "My regular weekly or monthly grocery run",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which situation most often makes you place an online grocery order instead of going to the store?",
+            "option_label": "I'm too busy or don't have time to shop in person",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q10",
+            "question_text": "Which situation most often makes you place an online grocery order instead of going to the store?",
+            "option_label": "I need a few items quickly for a meal or event",
+            "segment_id": "occasional_emergency_users",
+            "points": 3
+          },
+          {
+            "question_id": "q11",
+            "question_text": "Which of these best describes your delivery membership status?",
+            "option_label": "I have a paid membership that includes free delivery",
+            "segment_id": "convenience_driven_regulars",
+            "points": 3
+          },
+          {
+            "question_id": "q11",
+            "question_text": "Which of these best describes your delivery membership status?",
+            "option_label": "I don't have a membership and pay per order",
+            "segment_id": "occasional_emergency_users",
+            "points": 2
+          },
+          {
+            "question_id": "q11",
+            "question_text": "Which of these best describes your delivery membership status?",
+            "option_label": "I have a free membership but still pay delivery fees",
+            "segment_id": "value_optimizers",
+            "points": 1
+          },
+          {
+            "question_id": "q13",
+            "question_text": "What is the typical total value of one online grocery order?",
+            "option_label": "$150–$199",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "What is the typical total value of one online grocery order?",
+            "option_label": "$200 or more",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q13",
+            "question_text": "What is the typical total value of one online grocery order?",
+            "option_label": "Under $25",
+            "segment_id": "occasional_emergency_users",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When choosing an online grocery service, which of these trade-offs are you most willing to make?",
+            "option_label": "Pay a membership fee for lower per-order costs",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When choosing an online grocery service, which of these trade-offs are you most willing to make?",
+            "option_label": "Accept substitutions for a lower delivery fee",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When choosing an online grocery service, which of these trade-offs are you most willing to make?",
+            "option_label": "Wait for a later delivery window to avoid fees",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q14",
+            "question_text": "When choosing an online grocery service, which of these trade-offs are you most willing to make?",
+            "option_label": "Order a larger minimum to get free delivery",
+            "segment_id": "value_optimizers",
+            "points": 1
+          },
+          {
+            "question_id": "q15",
+            "question_text": "When choosing between online grocery services, which matters most to you?",
+            "option_label": "Low delivery fees",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "When choosing between online grocery services, which matters most to you?",
+            "option_label": "Same-day or scheduled delivery",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q15",
+            "question_text": "When choosing between online grocery services, which matters most to you?",
+            "option_label": "Wide range of stores and products",
+            "segment_id": "quality_focused_planners",
+            "points": 1
+          },
+          {
+            "question_id": "q15",
+            "question_text": "When choosing between online grocery services, which matters most to you?",
+            "option_label": "Ability to compare prices and deals",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q15",
+            "question_text": "When choosing between online grocery services, which matters most to you?",
+            "option_label": "Subscription benefits and free delivery",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these are must-haves for your online grocery order?",
+            "option_label": "Fresh produce and cold items arrive cold",
+            "segment_id": "quality_focused_planners",
+            "points": 3
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these are must-haves for your online grocery order?",
+            "option_label": "No substitutions without my approval",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these are must-haves for your online grocery order?",
+            "option_label": "Same price as in-store",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q16",
+            "question_text": "Which of these are must-haves for your online grocery order?",
+            "option_label": "No hidden fees at checkout",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "How much extra per order would you accept in item markups before switching to a different service?",
+            "option_label": "No markup at all — I expect to pay the same as in-store",
+            "segment_id": "value_optimizers",
+            "points": 3
+          },
+          {
+            "question_id": "q18",
+            "question_text": "How much extra per order would you accept in item markups before switching to a different service?",
+            "option_label": "More than 20% — I don't compare item prices",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q18",
+            "question_text": "How much extra per order would you accept in item markups before switching to a different service?",
+            "option_label": "More than 20% — I don't compare item prices",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q21",
+            "question_text": "How much more would you pay per order for guaranteed same-day delivery?",
+            "option_label": "Nothing, I'd wait",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q21",
+            "question_text": "How much more would you pay per order for guaranteed same-day delivery?",
+            "option_label": "More than $15",
+            "segment_id": "convenience_driven_regulars",
+            "points": 3
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of these would you give up to avoid paying a delivery fee?",
+            "option_label": "None of these — I would rather pay the fee",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q22",
+            "question_text": "Which of these would you give up to avoid paying a delivery fee?",
+            "option_label": "A wider delivery time window (e.g., 4 hours instead of 2)",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "When an item is out of stock, what do you prefer?",
+            "option_label": "Cancel the item and refund me",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q23",
+            "question_text": "When an item is out of stock, what do you prefer?",
+            "option_label": "Substitute with a cheaper item",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of these most improves your satisfaction with an online grocery order?",
+            "option_label": "Items arriving fresh and properly cold",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of these most improves your satisfaction with an online grocery order?",
+            "option_label": "Getting exactly what I ordered, no substitutions",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of these most improves your satisfaction with an online grocery order?",
+            "option_label": "Prices matching what I'd pay in-store",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q24",
+            "question_text": "Which of these most improves your satisfaction with an online grocery order?",
+            "option_label": "Delivery fees and minimums that feel fair",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "In the last 30 days, which of these frustrations have you had with online grocery delivery?",
+            "option_label": "Hidden fees or unclear pricing",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "In the last 30 days, which of these frustrations have you had with online grocery delivery?",
+            "option_label": "Item markups compared to in-store prices",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "In the last 30 days, which of these frustrations have you had with online grocery delivery?",
+            "option_label": "Substitutions or out-of-stock items",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "In the last 30 days, which of these frustrations have you had with online grocery delivery?",
+            "option_label": "Cold items arriving warm",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q25",
+            "question_text": "In the last 30 days, which of these frustrations have you had with online grocery delivery?",
+            "option_label": "High delivery fees or service costs",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different online grocery service?",
+            "option_label": "Lower delivery fees or no minimum order",
+            "segment_id": "value_optimizers",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different online grocery service?",
+            "option_label": "More reliable delivery time windows",
+            "segment_id": "convenience_driven_regulars",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different online grocery service?",
+            "option_label": "Better freshness and cold-chain handling",
+            "segment_id": "quality_focused_planners",
+            "points": 2
+          },
+          {
+            "question_id": "q26",
+            "question_text": "Which of these would most likely make you switch to a different online grocery service?",
+            "option_label": "Lower item prices or price matching",
+            "segment_id": "value_optimizers",
+            "points": 2
+          }
+        ],
+        "tie_break": "bb2 (typical monthly order frequency) is the most direct behavioural self-report that separates regulars (convenience, value, quality) from occasional users, and combined with bb4 (membership) and pe3 (markup tolerance) it resolves ties between convenience and value or quality.",
+        "notes": [
+          "Weights are assigned only to options that clearly discriminate; many options are left unscored.",
+          "Each segment has at least two scoring options and at least one 3-point option.",
+          "Some options intentionally point to two segments when the behaviour is shared (e.g., high frequency for convenience and value).",
+          "3 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+        ],
+        "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+      },
+      "fieldingNotes": {
+        "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+        "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+        "estimatedLength": "8-10 minutes.",
+        "scriptingNotes": [
+          "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+          "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+          "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+          "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+          "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+          "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+        ],
+        "caveats": [
+          "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+          "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+          "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

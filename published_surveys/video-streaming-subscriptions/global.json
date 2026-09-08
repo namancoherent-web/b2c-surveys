@@ -1,0 +1,2897 @@
+{
+  "segment": "Video Streaming Subscriptions",
+  "slug": "video-streaming-subscriptions",
+  "region": "global",
+  "surveyDefinition": {
+    "title": "Video Streaming Subscriptions — consumer survey (Global)",
+    "category": "Video Streaming Subscriptions",
+    "region": "Global",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on viewing habits, subscription management, spend behaviour, and content motivations.",
+    "segments": [
+      {
+        "id": "high_engagement_subscribers",
+        "name": "High-Engagement Subscribers",
+        "description": "Heavy daily viewers who subscribe to multiple services, are willing to pay for premium ad-free experiences, and are driven by exclusive content and immediate access to new releases. They rarely cancel and see streaming as their primary entertainment."
+      },
+      {
+        "id": "price_sensitive_rotators",
+        "name": "Price-Sensitive Subscribers",
+        "description": "Cost-conscious subscribers who frequently cancel and re-subscribe based on content drops and promotions. They actively compare plans, use ad-supported tiers to save money, and are quick to churn when prices rise."
+      },
+      {
+        "id": "household_co_viewers",
+        "name": "Household Co-Viewers",
+        "description": "Subscribers who manage streaming as a shared family resource, prioritizing multiple profiles, parental controls, and content that appeals to different ages. They value simultaneous streams and family-friendly libraries over individual preferences."
+      },
+      {
+        "id": "niche_content_fans",
+        "name": "Niche Content Customers",
+        "description": "Viewers with strong genre or language preferences who subscribe to specialized services to access content unavailable on mainstream platforms. They are willing to pay for niche libraries but are frustrated by fragmentation and poor subtitles."
+      },
+      {
+        "id": "occasional_lapsed_users",
+        "name": "Occasional Lapsed Users",
+        "description": "Low-frequency viewers who subscribe for a single title or a short period, then cancel and stay unsubscribed for months. They are the least loyal, most price-sensitive, and often rely on free or ad-supported options between subscriptions."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Video Streaming Subscriptions buyers worldwide. It asks how people use Video Streaming Subscriptions, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories. This global view is not a separate fieldwork exercise: it selects the strongest questions from the regional surveys and blends their percentages using population-style regional weights.",
+    "whoseContextThisIs": "Adults worldwide who buy or use Video Streaming Subscriptions for personal or household use. Respondents qualify if they: Currently holds an active subscription to at least one video streaming service (e.g., Netflix, Disney+, Hulu, Amazon Prime Video, HBO Max, etc.); Personally pays for the subscription (not solely through a bundled telecom or employer plan); Makes or significantly influences the household's streaming subscription decisions. Excluded: Individuals who only watch free ad-supported streaming (e.g., free tiers of Pluto TV, Tubi) and do not pay for any subscription; Businesses or institutions purchasing streaming for commercial use (e.g., bars, hotels); Cord-cutters who have never subscribed to a paid streaming service.",
+    "whyTheseRespondents": "Household consumers buy video streaming subscriptions for personal entertainment, pay the subscription fees themselves, and decide which services to subscribe to based on content preferences and price. Businesses may occasionally purchase for employee perks, but the dominant and defining purchase is by individual consumers.",
+    "respondentBehaviours": [
+      "Streams video content regularly (multiple times per week)",
+      "Subscribes to one or more streaming services",
+      "Churns between services based on content libraries and pricing",
+      "Engages with original programming and exclusive content",
+      "Uses multiple devices (smart TV, phone, tablet, laptop) to watch"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 37,
+      "sections": [
+        {
+          "id": "streaming_consumption_context",
+          "label": "Streaming Consumption & Viewing Context",
+          "covers": "Establish how respondents use streaming in their daily lives — which services they hold, how viewing fits their week, who watches with them, and what role streaming plays.",
+          "questions": 8
+        },
+        {
+          "id": "subscription_acquisition_management",
+          "label": "Subscription Acquisition & Management",
+          "covers": "Understand the triggers, discovery, and management of streaming subscriptions — including how they sign up, how they pay, and how they share accounts.",
+          "questions": 8
+        },
+        {
+          "id": "content_service_requirements",
+          "label": "Content & Service Requirements",
+          "covers": "Capture what respondents require from a streaming service — content library, features, ad tolerance, and value expectations — and the trade-offs they are willing to make.",
+          "questions": 8
+        },
+        {
+          "id": "satisfaction_churn_risk",
+          "label": "Satisfaction, Loyalty & Churn Risk",
+          "covers": "Measure overall satisfaction, identify friction points, and understand what would trigger cancellation or switching, plus future intent and interest in bundles.",
+          "questions": 7
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's current streaming landscape — which services they hold, how they watch, and who in the household is involved. It then moves into the subscription lifecycle: what triggers a new sign-up, how they compare and manage services, and what they spend. Next, it probes the content and feature requirements that drive service choice, including ad tolerance and family features. Finally, it measures satisfaction, friction, and churn risk to understand loyalty and future behaviour. This arc separates the segments by their engagement level, price…"
+    }
+  },
+  "frontend": {
+    "sections": [
+      {
+        "id": "streaming_consumption_context",
+        "label": "Streaming Consumption & Viewing Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "How many video streaming services do you currently pay for?",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5 or more"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "1",
+                "value": 28.0
+              },
+              {
+                "label": "2",
+                "value": 34.0
+              },
+              {
+                "label": "3",
+                "value": 22.0
+              },
+              {
+                "label": "4",
+                "value": 10.0
+              },
+              {
+                "label": "5 or more",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: 2 (34.00%).",
+            "distributionNote": "High-Engagement Subscribers push the multi-service tail, while Price-Sensitive and Occasional Lapsed Users concentrate on one or two services.",
+            "questionLayer": "full",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "Who else in your household usually watches streaming services with you?",
+            "options": [
+              "I usually watch alone",
+              "My partner or spouse",
+              "My children",
+              "My parents or other relatives",
+              "Roommates or friends",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I usually watch alone",
+                "value": 38.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 30.0
+              },
+              {
+                "label": "My children",
+                "value": 18.0
+              },
+              {
+                "label": "My parents or other relatives",
+                "value": 7.0
+              },
+              {
+                "label": "Roommates or friends",
+                "value": 4.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: I usually watch alone (38.00%).",
+            "distributionNote": "Household Co-Viewers drive the partner/children share; solo viewing is common among Occasional Lapsed Users and single-person households.",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "What describes your current streaming setup?",
+            "options": [
+              "I pay for all of them myself",
+              "I pay for some, and share the rest",
+              "I use someone else's accounts",
+              "I only use free or ad-supported services",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I pay for all of them myself",
+                "value": 42.0
+              },
+              {
+                "label": "I pay for some, and share the rest",
+                "value": 28.0
+              },
+              {
+                "label": "I use someone else's accounts",
+                "value": 12.0
+              },
+              {
+                "label": "I only use free or ad-supported services",
+                "value": 13.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I pay for all of them myself (42.00%).",
+            "distributionNote": "Price-Sensitive Subscribers lean on shared or free tiers; High-Engagement Subscribers are more likely to pay for all services themselves.",
+            "questionLayer": "full",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "In a typical week, which of these best describes how streaming fits into your routine?",
+            "options": [
+              "It's my main evening activity",
+              "I watch a little most days",
+              "I only watch on weekends",
+              "I watch a few times a month",
+              "I only watch when something specific comes out"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "It's my main evening activity",
+                "value": 22.0
+              },
+              {
+                "label": "I watch a little most days",
+                "value": 38.0
+              },
+              {
+                "label": "I only watch on weekends",
+                "value": 18.0
+              },
+              {
+                "label": "I watch a few times a month",
+                "value": 14.0
+              },
+              {
+                "label": "I only watch when something specific comes out",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: I watch a little most days (38.00%).",
+            "distributionNote": "High-Engagement Subscribers anchor the daily viewing; Occasional Lapsed Users are concentrated in the last two options.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "When do you usually watch streaming services?",
+            "options": [
+              "Weekday evenings after work or school",
+              "Weekend afternoons or evenings",
+              "During meals",
+              "Late at night before bed",
+              "While commuting or traveling",
+              "When I have free time during the day",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Weekday evenings after work or school",
+                "value": 62.0
+              },
+              {
+                "label": "Weekend afternoons or evenings",
+                "value": 55.0
+              },
+              {
+                "label": "During meals",
+                "value": 18.0
+              },
+              {
+                "label": "Late at night before bed",
+                "value": 44.0
+              },
+              {
+                "label": "While commuting or traveling",
+                "value": 12.0
+              },
+              {
+                "label": "When I have free time during the day",
+                "value": 30.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Weekday evenings after work or school (62.00%).",
+            "distributionNote": "High-Engagement Subscribers drive evening and late-night viewing; Household Co-Viewers add weekend and mealtime viewing.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "How often do you watch streaming services alone versus with others?",
+            "options": [
+              "Almost always alone",
+              "Mostly alone",
+              "About half alone, half with others",
+              "Mostly with others",
+              "Almost always with others"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Almost always alone",
+                "value": 25.0
+              },
+              {
+                "label": "Mostly alone",
+                "value": 30.0
+              },
+              {
+                "label": "About half alone, half with others",
+                "value": 22.0
+              },
+              {
+                "label": "Mostly with others",
+                "value": 15.0
+              },
+              {
+                "label": "Almost always with others",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Mostly alone (30.00%).",
+            "distributionNote": "Household Co-Viewers shift the mix toward shared viewing; solo-heavy Occasional Lapsed Users keep the alone share high.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "usage_occasion",
+            "beatTitle": "Usage occasions",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "In a typical week, how many days do you watch something on a streaming service?",
+            "options": [
+              "Every day",
+              "5-6 days",
+              "3-4 days",
+              "1-2 days",
+              "Less than once a week"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Every day",
+                "value": 24.0
+              },
+              {
+                "label": "5-6 days",
+                "value": 22.0
+              },
+              {
+                "label": "3-4 days",
+                "value": 28.0
+              },
+              {
+                "label": "1-2 days",
+                "value": 18.0
+              },
+              {
+                "label": "Less than once a week",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 3-4 days (28.00%).",
+            "distributionNote": "High-Engagement Subscribers dominate daily and near-daily viewing; Occasional Lapsed Users are concentrated in the low-frequency end.",
+            "questionLayer": "full",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Who decides which streaming services your household subscribes to?",
+            "options": [
+              "I decide on my own",
+              "I decide with my partner or spouse",
+              "I decide with my children",
+              "I decide with other household members",
+              "Someone else in the household decides",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I decide on my own",
+                "value": 40.0
+              },
+              {
+                "label": "I decide with my partner or spouse",
+                "value": 32.0
+              },
+              {
+                "label": "I decide with my children",
+                "value": 12.0
+              },
+              {
+                "label": "I decide with other household members",
+                "value": 7.0
+              },
+              {
+                "label": "Someone else in the household decides",
+                "value": 5.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I decide on my own (40.00%).",
+            "distributionNote": "Household Co-Viewers drive joint decisions with partners and children; single-person households and Occasional Lapsed Users decide alone.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "usage_frequency",
+            "beatTitle": "Usage frequency and intensity",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          }
+        ]
+      },
+      {
+        "id": "subscription_acquisition_management",
+        "label": "Subscription Acquisition & Management",
+        "questions": [
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "What usually makes you start a new streaming subscription?",
+            "options": [
+              "A specific show or movie I want to watch",
+              "A free trial or promotional offer",
+              "Friends or family recommend it",
+              "A new season of a show I follow",
+              "Bundled with another service I already pay for",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "A specific show or movie I want to watch",
+                "value": 42.0
+              },
+              {
+                "label": "A free trial or promotional offer",
+                "value": 22.0
+              },
+              {
+                "label": "Friends or family recommend it",
+                "value": 15.0
+              },
+              {
+                "label": "A new season of a show I follow",
+                "value": 12.0
+              },
+              {
+                "label": "Bundled with another service I already pay for",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: A specific show or movie I want to watch (42.00%).",
+            "distributionNote": "High-Engagement Subscribers and Niche Content Customers are driven by specific titles; Price-Sensitive Subscribers respond to promotions.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "subscription_triggers",
+            "beatTitle": "What triggers a new subscription",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Where do you usually first hear about new streaming shows or services?",
+            "options": [
+              "Social media",
+              "Word of mouth",
+              "Online ads",
+              "Streaming service homepage",
+              "News or entertainment articles",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Social media",
+                "value": 35.0
+              },
+              {
+                "label": "Word of mouth",
+                "value": 24.0
+              },
+              {
+                "label": "Online ads",
+                "value": 16.0
+              },
+              {
+                "label": "Streaming service homepage",
+                "value": 12.0
+              },
+              {
+                "label": "News or entertainment articles",
+                "value": 9.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Social media (35.00%).",
+            "distributionNote": "Social media dominates across segments, especially among younger and tech-forward subscribers; word of mouth is strong for Household Co-Viewers.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "discovery_and_comparison",
+            "beatTitle": "Discovery and comparison",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How do you usually sign up for a new streaming service?",
+            "options": [
+              "Directly on the service's website",
+              "Through an app store (Apple, Google)",
+              "Through my TV or device provider",
+              "Through a bundle with internet or mobile",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Directly on the service's website",
+                "value": 48.0
+              },
+              {
+                "label": "Through an app store (Apple, Google)",
+                "value": 25.0
+              },
+              {
+                "label": "Through my TV or device provider",
+                "value": 12.0
+              },
+              {
+                "label": "Through a bundle with internet or mobile",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Directly on the service's website (48.00%).",
+            "distributionNote": "Direct sign-up is the norm across segments; app store sign-ups are higher among mobile-first users, while bundles appeal to Price-Sensitive Subscribers.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "discovery_and_comparison",
+            "beatTitle": "Discovery and comparison",
+            "beatCanonical": "discovery",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "What have you done in the last 12 months to manage your streaming subscriptions?",
+            "options": [
+              "Cancelled a service after a show ended",
+              "Re-subscribed to a service I had cancelled",
+              "Switched to a cheaper plan with ads",
+              "Switched to a more expensive ad-free plan",
+              "Put a subscription on hold or paused it",
+              "Changed payment method to get a better deal",
+              "None of these"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Cancelled a service after a show ended",
+                "value": 48.0
+              },
+              {
+                "label": "Re-subscribed to a service I had cancelled",
+                "value": 36.0
+              },
+              {
+                "label": "Switched to a cheaper plan with ads",
+                "value": 22.0
+              },
+              {
+                "label": "Switched to a more expensive ad-free plan",
+                "value": 12.0
+              },
+              {
+                "label": "Put a subscription on hold or paused it",
+                "value": 8.0
+              },
+              {
+                "label": "Changed payment method to get a better deal",
+                "value": 10.0
+              },
+              {
+                "label": "None of these",
+                "value": 18.0
+              }
+            ],
+            "insight": "Top response: Cancelled a service after a show ended (48.00%).",
+            "distributionNote": "Price-Sensitive Subscribers drive churn and re-subscription; Household Co-Viewers also manage plans actively, while Occasional Lapsed Users often do nothing.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "subscription_management_actions",
+            "beatTitle": "Subscription management actions",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "How often do you cancel or switch between streaming services?",
+            "options": [
+              "More than once a month",
+              "About once a month",
+              "Every few months",
+              "Once or twice a year",
+              "Rarely or never"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "More than once a month",
+                "value": 5.0
+              },
+              {
+                "label": "About once a month",
+                "value": 10.0
+              },
+              {
+                "label": "Every few months",
+                "value": 28.0
+              },
+              {
+                "label": "Once or twice a year",
+                "value": 32.0
+              },
+              {
+                "label": "Rarely or never",
+                "value": 25.0
+              }
+            ],
+            "insight": "Top response: Once or twice a year (32.00%).",
+            "distributionNote": "Price-Sensitive Subscribers churn every few months; High-Engagement Subscribers and Household Co-Viewers rarely cancel, keeping the low-frequency end strong.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "subscription_management_actions",
+            "beatTitle": "Subscription management actions",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "In total, how much do you spend per month on all your streaming subscriptions?",
+            "options": [
+              "Under $10",
+              "$10 to $19",
+              "$20 to $29",
+              "$30 to $39",
+              "$40 to $49",
+              "$50 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $10",
+                "value": 18.0
+              },
+              {
+                "label": "$10 to $19",
+                "value": 30.0
+              },
+              {
+                "label": "$20 to $29",
+                "value": 24.0
+              },
+              {
+                "label": "$30 to $39",
+                "value": 14.0
+              },
+              {
+                "label": "$40 to $49",
+                "value": 8.0
+              },
+              {
+                "label": "$50 or more",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: $10 to $19 (30.00%).",
+            "distributionNote": "Price-Sensitive Subscribers and Occasional Lapsed Users keep spending low; High-Engagement Subscribers and Household Co-Viewers push the middle and upper tiers.",
+            "questionLayer": "full",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "monthly_spend",
+            "beatTitle": "Monthly spend on streaming",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "When choosing a new streaming service, which matters most to you?",
+            "options": [
+              "Price",
+              "Content library",
+              "Original shows",
+              "Video quality",
+              "Ease of use",
+              "No ads"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Price",
+                "value": 30.0
+              },
+              {
+                "label": "Content library",
+                "value": 25.0
+              },
+              {
+                "label": "Original shows",
+                "value": 15.0
+              },
+              {
+                "label": "Video quality",
+                "value": 12.0
+              },
+              {
+                "label": "Ease of use",
+                "value": 10.0
+              },
+              {
+                "label": "No ads",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Price (30.00%).",
+            "distributionNote": "Price-Sensitive Subscribers rank price first; High-Engagement Subscribers and Niche Content Customers prioritize content library and original shows.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Who else can use your streaming accounts?",
+            "options": [
+              "Only people in my household",
+              "My household plus close family outside it",
+              "My household plus friends outside it",
+              "My household plus both family and friends outside it",
+              "I share passwords with people outside my household",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Only people in my household",
+                "value": 38.0
+              },
+              {
+                "label": "My household plus close family outside it",
+                "value": 28.0
+              },
+              {
+                "label": "My household plus friends outside it",
+                "value": 8.0
+              },
+              {
+                "label": "My household plus both family and friends outside it",
+                "value": 12.0
+              },
+              {
+                "label": "I share passwords with people outside my household",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Only people in my household (38.00%).",
+            "distributionNote": "Household Co-Viewers keep access mostly within the household; sharing with family is common, while password sharing with friends is less prevalent.",
+            "questionLayer": "module",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "account_sharing",
+            "beatTitle": "Account sharing",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          }
+        ]
+      },
+      {
+        "id": "content_service_requirements",
+        "label": "Content & Service Requirements",
+        "questions": [
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "Which features must a streaming service have for you to keep it?",
+            "options": [
+              "No ads on anything I watch",
+              "Downloads for offline viewing",
+              "Watch on multiple screens at once",
+              "4K or HDR picture quality",
+              "Shows I can't get anywhere else",
+              "None of these are must-haves for me"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "No ads on anything I watch",
+                "value": 28.0
+              },
+              {
+                "label": "Downloads for offline viewing",
+                "value": 22.0
+              },
+              {
+                "label": "Watch on multiple screens at once",
+                "value": 18.0
+              },
+              {
+                "label": "4K or HDR picture quality",
+                "value": 12.0
+              },
+              {
+                "label": "Shows I can't get anywhere else",
+                "value": 15.0
+              },
+              {
+                "label": "None of these are must-haves for me",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: No ads on anything I watch (28.00%).",
+            "distributionNote": "High-Engagement Subscribers and Household Co-Viewers drive the need for ad-free and multi-screen features, while Price-Sensitive Subscribers are less demanding.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_content_features",
+            "beatTitle": "Must-have content features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "Which content types must a streaming service have for you to keep paying for it?",
+            "options": [
+              "New original shows and movies",
+              "Live sports",
+              "Classic movies and TV shows",
+              "Foreign-language films and series",
+              "Documentaries and reality TV",
+              "Kids' programming",
+              "None of these are must-haves"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "New original shows and movies",
+                "value": 35.0
+              },
+              {
+                "label": "Live sports",
+                "value": 12.0
+              },
+              {
+                "label": "Classic movies and TV shows",
+                "value": 15.0
+              },
+              {
+                "label": "Foreign-language films and series",
+                "value": 8.0
+              },
+              {
+                "label": "Documentaries and reality TV",
+                "value": 10.0
+              },
+              {
+                "label": "Kids' programming",
+                "value": 12.0
+              },
+              {
+                "label": "None of these are must-haves",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: New original shows and movies (35.00%).",
+            "distributionNote": "High-Engagement Subscribers prioritize originals; Household Co-Viewers require kids' programming; Niche Content Customers value foreign-language and documentaries.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "must_have_content_features",
+            "beatTitle": "Must-have content features",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "How do you judge whether a streaming service is worth keeping?",
+            "options": [
+              "The shows and movies are consistently good",
+              "The app is fast and never crashes",
+              "New titles are added every week",
+              "The picture and sound are excellent",
+              "It has shows my whole household enjoys",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "The shows and movies are consistently good",
+                "value": 40.0
+              },
+              {
+                "label": "The app is fast and never crashes",
+                "value": 10.0
+              },
+              {
+                "label": "New titles are added every week",
+                "value": 15.0
+              },
+              {
+                "label": "The picture and sound are excellent",
+                "value": 8.0
+              },
+              {
+                "label": "It has shows my whole household enjoys",
+                "value": 22.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: The shows and movies are consistently good (40.00%).",
+            "distributionNote": "Content quality dominates across segments, with Household Co-Viewers emphasizing shared enjoyment; tech reliability is secondary.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "What most often tells you a show or movie will be good before you watch it?",
+            "options": [
+              "Awards and critical reviews",
+              "A well-known cast or director",
+              "High production values and special effects",
+              "Recommendations from friends or family",
+              "Trailers and previews",
+              "Social media buzz",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Awards and critical reviews",
+                "value": 12.0
+              },
+              {
+                "label": "A well-known cast or director",
+                "value": 18.0
+              },
+              {
+                "label": "High production values and special effects",
+                "value": 10.0
+              },
+              {
+                "label": "Recommendations from friends or family",
+                "value": 35.0
+              },
+              {
+                "label": "Trailers and previews",
+                "value": 15.0
+              },
+              {
+                "label": "Social media buzz",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Recommendations from friends or family (35.00%).",
+            "distributionNote": "Word-of-mouth and social proof are strongest across all segments, especially among Price-Sensitive and Occasional Lapsed Users.",
+            "questionLayer": "full",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "Which subscription formats would you prefer?",
+            "options": [
+              "One service with everything included",
+              "A few services, each with different strengths",
+              "A bundle of services for one price",
+              "Pay per show or movie, no subscription",
+              "A free service with ads",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "One service with everything included",
+                "value": 30.0
+              },
+              {
+                "label": "A few services, each with different strengths",
+                "value": 25.0
+              },
+              {
+                "label": "A bundle of services for one price",
+                "value": 25.0
+              },
+              {
+                "label": "Pay per show or movie, no subscription",
+                "value": 10.0
+              },
+              {
+                "label": "A free service with ads",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: One service with everything included (30.00%).",
+            "distributionNote": "High-Engagement Subscribers prefer all-in-one or bundles; Price-Sensitive and Occasional Lapsed Users lean toward free ad-supported or pay-per-view options.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "family_and_profile_features",
+            "beatTitle": "Family and profile features",
+            "beatCanonical": "format_packaging",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "What would you be willing to watch ads on to lower your monthly cost?",
+            "options": [
+              "Short ads before a show starts",
+              "Ads during a show, like commercial breaks",
+              "Ads on the home screen only",
+              "Ads only for shows I choose to watch for free",
+              "I would not accept any ads, even for a lower price"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Short ads before a show starts",
+                "value": 30.0
+              },
+              {
+                "label": "Ads during a show, like commercial breaks",
+                "value": 12.0
+              },
+              {
+                "label": "Ads on the home screen only",
+                "value": 18.0
+              },
+              {
+                "label": "Ads only for shows I choose to watch for free",
+                "value": 25.0
+              },
+              {
+                "label": "I would not accept any ads, even for a lower price",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Short ads before a show starts (30.00%).",
+            "distributionNote": "Price-Sensitive Subscribers accept pre-roll and home-screen ads, while High-Engagement Subscribers are more likely to refuse ads entirely.",
+            "questionLayer": "module",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "ad_tolerance",
+            "beatTitle": "Ad tolerance and ad-supported tiers",
+            "beatCanonical": "tradeoffs",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which statements about a streaming service would make you more likely to subscribe?",
+            "options": [
+              "It supports local filmmakers and stories",
+              "It uses renewable energy to run its servers",
+              "It has a diverse range of shows and creators",
+              "It offers subtitles and dubbing in many languages",
+              "It produces shows with ethical working conditions",
+              "None of these would make me more likely to subscribe"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "It supports local filmmakers and stories",
+                "value": 20.0
+              },
+              {
+                "label": "It uses renewable energy to run its servers",
+                "value": 8.0
+              },
+              {
+                "label": "It has a diverse range of shows and creators",
+                "value": 25.0
+              },
+              {
+                "label": "It offers subtitles and dubbing in many languages",
+                "value": 15.0
+              },
+              {
+                "label": "It produces shows with ethical working conditions",
+                "value": 12.0
+              },
+              {
+                "label": "None of these would make me more likely to subscribe",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: It has a diverse range of shows and creators (25.00%).",
+            "distributionNote": "Diverse content and local stories appeal to Niche Content Customers and Household Co-Viewers; environmental claims are less influential given low environmental awareness.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "ad_tolerance",
+            "beatTitle": "Ad tolerance and ad-supported tiers",
+            "beatCanonical": "tradeoffs",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "How much would you be willing to pay per month for a streaming service with no ads and all new releases on day one?",
+            "options": [
+              "I would not pay extra for that",
+              "Up to $5 more per month",
+              "$6 to $10 more per month",
+              "$11 to $15 more per month",
+              "More than $15 per month"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I would not pay extra for that",
+                "value": 20.0
+              },
+              {
+                "label": "Up to $5 more per month",
+                "value": 35.0
+              },
+              {
+                "label": "$6 to $10 more per month",
+                "value": 25.0
+              },
+              {
+                "label": "$11 to $15 more per month",
+                "value": 12.0
+              },
+              {
+                "label": "More than $15 per month",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Up to $5 more per month (35.00%).",
+            "distributionNote": "Price-Sensitive Subscribers dominate the lower willingness-to-pay tiers; High-Engagement Subscribers are willing to pay moderate premiums but few exceed $15.",
+            "questionLayer": "full",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "value_expectation",
+            "beatTitle": "Value and willingness to pay",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_churn_risk",
+        "label": "Satisfaction, Loyalty & Churn Risk",
+        "questions": [
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "How likely are you to cancel a streaming subscription in the next 3 months?",
+            "options": [
+              "Very likely",
+              "Somewhat likely",
+              "Neither likely nor unlikely",
+              "Somewhat unlikely",
+              "Very unlikely"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Very likely",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 27.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 15.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 24.0
+              },
+              {
+                "label": "Very unlikely",
+                "value": 16.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely (27.00%).",
+            "distributionNote": "Price-Sensitive Subscribers and Occasional Lapsed Users drive high cancellation likelihood; High-Engagement Subscribers and Household Co-Viewers are more likely to stay.",
+            "questionLayer": "module",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "What most often disappoints you about your current streaming service?",
+            "options": [
+              "Shows I want are on another service",
+              "Subtitles are missing or poorly translated",
+              "New releases are not available on day one",
+              "The price keeps going up",
+              "Too many ads even on paid plans",
+              "The app is slow or crashes",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Shows I want are on another service",
+                "value": 28.0
+              },
+              {
+                "label": "Subtitles are missing or poorly translated",
+                "value": 4.0
+              },
+              {
+                "label": "New releases are not available on day one",
+                "value": 15.0
+              },
+              {
+                "label": "The price keeps going up",
+                "value": 25.0
+              },
+              {
+                "label": "Too many ads even on paid plans",
+                "value": 12.0
+              },
+              {
+                "label": "The app is slow or crashes",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Shows I want are on another service (28.00%).",
+            "distributionNote": "Content fragmentation and price increases are top frustrations; Niche Content Customers feel content gaps, Price-Sensitive Subscribers feel price pain.",
+            "questionLayer": "full",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "Which aspects of your streaming service most affects how satisfied you are?",
+            "options": [
+              "How easy it is to find something to watch",
+              "How often new shows and movies are added",
+              "How well the service works without glitches",
+              "How much it costs each month",
+              "How good the picture and sound quality are",
+              "How many shows and movies are available",
+              "Other"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "How easy it is to find something to watch",
+                "value": 18.0
+              },
+              {
+                "label": "How often new shows and movies are added",
+                "value": 22.0
+              },
+              {
+                "label": "How well the service works without glitches",
+                "value": 12.0
+              },
+              {
+                "label": "How much it costs each month",
+                "value": 26.0
+              },
+              {
+                "label": "How good the picture and sound quality are",
+                "value": 8.0
+              },
+              {
+                "label": "How many shows and movies are available",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: How much it costs each month (26.00%).",
+            "distributionNote": "Price-Sensitive Subscribers emphasize cost; High-Engagement Subscribers value content freshness and discovery; Household Co-Viewers value reliability.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "What drives satisfaction",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "When a show you follow ends, what do you usually do with the subscription?",
+            "options": [
+              "Keep it running and find something else to watch",
+              "Cancel it right away and come back when something new drops",
+              "Switch to a cheaper ad-supported plan until the next season",
+              "Share the account with someone else so the cost stays covered",
+              "Pause it if the service lets me, then restart later",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Keep it running and find something else to watch",
+                "value": 30.0
+              },
+              {
+                "label": "Cancel it right away and come back when something new drops",
+                "value": 22.0
+              },
+              {
+                "label": "Switch to a cheaper ad-supported plan until the next season",
+                "value": 18.0
+              },
+              {
+                "label": "Share the account with someone else so the cost stays covered",
+                "value": 12.0
+              },
+              {
+                "label": "Pause it if the service lets me, then restart later",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Keep it running and find something else to watch (30.00%).",
+            "distributionNote": "Occasional Lapsed Users and Price-Sensitive Subscribers drive churn-and-return behavior; High-Engagement Subscribers tend to keep subscriptions active.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "In the last 30 days, which of these frustrations have you had with your streaming service?",
+            "options": [
+              "Shows or movies I wanted were not available",
+              "The service kept buffering or crashing",
+              "The price went up without warning",
+              "I could not find anything good to watch",
+              "The app was hard to navigate",
+              "Subtitles or audio were out of sync",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Shows or movies I wanted were not available",
+                "value": 42.0
+              },
+              {
+                "label": "The service kept buffering or crashing",
+                "value": 18.0
+              },
+              {
+                "label": "The price went up without warning",
+                "value": 15.0
+              },
+              {
+                "label": "I could not find anything good to watch",
+                "value": 25.0
+              },
+              {
+                "label": "The app was hard to navigate",
+                "value": 12.0
+              },
+              {
+                "label": "Subtitles or audio were out of sync",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Shows or movies I wanted were not available (42.00%).",
+            "distributionNote": "Content availability and discovery frustrations are widespread; Niche Content Customers and High-Engagement Subscribers are most affected by missing titles.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "What would most likely make you cancel a streaming subscription?",
+            "options": [
+              "A price increase of more than a few dollars",
+              "Too many shows I want are on other services",
+              "I am not watching it enough to justify the cost",
+              "The service keeps having technical problems",
+              "A show I follow ends and I lose interest",
+              "I found a better service for the same price",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "A price increase of more than a few dollars",
+                "value": 30.0
+              },
+              {
+                "label": "Too many shows I want are on other services",
+                "value": 18.0
+              },
+              {
+                "label": "I am not watching it enough to justify the cost",
+                "value": 22.0
+              },
+              {
+                "label": "The service keeps having technical problems",
+                "value": 8.0
+              },
+              {
+                "label": "A show I follow ends and I lose interest",
+                "value": 10.0
+              },
+              {
+                "label": "I found a better service for the same price",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: A price increase of more than a few dollars (30.00%).",
+            "distributionNote": "Price-Sensitive Subscribers and Occasional Lapsed Users are most likely to cancel due to price or low usage; High-Engagement Subscribers are more tolerant.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "In the next 12 months, how do you expect your number of streaming subscriptions to change?",
+            "options": [
+              "I will add more subscriptions",
+              "I will keep the same number",
+              "I will drop some subscriptions",
+              "I am not sure yet"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I will add more subscriptions",
+                "value": 18.0
+              },
+              {
+                "label": "I will keep the same number",
+                "value": 42.0
+              },
+              {
+                "label": "I will drop some subscriptions",
+                "value": 25.0
+              },
+              {
+                "label": "I am not sure yet",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: I will keep the same number (42.00%).",
+            "distributionNote": "High-Engagement Subscribers and Niche Content Customers are more likely to add; Price-Sensitive Subscribers and Occasional Lapsed Users are more likely to drop.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "friction",
+            "beatTitle": "Friction and unmet needs",
+            "beatCanonical": "friction",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 18.0
+              },
+              {
+                "label": "25-34",
+                "value": 28.0
+              },
+              {
+                "label": "35-44",
+                "value": 22.0
+              },
+              {
+                "label": "45-54",
+                "value": 15.0
+              },
+              {
+                "label": "55-64",
+                "value": 10.0
+              },
+              {
+                "label": "65 or older",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: 25-34 (28.00%).",
+            "distributionNote": "High-Engagement Subscribers and Price-Sensitive Subscribers skew younger, while Occasional Lapsed Users are spread across middle age groups.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 51.0
+              },
+              {
+                "label": "Man",
+                "value": 47.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 1.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.5
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 0.5
+              }
+            ],
+            "insight": "Top response: Woman (51.00%).",
+            "distributionNote": "Slight female skew in household decision-makers; small non-binary/undisclosed share typical of general population panels.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q34",
+            "qNum": 34,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 30.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 28.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 20.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: I live with a partner, no children at home (30.00%).",
+            "distributionNote": "Household Co-Viewers are substantial, but solo and partner-only households also common among High-Engagement and Price-Sensitive Subscribers.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q35",
+            "qNum": 35,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 12.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 22.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 24.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 18.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 14.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 7.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (24.00%).",
+            "distributionNote": "Middle-income households dominate; lower-income Price-Sensitive Subscribers and higher-income Niche Content Customers create a broad spread.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q36",
+            "qNum": 36,
+            "question": "How likely are you to recommend the Video Streaming Subscriptions you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 2.0
+              },
+              {
+                "label": "2",
+                "value": 3.0
+              },
+              {
+                "label": "3",
+                "value": 5.0
+              },
+              {
+                "label": "4",
+                "value": 6.0
+              },
+              {
+                "label": "5",
+                "value": 12.0
+              },
+              {
+                "label": "6",
+                "value": 10.0
+              },
+              {
+                "label": "7",
+                "value": 16.0
+              },
+              {
+                "label": "8",
+                "value": 20.0
+              },
+              {
+                "label": "9",
+                "value": 13.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 11.0
+              }
+            ],
+            "insight": "Top response: 8 (20.00%).",
+            "distributionNote": "High-Engagement Subscribers and Niche Content Customers drive high scores; Price-Sensitive and Occasional Lapsed Users cluster around the middle.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 460
+          },
+          {
+            "id": "q37",
+            "qNum": 37,
+            "question": "Overall, how satisfied are you with the Video Streaming Subscriptions you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 4.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 12.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 18.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 24.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "Mixed sentiment overall: satisfied High-Engagement Subscribers are offset by Price-Sensitive Subscribers who churn due to cost concerns.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 460
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 37,
+    "selection": {
+      "mode": "core_plus_module",
+      "source_regions": [
+        "north-america"
+      ],
+      "total_questions": 37,
+      "method": "select_and_blend"
+    },
+    "storyline": {
+      "streaming_consumption_context": [
+        {
+          "beatId": "category_entry",
+          "title": "Category relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "usage_occasion",
+          "title": "Usage occasions",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "usage_frequency",
+          "title": "Usage frequency and intensity",
+          "canonical": "usage_frequency",
+          "order": 3
+        }
+      ],
+      "subscription_acquisition_management": [
+        {
+          "beatId": "subscription_triggers",
+          "title": "What triggers a new subscription",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery_and_comparison",
+          "title": "Discovery and comparison",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "subscription_management_actions",
+          "title": "Subscription management actions",
+          "canonical": "purchase_cycle",
+          "order": 3
+        },
+        {
+          "beatId": "account_sharing",
+          "title": "Account sharing",
+          "canonical": null,
+          "order": 4
+        },
+        {
+          "beatId": "monthly_spend",
+          "title": "Monthly spend on streaming",
+          "canonical": "spend",
+          "order": 5
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "Decision drivers",
+          "canonical": "decision_drivers",
+          "order": 6
+        }
+      ],
+      "content_service_requirements": [
+        {
+          "beatId": "must_have_content_features",
+          "title": "Must-have content features",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Quality cues",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "ad_tolerance",
+          "title": "Ad tolerance and ad-supported tiers",
+          "canonical": "tradeoffs",
+          "order": 3
+        },
+        {
+          "beatId": "family_and_profile_features",
+          "title": "Family and profile features",
+          "canonical": "format_packaging",
+          "order": 4
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value and willingness to pay",
+          "canonical": "value_expectation",
+          "order": 5
+        }
+      ],
+      "satisfaction_churn_risk": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "What drives satisfaction",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction",
+          "title": "Friction and unmet needs",
+          "canonical": "friction",
+          "order": 3
+        }
+      ]
+    },
+    "storyline_source": "planner",
+    "storyline_summary": "The survey opens by establishing the respondent's current streaming landscape — which services they hold, how they watch, and who in the household is involved. It then moves into the subscription lifecycle: what triggers a new sign-up, how they compare and manage services, and what they spend. Next, it probes the content and feature requirements that drive service choice, including ad tolerance and family features. Finally, it measures satisfaction, friction, and churn risk to understand loyalty and future behaviour. This arc separates the segments by their engagement level, price…",
+    "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on viewing habits, subscription management, spend behaviour, and content motivations.",
+    "segmentation_lens": "Usage/behavioural combined with price sensitivity — because in a mature, saturated streaming market, the key differentiators are how deeply viewers engage (frequency, binge behaviour, number of services) and how they trade off price against content access (willingness to pay, churn behaviour). This",
+    "must_cover_topics": [
+      "account sharing",
+      "ad-supported tier",
+      "monthly spend",
+      "devices used",
+      "churn triggers",
+      "content library"
+    ],
+    "segments": [
+      {
+        "segment_id": "high_engagement_subscribers",
+        "name": "High-Engagement Subscribers",
+        "description": "Heavy daily viewers who subscribe to multiple services, are willing to pay for premium ad-free experiences, and are driven by exclusive content and immediate access to new releases. They rarely cancel and see streaming as their primary entertainment.",
+        "hypothesis": "They will report the highest number of services, highest monthly spend, lowest price sensitivity, and strongest preference for ad-free tiers."
+      },
+      {
+        "segment_id": "price_sensitive_rotators",
+        "name": "Price-Sensitive Subscribers",
+        "description": "Cost-conscious subscribers who frequently cancel and re-subscribe based on content drops and promotions. They actively compare plans, use ad-supported tiers to save money, and are quick to churn when prices rise.",
+        "hypothesis": "They will show high churn frequency, high sensitivity to price increases, and a strong willingness to tolerate ads in exchange for lower cost."
+      },
+      {
+        "segment_id": "household_co_viewers",
+        "name": "Household Co-Viewers",
+        "description": "Subscribers who manage streaming as a shared family resource, prioritizing multiple profiles, parental controls, and content that appeals to different ages. They value simultaneous streams and family-friendly libraries over individual preferences.",
+        "hypothesis": "They will report larger household size, high importance of profile management and parental controls, and a preference for services with broad family content."
+      },
+      {
+        "segment_id": "niche_content_fans",
+        "name": "Niche Content Customers",
+        "description": "Viewers with strong genre or language preferences who subscribe to specialized services to access content unavailable on mainstream platforms. They are willing to pay for niche libraries but are frustrated by fragmentation and poor subtitles.",
+        "hypothesis": "They will report subscribing to at least one niche service, high importance of content depth and subtitles, and lower satisfaction with mainstream services."
+      },
+      {
+        "segment_id": "occasional_lapsed_users",
+        "name": "Occasional Lapsed Users",
+        "description": "Low-frequency viewers who subscribe for a single title or a short period, then cancel and stay unsubscribed for months. They are the least loyal, most price-sensitive, and often rely on free or ad-supported options between subscriptions.",
+        "hypothesis": "They will report the lowest viewing frequency, longest gaps between subscriptions, and the highest likelihood to cancel after one show."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "high_engagement_subscribers",
+          "name": "High-Engagement Subscribers",
+          "description": "Heavy daily viewers who subscribe to multiple services, are willing to pay for premium ad-free experiences, and are driven by exclusive content and immediate access to new releases. They rarely cancel and see streaming as their primary entertainment.",
+          "hypothesis": "They will report the highest number of services, highest monthly spend, lowest price sensitivity, and strongest preference for ad-free tiers."
+        },
+        {
+          "segment_id": "price_sensitive_rotators",
+          "name": "Price-Sensitive Subscribers",
+          "description": "Cost-conscious subscribers who frequently cancel and re-subscribe based on content drops and promotions. They actively compare plans, use ad-supported tiers to save money, and are quick to churn when prices rise.",
+          "hypothesis": "They will show high churn frequency, high sensitivity to price increases, and a strong willingness to tolerate ads in exchange for lower cost."
+        },
+        {
+          "segment_id": "household_co_viewers",
+          "name": "Household Co-Viewers",
+          "description": "Subscribers who manage streaming as a shared family resource, prioritizing multiple profiles, parental controls, and content that appeals to different ages. They value simultaneous streams and family-friendly libraries over individual preferences.",
+          "hypothesis": "They will report larger household size, high importance of profile management and parental controls, and a preference for services with broad family content."
+        },
+        {
+          "segment_id": "niche_content_fans",
+          "name": "Niche Content Customers",
+          "description": "Viewers with strong genre or language preferences who subscribe to specialized services to access content unavailable on mainstream platforms. They are willing to pay for niche libraries but are frustrated by fragmentation and poor subtitles.",
+          "hypothesis": "They will report subscribing to at least one niche service, high importance of content depth and subtitles, and lower satisfaction with mainstream services."
+        },
+        {
+          "segment_id": "occasional_lapsed_users",
+          "name": "Occasional Lapsed Users",
+          "description": "Low-frequency viewers who subscribe for a single title or a short period, then cancel and stay unsubscribed for months. They are the least loyal, most price-sensitive, and often rely on free or ad-supported options between subscriptions.",
+          "hypothesis": "They will report the lowest viewing frequency, longest gaps between subscriptions, and the highest likelihood to cancel after one show."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many hours do you spend watching streaming services?",
+          "option_label": "15 or more hours",
+          "segment_id": "high_engagement_subscribers",
+          "points": 3
+        },
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many hours do you spend watching streaming services?",
+          "option_label": "8 to 14 hours",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q1",
+          "question_text": "In a typical week, how many hours do you spend watching streaming services?",
+          "option_label": "Less than 1 hour",
+          "segment_id": "occasional_lapsed_users",
+          "points": 2
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Who else in your household usually watches streaming services with you?",
+          "option_label": "My children",
+          "segment_id": "household_co_viewers",
+          "points": 2
+        },
+        {
+          "question_id": "q2",
+          "question_text": "Who else in your household usually watches streaming services with you?",
+          "option_label": "My parents or other relatives",
+          "segment_id": "household_co_viewers",
+          "points": 1
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Which of these describes your current streaming setup?",
+          "option_label": "I use someone else's accounts",
+          "segment_id": "occasional_lapsed_users",
+          "points": 2
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Which of these describes your current streaming setup?",
+          "option_label": "I only use free or ad-supported services",
+          "segment_id": "occasional_lapsed_users",
+          "points": 2
+        },
+        {
+          "question_id": "q3",
+          "question_text": "Which of these describes your current streaming setup?",
+          "option_label": "I pay for all of them myself",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "What usually gets you to open a streaming service on a typical evening?",
+          "option_label": "I have a specific show or movie in mind",
+          "segment_id": "niche_content_fans",
+          "points": 2
+        },
+        {
+          "question_id": "q4",
+          "question_text": "What usually gets you to open a streaming service on a typical evening?",
+          "option_label": "Someone else in the house picks what we watch",
+          "segment_id": "household_co_viewers",
+          "points": 2
+        },
+        {
+          "question_id": "q4",
+          "question_text": "What usually gets you to open a streaming service on a typical evening?",
+          "option_label": "I check what's newly added before deciding",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q6",
+          "question_text": "How often do you watch streaming services alone versus with others?",
+          "option_label": "Almost always alone",
+          "segment_id": "niche_content_fans",
+          "points": 1
+        },
+        {
+          "question_id": "q6",
+          "question_text": "How often do you watch streaming services alone versus with others?",
+          "option_label": "Almost always with others",
+          "segment_id": "household_co_viewers",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "In a typical week, how many days do you watch something on a streaming service?",
+          "option_label": "Every day",
+          "segment_id": "high_engagement_subscribers",
+          "points": 3
+        },
+        {
+          "question_id": "q7",
+          "question_text": "In a typical week, how many days do you watch something on a streaming service?",
+          "option_label": "Less than once a week",
+          "segment_id": "occasional_lapsed_users",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "Who decides which streaming services your household subscribes to?",
+          "option_label": "I decide with my children",
+          "segment_id": "household_co_viewers",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually makes you start a new streaming subscription?",
+          "option_label": "A free trial or promotional offer",
+          "segment_id": "price_sensitive_rotators",
+          "points": 3
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually makes you start a new streaming subscription?",
+          "option_label": "A specific show or movie I want to watch",
+          "segment_id": "niche_content_fans",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually makes you start a new streaming subscription?",
+          "option_label": "A new season of a show I follow",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of these have you done in the last 12 months to manage your streaming subscriptions?",
+          "option_label": "Cancelled a service after a show ended",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of these have you done in the last 12 months to manage your streaming subscriptions?",
+          "option_label": "Re-subscribed to a service I had cancelled",
+          "segment_id": "price_sensitive_rotators",
+          "points": 3
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of these have you done in the last 12 months to manage your streaming subscriptions?",
+          "option_label": "Switched to a cheaper plan with ads",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of these have you done in the last 12 months to manage your streaming subscriptions?",
+          "option_label": "Switched to a more expensive ad-free plan",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "Which of these have you done in the last 12 months to manage your streaming subscriptions?",
+          "option_label": "Put a subscription on hold or paused it",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        },
+        {
+          "question_id": "q13",
+          "question_text": "How often do you cancel or switch between streaming services?",
+          "option_label": "More than once a month",
+          "segment_id": "price_sensitive_rotators",
+          "points": 3
+        },
+        {
+          "question_id": "q13",
+          "question_text": "How often do you cancel or switch between streaming services?",
+          "option_label": "About once a month",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "How often do you cancel or switch between streaming services?",
+          "option_label": "Rarely or never",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Who else can use your streaming accounts?",
+          "option_label": "My household plus both family and friends outside it",
+          "segment_id": "household_co_viewers",
+          "points": 1
+        },
+        {
+          "question_id": "q14",
+          "question_text": "Who else can use your streaming accounts?",
+          "option_label": "I share passwords with people outside my household",
+          "segment_id": "household_co_viewers",
+          "points": 1
+        },
+        {
+          "question_id": "q15",
+          "question_text": "How much do you spend in total on streaming subscriptions each month?",
+          "option_label": "$50 or more",
+          "segment_id": "high_engagement_subscribers",
+          "points": 3
+        },
+        {
+          "question_id": "q15",
+          "question_text": "How much do you spend in total on streaming subscriptions each month?",
+          "option_label": "Under $10",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        },
+        {
+          "question_id": "q16",
+          "question_text": "When choosing a new streaming service, which matters most to you?",
+          "option_label": "Price",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "When choosing a new streaming service, which matters most to you?",
+          "option_label": "Content library",
+          "segment_id": "niche_content_fans",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "When choosing a new streaming service, which matters most to you?",
+          "option_label": "Original shows",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q16",
+          "question_text": "When choosing a new streaming service, which matters most to you?",
+          "option_label": "No ads",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must a streaming service have for you to keep it?",
+          "option_label": "No ads on anything I watch",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must a streaming service have for you to keep it?",
+          "option_label": "Watch on multiple screens at once",
+          "segment_id": "household_co_viewers",
+          "points": 2
+        },
+        {
+          "question_id": "q17",
+          "question_text": "Which of these features must a streaming service have for you to keep it?",
+          "option_label": "Shows I can't get anywhere else",
+          "segment_id": "niche_content_fans",
+          "points": 3
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these content types must a streaming service have for you to keep paying for it?",
+          "option_label": "Foreign-language films and series",
+          "segment_id": "niche_content_fans",
+          "points": 3
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these content types must a streaming service have for you to keep paying for it?",
+          "option_label": "Kids' programming",
+          "segment_id": "household_co_viewers",
+          "points": 2
+        },
+        {
+          "question_id": "q18",
+          "question_text": "Which of these content types must a streaming service have for you to keep paying for it?",
+          "option_label": "New original shows and movies",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which of these would make you switch to a different streaming service?",
+          "option_label": "A cheaper service has the same shows I watch",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which of these would make you switch to a different streaming service?",
+          "option_label": "A service I have raises its price",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q19",
+          "question_text": "Which of these would make you switch to a different streaming service?",
+          "option_label": "A service I have starts showing ads on the plan I pay for",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q20",
+          "question_text": "How do you judge whether a streaming service is worth keeping?",
+          "option_label": "It has shows my whole household enjoys",
+          "segment_id": "household_co_viewers",
+          "points": 3
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which of these would you be willing to watch ads on to lower your monthly cost?",
+          "option_label": "I would not accept any ads, even for a lower price",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q21",
+          "question_text": "Which of these would you be willing to watch ads on to lower your monthly cost?",
+          "option_label": "Ads during a show, like commercial breaks",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these subscription formats would you prefer?",
+          "option_label": "A few services, each with different strengths",
+          "segment_id": "niche_content_fans",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these subscription formats would you prefer?",
+          "option_label": "A bundle of services for one price",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these subscription formats would you prefer?",
+          "option_label": "A free service with ads",
+          "segment_id": "occasional_lapsed_users",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "What would you be willing to pay extra for each month?",
+          "option_label": "No ads at all",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "What would you be willing to pay extra for each month?",
+          "option_label": "New movies the same day they're in theaters",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "What would you be willing to pay extra for each month?",
+          "option_label": "Nothing - I'd rather pay less",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "How likely are you to cancel a streaming subscription in the next 3 months?",
+          "option_label": "Very likely",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "How likely are you to cancel a streaming subscription in the next 3 months?",
+          "option_label": "Very unlikely",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these most often disappoints you about your current streaming service?",
+          "option_label": "Subtitles are missing or poorly translated",
+          "segment_id": "niche_content_fans",
+          "points": 3
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these most often disappoints you about your current streaming service?",
+          "option_label": "The price keeps going up",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these most often disappoints you about your current streaming service?",
+          "option_label": "New releases are not available on day one",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q28",
+          "question_text": "When a show you follow ends, what do you usually do with the subscription?",
+          "option_label": "Cancel it right away and come back when something new drops",
+          "segment_id": "price_sensitive_rotators",
+          "points": 3
+        },
+        {
+          "question_id": "q28",
+          "question_text": "When a show you follow ends, what do you usually do with the subscription?",
+          "option_label": "Switch to a cheaper ad-supported plan until the next season",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q28",
+          "question_text": "When a show you follow ends, what do you usually do with the subscription?",
+          "option_label": "Keep it running and find something else to watch",
+          "segment_id": "high_engagement_subscribers",
+          "points": 2
+        },
+        {
+          "question_id": "q28",
+          "question_text": "When a show you follow ends, what do you usually do with the subscription?",
+          "option_label": "Pause it if the service lets me, then restart later",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        },
+        {
+          "question_id": "q30",
+          "question_text": "Which of these would most likely make you cancel a streaming subscription?",
+          "option_label": "A price increase of more than a few dollars",
+          "segment_id": "price_sensitive_rotators",
+          "points": 2
+        },
+        {
+          "question_id": "q30",
+          "question_text": "Which of these would most likely make you cancel a streaming subscription?",
+          "option_label": "I am not watching it enough to justify the cost",
+          "segment_id": "occasional_lapsed_users",
+          "points": 3
+        },
+        {
+          "question_id": "q30",
+          "question_text": "Which of these would most likely make you cancel a streaming subscription?",
+          "option_label": "A show I follow ends and I lose interest",
+          "segment_id": "occasional_lapsed_users",
+          "points": 2
+        },
+        {
+          "question_id": "q31",
+          "question_text": "In the next 12 months, how do you expect your number of streaming subscriptions to change?",
+          "option_label": "I will add more subscriptions",
+          "segment_id": "high_engagement_subscribers",
+          "points": 1
+        },
+        {
+          "question_id": "q31",
+          "question_text": "In the next 12 months, how do you expect your number of streaming subscriptions to change?",
+          "option_label": "I will drop some subscriptions",
+          "segment_id": "price_sensitive_rotators",
+          "points": 1
+        }
+      ],
+      "tie_break": "The question 'sf5' (When a show you follow ends, what do you usually do with the subscription?) is the most direct behavioural self-report to distinguish between high_engagement_subscribers (keep it running) and price_sensitive_rotators (cancel and come back), as it captures the core churn behaviour that defines the two segments.",
+      "notes": [
+        "Occasional lapsed users are identified by low usage, reliance on free/ads, and cancellation due to low usage or show ending.",
+        "Niche content fans are identified by specific content needs, foreign language, and subtitle frustrations.",
+        "Household co-viewers are identified by watching with family, shared decision-making, and family-friendly features.",
+        "High engagement subscribers are identified by heavy usage, multiple subscriptions, willingness to pay for premium features, and low churn.",
+        "Price sensitive rotators are identified by frequent switching, promotional offers, and cost-driven decisions."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=250 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "warnings": [],
+    "N": 460
+  }
+}

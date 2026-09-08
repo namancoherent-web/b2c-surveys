@@ -1,0 +1,2736 @@
+{
+  "segment": "Athletic Apparel",
+  "slug": "athletic-apparel",
+  "region": "global",
+  "surveyDefinition": {
+    "title": "Athletic Apparel — consumer survey (Global)",
+    "category": "Athletic Apparel",
+    "region": "Global",
+    "audienceType": "B2C consumer",
+    "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on their exercise habits, purchase drivers, and product priorities in athletic apparel.",
+    "segments": [
+      {
+        "id": "performance_focused_athletes",
+        "name": "Performance-Focused Athletes",
+        "description": "High-frequency exercisers (5+ times/week) who train for specific sports or fitness goals. They prioritize technical features like moisture-wicking, compression, and durability over style or price, and are willing to pay a premium for gear that enhances performance."
+      },
+      {
+        "id": "lifestyle_comfort_seekers",
+        "name": "Lifestyle Comfort Buyers",
+        "description": "Moderate exercisers (2-3 times/week) who value athletic apparel for its comfort and versatility in both workout and everyday settings. They are less concerned with cutting-edge performance tech and more with how the clothes feel and look for casual wear."
+      },
+      {
+        "id": "trend_driven_fashionistas",
+        "name": "Trend-Driven Buyers",
+        "description": "Individuals who are highly engaged with athletic apparel as a fashion category. They follow trends and influencer recommendations, prioritize style and brand image, and are willing to pay for the latest looks, even if they are less active."
+      },
+      {
+        "id": "value_conscious_families",
+        "name": "Value-Conscious Families",
+        "description": "Budget-focused buyers who purchase athletic apparel for themselves and their children. They are price-sensitive, prioritize durability and value for money, and are less loyal to specific brands, often shopping sales and multi-packs."
+      },
+      {
+        "id": "occasional_recreational_users",
+        "name": "Occasional Recreational Users",
+        "description": "Low-frequency exercisers (once a week or less) who own basic athletic apparel for light activities like walking or casual sports. They are not deeply engaged with the category, are price-sensitive, and rarely seek out new products unless their old ones wear out."
+      }
+    ],
+    "whatThisSurveyIs": "A segmentation study of Athletic Apparel buyers worldwide. It asks how people use Athletic Apparel, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories. This global view is not a separate fieldwork exercise: it selects the strongest questions from the regional surveys and blends their percentages using population-style regional weights.",
+    "whoseContextThisIs": "Adults worldwide who buy or use Athletic Apparel for personal or household use. Respondents qualify if they: Individuals who have purchased athletic apparel for personal use within the last 12 months; Individuals who exercise or play sports at least once a week; Ages 13-65 (with parental consent for minors). Excluded: Purchases made for resale or distribution; Team or corporate bulk purchases (e.g., uniforms for employees); Professional athletes purchasing as part of endorsement contracts.",
+    "whyTheseRespondents": "Everyday consumers buy athletic apparel for personal use, pay for it themselves, and decide at the point of purchase (in-store or online). While some businesses may purchase uniforms or team gear, the dominant and defining buyer is the individual consumer.",
+    "respondentBehaviours": [
+      "Regularly exercise or participate in sports (at least 2-3 times per week)",
+      "Value brand reputation and performance features (moisture-wicking, compression, etc.)",
+      "Follow athletic fashion trends and influencer recommendations",
+      "Purchase both online and in physical retail stores",
+      "Willing to pay premium for established brands (Nike, Adidas, Lululemon)"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 33,
+      "sections": [
+        {
+          "id": "activity_and_usage_context",
+          "label": "Activity & Usage Context",
+          "covers": "Establishes the respondent's exercise habits, the types of activities they engage in, and the role athletic apparel plays in their daily life.",
+          "questions": 8
+        },
+        {
+          "id": "purchase_journey_and_drivers",
+          "label": "Purchase Journey & Decision Drivers",
+          "covers": "Explores what triggers a purchase, where they shop, how much they spend, and the key factors that influence their choice of athletic apparel.",
+          "questions": 6
+        },
+        {
+          "id": "product_requirements_and_tradeoffs",
+          "label": "Product Requirements & Trade-offs",
+          "covers": "Identifies the must-have attributes, quality cues, and the trade-offs respondents are willing to make between performance, style, sustainability, and price.",
+          "questions": 8
+        },
+        {
+          "id": "satisfaction_loyalty_and_future_intent",
+          "label": "Satisfaction, Loyalty & Future Intent",
+          "covers": "Measures overall satisfaction with current athletic apparel, identifies pain points and switching triggers, and gauges future purchase and recommendation intent.",
+          "questions": 5
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey begins by establishing who the respondent is as an exerciser — how often they work out, what activities they do, and how they wear athletic apparel. It then moves into their shopping behaviour, exploring what triggers a purchase, where they buy, and what drives their choice. Next, it delves into their specific product requirements, including fit, sustainability, and the trade-offs they're willing to make. Finally, it measures their satisfaction with current gear, identifies pain points, and gauges their future loyalty and purchase intent. This arc cleanly separates the five…"
+    }
+  },
+  "frontend": {
+    "sections": [
+      {
+        "id": "activity_and_usage_context",
+        "label": "Activity & Usage Context",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "In a typical week, how many days do you wear athletic apparel?",
+            "options": [
+              "1-2 days",
+              "3-4 days",
+              "5-6 days",
+              "Every day",
+              "Less than once a week"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "1-2 days",
+                "value": 18.0
+              },
+              {
+                "label": "3-4 days",
+                "value": 32.0
+              },
+              {
+                "label": "5-6 days",
+                "value": 25.0
+              },
+              {
+                "label": "Every day",
+                "value": 15.0
+              },
+              {
+                "label": "Less than once a week",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 3-4 days (32.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Occasional Recreational Users cluster in the 3-4 day range, while Performance-Focused Athletes and Trend-Driven Fashionistas push the 5-6 day and Every day shares.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "How would you describe your main use for athletic apparel?",
+            "options": [
+              "For working out or training",
+              "For everyday casual wear",
+              "For both workouts and casual wear equally",
+              "For outdoor activities like hiking or running",
+              "For lounging or recovery at home",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "For working out or training",
+                "value": 35.0
+              },
+              {
+                "label": "For everyday casual wear",
+                "value": 15.0
+              },
+              {
+                "label": "For both workouts and casual wear equally",
+                "value": 38.0
+              },
+              {
+                "label": "For outdoor activities like hiking or running",
+                "value": 8.0
+              },
+              {
+                "label": "For lounging or recovery at home",
+                "value": 3.0
+              },
+              {
+                "label": "Other",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: For both workouts and casual wear equally (38.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers dominate the dual-use segment; Performance-Focused Athletes and Value-Conscious Families drive the workout-specific share.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "category_entry",
+            "beatTitle": "Category relationship",
+            "beatCanonical": "category_entry",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "When do you most often put on athletic apparel?",
+            "options": [
+              "Before going to the gym or a workout class",
+              "When I'm heading out for a run or outdoor exercise",
+              "For everyday errands or commuting",
+              "When I'm at home relaxing",
+              "For social outings or meeting friends",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Before going to the gym or a workout class",
+                "value": 30.0
+              },
+              {
+                "label": "When I'm heading out for a run or outdoor exercise",
+                "value": 20.0
+              },
+              {
+                "label": "For everyday errands or commuting",
+                "value": 22.0
+              },
+              {
+                "label": "When I'm at home relaxing",
+                "value": 12.0
+              },
+              {
+                "label": "For social outings or meeting friends",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: Before going to the gym or a workout class (30.00%).",
+            "distributionNote": "Performance-Focused Athletes and Trend-Driven Fashionistas drive gym and run occasions; Lifestyle Comfort Buyers and Value-Conscious Families contribute to errands and social outings.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "activity_types",
+            "beatTitle": "Activity types",
+            "beatCanonical": "usage_occasion",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "How many times per week do you exercise or play sports?",
+            "options": [
+              "0 times",
+              "1 time",
+              "2-3 times",
+              "4-5 times",
+              "6 or more times"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "0 times",
+                "value": 5.0
+              },
+              {
+                "label": "1 time",
+                "value": 10.0
+              },
+              {
+                "label": "2-3 times",
+                "value": 38.0
+              },
+              {
+                "label": "4-5 times",
+                "value": 28.0
+              },
+              {
+                "label": "6 or more times",
+                "value": 19.0
+              }
+            ],
+            "insight": "Top response: 2-3 times (38.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Occasional Recreational Users concentrate in the 2-3 times band; Performance-Focused Athletes and Trend-Driven Fashionistas push the higher frequency categories.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "exercise_frequency",
+            "beatTitle": "Exercise frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "In the last 30 days, how many times did you wear athletic apparel for a workout or physical activity?",
+            "options": [
+              "0 times",
+              "1-5 times",
+              "6-10 times",
+              "11-15 times",
+              "16-20 times",
+              "More than 20 times"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "0 times",
+                "value": 4.0
+              },
+              {
+                "label": "1-5 times",
+                "value": 22.0
+              },
+              {
+                "label": "6-10 times",
+                "value": 30.0
+              },
+              {
+                "label": "11-15 times",
+                "value": 20.0
+              },
+              {
+                "label": "16-20 times",
+                "value": 12.0
+              },
+              {
+                "label": "More than 20 times",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: 6-10 times (30.00%).",
+            "distributionNote": "Performance-Focused Athletes and Trend-Driven Fashionistas drive the upper usage bands; Occasional Recreational Users and Value-Conscious Families pull the lower end.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "exercise_frequency",
+            "beatTitle": "Exercise frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Who in your household decides which athletic apparel to buy?",
+            "options": [
+              "I do",
+              "My partner or spouse",
+              "My children",
+              "I share the decision with someone else",
+              "Someone else in the household",
+              "No one in particular"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "I do",
+                "value": 72.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 10.0
+              },
+              {
+                "label": "My children",
+                "value": 2.0
+              },
+              {
+                "label": "I share the decision with someone else",
+                "value": 12.0
+              },
+              {
+                "label": "Someone else in the household",
+                "value": 2.0
+              },
+              {
+                "label": "No one in particular",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: I do (72.00%).",
+            "distributionNote": "Most segments are self-directed buyers; Value-Conscious Families show some shared decision-making, while a small share defer to partners.",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "exercise_frequency",
+            "beatTitle": "Exercise frequency",
+            "beatCanonical": "usage_frequency",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "In what situations do you typically wear athletic apparel?",
+            "options": [
+              "During workouts or training",
+              "Running errands or commuting",
+              "Around the house or lounging",
+              "Social outings or casual meetups",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "During workouts or training",
+                "value": 88.0
+              },
+              {
+                "label": "Running errands or commuting",
+                "value": 62.0
+              },
+              {
+                "label": "Around the house or lounging",
+                "value": 55.0
+              },
+              {
+                "label": "Social outings or casual meetups",
+                "value": 38.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: During workouts or training (88.00%).",
+            "distributionNote": "Nearly all segments wear athletic apparel for workouts; Lifestyle Comfort Buyers and Trend-Driven Fashionistas drive the casual and social wear rates.",
+            "questionLayer": "module",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "usage_context",
+            "beatTitle": "Usage context",
+            "beatCanonical": "need_state",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Which goals matters most to you when choosing athletic apparel?",
+            "options": [
+              "Improving my performance or race times",
+              "Staying comfortable during everyday activities",
+              "Looking stylish and on-trend",
+              "Getting the best value for my budget",
+              "Supporting sustainable and ethical production",
+              "Finding pieces that fit my body well"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Improving my performance or race times",
+                "value": 22.0
+              },
+              {
+                "label": "Staying comfortable during everyday activities",
+                "value": 30.0
+              },
+              {
+                "label": "Looking stylish and on-trend",
+                "value": 15.0
+              },
+              {
+                "label": "Getting the best value for my budget",
+                "value": 14.0
+              },
+              {
+                "label": "Supporting sustainable and ethical production",
+                "value": 10.0
+              },
+              {
+                "label": "Finding pieces that fit my body well",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: Staying comfortable during everyday activities (30.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Occasional Recreational Users prioritize comfort; Performance-Focused Athletes drive performance; Trend-Driven Fashionistas and Value-Conscious Families split between style and value.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "usage_context",
+            "beatTitle": "Usage context",
+            "beatCanonical": "need_state",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "purchase_journey_and_drivers",
+        "label": "Purchase Journey & Decision Drivers",
+        "questions": [
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "What usually starts you shopping for new athletic apparel?",
+            "options": [
+              "Old gear is worn out or no longer fits",
+              "A new workout or sport I'm starting",
+              "A sale or discount I came across",
+              "I saw something stylish online or in a store",
+              "A special event like a race or gym class",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Old gear is worn out or no longer fits",
+                "value": 38.0
+              },
+              {
+                "label": "A new workout or sport I'm starting",
+                "value": 22.0
+              },
+              {
+                "label": "A sale or discount I came across",
+                "value": 15.0
+              },
+              {
+                "label": "I saw something stylish online or in a store",
+                "value": 14.0
+              },
+              {
+                "label": "A special event like a race or gym class",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Old gear is worn out or no longer fits (38.00%).",
+            "distributionNote": "Performance-Focused Athletes and Value-Conscious Families drive the top trigger of worn-out gear; Trend-Driven Fashionistas and Occasional Recreational Users contribute to style and sale triggers.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "Purchase trigger",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Where do you usually learn about new athletic apparel before buying it?",
+            "options": [
+              "Social media (Instagram, TikTok, YouTube)",
+              "Online reviews or forums",
+              "Friends or family recommendations",
+              "In-store displays or staff",
+              "Brand emails or apps",
+              "Sports or fitness events",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Social media (Instagram, TikTok, YouTube)",
+                "value": 45.0
+              },
+              {
+                "label": "Online reviews or forums",
+                "value": 25.0
+              },
+              {
+                "label": "Friends or family recommendations",
+                "value": 20.0
+              },
+              {
+                "label": "In-store displays or staff",
+                "value": 15.0
+              },
+              {
+                "label": "Brand emails or apps",
+                "value": 18.0
+              },
+              {
+                "label": "Sports or fitness events",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Social media (Instagram, TikTok, YouTube) (45.00%).",
+            "distributionNote": "Performance-Focused Athletes and Value-Conscious Families rely more on reviews and word-of-mouth.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "purchase_trigger",
+            "beatTitle": "Purchase trigger",
+            "beatCanonical": "purchase_trigger",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "Where do you usually buy athletic apparel?",
+            "options": [
+              "Online specialist retailer (e.g., Running Warehouse)",
+              "Brand website or app",
+              "Department store",
+              "Mass retailer (e.g., Target, Walmart)",
+              "Specialty sporting goods store",
+              "Outlet or discount store",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Online specialist retailer (e.g., Running Warehouse)",
+                "value": 12.0
+              },
+              {
+                "label": "Brand website or app",
+                "value": 30.0
+              },
+              {
+                "label": "Department store",
+                "value": 15.0
+              },
+              {
+                "label": "Mass retailer (e.g., Target, Walmart)",
+                "value": 18.0
+              },
+              {
+                "label": "Specialty sporting goods store",
+                "value": 15.0
+              },
+              {
+                "label": "Outlet or discount store",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Brand website or app (30.00%).",
+            "distributionNote": "Brand websites/apps are the top channel, driven by Performance-Focused Athletes and Lifestyle Comfort Buyers; Value-Conscious Families and Budget-focused segments lean toward mass retailers and outlets.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "shopping_channels",
+            "beatTitle": "Shopping channels",
+            "beatCanonical": "channel",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "How often do you buy new athletic apparel?",
+            "options": [
+              "Once a month or more",
+              "Every 2-3 months",
+              "Every 4-6 months",
+              "Once or twice a year",
+              "Less than once a year"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Once a month or more",
+                "value": 10.0
+              },
+              {
+                "label": "Every 2-3 months",
+                "value": 25.0
+              },
+              {
+                "label": "Every 4-6 months",
+                "value": 30.0
+              },
+              {
+                "label": "Once or twice a year",
+                "value": 25.0
+              },
+              {
+                "label": "Less than once a year",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Every 4-6 months (30.00%).",
+            "distributionNote": "Performance-Focused Athletes and Trend-Driven Fashionistas buy more frequently; Value-Conscious Families and Occasional Recreational Users buy less often.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "purchase_frequency",
+            "beatTitle": "Purchase frequency",
+            "beatCanonical": "purchase_cycle",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "How much did you spend on athletic apparel in the last 12 months?",
+            "options": [
+              "Under $50",
+              "$50-$99",
+              "$100-$199",
+              "$200-$349",
+              "$350-$499",
+              "$500 or more"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $50",
+                "value": 8.0
+              },
+              {
+                "label": "$50-$99",
+                "value": 18.0
+              },
+              {
+                "label": "$100-$199",
+                "value": 28.0
+              },
+              {
+                "label": "$200-$349",
+                "value": 25.0
+              },
+              {
+                "label": "$350-$499",
+                "value": 12.0
+              },
+              {
+                "label": "$500 or more",
+                "value": 9.0
+              }
+            ],
+            "insight": "Top response: $100-$199 (28.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Performance-Focused Athletes cluster in the $100-$349 range.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "category_spend",
+            "beatTitle": "Category spend",
+            "beatCanonical": "spend",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "Which factors most often decides which athletic apparel you buy?",
+            "options": [
+              "Comfort and fit",
+              "Durability and how long it lasts",
+              "Price or value for money",
+              "Performance features like moisture-wicking",
+              "Style and how it looks",
+              "Sustainability and eco-friendly materials"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Comfort and fit",
+                "value": 30.0
+              },
+              {
+                "label": "Durability and how long it lasts",
+                "value": 20.0
+              },
+              {
+                "label": "Price or value for money",
+                "value": 18.0
+              },
+              {
+                "label": "Performance features like moisture-wicking",
+                "value": 15.0
+              },
+              {
+                "label": "Style and how it looks",
+                "value": 12.0
+              },
+              {
+                "label": "Sustainability and eco-friendly materials",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Comfort and fit (30.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers",
+            "questionType": "ranking",
+            "responseInstruction": "Rank these in order.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "product_requirements_and_tradeoffs",
+        "label": "Product Requirements & Trade-offs",
+        "questions": [
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "What is a must-have in athletic apparel for you?",
+            "options": [
+              "Comfort and fit for daily wear and sport",
+              "Performance features like moisture-wicking",
+              "Sustainability and eco-friendly materials",
+              "Brand reputation and trust",
+              "Style and trendiness",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Comfort and fit for daily wear and sport",
+                "value": 45.0
+              },
+              {
+                "label": "Performance features like moisture-wicking",
+                "value": 25.0
+              },
+              {
+                "label": "Sustainability and eco-friendly materials",
+                "value": 10.0
+              },
+              {
+                "label": "Brand reputation and trust",
+                "value": 10.0
+              },
+              {
+                "label": "Style and trendiness",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Comfort and fit for daily wear and sport (45.00%).",
+            "distributionNote": "",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "must_have_attributes",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "Which features is a must-have in athletic apparel for you?",
+            "options": [
+              "Moisture-wicking fabric",
+              "Four-way stretch",
+              "Flat seams that don't chafe",
+              "Breathable mesh panels",
+              "Compression fit",
+              "Odor-resistant treatment",
+              "None of these are must-haves for me"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Moisture-wicking fabric",
+                "value": 70.0
+              },
+              {
+                "label": "Four-way stretch",
+                "value": 55.0
+              },
+              {
+                "label": "Flat seams that don't chafe",
+                "value": 40.0
+              },
+              {
+                "label": "Breathable mesh panels",
+                "value": 45.0
+              },
+              {
+                "label": "Compression fit",
+                "value": 25.0
+              },
+              {
+                "label": "Odor-resistant treatment",
+                "value": 30.0
+              },
+              {
+                "label": "None of these are must-haves for me",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Moisture-wicking fabric (70.00%).",
+            "distributionNote": "Moisture-wicking and four-way stretch are near-universal must-haves, driven by Performance-Focused Athletes and Lifestyle Comfort Buyers.",
+            "questionLayer": "module",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "must_have_attributes",
+            "beatTitle": "Must-have attributes",
+            "beatCanonical": "must_haves",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "How do you judge the quality of athletic apparel before buying it?",
+            "options": [
+              "Feel of the fabric",
+              "Stitching and seams",
+              "Weight and thickness of the material",
+              "Fit when I try it on",
+              "Brand reputation",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Feel of the fabric",
+                "value": 32.0
+              },
+              {
+                "label": "Stitching and seams",
+                "value": 18.0
+              },
+              {
+                "label": "Weight and thickness of the material",
+                "value": 12.0
+              },
+              {
+                "label": "Fit when I try it on",
+                "value": 28.0
+              },
+              {
+                "label": "Brand reputation",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Feel of the fabric (32.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Performance-Focused Athletes dominate, prioritizing tactile and fit cues; Value-Conscious Families and Occasional Recreational Users add weight to stitching and brand reputation.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "fit_and_sizing",
+            "beatTitle": "Fit and sizing",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "What pack size do you usually buy athletic apparel in?",
+            "options": [
+              "Single items only",
+              "2-packs",
+              "3-packs",
+              "4-packs or more",
+              "I don't buy multipacks"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Single items only",
+                "value": 55.0
+              },
+              {
+                "label": "2-packs",
+                "value": 20.0
+              },
+              {
+                "label": "3-packs",
+                "value": 12.0
+              },
+              {
+                "label": "4-packs or more",
+                "value": 8.0
+              },
+              {
+                "label": "I don't buy multipacks",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Single items only (55.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Performance-Focused Athletes prefer single items for fit and style; Value-Conscious Families are more likely to buy multipacks for cost savings.",
+            "questionLayer": "core",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "fit_and_sizing",
+            "beatTitle": "Fit and sizing",
+            "beatCanonical": "quality_cues",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "Which sustainability claims do you look for in athletic apparel?",
+            "options": [
+              "Recycled materials",
+              "Organic cotton",
+              "Fair labor certification",
+              "Carbon-neutral production",
+              "Biodegradable fabrics",
+              "None of these are important to me"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Recycled materials",
+                "value": 45.0
+              },
+              {
+                "label": "Organic cotton",
+                "value": 30.0
+              },
+              {
+                "label": "Fair labor certification",
+                "value": 25.0
+              },
+              {
+                "label": "Carbon-neutral production",
+                "value": 18.0
+              },
+              {
+                "label": "Biodegradable fabrics",
+                "value": 22.0
+              },
+              {
+                "label": "None of these are important to me",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Recycled materials (45.00%).",
+            "distributionNote": "Sustainability claims resonate most with Lifestyle Comfort Buyers and Trend-Driven Fashionistas; Value-Conscious Families and Occasional Recreational Users are less engaged, driving the 'none' response.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "sustainability_claims",
+            "beatTitle": "Sustainability claims",
+            "beatCanonical": "claims_credentials",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which trade-offs are you most willing to make when buying athletic apparel?",
+            "options": [
+              "Pay more for better performance features",
+              "Give up style for longer-lasting durability",
+              "Choose eco-friendly materials even if they cost more",
+              "Sacrifice the latest look for a lower price",
+              "Accept less breathability for a better fit",
+              "None of these trade-offs appeal to me"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Pay more for better performance features",
+                "value": 22.0
+              },
+              {
+                "label": "Give up style for longer-lasting durability",
+                "value": 18.0
+              },
+              {
+                "label": "Choose eco-friendly materials even if they cost more",
+                "value": 15.0
+              },
+              {
+                "label": "Sacrifice the latest look for a lower price",
+                "value": 20.0
+              },
+              {
+                "label": "Accept less breathability for a better fit",
+                "value": 10.0
+              },
+              {
+                "label": "None of these trade-offs appeal to me",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: Pay more for better performance features (22.00%).",
+            "distributionNote": "Performance-Focused Athletes favor paying more for performance; Value-Conscious Families and Occasional Recreational Users lean toward price sacrifices; eco-friendly trade-off is driven by Lifestyle Comfort Buyers.",
+            "questionLayer": "module",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "If you had to give up one thing in athletic apparel, which would it be?",
+            "options": [
+              "Style and looks",
+              "Brand name",
+              "Advanced performance features",
+              "Eco-friendly materials",
+              "Durability",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Style and looks",
+                "value": 25.0
+              },
+              {
+                "label": "Brand name",
+                "value": 20.0
+              },
+              {
+                "label": "Advanced performance features",
+                "value": 15.0
+              },
+              {
+                "label": "Eco-friendly materials",
+                "value": 12.0
+              },
+              {
+                "label": "Durability",
+                "value": 18.0
+              },
+              {
+                "label": "Other",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Style and looks (25.00%).",
+            "distributionNote": "Lifestyle Comfort Buyers and Value-Conscious Families are most willing to give up style and brand name; Performance-Focused Athletes hold onto performance features; eco-friendly sacrifice is less acceptable to sustainability-minded segments.",
+            "questionLayer": "core",
+            "narrativeOrder": 7,
+            "funnelPosition": 7,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "How much more would you pay for athletic apparel that lasts twice as long?",
+            "options": [
+              "Nothing extra",
+              "Up to 10% more",
+              "11–25% more",
+              "26–50% more",
+              "More than 50% extra"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Nothing extra",
+                "value": 15.0
+              },
+              {
+                "label": "Up to 10% more",
+                "value": 25.0
+              },
+              {
+                "label": "11–25% more",
+                "value": 30.0
+              },
+              {
+                "label": "26–50% more",
+                "value": 20.0
+              },
+              {
+                "label": "More than 50% extra",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 11–25% more (30.00%).",
+            "distributionNote": "Value-Conscious Families and Occasional Recreational Users cluster at the lower end; Performance-Focused Athletes and Lifestyle Comfort Buyers are willing to pay a moderate premium for durability.",
+            "questionLayer": "core",
+            "narrativeOrder": 8,
+            "funnelPosition": 8,
+            "beatId": "value_expectation",
+            "beatTitle": "Value expectation",
+            "beatCanonical": "value_expectation",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "satisfaction_loyalty_and_future_intent",
+        "label": "Satisfaction, Loyalty & Future Intent",
+        "questions": [
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Which aspects most improves your satisfaction with athletic apparel?",
+            "options": [
+              "Comfort and fit for daily wear and sport",
+              "Performance features like moisture-wicking",
+              "Sustainability and eco-friendly materials",
+              "Brand reputation and trust",
+              "Online shopping convenience and DTC options",
+              "Other"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Comfort and fit for daily wear and sport",
+                "value": 40.0
+              },
+              {
+                "label": "Performance features like moisture-wicking",
+                "value": 20.0
+              },
+              {
+                "label": "Sustainability and eco-friendly materials",
+                "value": 12.0
+              },
+              {
+                "label": "Brand reputation and trust",
+                "value": 10.0
+              },
+              {
+                "label": "Online shopping convenience and DTC options",
+                "value": 10.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Comfort and fit for daily wear and sport (40.00%).",
+            "distributionNote": "Comfort and fit dominate across all segments, especially Lifestyle Comfort Buyers and Occasional Recreational Users; Performance-Focused Athletes elevate performance features; sustainability matters most to a minority of Lifestyle Comfort Buyers.",
+            "questionLayer": "core",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "satisfaction_drivers",
+            "beatTitle": "Satisfaction drivers",
+            "beatCanonical": "satisfaction_drivers",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "Which frustrations have you had with athletic apparel in the last 12 months?",
+            "options": [
+              "Seams or waistbands dig in during movement",
+              "Fabrics don't breathe well and cause overheating",
+              "Gear wears out too quickly with regular use",
+              "Hard to find truly sustainable options that don't compromise on style",
+              "Inconsistent sizing across brands",
+              "Odor retention in synthetic fabrics",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Seams or waistbands dig in during movement",
+                "value": 24.0
+              },
+              {
+                "label": "Fabrics don't breathe well and cause overheating",
+                "value": 18.0
+              },
+              {
+                "label": "Gear wears out too quickly with regular use",
+                "value": 22.0
+              },
+              {
+                "label": "Hard to find truly sustainable options that don't compromise on style",
+                "value": 15.0
+              },
+              {
+                "label": "Inconsistent sizing across brands",
+                "value": 12.0
+              },
+              {
+                "label": "Odor retention in synthetic fabrics",
+                "value": 7.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Seams or waistbands dig in during movement (24.00%).",
+            "distributionNote": "Performance-Focused Athletes and Value-Conscious Families drive durability complaints; Lifestyle Comfort Buyers and Trend-Driven Fashionistas drive fit and sustainability frustrations.",
+            "questionLayer": "core",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "friction_points",
+            "beatTitle": "Friction points",
+            "beatCanonical": "friction",
+            "questionType": "multiple_choice",
+            "responseInstruction": "Select all that apply.",
+            "sumsTo100": false,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "multiSelect": true,
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "What would most likely make you switch to a different type of athletic apparel?",
+            "options": [
+              "A more affordable option that meets my needs",
+              "A more durable option that lasts longer",
+              "A more sustainable option I can trust",
+              "A better-fitting option for my body type",
+              "A more stylish or on-trend option",
+              "Nothing would make me switch"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "A more affordable option that meets my needs",
+                "value": 28.0
+              },
+              {
+                "label": "A more durable option that lasts longer",
+                "value": 22.0
+              },
+              {
+                "label": "A more sustainable option I can trust",
+                "value": 14.0
+              },
+              {
+                "label": "A better-fitting option for my body type",
+                "value": 18.0
+              },
+              {
+                "label": "A more stylish or on-trend option",
+                "value": 10.0
+              },
+              {
+                "label": "Nothing would make me switch",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: A more affordable option that meets my needs (28.00%).",
+            "distributionNote": "Value-Conscious Families and Occasional Recreational Users are most price-driven; Performance-Focused Athletes and Lifestyle Comfort Buyers split between durability and fit; brand-loyal segments are less likely to switch.",
+            "questionLayer": "core",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "How likely are you to buy more athletic apparel in the next 12 months?",
+            "options": [
+              "Very likely",
+              "Somewhat likely",
+              "Neither likely nor unlikely",
+              "Somewhat unlikely",
+              "Very unlikely"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Very likely",
+                "value": 38.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 34.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 14.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 9.0
+              },
+              {
+                "label": "Very unlikely",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Very likely (38.00%).",
+            "distributionNote": "Positive sentiment and high engagement across most segments drive strong purchase intent; only Occasional Recreational Users and some Value-Conscious Families temper the top box.",
+            "questionLayer": "module",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "future_intent",
+            "beatTitle": "Future intent",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "In the next 12 months, do you expect to buy more, less, or about the same amount of athletic apparel?",
+            "options": [
+              "More than this year",
+              "About the same as this year",
+              "Less than this year",
+              "I don't plan to buy any"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "More than this year",
+                "value": 32.0
+              },
+              {
+                "label": "About the same as this year",
+                "value": 48.0
+              },
+              {
+                "label": "Less than this year",
+                "value": 14.0
+              },
+              {
+                "label": "I don't plan to buy any",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: About the same as this year (48.00%).",
+            "distributionNote": "Growth outlook and positive sentiment support a majority planning to maintain or increase purchases; Value-Conscious Families and Occasional Recreational Users are more likely to hold steady or cut back.",
+            "questionLayer": "core",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "future_intent",
+            "beatTitle": "Future intent",
+            "beatCanonical": "future_use",
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      },
+      {
+        "id": "profiling",
+        "label": "Profiling",
+        "questions": [
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "Which age group are you in?",
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 or older"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "18-24",
+                "value": 12.0
+              },
+              {
+                "label": "25-34",
+                "value": 25.0
+              },
+              {
+                "label": "35-44",
+                "value": 23.0
+              },
+              {
+                "label": "45-54",
+                "value": 18.0
+              },
+              {
+                "label": "55-64",
+                "value": 14.0
+              },
+              {
+                "label": "65 or older",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: 25-34 (25.00%).",
+            "distributionNote": "The panel skews to the 25-44 core athletic consumer, with meaningful representation from older active adults and younger trend-focused buyers.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 1,
+            "funnelPosition": 1,
+            "beatId": "age_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q29",
+            "qNum": 29,
+            "question": "What is your gender?",
+            "options": [
+              "Woman",
+              "Man",
+              "Non-binary",
+              "Prefer to self-describe",
+              "Prefer not to say"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Woman",
+                "value": 52.0
+              },
+              {
+                "label": "Man",
+                "value": 45.0
+              },
+              {
+                "label": "Non-binary",
+                "value": 2.0
+              },
+              {
+                "label": "Prefer to self-describe",
+                "value": 0.5
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 0.5
+              }
+            ],
+            "insight": "Top response: Woman (52.00%).",
+            "distributionNote": "Balanced gender mix with a slight female lean, reflecting high female engagement in athleisure and wellness segments.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 2,
+            "funnelPosition": 2,
+            "beatId": "gender",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q30",
+            "qNum": 30,
+            "question": "Who else lives in your household?",
+            "options": [
+              "I live alone",
+              "I live with a partner, no children at home",
+              "I live with children under 18",
+              "I live with other adults (family or housemates), no children",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I live alone",
+                "value": 18.0
+              },
+              {
+                "label": "I live with a partner, no children at home",
+                "value": 32.0
+              },
+              {
+                "label": "I live with children under 18",
+                "value": 30.0
+              },
+              {
+                "label": "I live with other adults (family or housemates), no children",
+                "value": 15.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: I live with a partner, no children at home (32.00%).",
+            "distributionNote": "A substantial share of households include children, consistent with the Value-Conscious Families segment; partner-only households reflect older and wellness-focused buyers.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 3,
+            "funnelPosition": 3,
+            "beatId": "household_composition",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q31",
+            "qNum": 31,
+            "question": "What was your total household income before tax last year?",
+            "options": [
+              "Under $25,000",
+              "$25,000 - $49,999",
+              "$50,000 - $74,999",
+              "$75,000 - $99,999",
+              "$100,000 - $149,999",
+              "$150,000 or more",
+              "Prefer not to say"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "Under $25,000",
+                "value": 7.0
+              },
+              {
+                "label": "$25,000 - $49,999",
+                "value": 16.0
+              },
+              {
+                "label": "$50,000 - $74,999",
+                "value": 23.0
+              },
+              {
+                "label": "$75,000 - $99,999",
+                "value": 20.0
+              },
+              {
+                "label": "$100,000 - $149,999",
+                "value": 19.0
+              },
+              {
+                "label": "$150,000 or more",
+                "value": 11.0
+              },
+              {
+                "label": "Prefer not to say",
+                "value": 4.0
+              }
+            ],
+            "insight": "Top response: $50,000 - $74,999 (23.00%).",
+            "distributionNote": "Income spread reflects a mature market with a middle-income core; Value-Conscious Families and Trend-Driven Fashionistas pull the lower bands while Performance-Focused Athletes and Lifestyle Comfort Buyers concentrate in the upper-middle ranges.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 4,
+            "funnelPosition": 4,
+            "beatId": "income_band",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q32",
+            "qNum": 32,
+            "question": "How likely are you to recommend the Athletic Apparel you currently use to a friend or colleague?",
+            "options": [
+              "0 - Not at all likely",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10 - Extremely likely"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "0 - Not at all likely",
+                "value": 2.0
+              },
+              {
+                "label": "1",
+                "value": 1.0
+              },
+              {
+                "label": "2",
+                "value": 2.0
+              },
+              {
+                "label": "3",
+                "value": 3.0
+              },
+              {
+                "label": "4",
+                "value": 4.0
+              },
+              {
+                "label": "5",
+                "value": 8.0
+              },
+              {
+                "label": "6",
+                "value": 9.0
+              },
+              {
+                "label": "7",
+                "value": 16.0
+              },
+              {
+                "label": "8",
+                "value": 23.0
+              },
+              {
+                "label": "9",
+                "value": 18.0
+              },
+              {
+                "label": "10 - Extremely likely",
+                "value": 14.0
+              }
+            ],
+            "insight": "Top response: 8 (23.00%).",
+            "distributionNote": "Positive sentiment dominates; Performance-Focused Athletes and Lifestyle Comfort Buyers anchor the high end, while Value-Conscious Families and Occasional Recreational Users are more moderate, keeping the middle elevated.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 5,
+            "funnelPosition": 5,
+            "beatId": "advocacy_nps",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "single_choice",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "isGrounded": true,
+            "N": 410
+          },
+          {
+            "id": "q33",
+            "qNum": 33,
+            "question": "Overall, how satisfied are you with the Athletic Apparel you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 3.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 8.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 12.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 42.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 35.0
+              }
+            ],
+            "insight": "Top response: Somewhat satisfied (42.00%).",
+            "distributionNote": "Satisfaction skews positive, driven by Performance-Focused Athletes and Lifestyle Comfort Buyers; a minority of Value-Conscious Families and Trend-Driven Fashionistas express dissatisfaction due to price or fit issues.",
+            "questionLayer": "profiling",
+            "narrativeOrder": 6,
+            "funnelPosition": 6,
+            "beatId": "overall_satisfaction_profile",
+            "beatTitle": "",
+            "beatCanonical": null,
+            "questionType": "likert_5",
+            "responseInstruction": "Select one.",
+            "sumsTo100": true,
+            "sourceRegions": [
+              "north-america"
+            ],
+            "ordered": true,
+            "isGrounded": true,
+            "N": 410
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 33,
+    "selection": {
+      "mode": "core_plus_module",
+      "source_regions": [
+        "north-america"
+      ],
+      "total_questions": 33,
+      "method": "select_and_blend"
+    },
+    "storyline": {
+      "activity_and_usage_context": [
+        {
+          "beatId": "category_entry",
+          "title": "Category relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "exercise_frequency",
+          "title": "Exercise frequency",
+          "canonical": "usage_frequency",
+          "order": 2
+        },
+        {
+          "beatId": "activity_types",
+          "title": "Activity types",
+          "canonical": "usage_occasion",
+          "order": 3
+        },
+        {
+          "beatId": "usage_context",
+          "title": "Usage context",
+          "canonical": "need_state",
+          "order": 4
+        }
+      ],
+      "purchase_journey_and_drivers": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "Purchase trigger",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "shopping_channels",
+          "title": "Shopping channels",
+          "canonical": "channel",
+          "order": 2
+        },
+        {
+          "beatId": "purchase_frequency",
+          "title": "Purchase frequency",
+          "canonical": "purchase_cycle",
+          "order": 3
+        },
+        {
+          "beatId": "category_spend",
+          "title": "Category spend",
+          "canonical": "spend",
+          "order": 4
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "Decision drivers",
+          "canonical": "decision_drivers",
+          "order": 5
+        }
+      ],
+      "product_requirements_and_tradeoffs": [
+        {
+          "beatId": "must_have_attributes",
+          "title": "Must-have attributes",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "fit_and_sizing",
+          "title": "Fit and sizing",
+          "canonical": "quality_cues",
+          "order": 2
+        },
+        {
+          "beatId": "sustainability_claims",
+          "title": "Sustainability claims",
+          "canonical": "claims_credentials",
+          "order": 3
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs",
+          "canonical": "tradeoffs",
+          "order": 4
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value expectation",
+          "canonical": "value_expectation",
+          "order": 5
+        }
+      ],
+      "satisfaction_loyalty_and_future_intent": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "Satisfaction drivers",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction_points",
+          "title": "Friction points",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching_triggers",
+          "title": "Switching triggers",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "future_intent",
+          "title": "Future intent",
+          "canonical": "future_use",
+          "order": 5
+        }
+      ]
+    },
+    "storyline_source": "planner",
+    "storyline_summary": "The survey begins by establishing who the respondent is as an exerciser — how often they work out, what activities they do, and how they wear athletic apparel. It then moves into their shopping behaviour, exploring what triggers a purchase, where they buy, and what drives their choice. Next, it delves into their specific product requirements, including fit, sustainability, and the trade-offs they're willing to make. Finally, it measures their satisfaction with current gear, identifies pain points, and gauges their future loyalty and purchase intent. This arc cleanly separates the five…",
+    "studyPurpose": "Identify which of 5 behavioural segments each respondent belongs to, based on their exercise habits, purchase drivers, and product priorities in athletic apparel.",
+    "segmentation_lens": "Combination of usage/behavioural and jobs-to-be-done. Athletic apparel buyers genuinely differ on how often and how intensely they exercise (usage), and on what they 'hire' the apparel to do — from performance enhancement to fashion statement to everyday comfort. This combination separates the marke",
+    "must_cover_topics": [
+      "Exercise frequency",
+      "Activity type",
+      "Fit and sizing",
+      "Fabric and performance features",
+      "Sustainability claims",
+      "Price paid"
+    ],
+    "segments": [
+      {
+        "segment_id": "performance_focused_athletes",
+        "name": "Performance-Focused Athletes",
+        "description": "High-frequency exercisers (5+ times/week) who train for specific sports or fitness goals. They prioritize technical features like moisture-wicking, compression, and durability over style or price, and are willing to pay a premium for gear that enhances performance.",
+        "hypothesis": "This group will report the highest exercise frequency, the highest spend per item, and will rank performance features and durability as the most important purchase drivers."
+      },
+      {
+        "segment_id": "lifestyle_comfort_seekers",
+        "name": "Lifestyle Comfort Buyers",
+        "description": "Moderate exercisers (2-3 times/week) who value athletic apparel for its comfort and versatility in both workout and everyday settings. They are less concerned with cutting-edge performance tech and more with how the clothes feel and look for casual wear.",
+        "hypothesis": "This group will prioritize comfort and fit above all, will show a preference for versatile pieces that transition from gym to street, and will be moderately price-sensitive."
+      },
+      {
+        "segment_id": "trend_driven_fashionistas",
+        "name": "Trend-Driven Fashionistas Buyers",
+        "description": "Individuals who are highly engaged with athletic apparel as a fashion category. They follow trends and influencer recommendations, prioritize style and brand image, and are willing to pay for the latest looks, even if they are less active.",
+        "hypothesis": "This group will report lower exercise frequency but high purchase frequency, will rank style and brand reputation as top drivers, and will be influenced by social media and celebrity endorsements."
+      },
+      {
+        "segment_id": "value_conscious_families",
+        "name": "Value-Conscious Families",
+        "description": "Budget-focused buyers who purchase athletic apparel for themselves and their children. They are price-sensitive, prioritize durability and value for money, and are less loyal to specific brands, often shopping sales and multi-packs.",
+        "hypothesis": "This group will report the highest price sensitivity, will prioritize durability and cost-per-wear, and will be more likely to purchase from mass-market retailers and discount stores."
+      },
+      {
+        "segment_id": "occasional_recreational_users",
+        "name": "Occasional Recreational Users",
+        "description": "Low-frequency exercisers (once a week or less) who own basic athletic apparel for light activities like walking or casual sports. They are not deeply engaged with the category, are price-sensitive, and rarely seek out new products unless their old ones wear out.",
+        "hypothesis": "This group will report the lowest exercise and purchase frequency, will have the lowest spend, and will be the least likely to have strong brand or feature preferences."
+      }
+    ],
+    "segmentModel": {
+      "segments": [
+        {
+          "segment_id": "performance_focused_athletes",
+          "name": "Performance-Focused Athletes",
+          "description": "High-frequency exercisers (5+ times/week) who train for specific sports or fitness goals. They prioritize technical features like moisture-wicking, compression, and durability over style or price, and are willing to pay a premium for gear that enhances performance.",
+          "hypothesis": "This group will report the highest exercise frequency, the highest spend per item, and will rank performance features and durability as the most important purchase drivers."
+        },
+        {
+          "segment_id": "lifestyle_comfort_seekers",
+          "name": "Lifestyle Comfort Buyers",
+          "description": "Moderate exercisers (2-3 times/week) who value athletic apparel for its comfort and versatility in both workout and everyday settings. They are less concerned with cutting-edge performance tech and more with how the clothes feel and look for casual wear.",
+          "hypothesis": "This group will prioritize comfort and fit above all, will show a preference for versatile pieces that transition from gym to street, and will be moderately price-sensitive."
+        },
+        {
+          "segment_id": "trend_driven_fashionistas",
+          "name": "Trend-Driven Fashionistas Buyers",
+          "description": "Individuals who are highly engaged with athletic apparel as a fashion category. They follow trends and influencer recommendations, prioritize style and brand image, and are willing to pay for the latest looks, even if they are less active.",
+          "hypothesis": "This group will report lower exercise frequency but high purchase frequency, will rank style and brand reputation as top drivers, and will be influenced by social media and celebrity endorsements."
+        },
+        {
+          "segment_id": "value_conscious_families",
+          "name": "Value-Conscious Families",
+          "description": "Budget-focused buyers who purchase athletic apparel for themselves and their children. They are price-sensitive, prioritize durability and value for money, and are less loyal to specific brands, often shopping sales and multi-packs.",
+          "hypothesis": "This group will report the highest price sensitivity, will prioritize durability and cost-per-wear, and will be more likely to purchase from mass-market retailers and discount stores."
+        },
+        {
+          "segment_id": "occasional_recreational_users",
+          "name": "Occasional Recreational Users",
+          "description": "Low-frequency exercisers (once a week or less) who own basic athletic apparel for light activities like walking or casual sports. They are not deeply engaged with the category, are price-sensitive, and rarely seek out new products unless their old ones wear out.",
+          "hypothesis": "This group will report the lowest exercise and purchase frequency, will have the lowest spend, and will be the least likely to have strong brand or feature preferences."
+        }
+      ],
+      "weights": [
+        {
+          "question_id": "q3",
+          "question_text": "On how many days in a typical week do you exercise or play sports?",
+          "option_label": "5 or more days",
+          "segment_id": "performance_focused_athletes",
+          "points": 3
+        },
+        {
+          "question_id": "q3",
+          "question_text": "On how many days in a typical week do you exercise or play sports?",
+          "option_label": "3-4 days",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 2
+        },
+        {
+          "question_id": "q3",
+          "question_text": "On how many days in a typical week do you exercise or play sports?",
+          "option_label": "1-2 days",
+          "segment_id": "occasional_recreational_users",
+          "points": 2
+        },
+        {
+          "question_id": "q3",
+          "question_text": "On how many days in a typical week do you exercise or play sports?",
+          "option_label": "Less than once a week",
+          "segment_id": "occasional_recreational_users",
+          "points": 3
+        },
+        {
+          "question_id": "q1",
+          "question_text": "How often do you wear athletic apparel in a typical week?",
+          "option_label": "Every day",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q1",
+          "question_text": "How often do you wear athletic apparel in a typical week?",
+          "option_label": "4-6 days a week",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q1",
+          "question_text": "How often do you wear athletic apparel in a typical week?",
+          "option_label": "2-3 days a week",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 2
+        },
+        {
+          "question_id": "q1",
+          "question_text": "How often do you wear athletic apparel in a typical week?",
+          "option_label": "Once a week",
+          "segment_id": "occasional_recreational_users",
+          "points": 2
+        },
+        {
+          "question_id": "q1",
+          "question_text": "How often do you wear athletic apparel in a typical week?",
+          "option_label": "Less than once a week",
+          "segment_id": "occasional_recreational_users",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "How much of your athletic apparel is worn for everyday casual wear rather than for exercise?",
+          "option_label": "All of it",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 3
+        },
+        {
+          "question_id": "q8",
+          "question_text": "How much of your athletic apparel is worn for everyday casual wear rather than for exercise?",
+          "option_label": "Most of it",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 2
+        },
+        {
+          "question_id": "q8",
+          "question_text": "How much of your athletic apparel is worn for everyday casual wear rather than for exercise?",
+          "option_label": "None of it",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "When you wear athletic apparel outside of exercise, what is the main setting?",
+          "option_label": "I only wear it for exercise",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "When you wear athletic apparel outside of exercise, what is the main setting?",
+          "option_label": "Social outings with friends",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 2
+        },
+        {
+          "question_id": "q6",
+          "question_text": "When you wear athletic apparel outside of exercise, what is the main setting?",
+          "option_label": "Running errands or commuting",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 1
+        },
+        {
+          "question_id": "q7",
+          "question_text": "In which of these situations do you wear athletic apparel?",
+          "option_label": "Social outings with friends",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 2
+        },
+        {
+          "question_id": "q7",
+          "question_text": "In which of these situations do you wear athletic apparel?",
+          "option_label": "Lounging at home",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which of these activities do you primarily wear athletic apparel for?",
+          "option_label": "Running or jogging",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which of these activities do you primarily wear athletic apparel for?",
+          "option_label": "Gym workouts or weight training",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which of these activities do you primarily wear athletic apparel for?",
+          "option_label": "Team sports (e.g., basketball, soccer)",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q4",
+          "question_text": "Which of these activities do you primarily wear athletic apparel for?",
+          "option_label": "Walking or hiking",
+          "segment_id": "occasional_recreational_users",
+          "points": 2
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of these activities do you regularly do while wearing athletic apparel?",
+          "option_label": "Running or jogging",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of these activities do you regularly do while wearing athletic apparel?",
+          "option_label": "Gym workouts or weight training",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of these activities do you regularly do while wearing athletic apparel?",
+          "option_label": "Team sports (basketball, soccer, etc.)",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q5",
+          "question_text": "Which of these activities do you regularly do while wearing athletic apparel?",
+          "option_label": "Walking or hiking",
+          "segment_id": "occasional_recreational_users",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually starts you shopping for new athletic apparel?",
+          "option_label": "A sale or discount I came across",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually starts you shopping for new athletic apparel?",
+          "option_label": "I saw something stylish online or in a store",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 2
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually starts you shopping for new athletic apparel?",
+          "option_label": "A new workout or sport I'm starting",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q9",
+          "question_text": "What usually starts you shopping for new athletic apparel?",
+          "option_label": "Old gear is worn out or no longer fits",
+          "segment_id": "occasional_recreational_users",
+          "points": 1
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Which of these prompted your most recent purchase of athletic apparel?",
+          "option_label": "A sale or discount I couldn't pass up",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Which of these prompted your most recent purchase of athletic apparel?",
+          "option_label": "Wanting to try a new style or trend",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 3
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Which of these prompted your most recent purchase of athletic apparel?",
+          "option_label": "Starting a new workout routine or training plan",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q11",
+          "question_text": "Which of these prompted your most recent purchase of athletic apparel?",
+          "option_label": "My old gear wore out or no longer fit",
+          "segment_id": "occasional_recreational_users",
+          "points": 1
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What was the main reason you bought your most recent piece of athletic apparel?",
+          "option_label": "Wanted a new style or to follow a trend",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 3
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What was the main reason you bought your most recent piece of athletic apparel?",
+          "option_label": "It was on sale or a good deal",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What was the main reason you bought your most recent piece of athletic apparel?",
+          "option_label": "Needed a versatile piece for everyday wear",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What was the main reason you bought your most recent piece of athletic apparel?",
+          "option_label": "Starting a new workout routine or sport",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What was the main reason you bought your most recent piece of athletic apparel?",
+          "option_label": "A specific event or race coming up",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q12",
+          "question_text": "What was the main reason you bought your most recent piece of athletic apparel?",
+          "option_label": "My old one wore out or no longer fit",
+          "segment_id": "occasional_recreational_users",
+          "points": 1
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Where do you usually buy athletic apparel?",
+          "option_label": "Mass retailer (e.g., Target, Walmart)",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Where do you usually buy athletic apparel?",
+          "option_label": "Outlet or discount store",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Where do you usually buy athletic apparel?",
+          "option_label": "Online specialist retailer (e.g., Running Warehouse)",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q13",
+          "question_text": "Where do you usually buy athletic apparel?",
+          "option_label": "Brand website or app",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 1
+        },
+        {
+          "question_id": "q14",
+          "question_text": "How often do you buy new athletic apparel?",
+          "option_label": "Once a month or more",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 2
+        },
+        {
+          "question_id": "q14",
+          "question_text": "How often do you buy new athletic apparel?",
+          "option_label": "Every 2-3 months",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 1
+        },
+        {
+          "question_id": "q14",
+          "question_text": "How often do you buy new athletic apparel?",
+          "option_label": "Once or twice a year",
+          "segment_id": "occasional_recreational_users",
+          "points": 1
+        },
+        {
+          "question_id": "q14",
+          "question_text": "How often do you buy new athletic apparel?",
+          "option_label": "Less than once a year",
+          "segment_id": "occasional_recreational_users",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these features is a must-have in athletic apparel for you?",
+          "option_label": "Moisture-wicking fabric",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these features is a must-have in athletic apparel for you?",
+          "option_label": "Compression fit",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these features is a must-have in athletic apparel for you?",
+          "option_label": "Four-way stretch",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 1
+        },
+        {
+          "question_id": "q15",
+          "question_text": "Which of these features is a must-have in athletic apparel for you?",
+          "option_label": "None of these are must-haves for me",
+          "segment_id": "occasional_recreational_users",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "When choosing between two similar athletic apparel items, which trade-off are you most willing to make?",
+          "option_label": "Give up style for better performance",
+          "segment_id": "performance_focused_athletes",
+          "points": 3
+        },
+        {
+          "question_id": "q20",
+          "question_text": "When choosing between two similar athletic apparel items, which trade-off are you most willing to make?",
+          "option_label": "Sacrifice some comfort for a trendier look",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 3
+        },
+        {
+          "question_id": "q20",
+          "question_text": "When choosing between two similar athletic apparel items, which trade-off are you most willing to make?",
+          "option_label": "Buy a less expensive item even if it wears out sooner",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q20",
+          "question_text": "When choosing between two similar athletic apparel items, which trade-off are you most willing to make?",
+          "option_label": "Pay more for better durability",
+          "segment_id": "value_conscious_families",
+          "points": 1
+        },
+        {
+          "question_id": "q20",
+          "question_text": "When choosing between two similar athletic apparel items, which trade-off are you most willing to make?",
+          "option_label": "Choose sustainable materials even if they cost more",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 1
+        },
+        {
+          "question_id": "q21",
+          "question_text": "How much more would you pay for athletic apparel that lasts twice as long as a typical item?",
+          "option_label": "More than 50% more",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q21",
+          "question_text": "How much more would you pay for athletic apparel that lasts twice as long as a typical item?",
+          "option_label": "I wouldn't pay more",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q21",
+          "question_text": "How much more would you pay for athletic apparel that lasts twice as long as a typical item?",
+          "option_label": "26–50% more",
+          "segment_id": "value_conscious_families",
+          "points": 1
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these aspects of your athletic apparel most adds to your satisfaction with it?",
+          "option_label": "Performance features like moisture-wicking",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these aspects of your athletic apparel most adds to your satisfaction with it?",
+          "option_label": "Style and how it looks on you",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these aspects of your athletic apparel most adds to your satisfaction with it?",
+          "option_label": "Durability through repeated washing and wear",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q23",
+          "question_text": "Which of these aspects of your athletic apparel most adds to your satisfaction with it?",
+          "option_label": "Comfort and fit for daily wear and sport",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your athletic apparel are you most satisfied with?",
+          "option_label": "Performance features like moisture-wicking",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your athletic apparel are you most satisfied with?",
+          "option_label": "Style and appearance",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your athletic apparel are you most satisfied with?",
+          "option_label": "Value for the price paid",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q24",
+          "question_text": "Which of these aspects of your athletic apparel are you most satisfied with?",
+          "option_label": "Comfort and fit for daily wear and sport",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these frustrations have you had with athletic apparel in the last 12 months?",
+          "option_label": "Gear wears out too quickly with regular use",
+          "segment_id": "value_conscious_families",
+          "points": 2
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these frustrations have you had with athletic apparel in the last 12 months?",
+          "option_label": "Seams or waistbands dig in during movement",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q25",
+          "question_text": "Which of these frustrations have you had with athletic apparel in the last 12 months?",
+          "option_label": "Fabrics don't breathe well and cause overheating",
+          "segment_id": "performance_focused_athletes",
+          "points": 1
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different brand of athletic apparel?",
+          "option_label": "A significantly lower price for similar quality",
+          "segment_id": "value_conscious_families",
+          "points": 3
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different brand of athletic apparel?",
+          "option_label": "A more stylish or trend-forward design",
+          "segment_id": "trend_driven_fashionistas",
+          "points": 3
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different brand of athletic apparel?",
+          "option_label": "A new performance feature that improves comfort",
+          "segment_id": "performance_focused_athletes",
+          "points": 2
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different brand of athletic apparel?",
+          "option_label": "Better durability that lasts longer",
+          "segment_id": "value_conscious_families",
+          "points": 1
+        },
+        {
+          "question_id": "q26",
+          "question_text": "Which of these would most likely make you switch to a different brand of athletic apparel?",
+          "option_label": "A more inclusive or better-fitting size range",
+          "segment_id": "lifestyle_comfort_seekers",
+          "points": 1
+        }
+      ],
+      "tie_break": "Question cp3 (days exercised per week) is the tie-breaker because it is the most direct behavioural self-report of exercise frequency, which is the primary discriminator between the performance-focused, lifestyle, and occasional segments.",
+      "notes": [
+        "Weights are assigned only to options that clearly discriminate; many options are left unscored.",
+        "Each segment has at least two scoring options and at least one 3-point option.",
+        "Some options point to multiple segments only when the behaviour genuinely overlaps (e.g., running can be performance or occasional depending on frequency, but we kept it single to avoid dilution).",
+        "Trend-driven segment is reachable via style/trend triggers, purchase frequency, and trade-offs.",
+        "Value-conscious segment is reachable via price sensitivity, discount triggers, and durability concerns.",
+        "Occasional segment is reachable via low frequency and low engagement.",
+        "11 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+      ],
+      "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+    },
+    "fieldingNotes": {
+      "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=250 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+      "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+      "estimatedLength": "8-10 minutes.",
+      "scriptingNotes": [
+        "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+        "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+        "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+        "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+        "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+        "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+      ],
+      "caveats": [
+        "Percentages in this document are simulated from a persona-weighted panel, not fielded with real respondents. Replace with primary data after fielding.",
+        "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+        "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+      ]
+    },
+    "warnings": [],
+    "N": 410
+  }
+}

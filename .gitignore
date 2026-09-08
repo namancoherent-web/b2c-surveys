@@ -1,0 +1,50 @@
+# Secrets — never commit
+.env
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Generated output
+# Generated deliverables ARE committed in this repo so the studies can be
+# read without running the pipeline. Logs and caches stay out.
+output/*.json
+output/*.pdf
+logs/
+*.pdf
+# Local publish target when the sibling frontend checkout is absent
+
+# Local scratch / one-off scripts
+_tmp_*.py
+
+# Run logs and monitor scratch files
+logs/
+*.log
+.mon_*
+.r2_*
+.rr_*
+
+# Local caches (MKP / personas / questionnaires)
+.cache/
+
+# Tooling / IDE
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+logs_batch_console.txt
+
+# Monitor scratch artifacts
+*.log.n

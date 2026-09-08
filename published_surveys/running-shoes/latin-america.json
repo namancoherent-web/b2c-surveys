@@ -1,0 +1,1723 @@
+{
+  "surveyDefinition": {
+    "title": "Running Shoes — consumer survey (Latin America)",
+    "category": "Running Shoes",
+    "region": "Latin America",
+    "audienceType": "B2C consumer",
+    "whatThisSurveyIs": "A business-to-consumer (B2C) market research questionnaire about Running Shoes. Every question asks about Running Shoes specifically — not the wider market, not adjacent categories, and not any named brand. It is designed to tell a client what buyers in Latin America actually do and want in this category.",
+    "whoseContextThisIs": "Adults in Latin America who buy or use Running Shoes for personal or household use. Respondents qualify if they: Adults who have bought running shoes for themselves in the past 12 months; Adults who run or jog regularly (at least once a week) and intend to buy running shoes in the next 6 months; Adults who consider running shoes as their primary athletic footwear for exercise. Excluded: Children under 18 (unless buying for themselves, but typically parent proxy); Professional athletes or elite runners (niche, not representative of mass market); Institutional buyers (e.g., gyms, schools, military) – not consumer segment; People who only buy running shoes for fashion without any running activity.",
+    "whyTheseRespondents": "Running shoes are purchased by individual consumers for personal athletic and casual use. While some running shoes are sold to institutions (e.g., for team sports), the dominant market is everyday consumers buying for themselves.",
+    "respondentBehaviours": [
+      "Engages in running or jogging at least once a week",
+      "Purchases athletic footwear for fitness or casual wear",
+      "Researches product reviews and compares brands before buying",
+      "Values performance features (cushioning, support, weight) and brand reputation",
+      "May participate in running events or use fitness apps"
+    ],
+    "whatIsDeliberatelyNotAsked": [
+      "Age or household income — these define who was recruited, not what is measured, so they appear in the audience definition rather than as questions.",
+      "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+      "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+    ],
+    "howToReadTheNumbers": "Percentages are simulated from a persona-weighted panel of 2,500 synthetic respondents built from real market evidence, not from fieldwork. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+    "structure": {
+      "totalQuestions": 28,
+      "sections": [
+        {
+          "id": "profile",
+          "label": "Consumer Profile",
+          "covers": "how they relate to and use the category",
+          "questions": 6
+        },
+        {
+          "id": "behavior",
+          "label": "Buying Behavior",
+          "covers": "how they shop for and buy it",
+          "questions": 8
+        },
+        {
+          "id": "preferences",
+          "label": "Preferences & Expectations",
+          "covers": "what they want from the product",
+          "questions": 8
+        },
+        {
+          "id": "satisfaction",
+          "label": "Satisfaction & Future Intent",
+          "covers": "how they feel about it and what they will do next",
+          "questions": 6
+        }
+      ],
+      "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+      "storylineSummary": "The survey opens by establishing the respondent's relationship with running and how it fits into their life, then moves into their shoe usage context. It then traces the purchase journey from trigger through discovery, research, channel, and decision, ending with spend and loyalty. Next, it explores what they demand from a shoe—features, fit, quality, style, claims—and how they trade off and value these. Finally, it assesses their satisfaction, pain points, and future intentions, closing with advocacy and forward-looking behavior."
+    }
+  },
+  "targetCustomer": {
+    "summary": "Adult consumers of Running Shoes in Latin America — who Adults who have bought running shoes for themselves in the past 12 months; Adults who run or jog regularly (at least once a week) and intend to buy running shoes in the next 6 months; Adults who consider running shoes as their primary athletic footwear for exercise. The consumer market for running shoes is broad, spanning casual joggers to serious amateurs. The audience is defined by personal use and purchase, with a focus on regular runners who are likely to have recent purchase intent. Excluding professional athletes keeps the survey representative of the mass consumer market.",
+    "marketSegment": "Running Shoes",
+    "region": "Latin America",
+    "inclusionCriteria": [
+      "Adults who have bought running shoes for themselves in the past 12 months",
+      "Adults who run or jog regularly (at least once a week) and intend to buy running shoes in the next 6 months",
+      "Adults who consider running shoes as their primary athletic footwear for exercise"
+    ],
+    "behaviors": [
+      "Engages in running or jogging at least once a week",
+      "Purchases athletic footwear for fitness or casual wear",
+      "Researches product reviews and compares brands before buying",
+      "Values performance features (cushioning, support, weight) and brand reputation",
+      "May participate in running events or use fitness apps"
+    ],
+    "exclusions": [
+      "Children under 18 (unless buying for themselves, but typically parent proxy)",
+      "Professional athletes or elite runners (niche, not representative of mass market)",
+      "Institutional buyers (e.g., gyms, schools, military) – not consumer segment",
+      "People who only buy running shoes for fashion without any running activity"
+    ],
+    "contextDemographics": {
+      "age_range": "18-65",
+      "gender": "all",
+      "income_band": "middle to upper-middle income",
+      "urbanicity": "urban and suburban"
+    },
+    "assumptions": [
+      "The segment refers to the consumer retail market, not the institutional or team-sports market.",
+      "Running shoes are considered a consumer good with high household penetration.",
+      "The survey targets individual buyers, not parents buying for children (unless the child is the end-user, but we focus on adult buyers)."
+    ],
+    "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "segment": "Running Shoes",
+  "slug": "running-shoes",
+  "region": "latin-america",
+  "frontend": {
+    "sections": [
+      {
+        "id": "profile",
+        "label": "Consumer Profile",
+        "questions": [
+          {
+            "id": "q1",
+            "qNum": 1,
+            "question": "Which of the following best describes how running fits into your life right now?",
+            "options": [
+              "I run occasionally, mostly for fun or to stay active",
+              "I run a few times a month to keep in shape",
+              "I run at least once a week as part of my routine",
+              "I run several times a week and take it seriously",
+              "I train for races or competitions regularly",
+              "I don't run currently, but I'm thinking about starting"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I run occasionally, mostly for fun or to stay active",
+                "value": 28.0
+              },
+              {
+                "label": "I run a few times a month to keep in shape",
+                "value": 22.0
+              },
+              {
+                "label": "I run at least once a week as part of my routine",
+                "value": 18.0
+              },
+              {
+                "label": "I run several times a week and take it seriously",
+                "value": 15.0
+              },
+              {
+                "label": "I train for races or competitions regularly",
+                "value": 9.0
+              },
+              {
+                "label": "I don't run currently, but I'm thinking about starting",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: I run occasionally, mostly for fun or to stay active (28.00%).",
+            "distributionNote": "Casual and health-oriented personas (Budget-Conscious Beginner, Family-Focused, Health-Motivated) dominate occasional/few-times-a-month; Aspiring Amateur and Urban Professional drive serious/race segments.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "running_relationship",
+            "beatTitle": "Running relationship",
+            "beatCanonical": "category_entry"
+          },
+          {
+            "id": "q2",
+            "qNum": 2,
+            "question": "In a typical week, on how many days do you wear running shoes?",
+            "options": [
+              "Every day",
+              "5-6 days",
+              "3-4 days",
+              "1-2 days",
+              "Less than once a week"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Every day",
+                "value": 12.0
+              },
+              {
+                "label": "5-6 days",
+                "value": 18.0
+              },
+              {
+                "label": "3-4 days",
+                "value": 32.0
+              },
+              {
+                "label": "1-2 days",
+                "value": 28.0
+              },
+              {
+                "label": "Less than once a week",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: 3-4 days (32.00%).",
+            "distributionNote": "Most wear running shoes a few days a week for casual/errands; daily wear driven by style-driven and health-motivated personas.",
+            "N": 330,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "running_occasions",
+            "beatTitle": "Running occasions",
+            "beatCanonical": "usage_occasion"
+          },
+          {
+            "id": "q3",
+            "qNum": 3,
+            "question": "In a typical week, which of the following activities do you use your running shoes for? Select all that apply.",
+            "options": [
+              "Running outdoors (streets, parks, trails)",
+              "Running on a treadmill or indoor track",
+              "Walking (for exercise or errands)",
+              "Going to the gym or doing other workouts",
+              "Wearing them casually (work, school, social outings)",
+              "Other"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Running outdoors (streets, parks, trails)",
+                "value": 55.0
+              },
+              {
+                "label": "Running on a treadmill or indoor track",
+                "value": 30.0
+              },
+              {
+                "label": "Walking (for exercise or errands)",
+                "value": 65.0
+              },
+              {
+                "label": "Going to the gym or doing other workouts",
+                "value": 35.0
+              },
+              {
+                "label": "Wearing them casually (work, school, social outings)",
+                "value": 45.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: Walking (for exercise or errands) (65.00%).",
+            "distributionNote": "Select-all rates reflect multi-use: walking and casual wear are high across family/casual personas; running-specific uses driven by serious runners.",
+            "N": 330,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "shoe_usage_context",
+            "beatTitle": "Shoe usage context",
+            "beatCanonical": "usage_occasion",
+            "multiSelect": true
+          },
+          {
+            "id": "q4",
+            "qNum": 4,
+            "question": "Who in your household runs or jogs regularly (at least once a month)? Select all that apply.",
+            "options": [
+              "I do",
+              "My partner or spouse",
+              "My children",
+              "My parents",
+              "Other family members",
+              "No one in my household runs or jogs"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I do",
+                "value": 60.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 25.0
+              },
+              {
+                "label": "My children",
+                "value": 20.0
+              },
+              {
+                "label": "My parents",
+                "value": 10.0
+              },
+              {
+                "label": "Other family members",
+                "value": 8.0
+              },
+              {
+                "label": "No one in my household runs or jogs",
+                "value": 15.0
+              }
+            ],
+            "insight": "Top response: I do (60.00%).",
+            "distributionNote": "Self is primary runner; family-focused personas increase partner/children rates; some households have no runners.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "household_involvement",
+            "beatTitle": "Household involvement",
+            "beatCanonical": "household_role",
+            "multiSelect": true
+          },
+          {
+            "id": "q5",
+            "qNum": 5,
+            "question": "When choosing running shoes for yourself or someone in your household, who usually has the most influence on the final decision?",
+            "options": [
+              "I do",
+              "My partner or spouse",
+              "My children",
+              "My parents",
+              "Another family member",
+              "A friend or running partner",
+              "A store salesperson or expert",
+              "No one – we rarely buy running shoes"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "I do",
+                "value": 70.0
+              },
+              {
+                "label": "My partner or spouse",
+                "value": 12.0
+              },
+              {
+                "label": "My children",
+                "value": 5.0
+              },
+              {
+                "label": "My parents",
+                "value": 4.0
+              },
+              {
+                "label": "Another family member",
+                "value": 3.0
+              },
+              {
+                "label": "A friend or running partner",
+                "value": 3.0
+              },
+              {
+                "label": "A store salesperson or expert",
+                "value": 2.0
+              },
+              {
+                "label": "No one – we rarely buy running shoes",
+                "value": 1.0
+              }
+            ],
+            "insight": "Top response: I do (70.00%).",
+            "distributionNote": "Self-decision dominates; family influence modest; local store loyalists may rely on salesperson but small weight.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "household_involvement",
+            "beatTitle": "Household involvement",
+            "beatCanonical": "household_role"
+          },
+          {
+            "id": "q6",
+            "qNum": 6,
+            "question": "Which of the following best describes your main reason for running?",
+            "options": [
+              "To improve my fitness and stay in shape",
+              "To relieve stress and clear my head",
+              "To train for races or competitions",
+              "To spend time with friends or a running group",
+              "To enjoy being outdoors and exploring",
+              "Other"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "To improve my fitness and stay in shape",
+                "value": 45.0
+              },
+              {
+                "label": "To relieve stress and clear my head",
+                "value": 18.0
+              },
+              {
+                "label": "To train for races or competitions",
+                "value": 10.0
+              },
+              {
+                "label": "To spend time with friends or a running group",
+                "value": 7.0
+              },
+              {
+                "label": "To enjoy being outdoors and exploring",
+                "value": 12.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: To improve my fitness and stay in shape (45.00%).",
+            "distributionNote": "Fitness is primary across health and family personas; stress relief and outdoors appeal to casual/eco personas; race training small.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "running_motivations",
+            "beatTitle": "Running motivations",
+            "beatCanonical": "need_state"
+          }
+        ]
+      },
+      {
+        "id": "behavior",
+        "label": "Buying Behavior",
+        "questions": [
+          {
+            "id": "q7",
+            "qNum": 7,
+            "question": "Which of the following most often prompts you to buy a new pair of running shoes?",
+            "options": [
+              "My current pair is worn out or no longer comfortable",
+              "I have a new running goal or training plan",
+              "An upcoming race or event",
+              "I just want a new pair for style or motivation",
+              "I found a good deal or discount",
+              "Other"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "My current pair is worn out or no longer comfortable",
+                "value": 42.0
+              },
+              {
+                "label": "I have a new running goal or training plan",
+                "value": 18.0
+              },
+              {
+                "label": "An upcoming race or event",
+                "value": 10.0
+              },
+              {
+                "label": "I just want a new pair for style or motivation",
+                "value": 12.0
+              },
+              {
+                "label": "I found a good deal or discount",
+                "value": 13.0
+              },
+              {
+                "label": "Other",
+                "value": 5.0
+              }
+            ],
+            "insight": "Top response: My current pair is worn out or no longer comfortable (42.00%).",
+            "distributionNote": "Worn-out/comfort triggers dominate across budget, family, and health personas; deal-seeking is boosted by value and budget personas.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "purchase_trigger",
+            "beatTitle": "Purchase trigger",
+            "beatCanonical": "purchase_trigger"
+          },
+          {
+            "id": "q8",
+            "qNum": 8,
+            "question": "Before you decide to buy a new pair of running shoes, where do you typically first hear about or see new options? Select the one that applies most often.",
+            "options": [
+              "Online ads or social media posts",
+              "Recommendations from friends or family",
+              "In a physical store (seeing them on display)",
+              "Running or fitness websites and blogs",
+              "Email newsletters from retailers",
+              "Other"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "Online ads or social media posts",
+                "value": 30.0
+              },
+              {
+                "label": "Recommendations from friends or family",
+                "value": 24.0
+              },
+              {
+                "label": "In a physical store (seeing them on display)",
+                "value": 22.0
+              },
+              {
+                "label": "Running or fitness websites and blogs",
+                "value": 12.0
+              },
+              {
+                "label": "Email newsletters from retailers",
+                "value": 6.0
+              },
+              {
+                "label": "Other",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: Online ads or social media posts (30.00%).",
+            "distributionNote": "Online ads and social media are strong for mainstream and early adopters; local store loyalists and family-focused rely on in-store and word-of-mouth.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "discovery_channels",
+            "beatTitle": "Discovery channels",
+            "beatCanonical": "discovery"
+          },
+          {
+            "id": "q9",
+            "qNum": 9,
+            "question": "How much time do you typically spend researching and comparing running shoes (reading reviews, checking fit guides, comparing prices) before you buy a new pair?",
+            "options": [
+              "I don't research — I buy what looks or feels right at the store",
+              "Less than 30 minutes",
+              "30 minutes to 1 hour",
+              "1 to 3 hours",
+              "More than 3 hours, spread over several days"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "I don't research — I buy what looks or feels right at the store",
+                "value": 20.0
+              },
+              {
+                "label": "Less than 30 minutes",
+                "value": 15.0
+              },
+              {
+                "label": "30 minutes to 1 hour",
+                "value": 25.0
+              },
+              {
+                "label": "1 to 3 hours",
+                "value": 22.0
+              },
+              {
+                "label": "More than 3 hours, spread over several days",
+                "value": 18.0
+              }
+            ],
+            "insight": "Top response: 30 minutes to 1 hour (25.00%).",
+            "distributionNote": "Moderate research time is common; online research savvy and aspiring athletes spend more time, while local store loyalists and budget buyers decide quickly.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "research_process",
+            "beatTitle": "Research process",
+            "beatCanonical": "discovery"
+          },
+          {
+            "id": "q10",
+            "qNum": 10,
+            "question": "Where do you actually buy your running shoes most often?",
+            "options": [
+              "Online — from a dedicated running or sports retailer",
+              "Online — from a general marketplace or department store website",
+              "In a specialty running store",
+              "In a general sports or department store",
+              "In a local market or independent shoe shop",
+              "Other"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Online — from a dedicated running or sports retailer",
+                "value": 18.0
+              },
+              {
+                "label": "Online — from a general marketplace or department store website",
+                "value": 20.0
+              },
+              {
+                "label": "In a specialty running store",
+                "value": 15.0
+              },
+              {
+                "label": "In a general sports or department store",
+                "value": 25.0
+              },
+              {
+                "label": "In a local market or independent shoe shop",
+                "value": 14.0
+              },
+              {
+                "label": "Other",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: In a general sports or department store (25.00%).",
+            "distributionNote": "General sports/department stores and online marketplaces are popular for price-sensitive and mainstream personas; local stores retain loyalists and older segments.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "purchase_channel",
+            "beatTitle": "Purchase channel",
+            "beatCanonical": "channel"
+          },
+          {
+            "id": "q11",
+            "qNum": 11,
+            "question": "How often do you typically buy a new pair of running shoes?",
+            "options": [
+              "More than once a year",
+              "About once a year",
+              "Every 1 to 2 years",
+              "Less than every 2 years",
+              "I rarely buy running shoes"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "More than once a year",
+                "value": 18.0
+              },
+              {
+                "label": "About once a year",
+                "value": 32.0
+              },
+              {
+                "label": "Every 1 to 2 years",
+                "value": 28.0
+              },
+              {
+                "label": "Less than every 2 years",
+                "value": 14.0
+              },
+              {
+                "label": "I rarely buy running shoes",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: About once a year (32.00%).",
+            "distributionNote": "Annual or every-1-2-year cycles are typical; budget and family personas stretch intervals, while enthusiasts and professionals replace more often.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "purchase_frequency",
+            "beatTitle": "Purchase frequency",
+            "beatCanonical": "purchase_cycle"
+          },
+          {
+            "id": "q12",
+            "qNum": 12,
+            "question": "When you are choosing a new pair of running shoes, which ONE factor most often decides which shoe you pick?",
+            "options": [
+              "Comfort and cushioning",
+              "Performance for running and sports",
+              "Price and value for money",
+              "Style and aesthetics",
+              "Brand reputation and trust",
+              "Durability and how long it will last",
+              "Other"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "Comfort and cushioning",
+                "value": 35.0
+              },
+              {
+                "label": "Performance for running and sports",
+                "value": 18.0
+              },
+              {
+                "label": "Price and value for money",
+                "value": 20.0
+              },
+              {
+                "label": "Style and aesthetics",
+                "value": 8.0
+              },
+              {
+                "label": "Brand reputation and trust",
+                "value": 9.0
+              },
+              {
+                "label": "Durability and how long it will last",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Comfort and cushioning (35.00%).",
+            "distributionNote": "Comfort is the top driver across most personas; price is strong for budget and family segments, while performance matters to athletes and professionals.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "decision_drivers",
+            "beatTitle": "Decision drivers",
+            "beatCanonical": "decision_drivers"
+          },
+          {
+            "id": "q13",
+            "qNum": 13,
+            "question": "Roughly how much do you typically spend on a new pair of running shoes?",
+            "options": [
+              "Less than $30",
+              "$30 to $59",
+              "$60 to $99",
+              "$100 to $149",
+              "$150 or more"
+            ],
+            "chart": "radar",
+            "data": [
+              {
+                "label": "Less than $30",
+                "value": 10.0
+              },
+              {
+                "label": "$30 to $59",
+                "value": 30.0
+              },
+              {
+                "label": "$60 to $99",
+                "value": 35.0
+              },
+              {
+                "label": "$100 to $149",
+                "value": 18.0
+              },
+              {
+                "label": "$150 or more",
+                "value": 7.0
+              }
+            ],
+            "insight": "Top response: $60 to $99 (35.00%).",
+            "distributionNote": "Price sensitivity pushes most toward $30-$99; upper-middle personas and enthusiasts are willing to spend $100+.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "spend_band",
+            "beatTitle": "Spend band",
+            "beatCanonical": "spend"
+          },
+          {
+            "id": "q14",
+            "qNum": 14,
+            "question": "When you buy a new pair of running shoes, how often do you stick with the same model you bought before?",
+            "options": [
+              "Always the same model",
+              "Mostly the same model",
+              "Sometimes the same, sometimes different",
+              "Mostly different models",
+              "Always a different model"
+            ],
+            "chart": "gauge",
+            "data": [
+              {
+                "label": "Always the same model",
+                "value": 12.0
+              },
+              {
+                "label": "Mostly the same model",
+                "value": 28.0
+              },
+              {
+                "label": "Sometimes the same, sometimes different",
+                "value": 30.0
+              },
+              {
+                "label": "Mostly different models",
+                "value": 18.0
+              },
+              {
+                "label": "Always a different model",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: Sometimes the same, sometimes different (30.00%).",
+            "distributionNote": "Brand-loyal personas (local store loyalists, aspiring athletes) stick with models; style-driven and online researchers are more likely to switch.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "repurchase_habit",
+            "beatTitle": "Repurchase habit",
+            "beatCanonical": "repurchase"
+          }
+        ]
+      },
+      {
+        "id": "preferences",
+        "label": "Preferences & Expectations",
+        "questions": [
+          {
+            "id": "q15",
+            "qNum": 15,
+            "question": "Which of the following features are non-negotiable for you in a running shoe? Select all that apply.",
+            "options": [
+              "Cushioning that absorbs impact",
+              "Arch support and stability",
+              "Breathable materials for hot weather",
+              "Good grip and traction",
+              "A secure, snug fit",
+              "Flexibility in the sole",
+              "None of the above"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Cushioning that absorbs impact",
+                "value": 78.0
+              },
+              {
+                "label": "Arch support and stability",
+                "value": 65.0
+              },
+              {
+                "label": "Breathable materials for hot weather",
+                "value": 55.0
+              },
+              {
+                "label": "Good grip and traction",
+                "value": 40.0
+              },
+              {
+                "label": "A secure, snug fit",
+                "value": 70.0
+              },
+              {
+                "label": "Flexibility in the sole",
+                "value": 35.0
+              },
+              {
+                "label": "None of the above",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: Cushioning that absorbs impact (78.00%).",
+            "distributionNote": "Comfort and fit dominate across personas; hot climate runner and budget-conscious drive breathability; wide foot seeker and health-motivated drive arch support.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have features",
+            "beatCanonical": "must_haves",
+            "multiSelect": true
+          },
+          {
+            "id": "q16",
+            "qNum": 16,
+            "question": "When choosing a running shoe, how important is cushioning to you?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 2.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 8.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 25.0
+              },
+              {
+                "label": "Very important",
+                "value": 45.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Very important (45.00%).",
+            "distributionNote": "Family-focused, health-motivated, and budget-conscious prioritize cushioning; performance-oriented also value it, but some style-driven and eco-conscious are less focused.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "must_have_features",
+            "beatTitle": "Must-have features",
+            "beatCanonical": "must_haves",
+            "ordered": true
+          },
+          {
+            "id": "q17",
+            "qNum": 17,
+            "question": "When you are judging how well a running shoe fits, which of the following matters most to you?",
+            "options": [
+              "The length is true to size",
+              "The width fits my foot comfortably",
+              "The heel stays snug without slipping",
+              "The toe box gives my toes enough room",
+              "The arch support lines up with my foot",
+              "Other"
+            ],
+            "chart": "waffle",
+            "data": [
+              {
+                "label": "The length is true to size",
+                "value": 25.0
+              },
+              {
+                "label": "The width fits my foot comfortably",
+                "value": 30.0
+              },
+              {
+                "label": "The heel stays snug without slipping",
+                "value": 15.0
+              },
+              {
+                "label": "The toe box gives my toes enough room",
+                "value": 20.0
+              },
+              {
+                "label": "The arch support lines up with my foot",
+                "value": 8.0
+              },
+              {
+                "label": "Other",
+                "value": 2.0
+              }
+            ],
+            "insight": "Top response: The width fits my foot comfortably (30.00%).",
+            "distributionNote": "Wide foot seeker and value-seeking family drive width importance; length and toe box also matter for comfort-focused personas; arch support less prioritized.",
+            "N": 330,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "fit_and_sizing",
+            "beatTitle": "Fit and sizing"
+          },
+          {
+            "id": "q18",
+            "qNum": 18,
+            "question": "When you think about the materials and construction of a running shoe, which of the following would make you doubt how long it will last? Select all that apply.",
+            "options": [
+              "Thin or flimsy sole that bends too easily",
+              "Visible glue marks or loose stitching",
+              "Mesh that feels fragile or see-through",
+              "Sole that feels hard and brittle",
+              "Shoe feels heavier than expected",
+              "None of the above"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "Thin or flimsy sole that bends too easily",
+                "value": 70.0
+              },
+              {
+                "label": "Visible glue marks or loose stitching",
+                "value": 55.0
+              },
+              {
+                "label": "Mesh that feels fragile or see-through",
+                "value": 45.0
+              },
+              {
+                "label": "Sole that feels hard and brittle",
+                "value": 40.0
+              },
+              {
+                "label": "Shoe feels heavier than expected",
+                "value": 30.0
+              },
+              {
+                "label": "None of the above",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: Thin or flimsy sole that bends too easily (70.00%).",
+            "distributionNote": "Durability concerns are high across budget-conscious and family personas; flimsy sole and poor construction are top red flags; hot climate runner also worries about fragile mesh.",
+            "N": 330,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "quality_cues",
+            "beatTitle": "Quality cues",
+            "beatCanonical": "quality_cues",
+            "multiSelect": true
+          },
+          {
+            "id": "q19",
+            "qNum": 19,
+            "question": "How important is the look and color of a running shoe to you, especially when wearing them beyond running?",
+            "options": [
+              "Not at all important",
+              "Slightly important",
+              "Moderately important",
+              "Very important",
+              "Extremely important"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Not at all important",
+                "value": 10.0
+              },
+              {
+                "label": "Slightly important",
+                "value": 25.0
+              },
+              {
+                "label": "Moderately important",
+                "value": 35.0
+              },
+              {
+                "label": "Very important",
+                "value": 20.0
+              },
+              {
+                "label": "Extremely important",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Moderately important (35.00%).",
+            "distributionNote": "Style-driven casual and urban professional push importance; but budget and performance personas care less, resulting in a moderate peak.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "style_and_aesthetics",
+            "beatTitle": "Style and aesthetics",
+            "beatCanonical": "format_packaging",
+            "ordered": true
+          },
+          {
+            "id": "q20",
+            "qNum": 20,
+            "question": "Which of the following claims or certifications would make you more likely to choose one running shoe over another? Select all that apply.",
+            "options": [
+              "Made with recycled materials",
+              "Produced under ethical labor conditions",
+              "Carbon-neutral manufacturing",
+              "Vegan materials",
+              "Designed for durability and long life",
+              "None of these would influence my choice"
+            ],
+            "chart": "lollipop",
+            "data": [
+              {
+                "label": "Made with recycled materials",
+                "value": 30.0
+              },
+              {
+                "label": "Produced under ethical labor conditions",
+                "value": 35.0
+              },
+              {
+                "label": "Carbon-neutral manufacturing",
+                "value": 15.0
+              },
+              {
+                "label": "Vegan materials",
+                "value": 10.0
+              },
+              {
+                "label": "Designed for durability and long life",
+                "value": 60.0
+              },
+              {
+                "label": "None of these would influence my choice",
+                "value": 20.0
+              }
+            ],
+            "insight": "Top response: Designed for durability and long life (60.00%).",
+            "distributionNote": "Durability claim resonates with budget and family personas; ethical and recycled claims appeal to eco-conscious and urban professionals; many remain skeptical.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "claims_and_credentials",
+            "beatTitle": "Claims and credentials",
+            "beatCanonical": "claims_credentials",
+            "multiSelect": true
+          },
+          {
+            "id": "q21",
+            "qNum": 21,
+            "question": "If you had to choose between two running shoes that both fit well, which trade-off would you be most willing to make?",
+            "options": [
+              "Pay more for a shoe that lasts longer",
+              "Give up some cushioning for a lighter shoe",
+              "Choose a less stylish shoe to get better performance",
+              "Choose a more sustainable shoe even if it costs more",
+              "Choose a cheaper shoe even if it wears out sooner",
+              "None of the above"
+            ],
+            "chart": "hbar",
+            "data": [
+              {
+                "label": "Pay more for a shoe that lasts longer",
+                "value": 40.0
+              },
+              {
+                "label": "Give up some cushioning for a lighter shoe",
+                "value": 10.0
+              },
+              {
+                "label": "Choose a less stylish shoe to get better performance",
+                "value": 15.0
+              },
+              {
+                "label": "Choose a more sustainable shoe even if it costs more",
+                "value": 10.0
+              },
+              {
+                "label": "Choose a cheaper shoe even if it wears out sooner",
+                "value": 15.0
+              },
+              {
+                "label": "None of the above",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Pay more for a shoe that lasts longer (40.00%).",
+            "distributionNote": "Durability is top priority for budget and family personas; performance-oriented choose performance over style; some price-sensitive choose cheaper option.",
+            "N": 330,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 7,
+            "narrativeOrder": 7,
+            "beatId": "tradeoffs",
+            "beatTitle": "Trade-offs",
+            "beatCanonical": "tradeoffs"
+          },
+          {
+            "id": "q22",
+            "qNum": 22,
+            "question": "Considering a running shoe that meets all your functional needs, which price range would you consider a fair price to pay?",
+            "options": [
+              "Under $50",
+              "$50 to $79",
+              "$80 to $109",
+              "$110 to $139",
+              "$140 to $169",
+              "$170 or more"
+            ],
+            "chart": "vbar",
+            "data": [
+              {
+                "label": "Under $50",
+                "value": 20.0
+              },
+              {
+                "label": "$50 to $79",
+                "value": 35.0
+              },
+              {
+                "label": "$80 to $109",
+                "value": 25.0
+              },
+              {
+                "label": "$110 to $139",
+                "value": 12.0
+              },
+              {
+                "label": "$140 to $169",
+                "value": 5.0
+              },
+              {
+                "label": "$170 or more",
+                "value": 3.0
+              }
+            ],
+            "insight": "Top response: $50 to $79 (35.00%).",
+            "distributionNote": "High price sensitivity and middle income push majority to under $110; upper-middle personas allow higher but still value-conscious.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 8,
+            "narrativeOrder": 8,
+            "beatId": "value_expectation",
+            "beatTitle": "Value expectation",
+            "beatCanonical": "value_expectation"
+          }
+        ]
+      },
+      {
+        "id": "satisfaction",
+        "label": "Satisfaction & Future Intent",
+        "questions": [
+          {
+            "id": "q23",
+            "qNum": 23,
+            "question": "Overall, how satisfied are you with the running shoes you currently use?",
+            "options": [
+              "Very dissatisfied",
+              "Somewhat dissatisfied",
+              "Neither satisfied nor dissatisfied",
+              "Somewhat satisfied",
+              "Very satisfied"
+            ],
+            "chart": "diverging",
+            "data": [
+              {
+                "label": "Very dissatisfied",
+                "value": 12.0
+              },
+              {
+                "label": "Somewhat dissatisfied",
+                "value": 28.0
+              },
+              {
+                "label": "Neither satisfied nor dissatisfied",
+                "value": 25.0
+              },
+              {
+                "label": "Somewhat satisfied",
+                "value": 27.0
+              },
+              {
+                "label": "Very satisfied",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: Somewhat dissatisfied (28.00%).",
+            "distributionNote": "Price-sensitive and durability-focused personas (Budget-Conscious Beginner 14%, Family-Focused 10%, Value-Seeking 10%) skew toward dissatisfaction; comfort-driven and brand-loyal personas (Local Store Loyalist 9%, Aspiring Amateur 8%) add moderate satisfaction.",
+            "N": 330,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 1,
+            "narrativeOrder": 1,
+            "beatId": "overall_satisfaction",
+            "beatTitle": "Overall satisfaction",
+            "beatCanonical": "overall_satisfaction",
+            "ordered": true
+          },
+          {
+            "id": "q24",
+            "qNum": 24,
+            "question": "In the last 30 days, which of the following frustrations have you experienced with your current running shoes? Select all that apply.",
+            "options": [
+              "They hurt my feet or cause blisters",
+              "They are not breathable enough for hot weather",
+              "The sizing is inconsistent or hard to get right",
+              "They wear out or lose cushioning too quickly",
+              "They lack enough arch support or stability",
+              "They are too expensive for the quality I get",
+              "None of the above — I have not had any of these frustrations"
+            ],
+            "chart": "hbar-multi",
+            "data": [
+              {
+                "label": "They hurt my feet or cause blisters",
+                "value": 32.0
+              },
+              {
+                "label": "They are not breathable enough for hot weather",
+                "value": 25.0
+              },
+              {
+                "label": "The sizing is inconsistent or hard to get right",
+                "value": 22.0
+              },
+              {
+                "label": "They wear out or lose cushioning too quickly",
+                "value": 28.0
+              },
+              {
+                "label": "They lack enough arch support or stability",
+                "value": 18.0
+              },
+              {
+                "label": "They are too expensive for the quality I get",
+                "value": 30.0
+              },
+              {
+                "label": "None of the above — I have not had any of these frustrations",
+                "value": 8.0
+              }
+            ],
+            "insight": "Top response: They hurt my feet or cause blisters (32.00%).",
+            "distributionNote": "High price sensitivity and durability complaints dominate (Budget, Family, Value); breathability is strong due to hot climate (Hot Climate Runner 10%); fit issues from Wide Foot Seeker and Online Research Savvy.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 2,
+            "narrativeOrder": 2,
+            "beatId": "friction_points",
+            "beatTitle": "Friction points",
+            "beatCanonical": "friction",
+            "multiSelect": true
+          },
+          {
+            "id": "q25",
+            "qNum": 25,
+            "question": "Which ONE of the following would most likely make you switch to a different running shoe model or brand?",
+            "options": [
+              "A noticeably better fit or more size options",
+              "Better durability for the same price",
+              "A lower price for similar quality",
+              "More breathable or cooler materials",
+              "Better arch support or stability",
+              "More sustainable or ethically produced materials",
+              "None of these — I would not switch for any of these reasons"
+            ],
+            "chart": "donut",
+            "data": [
+              {
+                "label": "A noticeably better fit or more size options",
+                "value": 20.0
+              },
+              {
+                "label": "Better durability for the same price",
+                "value": 22.0
+              },
+              {
+                "label": "A lower price for similar quality",
+                "value": 24.0
+              },
+              {
+                "label": "More breathable or cooler materials",
+                "value": 12.0
+              },
+              {
+                "label": "Better arch support or stability",
+                "value": 10.0
+              },
+              {
+                "label": "More sustainable or ethically produced materials",
+                "value": 6.0
+              },
+              {
+                "label": "None of these — I would not switch for any of these reasons",
+                "value": 6.0
+              }
+            ],
+            "insight": "Top response: A lower price for similar quality (24.00%).",
+            "distributionNote": "Price and durability are top switch triggers for price-sensitive personas (Budget, Family, Value); fit is key for Wide Foot Seeker and Online Research Savvy; breathability for Hot Climate Runner; sustainability niche (Eco-Conscious 6%).",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 3,
+            "narrativeOrder": 3,
+            "beatId": "switching_triggers",
+            "beatTitle": "Switching triggers",
+            "beatCanonical": "switching"
+          },
+          {
+            "id": "q26",
+            "qNum": 26,
+            "question": "How likely are you to recommend your current running shoes to a friend or family member who is looking for a new pair?",
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "hbar-likert",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 15.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 25.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 25.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 25.0
+              },
+              {
+                "label": "Very likely",
+                "value": 10.0
+              }
+            ],
+            "insight": "Top response: Somewhat unlikely (25.00%).",
+            "distributionNote": "Mixed sentiment: price and durability frustrations lower likelihood; comfort and brand-loyal personas (Local Store Loyalist, Aspiring Amateur) are more likely to recommend.",
+            "N": 330,
+            "questionLayer": "full",
+            "isGrounded": true,
+            "funnelPosition": 4,
+            "narrativeOrder": 4,
+            "beatId": "recommend_intent",
+            "beatTitle": "Recommend intent",
+            "beatCanonical": "advocacy",
+            "ordered": true
+          },
+          {
+            "id": "q27",
+            "qNum": 27,
+            "question": "In the next 12 months, how likely are you to increase how often you run?",
+            "options": [
+              "Very unlikely",
+              "Somewhat unlikely",
+              "Neither likely nor unlikely",
+              "Somewhat likely",
+              "Very likely"
+            ],
+            "chart": "vbar-likert",
+            "data": [
+              {
+                "label": "Very unlikely",
+                "value": 8.0
+              },
+              {
+                "label": "Somewhat unlikely",
+                "value": 15.0
+              },
+              {
+                "label": "Neither likely nor unlikely",
+                "value": 25.0
+              },
+              {
+                "label": "Somewhat likely",
+                "value": 35.0
+              },
+              {
+                "label": "Very likely",
+                "value": 17.0
+              }
+            ],
+            "insight": "Top response: Somewhat likely (35.00%).",
+            "distributionNote": "Growing market and health goals (Budget-Conscious Beginner, Health-Motivated Midlife) drive likelihood to increase running; some casual/price-sensitive personas are neutral.",
+            "N": 330,
+            "questionLayer": "module",
+            "isGrounded": true,
+            "funnelPosition": 5,
+            "narrativeOrder": 5,
+            "beatId": "future_use",
+            "beatTitle": "Future use",
+            "beatCanonical": "future_use",
+            "ordered": true
+          },
+          {
+            "id": "q28",
+            "qNum": 28,
+            "question": "In the next 12 months, how do you expect your use of running shoes to change?",
+            "options": [
+              "I will run more often and need more running shoes",
+              "I will run about the same and replace shoes as needed",
+              "I will run less often and need fewer running shoes",
+              "I will stop running and no longer need running shoes",
+              "I am not sure"
+            ],
+            "chart": "stacked",
+            "data": [
+              {
+                "label": "I will run more often and need more running shoes",
+                "value": 30.0
+              },
+              {
+                "label": "I will run about the same and replace shoes as needed",
+                "value": 45.0
+              },
+              {
+                "label": "I will run less often and need fewer running shoes",
+                "value": 10.0
+              },
+              {
+                "label": "I will stop running and no longer need running shoes",
+                "value": 3.0
+              },
+              {
+                "label": "I am not sure",
+                "value": 12.0
+              }
+            ],
+            "insight": "Top response: I will run about the same and replace shoes as needed (45.00%).",
+            "distributionNote": "Growth outlook and health motivation (Budget, Health-Motivated, Aspiring Amateur) support increased usage; many mainstream buyers expect to replace as needed; uncertainty from casual and price-sensitive segments.",
+            "N": 330,
+            "questionLayer": "core",
+            "isGrounded": true,
+            "funnelPosition": 6,
+            "narrativeOrder": 6,
+            "beatId": "future_use",
+            "beatTitle": "Future use",
+            "beatCanonical": "future_use"
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "total_questions": 28,
+    "counts_by_tab": {
+      "consumer_profile": 6,
+      "buying_behavior": 8,
+      "preferences_expectations": 8,
+      "satisfaction_future_intent": 6
+    },
+    "generation_mode": "quota",
+    "grounded_pct": 100.0,
+    "direct_grounded_pct": 100.0,
+    "adjacent_grounded_pct": 0.0,
+    "revision_count": 3,
+    "grounding_thin": false,
+    "warnings": [
+      "Tab 'consumer_profile' under target: 6/8.",
+      "Tab 'satisfaction_future_intent' under target: 6/8.",
+      "Revision cap reached (3) — shipped best-effort with remaining issues."
+    ],
+    "storyline": {
+      "profile": [
+        {
+          "beatId": "running_relationship",
+          "title": "Running relationship",
+          "canonical": "category_entry",
+          "order": 1
+        },
+        {
+          "beatId": "running_occasions",
+          "title": "Running occasions",
+          "canonical": "usage_occasion",
+          "order": 2
+        },
+        {
+          "beatId": "running_frequency",
+          "title": "Running frequency",
+          "canonical": "usage_frequency",
+          "order": 3
+        },
+        {
+          "beatId": "shoe_usage_context",
+          "title": "Shoe usage context",
+          "canonical": "usage_occasion",
+          "order": 4
+        },
+        {
+          "beatId": "household_involvement",
+          "title": "Household involvement",
+          "canonical": "household_role",
+          "order": 5
+        },
+        {
+          "beatId": "running_motivations",
+          "title": "Running motivations",
+          "canonical": "need_state",
+          "order": 6
+        }
+      ],
+      "behavior": [
+        {
+          "beatId": "purchase_trigger",
+          "title": "Purchase trigger",
+          "canonical": "purchase_trigger",
+          "order": 1
+        },
+        {
+          "beatId": "discovery_channels",
+          "title": "Discovery channels",
+          "canonical": "discovery",
+          "order": 2
+        },
+        {
+          "beatId": "research_process",
+          "title": "Research process",
+          "canonical": "discovery",
+          "order": 3
+        },
+        {
+          "beatId": "purchase_channel",
+          "title": "Purchase channel",
+          "canonical": "channel",
+          "order": 4
+        },
+        {
+          "beatId": "purchase_frequency",
+          "title": "Purchase frequency",
+          "canonical": "purchase_cycle",
+          "order": 5
+        },
+        {
+          "beatId": "decision_drivers",
+          "title": "Decision drivers",
+          "canonical": "decision_drivers",
+          "order": 6
+        },
+        {
+          "beatId": "spend_band",
+          "title": "Spend band",
+          "canonical": "spend",
+          "order": 7
+        },
+        {
+          "beatId": "repurchase_habit",
+          "title": "Repurchase habit",
+          "canonical": "repurchase",
+          "order": 8
+        }
+      ],
+      "preferences": [
+        {
+          "beatId": "must_have_features",
+          "title": "Must-have features",
+          "canonical": "must_haves",
+          "order": 1
+        },
+        {
+          "beatId": "fit_and_sizing",
+          "title": "Fit and sizing",
+          "canonical": null,
+          "order": 2
+        },
+        {
+          "beatId": "quality_cues",
+          "title": "Quality cues",
+          "canonical": "quality_cues",
+          "order": 3
+        },
+        {
+          "beatId": "style_and_aesthetics",
+          "title": "Style and aesthetics",
+          "canonical": "format_packaging",
+          "order": 4
+        },
+        {
+          "beatId": "claims_and_credentials",
+          "title": "Claims and credentials",
+          "canonical": "claims_credentials",
+          "order": 5
+        },
+        {
+          "beatId": "tradeoffs",
+          "title": "Trade-offs",
+          "canonical": "tradeoffs",
+          "order": 6
+        },
+        {
+          "beatId": "value_expectation",
+          "title": "Value expectation",
+          "canonical": "value_expectation",
+          "order": 7
+        }
+      ],
+      "satisfaction": [
+        {
+          "beatId": "overall_satisfaction",
+          "title": "Overall satisfaction",
+          "canonical": "overall_satisfaction",
+          "order": 1
+        },
+        {
+          "beatId": "satisfaction_drivers",
+          "title": "Satisfaction drivers",
+          "canonical": "satisfaction_drivers",
+          "order": 2
+        },
+        {
+          "beatId": "friction_points",
+          "title": "Friction points",
+          "canonical": "friction",
+          "order": 3
+        },
+        {
+          "beatId": "switching_triggers",
+          "title": "Switching triggers",
+          "canonical": "switching",
+          "order": 4
+        },
+        {
+          "beatId": "recommend_intent",
+          "title": "Recommend intent",
+          "canonical": "advocacy",
+          "order": 5
+        },
+        {
+          "beatId": "future_use",
+          "title": "Future use",
+          "canonical": "future_use",
+          "order": 6
+        }
+      ]
+    },
+    "storyline_summary": "The survey opens by establishing the respondent's relationship with running and how it fits into their life, then moves into their shoe usage context. It then traces the purchase journey from trigger through discovery, research, channel, and decision, ending with spend and loyalty. Next, it explores what they demand from a shoe—features, fit, quality, style, claims—and how they trade off and value these. Finally, it assesses their satisfaction, pain points, and future intentions, closing with advocacy and forward-looking behavior.",
+    "storyline_source": "planner",
+    "storyline_notes": [
+      "Added a category-specific 'fit_and_sizing' beat in preferences_expectations because fit and sizing are top pain points in the region and critical for footwear.",
+      "In consumer_profile, split 'usage_occasion' into two beats: 'running_occasions' (when/why they run) and 'shoe_usage_context' (whether shoes are used only for running or also casual), to capture the dual-use reality in Latin America.",
+      "In buying_behavior, added a separate 'research_process' beat to reflect the high research effort and online review usage among the target audience, while keeping 'discovery_channels' distinct.",
+      "Moved 'spend_band' later in buying_behavior, after decision drivers, to respect sensitivity around money.",
+      "In preferences_expectations, added 'style_and_aesthetics' as a distinct beat because many consumers wear running shoes casually, and style is a top purchase driver.",
+      "In satisfaction_future_intent, kept the canonical order but ensured 'switching_triggers' comes before 'recommend_intent' to avoid priming advocacy with switching thoughts."
+    ],
+    "classification_reason": "Running shoes are purchased by individual consumers for personal athletic and casual use. While some running shoes are sold to institutions (e.g., for team sports), the dominant market is everyday consumers buying for themselves.",
+    "generated_at": "2026-08-03T10:38:43.460220+00:00",
+    "current_date": "2026-08-03",
+    "sample_size": 2500,
+    "N": 330,
+    "chart_kinds_used": [
+      "donut",
+      "hbar",
+      "hbar-likert",
+      "hbar-multi",
+      "radar",
+      "stacked",
+      "vbar",
+      "vbar-likert"
+    ]
+  }
+}

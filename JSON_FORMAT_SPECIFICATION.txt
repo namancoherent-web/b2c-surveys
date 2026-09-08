@@ -1,0 +1,215 @@
+JSON FORMAT SPECIFICATION — B2C SURVEYS
+(Reference implementation: sport_shoes_china_v2.json / skincare_germany_v2.json)
+=========================================================
+This is the exact JSON structure to produce for every B2C survey going
+forward. It replaces earlier formats (the "frontend/survey/metadata"
+three-way split, and any format with a duplicated targetCustomer /
+surveyDefinition block). Field order matters — keep it identical across
+every survey for consistency.
+
+=========================================================
+TOP-LEVEL STRUCTURE
+=========================================================
+{
+  "surveyScope": { ... },
+  "behaviouralPersonas": [ ... ],
+  "structure": { ... },
+  "segments": [ ... ]
+}
+
+Exactly these 4 top-level keys. Nothing else at the top level — no
+internal generation metadata (warnings, nonDiscriminatingQuestions,
+grounding_pct, revision_count, etc.) belongs in the delivered file. If
+the generation pipeline needs to track that internally, keep it out of
+the customer-facing / demo-facing JSON entirely.
+
+=========================================================
+1. surveyScope
+=========================================================
+Field order (must match exactly):
+
+{
+  "title": "<Category> — Consumer Survey (<Region>)",
+  "category": "<Category>",
+  "region": "<Region>",
+  "audienceType": "B2C Consumer",
+  "definition": "<humanized paragraph — see rules below>",
+  "customersWeSurveyed": [ "<eligibility criterion>", ... ],
+  "whatIsNotAsked": [ "<thing deliberately excluded>", ... ],
+  "howToReadTheNumbers": "<one paragraph — see standard text below>"
+}
+
+RULES FOR EACH FIELD:
+
+- "title": "<Category> — Consumer Survey (<Region>)" exactly. Do not
+  add "Segmentation Study" or similar to the title itself.
+
+- "definition": This is the single most important piece of writing in
+  the file — it's the first thing a reader sees. Rules:
+    - Do NOT open with "This is a segmentation study of..." or any
+      phrase that claims formal statistical/clustering methodology this
+      survey isn't doing.
+    - Do NOT start by describing what "we are doing" methodologically.
+      Describe what the survey actually LOOKS AT for the customer.
+    - Standard template: "This survey looks at how customers in
+      <Region> use, choose and feel about <category> — covering
+      <2-4 major themes drawn from the actual segments below>.
+      Responses are grouped into four behavioural profiles, described
+      below, to show how different types of buyers think and act
+      differently within the same category."
+    - Use "customers," never "respondents," anywhere in this file
+      (unless a specific project explicitly requests "respondent"
+      instead — confirm house style before generating).
+
+- "customersWeSurveyed" (NOT "whoQualifies" or "eligibility" — this
+  describes who WAS surveyed, past tense, since the survey is complete,
+  not forward-looking screening criteria): array of 3-5 short criteria
+  strings, e.g.:
+    "Owns or has bought <category> for personal use"
+    "Based in <Region>"
+    "Makes their own <category> purchase decisions"
+    "Aged 18 or older"
+
+- "whatIsNotAsked": array of 2-3 strings. Always include:
+    - The profiling-not-used-to-drive-findings statement.
+    - The no-brand-names statement.
+    - A category-specific "nothing about adjacent categories" statement.
+
+- "howToReadTheNumbers": standard paragraph, adapt only the category
+  reference:
+    "Percentages are modelled example response shapes for survey-design
+    review, not measurements from fielded interviews. Single-choice and
+    rating-scale questions sum to 100%. Multi-select questions do not —
+    each option is an independent share of customers choosing it."
+
+- DO NOT INCLUDE a "studyPurpose" field. The definition field above
+  covers this; a separate one-line purpose statement is redundant with
+  it and has been removed by explicit request.
+
+=========================================================
+2. behaviouralPersonas
+=========================================================
+Array of exactly 4 objects:
+
+[
+  { "name": "<Persona Name>", "description": "<1-2 sentence behavioural description>" },
+  ...
+]
+
+- Exactly 4, no more, no fewer.
+- "name" must be a short, evocative 2-4 word label (e.g.
+  "Performance-Driven Athletes," "Concern-Focused Treaters").
+- "description" describes BEHAVIOUR, not demographics — never age,
+  gender, or income in a persona description.
+- This exact set must be reused for every future generation of this
+  same category+region combination (see Master Rules Section 5.2).
+
+=========================================================
+3. structure
+=========================================================
+{
+  "totalQuestions": <int, derived — never hardcoded>,
+  "sections": [
+    { "label": "<segment title>", "covers": "<segment focus line>", "questions": <int> },
+    ...
+  ]
+}
+
+- "totalQuestions" and every per-section "questions" count must be
+  computed from the actual segments array at generation time, never
+  written as a literal.
+- Every section from "segments" must appear here, INCLUDING Profiling.
+- "covers" must be copied from (or kept in sync with) that segment's
+  "focus" field — see Master Rules Section 6.1.
+
+=========================================================
+4. segments
+=========================================================
+Array of 5 objects (4 behavioural + Profiling last):
+
+{
+  "id": <int, 1-5>,
+  "title": "<segment title>",
+  "focus": "<one-sentence description of what this segment covers>",
+  "questions": [ ... ]
+}
+
+Standard 4 behavioural segment titles (adapt only if the category
+genuinely needs different ones):
+  1. "Consumer Profile, Ownership & Usage Behaviour"
+  2. "Purchase Journey & Decision Drivers"
+  3. "Product Experience & Expectations"
+  4. "Unmet Needs, Switching & Future Purchase Intent"
+  5. "Profiling"
+
+Each behavioural segment: 6 questions. Profiling: 4 questions (age,
+gender, household, income). Total: 28 questions. (Adjust question
+count per segment only if content genuinely requires it — do not pad
+to hit a number, per Master Rules Section 3.1.)
+
+=========================================================
+5. Question object
+=========================================================
+{
+  "id": "Q<n>",
+  "text": "<question text>",
+  "type": "single_select" | "multi_select" | "rating_0_10",
+  "options": [ { "label": "<option text>", "pct": <number> }, ... ],
+  "key_insight": "<one-sentence distribution note>"
+}
+
+- "id": "Q1", "Q2", etc., sequential within each segment (resets to Q1
+  at the start of each segment).
+- "type": exactly one of the three values shown. This determines both
+  the rendered instruction text ("Select one." / "Select all that
+  apply.") and whether the 100%-sum rule or the >100%-independent rule
+  applies.
+- "options": every "pct" must be a plain number (not a string, not
+  suffixed with "%" — the renderer adds the % sign).
+- "key_insight": third-person analyst voice only ("Performance-Driven
+  Athletes are the most likely to..."). Never second-person ("you/
+  your"), never imperative ("ask for..."/"choose..."). Every persona
+  name used here must be one of the 4 defined personas exactly (Master
+  Rules Section 5.3). For Profiling questions, this field must state
+  the profiling-only disclaimer (Master Rules Section 5.4).
+
+=========================================================
+PDF RENDERING CONVENTIONS
+=========================================================
+- Running header on every page: "COHERENT MARKET INSIGHTS — CONSUMER
+  INTELLIGENCE (B2C)"
+- Cover kicker: "CONSUMER INTELLIGENCE · B2C SEGMENTATION SURVEY"
+- Page order: Cover (Survey Scope, in the order below) — Behavioural
+  Personas — each segment in order — (optional) Survey Structure
+  summary page.
+- COVER PAGE SECTION ORDER (this order was corrected once already —
+  do not revert it):
+    1. Title
+    2. "Survey Scope" heading + definition paragraph
+    3. Category / Region / Audience Type table (NO Study Purpose row)
+    4. "Customers We Surveyed" heading + bullet list
+    5. "What This Survey Deliberately Does Not Ask" heading + bullets
+    6. "How to Read the Numbers" heading + paragraph
+- Footer on every page: "Example data — for survey-design review, not
+  a fielded result."
+- Every question renders as: "Q<n>. <text> [<instruction>]" followed by
+  an option table (label left, percentage right, bold, navy), followed
+  by "Key Insights: <key_insight>" in grey italic-adjacent style.
+  (Renamed from "Distribution note:" per manager review, 2026-08-25 —
+  every rendered occurrence of that label must read "Key Insights:"
+  instead, case-insensitive, wherever it appears in output.)
+
+=========================================================
+VALIDATION SCRIPT TO RUN BEFORE EVERY DELIVERY
+=========================================================
+Minimum automated checks (see Master Rules Section 7 for full list):
+  - json.dumps round-trip loads cleanly
+  - "respondent" does not appear anywhere in the file (unless house
+    style says otherwise — confirm first)
+  - every single_select/rating_0_10 question's pct values sum to
+    100 ± 0.6
+  - every multi_select question's pct values sum to > 100
+  - no two questions share an identical sorted option-label set
+  - every persona name in every key_insight matches a defined persona
+  - structure.totalQuestions equals the actual sum of segment question
+    counts

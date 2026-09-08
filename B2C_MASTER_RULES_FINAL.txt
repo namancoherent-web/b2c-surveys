@@ -1,0 +1,383 @@
+B2C SURVEY QUALITY — MASTER RULES (CONSOLIDATED FINAL)
+=========================================================
+This file replaces the two earlier working files
+(b2c_survey_fixes_skincare.txt and b2c_survey_addendum_running_shoes.txt).
+It keeps every rule that proved durable across ~8 survey reviews
+(Skincare/India, Running Shoes/China x5 generations, Skincare/Germany,
+Sport Shoes/China) and drops superseded or one-off content. Use this as
+the single source of truth for B2C generation going forward.
+
+=========================================================
+0. READ THIS FIRST — B2C IS NOT B2B WITH DIFFERENT LABELS
+=========================================================
+Rules built for B2B procurement surveys do not transfer directly to
+B2C consumer research. Key differences:
+
+- B2B asks a professional buyer about ONE practical, factual reality.
+  Near-identical B2B questions usually ARE redundant — there's one real
+  answer underneath.
+- B2C asks a consumer about their PSYCHOLOGY and BEHAVIOUR. The same
+  product can legitimately be probed from several angles — rational
+  need, trust/safety, quality perception, marketing-claim language,
+  retention condition — and these are genuinely different constructs,
+  not restatements of each other. Do NOT apply a B2B-style "these two
+  questions look similar, cut one" instinct to B2C without checking
+  whether they test the same construct from the same angle.
+- B2B demographic/role questions are QUALIFICATION, asked up front.
+  B2C demographic questions (age, gender, household, income) are
+  PROFILING: asked LAST, used only to cross-tabulate findings, NEVER to
+  drive or explain a finding. Every profiling distribution note must
+  say so explicitly (e.g. "Profiling only; not used to define the
+  behavioural personas").
+- B2C segmentation studies define named behavioural personas/clusters
+  (e.g. Performance-Focused Runners, Concern-Focused Treaters). This has
+  no B2B equivalent and must be treated as a first-class thing to
+  protect — see Section 5.
+
+=========================================================
+1. STRUCTURAL / DATA-INTEGRITY RULES
+=========================================================
+
+1.1 CURRENCY AND REGIONAL CONSISTENCY (applies to ANY region, not just
+one worked example)
+   Every price, spend, or income question must use the stated region's
+   real currency and realistic local price/income bands. Never default
+   to USD. Check every monetary question independently — a later
+   question reverting to the wrong currency after an earlier one got
+   it right is still a full violation. If any example, illustration, or
+   named platform/brand is used, it must also match the region (e.g.
+   Shopee/Lazada are Southeast Asian platforms, not appropriate for a
+   China-only survey; a UK retailer is not appropriate for a China or
+   Germany survey).
+
+1.2 STRUCTURE SUMMARY MUST BE COMPLETE AND ACCURATE
+   Any structure/section-count summary must:
+   - Explicitly name and count the Profiling block separately from the
+     behavioural sections, even though it isn't one of them.
+   - Have every section's stated question count match its actual count.
+   - Have the grand total match the sum of all listed sections.
+   A summary stating only a combined total (e.g. "5 sections · 33
+   questions") without breaking out what each section contains does not
+   satisfy this rule.
+
+1.3 A "SHIPPED WITH OPEN ISSUES" STATE MUST BLOCK DELIVERY
+   If a generation pipeline hits a revision cap or otherwise flags that
+   it shipped with known remaining issues, this must be treated as a
+   hard stop, not a soft warning to log and ignore. Do not mark a survey
+   ready for review while carrying this state. When content must be cut
+   to fix duplicates/low-value questions and a section falls under its
+   target count, prioritize backfilling with genuinely new, valuable
+   questions over shipping short — but a shorter, fully clean survey is
+   still preferable to a longer one with known unresolved defects
+   (see 3.1 — cutting real redundancy is a feature, not a shortfall to
+   compensate for).
+
+1.4 SELF-DIAGNOSIS MUST RESULT IN AN ACTUAL FIX
+   If a validation step identifies a specific duplicate or defect (e.g.
+   "these two questions measure the same thing, consider merging"), the
+   fix must be applied before the survey is finalized — logging the
+   finding without acting on it is equivalent to not checking at all.
+   This defect recurred THREE separate generations in a row for the
+   exact same question pair before being caught externally; a
+   self-diagnosis with no enforcement mechanism cannot be trusted.
+
+1.5 REPORT CHROME MUST LIVE IN THE DATA, NOT THE RENDERER
+   Every heading, running header, footer, label, and count-bearing
+   phrase that appears in the rendered report must be stored as a field
+   in the underlying data (JSON), not hardcoded in rendering code. Any
+   count that appears in text (question totals, section totals) must be
+   DERIVED from the actual data, never a literal. Test: could a
+   different renderer reproduce the report exactly from the JSON alone?
+   See Part 2 (JSON Format Specification) for the exact fields required.
+
+=========================================================
+2. QUESTION-LEVEL CONTENT RULES
+=========================================================
+
+2.1 THE VALUE TEST
+   Before finalizing any question, ask: "If a brand or manufacturer
+   read this report, would this specific question help them make a
+   real decision (positioning, formulation, pricing, channel, retention,
+   messaging)?" If the honest answer is "no — it just describes a
+   passive fact with no business lever attached," replace it. Examples
+   of failing this test found across surveys: "how long does your
+   routine take," "how many pairs do you own," "how long before it
+   feels comfortable" — all purely descriptive with nothing a brand can
+   act on. Examples of passing: "how many brands do you mix across your
+   routine" (bundle-strategy insight), "would a smaller trial size make
+   you more likely to try something new" (informs sample-SKU
+   investment), "what would you want from the brand if a product didn't
+   work" (informs CRM/support design).
+
+2.2 REDUNDANCY CHECK METHODOLOGY (compare CONSTRUCTS, not wording)
+   Two questions are duplicates only if they test the SAME construct
+   from the SAME angle — not merely because their answer options share
+   attribute names, and not merely because the wording looks similar.
+   Method:
+   - Compare answer OPTIONS across the WHOLE survey, not just within
+     one segment — duplicates can and do appear in different segments.
+   - Check for the "single construct split into 3 response formats"
+     pattern: the same attribute-importance question asked as a forced
+     single-choice ranking, then again as a multi-select must-have
+     list, then again as individual per-attribute importance scales.
+     Keep the version that best fits its segment's purpose; cut the
+     others UNLESS each serves a genuinely different strategic use
+     (e.g. positioning vs. formulation vs. retention vs. messaging).
+   - Check for "mirror-image" pairs: a "what's wrong now" question and
+     a "what would fix it" question often restate the same attributes
+     inverted (e.g. "not enough cushioning" / "better cushioning" is
+     the same attribute both ways). This is a confirmed duplicate.
+   - Check for "single-pair-vs-multi-pair" or "one-thing-vs-many-things"
+     clusters: three questions asking about consistency/versatility
+     from different angles (shopping consideration, actual behaviour,
+     stated importance) usually collapse into ONE genuine construct.
+     Keep only one.
+   - A crude word-overlap check (Jaccard similarity on option text,
+     with generic scale words like "how often/how likely/important/
+     not/slightly/moderately/very/extremely" stripped out first) is a
+     useful FIRST PASS to flag candidates, but every flagged pair must
+     be read manually — shared scale anchors and shared units (price
+     bands, age bands) will always overlap and are false positives.
+
+2.3 SEGMENT PLACEMENT MUST MATCH ACTUAL CONTENT, NOT JUST THE TOPIC WORD
+   Judge a question's segment fit by what it actually asks about, not
+   by whether it mentions a word associated with that segment.
+   Confirmed recurring failure mode: replacing a redundant/low-value
+   question with a fresh one can ACCIDENTALLY introduce the wrong
+   content type for that segment (e.g. fixing redundancy in a "Product
+   Experience" segment by adding brand-openness, expert-influence, and
+   online-purchase-confidence questions — all of which are actually
+   PURCHASE-JOURNEY content, not product-experience content). After any
+   replacement, re-read the whole segment and confirm every question
+   genuinely belongs to that segment's stated focus.
+
+2.4 PRODUCT-SPECIFIC / FEATURE-SPECIFIC STEMS ARE BANNED
+   A question's core premise must never be built around one narrow,
+   specific feature, ingredient, or proprietary technology named in the
+   STEM (e.g. "how comfortable are you combining retinol and vitamin C"
+   should generalize to "combining multiple active ingredients").
+   Naming specific items as ANSWER OPTIONS is fine and often necessary
+   when the question's whole subject is choosing between them — the
+   rule only bans anchoring the question's premise to one specific item.
+
+2.5 OFF-CATEGORY / ADJACENT-ACTIVITY QUESTIONS ARE BANNED
+   A question must fit the actual product category, not an adjacent
+   lifestyle or activity category. Test: could this question be asked
+   identically in an unrelated survey about a different category
+   entirely? If yes, it's off-category. Confirmed recurring example: "What
+   is the main reason you run?" in a RUNNING SHOES survey — this is a
+   fitness-motivation question that belongs in a fitness/exercise
+   survey, not a footwear survey. This exact defect recurred across
+   THREE separate generations after being flagged twice; treat this as
+   a standing automated check, not a one-time fix to remember.
+
+2.6 MIXED-DIMENSION ANSWER OPTIONS ARE BANNED
+   Never mix two different dimensions (time-of-day, occasion/trigger,
+   reason, product type, hypothetical-intent vs. factual-already-
+   happened) inside one option list. Example violation: "Morning only /
+   Evening only / Both" (time dimension) mixed with "Only when I feel I
+   need them / Before going out" (occasion dimension) in one list.
+   Another example: a future-likelihood scale ("Likely/Unlikely") mixed
+   with a factual past-tense option ("Already switched for this
+   reason") in the same list — different dimensions, same defect.
+   This mistake has appeared even in a document whose own stated rules
+   explicitly banned it — it needs an automated per-question dimension
+   check, not just a written rule. Before finalizing any single-select
+   question, extract the implied dimension of each option and confirm
+   all options share the same dimension.
+
+2.7 EVERY MULTI-SELECT NEEDS A GENUINE OPT-OUT
+   Any multi-select question about must-haves, requirements, concerns,
+   or preferences must include an option a respondent can honestly
+   select if none of the listed items apply (e.g. "None of these matter
+   to me"). Without it, a genuinely low-involvement respondent has no
+   honest answer available.
+
+=========================================================
+3. WORDING, SIMPLICITY, AND GRAMMAR RULES
+=========================================================
+
+3.1 A SHORTER, CLEANER SURVEY IS THE CORRECT OUTCOME OF FIXING
+REDUNDANCY
+   If removing confirmed duplicate/low-value questions drops the total
+   count below a stated target, that is the correct result of the fix
+   working — not a shortfall requiring padding. Only backfill with a
+   new question if it is genuinely valuable and non-redundant; never
+   add a question purely to hit a number.
+
+3.2 NO REDUNDANT INSTRUCTION TEXT
+   Never repeat "Select all that apply" or "Select one" inside the
+   visible question text when a separate Type/instruction field already
+   states it.
+
+3.3 MONETARY QUESTIONS MUST STATE THEIR TIME/UNIT CLEARLY
+   Every question asking about money must make clear whether the
+   amount is a one-time price, a per-purchase spend, or a recurring
+   spend over a stated period. Never leave the time unit ambiguous.
+
+3.4 AVOID DEFAULT TIMEFRAME SCAFFOLDING
+   Do not prepend a timeframe qualifier ("in the past 12 months," "in a
+   typical day/week") by default. Only include one when the question
+   would otherwise be genuinely ambiguous. Test: if removing the
+   timeframe phrase doesn't change what's being asked, remove it.
+
+3.5 RESEARCH / DISCOVERY QUESTIONS MUST MATCH THE CATEGORY'S MATURITY
+   Research-depth and "where do you learn about X" questions fit
+   unfamiliar or high-consideration categories. For a mature, habitually
+   repurchased category (confirm by checking whether the survey's own
+   data shows replacement/habit as the dominant purchase trigger), such
+   questions overstate deliberation that mostly isn't happening. Either
+   remove them, or reframe discovery-channel questions away from
+   "learning about" language (implies novelty) toward neutral framing
+   like "where do you usually SEE [category] options."
+
+3.6 PRODUCT-ANCHORING IS CATEGORY-DEPENDENT
+   A B2C survey's opening question must involve the product itself, not
+   only the activity around it — but this only applies to categories
+   where the activity exists independently of the product (e.g. running
+   shoes: running exists regardless of which shoes you own). For
+   categories where using the product IS the defining activity (e.g.
+   skincare — there's no separate "activity" to anchor away from), an
+   opening usage-frequency question is already correctly anchored.
+   Determine which type of category this is before applying the check.
+
+3.7 GRAMMAR CHECKLIST (run on every question, stem AND options)
+   - No sentence fragments — every question needs a complete verb
+     ("How long from your signed order to commissioning?" is missing a
+     verb; needs "How long does it take from...").
+   - No idiomatic/colloquial phrasing that may not translate for a
+     global or non-native-English audience (e.g. "catches your team off
+     guard" — use plain language instead).
+   - No awkward or redundant constructions ("currently...in your
+     installed base" — "installed base" already means currently
+     installed).
+   - Check answer OPTION labels too, not just question stems — the same
+     grammar/clarity standard applies to both.
+
+=========================================================
+4. TENSE AND CONTENT-DIRECTION RULES
+=========================================================
+These two checks are independent — a question can pass one and still
+fail the other.
+
+4.1 FUTURE/CONDITIONAL TENSE MUST NOT BLEED OUTSIDE THE DESIGNATED
+FUTURE SEGMENT
+   Reserve "will"/"would" exclusively for the survey's forward-looking
+   segment. Every question in every other segment should be present
+   tense, reflecting current/factual/habitual behaviour. EXCEPTION:
+   genuinely hypothetical willingness-to-pay or forced-trade-off
+   questions ("If you had to give up one thing..." / "How much more
+   would you pay...") grammatically REQUIRE conditional tense regardless
+   of which segment they're in — do not flag these as violations; the
+   conditional is mandatory English grammar for a second-conditional
+   construction, not a stylistic choice.
+
+4.2 TREND/SHIFT CONTENT MUST NOT LEAK OUTSIDE THE SEGMENT THAT OWNS IT
+   This is a CONTENT-DIRECTION rule, separate from tense. Any question
+   asking "how has X changed" or "how is X shifting" is inherently a
+   trend/shift question, REGARDLESS OF GRAMMATICAL TENSE (a present-
+   tense or present-perfect trend question is still a trend question).
+   If the survey has a segment dedicated to trends/outlook/future
+   intent, no question outside that segment may use backward-looking
+   comparison framing ("versus a year ago," "in the past year," "how is
+   your X changing"). Reframe as a current-state snapshot instead.
+
+=========================================================
+5. PERSONA RULES
+=========================================================
+
+5.1 EXACTLY FOUR PERSONAS, DEFINED ONCE PER CATEGORY
+   Define a fixed set of exactly four category-appropriate personas at
+   the very start of generation, before writing any question, and hold
+   that exact set consistent throughout the entire survey.
+
+5.2 PERSONA SETS MUST PERSIST ACROSS REGENERATIONS OF THE SAME
+CATEGORY + REGION
+   Before generating personas for any category+region combination,
+   check whether an approved set already exists for that exact
+   combination. If one exists, REUSE it exactly — do not regenerate
+   from scratch. This recurred across 3+ generations of the same
+   category before being caught; persona generation should happen ONCE
+   per category+region, with all subsequent generations treating that
+   set as fixed input.
+
+5.3 EVERY PERSONA NAME REFERENCED ANYWHERE MUST BE ONE OF THE DEFINED
+FOUR
+   Run a validation check: extract every capitalised persona-shaped
+   phrase from every distribution note/takeaway and confirm it exactly
+   matches one of the four defined names. A mismatch (e.g. "Health-
+   focused buyers" or "Eco-Conscious Urbanite" appearing when no such
+   persona was actually defined) is a data-integrity failure — and is
+   MORE serious when it appears in customer-facing report text than in
+   internal planning notes, though both must be caught.
+
+5.4 PROFILING NEVER DEFINES A PERSONA
+   Demographic/profiling questions (age, gender, household, income) are
+   collected LAST and used only to cross-tabulate findings. Never let a
+   profiling attribute explain or define a behavioural persona, and
+   never let a profiling distribution note make an unsupported
+   socioeconomic/lifestyle interpretation beyond the raw data (e.g. "the
+   panel skews toward... reflecting the region's urban middle class" is
+   an unsupported inference layered onto an age-band statistic — keep
+   profiling notes neutral and descriptive only).
+
+=========================================================
+6. SEGMENT AND FOCUS-LINE MAINTENANCE
+=========================================================
+
+6.1 FOCUS LINES MUST BE RE-VERIFIED AFTER EVERY QUESTION CHANGE
+   A segment's one-line focus/description must always match its
+   ACTUAL current questions. Every time a question is replaced or
+   reworded, re-check whether that segment's focus line still
+   accurately describes it — this is easy to forget and was missed
+   repeatedly during iterative fixes in this project. Update the focus
+   line and the structure summary's "covers" field together, in the
+   same edit.
+
+6.2 EVERY FOCUS-LINE TOPIC MUST BE COVERED BY AT LEAST ONE QUESTION
+   If a focus line promises a topic, at least one question in that
+   segment must actually address it. Conversely, don't leave a focus
+   line describing a topic that no longer has a matching question.
+
+=========================================================
+7. FINAL VALIDATION CHECKLIST (run on every survey before delivery)
+=========================================================
+ 1. Every single-select/rating question's percentages sum to 100%
+    (tolerance ±0.6).
+ 2. Every multi-select question's percentages exceed 100% with
+    realistic independent variation (not suspiciously near 100%, which
+    suggests the generator applied single-select constrained logic by
+    mistake).
+ 3. No two questions anywhere in the survey share an identical option
+    set (exact-match check).
+ 4. No two questions test the same construct from the same angle under
+    different wording (manual review of any high word-overlap flag,
+    per Section 2.2's methodology).
+ 5. Every multi-select has a genuine opt-out option.
+ 6. No question stem is a sentence fragment or contains awkward/
+    redundant/idiomatic phrasing.
+ 7. No question's answer options restate the question itself.
+ 8. No question's core premise is anchored to one specific named
+    feature/ingredient/technology in the stem.
+ 9. No question could be asked identically in an unrelated category
+    (off-category check).
+10. No answer option list mixes two different dimensions.
+11. No "would"/"will" outside the designated future segment, except
+    grammatically mandatory hypothetical/trade-off constructions.
+12. No backward-looking trend/comparison framing outside the segment
+    that owns trends/outlook.
+13. Every persona name referenced anywhere matches one of the four
+    defined personas exactly.
+14. The persona set matches the approved set for this category+region,
+    if one already exists.
+15. Profiling questions are last, and every profiling distribution note
+    says it is not used to define personas.
+16. Every segment's focus line matches its actual current questions,
+    and every focus-line topic is covered by at least one question.
+17. The structure summary explicitly lists every section including
+    Profiling, with accurate per-section and total question counts.
+18. Currency and any named examples/platforms match the stated region.
+19. No "respondent" language if the house style specifies "customer"
+    (or vice versa — confirm the preferred term before generating).
+20. Every value in the report (headings, labels, counts) is present in
+    the underlying JSON, not hardcoded in a renderer.

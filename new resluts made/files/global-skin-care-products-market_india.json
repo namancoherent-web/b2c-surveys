@@ -1,0 +1,6435 @@
+{
+ "surveyDefinition": {
+  "title": "Skin Care Products — consumer survey (India)",
+  "category": "Skin Care Products",
+  "region": "India",
+  "audienceType": "B2C consumer",
+  "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on skincare routine complexity, purchase drivers, product expectations, and switching triggers.",
+  "segments": [
+   {
+    "id": "routine_minimalists",
+    "name": "Routine Minimalists",
+    "description": "Use 1-3 basic products (cleanser, moisturizer, sunscreen) on a simple daily schedule. Driven by convenience and basic skin health, not by chasing specific concerns. Low engagement with ingredients or claims; buy on habit or price."
+   },
+   {
+    "id": "concern_driven_optimizers",
+    "name": "Concern-Driven Buyers",
+    "description": "Have one or two specific skin concerns (aging, acne, hyperpigmentation) and actively research products targeting those concerns. Willing to pay more for clinically proven efficacy and visible results. Routine is moderately complex and tailored to their concern."
+   },
+   {
+    "id": "safety_first_consumers",
+    "name": "Safety-First Consumers",
+    "description": "Prioritize gentle, non-irritating, and 'clean' formulations. Often have sensitive skin or worry about long-term chemical exposure. Heavily influenced by dermatologist recommendations and transparent ingredient lists. Routine may be simple but deliberately chosen for safety."
+   },
+   {
+    "id": "high_engagement_enthusiasts",
+    "name": "High-Engagement Users",
+    "description": "Treat skincare as a hobby or self-care ritual. Use multi-step routines (5+ products), follow trends (K-beauty, actives), and enjoy experimenting. High spend, high brand awareness, and open to switching for novelty or better results."
+   }
+  ],
+  "whatThisSurveyIs": "A segmentation study of Skin Care Products buyers in India. It asks how people use Skin Care Products, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+  "whoseContextThisIs": "Adults in India who buy or use Skin Care Products for personal or household use. Respondents qualify if they: Individuals who have purchased at least one skin care product for personal use in the past 12 months; Primary decision-maker for their own skin care purchases; Ages 18 and older. Excluded: Professional buyers (e.g., dermatology clinics, spas, salons) purchasing for resale or professional use; Individuals purchasing solely as gifts for others; Children under 18.",
+  "whyTheseRespondents": "Everyday consumers buy skin care products for personal use, pay for them out of pocket at retail or online, and make the purchase decision themselves. While some professional products are sold to salons, the dominant consumer market is direct-to-consumer, so this is a pure B2C segment.",
+  "respondentBehaviours": [
+   "Regularly purchases skin care products (e.g., cleansers, moisturizers, serums, sunscreens)",
+   "Researches products online, reads reviews, follows influencers or dermatologist recommendations",
+   "May have specific skin concerns (acne, aging, sensitivity, hyperpigmentation)",
+   "Brand loyal but open to switching for better efficacy or price",
+   "Purchases through multiple channels: drugstores, department stores, specialty beauty retailers, e-commerce, subscription boxes"
+  ],
+  "whatIsDeliberatelyNotAsked": [
+   "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+   "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+   "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+  ],
+  "howToReadTheNumbers": "Percentages are modelled estimates built from published market evidence — they are not measurements from fielded interviews, and should be read as an expected shape of response rather than a result. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+  "structure": {
+   "totalQuestions": 29,
+   "sections": [
+    {
+     "id": "profile",
+     "label": "Consumer Profile",
+     "covers": "who uses the product and how — usage context, occasions, frequency, who is involved",
+     "questions": 6
+    },
+    {
+     "id": "behavior",
+     "label": "Buying Behavior",
+     "covers": "how they shop for and buy it — trigger, research, channel, spend, decision drivers",
+     "questions": 5
+    },
+    {
+     "id": "preferences",
+     "label": "Preferences & Expectations",
+     "covers": "what they need from the product — must-haves, quality cues, fit, claims, trade-offs",
+     "questions": 8
+    },
+    {
+     "id": "satisfaction",
+     "label": "Satisfaction & Future Intent",
+     "covers": "outcomes — satisfaction, problems, switching, advocacy, future purchase intent",
+     "questions": 6
+    }
+   ],
+   "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+   "storylineSummary": "The survey opens by mapping the respondent's current skincare landscape — what products they use, how complex their routine is, and what skin concerns they are managing. It then traces their purchase journey from trigger through discovery, channel, and decision drivers, ending with spend. Next, it probes their product expectations — must-haves, quality cues, claims, formats, and trade-offs — before closing with satisfaction, unmet needs, and switching triggers. This arc cleanly separates the four segments: Routine Minimalists (low complexity, low engagement), Concern-Driven Optimizers…"
+  }
+ },
+ "targetCustomer": {
+  "summary": "Adult consumers of Skin Care Products in India — who Individuals who have purchased at least one skin care product for personal use in the past 12 months; Primary decision-maker for their own skin care purchases; Ages 18 and older. The audience is defined as the end consumer who buys and uses skin care products for personal care. This captures the core B2C market and allows for segmentation by demographics, skin concerns, and purchasing behavior.",
+  "marketSegment": "Skin Care Products",
+  "region": "India",
+  "inclusionCriteria": [
+   "Individuals who have purchased at least one skin care product for personal use in the past 12 months",
+   "Primary decision-maker for their own skin care purchases",
+   "Ages 18 and older"
+  ],
+  "behaviors": [
+   "Regularly purchases skin care products (e.g., cleansers, moisturizers, serums, sunscreens)",
+   "Researches products online, reads reviews, follows influencers or dermatologist recommendations",
+   "May have specific skin concerns (acne, aging, sensitivity, hyperpigmentation)",
+   "Brand loyal but open to switching for better efficacy or price",
+   "Purchases through multiple channels: drugstores, department stores, specialty beauty retailers, e-commerce, subscription boxes"
+  ],
+  "exclusions": [
+   "Professional buyers (e.g., dermatology clinics, spas, salons) purchasing for resale or professional use",
+   "Individuals purchasing solely as gifts for others",
+   "Children under 18"
+  ],
+  "contextDemographics": {
+   "age": "18-65+",
+   "gender": "All genders, with a skew toward women in most categories",
+   "income": "Middle to high income, varies by price tier",
+   "geography": "Global, with emphasis on urban and suburban areas"
+  },
+  "assumptions": [
+   "The 'global skin care products market' refers to consumer retail products, not professional-only lines.",
+   "The category includes all skin care segments (face, body, anti-aging, sun care, etc.) unless specified otherwise."
+  ],
+  "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+ },
+ "frontend": {
+  "sections": [
+   {
+    "id": "profile",
+    "label": "Consumer Profile, Ownership & Usage Behavior",
+    "questions": [
+     {
+      "id": "q1",
+      "qNum": 1,
+      "question": "How often do you use a skincare product?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Always or almost always",
+       "Often",
+       "Sometimes",
+       "Rarely",
+       "Never"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Always or almost always",
+        "value": 42.0
+       },
+       {
+        "label": "Often",
+        "value": 31.0
+       },
+       {
+        "label": "Sometimes",
+        "value": 18.0
+       },
+       {
+        "label": "Rarely",
+        "value": 7.0
+       },
+       {
+        "label": "Never",
+        "value": 2.0
+       }
+      ],
+      "insight": "Top response: Always or almost always (42.00%).",
+      "distributionNote": "High-Engagement Users and Concern-Driven Buyers dominate the frequent-use end; Routine Minimalists and Safety-First Consumers still use products regularly but with slightly less intensity.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "category_entry",
+      "beatTitle": "Skincare products used in the past year",
+      "beatCanonical": "category_entry",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Always or almost always",
+         "value": 42.0
+        },
+        {
+         "label": "Often",
+         "value": 31.0
+        },
+        {
+         "label": "Sometimes",
+         "value": 18.0
+        },
+        {
+         "label": "Rarely",
+         "value": 7.0
+        },
+        {
+         "label": "Never",
+         "value": 2.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Always or almost always",
+         "value": 42.0
+        },
+        {
+         "label": "Often",
+         "value": 31.0
+        },
+        {
+         "label": "Sometimes",
+         "value": 18.0
+        },
+        {
+         "label": "Rarely",
+         "value": 7.0
+        },
+        {
+         "label": "Never",
+         "value": 2.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q2",
+      "qNum": 2,
+      "question": "How would you describe your skincare routine?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "I use one or two products",
+       "I have a few steps I do most days",
+       "I follow a full multi-step routine",
+       "I only use skincare when I have a problem"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "I use one or two products",
+        "value": 22.0
+       },
+       {
+        "label": "I have a few steps I do most days",
+        "value": 38.0
+       },
+       {
+        "label": "I follow a full multi-step routine",
+        "value": 24.0
+       },
+       {
+        "label": "I only use skincare when I have a problem",
+        "value": 16.0
+       }
+      ],
+      "insight": "Top response: I have a few steps I do most days (38.00%).",
+      "distributionNote": "Routine Minimalists and Safety-First Consumers favor simple routines; High-Engagement Users drive the multi-step segment; Concern-Driven Buyers fall into the few-steps group.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "category_entry",
+      "beatTitle": "Skincare products used in the past year",
+      "beatCanonical": "category_entry",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "I use one or two products",
+         "value": 22.0
+        },
+        {
+         "label": "I have a few steps I do most days",
+         "value": 38.0
+        },
+        {
+         "label": "I follow a full multi-step routine",
+         "value": 24.0
+        },
+        {
+         "label": "I only use skincare when I have a problem",
+         "value": 16.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "I use one or two products",
+         "value": 22.0
+        },
+        {
+         "label": "I have a few steps I do most days",
+         "value": 38.0
+        },
+        {
+         "label": "I follow a full multi-step routine",
+         "value": 24.0
+        },
+        {
+         "label": "I only use skincare when I have a problem",
+         "value": 16.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q3",
+      "qNum": 3,
+      "question": "When do you apply skincare products?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "In the morning only",
+       "In the evening only",
+       "Both morning and evening",
+       "Only when my skin feels dry or irritated",
+       "Only before going out or special occasions"
+      ],
+      "chart": "lollipop",
+      "data": [
+       {
+        "label": "In the morning only",
+        "value": 18.0
+       },
+       {
+        "label": "In the evening only",
+        "value": 25.0
+       },
+       {
+        "label": "Both morning and evening",
+        "value": 45.0
+       },
+       {
+        "label": "Only when my skin feels dry or irritated",
+        "value": 8.0
+       },
+       {
+        "label": "Only before going out or special occasions",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: Both morning and evening (45.00%).",
+      "distributionNote": "High-Engagement Users and Concern-Driven Buyers apply both morning and evening; Routine Minimalists and Safety-First Consumers often choose one time; occasional use is less common.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "usage_occasions",
+      "beatTitle": "When and why skincare is applied",
+      "beatCanonical": "usage_occasion",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "In the morning only",
+         "value": 18.0
+        },
+        {
+         "label": "In the evening only",
+         "value": 25.0
+        },
+        {
+         "label": "Both morning and evening",
+         "value": 45.0
+        },
+        {
+         "label": "Only when my skin feels dry or irritated",
+         "value": 8.0
+        },
+        {
+         "label": "Only before going out or special occasions",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "In the morning only",
+         "value": 18.0
+        },
+        {
+         "label": "In the evening only",
+         "value": 25.0
+        },
+        {
+         "label": "Both morning and evening",
+         "value": 45.0
+        },
+        {
+         "label": "Only when my skin feels dry or irritated",
+         "value": 8.0
+        },
+        {
+         "label": "Only before going out or special occasions",
+         "value": 4.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q4",
+      "qNum": 4,
+      "question": "Which skin concerns are you trying to manage?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Dryness or flaking",
+       "Fine lines or loss of firmness",
+       "Acne or breakouts",
+       "Dark spots or uneven tone",
+       "Sensitivity or redness",
+       "Dullness or tired-looking skin",
+       "None of these"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "Dryness or flaking",
+        "value": 38.0
+       },
+       {
+        "label": "Fine lines or loss of firmness",
+        "value": 35.0
+       },
+       {
+        "label": "Acne or breakouts",
+        "value": 32.0
+       },
+       {
+        "label": "Dark spots or uneven tone",
+        "value": 28.0
+       },
+       {
+        "label": "Sensitivity or redness",
+        "value": 25.0
+       },
+       {
+        "label": "Dullness or tired-looking skin",
+        "value": 22.0
+       },
+       {
+        "label": "None of these",
+        "value": 8.0
+       }
+      ],
+      "insight": "Top response: Dryness or flaking (38.00%).",
+      "distributionNote": "Concern-Driven Buyers and Safety-First Consumers drive the top concerns; aging and dryness are widespread across segments; acne is strong among younger and budget-focused consumers.",
+      "N": 370,
+      "questionLayer": "module",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "skin_concerns",
+      "beatTitle": "Primary skin concerns being managed",
+      "beatCanonical": "need_state",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Dryness or flaking",
+         "value": 38.0
+        },
+        {
+         "label": "Fine lines or loss of firmness",
+         "value": 35.0
+        },
+        {
+         "label": "Acne or breakouts",
+         "value": 32.0
+        },
+        {
+         "label": "Dark spots or uneven tone",
+         "value": 28.0
+        },
+        {
+         "label": "Sensitivity or redness",
+         "value": 25.0
+        },
+        {
+         "label": "Dullness or tired-looking skin",
+         "value": 22.0
+        },
+        {
+         "label": "None of these",
+         "value": 8.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Dryness or flaking",
+         "value": 38.0
+        },
+        {
+         "label": "Fine lines or loss of firmness",
+         "value": 35.0
+        },
+        {
+         "label": "Acne or breakouts",
+         "value": 32.0
+        },
+        {
+         "label": "Dark spots or uneven tone",
+         "value": 28.0
+        },
+        {
+         "label": "Sensitivity or redness",
+         "value": 25.0
+        },
+        {
+         "label": "Dullness or tired-looking skin",
+         "value": 22.0
+        },
+        {
+         "label": "None of these",
+         "value": 8.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q5",
+      "qNum": 5,
+      "question": "What is the main reason you use skincare products?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "To address a specific skin concern like acne or dark spots",
+       "To prevent signs of aging",
+       "To maintain healthy skin as part of daily self-care",
+       "To treat dryness or sensitivity",
+       "To follow trends or recommendations I see online"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "To address a specific skin concern like acne or dark spots",
+        "value": 32.0
+       },
+       {
+        "label": "To prevent signs of aging",
+        "value": 22.0
+       },
+       {
+        "label": "To maintain healthy skin as part of daily self-care",
+        "value": 28.0
+       },
+       {
+        "label": "To treat dryness or sensitivity",
+        "value": 12.0
+       },
+       {
+        "label": "To follow trends or recommendations I see online",
+        "value": 6.0
+       }
+      ],
+      "insight": "Top response: To address a specific skin concern like acne or dark spots (32.00%).",
+      "distributionNote": "Concern-Driven Buyers and Safety-First Consumers anchor the specific-concern and dryness/sensitivity choices; Routine Minimalists and High-Engagement Users drive the self-care and trend-driven answers.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "skin_concerns",
+      "beatTitle": "Primary skin concerns being managed",
+      "beatCanonical": "need_state",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "To address a specific skin concern like acne or dark spots",
+         "value": 32.0
+        },
+        {
+         "label": "To prevent signs of aging",
+         "value": 22.0
+        },
+        {
+         "label": "To maintain healthy skin as part of daily self-care",
+         "value": 28.0
+        },
+        {
+         "label": "To treat dryness or sensitivity",
+         "value": 12.0
+        },
+        {
+         "label": "To follow trends or recommendations I see online",
+         "value": 6.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "To address a specific skin concern like acne or dark spots",
+         "value": 32.0
+        },
+        {
+         "label": "To prevent signs of aging",
+         "value": 22.0
+        },
+        {
+         "label": "To maintain healthy skin as part of daily self-care",
+         "value": 28.0
+        },
+        {
+         "label": "To treat dryness or sensitivity",
+         "value": 12.0
+        },
+        {
+         "label": "To follow trends or recommendations I see online",
+         "value": 6.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q6",
+      "qNum": 6,
+      "question": "How would you describe your skin type?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Oily",
+       "Dry",
+       "Combination",
+       "Normal",
+       "Sensitive"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Oily",
+        "value": 22.0
+       },
+       {
+        "label": "Dry",
+        "value": 20.0
+       },
+       {
+        "label": "Combination",
+        "value": 34.0
+       },
+       {
+        "label": "Normal",
+        "value": 14.0
+       },
+       {
+        "label": "Sensitive",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: Combination (34.00%).",
+      "distributionNote": "Combination and oily skin dominate; sensitive-skin users place the highest weight on fragrance-free and dermatologist-tested claims.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 6,
+      "narrativeOrder": 6,
+      "beatId": "household_role",
+      "beatTitle": "Who in the household uses and decides",
+      "beatCanonical": "household_role",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Oily",
+         "value": 22.0
+        },
+        {
+         "label": "Dry",
+         "value": 20.0
+        },
+        {
+         "label": "Combination",
+         "value": 34.0
+        },
+        {
+         "label": "Normal",
+         "value": 14.0
+        },
+        {
+         "label": "Sensitive",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Oily",
+         "value": 22.0
+        },
+        {
+         "label": "Dry",
+         "value": 20.0
+        },
+        {
+         "label": "Combination",
+         "value": 34.0
+        },
+        {
+         "label": "Normal",
+         "value": 14.0
+        },
+        {
+         "label": "Sensitive",
+         "value": 10.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "behavior",
+    "label": "Purchase Journey & Decision Drivers",
+    "questions": [
+     {
+      "id": "q7",
+      "qNum": 7,
+      "question": "What made you start using a new skincare product the last time?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "I ran out of my usual product",
+       "I noticed a new skin concern",
+       "I saw a recommendation online or from a friend",
+       "It was on sale or a special offer",
+       "I wanted to try something new",
+       "Other"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "I ran out of my usual product",
+        "value": 18.0
+       },
+       {
+        "label": "I noticed a new skin concern",
+        "value": 26.0
+       },
+       {
+        "label": "I saw a recommendation online or from a friend",
+        "value": 24.0
+       },
+       {
+        "label": "It was on sale or a special offer",
+        "value": 14.0
+       },
+       {
+        "label": "I wanted to try something new",
+        "value": 13.0
+       },
+       {
+        "label": "Other",
+        "value": 5.0
+       }
+      ],
+      "insight": "Top response: I noticed a new skin concern (26.00%).",
+      "distributionNote": "Concern-Driven Buyers switch when a new concern appears; High-Engagement Users are driven by recommendations and novelty; Routine Minimalists and Safety-First Consumers are more likely to repurchase or wait for sales.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "purchase_trigger",
+      "beatTitle": "What triggers a new skincare purchase",
+      "beatCanonical": "purchase_trigger",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "I ran out of my usual product",
+         "value": 18.0
+        },
+        {
+         "label": "I noticed a new skin concern",
+         "value": 26.0
+        },
+        {
+         "label": "I saw a recommendation online or from a friend",
+         "value": 24.0
+        },
+        {
+         "label": "It was on sale or a special offer",
+         "value": 14.0
+        },
+        {
+         "label": "I wanted to try something new",
+         "value": 13.0
+        },
+        {
+         "label": "Other",
+         "value": 5.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "I ran out of my usual product",
+         "value": 18.0
+        },
+        {
+         "label": "I noticed a new skin concern",
+         "value": 26.0
+        },
+        {
+         "label": "I saw a recommendation online or from a friend",
+         "value": 24.0
+        },
+        {
+         "label": "It was on sale or a special offer",
+         "value": 14.0
+        },
+        {
+         "label": "I wanted to try something new",
+         "value": 13.0
+        },
+        {
+         "label": "Other",
+         "value": 5.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q8",
+      "qNum": 8,
+      "question": "Where do you learn about new skincare products before buying them?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Social media (Instagram, TikTok, YouTube)",
+       "Beauty blogs or online reviews",
+       "Recommendations from friends or family",
+       "Dermatologist or skin care professional",
+       "In-store displays or sales staff",
+       "Other"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "Social media (Instagram, TikTok, YouTube)",
+        "value": 38.0
+       },
+       {
+        "label": "Beauty blogs or online reviews",
+        "value": 22.0
+       },
+       {
+        "label": "Recommendations from friends or family",
+        "value": 18.0
+       },
+       {
+        "label": "Dermatologist or skin care professional",
+        "value": 14.0
+       },
+       {
+        "label": "In-store displays or sales staff",
+        "value": 6.0
+       },
+       {
+        "label": "Other",
+        "value": 2.0
+       }
+      ],
+      "insight": "Top response: Social media (Instagram, TikTok, YouTube) (38.00%).",
+      "distributionNote": "High-Engagement Users and Concern-Driven Buyers dominate social media and review channels; Safety-First Consumers rely more on professional and personal recommendations.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "discovery",
+      "beatTitle": "Where they learn about new products",
+      "beatCanonical": "discovery",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Social media (Instagram, TikTok, YouTube)",
+         "value": 38.0
+        },
+        {
+         "label": "Beauty blogs or online reviews",
+         "value": 22.0
+        },
+        {
+         "label": "Recommendations from friends or family",
+         "value": 18.0
+        },
+        {
+         "label": "Dermatologist or skin care professional",
+         "value": 14.0
+        },
+        {
+         "label": "In-store displays or sales staff",
+         "value": 6.0
+        },
+        {
+         "label": "Other",
+         "value": 2.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Social media (Instagram, TikTok, YouTube)",
+         "value": 38.0
+        },
+        {
+         "label": "Beauty blogs or online reviews",
+         "value": 22.0
+        },
+        {
+         "label": "Recommendations from friends or family",
+         "value": 18.0
+        },
+        {
+         "label": "Dermatologist or skin care professional",
+         "value": 14.0
+        },
+        {
+         "label": "In-store displays or sales staff",
+         "value": 6.0
+        },
+        {
+         "label": "Other",
+         "value": 2.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q9",
+      "qNum": 9,
+      "question": "How often do you buy a new skincare product?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "More than once a month",
+       "About once a month",
+       "Every 2-3 months",
+       "Every 4-6 months",
+       "Less than every 6 months"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "More than once a month",
+        "value": 12.0
+       },
+       {
+        "label": "About once a month",
+        "value": 22.0
+       },
+       {
+        "label": "Every 2-3 months",
+        "value": 34.0
+       },
+       {
+        "label": "Every 4-6 months",
+        "value": 20.0
+       },
+       {
+        "label": "Less than every 6 months",
+        "value": 12.0
+       }
+      ],
+      "insight": "Top response: Every 2-3 months (34.00%).",
+      "distributionNote": "High-Engagement Users and Concern-Driven Buyers purchase frequently.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "purchase_cycle",
+      "beatTitle": "How often they restock or repurchase",
+      "beatCanonical": "purchase_cycle",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "More than once a month",
+         "value": 12.0
+        },
+        {
+         "label": "About once a month",
+         "value": 22.0
+        },
+        {
+         "label": "Every 2-3 months",
+         "value": 34.0
+        },
+        {
+         "label": "Every 4-6 months",
+         "value": 20.0
+        },
+        {
+         "label": "Less than every 6 months",
+         "value": 12.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "More than once a month",
+         "value": 12.0
+        },
+        {
+         "label": "About once a month",
+         "value": 22.0
+        },
+        {
+         "label": "Every 2-3 months",
+         "value": 34.0
+        },
+        {
+         "label": "Every 4-6 months",
+         "value": 20.0
+        },
+        {
+         "label": "Less than every 6 months",
+         "value": 12.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q10",
+      "qNum": 10,
+      "question": "What matters most when you choose a skincare product?",
+      "questionType": "ranking",
+      "responseInstruction": "Rank these in order.",
+      "sumsTo100": true,
+      "options": [
+       "Clinically proven results",
+       "Targeted for a specific skin concern",
+       "Natural or sustainable ingredients",
+       "Price",
+       "Texture and feel on the skin",
+       "Dermatologist recommendation"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Clinically proven results",
+        "value": 28.0
+       },
+       {
+        "label": "Targeted for a specific skin concern",
+        "value": 24.0
+       },
+       {
+        "label": "Natural or sustainable ingredients",
+        "value": 12.0
+       },
+       {
+        "label": "Price",
+        "value": 16.0
+       },
+       {
+        "label": "Texture and feel on the skin",
+        "value": 8.0
+       },
+       {
+        "label": "Dermatologist recommendation",
+        "value": 12.0
+       }
+      ],
+      "insight": "Top response: Clinically proven results (28.00%).",
+      "distributionNote": "Concern-Driven Buyers and Safety-First Consumers prioritize clinical proof and targeted solutions; price sensitivity is spread across Routine Minimalists and budget-focused segments.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "decision_drivers",
+      "beatTitle": "What decides the final choice",
+      "beatCanonical": "decision_drivers",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Clinically proven results",
+         "value": 28.0
+        },
+        {
+         "label": "Targeted for a specific skin concern",
+         "value": 24.0
+        },
+        {
+         "label": "Natural or sustainable ingredients",
+         "value": 12.0
+        },
+        {
+         "label": "Price",
+         "value": 16.0
+        },
+        {
+         "label": "Texture and feel on the skin",
+         "value": 8.0
+        },
+        {
+         "label": "Dermatologist recommendation",
+         "value": 12.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Clinically proven results",
+         "value": 28.0
+        },
+        {
+         "label": "Targeted for a specific skin concern",
+         "value": 24.0
+        },
+        {
+         "label": "Natural or sustainable ingredients",
+         "value": 12.0
+        },
+        {
+         "label": "Price",
+         "value": 16.0
+        },
+        {
+         "label": "Texture and feel on the skin",
+         "value": 8.0
+        },
+        {
+         "label": "Dermatologist recommendation",
+         "value": 12.0
+        }
+       ]
+      },
+      "ordered": true
+     },
+     {
+      "id": "q11",
+      "qNum": 11,
+      "question": "How much do you spend on skincare products in a single purchase?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Under ₹500",
+       "₹500–₹999",
+       "₹1,000–₹1,999",
+       "₹2,000–₹3,499",
+       "₹3,500 or more"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Under ₹500",
+        "value": 18.0
+       },
+       {
+        "label": "₹500–₹999",
+        "value": 32.0
+       },
+       {
+        "label": "₹1,000–₹1,999",
+        "value": 24.0
+       },
+       {
+        "label": "₹2,000–₹3,499",
+        "value": 16.0
+       },
+       {
+        "label": "₹3,500 or more",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: ₹500–₹999 (32.00%).",
+      "distributionNote": "High-Engagement Users and premium-seeking segments lift the upper end.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "spend",
+      "beatTitle": "Typical monthly spend on skincare",
+      "beatCanonical": "spend",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Under ₹500",
+         "value": 18.0
+        },
+        {
+         "label": "₹500–₹999",
+         "value": 32.0
+        },
+        {
+         "label": "₹1,000–₹1,999",
+         "value": 24.0
+        },
+        {
+         "label": "₹2,000–₹3,499",
+         "value": 16.0
+        },
+        {
+         "label": "₹3,500 or more",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Under ₹500",
+         "value": 18.0
+        },
+        {
+         "label": "₹500–₹999",
+         "value": 32.0
+        },
+        {
+         "label": "₹1,000–₹1,999",
+         "value": 24.0
+        },
+        {
+         "label": "₹2,000–₹3,499",
+         "value": 16.0
+        },
+        {
+         "label": "₹3,500 or more",
+         "value": 10.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "preferences",
+    "label": "Brand / Product Experience & Satisfaction",
+    "questions": [
+     {
+      "id": "q12",
+      "qNum": 12,
+      "question": "Which must a skincare product do for you to keep using it?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Show visible results within a few weeks",
+       "Not cause stinging, redness, or breakouts",
+       "Feel comfortable on my skin all day",
+       "Fit easily into my morning or evening routine",
+       "Be affordable enough to repurchase regularly",
+       "Other"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Show visible results within a few weeks",
+        "value": 34.0
+       },
+       {
+        "label": "Not cause stinging, redness, or breakouts",
+        "value": 28.0
+       },
+       {
+        "label": "Feel comfortable on my skin all day",
+        "value": 18.0
+       },
+       {
+        "label": "Fit easily into my morning or evening routine",
+        "value": 12.0
+       },
+       {
+        "label": "Be affordable enough to repurchase regularly",
+        "value": 7.0
+       },
+       {
+        "label": "Other",
+        "value": 1.0
+       }
+      ],
+      "insight": "Top response: Show visible results within a few weeks (34.00%).",
+      "distributionNote": "Concern-Driven Buyers and Safety-First Consumers drive the need for visible results and non-irritation; convenience is key for Routine Minimalists.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "must_haves",
+      "beatTitle": "Non-negotiable product attributes",
+      "beatCanonical": "must_haves",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Show visible results within a few weeks",
+         "value": 34.0
+        },
+        {
+         "label": "Not cause stinging, redness, or breakouts",
+         "value": 28.0
+        },
+        {
+         "label": "Feel comfortable on my skin all day",
+         "value": 18.0
+        },
+        {
+         "label": "Fit easily into my morning or evening routine",
+         "value": 12.0
+        },
+        {
+         "label": "Be affordable enough to repurchase regularly",
+         "value": 7.0
+        },
+        {
+         "label": "Other",
+         "value": 1.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Show visible results within a few weeks",
+         "value": 34.0
+        },
+        {
+         "label": "Not cause stinging, redness, or breakouts",
+         "value": 28.0
+        },
+        {
+         "label": "Feel comfortable on my skin all day",
+         "value": 18.0
+        },
+        {
+         "label": "Fit easily into my morning or evening routine",
+         "value": 12.0
+        },
+        {
+         "label": "Be affordable enough to repurchase regularly",
+         "value": 7.0
+        },
+        {
+         "label": "Other",
+         "value": 1.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q13",
+      "qNum": 13,
+      "question": "Which must a skincare product be for you to consider buying it?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Fragrance-free",
+       "Non-comedogenic (won't clog pores)",
+       "Clinically tested for visible results",
+       "Made with natural ingredients",
+       "Dermatologist-recommended",
+       "Free from harsh chemicals"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "Fragrance-free",
+        "value": 42.0
+       },
+       {
+        "label": "Non-comedogenic (won't clog pores)",
+        "value": 38.0
+       },
+       {
+        "label": "Clinically tested for visible results",
+        "value": 55.0
+       },
+       {
+        "label": "Made with natural ingredients",
+        "value": 30.0
+       },
+       {
+        "label": "Dermatologist-recommended",
+        "value": 45.0
+       },
+       {
+        "label": "Free from harsh chemicals",
+        "value": 35.0
+       }
+      ],
+      "insight": "Top response: Clinically tested for visible results (55.00%).",
+      "distributionNote": "Safety-First Consumers and Concern-Driven Buyers drive high rates for clinical testing, dermatologist recommendation, and non-irritating attributes; natural and chemical-free claims appeal broadly but are not universal.",
+      "N": 370,
+      "questionLayer": "module",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "must_haves",
+      "beatTitle": "Non-negotiable product attributes",
+      "beatCanonical": "must_haves",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Fragrance-free",
+         "value": 42.0
+        },
+        {
+         "label": "Non-comedogenic (won't clog pores)",
+         "value": 38.0
+        },
+        {
+         "label": "Clinically tested for visible results",
+         "value": 55.0
+        },
+        {
+         "label": "Made with natural ingredients",
+         "value": 30.0
+        },
+        {
+         "label": "Dermatologist-recommended",
+         "value": 45.0
+        },
+        {
+         "label": "Free from harsh chemicals",
+         "value": 35.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Fragrance-free",
+         "value": 42.0
+        },
+        {
+         "label": "Non-comedogenic (won't clog pores)",
+         "value": 38.0
+        },
+        {
+         "label": "Clinically tested for visible results",
+         "value": 55.0
+        },
+        {
+         "label": "Made with natural ingredients",
+         "value": 30.0
+        },
+        {
+         "label": "Dermatologist-recommended",
+         "value": 45.0
+        },
+        {
+         "label": "Free from harsh chemicals",
+         "value": 35.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q14",
+      "qNum": 14,
+      "question": "How do you judge the quality of a skincare product before buying it?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "It has clinical or dermatologist testing behind it",
+       "The ingredient list has proven actives at effective levels",
+       "The texture and feel of the product itself",
+       "The brand's reputation or expert recommendations",
+       "The price point signals it is a premium product",
+       "Other"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "It has clinical or dermatologist testing behind it",
+        "value": 30.0
+       },
+       {
+        "label": "The ingredient list has proven actives at effective levels",
+        "value": 24.0
+       },
+       {
+        "label": "The texture and feel of the product itself",
+        "value": 14.0
+       },
+       {
+        "label": "The brand's reputation or expert recommendations",
+        "value": 20.0
+       },
+       {
+        "label": "The price point signals it is a premium product",
+        "value": 7.0
+       },
+       {
+        "label": "Other",
+        "value": 5.0
+       }
+      ],
+      "insight": "Top response: It has clinical or dermatologist testing behind it (30.00%).",
+      "distributionNote": "Concern-Driven Buyers and Safety-First Consumers rely on clinical evidence and ingredient transparency; brand reputation matters for loyal and premium segments; texture is secondary.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "quality_cues",
+      "beatTitle": "Signals that indicate a quality product",
+      "beatCanonical": "quality_cues",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "It has clinical or dermatologist testing behind it",
+         "value": 30.0
+        },
+        {
+         "label": "The ingredient list has proven actives at effective levels",
+         "value": 24.0
+        },
+        {
+         "label": "The texture and feel of the product itself",
+         "value": 14.0
+        },
+        {
+         "label": "The brand's reputation or expert recommendations",
+         "value": 20.0
+        },
+        {
+         "label": "The price point signals it is a premium product",
+         "value": 7.0
+        },
+        {
+         "label": "Other",
+         "value": 5.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "It has clinical or dermatologist testing behind it",
+         "value": 30.0
+        },
+        {
+         "label": "The ingredient list has proven actives at effective levels",
+         "value": 24.0
+        },
+        {
+         "label": "The texture and feel of the product itself",
+         "value": 14.0
+        },
+        {
+         "label": "The brand's reputation or expert recommendations",
+         "value": 20.0
+        },
+        {
+         "label": "The price point signals it is a premium product",
+         "value": 7.0
+        },
+        {
+         "label": "Other",
+         "value": 5.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q15",
+      "qNum": 15,
+      "question": "Which claims would make you more likely to trust a skincare product?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "Dermatologist tested",
+       "Clinically proven",
+       "Fragrance-free",
+       "Non-comedogenic",
+       "Vegan and cruelty-free",
+       "Recyclable packaging",
+       "Other"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Dermatologist tested",
+        "value": 28.0
+       },
+       {
+        "label": "Clinically proven",
+        "value": 32.0
+       },
+       {
+        "label": "Fragrance-free",
+        "value": 12.0
+       },
+       {
+        "label": "Non-comedogenic",
+        "value": 10.0
+       },
+       {
+        "label": "Vegan and cruelty-free",
+        "value": 8.0
+       },
+       {
+        "label": "Recyclable packaging",
+        "value": 6.0
+       },
+       {
+        "label": "Other",
+        "value": 4.0
+       }
+      ],
+      "insight": "Top response: Clinically proven (32.00%).",
+      "distributionNote": "Concern-Driven Buyers and Safety-First Consumers drive the top two claims; High-Engagement Users add weight to vegan and recyclable options.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "claims_credentials",
+      "beatTitle": "Which claims and certifications carry weight",
+      "beatCanonical": "claims_credentials",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Dermatologist tested",
+         "value": 28.0
+        },
+        {
+         "label": "Clinically proven",
+         "value": 32.0
+        },
+        {
+         "label": "Fragrance-free",
+         "value": 12.0
+        },
+        {
+         "label": "Non-comedogenic",
+         "value": 10.0
+        },
+        {
+         "label": "Vegan and cruelty-free",
+         "value": 8.0
+        },
+        {
+         "label": "Recyclable packaging",
+         "value": 6.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Dermatologist tested",
+         "value": 28.0
+        },
+        {
+         "label": "Clinically proven",
+         "value": 32.0
+        },
+        {
+         "label": "Fragrance-free",
+         "value": 12.0
+        },
+        {
+         "label": "Non-comedogenic",
+         "value": 10.0
+        },
+        {
+         "label": "Vegan and cruelty-free",
+         "value": 8.0
+        },
+        {
+         "label": "Recyclable packaging",
+         "value": 6.0
+        },
+        {
+         "label": "Other",
+         "value": 4.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q16",
+      "qNum": 16,
+      "question": "Which packaging format do you prefer for your daily skincare products?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Pump bottle",
+       "Tube",
+       "Jar with a lid",
+       "Dropper bottle",
+       "Single-dose packets",
+       "No preference"
+      ],
+      "chart": "donut",
+      "data": [
+       {
+        "label": "Pump bottle",
+        "value": 35.0
+       },
+       {
+        "label": "Tube",
+        "value": 30.0
+       },
+       {
+        "label": "Jar with a lid",
+        "value": 10.0
+       },
+       {
+        "label": "Dropper bottle",
+        "value": 15.0
+       },
+       {
+        "label": "Single-dose packets",
+        "value": 3.0
+       },
+       {
+        "label": "No preference",
+        "value": 7.0
+       }
+      ],
+      "insight": "Top response: Pump bottle (35.00%).",
+      "distributionNote": "High-Engagement Users prefer dropper bottles for actives.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "format_packaging",
+      "beatTitle": "Preferred formats and packaging",
+      "beatCanonical": "format_packaging",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Pump bottle",
+         "value": 35.0
+        },
+        {
+         "label": "Tube",
+         "value": 30.0
+        },
+        {
+         "label": "Jar with a lid",
+         "value": 10.0
+        },
+        {
+         "label": "Dropper bottle",
+         "value": 15.0
+        },
+        {
+         "label": "Single-dose packets",
+         "value": 3.0
+        },
+        {
+         "label": "No preference",
+         "value": 7.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Pump bottle",
+         "value": 35.0
+        },
+        {
+         "label": "Tube",
+         "value": 30.0
+        },
+        {
+         "label": "Jar with a lid",
+         "value": 10.0
+        },
+        {
+         "label": "Dropper bottle",
+         "value": 15.0
+        },
+        {
+         "label": "Single-dose packets",
+         "value": 3.0
+        },
+        {
+         "label": "No preference",
+         "value": 7.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q17",
+      "qNum": 17,
+      "question": "If a product delivers visible results but has a heavy or greasy texture, how likely are you to keep using it?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Very unlikely",
+       "Somewhat unlikely",
+       "Neither likely nor unlikely",
+       "Somewhat likely",
+       "Very likely"
+      ],
+      "chart": "lollipop",
+      "data": [
+       {
+        "label": "Very unlikely",
+        "value": 20.0
+       },
+       {
+        "label": "Somewhat unlikely",
+        "value": 30.0
+       },
+       {
+        "label": "Neither likely nor unlikely",
+        "value": 15.0
+       },
+       {
+        "label": "Somewhat likely",
+        "value": 25.0
+       },
+       {
+        "label": "Very likely",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: Somewhat unlikely (30.00%).",
+      "distributionNote": "Safety-First Consumers and Routine Minimalists are most likely to reject heavy textures; Concern-Driven Buyers are more tolerant if results are visible.",
+      "N": 370,
+      "questionLayer": "module",
+      "isGrounded": true,
+      "funnelPosition": 6,
+      "narrativeOrder": 6,
+      "beatId": "tradeoffs",
+      "beatTitle": "What they would give up to get what they want",
+      "beatCanonical": "tradeoffs",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Very unlikely",
+         "value": 20.0
+        },
+        {
+         "label": "Somewhat unlikely",
+         "value": 30.0
+        },
+        {
+         "label": "Neither likely nor unlikely",
+         "value": 15.0
+        },
+        {
+         "label": "Somewhat likely",
+         "value": 25.0
+        },
+        {
+         "label": "Very likely",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Very unlikely",
+         "value": 20.0
+        },
+        {
+         "label": "Somewhat unlikely",
+         "value": 30.0
+        },
+        {
+         "label": "Neither likely nor unlikely",
+         "value": 15.0
+        },
+        {
+         "label": "Somewhat likely",
+         "value": 25.0
+        },
+        {
+         "label": "Very likely",
+         "value": 10.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q18",
+      "qNum": 18,
+      "question": "If a skincare product could not have everything, which would you give up first to pay less?",
+      "questionType": "ranking",
+      "responseInstruction": "Rank these in order.",
+      "sumsTo100": true,
+      "options": [
+       "Luxury texture or fragrance",
+       "Premium packaging",
+       "Clinically proven ingredients",
+       "Dermatologist or clinical testing",
+       "Sustainable or natural ingredients",
+       "A well-known brand name"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Luxury texture or fragrance",
+        "value": 30.0
+       },
+       {
+        "label": "Premium packaging",
+        "value": 25.0
+       },
+       {
+        "label": "Clinically proven ingredients",
+        "value": 10.0
+       },
+       {
+        "label": "Dermatologist or clinical testing",
+        "value": 12.0
+       },
+       {
+        "label": "Sustainable or natural ingredients",
+        "value": 13.0
+       },
+       {
+        "label": "A well-known brand name",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: Luxury texture or fragrance (30.00%).",
+      "distributionNote": "Safety-First and Concern-Driven Buyers hold onto clinical testing and proven ingredients.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 7,
+      "narrativeOrder": 7,
+      "beatId": "tradeoffs",
+      "beatTitle": "What they would give up to get what they want",
+      "beatCanonical": "tradeoffs",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Luxury texture or fragrance",
+         "value": 30.0
+        },
+        {
+         "label": "Premium packaging",
+         "value": 25.0
+        },
+        {
+         "label": "Clinically proven ingredients",
+         "value": 10.0
+        },
+        {
+         "label": "Dermatologist or clinical testing",
+         "value": 12.0
+        },
+        {
+         "label": "Sustainable or natural ingredients",
+         "value": 13.0
+        },
+        {
+         "label": "A well-known brand name",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Luxury texture or fragrance",
+         "value": 30.0
+        },
+        {
+         "label": "Premium packaging",
+         "value": 25.0
+        },
+        {
+         "label": "Clinically proven ingredients",
+         "value": 10.0
+        },
+        {
+         "label": "Dermatologist or clinical testing",
+         "value": 12.0
+        },
+        {
+         "label": "Sustainable or natural ingredients",
+         "value": 13.0
+        },
+        {
+         "label": "A well-known brand name",
+         "value": 10.0
+        }
+       ]
+      },
+      "ordered": true
+     },
+     {
+      "id": "q19",
+      "qNum": 19,
+      "question": "How much would you expect to pay for a daily moisturizer that meets all your needs?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Under ₹300",
+       "₹300 to ₹599",
+       "₹600 to ₹999",
+       "₹1,000 to ₹1,499",
+       "₹1,500 or more"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Under ₹300",
+        "value": 15.0
+       },
+       {
+        "label": "₹300 to ₹599",
+        "value": 30.0
+       },
+       {
+        "label": "₹600 to ₹999",
+        "value": 35.0
+       },
+       {
+        "label": "₹1,000 to ₹1,499",
+        "value": 15.0
+       },
+       {
+        "label": "₹1,500 or more",
+        "value": 5.0
+       }
+      ],
+      "insight": "Top response: ₹600 to ₹999 (35.00%).",
+      "distributionNote": "Concern-Driven and High-Engagement Users push the $20–$39 band.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 8,
+      "narrativeOrder": 8,
+      "beatId": "value_expectation",
+      "beatTitle": "Value for money and willingness to pay",
+      "beatCanonical": "value_expectation",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Under ₹300",
+         "value": 15.0
+        },
+        {
+         "label": "₹300 to ₹599",
+         "value": 30.0
+        },
+        {
+         "label": "₹600 to ₹999",
+         "value": 35.0
+        },
+        {
+         "label": "₹1,000 to ₹1,499",
+         "value": 15.0
+        },
+        {
+         "label": "₹1,500 or more",
+         "value": 5.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Under ₹300",
+         "value": 15.0
+        },
+        {
+         "label": "₹300 to ₹599",
+         "value": 30.0
+        },
+        {
+         "label": "₹600 to ₹999",
+         "value": 35.0
+        },
+        {
+         "label": "₹1,000 to ₹1,499",
+         "value": 15.0
+        },
+        {
+         "label": "₹1,500 or more",
+         "value": 5.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "satisfaction",
+    "label": "Unmet Needs, Switching & Future Purchase Intent",
+    "questions": [
+     {
+      "id": "q20",
+      "qNum": 20,
+      "question": "Overall, how satisfied are you with the Skin Care Products you currently use?",
+      "questionType": "likert_5",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Very dissatisfied",
+       "Somewhat dissatisfied",
+       "Neither satisfied nor dissatisfied",
+       "Somewhat satisfied",
+       "Very satisfied"
+      ],
+      "chart": "hbar-likert",
+      "data": [
+       {
+        "label": "Very dissatisfied",
+        "value": 5.0
+       },
+       {
+        "label": "Somewhat dissatisfied",
+        "value": 15.0
+       },
+       {
+        "label": "Neither satisfied nor dissatisfied",
+        "value": 20.0
+       },
+       {
+        "label": "Somewhat satisfied",
+        "value": 40.0
+       },
+       {
+        "label": "Very satisfied",
+        "value": 20.0
+       }
+      ],
+      "insight": "Top response: Somewhat satisfied (40.00%).",
+      "distributionNote": "Satisfaction skews positive, driven by High-Engagement Users and Concern-Driven Buyers finding effective products; Safety-First and Routine Minimalists show more middling scores.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "overall_satisfaction",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Very dissatisfied",
+         "value": 5.0
+        },
+        {
+         "label": "Somewhat dissatisfied",
+         "value": 15.0
+        },
+        {
+         "label": "Neither satisfied nor dissatisfied",
+         "value": 20.0
+        },
+        {
+         "label": "Somewhat satisfied",
+         "value": 40.0
+        },
+        {
+         "label": "Very satisfied",
+         "value": 20.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Very dissatisfied",
+         "value": 5.0
+        },
+        {
+         "label": "Somewhat dissatisfied",
+         "value": 15.0
+        },
+        {
+         "label": "Neither satisfied nor dissatisfied",
+         "value": 20.0
+        },
+        {
+         "label": "Somewhat satisfied",
+         "value": 40.0
+        },
+        {
+         "label": "Very satisfied",
+         "value": 20.0
+        }
+       ]
+      },
+      "ordered": true
+     },
+     {
+      "id": "q21",
+      "qNum": 21,
+      "question": "How likely are you to recommend the Skin Care Products you currently use to a friend or colleague?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "0 - Not at all likely",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10 - Extremely likely"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "0 - Not at all likely",
+        "value": 2.0
+       },
+       {
+        "label": "1",
+        "value": 2.0
+       },
+       {
+        "label": "2",
+        "value": 3.0
+       },
+       {
+        "label": "3",
+        "value": 5.0
+       },
+       {
+        "label": "4",
+        "value": 6.0
+       },
+       {
+        "label": "5",
+        "value": 12.0
+       },
+       {
+        "label": "6",
+        "value": 10.0
+       },
+       {
+        "label": "7",
+        "value": 15.0
+       },
+       {
+        "label": "8",
+        "value": 20.0
+       },
+       {
+        "label": "9",
+        "value": 15.0
+       },
+       {
+        "label": "10 - Extremely likely",
+        "value": 10.0
+       }
+      ],
+      "insight": "Top response: 8 (20.00%).",
+      "distributionNote": "Distribution is positive-skewed, with High-Engagement Users and Concern-Driven Buyers giving high scores; a small tail of dissatisfied consumers pulls the low end.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "advocacy_nps",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "0 - Not at all likely",
+         "value": 2.0
+        },
+        {
+         "label": "1",
+         "value": 2.0
+        },
+        {
+         "label": "2",
+         "value": 3.0
+        },
+        {
+         "label": "3",
+         "value": 5.0
+        },
+        {
+         "label": "4",
+         "value": 6.0
+        },
+        {
+         "label": "5",
+         "value": 12.0
+        },
+        {
+         "label": "6",
+         "value": 10.0
+        },
+        {
+         "label": "7",
+         "value": 15.0
+        },
+        {
+         "label": "8",
+         "value": 20.0
+        },
+        {
+         "label": "9",
+         "value": 15.0
+        },
+        {
+         "label": "10 - Extremely likely",
+         "value": 10.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "0 - Not at all likely",
+         "value": 2.0
+        },
+        {
+         "label": "1",
+         "value": 2.0
+        },
+        {
+         "label": "2",
+         "value": 3.0
+        },
+        {
+         "label": "3",
+         "value": 5.0
+        },
+        {
+         "label": "4",
+         "value": 6.0
+        },
+        {
+         "label": "5",
+         "value": 12.0
+        },
+        {
+         "label": "6",
+         "value": 10.0
+        },
+        {
+         "label": "7",
+         "value": 15.0
+        },
+        {
+         "label": "8",
+         "value": 20.0
+        },
+        {
+         "label": "9",
+         "value": 15.0
+        },
+        {
+         "label": "10 - Extremely likely",
+         "value": 10.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q22",
+      "qNum": 22,
+      "question": "Which aspects of your current skincare products most satisfies you?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Visible improvement in skin texture or firmness",
+       "Clinically proven efficacy",
+       "Convenience and ease of application",
+       "Gentle on sensitive skin",
+       "Pleasant texture and fragrance",
+       "Other"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "Visible improvement in skin texture or firmness",
+        "value": 30.0
+       },
+       {
+        "label": "Clinically proven efficacy",
+        "value": 20.0
+       },
+       {
+        "label": "Convenience and ease of application",
+        "value": 18.0
+       },
+       {
+        "label": "Gentle on sensitive skin",
+        "value": 15.0
+       },
+       {
+        "label": "Pleasant texture and fragrance",
+        "value": 10.0
+       },
+       {
+        "label": "Other",
+        "value": 7.0
+       }
+      ],
+      "insight": "Top response: Visible improvement in skin texture or firmness (30.00%).",
+      "distributionNote": "Concern-Driven Buyers and High-Engagement Users prioritize visible results and clinical proof; Routine Minimalists value convenience; Safety-First Consumers value gentleness.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "satisfaction_drivers",
+      "beatTitle": "What satisfies or disappoints most",
+      "beatCanonical": "satisfaction_drivers",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Visible improvement in skin texture or firmness",
+         "value": 30.0
+        },
+        {
+         "label": "Clinically proven efficacy",
+         "value": 20.0
+        },
+        {
+         "label": "Convenience and ease of application",
+         "value": 18.0
+        },
+        {
+         "label": "Gentle on sensitive skin",
+         "value": 15.0
+        },
+        {
+         "label": "Pleasant texture and fragrance",
+         "value": 10.0
+        },
+        {
+         "label": "Other",
+         "value": 7.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Visible improvement in skin texture or firmness",
+         "value": 30.0
+        },
+        {
+         "label": "Clinically proven efficacy",
+         "value": 20.0
+        },
+        {
+         "label": "Convenience and ease of application",
+         "value": 18.0
+        },
+        {
+         "label": "Gentle on sensitive skin",
+         "value": 15.0
+        },
+        {
+         "label": "Pleasant texture and fragrance",
+         "value": 10.0
+        },
+        {
+         "label": "Other",
+         "value": 7.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q23",
+      "qNum": 23,
+      "question": "Which problems have you had with a skincare product in the past year?",
+      "questionType": "multiple_choice",
+      "responseInstruction": "Select all that apply.",
+      "sumsTo100": false,
+      "options": [
+       "It irritated my skin or caused a reaction",
+       "It didn't deliver the visible results promised",
+       "It felt too heavy or greasy on my face",
+       "It was too expensive to keep buying",
+       "The ingredient list was confusing or misleading",
+       "None of these"
+      ],
+      "chart": "hbar-multi",
+      "data": [
+       {
+        "label": "It irritated my skin or caused a reaction",
+        "value": 25.0
+       },
+       {
+        "label": "It didn't deliver the visible results promised",
+        "value": 30.0
+       },
+       {
+        "label": "It felt too heavy or greasy on my face",
+        "value": 20.0
+       },
+       {
+        "label": "It was too expensive to keep buying",
+        "value": 15.0
+       },
+       {
+        "label": "The ingredient list was confusing or misleading",
+        "value": 18.0
+       },
+       {
+        "label": "None of these",
+        "value": 12.0
+       }
+      ],
+      "insight": "Top response: It didn't deliver the visible results promised (30.00%).",
+      "distributionNote": "Concern-Driven Buyers and High-Engagement Users report unmet efficacy claims; Safety-First Consumers report irritation.",
+      "N": 370,
+      "questionLayer": "module",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "friction",
+      "beatTitle": "Unmet needs and frustrations",
+      "beatCanonical": "friction",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "It irritated my skin or caused a reaction",
+         "value": 25.0
+        },
+        {
+         "label": "It didn't deliver the visible results promised",
+         "value": 30.0
+        },
+        {
+         "label": "It felt too heavy or greasy on my face",
+         "value": 20.0
+        },
+        {
+         "label": "It was too expensive to keep buying",
+         "value": 15.0
+        },
+        {
+         "label": "The ingredient list was confusing or misleading",
+         "value": 18.0
+        },
+        {
+         "label": "None of these",
+         "value": 12.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "It irritated my skin or caused a reaction",
+         "value": 25.0
+        },
+        {
+         "label": "It didn't deliver the visible results promised",
+         "value": 30.0
+        },
+        {
+         "label": "It felt too heavy or greasy on my face",
+         "value": 20.0
+        },
+        {
+         "label": "It was too expensive to keep buying",
+         "value": 15.0
+        },
+        {
+         "label": "The ingredient list was confusing or misleading",
+         "value": 18.0
+        },
+        {
+         "label": "None of these",
+         "value": 12.0
+        }
+       ]
+      },
+      "multiSelect": true
+     },
+     {
+      "id": "q24",
+      "qNum": 24,
+      "question": "What would make you switch from a skincare product you currently use?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "A product that targets my specific skin concern more effectively",
+       "A product with clinically proven results",
+       "A more affordable product that works just as well",
+       "A product with cleaner or more sustainable ingredients",
+       "A product that is easier or faster to apply",
+       "Nothing would make me switch"
+      ],
+      "chart": "lollipop",
+      "data": [
+       {
+        "label": "A product that targets my specific skin concern more effectively",
+        "value": 30.0
+       },
+       {
+        "label": "A product with clinically proven results",
+        "value": 25.0
+       },
+       {
+        "label": "A more affordable product that works just as well",
+        "value": 20.0
+       },
+       {
+        "label": "A product with cleaner or more sustainable ingredients",
+        "value": 12.0
+       },
+       {
+        "label": "A product that is easier or faster to apply",
+        "value": 8.0
+       },
+       {
+        "label": "Nothing would make me switch",
+        "value": 5.0
+       }
+      ],
+      "insight": "Top response: A product that targets my specific skin concern more effectively (30.00%).",
+      "distributionNote": "Concern-Driven Buyers and High-Engagement Users prioritize targeted and clinical efficacy; Routine Minimalists and Safety-First Consumers split on affordability and clean ingredients.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 5,
+      "narrativeOrder": 5,
+      "beatId": "switching",
+      "beatTitle": "What would make them switch brands",
+      "beatCanonical": "switching",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "A product that targets my specific skin concern more effectively",
+         "value": 30.0
+        },
+        {
+         "label": "A product with clinically proven results",
+         "value": 25.0
+        },
+        {
+         "label": "A more affordable product that works just as well",
+         "value": 20.0
+        },
+        {
+         "label": "A product with cleaner or more sustainable ingredients",
+         "value": 12.0
+        },
+        {
+         "label": "A product that is easier or faster to apply",
+         "value": 8.0
+        },
+        {
+         "label": "Nothing would make me switch",
+         "value": 5.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "A product that targets my specific skin concern more effectively",
+         "value": 30.0
+        },
+        {
+         "label": "A product with clinically proven results",
+         "value": 25.0
+        },
+        {
+         "label": "A more affordable product that works just as well",
+         "value": 20.0
+        },
+        {
+         "label": "A product with cleaner or more sustainable ingredients",
+         "value": 12.0
+        },
+        {
+         "label": "A product that is easier or faster to apply",
+         "value": 8.0
+        },
+        {
+         "label": "Nothing would make me switch",
+         "value": 5.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q25",
+      "qNum": 25,
+      "question": "In the next 12 months, how do you expect your spending on skincare products to change?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Spend noticeably less",
+       "Spend a little less",
+       "Spend about the same",
+       "Spend a little more",
+       "Spend noticeably more"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Spend noticeably less",
+        "value": 5.0
+       },
+       {
+        "label": "Spend a little less",
+        "value": 10.0
+       },
+       {
+        "label": "Spend about the same",
+        "value": 35.0
+       },
+       {
+        "label": "Spend a little more",
+        "value": 35.0
+       },
+       {
+        "label": "Spend noticeably more",
+        "value": 15.0
+       }
+      ],
+      "insight": "Top response: Spend about the same (35.00%).",
+      "distributionNote": "High-Engagement Users and Concern-Driven Buyers expect to increase spending.",
+      "N": 370,
+      "questionLayer": "core",
+      "isGrounded": true,
+      "funnelPosition": 6,
+      "narrativeOrder": 6,
+      "beatId": "future_use",
+      "beatTitle": "Where their skincare use is heading",
+      "beatCanonical": "future_use",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Spend noticeably less",
+         "value": 5.0
+        },
+        {
+         "label": "Spend a little less",
+         "value": 10.0
+        },
+        {
+         "label": "Spend about the same",
+         "value": 35.0
+        },
+        {
+         "label": "Spend a little more",
+         "value": 35.0
+        },
+        {
+         "label": "Spend noticeably more",
+         "value": 15.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Spend noticeably less",
+         "value": 5.0
+        },
+        {
+         "label": "Spend a little less",
+         "value": 10.0
+        },
+        {
+         "label": "Spend about the same",
+         "value": 35.0
+        },
+        {
+         "label": "Spend a little more",
+         "value": 35.0
+        },
+        {
+         "label": "Spend noticeably more",
+         "value": 15.0
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "profiling",
+    "label": "Profiling",
+    "questions": [
+     {
+      "id": "q26",
+      "qNum": 26,
+      "question": "Which age group are you in?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "18-24",
+       "25-34",
+       "35-44",
+       "45-54",
+       "55-64",
+       "65 or older"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "18-24",
+        "value": 20.0
+       },
+       {
+        "label": "25-34",
+        "value": 30.0
+       },
+       {
+        "label": "35-44",
+        "value": 25.0
+       },
+       {
+        "label": "45-54",
+        "value": 15.0
+       },
+       {
+        "label": "55-64",
+        "value": 7.0
+       },
+       {
+        "label": "65 or older",
+        "value": 3.0
+       }
+      ],
+      "insight": "Top response: 25-34 (30.00%).",
+      "distributionNote": "The panel skews younger, with Millennials and Gen Z dominating; older segments are present but smaller.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 1,
+      "narrativeOrder": 1,
+      "beatId": "age_band",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "18-24",
+         "value": 20.0
+        },
+        {
+         "label": "25-34",
+         "value": 30.0
+        },
+        {
+         "label": "35-44",
+         "value": 25.0
+        },
+        {
+         "label": "45-54",
+         "value": 15.0
+        },
+        {
+         "label": "55-64",
+         "value": 7.0
+        },
+        {
+         "label": "65 or older",
+         "value": 3.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "18-24",
+         "value": 20.0
+        },
+        {
+         "label": "25-34",
+         "value": 30.0
+        },
+        {
+         "label": "35-44",
+         "value": 25.0
+        },
+        {
+         "label": "45-54",
+         "value": 15.0
+        },
+        {
+         "label": "55-64",
+         "value": 7.0
+        },
+        {
+         "label": "65 or older",
+         "value": 3.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q27",
+      "qNum": 27,
+      "question": "What is your gender?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Woman",
+       "Man",
+       "Non-binary",
+       "Prefer to self-describe",
+       "Prefer not to say"
+      ],
+      "chart": "vbar",
+      "data": [
+       {
+        "label": "Woman",
+        "value": 65.0
+       },
+       {
+        "label": "Man",
+        "value": 30.0
+       },
+       {
+        "label": "Non-binary",
+        "value": 2.0
+       },
+       {
+        "label": "Prefer to self-describe",
+        "value": 1.0
+       },
+       {
+        "label": "Prefer not to say",
+        "value": 2.0
+       }
+      ],
+      "insight": "Top response: Woman (65.00%).",
+      "distributionNote": "Skincare category skews female, but male interest is notable; small shares for non-binary and undisclosed.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 2,
+      "narrativeOrder": 2,
+      "beatId": "gender",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Woman",
+         "value": 65.0
+        },
+        {
+         "label": "Man",
+         "value": 30.0
+        },
+        {
+         "label": "Non-binary",
+         "value": 2.0
+        },
+        {
+         "label": "Prefer to self-describe",
+         "value": 1.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 2.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Woman",
+         "value": 65.0
+        },
+        {
+         "label": "Man",
+         "value": 30.0
+        },
+        {
+         "label": "Non-binary",
+         "value": 2.0
+        },
+        {
+         "label": "Prefer to self-describe",
+         "value": 1.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 2.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q28",
+      "qNum": 28,
+      "question": "Who else lives in your household?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "I live alone",
+       "I live with a partner, no children at home",
+       "I live with children under 18",
+       "I live with other adults (family or housemates), no children",
+       "Other"
+      ],
+      "chart": "stacked",
+      "data": [
+       {
+        "label": "I live alone",
+        "value": 18.0
+       },
+       {
+        "label": "I live with a partner, no children at home",
+        "value": 27.0
+       },
+       {
+        "label": "I live with children under 18",
+        "value": 33.0
+       },
+       {
+        "label": "I live with other adults (family or housemates), no children",
+        "value": 17.0
+       },
+       {
+        "label": "Other",
+        "value": 5.0
+       }
+      ],
+      "insight": "Top response: I live with children under 18 (33.00%).",
+      "distributionNote": "High-Engagement Users and Concern-Driven Buyers skew toward living with partners or children, while Routine Minimalists and Safety-First Consumers include more solo dwellers and multi-generational households.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 3,
+      "narrativeOrder": 3,
+      "beatId": "household_composition",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "I live alone",
+         "value": 18.0
+        },
+        {
+         "label": "I live with a partner, no children at home",
+         "value": 27.0
+        },
+        {
+         "label": "I live with children under 18",
+         "value": 33.0
+        },
+        {
+         "label": "I live with other adults (family or housemates), no children",
+         "value": 17.0
+        },
+        {
+         "label": "Other",
+         "value": 5.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "I live alone",
+         "value": 18.0
+        },
+        {
+         "label": "I live with a partner, no children at home",
+         "value": 27.0
+        },
+        {
+         "label": "I live with children under 18",
+         "value": 33.0
+        },
+        {
+         "label": "I live with other adults (family or housemates), no children",
+         "value": 17.0
+        },
+        {
+         "label": "Other",
+         "value": 5.0
+        }
+       ]
+      }
+     },
+     {
+      "id": "q29",
+      "qNum": 29,
+      "question": "What was your total household income before tax last year?",
+      "questionType": "single_choice",
+      "responseInstruction": "Select one.",
+      "sumsTo100": true,
+      "options": [
+       "Under ₹25,000",
+       "₹25,000 - ₹49,999",
+       "₹50,000 - ₹74,999",
+       "₹75,000 - ₹99,999",
+       "₹100,000 - ₹149,999",
+       "₹150,000 or more",
+       "Prefer not to say"
+      ],
+      "chart": "hbar",
+      "data": [
+       {
+        "label": "Under ₹25,000",
+        "value": 12.0
+       },
+       {
+        "label": "₹25,000 - ₹49,999",
+        "value": 18.0
+       },
+       {
+        "label": "₹50,000 - ₹74,999",
+        "value": 22.0
+       },
+       {
+        "label": "₹75,000 - ₹99,999",
+        "value": 17.0
+       },
+       {
+        "label": "₹100,000 - ₹149,999",
+        "value": 14.0
+       },
+       {
+        "label": "₹150,000 or more",
+        "value": 12.0
+       },
+       {
+        "label": "Prefer not to say",
+        "value": 5.0
+       }
+      ],
+      "insight": "Top response: ₹50,000 - ₹74,999 (22.00%).",
+      "distributionNote": "Safety-First and Routine Minimalists are spread across mid-to-low bands.",
+      "N": 370,
+      "questionLayer": "profiling",
+      "isGrounded": true,
+      "funnelPosition": 4,
+      "narrativeOrder": 4,
+      "beatId": "income_band",
+      "dataByRegion": {
+       "global": [
+        {
+         "label": "Under ₹25,000",
+         "value": 12.0
+        },
+        {
+         "label": "₹25,000 - ₹49,999",
+         "value": 18.0
+        },
+        {
+         "label": "₹50,000 - ₹74,999",
+         "value": 22.0
+        },
+        {
+         "label": "₹75,000 - ₹99,999",
+         "value": 17.0
+        },
+        {
+         "label": "₹100,000 - ₹149,999",
+         "value": 14.0
+        },
+        {
+         "label": "₹150,000 or more",
+         "value": 12.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 5.0
+        }
+       ],
+       "asia-pacific": [
+        {
+         "label": "Under ₹25,000",
+         "value": 12.0
+        },
+        {
+         "label": "₹25,000 - ₹49,999",
+         "value": 18.0
+        },
+        {
+         "label": "₹50,000 - ₹74,999",
+         "value": 22.0
+        },
+        {
+         "label": "₹75,000 - ₹99,999",
+         "value": 17.0
+        },
+        {
+         "label": "₹100,000 - ₹149,999",
+         "value": 14.0
+        },
+        {
+         "label": "₹150,000 or more",
+         "value": 12.0
+        },
+        {
+         "label": "Prefer not to say",
+         "value": 5.0
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "survey": {
+  "market_segment": "Skin Care Products",
+  "segment_type": "b2c",
+  "region": "India",
+  "sample_size": 2500,
+  "surveyDefinition": {
+   "title": "Skin Care Products — consumer survey (India)",
+   "category": "Skin Care Products",
+   "region": "India",
+   "audienceType": "B2C consumer",
+   "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on skincare routine complexity, purchase drivers, product expectations, and switching triggers.",
+   "segments": [
+    {
+     "id": "routine_minimalists",
+     "name": "Routine Minimalists",
+     "description": "Use 1-3 basic products (cleanser, moisturizer, sunscreen) on a simple daily schedule. Driven by convenience and basic skin health, not by chasing specific concerns. Low engagement with ingredients or claims; buy on habit or price."
+    },
+    {
+     "id": "concern_driven_optimizers",
+     "name": "Concern-Driven Buyers",
+     "description": "Have one or two specific skin concerns (aging, acne, hyperpigmentation) and actively research products targeting those concerns. Willing to pay more for clinically proven efficacy and visible results. Routine is moderately complex and tailored to their concern."
+    },
+    {
+     "id": "safety_first_consumers",
+     "name": "Safety-First Consumers",
+     "description": "Prioritize gentle, non-irritating, and 'clean' formulations. Often have sensitive skin or worry about long-term chemical exposure. Heavily influenced by dermatologist recommendations and transparent ingredient lists. Routine may be simple but deliberately chosen for safety."
+    },
+    {
+     "id": "high_engagement_enthusiasts",
+     "name": "High-Engagement Users",
+     "description": "Treat skincare as a hobby or self-care ritual. Use multi-step routines (5+ products), follow trends (K-beauty, actives), and enjoy experimenting. High spend, high brand awareness, and open to switching for novelty or better results."
+    }
+   ],
+   "whatThisSurveyIs": "A segmentation study of Skin Care Products buyers in India. It asks how people use Skin Care Products, how they choose it, and what would make them switch — then sorts respondents into the behavioural groups defined below. Questions stay at category level: no named brands, and nothing about adjacent categories.",
+   "whoseContextThisIs": "Adults in India who buy or use Skin Care Products for personal or household use. Respondents qualify if they: Individuals who have purchased at least one skin care product for personal use in the past 12 months; Primary decision-maker for their own skin care purchases; Ages 18 and older. Excluded: Professional buyers (e.g., dermatology clinics, spas, salons) purchasing for resale or professional use; Individuals purchasing solely as gifts for others; Children under 18.",
+   "whyTheseRespondents": "Everyday consumers buy skin care products for personal use, pay for them out of pocket at retail or online, and make the purchase decision themselves. While some professional products are sold to salons, the dominant consumer market is direct-to-consumer, so this is a pure B2C segment.",
+   "respondentBehaviours": [
+    "Regularly purchases skin care products (e.g., cleansers, moisturizers, serums, sunscreens)",
+    "Researches products online, reads reviews, follows influencers or dermatologist recommendations",
+    "May have specific skin concerns (acne, aging, sensitivity, hyperpigmentation)",
+    "Brand loyal but open to switching for better efficacy or price",
+    "Purchases through multiple channels: drugstores, department stores, specialty beauty retailers, e-commerce, subscription boxes"
+   ],
+   "whatIsDeliberatelyNotAsked": [
+    "Age or household income as behavioural questions — no finding in this survey is driven by them. They are asked once, at the end, in Profiling, and used only to cross-tabulate the behavioural results.",
+    "Brand, company or manufacturer names — the survey stays at category level so findings are not tied to one competitor set.",
+    "Where the respondent lives — region is chosen when viewing the results, so asking it again would waste a question."
+   ],
+   "howToReadTheNumbers": "Percentages are modelled estimates built from published market evidence — they are not measurements from fielded interviews, and should be read as an expected shape of response rather than a result. Single-choice, ranking and rating-scale questions sum to 100%. Multi-select questions do not — each option is an independent share of respondents choosing it. The N shown on each question is the display base for that item.",
+   "structure": {
+    "totalQuestions": 29,
+    "sections": [
+     {
+      "id": "profile",
+      "label": "Consumer Profile",
+      "covers": "who uses the product and how — usage context, occasions, frequency, who is involved",
+      "questions": 6
+     },
+     {
+      "id": "behavior",
+      "label": "Buying Behavior",
+      "covers": "how they shop for and buy it — trigger, research, channel, spend, decision drivers",
+      "questions": 5
+     },
+     {
+      "id": "preferences",
+      "label": "Preferences & Expectations",
+      "covers": "what they need from the product — must-haves, quality cues, fit, claims, trade-offs",
+      "questions": 8
+     },
+     {
+      "id": "satisfaction",
+      "label": "Satisfaction & Future Intent",
+      "covers": "outcomes — satisfaction, problems, switching, advocacy, future purchase intent",
+      "questions": 6
+     }
+    ],
+    "storyline": "Questions run in a planned narrative order: broad and easy first, specific and sensitive last.",
+    "storylineSummary": "The survey opens by mapping the respondent's current skincare landscape — what products they use, how complex their routine is, and what skin concerns they are managing. It then traces their purchase journey from trigger through discovery, channel, and decision drivers, ending with spend. Next, it probes their product expectations — must-haves, quality cues, claims, formats, and trade-offs — before closing with satisfaction, unmet needs, and switching triggers. This arc cleanly separates the four segments: Routine Minimalists (low complexity, low engagement), Concern-Driven Optimizers…"
+   }
+  },
+  "targetCustomer": {
+   "summary": "Adult consumers of Skin Care Products in India — who Individuals who have purchased at least one skin care product for personal use in the past 12 months; Primary decision-maker for their own skin care purchases; Ages 18 and older. The audience is defined as the end consumer who buys and uses skin care products for personal care. This captures the core B2C market and allows for segmentation by demographics, skin concerns, and purchasing behavior.",
+   "marketSegment": "Skin Care Products",
+   "region": "India",
+   "inclusionCriteria": [
+    "Individuals who have purchased at least one skin care product for personal use in the past 12 months",
+    "Primary decision-maker for their own skin care purchases",
+    "Ages 18 and older"
+   ],
+   "behaviors": [
+    "Regularly purchases skin care products (e.g., cleansers, moisturizers, serums, sunscreens)",
+    "Researches products online, reads reviews, follows influencers or dermatologist recommendations",
+    "May have specific skin concerns (acne, aging, sensitivity, hyperpigmentation)",
+    "Brand loyal but open to switching for better efficacy or price",
+    "Purchases through multiple channels: drugstores, department stores, specialty beauty retailers, e-commerce, subscription boxes"
+   ],
+   "exclusions": [
+    "Professional buyers (e.g., dermatology clinics, spas, salons) purchasing for resale or professional use",
+    "Individuals purchasing solely as gifts for others",
+    "Children under 18"
+   ],
+   "contextDemographics": {
+    "age": "18-65+",
+    "gender": "All genders, with a skew toward women in most categories",
+    "income": "Middle to high income, varies by price tier",
+    "geography": "Global, with emphasis on urban and suburban areas"
+   },
+   "assumptions": [
+    "The 'global skin care products market' refers to consumer retail products, not professional-only lines.",
+    "The category includes all skin care segments (face, body, anti-aging, sun care, etc.) unless specified otherwise."
+   ],
+   "note": "Respondents match this target customer. Age, income, and brand/company-name items are NOT asked in the questionnaire; they may appear here only as research context."
+  },
+  "audience_profile": {
+   "demographics": {
+    "age": "18-65+",
+    "gender": "All genders, with a skew toward women in most categories",
+    "income": "Middle to high income, varies by price tier",
+    "geography": "Global, with emphasis on urban and suburban areas"
+   },
+   "behaviors": [
+    "Regularly purchases skin care products (e.g., cleansers, moisturizers, serums, sunscreens)",
+    "Researches products online, reads reviews, follows influencers or dermatologist recommendations",
+    "May have specific skin concerns (acne, aging, sensitivity, hyperpigmentation)",
+    "Brand loyal but open to switching for better efficacy or price",
+    "Purchases through multiple channels: drugstores, department stores, specialty beauty retailers, e-commerce, subscription boxes"
+   ],
+   "qualifiers": [
+    "Individuals who have purchased at least one skin care product for personal use in the past 12 months",
+    "Primary decision-maker for their own skin care purchases",
+    "Ages 18 and older"
+   ],
+   "exclusions": [
+    "Professional buyers (e.g., dermatology clinics, spas, salons) purchasing for resale or professional use",
+    "Individuals purchasing solely as gifts for others",
+    "Children under 18"
+   ],
+   "rationale": "The audience is defined as the end consumer who buys and uses skin care products for personal care. This captures the core B2C market and allows for segmentation by demographics, skin concerns, and purchasing behavior.",
+   "assumptions": [
+    "The 'global skin care products market' refers to consumer retail products, not professional-only lines.",
+    "The category includes all skin care segments (face, body, anti-aging, sun care, etc.) unless specified otherwise."
+   ]
+  },
+  "tabs": [
+   {
+    "tab": "consumer_profile",
+    "questions": [
+     {
+      "id": "q1",
+      "text": "How often do you use a skincare product?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "category_entry",
+      "beat_title": "Skincare products used in the past year",
+      "beat_canonical": "category_entry",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Always or almost always",
+       "Often",
+       "Sometimes",
+       "Rarely",
+       "Never"
+      ],
+      "answers": [
+       {
+        "label": "Always or almost always",
+        "percentage": 42.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Often",
+        "percentage": 31.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sometimes",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Rarely",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Never",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "High-Engagement Users and Concern-Driven Buyers dominate the frequent-use end; Routine Minimalists and Safety-First Consumers still use products regularly but with slightly less intensity.",
+      "data_by_region": {
+       "asia-pacific": [
+        42.0,
+        31.0,
+        18.0,
+        7.0,
+        2.0
+       ]
+      }
+     },
+     {
+      "id": "q2",
+      "text": "How would you describe your skincare routine?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "category_entry",
+      "beat_title": "Skincare products used in the past year",
+      "beat_canonical": "category_entry",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "I use one or two products",
+       "I have a few steps I do most days",
+       "I follow a full multi-step routine",
+       "I only use skincare when I have a problem"
+      ],
+      "answers": [
+       {
+        "label": "I use one or two products",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I have a few steps I do most days",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I follow a full multi-step routine",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I only use skincare when I have a problem",
+        "percentage": 16.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Routine Minimalists and Safety-First Consumers favor simple routines; High-Engagement Users drive the multi-step segment; Concern-Driven Buyers fall into the few-steps group.",
+      "data_by_region": {
+       "asia-pacific": [
+        22.0,
+        38.0,
+        24.0,
+        16.0
+       ]
+      }
+     },
+     {
+      "id": "q3",
+      "text": "When do you apply skincare products?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "usage_occasions",
+      "beat_title": "When and why skincare is applied",
+      "beat_canonical": "usage_occasion",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "In the morning only",
+       "In the evening only",
+       "Both morning and evening",
+       "Only when my skin feels dry or irritated",
+       "Only before going out or special occasions"
+      ],
+      "answers": [
+       {
+        "label": "In the morning only",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "In the evening only",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Both morning and evening",
+        "percentage": 45.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Only when my skin feels dry or irritated",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Only before going out or special occasions",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "High-Engagement Users and Concern-Driven Buyers apply both morning and evening; Routine Minimalists and Safety-First Consumers often choose one time; occasional use is less common.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        25.0,
+        45.0,
+        8.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q4",
+      "text": "Which skin concerns are you trying to manage?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "skin_concerns",
+      "beat_title": "Primary skin concerns being managed",
+      "beat_canonical": "need_state",
+      "question_layer": "module",
+      "sample_size": 2500,
+      "options": [
+       "Dryness or flaking",
+       "Fine lines or loss of firmness",
+       "Acne or breakouts",
+       "Dark spots or uneven tone",
+       "Sensitivity or redness",
+       "Dullness or tired-looking skin",
+       "None of these"
+      ],
+      "answers": [
+       {
+        "label": "Dryness or flaking",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Fine lines or loss of firmness",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Acne or breakouts",
+        "percentage": 32.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dark spots or uneven tone",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sensitivity or redness",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dullness or tired-looking skin",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "None of these",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and Safety-First Consumers drive the top concerns; aging and dryness are widespread across segments; acne is strong among younger and budget-focused consumers.",
+      "data_by_region": {
+       "asia-pacific": [
+        38.0,
+        35.0,
+        32.0,
+        28.0,
+        25.0,
+        22.0,
+        8.0
+       ]
+      }
+     },
+     {
+      "id": "q5",
+      "text": "What is the main reason you use skincare products?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "skin_concerns",
+      "beat_title": "Primary skin concerns being managed",
+      "beat_canonical": "need_state",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "To address a specific skin concern like acne or dark spots",
+       "To prevent signs of aging",
+       "To maintain healthy skin as part of daily self-care",
+       "To treat dryness or sensitivity",
+       "To follow trends or recommendations I see online"
+      ],
+      "answers": [
+       {
+        "label": "To address a specific skin concern like acne or dark spots",
+        "percentage": 32.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "To prevent signs of aging",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "To maintain healthy skin as part of daily self-care",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "To treat dryness or sensitivity",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "To follow trends or recommendations I see online",
+        "percentage": 6.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and Safety-First Consumers anchor the specific-concern and dryness/sensitivity choices; Routine Minimalists and High-Engagement Users drive the self-care and trend-driven answers.",
+      "data_by_region": {
+       "asia-pacific": [
+        32.0,
+        22.0,
+        28.0,
+        12.0,
+        6.0
+       ]
+      }
+     },
+     {
+      "id": "q6",
+      "text": "How would you describe your skin type?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 6,
+      "narrative_order": 6,
+      "beat_id": "household_role",
+      "beat_title": "Who in the household uses and decides",
+      "beat_canonical": "household_role",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Oily",
+       "Dry",
+       "Combination",
+       "Normal",
+       "Sensitive"
+      ],
+      "answers": [
+       {
+        "label": "Oily",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dry",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Combination",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Normal",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sensitive",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Combination and oily skin dominate; sensitive-skin users place the highest weight on fragrance-free and dermatologist-tested claims.",
+      "data_by_region": {
+       "asia-pacific": [
+        22.0,
+        20.0,
+        34.0,
+        14.0,
+        10.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "buying_behavior",
+    "questions": [
+     {
+      "id": "q7",
+      "text": "What made you start using a new skincare product the last time?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "purchase_trigger",
+      "beat_title": "What triggers a new skincare purchase",
+      "beat_canonical": "purchase_trigger",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "I ran out of my usual product",
+       "I noticed a new skin concern",
+       "I saw a recommendation online or from a friend",
+       "It was on sale or a special offer",
+       "I wanted to try something new",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "I ran out of my usual product",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I noticed a new skin concern",
+        "percentage": 26.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I saw a recommendation online or from a friend",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "It was on sale or a special offer",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I wanted to try something new",
+        "percentage": 13.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Concern-Driven Buyers switch when a new concern appears; High-Engagement Users are driven by recommendations and novelty; Routine Minimalists and Safety-First Consumers are more likely to repurchase or wait for sales.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        26.0,
+        24.0,
+        14.0,
+        13.0,
+        5.0
+       ]
+      }
+     },
+     {
+      "id": "q8",
+      "text": "Where do you learn about new skincare products before buying them?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "discovery",
+      "beat_title": "Where they learn about new products",
+      "beat_canonical": "discovery",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Social media (Instagram, TikTok, YouTube)",
+       "Beauty blogs or online reviews",
+       "Recommendations from friends or family",
+       "Dermatologist or skin care professional",
+       "In-store displays or sales staff",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Social media (Instagram, TikTok, YouTube)",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Beauty blogs or online reviews",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Recommendations from friends or family",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dermatologist or skin care professional",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "In-store displays or sales staff",
+        "percentage": 6.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "High-Engagement Users and Concern-Driven Buyers dominate social media and review channels; Safety-First Consumers rely more on professional and personal recommendations.",
+      "data_by_region": {
+       "asia-pacific": [
+        38.0,
+        22.0,
+        18.0,
+        14.0,
+        6.0,
+        2.0
+       ]
+      }
+     },
+     {
+      "id": "q9",
+      "text": "How often do you buy a new skincare product?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "purchase_cycle",
+      "beat_title": "How often they restock or repurchase",
+      "beat_canonical": "purchase_cycle",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "More than once a month",
+       "About once a month",
+       "Every 2-3 months",
+       "Every 4-6 months",
+       "Less than every 6 months"
+      ],
+      "answers": [
+       {
+        "label": "More than once a month",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "About once a month",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Every 2-3 months",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Every 4-6 months",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Less than every 6 months",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "High-Engagement Users and Concern-Driven Buyers purchase frequently; Routine Minimalists and Budget-conscious segments stretch purchase cycles.",
+      "data_by_region": {
+       "asia-pacific": [
+        12.0,
+        22.0,
+        34.0,
+        20.0,
+        12.0
+       ]
+      }
+     },
+     {
+      "id": "q10",
+      "text": "What matters most when you choose a skincare product?",
+      "type": "ranking",
+      "chart_type": "stacked",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "decision_drivers",
+      "beat_title": "What decides the final choice",
+      "beat_canonical": "decision_drivers",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Clinically proven results",
+       "Targeted for a specific skin concern",
+       "Natural or sustainable ingredients",
+       "Price",
+       "Texture and feel on the skin",
+       "Dermatologist recommendation"
+      ],
+      "answers": [
+       {
+        "label": "Clinically proven results",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Targeted for a specific skin concern",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Natural or sustainable ingredients",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Price",
+        "percentage": 16.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Texture and feel on the skin",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dermatologist recommendation",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and Safety-First Consumers prioritize clinical proof and targeted solutions; price sensitivity is spread across Routine Minimalists and budget-focused segments.",
+      "data_by_region": {
+       "asia-pacific": [
+        28.0,
+        24.0,
+        12.0,
+        16.0,
+        8.0,
+        12.0
+       ]
+      }
+     },
+     {
+      "id": "q11",
+      "text": "How much do you spend on skincare products in a single purchase?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "spend",
+      "beat_title": "Typical monthly spend on skincare",
+      "beat_canonical": "spend",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Under ₹500",
+       "₹500–₹999",
+       "₹1,000–₹1,999",
+       "₹2,000–₹3,499",
+       "₹3,500 or more"
+      ],
+      "answers": [
+       {
+        "label": "Under ₹500",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹500–₹999",
+        "percentage": 32.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹1,000–₹1,999",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹2,000–₹3,499",
+        "percentage": 16.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹3,500 or more",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Routine Minimalists and budget-conscious segments cluster in lower price bands; High-Engagement Users and premium-seeking segments lift the upper end.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        32.0,
+        24.0,
+        16.0,
+        10.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "preferences_expectations",
+    "questions": [
+     {
+      "id": "q12",
+      "text": "Which must a skincare product do for you to keep using it?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "must_haves",
+      "beat_title": "Non-negotiable product attributes",
+      "beat_canonical": "must_haves",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Show visible results within a few weeks",
+       "Not cause stinging, redness, or breakouts",
+       "Feel comfortable on my skin all day",
+       "Fit easily into my morning or evening routine",
+       "Be affordable enough to repurchase regularly",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Show visible results within a few weeks",
+        "percentage": 34.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Not cause stinging, redness, or breakouts",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Feel comfortable on my skin all day",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Fit easily into my morning or evening routine",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Be affordable enough to repurchase regularly",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 1.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and Safety-First Consumers drive the need for visible results and non-irritation; convenience is key for Routine Minimalists.",
+      "data_by_region": {
+       "asia-pacific": [
+        34.0,
+        28.0,
+        18.0,
+        12.0,
+        7.0,
+        1.0
+       ]
+      }
+     },
+     {
+      "id": "q13",
+      "text": "Which must a skincare product be for you to consider buying it?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "must_haves",
+      "beat_title": "Non-negotiable product attributes",
+      "beat_canonical": "must_haves",
+      "question_layer": "module",
+      "sample_size": 2500,
+      "options": [
+       "Fragrance-free",
+       "Non-comedogenic (won't clog pores)",
+       "Clinically tested for visible results",
+       "Made with natural ingredients",
+       "Dermatologist-recommended",
+       "Free from harsh chemicals"
+      ],
+      "answers": [
+       {
+        "label": "Fragrance-free",
+        "percentage": 42.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Non-comedogenic (won't clog pores)",
+        "percentage": 38.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Clinically tested for visible results",
+        "percentage": 55.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Made with natural ingredients",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dermatologist-recommended",
+        "percentage": 45.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Free from harsh chemicals",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Safety-First Consumers and Concern-Driven Buyers drive high rates for clinical testing, dermatologist recommendation, and non-irritating attributes; natural and chemical-free claims appeal broadly but are not universal.",
+      "data_by_region": {
+       "asia-pacific": [
+        42.0,
+        38.0,
+        55.0,
+        30.0,
+        45.0,
+        35.0
+       ]
+      }
+     },
+     {
+      "id": "q14",
+      "text": "How do you judge the quality of a skincare product before buying it?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "quality_cues",
+      "beat_title": "Signals that indicate a quality product",
+      "beat_canonical": "quality_cues",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "It has clinical or dermatologist testing behind it",
+       "The ingredient list has proven actives at effective levels",
+       "The texture and feel of the product itself",
+       "The brand's reputation or expert recommendations",
+       "The price point signals it is a premium product",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "It has clinical or dermatologist testing behind it",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "The ingredient list has proven actives at effective levels",
+        "percentage": 24.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "The texture and feel of the product itself",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "The brand's reputation or expert recommendations",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "The price point signals it is a premium product",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": false,
+      "distribution_note": "Concern-Driven Buyers and Safety-First Consumers rely on clinical evidence and ingredient transparency; brand reputation matters for loyal and premium segments; texture is secondary.",
+      "data_by_region": {
+       "asia-pacific": [
+        30.0,
+        24.0,
+        14.0,
+        20.0,
+        7.0,
+        5.0
+       ]
+      }
+     },
+     {
+      "id": "q15",
+      "text": "Which claims would make you more likely to trust a skincare product?",
+      "type": "multiple_choice",
+      "chart_type": "bar",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "claims_credentials",
+      "beat_title": "Which claims and certifications carry weight",
+      "beat_canonical": "claims_credentials",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Dermatologist tested",
+       "Clinically proven",
+       "Fragrance-free",
+       "Non-comedogenic",
+       "Vegan and cruelty-free",
+       "Recyclable packaging",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Dermatologist tested",
+        "percentage": 28.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Clinically proven",
+        "percentage": 32.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Fragrance-free",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Non-comedogenic",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Vegan and cruelty-free",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Recyclable packaging",
+        "percentage": 6.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 4.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and Safety-First Consumers drive the top two claims; High-Engagement Users add weight to vegan and recyclable options.",
+      "data_by_region": {
+       "asia-pacific": [
+        28.0,
+        32.0,
+        12.0,
+        10.0,
+        8.0,
+        6.0,
+        4.0
+       ]
+      }
+     },
+     {
+      "id": "q16",
+      "text": "Which packaging format do you prefer for your daily skincare products?",
+      "type": "single_choice",
+      "chart_type": "donut",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "format_packaging",
+      "beat_title": "Preferred formats and packaging",
+      "beat_canonical": "format_packaging",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Pump bottle",
+       "Tube",
+       "Jar with a lid",
+       "Dropper bottle",
+       "Single-dose packets",
+       "No preference"
+      ],
+      "answers": [
+       {
+        "label": "Pump bottle",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Tube",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Jar with a lid",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dropper bottle",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Single-dose packets",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "No preference",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Routine Minimalists and Busy Parents favor pump bottles and tubes for convenience; High-Engagement Users prefer dropper bottles for actives.",
+      "data_by_region": {
+       "asia-pacific": [
+        35.0,
+        30.0,
+        10.0,
+        15.0,
+        3.0,
+        7.0
+       ]
+      }
+     },
+     {
+      "id": "q17",
+      "text": "If a product delivers visible results but has a heavy or greasy texture, how likely are you to keep using it?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 6,
+      "narrative_order": 6,
+      "beat_id": "tradeoffs",
+      "beat_title": "What they would give up to get what they want",
+      "beat_canonical": "tradeoffs",
+      "question_layer": "module",
+      "sample_size": 2500,
+      "options": [
+       "Very unlikely",
+       "Somewhat unlikely",
+       "Neither likely nor unlikely",
+       "Somewhat likely",
+       "Very likely"
+      ],
+      "answers": [
+       {
+        "label": "Very unlikely",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat unlikely",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Neither likely nor unlikely",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat likely",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Very likely",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Safety-First Consumers and Routine Minimalists are most likely to reject heavy textures; Concern-Driven Buyers are more tolerant if results are visible.",
+      "data_by_region": {
+       "asia-pacific": [
+        20.0,
+        30.0,
+        15.0,
+        25.0,
+        10.0
+       ]
+      }
+     },
+     {
+      "id": "q18",
+      "text": "If a skincare product could not have everything, which would you give up first to pay less?",
+      "type": "ranking",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 7,
+      "narrative_order": 7,
+      "beat_id": "tradeoffs",
+      "beat_title": "What they would give up to get what they want",
+      "beat_canonical": "tradeoffs",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Luxury texture or fragrance",
+       "Premium packaging",
+       "Clinically proven ingredients",
+       "Dermatologist or clinical testing",
+       "Sustainable or natural ingredients",
+       "A well-known brand name"
+      ],
+      "answers": [
+       {
+        "label": "Luxury texture or fragrance",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Premium packaging",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Clinically proven ingredients",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Dermatologist or clinical testing",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Sustainable or natural ingredients",
+        "percentage": 13.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A well-known brand name",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Price-sensitive segments (Routine Minimalists, Budget-Conscious) give up luxury texture and packaging first; Safety-First and Concern-Driven Buyers hold onto clinical testing and proven ingredients.",
+      "data_by_region": {
+       "asia-pacific": [
+        30.0,
+        25.0,
+        10.0,
+        12.0,
+        13.0,
+        10.0
+       ]
+      }
+     },
+     {
+      "id": "q19",
+      "text": "How much would you expect to pay for a daily moisturizer that meets all your needs?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 8,
+      "narrative_order": 8,
+      "beat_id": "value_expectation",
+      "beat_title": "Value for money and willingness to pay",
+      "beat_canonical": "value_expectation",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Under ₹300",
+       "₹300 to ₹599",
+       "₹600 to ₹999",
+       "₹1,000 to ₹1,499",
+       "₹1,500 or more"
+      ],
+      "answers": [
+       {
+        "label": "Under ₹300",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹300 to ₹599",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹600 to ₹999",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹1,000 to ₹1,499",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹1,500 or more",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Routine Minimalists and Budget-Conscious segments cluster under $20; Concern-Driven and High-Engagement Users push the $20–$39 band; Luxury and Tech-Savvy segments support the premium tail.",
+      "data_by_region": {
+       "asia-pacific": [
+        15.0,
+        30.0,
+        35.0,
+        15.0,
+        5.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "satisfaction_future_intent",
+    "questions": [
+     {
+      "id": "q20",
+      "text": "Overall, how satisfied are you with the Skin Care Products you currently use?",
+      "type": "likert_5",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "overall_satisfaction",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Very dissatisfied",
+       "Somewhat dissatisfied",
+       "Neither satisfied nor dissatisfied",
+       "Somewhat satisfied",
+       "Very satisfied"
+      ],
+      "answers": [
+       {
+        "label": "Very dissatisfied",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat dissatisfied",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Neither satisfied nor dissatisfied",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Somewhat satisfied",
+        "percentage": 40.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Very satisfied",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Satisfaction skews positive, driven by High-Engagement Users and Concern-Driven Buyers finding effective products; Safety-First and Routine Minimalists show more middling scores.",
+      "data_by_region": {
+       "asia-pacific": [
+        5.0,
+        15.0,
+        20.0,
+        40.0,
+        20.0
+       ]
+      }
+     },
+     {
+      "id": "q21",
+      "text": "How likely are you to recommend the Skin Care Products you currently use to a friend or colleague?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "advocacy_nps",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "0 - Not at all likely",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10 - Extremely likely"
+      ],
+      "answers": [
+       {
+        "label": "0 - Not at all likely",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "1",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "2",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "3",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "4",
+        "percentage": 6.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "5",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "6",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "7",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "8",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "9",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "10 - Extremely likely",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Distribution is positive-skewed, with High-Engagement Users and Concern-Driven Buyers giving high scores; a small tail of dissatisfied consumers pulls the low end.",
+      "data_by_region": {
+       "asia-pacific": [
+        2.0,
+        2.0,
+        3.0,
+        5.0,
+        6.0,
+        12.0,
+        10.0,
+        15.0,
+        20.0,
+        15.0,
+        10.0
+       ]
+      }
+     },
+     {
+      "id": "q22",
+      "text": "Which aspects of your current skincare products most satisfies you?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "satisfaction_drivers",
+      "beat_title": "What satisfies or disappoints most",
+      "beat_canonical": "satisfaction_drivers",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Visible improvement in skin texture or firmness",
+       "Clinically proven efficacy",
+       "Convenience and ease of application",
+       "Gentle on sensitive skin",
+       "Pleasant texture and fragrance",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "Visible improvement in skin texture or firmness",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Clinically proven efficacy",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Convenience and ease of application",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Gentle on sensitive skin",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Pleasant texture and fragrance",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and High-Engagement Users prioritize visible results and clinical proof; Routine Minimalists value convenience; Safety-First Consumers value gentleness.",
+      "data_by_region": {
+       "asia-pacific": [
+        30.0,
+        20.0,
+        18.0,
+        15.0,
+        10.0,
+        7.0
+       ]
+      }
+     },
+     {
+      "id": "q23",
+      "text": "Which problems have you had with a skincare product in the past year?",
+      "type": "multiple_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "friction",
+      "beat_title": "Unmet needs and frustrations",
+      "beat_canonical": "friction",
+      "question_layer": "module",
+      "sample_size": 2500,
+      "options": [
+       "It irritated my skin or caused a reaction",
+       "It didn't deliver the visible results promised",
+       "It felt too heavy or greasy on my face",
+       "It was too expensive to keep buying",
+       "The ingredient list was confusing or misleading",
+       "None of these"
+      ],
+      "answers": [
+       {
+        "label": "It irritated my skin or caused a reaction",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "It didn't deliver the visible results promised",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "It felt too heavy or greasy on my face",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "It was too expensive to keep buying",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "The ingredient list was confusing or misleading",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "None of these",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and High-Engagement Users report unmet efficacy claims; Safety-First Consumers report irritation; Budget-Conscious segments cite cost as a problem.",
+      "data_by_region": {
+       "asia-pacific": [
+        25.0,
+        30.0,
+        20.0,
+        15.0,
+        18.0,
+        12.0
+       ]
+      }
+     },
+     {
+      "id": "q24",
+      "text": "What would make you switch from a skincare product you currently use?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 5,
+      "narrative_order": 5,
+      "beat_id": "switching",
+      "beat_title": "What would make them switch brands",
+      "beat_canonical": "switching",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "A product that targets my specific skin concern more effectively",
+       "A product with clinically proven results",
+       "A more affordable product that works just as well",
+       "A product with cleaner or more sustainable ingredients",
+       "A product that is easier or faster to apply",
+       "Nothing would make me switch"
+      ],
+      "answers": [
+       {
+        "label": "A product that targets my specific skin concern more effectively",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A product with clinically proven results",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A more affordable product that works just as well",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A product with cleaner or more sustainable ingredients",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "A product that is easier or faster to apply",
+        "percentage": 8.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Nothing would make me switch",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": true,
+      "options_from_evidence": true,
+      "distribution_note": "Concern-Driven Buyers and High-Engagement Users prioritize targeted and clinical efficacy; Routine Minimalists and Safety-First Consumers split on affordability and clean ingredients.",
+      "data_by_region": {
+       "asia-pacific": [
+        30.0,
+        25.0,
+        20.0,
+        12.0,
+        8.0,
+        5.0
+       ]
+      }
+     },
+     {
+      "id": "q25",
+      "text": "In the next 12 months, how do you expect your spending on skincare products to change?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 6,
+      "narrative_order": 6,
+      "beat_id": "future_use",
+      "beat_title": "Where their skincare use is heading",
+      "beat_canonical": "future_use",
+      "question_layer": "core",
+      "sample_size": 2500,
+      "options": [
+       "Spend noticeably less",
+       "Spend a little less",
+       "Spend about the same",
+       "Spend a little more",
+       "Spend noticeably more"
+      ],
+      "answers": [
+       {
+        "label": "Spend noticeably less",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Spend a little less",
+        "percentage": 10.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Spend about the same",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Spend a little more",
+        "percentage": 35.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Spend noticeably more",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "High-Engagement Users and Concern-Driven Buyers expect to increase spending; Budget-conscious segments hold steady or reduce slightly.",
+      "data_by_region": {
+       "asia-pacific": [
+        5.0,
+        10.0,
+        35.0,
+        35.0,
+        15.0
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "tab": "profiling",
+    "questions": [
+     {
+      "id": "q26",
+      "text": "Which age group are you in?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 1,
+      "narrative_order": 1,
+      "beat_id": "age_band",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "18-24",
+       "25-34",
+       "35-44",
+       "45-54",
+       "55-64",
+       "65 or older"
+      ],
+      "answers": [
+       {
+        "label": "18-24",
+        "percentage": 20.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "25-34",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "35-44",
+        "percentage": 25.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "45-54",
+        "percentage": 15.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "55-64",
+        "percentage": 7.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "65 or older",
+        "percentage": 3.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "The panel skews younger, with Millennials and Gen Z dominating; older segments are present but smaller.",
+      "data_by_region": {
+       "asia-pacific": [
+        20.0,
+        30.0,
+        25.0,
+        15.0,
+        7.0,
+        3.0
+       ]
+      }
+     },
+     {
+      "id": "q27",
+      "text": "What is your gender?",
+      "type": "single_choice",
+      "chart_type": "bar",
+      "funnel_position": 2,
+      "narrative_order": 2,
+      "beat_id": "gender",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "Woman",
+       "Man",
+       "Non-binary",
+       "Prefer to self-describe",
+       "Prefer not to say"
+      ],
+      "answers": [
+       {
+        "label": "Woman",
+        "percentage": 65.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Man",
+        "percentage": 30.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Non-binary",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Prefer to self-describe",
+        "percentage": 1.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Prefer not to say",
+        "percentage": 2.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Skincare category skews female, but male interest is notable; small shares for non-binary and undisclosed.",
+      "data_by_region": {
+       "asia-pacific": [
+        65.0,
+        30.0,
+        2.0,
+        1.0,
+        2.0
+       ]
+      }
+     },
+     {
+      "id": "q28",
+      "text": "Who else lives in your household?",
+      "type": "single_choice",
+      "chart_type": "stacked",
+      "funnel_position": 3,
+      "narrative_order": 3,
+      "beat_id": "household_composition",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "I live alone",
+       "I live with a partner, no children at home",
+       "I live with children under 18",
+       "I live with other adults (family or housemates), no children",
+       "Other"
+      ],
+      "answers": [
+       {
+        "label": "I live alone",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I live with a partner, no children at home",
+        "percentage": 27.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I live with children under 18",
+        "percentage": 33.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "I live with other adults (family or housemates), no children",
+        "percentage": 17.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Other",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "High-Engagement Users and Concern-Driven Buyers skew toward living with partners or children, while Routine Minimalists and Safety-First Consumers include more solo dwellers and multi-generational households.",
+      "data_by_region": {
+       "asia-pacific": [
+        18.0,
+        27.0,
+        33.0,
+        17.0,
+        5.0
+       ]
+      }
+     },
+     {
+      "id": "q29",
+      "text": "What was your total household income before tax last year?",
+      "type": "single_choice",
+      "chart_type": "horizontal_bar",
+      "funnel_position": 4,
+      "narrative_order": 4,
+      "beat_id": "income_band",
+      "beat_title": "",
+      "beat_canonical": null,
+      "question_layer": "profiling",
+      "sample_size": 2500,
+      "options": [
+       "Under ₹25,000",
+       "₹25,000 - ₹49,999",
+       "₹50,000 - ₹74,999",
+       "₹75,000 - ₹99,999",
+       "₹100,000 - ₹149,999",
+       "₹150,000 or more",
+       "Prefer not to say"
+      ],
+      "answers": [
+       {
+        "label": "Under ₹25,000",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹25,000 - ₹49,999",
+        "percentage": 18.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹50,000 - ₹74,999",
+        "percentage": 22.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹75,000 - ₹99,999",
+        "percentage": 17.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹100,000 - ₹149,999",
+        "percentage": 14.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "₹150,000 or more",
+        "percentage": 12.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       },
+       {
+        "label": "Prefer not to say",
+        "percentage": 5.0,
+        "grounded_in": null,
+        "source_market": null,
+        "grounding_label": "",
+        "confidence": "medium"
+       }
+      ],
+      "is_grounded": true,
+      "evidence_aligned": false,
+      "options_from_evidence": false,
+      "distribution_note": "Income distribution reflects a middle-heavy panel with a notable lower-income segment (students, rural traditionalists) and a smaller premium tier (luxury seekers, tech gadget users). Safety-First and Routine Minimalists are spread across mid-to-low bands.",
+      "data_by_region": {
+       "asia-pacific": [
+        12.0,
+        18.0,
+        22.0,
+        17.0,
+        14.0,
+        12.0,
+        5.0
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "metadata": {
+   "total_questions": 29,
+   "counts_by_tab": {
+    "consumer_profile": 6,
+    "buying_behavior": 5,
+    "preferences_expectations": 8,
+    "satisfaction_future_intent": 6,
+    "profiling": 4
+   },
+   "generation_mode": "quota",
+   "grounded_pct": 100.0,
+   "direct_grounded_pct": 100.0,
+   "adjacent_grounded_pct": 0.0,
+   "revision_count": 6,
+   "grounding_thin": true,
+   "warnings": [
+    "Restored the best revision (score 0.147) — the final pass scored 0.129 and was discarded.",
+    "Grounding is thin — most answers are inferred, not data-backed.",
+    "Tab 'consumer_profile' under target: 6/8.",
+    "Tab 'buying_behavior' under target: 5/8.",
+    "Tab 'satisfaction_future_intent' under target: 6/8.",
+    "Revision cap reached (6) — shipped best-effort with remaining issues."
+   ],
+   "storyline": {
+    "profile": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ],
+    "behavior": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ],
+    "preferences": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ],
+    "satisfaction": [
+     {
+      "beatId": "category_entry",
+      "title": "Category relationship",
+      "canonical": "category_entry",
+      "order": 1
+     },
+     {
+      "beatId": "usage_occasion",
+      "title": "Usage occasions",
+      "canonical": "usage_occasion",
+      "order": 2
+     },
+     {
+      "beatId": "usage_frequency",
+      "title": "Usage frequency and intensity",
+      "canonical": "usage_frequency",
+      "order": 3
+     },
+     {
+      "beatId": "household_role",
+      "title": "Who is involved",
+      "canonical": "household_role",
+      "order": 4
+     },
+     {
+      "beatId": "need_state",
+      "title": "Need state and motivation",
+      "canonical": "need_state",
+      "order": 5
+     }
+    ]
+   },
+   "studyPurpose": "Identify which of 4 behavioural segments each respondent belongs to, based on skincare routine complexity, purchase drivers, product expectations, and switching triggers.",
+   "segmentation_lens": "Combination of usage/behavioural (routine complexity and frequency) and jobs-to-be-done (the primary skin concern the routine is hired to solve). This fits because skincare buyers differ fundamentally in how involved their routine is (simple vs multi-step) and what they are hiring the products to do",
+   "must_cover_topics": [
+    "Visible results",
+    "Ingredient transparency",
+    "Skin sensitivity",
+    "Routine complexity",
+    "Dermatologist recommendation",
+    "Anti-aging efficacy"
+   ],
+   "segments": [
+    {
+     "segment_id": "routine_minimalists",
+     "name": "Routine Minimalists",
+     "description": "Use 1-3 basic products (cleanser, moisturizer, sunscreen) on a simple daily schedule. Driven by convenience and basic skin health, not by chasing specific concerns. Low engagement with ingredients or claims; buy on habit or price.",
+     "hypothesis": "They will report low routine complexity, low spend, and low interest in clinical claims; they switch mainly on price or availability."
+    },
+    {
+     "segment_id": "concern_driven_optimizers",
+     "name": "Concern-Driven Buyers",
+     "description": "Have one or two specific skin concerns (aging, acne, hyperpigmentation) and actively research products targeting those concerns. Willing to pay more for clinically proven efficacy and visible results. Routine is moderately complex and tailored to their concern.",
+     "hypothesis": "They will score high on 'targeted solutions' and 'clinically proven efficacy' as purchase drivers, and will switch brands if a competitor offers better evidence of results."
+    },
+    {
+     "segment_id": "safety_first_consumers",
+     "name": "Safety-First Consumers",
+     "description": "Prioritize gentle, non-irritating, and 'clean' formulations. Often have sensitive skin or worry about long-term chemical exposure. Heavily influenced by dermatologist recommendations and transparent ingredient lists. Routine may be simple but deliberately chosen for safety.",
+     "hypothesis": "They will rank 'skin compatibility' and 'natural/safe ingredients' above efficacy, and will reject products with harsh chemicals even if they work well."
+    },
+    {
+     "segment_id": "high_engagement_enthusiasts",
+     "name": "High-Engagement Users",
+     "description": "Treat skincare as a hobby or self-care ritual. Use multi-step routines (5+ products), follow trends (K-beauty, actives), and enjoy experimenting. High spend, high brand awareness, and open to switching for novelty or better results.",
+     "hypothesis": "They will report the highest routine complexity, highest spend, and strongest interest in new formats and personalized solutions; they are the most likely to try new brands."
+    }
+   ],
+   "segmentModel": {
+    "segments": [
+     {
+      "segment_id": "routine_minimalists",
+      "name": "Routine Minimalists",
+      "description": "Use 1-3 basic products (cleanser, moisturizer, sunscreen) on a simple daily schedule. Driven by convenience and basic skin health, not by chasing specific concerns. Low engagement with ingredients or claims; buy on habit or price.",
+      "hypothesis": "They will report low routine complexity, low spend, and low interest in clinical claims; they switch mainly on price or availability."
+     },
+     {
+      "segment_id": "concern_driven_optimizers",
+      "name": "Concern-Driven Buyers",
+      "description": "Have one or two specific skin concerns (aging, acne, hyperpigmentation) and actively research products targeting those concerns. Willing to pay more for clinically proven efficacy and visible results. Routine is moderately complex and tailored to their concern.",
+      "hypothesis": "They will score high on 'targeted solutions' and 'clinically proven efficacy' as purchase drivers, and will switch brands if a competitor offers better evidence of results."
+     },
+     {
+      "segment_id": "safety_first_consumers",
+      "name": "Safety-First Consumers",
+      "description": "Prioritize gentle, non-irritating, and 'clean' formulations. Often have sensitive skin or worry about long-term chemical exposure. Heavily influenced by dermatologist recommendations and transparent ingredient lists. Routine may be simple but deliberately chosen for safety.",
+      "hypothesis": "They will rank 'skin compatibility' and 'natural/safe ingredients' above efficacy, and will reject products with harsh chemicals even if they work well."
+     },
+     {
+      "segment_id": "high_engagement_enthusiasts",
+      "name": "High-Engagement Users",
+      "description": "Treat skincare as a hobby or self-care ritual. Use multi-step routines (5+ products), follow trends (K-beauty, actives), and enjoy experimenting. High spend, high brand awareness, and open to switching for novelty or better results.",
+      "hypothesis": "They will report the highest routine complexity, highest spend, and strongest interest in new formats and personalized solutions; they are the most likely to try new brands."
+     }
+    ],
+    "weights": [
+     {
+      "question_id": "q2",
+      "question_text": "Which of these best describes your skincare routine?",
+      "option_label": "I use one or two products",
+      "segment_id": "routine_minimalists",
+      "points": 3
+     },
+     {
+      "question_id": "q2",
+      "question_text": "Which of these best describes your skincare routine?",
+      "option_label": "I follow a full multi-step routine",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 3
+     },
+     {
+      "question_id": "q3",
+      "question_text": "When do you apply skincare products?",
+      "option_label": "Both morning and evening",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 1
+     },
+     {
+      "question_id": "q4",
+      "question_text": "Which of these skin concerns are you trying to manage?",
+      "option_label": "Fine lines or loss of firmness",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q4",
+      "question_text": "Which of these skin concerns are you trying to manage?",
+      "option_label": "Acne or breakouts",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q4",
+      "question_text": "Which of these skin concerns are you trying to manage?",
+      "option_label": "Dark spots or uneven tone",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q4",
+      "question_text": "Which of these skin concerns are you trying to manage?",
+      "option_label": "Sensitivity or redness",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q5",
+      "question_text": "What is the main reason you use skincare products?",
+      "option_label": "To address a specific skin concern like acne or dark spots",
+      "segment_id": "concern_driven_optimizers",
+      "points": 3
+     },
+     {
+      "question_id": "q5",
+      "question_text": "What is the main reason you use skincare products?",
+      "option_label": "To maintain healthy skin as part of daily self-care",
+      "segment_id": "routine_minimalists",
+      "points": 1
+     },
+     {
+      "question_id": "q5",
+      "question_text": "What is the main reason you use skincare products?",
+      "option_label": "To treat dryness or sensitivity",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q5",
+      "question_text": "What is the main reason you use skincare products?",
+      "option_label": "To follow trends or recommendations I see online",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 2
+     },
+     {
+      "question_id": "q7",
+      "question_text": "What made you start using a new skincare product the last time?",
+      "option_label": "I noticed a new skin concern",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q7",
+      "question_text": "What made you start using a new skincare product the last time?",
+      "option_label": "I wanted to try something new",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 2
+     },
+     {
+      "question_id": "q8",
+      "question_text": "Where do you first learn about a new skincare product before buying it?",
+      "option_label": "Dermatologist or doctor",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q8",
+      "question_text": "Where do you first learn about a new skincare product before buying it?",
+      "option_label": "Influencers or beauty bloggers",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 2
+     },
+     {
+      "question_id": "q9",
+      "question_text": "How often do you buy a new skincare product?",
+      "option_label": "More than once a month",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 2
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Which of these matters most when you choose a skincare product?",
+      "option_label": "Clinically proven results",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Which of these matters most when you choose a skincare product?",
+      "option_label": "Targeted for a specific skin concern",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Which of these matters most when you choose a skincare product?",
+      "option_label": "Natural or sustainable ingredients",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Which of these matters most when you choose a skincare product?",
+      "option_label": "Price",
+      "segment_id": "routine_minimalists",
+      "points": 2
+     },
+     {
+      "question_id": "q10",
+      "question_text": "Which of these matters most when you choose a skincare product?",
+      "option_label": "Dermatologist recommendation",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q11",
+      "question_text": "How much do you spend on skincare products in a single purchase?",
+      "option_label": "₹3,500 or more",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 2
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these must a skincare product do for you to keep using it?",
+      "option_label": "Show visible results within a few weeks",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these must a skincare product do for you to keep using it?",
+      "option_label": "Not cause stinging, redness, or breakouts",
+      "segment_id": "safety_first_consumers",
+      "points": 3
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these must a skincare product do for you to keep using it?",
+      "option_label": "Fit easily into my morning or evening routine",
+      "segment_id": "routine_minimalists",
+      "points": 2
+     },
+     {
+      "question_id": "q12",
+      "question_text": "Which of these must a skincare product do for you to keep using it?",
+      "option_label": "Be affordable enough to repurchase regularly",
+      "segment_id": "routine_minimalists",
+      "points": 2
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which of these must a skincare product be for you to consider buying it?",
+      "option_label": "Fragrance-free",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which of these must a skincare product be for you to consider buying it?",
+      "option_label": "Non-comedogenic (won't clog pores)",
+      "segment_id": "safety_first_consumers",
+      "points": 1
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which of these must a skincare product be for you to consider buying it?",
+      "option_label": "Clinically tested for visible results",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which of these must a skincare product be for you to consider buying it?",
+      "option_label": "Dermatologist-recommended",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q13",
+      "question_text": "Which of these must a skincare product be for you to consider buying it?",
+      "option_label": "Free from harsh chemicals",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q14",
+      "question_text": "How do you judge the quality of a skincare product before buying it?",
+      "option_label": "It has clinical or dermatologist testing behind it",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q14",
+      "question_text": "How do you judge the quality of a skincare product before buying it?",
+      "option_label": "The ingredient list has proven actives at effective levels",
+      "segment_id": "concern_driven_optimizers",
+      "points": 3
+     },
+     {
+      "question_id": "q14",
+      "question_text": "How do you judge the quality of a skincare product before buying it?",
+      "option_label": "The texture and feel of the product itself",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 1
+     },
+     {
+      "question_id": "q15",
+      "question_text": "Which of these claims would make you more likely to trust a skincare product?",
+      "option_label": "Dermatologist tested",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q15",
+      "question_text": "Which of these claims would make you more likely to trust a skincare product?",
+      "option_label": "Clinically proven",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q15",
+      "question_text": "Which of these claims would make you more likely to trust a skincare product?",
+      "option_label": "Fragrance-free",
+      "segment_id": "safety_first_consumers",
+      "points": 1
+     },
+     {
+      "question_id": "q15",
+      "question_text": "Which of these claims would make you more likely to trust a skincare product?",
+      "option_label": "Non-comedogenic",
+      "segment_id": "safety_first_consumers",
+      "points": 1
+     },
+     {
+      "question_id": "q16",
+      "question_text": "Which packaging format do you prefer for your daily skincare products?",
+      "option_label": "Dropper bottle",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 1
+     },
+     {
+      "question_id": "q17",
+      "question_text": "If a product delivers visible results but has a heavy or greasy texture, how likely are you to keep using it?",
+      "option_label": "Very unlikely",
+      "segment_id": "safety_first_consumers",
+      "points": 1
+     },
+     {
+      "question_id": "q17",
+      "question_text": "If a product delivers visible results but has a heavy or greasy texture, how likely are you to keep using it?",
+      "option_label": "Somewhat unlikely",
+      "segment_id": "safety_first_consumers",
+      "points": 1
+     },
+     {
+      "question_id": "q22",
+      "question_text": "Which of these aspects of your current skincare products most satisfies you?",
+      "option_label": "Visible improvement in skin texture or firmness",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q22",
+      "question_text": "Which of these aspects of your current skincare products most satisfies you?",
+      "option_label": "Clinically proven efficacy",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q22",
+      "question_text": "Which of these aspects of your current skincare products most satisfies you?",
+      "option_label": "Convenience and ease of application",
+      "segment_id": "routine_minimalists",
+      "points": 2
+     },
+     {
+      "question_id": "q22",
+      "question_text": "Which of these aspects of your current skincare products most satisfies you?",
+      "option_label": "Gentle on sensitive skin",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q22",
+      "question_text": "Which of these aspects of your current skincare products most satisfies you?",
+      "option_label": "Pleasant texture and fragrance",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 1
+     },
+     {
+      "question_id": "q23",
+      "question_text": "Which of these problems have you had with a skincare product in the past year?",
+      "option_label": "It irritated my skin or caused a reaction",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q23",
+      "question_text": "Which of these problems have you had with a skincare product in the past year?",
+      "option_label": "It didn't deliver the visible results promised",
+      "segment_id": "concern_driven_optimizers",
+      "points": 1
+     },
+     {
+      "question_id": "q24",
+      "question_text": "What would make you switch from a skincare product you currently use?",
+      "option_label": "A product that targets my specific skin concern more effectively",
+      "segment_id": "concern_driven_optimizers",
+      "points": 3
+     },
+     {
+      "question_id": "q24",
+      "question_text": "What would make you switch from a skincare product you currently use?",
+      "option_label": "A product with clinically proven results",
+      "segment_id": "concern_driven_optimizers",
+      "points": 2
+     },
+     {
+      "question_id": "q24",
+      "question_text": "What would make you switch from a skincare product you currently use?",
+      "option_label": "A more affordable product that works just as well",
+      "segment_id": "routine_minimalists",
+      "points": 2
+     },
+     {
+      "question_id": "q24",
+      "question_text": "What would make you switch from a skincare product you currently use?",
+      "option_label": "A product with cleaner or more sustainable ingredients",
+      "segment_id": "safety_first_consumers",
+      "points": 2
+     },
+     {
+      "question_id": "q24",
+      "question_text": "What would make you switch from a skincare product you currently use?",
+      "option_label": "A product that is easier or faster to apply",
+      "segment_id": "routine_minimalists",
+      "points": 2
+     },
+     {
+      "question_id": "q24",
+      "question_text": "What would make you switch from a skincare product you currently use?",
+      "option_label": "Nothing would make me switch",
+      "segment_id": "routine_minimalists",
+      "points": 1
+     },
+     {
+      "question_id": "q25",
+      "question_text": "In the next 12 months, how do you expect your spending on skincare products to change?",
+      "option_label": "Spend noticeably more",
+      "segment_id": "high_engagement_enthusiasts",
+      "points": 2
+     }
+    ],
+    "tie_break": "The question that best settles a tie is cp2 ('Which of these best describes your skincare routine?') because it directly asks respondents to self-report their overall routine complexity, which is the most distinguishing behavioural difference between the segments (minimalist vs. multi-step).",
+    "notes": [
+     "Routine minimalists are identified by simple routines, convenience, price sensitivity, and habit-based repurchase.",
+     "Concern-driven optimizers are identified by specific concerns, clinical proof, and visible results.",
+     "Safety-first consumers are identified by sensitivity, dermatologist trust, and clean/fragrance-free preferences.",
+     "High-engagement enthusiasts are identified by multi-step routines, trend-following, frequent purchases, and high spend.",
+     "5 scoring weight(s) removed: they scored questions that were dropped as duplicates before publication."
+    ],
+    "excluded": "Screening and Profiling questions are excluded from scoring: screeners carry no signal (everyone passed) and demographics are for cross-tabs, not segmentation."
+   },
+   "nonDiscriminatingQuestions": [
+    {
+     "id": "q1",
+     "qNum": 1,
+     "question": "How often do you use a skincare product?"
+    },
+    {
+     "id": "q6",
+     "qNum": 6,
+     "question": "Who in your household decides which skincare products to buy?"
+    },
+    {
+     "id": "q18",
+     "qNum": 18,
+     "question": "If a skincare product could not have everything, which would you give up first to pay less?"
+    },
+    {
+     "id": "q19",
+     "qNum": 19,
+     "question": "How much would you expect to pay for a daily moisturizer that meets all your needs?"
+    },
+    {
+     "id": "q20",
+     "qNum": 20,
+     "question": "Overall, how satisfied are you with the Skin Care Products you currently use?"
+    },
+    {
+     "id": "q21",
+     "qNum": 21,
+     "question": "How likely are you to recommend the Skin Care Products you currently use to a friend or colleague?"
+    }
+   ],
+   "fieldingNotes": {
+    "recommendedSample": "n=800-1,200 for stable segment-level sub-groups (roughly n>=312 per segment after weighting). At n=1,000 the margin of error on a whole-sample percentage is about ±3.1pp at 95% confidence; on a segment of n=200 it widens to about ±6.9pp, so segment-level differences under ~10pp should not be reported as real.",
+    "quotaControls": "Apply quotas on the category-usage and frequency screeners so heavy users — who are more willing survey-takers — are not over-sampled.",
+    "estimatedLength": "8-10 minutes.",
+    "scriptingNotes": [
+     "Rotate the order of answer options on every non-ordinal question to remove primacy bias. Do NOT rotate ordinal scales (frequency bands, price bands, satisfaction) — their order carries meaning.",
+     "Anchor 'Other', 'None of these' and 'Prefer not to say' to the bottom of the list, exempt from rotation.",
+     "Every 'Other' option takes an open-text capture, coded back into the frame at analysis if any single verbatim exceeds 3%.",
+     "No routing or skip logic: every respondent sees every question, so the base is constant across the instrument.",
+     "Include one attention check in the middle third — a standard instructed-response item. Terminate on failure and replace.",
+     "Randomise the order of the two ranking/trade-off items between respondents so neither is systematically answered while fresher."
+    ],
+    "caveats": [
+     "Percentages in this document are modelled from published market evidence, not measured from fielded interviews. Replace them with primary data once the study is run.",
+     "Ranking items are shown as a lighter-weight ranking exercise; run them as MaxDiff if you need more precision on driver importance.",
+     "Profiling questions are for cross-tabs only and are excluded from the segmentation scoring model."
+    ]
+   },
+   "storyline_summary": "The survey opens by mapping the respondent's current skincare landscape — what products they use, how complex their routine is, and what skin concerns they are managing. It then traces their purchase journey from trigger through discovery, channel, and decision drivers, ending with spend. Next, it probes their product expectations — must-haves, quality cues, claims, formats, and trade-offs — before closing with satisfaction, unmet needs, and switching triggers. This arc cleanly separates the four segments: Routine Minimalists (low complexity, low engagement), Concern-Driven Optimizers…",
+   "storyline_source": "planner",
+   "storyline_notes": [
+    "Replaced generic 'usage frequency' with 'routine complexity' as a core beat, because in skincare the number of steps is a stronger differentiator than simple frequency.",
+    "Added 'skin concerns' as a distinct beat in the profile section to capture the jobs-to-be-done lens — the specific problem the routine is hired to solve.",
+    "In buying behavior, placed 'decision drivers' before 'spend' to build up to the sensitive money question, and included 'dermatologist recommendation' as a key driver given the APAC pharmacy culture.",
+    "In preferences, added 'claims and credentials' early to reflect the region's growing concern for ingredient transparency and clinical evidence, and kept 'value expectation' last as the most sensitive.",
+    "In the final section, merged 'advocacy' into 'satisfaction drivers' to stay within the question budget, and focused on 'switching' and 'future use' to capture the high-growth, high-switching APAC market.",
+    "All beats are answerable with closed questions and avoid age, income, geography, and brand names, per the constraints."
+   ],
+   "classification_reason": "Everyday consumers buy skin care products for personal use, pay for them out of pocket at retail or online, and make the purchase decision themselves. While some professional products are sold to salons, the dominant consumer market is direct-to-consumer, so this is a pure B2C segment.",
+   "generated_at": "2026-08-13T12:58:17.691102+00:00",
+   "current_date": "2026-08-13",
+   "sample_size": 2500,
+   "N": 370,
+   "chart_kinds_used": [
+    "donut",
+    "hbar",
+    "hbar-likert",
+    "hbar-multi",
+    "lollipop",
+    "stacked",
+    "vbar"
+   ]
+  }
+ },
+ "metadata": {
+  "N": 370
+ }
+}

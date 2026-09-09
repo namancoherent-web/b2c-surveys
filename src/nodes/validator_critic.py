@@ -260,6 +260,11 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         ("item_variant", "item variant (which format/size/type they use)",
          r"(?i)(which|what) (type|kind|format|form|size|version|variant|"
          r"style|strength|flavour|flavor)\b|"
+         # change for b2c questionarie -- CHECK (live, UK vitamins
+         # 2026-09-09): the model twice wrote a correct variant question as
+         # "Which of these best MATCHES/DESCRIBES the type you take?" and
+         # both were rejected, leaving the slot permanently unfilled.
+         r"which (of these |one of these )?best (matches|describes)\b|"
          # "which ... do you use" must NOT swallow "in which SITUATIONS do
          # you use it" -- that is usage_context. Exclude occasion words.
          r"which (?!.{0,20}\b(situations?|occasions?|places?|settings?)\b)"
@@ -293,11 +298,20 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         # Widened after the Japan run: "Before buying, what other ways to
         # handle your health did you think about?" is exactly this theme but
         # used "other ways" + "think about" rather than "consider".
+        # change for b2c questionarie -- CHECK (live, UK vitamins 2026-09-09):
+        # the old second branch matched "look(ed) at ... before", so the
+        # SHOPPING TIMEFRAME question ("How long did you look at different
+        # subscriptions before you picked one?") was counted as this theme.
+        # The slot then looked filled and the guarantee never topped it up,
+        # hiding a real gap. This theme needs an explicit ALTERNATIVES
+        # concept -- other options/ways/brands/none-of-these -- not merely
+        # the words "look at ... before".
         ("alternative_consideration", "alternative consideration set (what else they considered)",
-         r"(?i)(what else|which other|other (options|ways|choices|kinds)|"
-         r"alternatives?|instead of)\b|"
-         r"(consider(ed)?|think about|thought about|look(ed)? at)\b"
-         r".{0,45}\b(before|other|besides|instead)\b"),
+         r"(?i)(what else|which other|other (options|ways|choices|kinds|"
+         r"products?|brands?|methods?)|alternatives?|instead of|"
+         r"anything else)\b|"
+         r"(consider(ed)?|think about|thought about|compare[d]?)\b"
+         r".{0,45}\b(other|alternatives?|besides|instead|else)\b"),
     ),
     # --- Section 3: 6 questions ------------------------------------------
     "preferences_expectations": (
@@ -324,9 +338,16 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         ("value_for_money", "perceived value for money",
          r"(?i)(value for money|worth (the|what)|worth paying|"
          r"good value|for (the|what) you paid)"),
+        # change for b2c questionarie -- CHECK (live, UK vitamins 2026-09-09):
+        # only three literal phrasings were accepted, so the natural
+        # "better or worse than you expected" and "compare WITH what you
+        # expected" both failed. Anchor on the word "expect" plus any
+        # comparison cue instead of fixed phrases.
         ("expectation_match", "expectation match (performance vs expected)",
-         r"(?i)(as (well as )?you expected|compared to what you expected|"
-         r"meet .{0,25}expectations?|live up to)"),
+         r"(?i)(as (well as )?you expected|compare[ds]?\s+(to|with)\s+"
+         r".{0,25}expect|meet .{0,25}expectations?|live(d)? up to|"
+         r"(better|worse|more|less)\s+.{0,25}than you expected|"
+         r"than (you )?expected)"),
     ),
     # --- Section 4: 5 questions ------------------------------------------
     "satisfaction_future_intent": (

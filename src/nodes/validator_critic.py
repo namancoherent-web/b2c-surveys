@@ -218,8 +218,14 @@ REQUIRED_SLOTS: dict[str, tuple] = {
     "consumer_profile": (
         ("usage_frequency", "usage frequency (how often/how many days)",
          r"(?i)how (often|many (days|times))\b"),
+        # Widened after the Japan run: "What is the main reason you take a
+        # reading with your device?" is a valid primary-use-case question but
+        # matched nothing, so the gate rejected correct output.
         ("primary_use_case", "primary use case (what they mainly use it for)",
-         r"(?i)(mainly|mostly|most often|primarily)\s+use|what do you use .{0,40}\bfor\b"),
+         r"(?i)(mainly|mostly|most often|primarily)\s+use|"
+         r"what do you use .{0,40}\bfor\b|"
+         r"(main|biggest|number one) reason you\b|"
+         r"what do you .{0,25}\bit for\b"),
         ("ownership_tenure", "ownership tenure (how long they have had it)",
          r"(?i)how long (have|has) you|how long .{0,25}(had|owned|kept|been using)"),
         # NOTE: must NOT match "what do you mainly use X for?" -- that is
@@ -229,37 +235,58 @@ REQUIRED_SLOTS: dict[str, tuple] = {
          r"(?i)\b(when|where|which situations?|what situations?|"
          r"which occasions?|what occasions?|in which settings?)\b.{0,60}"
          r"(use|wear|using|wearing)"),
+        # Widened after the UK run: "Which FORM of vitamins do you use?" is
+        # exactly this theme; "form" and "flavour/strength" were missing.
         ("item_variant", "item variant (which format/size/type they use)",
-         r"(?i)(which|what) (type|kind|format|size|version|variant|style)\b|"
-         r"which .{0,30}\bdo you (use|have|own)\b"),
+         r"(?i)(which|what) (type|kind|format|form|size|version|variant|"
+         r"style|strength|flavour|flavor)\b|"
+         r"which .{0,30}\bdo you (use|have|own|take|choose)\b"),
     ),
     # --- Section 2: 7 questions ------------------------------------------
     "buying_behavior": (
+        # Widened after the Japan run: "What made you first decide you needed
+        # a device?" is a valid trigger question -- allow more words between
+        # "you" and the verb, and accept "need/needed/start".
         ("acquisition_trigger", "acquisition trigger (what made them buy)",
          r"(?i)(what (made|makes)|why did|what prompted) you\s+"
-         r"(\w+\s+){0,3}?(buy|get|choose|purchase)"),
+         r"(\w+\s+){0,5}?(buy|get|choose|purchase|need|needed|start)"),
         ("shopping_timeframe", "shopping timeframe (how long they researched)",
          r"(?i)how long (did|do) you .{0,30}(spend|take|research|look|compar)|"
          r"how much time .{0,25}(research|decid|compar|look)"),
         ("information_sources", "information sources (where they learned about it)",
          r"(?i)where (did|do) you\s+(\w+\s+){0,3}?(look|learn|read|research|find out)|"
          r"(information|reviews?|advice)\b.{0,40}\bbefore\b"),
+        # Widened after the UK run: a SUBSCRIPTION is "signed up for", not
+        # "bought", so "Where did you sign up for your subscription?" is the
+        # channel question for this category and must match.
         ("acquisition_channel", "acquisition channel (where they bought it)",
-         r"(?i)where (did|do) you\s+(\w+\s+){0,2}?(buy|get|purchase|order|shop)"),
+         r"(?i)where (did|do) you\s+(\w+\s+){0,3}?"
+         r"(buy|get|purchase|order|shop|sign up|subscribe|join)"),
         ("price_paid", "price paid (how much they spent)",
          r"(?i)how much did you (spend|pay)|how much .{0,20}(spend|pay)\b"),
         ("top_decision_driver", "top decision driver (what mattered most)",
          r"(?i)(matter(s|ed)? most|most important|biggest influence|"
          r"single most)"),
+        # Widened after the Japan run: "Before buying, what other ways to
+        # handle your health did you think about?" is exactly this theme but
+        # used "other ways" + "think about" rather than "consider".
         ("alternative_consideration", "alternative consideration set (what else they considered)",
-         r"(?i)(what else|which other|other options|alternatives?|instead of)\b|"
-         r"(consider(ed)?)\b.{0,40}\b(before|other|besides)\b"),
+         r"(?i)(what else|which other|other (options|ways|choices|kinds)|"
+         r"alternatives?|instead of)\b|"
+         r"(consider(ed)?|think about|thought about|look(ed)? at)\b"
+         r".{0,45}\b(before|other|besides|instead)\b"),
     ),
     # --- Section 3: 6 questions ------------------------------------------
     "preferences_expectations": (
+        # Widened after the Japan run: "How happy are you with how well your
+        # device gives accurate readings?" is core-function satisfaction, but
+        # was being claimed by overall_satisfaction instead. The "with how
+        # well" cue is what distinguishes the two: overall satisfaction is
+        # about the product as a whole, this one is about how it PERFORMS.
         ("core_function_satisfaction", "core function satisfaction (rating of main capabilities)",
          r"(?i)how (well|satisf).{0,40}(work|perform|do|does|job)|"
-         r"rate .{0,30}(performance|how well)"),
+         r"rate .{0,30}(performance|how well)|"
+         r"how (happy|satisf)\w*\s+are you\s+with how well\b"),
         ("usability_ux", "usability / ease of use",
          r"(?i)(easy|easier|difficult|hard|simple|straightforward)\b.{0,30}"
          r"(to use|to set up|to operate|to figure)|how easy\b"),
@@ -280,12 +307,20 @@ REQUIRED_SLOTS: dict[str, tuple] = {
     ),
     # --- Section 4: 5 questions ------------------------------------------
     "satisfaction_future_intent": (
+        # Must NOT swallow core_function_satisfaction ("how happy are you
+        # with HOW WELL it works") -- that is a Section 3 theme. The negative
+        # lookahead keeps the two apart; without it the broader pattern wins
+        # by table order and Section 3's slot is reported missing.
         ("overall_satisfaction", "overall satisfaction",
-         r"(?i)how (satisf|happy are you|pleased are you)"),
+         r"(?i)how (satisf|happy are you|pleased are you)"
+         r"(?!.{0,25}\bwith how well\b)"),
+        # Widened after the Japan run: "What bothers you most about X?" is
+        # the pain-point question but the old pattern required the word
+        # "problem" to appear before "bothers".
         ("top_pain_point", "top pain point (biggest frustration/unmet need)",
          r"(?i)(biggest (problem|issue|frustration)|most often disappoints|"
          r"disappoints?\b|problem .{0,25}(bothers|most)|"
-         r"most frustrating|what annoys)"),
+         r"most frustrating|what annoys|bothers you (the )?most)"),
         ("switching_trigger", "switching trigger (what would make them switch away)",
          r"(?i)(would make you switch|make you (switch|stop|change)|"
          r"switch to (a |an )?(different|another)|stop using)"),

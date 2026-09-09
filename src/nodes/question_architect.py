@@ -2170,7 +2170,6 @@ def question_architect(state: SurveyState) -> dict:
         # position, not by appending. A regional module question about an early
         # beat now sits early, instead of being pinned to the end of the tab.
         questions, counts_by_tab = [], {}
-        merge_notes: list[str] = []
         for tab in narrative.section_ids(blueprint):
             prefix = _prefix_for(tab, blueprint)
             beats = narrative.beats_for_tab(blueprint, tab)
@@ -2202,14 +2201,11 @@ def question_architect(state: SurveyState) -> dict:
             # the FINAL section covers all its required themes. This is the
             # only place the assembled section exists, so the guarantee has
             # to run here: fill any still-empty required slot one at a time.
-            merged = _fill_missing_slots_for_section(
-                merged, canon=canon, tab=tab, count=_target,
-                segment=segment, region=region, today=today,
-                beats=beats, blueprint=blueprint, geo_label=geo_label,
-                mkp=mkp, catalog=catalog, index=index,
-                avoid_texts=[q.get("text") or "" for q in questions],
-                notes_sink=merge_notes,
-            )
+            # NOTE: the slot guarantee is NOT run here any more. This block is
+            # guarded by `not is_revision`, so a guarantee placed here would
+            # never apply to the survey that actually ships (the final
+            # questions always come from a revision pass). It now runs once
+            # after both branches converge -- see below.
             merged = narrative.order_questions(merged, beats)
             for n, q in enumerate(merged, start=1):
                 q["id"] = f"{prefix}{n}"
@@ -2228,6 +2224,50 @@ def question_architect(state: SurveyState) -> dict:
             seed_avoid=_anchor_avoid,
             geo_label=geo_label,
         )
+
+    # change for b2c questionarie -- CHECK (audit, 2026-09-09): the slot
+    # guarantee MUST run on every path, not just the first pass. The
+    # core+module merge block above is guarded by `not is_revision`, so a
+    # guarantee placed only there never applies to the survey that actually
+    # ships -- the final questions always come from a REVISION pass, which
+    # takes the else-branch instead. Running it here, after both branches
+    # have produced `questions`, is the one place every path converges.
+    _slot_notes: list[str] = []
+    _by_tab: dict[str, list] = {}
+    for _q in questions:
+        _by_tab.setdefault(_q.get("tab") or "", []).append(_q)
+    _section_ids = list(narrative.section_ids(blueprint))
+    _rebuilt: list[dict] = []
+    for _tab in _section_ids:
+        _qs = _by_tab.get(_tab) or []
+        _canon = narrative.section_canonical(blueprint, _tab)
+        _target = QUESTIONS_PER_SECTION.get(_canon, len(_qs))
+        _beats = narrative.beats_for_tab(blueprint, _tab)
+        _qs = _fill_missing_slots_for_section(
+            _qs, canon=_canon, tab=_tab, count=_target,
+            segment=segment, region=region, today=today,
+            beats=_beats, blueprint=blueprint, geo_label=geo_label,
+            mkp=mkp, catalog=catalog, index=index,
+            avoid_texts=[
+                q.get("text") or "" for t, lst in _by_tab.items()
+                if t != _tab for q in lst
+            ],
+            notes_sink=_slot_notes,
+        )
+        _qs = narrative.order_questions(_qs, _beats)
+        _prefix = _prefix_for(_tab, blueprint)
+        for _n, _q in enumerate(_qs, start=1):
+            _q["id"] = f"{_prefix}{_n}"
+            _q["tab"] = _tab
+        _rebuilt.extend(_qs)
+        counts_by_tab[_tab] = len(_qs)
+    # Keep any question whose tab is not a blueprint section (defensive).
+    for _t, _lst in _by_tab.items():
+        if _t not in set(_section_ids):
+            _rebuilt.extend(_lst)
+    questions = _rebuilt
+    if _slot_notes:
+        print("  slot guarantee: " + "; ".join(_slot_notes[:6]))
 
     # change for b2c questionarie — Phase A9: bookend the market sections with
     # the two standard sections every consultancy study carries. They are

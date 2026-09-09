@@ -24,6 +24,7 @@ from src.question_plan import (
     GEOGRAPHIC_REGIONS,
     MODULE_PER_TAB,
     QUESTIONNAIRE_CACHE_MIN_QUESTIONS,
+    QUESTIONS_PER_SECTION,
     REGION_QUESTION_MODE,
     QUESTIONS_PER_TAB_TARGET,
     match_geographic_region,
@@ -1383,6 +1384,82 @@ def _generate_single_slot(*, llm, tab, segment, region, today, slot_label,
     return None
 
 
+def _fill_missing_slots_for_section(
+    merged: list, *, canon: str, tab: str, count: int, segment: str,
+    region: str, today: str, beats: list, blueprint: dict | None,
+    geo_label: str, mkp: dict, catalog: dict, index: dict,
+    avoid_texts: list, notes_sink: list,
+) -> list:
+    """Guarantee every required slot for one ASSEMBLED section.
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+    # in core_plus_module mode the section only exists after core and module
+    # questions are merged, so this is the only place the full section can be
+    # checked against REQUIRED_SLOTS. Fills each still-empty slot with a
+    # single focused request, and drops a non-required extra to make room if
+    # the section is already at its target size -- a required theme always
+    # wins a slot over an unlisted one.
+    """
+    slots = _REQUIRED_SLOTS.get(canon) or ()
+    if not slots:
+        return merged
+
+    def _filled(pat: str, qs: list) -> bool:
+        return any(re.search(pat, q.get("text") or "") for q in qs)
+
+    gaps = [(k, l, p) for k, l, p in slots if not _filled(p, merged)]
+    if not gaps:
+        return merged
+
+    import json as _json  # module-level `json` is not imported in this file
+
+    figures, voice, personas = _tab_evidence_from_mkp(tab, mkp or {}, catalog or {}, index or {})
+    llm = get_structured_llm(TabQuestionBatch, temperature=0.4, max_tokens=4000)
+    guidance = _guidance_for(tab, beats, blueprint)
+    currency = standard_sections.currency_for(geo_label or region)
+
+    for key, label, pat in gaps:
+        got = _generate_single_slot(
+            llm=llm, tab=tab, segment=segment, region=region, today=today,
+            slot_label=label, slot_pattern=pat,
+            existing=[q.get("text") or "" for q in merged] + list(avoid_texts or []),
+            beats=beats, blueprint=blueprint, guidance=guidance,
+            currency=currency,
+            figures_json=_json.dumps(figures, ensure_ascii=False),
+            voice_json=_json.dumps(voice, ensure_ascii=False),
+            persona_json=_json.dumps(personas, ensure_ascii=False),
+            geo_label=geo_label, layer="module", notes=notes_sink,
+        )
+        if not got:
+            notes_sink.append(f"slot top-up FAILED '{key}' in {tab}")
+            continue
+        got["question_layer"] = got.get("question_layer") or "module"
+        if len(merged) >= count:
+            # Make room by dropping a question that fills NO required slot.
+            spare = next(
+                (
+                    q for q in reversed(merged)
+                    if not any(re.search(p2, q.get("text") or "")
+                               for _k2, _l2, p2 in slots)
+                ),
+                None,
+            )
+            if spare is None:
+                notes_sink.append(
+                    f"slot '{key}' needed in {tab} but every question already "
+                    "fills a required slot — section left as-is"
+                )
+                continue
+            merged = [q for q in merged if q is not spare]
+            notes_sink.append(
+                f"dropped non-required question to make room for '{key}': "
+                f"{(spare.get('text') or '')[:60]}"
+            )
+        merged.append(got)
+        notes_sink.append(f"slot top-up filled '{key}' in {tab}: {got['text'][:60]}")
+    return merged
+
+
 def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                   today: str, mode: str, grounding_thin: bool, feedback: str,
                   avoid_texts=None, mkp=None, catalog=None, layer: str = "full",
@@ -2082,20 +2159,47 @@ def question_architect(state: SurveyState) -> dict:
         # position, not by appending. A regional module question about an early
         # beat now sits early, instead of being pinned to the end of the tab.
         questions, counts_by_tab = [], {}
+        merge_notes: list[str] = []
         for tab in narrative.section_ids(blueprint):
             prefix = _prefix_for(tab, blueprint)
             beats = narrative.beats_for_tab(blueprint, tab)
             canon = narrative.section_canonical(blueprint, tab)
+            # change for b2c questionarie -- CHECK (user directive,
+            # 2026-09-09): CORE_PER_TAB + MODULE_PER_TAB is a FLAT split
+            # (5 + 2 = 7 for every tab), so this path could never produce the
+            # per-section 5/7/6/5 framework. Every section came out at 7 and
+            # the assembler then trimmed it down -- discarding questions that
+            # were filling required slots, which is exactly why themes kept
+            # going missing. Size the split from this section's own target.
+            _target = QUESTIONS_PER_SECTION.get(canon, CORE_PER_TAB + MODULE_PER_TAB)
+            _mod_n = min(MODULE_PER_TAB, max(1, _target // 3))
+            _core_n = max(0, _target - _mod_n)
             core_part = [
-                dict(q) for q in (core_by_canonical.get(canon) or [])[:CORE_PER_TAB]
+                dict(q) for q in (core_by_canonical.get(canon) or [])[:_core_n]
             ]
             # Remap using the CANONICAL section the core was written for, so the
             # canonical beat ranks resolve.
             narrative.remap_questions_to_beats(core_part, beats, canon)
             module_part = [
                 dict(q) for q in module_qs if q.get("tab") == tab
-            ][:MODULE_PER_TAB]
+            ][:_mod_n]
             merged = narrative.order_questions(core_part + module_part, beats)
+            # change for b2c questionarie -- CHECK (user directive,
+            # 2026-09-09): the per-slot top-up inside _generate_tab only ever
+            # sees ONE layer (core writes 3-5 per tab against canonical
+            # sections, module writes 1-2), so neither layer can tell whether
+            # the FINAL section covers all its required themes. This is the
+            # only place the assembled section exists, so the guarantee has
+            # to run here: fill any still-empty required slot one at a time.
+            merged = _fill_missing_slots_for_section(
+                merged, canon=canon, tab=tab, count=_target,
+                segment=segment, region=region, today=today,
+                beats=beats, blueprint=blueprint, geo_label=geo_label,
+                mkp=mkp, catalog=catalog, index=index,
+                avoid_texts=[q.get("text") or "" for q in questions],
+                notes_sink=merge_notes,
+            )
+            merged = narrative.order_questions(merged, beats)
             for n, q in enumerate(merged, start=1):
                 q["id"] = f"{prefix}{n}"
                 q["tab"] = tab

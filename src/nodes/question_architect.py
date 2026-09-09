@@ -742,10 +742,14 @@ question stem AND every answer option you write:
      BANNED: "How would you rate your overall sentiment?"
      PLAIN:  "How happy are you with it?"
 4. ANSWER OPTIONS MUST BE JUST AS SIMPLE AS THE QUESTION. Same rules apply:
-   short, everyday words, active voice, no jargon. A scale should read like
-   ordinary speech — "Very happy / Happy / Unhappy / Very unhappy" — not
-   "Highly satisfied / Moderately satisfied / Somewhat dissatisfied". Never
-   write an option a respondent would have to re-read to understand.
+   short, everyday words, active voice, no jargon — but keep the register
+   professional enough for a client report. Aim for the middle:
+     TOO STIFF:     "Highly satisfied / Moderately satisfied / Somewhat
+                     dissatisfied / Neither satisfied nor dissatisfied"
+     TOO CHILDISH:  "Very happy / Happy / Not sure / Unhappy"
+     RIGHT:         "Very satisfied / Satisfied / Neutral / Unsatisfied /
+                     Very unsatisfied"
+   Never write an option a respondent would have to re-read to understand.
 
 STORYLINE — this survey tells one continuous story, and this chunk fills
 specific BEATS of it. The beats below are already in narrative order:
@@ -923,18 +927,24 @@ HYGIENE RULES (never violate):
   were the formal research-standard labels ("Very dissatisfied / Somewhat
   dissatisfied / Neither satisfied nor dissatisfied / ..."), which directly
   contradicted the plain-language rule above. Two conflicting absolutes in
-  one brief is why option wording kept drifting. Replaced with the plainest
-  wording that still keeps a balanced, evenly-spaced scale:
+  one brief is why option wording kept drifting.
+  change for b2c questionarie -- CHECK (user directive, 2026-09-09, second
+  pass): the first replacement went too far the other way -- "Very unhappy /
+  Unhappy / Happy" is plain but reads childish in a client deliverable. These
+  labels are the middle ground: still ordinary words a 6-year-old knows, but
+  the register a professional report can carry.
     Frequency:    Always / Often / Sometimes / Rarely / Never
-    Satisfaction: Very unhappy / Unhappy / Not sure / Happy / Very happy
-    Likelihood:   Definitely not / Probably not / Not sure /
-                  Probably yes / Definitely yes
-    Importance:   Not important / A little important / Quite important /
+    Satisfaction: Very unsatisfied / Unsatisfied / Neutral /
+                  Satisfied / Very satisfied
+    Likelihood:   Very unlikely / Unlikely / Neutral / Likely / Very likely
+    Importance:   Not important / Slightly important / Important /
                   Very important
     Buying again: Definitely not / Probably not / Not sure /
-                  Probably yes / Definitely yes
+                  Probably / Definitely
   Keep every scale in this order — worst/lowest first, best/highest last —
   and never mix a plain label with a formal one inside the same scale.
+  "Neutral" is the correct midpoint word: it is short, everyday, and does not
+  make the scale read like a children's worksheet the way "Not sure" can.
   PREFER A CONSTRUCT-SPECIFIC SCALE OVER AGREE/DISAGREE. Instead of
   "I worry about ingredient safety" → Strongly disagree…Strongly agree, write
   "How concerned are you about ingredient safety?" → Not at all concerned /
@@ -1322,8 +1332,9 @@ HOW TO WRITE IT:
   question itself.
 - One clear idea. Closed options only (4-7 of them), mutually exclusive,
   every option answering the words in the stem.
-- Answer options must be as plain as the question. Scales read like ordinary
-  speech: Very unhappy / Unhappy / Not sure / Happy / Very happy.
+- Answer options must be as plain as the question, but still professional
+  enough for a client report: Very unsatisfied / Unsatisfied / Neutral /
+  Satisfied / Very satisfied.
 - Money must be in {currency}, at amounts a real shopper in this market pays.
 - Never name a brand, company or manufacturer. Never ask age, income, or
   where the respondent lives.

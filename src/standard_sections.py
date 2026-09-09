@@ -299,10 +299,11 @@ def satisfaction_anchor_questions(segment: str) -> list[dict]:
             # mandated in question_architect.py's prompt. This function is
             # currently disabled (_SHORT_SURVEY_NO_ANCHORS) but is kept
             # aligned so re-enabling it cannot reintroduce formal wording.
-            "text": f"How happy are you with your current {segment}?",
+            "text": f"How satisfied are you with your current {segment}?",
             "type": "likert_5",
             "options": [
-                "Very unhappy", "Unhappy", "Not sure", "Happy", "Very happy",
+                "Very unsatisfied", "Unsatisfied", "Neutral",
+                "Satisfied", "Very satisfied",
             ],
             "standard": True,
         },

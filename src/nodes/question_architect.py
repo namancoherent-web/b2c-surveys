@@ -1386,12 +1386,24 @@ def _generate_single_slot(*, llm, tab, segment, region, today, slot_label,
         existing_block=existing_block, currency=currency,
         beat_ids=", ".join(beat_ids) or tab, mode_note=mode_note,
     )
-    for _attempt in range(2):
+    # change for b2c questionarie -- CHECK (live, Japan health devices
+    # 2026-09-09): when the model returned an EMPTY question list the inner
+    # loop never ran, both attempts fell through and this returned None with
+    # NO note at all. Section 4 shipped 3/5 and the log showed nothing to
+    # explain it. Every exit path now records why, and the retry budget is
+    # 3 so a single empty response cannot lose a required theme.
+    for _attempt in range(3):
         try:
             batch: TabQuestionBatch = llm.invoke(prompt)
         except Exception as exc:  # noqa: BLE001 — a failed top-up must not sink the tab
-            notes.append(f"slot top-up call failed: {exc}")
-            return None
+            notes.append(f"slot top-up call failed ({slot_label}): {exc}")
+            continue
+        if not getattr(batch, "questions", None):
+            notes.append(
+                f"slot top-up returned NO questions for '{slot_label}' "
+                f"(attempt {_attempt + 1})"
+            )
+            continue
         for q in batch.questions:
             data = q.model_dump()
             text = (data.get("text") or "").strip()
@@ -1434,6 +1446,10 @@ def _generate_single_slot(*, llm, tab, segment, region, today, slot_label,
             if not data.get("options"):
                 data["options"] = ["Other"]
             return data
+    notes.append(
+        f"slot top-up EXHAUSTED all attempts for '{slot_label}' — "
+        "no usable question produced"
+    )
     return None
 
 

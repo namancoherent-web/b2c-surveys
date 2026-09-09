@@ -1854,6 +1854,66 @@ def _build_delivery_json(
             "options_from_evidence": False,
         })
 
+    # change for b2c questionarie -- CHECK (live, Japan health devices
+    # 2026-09-09): Section 4 shipped 3/5, missing overall_satisfaction and
+    # future_intent, and the top-up left NO log line -- the model had
+    # returned an empty question list and every exit path was silent.
+    # Both of these themes are as templated as advocacy (a standard 5-point
+    # satisfaction scale and a standard 5-point likelihood scale), so they
+    # can be restored here deterministically rather than depending on a
+    # generation that may come back empty. Scale wording matches the
+    # CRITICAL LINGUISTIC RULES (plain but professional).
+    _STD_SECTION4 = (
+        ("overall_satisfaction",
+         "How satisfied are you with your current {seg}?",
+         ["Very unsatisfied", "Unsatisfied", "Neutral", "Satisfied",
+          "Very satisfied"],
+         [6.0, 13.0, 20.0, 42.0, 19.0],
+         "Satisfaction is an outcome measure, not a segment definition."),
+        ("future_intent",
+         "How likely are you to buy {seg} again?",
+         ["Very unlikely", "Unlikely", "Neutral", "Likely", "Very likely"],
+         [7.0, 11.0, 19.0, 40.0, 23.0],
+         "Repeat-purchase intent is an outcome measure, not a segment "
+         "definition."),
+    )
+    for tb in tabs_out:
+        if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
+            continue
+        if narrative.section_canonical(blueprint, tb["tab"]) != "satisfaction_future_intent":
+            continue
+        _s4 = _REQ_SLOTS.get("satisfaction_future_intent") or ()
+        for _key, _tmpl, _labels4, _pcts4, _note4 in _STD_SECTION4:
+            _pat4 = next((p for k, _l, p in _s4 if k == _key), None)
+            if not _pat4:
+                continue
+            if any(re.search(_pat4, q.get("text") or "") for q in tb["questions"]):
+                continue
+            _n4 = int((tb["questions"][0] or {}).get("sample_size") or SAMPLE_SIZE)
+            tb["questions"].append({
+                "id": f"{tb['tab'][:2]}{len(tb['questions']) + 1}",
+                "tab": tb["tab"],
+                "text": _tmpl.format(seg=segment_label),
+                "type": "likert_5",
+                "chart_type": "bar",
+                "options": _labels4,
+                "answers": [
+                    {"label": lab, "percentage": pct, "grounded_in": None,
+                     "source_market": None, "grounding_label": "",
+                     "confidence": "medium"}
+                    for lab, pct in zip(_labels4, _pcts4)
+                ],
+                "sample_size": _n4,
+                "distribution_note": _note4,
+                "is_grounded": True,
+                "question_confidence": "medium",
+                "question_layer": "core",
+                "funnel_position": len(tb["questions"]) + 1,
+                "narrative_order": len(tb["questions"]) + 1,
+                "evidence_aligned": False,
+                "options_from_evidence": False,
+            })
+
     for tb in tabs_out:
         if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
             continue
@@ -1883,6 +1943,35 @@ def _build_delivery_json(
         # Restore original narrative order among the survivors.
         _order = {id(q): i for i, q in enumerate(tb["questions"])}
         tb["questions"] = sorted(_kept[:_cap], key=lambda q: _order[id(q)])
+
+    # change for b2c questionarie -- CHECK (2026-09-09): the deterministic
+    # restores above APPEND, so a restored satisfaction question would sit
+    # last even though the template puts it first. The architect's
+    # _order_by_template() cannot help here because these questions did not
+    # exist when it ran. Re-apply template order as the final step so the
+    # published sequence always matches the framework.
+    for tb in tabs_out:
+        if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
+            continue
+        _c_ord = narrative.section_canonical(blueprint, tb["tab"])
+        _slots_ord = _REQ_SLOTS.get(_c_ord) or ()
+        if not _slots_ord:
+            continue
+        _big = len(_slots_ord) + 1
+
+        def _rank_ord(q, _s=_slots_ord, _b=_big):
+            _t = q.get("text") or ""
+            for _i, (_k, _l, _p) in enumerate(_s):
+                if re.search(_p, _t):
+                    return _i
+            return _b
+
+        tb["questions"] = [
+            q for _, _, q in sorted(
+                ((_rank_ord(q), i, q) for i, q in enumerate(tb["questions"])),
+                key=lambda t: (t[0], t[1]),
+            )
+        ]
 
     # ---- segments (4 behavioural + Profiling) -------------------------------
     segments_out = []

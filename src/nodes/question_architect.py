@@ -1316,6 +1316,22 @@ THE ONE QUESTION YOU MUST WRITE:
 That is the only question wanted. Do not write anything else, do not write a
 variation on a different theme, and do not repeat any question listed below.
 
+TRY HARD to make this theme work for {segment} first — it is required, and a
+well-written version of it is always preferred. But if this theme genuinely
+does not fit this category, a forced question is worse than no question. A
+real example of getting this wrong: for a vitamin SUBSCRIPTION, the
+"usage context" theme produced "Where do you usually take your daily
+vitamins?" (at home / at work / at the gym) — technically on-theme, but it
+tells a brand manager nothing, because where someone swallows a pill is not
+a decision anyone acts on.
+So apply this test: would the answer to your question actually change a
+business decision for {segment}? If yes, write it. If the honest answer is
+no — the theme simply does not apply to how this product is bought or used —
+then write the most USEFUL question you can for this section instead, on a
+topic that is genuinely meaningful for this category, and begin your question
+text with the exact marker "[SUBSTITUTE] " so the swap is recorded rather
+than hidden. Never pad the slot with a question you would not defend.
+
 SECTION CONTEXT (what this section is for): {guidance}
 
 QUESTIONS ALREADY IN THIS SURVEY — your question must not duplicate,
@@ -1381,8 +1397,23 @@ def _generate_single_slot(*, llm, tab, segment, region, today, slot_label,
             text = (data.get("text") or "").strip()
             if not text:
                 continue
-            # Must actually fill the slot it was asked for.
-            if not re.search(slot_pattern, text):
+            # change for b2c questionarie -- CHECK (user directive,
+            # 2026-09-09): the model may DELIBERATELY substitute when the
+            # required theme would produce a useless question for this
+            # category (the "where do you take your vitamins" case). A
+            # marked substitute is accepted and recorded; the marker is
+            # stripped so it never reaches the deliverable. Anything else
+            # that misses the slot is still rejected as before.
+            _sub = text.startswith("[SUBSTITUTE]")
+            if _sub:
+                text = text[len("[SUBSTITUTE]"):].strip()
+                data["text"] = text
+                data["_substituted_for"] = slot_label
+                notes.append(
+                    f"SUBSTITUTED '{slot_label}' (poor fit for this category) "
+                    f"with: {text[:60]}"
+                )
+            elif not re.search(slot_pattern, text):
                 notes.append(f"slot top-up off-theme, rejected: {text[:70]}")
                 continue
             if too_similar_to_any(
@@ -1404,6 +1435,33 @@ def _generate_single_slot(*, llm, tab, segment, region, today, slot_label,
                 data["options"] = ["Other"]
             return data
     return None
+
+
+def _order_by_template(questions: list, canon: str) -> list:
+    """Sort a section into the template's slot order.
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # 23-theme template already reads as a narrative arc, so it -- not the
+    # beat table -- decides sequence. Each question takes the index of the
+    # FIRST template slot it matches; anything matching no slot keeps its
+    # existing relative position and sits after the templated questions.
+    """
+    slots = _REQUIRED_SLOTS.get(canon) or ()
+    if not slots:
+        return questions
+    big = len(slots) + 1
+
+    def _rank(q: dict) -> int:
+        text = q.get("text") or ""
+        for i, (_k, _l, pat) in enumerate(slots):
+            if re.search(pat, text):
+                return i
+        return big
+
+    return [q for _, _, q in sorted(
+        ((_rank(q), i, q) for i, q in enumerate(questions)),
+        key=lambda t: (t[0], t[1]),
+    )]
 
 
 def _fill_missing_slots_for_section(
@@ -2265,11 +2323,24 @@ def question_architect(state: SurveyState) -> dict:
             ],
             notes_sink=_slot_notes,
         )
-        _qs = narrative.order_questions(_qs, _beats)
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+        # THE TEMPLATE ORDER IS THE STORYLINE. narrative.order_questions()
+        # sorts by canonical BEAT order, which is a second, competing
+        # sequence -- e.g. beats put usage_occasion before usage_frequency
+        # while the template puts frequency first. Beats won, so 3 of the 4
+        # sections shipped out of template order (verified on the UK vitamins
+        # file: Section 1 came out exactly reversed). The template already
+        # reads as a narrative arc, so it is the single source of truth for
+        # sequence; beat ordering is only a fallback for anything the
+        # template does not name.
+        _qs = narrative.order_questions(_qs, _beats)  # fallback for extras
+        _qs = _order_by_template(_qs, _canon)
         _prefix = _prefix_for(_tab, blueprint)
         for _n, _q in enumerate(_qs, start=1):
             _q["id"] = f"{_prefix}{_n}"
             _q["tab"] = _tab
+            _q["funnel_position"] = _n
+            _q["narrative_order"] = _n
         _rebuilt.extend(_qs)
         counts_by_tab[_tab] = len(_qs)
     # Keep any question whose tab is not a blueprint section (defensive).

@@ -393,6 +393,7 @@ def find_missing_required_slots(answered: list, section_ids: dict) -> dict:
     missing a required question can never be crowned "best").
     """
     by_canon: dict[str, list] = {}
+    _substituted: dict[str, set] = {}
     for q in answered:
         if (q.get("question_layer") or "") in ("screening", "profiling"):
             continue
@@ -403,13 +404,22 @@ def find_missing_required_slots(answered: list, section_ids: dict) -> dict:
                 canon = cid
                 break
         by_canon.setdefault(canon, []).append(q.get("text") or "")
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+        # a theme the model deliberately substituted (because forcing it
+        # would produce a useless question for this category) is NOT a gap.
+        # Without this the gate would demand the bad question back and the
+        # run would loop until the revision cap.
+        _sub = q.get("_substituted_for")
+        if _sub:
+            _substituted.setdefault(canon, set()).add(_sub)
 
     missing: dict[str, list] = {}
     for canon, slots in REQUIRED_SLOTS.items():
         stems = by_canon.get(canon) or []
+        subs = _substituted.get(canon) or set()
         gaps = [
             (key, label) for key, label, pat in slots
-            if not any(re.search(pat, s) for s in stems)
+            if label not in subs and not any(re.search(pat, s) for s in stems)
         ]
         if gaps:
             missing[canon] = gaps
@@ -442,6 +452,12 @@ def find_offtheme_questions(answered: list, section_ids: dict) -> dict:
             if canon == market_id:
                 canon = cid
                 break
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+        # a deliberate substitute is expected NOT to match any slot pattern,
+        # so it must be exempt here or the off-theme gate would reject the
+        # very question the substitution rule asked for.
+        if q.get("_substituted_for"):
+            continue
         by_canon.setdefault(canon, []).append(q.get("text") or "")
 
     offtheme: dict[str, list] = {}

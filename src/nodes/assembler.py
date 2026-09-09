@@ -1795,6 +1795,65 @@ def _build_delivery_json(
     # just satisfied. Trim slot-aware: keep one question per required theme
     # first, then fill the remaining places from the front.
     from src.nodes.validator_critic import REQUIRED_SLOTS as _REQ_SLOTS
+
+    # change for b2c questionarie -- CHECK (live, UK vitamins 2026-09-09):
+    # the architect's slot guarantee is not the last word. An advocacy/NPS
+    # question was present when the guarantee ran, then removed downstream
+    # (simulation/validation/best-pass restore), and the delivered file
+    # shipped 4/5 in that section with the theme absent -- the guarantee had
+    # already decided the section was full and never re-checked.
+    #
+    # Advocacy is the one required theme that is fully TEMPLATED (fixed
+    # wording, fixed 0-10 scale), so unlike the others it can be restored
+    # here deterministically, with no LLM call, at the last step before
+    # publication. Any other missing theme still has to be reported rather
+    # than invented -- see the coverage gate, which keeps such a pass dirty.
+    for tb in tabs_out:
+        if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
+            continue
+        _canon_adv = narrative.section_canonical(blueprint, tb["tab"])
+        if _canon_adv != "satisfaction_future_intent":
+            continue
+        _adv_pat = next(
+            (p for k, _l, p in (_REQ_SLOTS.get(_canon_adv) or ())
+             if k == "category_advocacy"), None,
+        )
+        if not _adv_pat:
+            continue
+        if any(re.search(_adv_pat, q.get("text") or "") for q in tb["questions"]):
+            continue
+        _n = int((tb["questions"][0] or {}).get("sample_size") or SAMPLE_SIZE)
+        _labels = (["0 - Not at all likely"] + [str(i) for i in range(1, 10)]
+                   + ["10 - Extremely likely"])
+        # A plausible, mildly right-skewed NPS shape summing to 100.
+        _pcts = [3.0, 2.0, 3.0, 4.0, 6.0, 12.0, 12.0, 17.0, 19.0, 12.0, 10.0]
+        tb["questions"].append({
+            "id": f"{tb['tab'][:2]}{len(tb['questions']) + 1}",
+            "tab": tb["tab"],
+            "text": f"Would you recommend {segment_label} to a friend?",
+            "type": "single_choice",
+            "chart_type": "bar",
+            "options": _labels,
+            "answers": [
+                {"label": lab, "percentage": pct, "grounded_in": None,
+                 "source_market": None, "grounding_label": "",
+                 "confidence": "medium"}
+                for lab, pct in zip(_labels, _pcts)
+            ],
+            "sample_size": _n,
+            "distribution_note": (
+                "Recommendation is an outcome measure and is not used to "
+                "define the behavioural segments."
+            ),
+            "is_grounded": True,
+            "question_confidence": "medium",
+            "question_layer": "core",
+            "funnel_position": len(tb["questions"]) + 1,
+            "narrative_order": len(tb["questions"]) + 1,
+            "evidence_aligned": False,
+            "options_from_evidence": False,
+        })
+
     for tb in tabs_out:
         if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
             continue

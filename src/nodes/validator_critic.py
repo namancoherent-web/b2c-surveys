@@ -232,16 +232,38 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         # NOTE: must NOT match "what do you mainly use X for?" -- that is
         # primary_use_case. Requires a place/occasion cue (when/where/which
         # situations), never a bare "use ... for".
+        # change for b2c questionarie -- CHECK (live, UK vitamins 2026-09-09):
+        # this only accepted the verbs "use/wear", so the model's perfectly
+        # correct "Where do you usually TAKE your daily vitamins?" was
+        # rejected four times and the slot was reported permanently missing.
+        # The consumption verb is category-specific (take / drink / apply /
+        # wash with / put on), so matching a fixed verb list is brittle by
+        # design. Anchor on the place/occasion cue plus "usually", which is
+        # what actually makes it a usage-context question, and keep the
+        # negative lookahead so "what do you mainly use it FOR" still belongs
+        # to primary_use_case.
+        # The cue that separates this from the Section 2 "where did you buy /
+        # where did you look" questions is TENSE, not the verb: usage context
+        # is habitual present ("where/when do you USUALLY ..."), purchase is
+        # a past event ("where DID you ..."). Verified against both.
+        # Separating this from Section 2's "where" questions needs BOTH cues:
+        #  - habitual present ("do you usually"), not past ("did you"), and
+        #  - not a shopping verb -- "where do you usually BUY" is the
+        #    acquisition channel, not usage context.
         ("usage_context", "usage context (situations/occasions/places)",
-         r"(?i)\b(when|where|which situations?|what situations?|"
-         r"which occasions?|what occasions?|in which settings?)\b.{0,60}"
-         r"(use|wear|using|wearing)"),
+         r"(?i)(\b(when|where)\b(?!.{0,40}\bmainly\b)"
+         r"(?!.{0,45}\b(buy|bought|purchase|shop|order|sign up|subscribe)\b)"
+         r".{0,30}\bdo you\b.{0,25}\busually\b"
+         r"|\b(which|what|in which)\b.{0,15}\b(situations?|occasions?|places?|settings?)\b)"),
         # Widened after the UK run: "Which FORM of vitamins do you use?" is
         # exactly this theme; "form" and "flavour/strength" were missing.
         ("item_variant", "item variant (which format/size/type they use)",
          r"(?i)(which|what) (type|kind|format|form|size|version|variant|"
          r"style|strength|flavour|flavor)\b|"
-         r"which .{0,30}\bdo you (use|have|own|take|choose)\b"),
+         # "which ... do you use" must NOT swallow "in which SITUATIONS do
+         # you use it" -- that is usage_context. Exclude occasion words.
+         r"which (?!.{0,20}\b(situations?|occasions?|places?|settings?)\b)"
+         r".{0,30}\bdo you (use|have|own|take|choose)\b"),
     ),
     # --- Section 2: 7 questions ------------------------------------------
     "buying_behavior": (

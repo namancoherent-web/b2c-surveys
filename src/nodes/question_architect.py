@@ -16,6 +16,7 @@ from src.date_utils import current_date_context
 from src.llm import get_structured_llm
 from src.models import TabQuestionBatch
 from src.nodes.validator_critic import CONSTRUCTS as _VALIDATOR_CONSTRUCTS
+from src.nodes.validator_critic import REQUIRED_SLOTS as _REQUIRED_SLOTS
 from src.question_plan import (
     CATEGORY_PLAN,
     CORE_PER_TAB,
@@ -1278,6 +1279,110 @@ def _first_construct_match(text: str) -> str | None:
     return None
 
 
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): a
+# focused, single-slot prompt. Asking for ONE named question is a far easier
+# target than "write 7 questions covering 7 themes", and the answer is
+# validated against that slot's own pattern before it is accepted, so a
+# top-up can never quietly fill the gap with an off-theme question.
+_SINGLE_SLOT_PROMPT = """\
+You are writing ONE question for the "{tab}" section of a consumer survey on
+{segment} ({region}). Today is {today}.
+
+THE ONE QUESTION YOU MUST WRITE:
+{slot_label}
+
+That is the only question wanted. Do not write anything else, do not write a
+variation on a different theme, and do not repeat any question listed below.
+
+SECTION CONTEXT (what this section is for): {guidance}
+
+QUESTIONS ALREADY IN THIS SURVEY — your question must not duplicate,
+paraphrase or overlap any of them:
+{existing_block}
+
+HOW TO WRITE IT:
+- Plain, everyday words only — a 6-year-old must understand every WORD, even
+  though the topic is adult. 5th-grade reading level, A1-A2 vocabulary.
+- ACTIVE VOICE, speak to the person as "you". Never passive.
+- NO corporate jargon or abstract nouns (catalyst, demographics, tenure,
+  proximity, sentiment, attribute, criteria, driver, journey). The theme
+  description above is an INTERNAL label — never copy its wording into the
+  question itself.
+- One clear idea. Closed options only (4-7 of them), mutually exclusive,
+  every option answering the words in the stem.
+- Answer options must be as plain as the question. Scales read like ordinary
+  speech: Very unhappy / Unhappy / Not sure / Happy / Very happy.
+- Money must be in {currency}, at amounts a real shopper in this market pays.
+- Never name a brand, company or manufacturer. Never ask age, income, or
+  where the respondent lives.
+
+Set `beat_id` to one of: {beat_ids}
+{mode_note}
+Return exactly ONE question.
+"""
+
+
+def _generate_single_slot(*, llm, tab, segment, region, today, slot_label,
+                          slot_pattern, existing, beats, blueprint, guidance,
+                          currency, figures_json, voice_json, persona_json,
+                          geo_label, layer, notes) -> dict | None:
+    """Ask for ONE specific required question and validate it fills that slot.
+
+    Returns the accepted question dict, or None if the model could not
+    produce something that actually matches the slot (2 attempts).
+    """
+    beat_ids = [b["beat_id"] for b in (beats or [])]
+    existing_block = (
+        "\n".join(f"    · {t}" for t in existing[-40:] if t) or "    (none yet)"
+    )
+    mode_note = ""
+    if layer == "module" and geo_label:
+        mode_note = (
+            f"- Write it so a consumer in {geo_label} recognises their own "
+            "market (local shops, local currency, local formats).\n"
+        )
+    prompt = _SINGLE_SLOT_PROMPT.format(
+        tab=tab, segment=segment, region=region, today=today,
+        slot_label=slot_label, guidance=guidance,
+        existing_block=existing_block, currency=currency,
+        beat_ids=", ".join(beat_ids) or tab, mode_note=mode_note,
+    )
+    for _attempt in range(2):
+        try:
+            batch: TabQuestionBatch = llm.invoke(prompt)
+        except Exception as exc:  # noqa: BLE001 — a failed top-up must not sink the tab
+            notes.append(f"slot top-up call failed: {exc}")
+            return None
+        for q in batch.questions:
+            data = q.model_dump()
+            text = (data.get("text") or "").strip()
+            if not text:
+                continue
+            # Must actually fill the slot it was asked for.
+            if not re.search(slot_pattern, text):
+                notes.append(f"slot top-up off-theme, rejected: {text[:70]}")
+                continue
+            if too_similar_to_any(
+                text, existing, segment=segment, threshold=LOOSE_JACCARD
+            ):
+                notes.append(f"slot top-up duplicate, rejected: {text[:70]}")
+                continue
+            if (_is_geo_residence_question(text)
+                    or _is_age_or_income_question(text)
+                    or _is_brand_name_question(text, data.get("options") or [])):
+                notes.append(f"slot top-up banned content, rejected: {text[:70]}")
+                continue
+            bid = (data.get("beat_id") or "").strip()
+            if bid not in set(beat_ids):
+                bid = _nearest_beat_id(bid, beats or [])
+            data["beat_id"] = bid
+            data["question_layer"] = layer if layer != "full" else "full"
+            if not data.get("options"):
+                data["options"] = ["Other"]
+            return data
+    return None
+
+
 def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                   today: str, mode: str, grounding_thin: bool, feedback: str,
                   avoid_texts=None, mkp=None, catalog=None, layer: str = "full",
@@ -1539,10 +1644,79 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                 f"{[b['beat_id'] for b in chunk_beats]}"
             )
 
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # required 23 slots MUST all be present, every market, every run. Asking
+    # for a whole section and hoping every theme appears is a lottery -- the
+    # first two live runs on this framework came back 17/23 and 18/23, and a
+    # whole-survey regeneration is a blunt retry that can miss the same slot
+    # six times in a row.
+    #
+    # Fix: after the section's normal generation, work out which required
+    # slots are STILL empty and ask for them ONE AT A TIME, naming the exact
+    # theme wanted. A single-slot request is a much easier target than "write
+    # 7 questions covering 7 themes", and each answer is checked against that
+    # slot's own pattern before being accepted -- so a top-up cannot fill the
+    # gap with something off-theme.
+    _canon_for_slots = narrative.section_canonical(blueprint, tab) or tab
+    _slots = _REQUIRED_SLOTS.get(_canon_for_slots) or ()
+    if _slots and layer != "module":
+        for _key, _label, _pat in _slots:
+            if len(collected) >= count:
+                break
+            if any(re.search(_pat, c.get("text") or "") for c in collected):
+                continue  # slot already filled
+            _topup = _generate_single_slot(
+                llm=llm, tab=tab, segment=segment, region=region, today=today,
+                slot_label=_label, slot_pattern=_pat,
+                existing=[c.get("text") or "" for c in collected] + list(avoid_texts),
+                beats=beats, blueprint=blueprint, guidance=_guidance_for(tab, beats, blueprint),
+                currency=standard_sections.currency_for(geo_label or region),
+                figures_json=figures_json, voice_json=voice_json,
+                persona_json=persona_json, geo_label=geo_label, layer=layer,
+                notes=notes,
+            )
+            if _topup:
+                collected.append(_topup)
+                notes.append(f"slot top-up filled '{_key}': {_topup['text'][:70]}")
+            else:
+                notes.append(f"slot top-up FAILED for '{_key}' in {tab}")
+
     if len(collected) < count:
         notes.append(f"shortfall: {len(collected)}/{count} after {attempts} attempts")
 
-    collected = collected[:count]
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+    # truncation must never delete a REQUIRED slot. Plain collected[:count]
+    # drops from the end, and slot top-ups are appended at the end -- so a
+    # section that over-generated would have thrown away the very question
+    # the top-up was added to guarantee. Keep one question per required slot
+    # first, then fill any remaining places with the extras in their original
+    # order.
+    if _slots and len(collected) > count:
+        _kept: list[dict] = []
+        _claimed: set = set()
+        for _key, _label, _pat in _slots:
+            for c in collected:
+                if id(c) in _claimed:
+                    continue
+                if re.search(_pat, c.get("text") or ""):
+                    _kept.append(c)
+                    _claimed.add(id(c))
+                    break
+        for c in collected:  # top up with extras, original order
+            if len(_kept) >= count:
+                break
+            if id(c) not in _claimed:
+                _kept.append(c)
+                _claimed.add(id(c))
+        _dropped = len(collected) - len(_kept[:count])
+        if _dropped > 0:
+            notes.append(
+                f"trimmed {_dropped} non-required question(s) from {tab} "
+                f"to fit the {count}-question section"
+            )
+        collected = _kept[:count]
+    else:
+        collected = collected[:count]
     # Narrative order is decided here, in code — never by the model's list order.
     collected = narrative.order_questions(collected, beats)
 

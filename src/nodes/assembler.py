@@ -1787,13 +1787,43 @@ def _build_delivery_json(
     # would trim Purchase Journey from its required 7 down to the smallest
     # section's size and silently delete required question types. Keyed by
     # canonical id so a renamed market section still gets the right cap.
+    # change for b2c questionarie -- CHECK (audit, 2026-09-09): this was a
+    # blind tail-trim. It is the LAST step before publication, so it could
+    # silently undo the architect's slot guarantee -- a required question
+    # added late in a section (slot top-ups are appended) was simply deleted
+    # here, and the file then failed the very coverage gate the architect had
+    # just satisfied. Trim slot-aware: keep one question per required theme
+    # first, then fill the remaining places from the front.
+    from src.nodes.validator_critic import REQUIRED_SLOTS as _REQ_SLOTS
     for tb in tabs_out:
         if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
             continue
         _canon = narrative.section_canonical(blueprint, tb["tab"])
         _cap = QUESTIONS_PER_SECTION.get(_canon)
-        if _cap and len(tb["questions"]) > _cap:
+        if not _cap or len(tb["questions"]) <= _cap:
+            continue
+        _slots = _REQ_SLOTS.get(_canon) or ()
+        if not _slots:
             tb["questions"] = tb["questions"][:_cap]
+            continue
+        _kept, _claimed = [], set()
+        for _k, _l, _p in _slots:
+            for _q in tb["questions"]:
+                if id(_q) in _claimed:
+                    continue
+                if re.search(_p, _q.get("text") or ""):
+                    _kept.append(_q)
+                    _claimed.add(id(_q))
+                    break
+        for _q in tb["questions"]:
+            if len(_kept) >= _cap:
+                break
+            if id(_q) not in _claimed:
+                _kept.append(_q)
+                _claimed.add(id(_q))
+        # Restore original narrative order among the survivors.
+        _order = {id(q): i for i, q in enumerate(tb["questions"])}
+        tb["questions"] = sorted(_kept[:_cap], key=lambda q: _order[id(q)])
 
     # ---- segments (4 behavioural + Profiling) -------------------------------
     segments_out = []

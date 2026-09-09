@@ -30,6 +30,7 @@ from src.question_plan import (
     CATEGORY_PLAN,
     GENERATION_MODE,
     MIN_TOTAL_QUESTIONS,
+    QUESTIONS_PER_SECTION,
     QUESTIONS_PER_TAB_MIN,
     QUESTIONS_PER_TAB_TARGET,
     TOTAL_TARGET,
@@ -3119,11 +3120,17 @@ def validator_critic(state: SurveyState) -> dict:
         c = counts_by_tab.get(tab)
         if c is None:
             c = sum(1 for q in answered if q.get("tab") == tab)
-        # Fail quota only below MIN; soft note if below TARGET but >= MIN.
-        if c < QUESTIONS_PER_TAB_MIN:
+        # change for b2c questionarie -- CHECK (audit, 2026-09-09): this used
+        # the FLAT QUESTIONS_PER_TAB_MIN (the smallest section's size) for
+        # every section, so Purchase Journey could ship 6 of its required 7
+        # -- or Product Experience 5 of 6 -- and pass silently. Each section
+        # now has its own floor, which IS its exact framework count.
+        _canon_floor = narrative.section_canonical(blueprint, tab)
+        _floor = QUESTIONS_PER_SECTION.get(_canon_floor, QUESTIONS_PER_TAB_MIN)
+        if c < _floor:
             feedback.append(
-                f"tab '{tab}' under floor: {c}/{QUESTIONS_PER_TAB_MIN} "
-                f"(target {QUESTIONS_PER_TAB_TARGET})"
+                f"tab '{tab}' under floor: {c}/{_floor} "
+                "(the framework fixes this section's count)"
             )
             if GENERATION_MODE == "quota":
                 quota_fail = True

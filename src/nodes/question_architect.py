@@ -60,7 +60,18 @@ from src.state import SurveyState
 # on two consecutive runs after the currency fix landed, traced to a core
 # cache entry populated days earlier under the unchanged v17 key. The
 # version bump forces every core batch to regenerate under the new rule.
-_Q_SCHEMA_V = "questionnaire_v18"
+# v19: THE 23-QUESTION FRAMEWORK. change for b2c questionarie -- CHECK
+# (audit, 2026-09-09): this is the single biggest reason the template was
+# not being followed. The framework moved from 16 questions (flat 4 per
+# section) to 23 (5/7/6/5) with a named required theme per slot, but this
+# key never changed -- so 49 cached questionnaires built under the OLD spec
+# were still being served. Inspected on disk: cached section shapes were
+# (3,3,3,4,4) from the 16-question era and (4,7,8,8,9) from the original
+# long format; none matched 5/7/6/5. A cache hit skips generation entirely,
+# so every slot guarantee, every linguistic rule and every coverage gate
+# added for this framework was being bypassed. Bumping the key forces a
+# clean regeneration under the current rules.
+_Q_SCHEMA_V = "questionnaire_v19"
 
 # change for b2c questionarie -- CHECK (user directive, 2026-09-08): short-
 # survey format (16 questions: 4 per behavioural section, no anchors). Set

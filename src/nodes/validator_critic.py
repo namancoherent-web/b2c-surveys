@@ -264,7 +264,9 @@ REQUIRED_SLOTS: dict[str, tuple] = {
          r"(?i)(easy|easier|difficult|hard|simple|straightforward)\b.{0,30}"
          r"(to use|to set up|to operate|to figure)|how easy\b"),
         ("quality_signal", "quality signal (what tells them it is well made)",
-         r"(?i)(well made|good quality|high quality|tells you .{0,30}(quality|work|made))"),
+         r"(?i)(well made|good quality|high quality|"
+         r"tells you .{0,40}(quality|work|made|good|last)|"
+         r"how (can|do) you tell .{0,40}(good|quality|work|last|made))"),
         ("essential_vs_nonessential", "essential vs non-essential features",
          r"(?i)(must|need to) (a |an )?.{0,30}(have|do|include)|"
          r"what (features|must)\b|which features|"
@@ -279,7 +281,7 @@ REQUIRED_SLOTS: dict[str, tuple] = {
     # --- Section 4: 5 questions ------------------------------------------
     "satisfaction_future_intent": (
         ("overall_satisfaction", "overall satisfaction",
-         r"(?i)how satisf"),
+         r"(?i)how (satisf|happy are you|pleased are you)"),
         ("top_pain_point", "top pain point (biggest frustration/unmet need)",
          r"(?i)(biggest (problem|issue|frustration)|most often disappoints|"
          r"disappoints?\b|problem .{0,25}(bothers|most)|"
@@ -333,6 +335,61 @@ def find_missing_required_slots(answered: list, section_ids: dict) -> dict:
         if gaps:
             missing[canon] = gaps
     return missing
+
+
+def find_offtheme_questions(answered: list, section_ids: dict) -> dict:
+    """Questions that match NO required slot for the section they sit in.
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+    # find_missing_required_slots() only checks that every listed theme is
+    # PRESENT. It says nothing about extra questions, so a section could
+    # satisfy all its slots and still carry an off-theme question -- which
+    # is how surveys kept picking up questions the framework never asked
+    # for. The manager signed off on these themes specifically, so the slot
+    # list is closed: anything outside it is a defect.
+    #
+    # A question is off-theme when it matches none of ITS OWN section's slot
+    # patterns. Matching another section's pattern is reported too (it means
+    # the question is filed in the wrong section), because that is a more
+    # useful message for the architect than a bare "unlisted theme".
+    Returns {canonical_id: [(question_text, note), ...]}.
+    """
+    by_canon: dict[str, list] = {}
+    for q in answered:
+        if (q.get("question_layer") or "") in ("screening", "profiling"):
+            continue
+        canon = _canonical_tab(q)
+        for cid, market_id in (section_ids or {}).items():
+            if canon == market_id:
+                canon = cid
+                break
+        by_canon.setdefault(canon, []).append(q.get("text") or "")
+
+    offtheme: dict[str, list] = {}
+    for canon, stems in by_canon.items():
+        own = REQUIRED_SLOTS.get(canon)
+        if not own:
+            continue  # unknown section (e.g. profiling) -- not gated here
+        for stem in stems:
+            if any(re.search(pat, stem) for _k, _l, pat in own):
+                continue
+            # Does it belong to a DIFFERENT section's slot list?
+            belongs_to = next(
+                (
+                    other
+                    for other, slots in REQUIRED_SLOTS.items()
+                    if other != canon
+                    and any(re.search(pat, stem) for _k, _l, pat in slots)
+                ),
+                None,
+            )
+            note = (
+                f"belongs in section '{belongs_to}', not here"
+                if belongs_to else
+                "matches none of this section's required themes"
+            )
+            offtheme.setdefault(canon, []).append((stem, note))
+    return offtheme
 
 
 def find_nps_shape_issue(answered: list) -> str | None:
@@ -2995,11 +3052,26 @@ def validator_critic(state: SurveyState) -> dict:
             _canon_to_market[_c] = _sid
     for _canon, _gaps in find_missing_required_slots(answered, _canon_to_market).items():
         _labels = "; ".join(label for _key, label in _gaps)
+        _n = len(REQUIRED_SLOTS.get(_canon) or ())
         feedback.append(
             f"coverage: section '{_canon}' is missing required question "
-            f"type(s): {_labels}. All 4 required types per section must be "
-            "present — write the missing one(s)."
+            f"type(s): {_labels}. All {_n} required types for this section "
+            "must be present — write the missing one(s)."
         )
+        required_slot_fail = True
+        hygiene_fail = True
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # slot list is CLOSED, so an extra question on an unlisted theme is a
+    # defect even when every required theme is already present.
+    for _canon, _extras in find_offtheme_questions(answered, _canon_to_market).items():
+        for _stem, _note in _extras:
+            feedback.append(
+                f"coverage: off-theme question in section '{_canon}' "
+                f"({_note}): \"{_stem[:70]}\". The slot list for each section "
+                "is closed — remove it and use the slot for its required "
+                "theme instead."
+            )
         required_slot_fail = True
         hygiene_fail = True
 

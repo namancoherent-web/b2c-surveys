@@ -1887,6 +1887,9 @@ def build_survey_json(state: SurveyState) -> dict:
     from src.nodes.validator_critic import (
         find_nps_shape_issue as _val_find_nps_shape_issue,
     )
+    from src.nodes.validator_critic import (
+        find_offtheme_questions as _val_find_offtheme_questions,
+    )
 
     def _is_zero_tolerance_clean(qs: list) -> bool:
         expected = standard_sections.currency_for(
@@ -1930,6 +1933,11 @@ def build_survey_json(state: SurveyState) -> dict:
             if _c and _sid:
                 _canon_to_market[_c] = _sid
         if _val_find_missing_required_slots(qs, _canon_to_market):
+            return False
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+        # the slot list is closed, so an extra off-theme question makes a
+        # pass dirty here too, not just during the revision loop.
+        if _val_find_offtheme_questions(qs, _canon_to_market):
             return False
         if _val_find_nps_shape_issue(qs):
             return False

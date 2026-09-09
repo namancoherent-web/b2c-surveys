@@ -674,6 +674,33 @@ QUESTION CRAFT — this is where most drafts go wrong. Read carefully.
 
 This tab should cover: {guidance}
 
+THE SLOT LIST ABOVE IS CLOSED — THESE THEMES AND NOTHING ELSE.
+The numbered question types in the guidance above are not a starting point
+or a set of suggestions to build on. They are the COMPLETE and EXCLUSIVE
+list of what this section may contain:
+- Write exactly one question per numbered slot. No more, no fewer.
+- Do NOT add a question on any other theme, however good or interesting it
+  is. A well-written question on an unlisted theme is still WRONG and will
+  be rejected — an unlisted theme is out of scope by definition, not a
+  bonus.
+- Do NOT write two questions for the same slot in different words. Two
+  questions a respondent answers the same way are one question, and the
+  second one has taken a slot that its own theme needed.
+- Do NOT borrow a theme from another section. Each theme belongs to exactly
+  one section; if an idea fits a slot listed under a different section, it
+  is that section's job, not yours — leave it out here.
+The check applied afterwards is mechanical: every listed theme must be
+present, and nothing outside the list may appear. Anything else fails and
+is regenerated.
+
+EVERY QUESTION MUST STILL PASS THE 6-YEAR-OLD WORDING TEST.
+Getting the theme right is only half the job. Each question must also be
+written so plainly that a 6-year-old would understand every single WORD in
+it — even though the topic (money, buying, brands) is clearly adult. Short
+sentence, everyday words, no research or marketing vocabulary, no stiff
+survey phrasing. If a word would make a child ask "what does that mean?",
+replace it with the ordinary word an adult would use talking to a friend.
+
 STORYLINE — this survey tells one continuous story, and this chunk fills
 specific BEATS of it. The beats below are already in narrative order:
 

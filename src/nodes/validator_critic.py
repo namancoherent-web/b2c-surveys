@@ -194,7 +194,34 @@ def find_construct_duplicates(answered: list) -> dict[str, list]:
             if re.search(pat, text):
                 by_construct.setdefault(name, []).append(q)
                 break
-    return {name: qs for name, qs in by_construct.items() if len(qs) >= 2}
+    groups = {name: qs for name, qs in by_construct.items() if len(qs) >= 2}
+
+    # change for b2c questionarie -- CHECK (live, Japan health devices
+    # 2026-09-09): this generic CONSTRUCTS table has ONE "overall_satisfaction"
+    # bucket for the whole survey, but the 23-theme framework deliberately
+    # has TWO distinct satisfaction slots -- core_function_satisfaction
+    # ("how satisfied with HOW WELL it works", Section 3) and
+    # overall_satisfaction ("how satisfied with your CURRENT device",
+    # Section 4). Both matched the old bucket and were flagged as
+    # duplicates, even though the framework's own slot list says they are
+    # meant to coexist. If every question in a construct-duplicate group
+    # maps to a DIFFERENT REQUIRED_SLOTS theme, the framework is the more
+    # specific authority here -- drop the group.
+    _filtered: dict[str, list] = {}
+    for name, qs in groups.items():
+        _slot_keys = set()
+        for q in qs:
+            _t = q.get("text") or ""
+            _k = next(
+                (k for slots in REQUIRED_SLOTS.values() for k, _l, p in slots
+                 if re.search(p, _t)),
+                None,
+            )
+            _slot_keys.add(_k)
+        if None not in _slot_keys and len(_slot_keys) == len(qs):
+            continue  # every question maps to a different named theme
+        _filtered[name] = qs
+    return _filtered
 
 
 # change for b2c questionarie -- CHECK (user directive, 2026-09-08): the 16

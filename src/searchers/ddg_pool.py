@@ -17,7 +17,15 @@ from src import vpn_client
 
 logger = logging.getLogger(__name__)
 
-MAX_RETRIES = 2
+# change for b2c questionarie -- CHECK (2026-09-09): this was hardcoded at 2,
+# i.e. 3 attempts x 3 backends = up to 9 timeout-length calls PER QUERY. With
+# the public search endpoints timing out (~30s each) that is minutes of dead
+# wait per query and it dominated total run time -- a run measured 7.6s of CPU
+# across 17 minutes of wall clock, i.e. ~99% idle on network I/O. Web results
+# are only SUPPLEMENTARY here (the CMI database is the primary evidence
+# source), so the retry budget is now tunable and can be dropped to 0 when the
+# endpoints are unhealthy.
+MAX_RETRIES = int(os.getenv("DDG_MAX_RETRIES", "2"))
 MAX_FACTS_PER_PAGE = 6
 JINA_PAGE_CAP = 20000
 _WEB_RATE = float(os.getenv("WEB_RATE_PER_SEC", "1"))

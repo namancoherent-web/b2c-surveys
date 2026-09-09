@@ -281,9 +281,19 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         ("shopping_timeframe", "shopping timeframe (how long they researched)",
          r"(?i)how long (did|do) you .{0,30}(spend|take|research|look|compar)|"
          r"how much time .{0,25}(research|decid|compar|look)"),
+        # change for b2c questionarie -- CHECK (live, Japan health devices
+        # 2026-09-09): the old second branch matched any question containing
+        # "information ... before", so the SHOPPING TIMEFRAME question ("How
+        # long did you look for information before buying?") also satisfied
+        # this slot. One question covered two themes, the section looked
+        # complete at 6/7, and the real information-sources gap was hidden.
+        # This theme is about WHERE they looked, so it must name a source or
+        # ask "where" -- never merely mention the word "information".
         ("information_sources", "information sources (where they learned about it)",
-         r"(?i)where (did|do) you\s+(\w+\s+){0,3}?(look|learn|read|research|find out)|"
-         r"(information|reviews?|advice)\b.{0,40}\bbefore\b"),
+         r"(?i)where (did|do) you\s+(\w+\s+){0,3}?"
+         r"(look|learn|read|research|find out|go to (learn|find))|"
+         r"(which|what)\s+(sources?|websites?|places?)\b|"
+         r"(where|which|what).{0,30}(reviews?|advice|recommendations?)\b"),
         # Widened after the UK run: a SUBSCRIPTION is "signed up for", not
         # "bought", so "Where did you sign up for your subscription?" is the
         # channel question for this category and must match.

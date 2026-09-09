@@ -126,20 +126,29 @@ if REGION_QUESTION_MODE not in ("core_plus_module", "fully_distinct"):
 # anchors + 4 profiling = 38 screens, inside the 40 ceiling with room for a
 # section that runs long. Profiling is excluded from the segment model
 # (see standard_sections).
-# change for b2c questionarie -- CHECK (user directive, 2026-09-08): survey
-# length hardcoded to exactly 4 questions per behavioural section (16 total,
-# NOT counting Profiling) -- deliberately NOT env-configurable, per explicit
-# instruction. A hard target with no slack risks the model padding with
-# near-duplicates to hit the count (see the old comment this replaced,
-# "what matters most" / "what was most important" / "which must it do" was
-# three slots for one construct) -- mitigated here by PRIORITY_QUESTION_TYPES
-# below, which tells the architect prompt EXACTLY which 4 question types each
-# section must fill, so there is no open slot left for invented padding, plus
-# the construct-level duplicate detector already in question_architect.py's
-# generation loop as a backstop.
-QUESTIONS_PER_TAB_MIN = 4
-QUESTIONS_PER_TAB_MAX = 4
-QUESTIONS_PER_TAB_TARGET = 4
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+# framework moved from a flat 4-per-section (16 total) to PER-SECTION counts
+# 5 / 7 / 6 / 5 = 23 behavioural questions, plus 2 profiling (age, gender).
+# Deliberately NOT env-configurable, per explicit instruction.
+#
+# A hard target with no slack risks the model padding with near-duplicates to
+# hit the count. That is mitigated by REQUIRED_SLOTS in validator_critic.py,
+# which names the EXACT question type each slot must carry and gates the run
+# until every one exists, plus the construct-level duplicate detector in
+# question_architect.py's generation loop as a backstop.
+QUESTIONS_PER_SECTION = {
+    "consumer_profile": 5,
+    "buying_behavior": 7,
+    "preferences_expectations": 6,
+    "satisfaction_future_intent": 5,
+}
+# Flat fallbacks kept for the handful of call sites that still want a single
+# number (global_selector's per-tab pick target, validator's under-target
+# note). MIN is the smallest section so a legitimately short section is not
+# reported as under floor; MAX/TARGET track the largest/most common.
+QUESTIONS_PER_TAB_MIN = min(QUESTIONS_PER_SECTION.values())
+QUESTIONS_PER_TAB_MAX = max(QUESTIONS_PER_SECTION.values())
+QUESTIONS_PER_TAB_TARGET = QUESTIONS_PER_TAB_MAX
 
 # Hard ceiling on the whole instrument, including the standard sections.
 TOTAL_QUESTION_CAP = int(os.getenv("TOTAL_QUESTION_CAP", "45"))
@@ -171,10 +180,14 @@ _TAB_NAMES = (
 )
 
 # (tab_name, question_count) — order here defines tab order in the final survey.
-# Architect generates TARGET per tab; validator floor uses MIN.
-CATEGORY_PLAN = [(name, QUESTIONS_PER_TAB_TARGET) for name in _TAB_NAMES]
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): per-section
+# counts, not a flat TARGET (5 / 7 / 6 / 5 = 23 behavioural).
+CATEGORY_PLAN = [
+    (name, QUESTIONS_PER_SECTION.get(name, QUESTIONS_PER_TAB_TARGET))
+    for name in _TAB_NAMES
+]
 
-# Total questions targeted across all tabs (≈ 4 * TARGET).
+# Total questions targeted across all tabs (23 under the current framework).
 TOTAL_TARGET = sum(count for _, count in CATEGORY_PLAN)
 
 # Hard floor for quota mode (allow small shortfall vs target).

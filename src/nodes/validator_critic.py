@@ -208,51 +208,90 @@ def find_construct_duplicates(answered: list) -> dict[str, list]:
 # Each entry: (slot_key, human_label, regex that must match >=1 question
 # stem in that section). Keyed by CANONICAL section id so a market-specific
 # section label (e.g. "Product / Ecosystem Experience") still maps back.
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): expanded
+# from 16 slots (4 per section) to the 23-slot framework, 5 / 7 / 6 / 5.
+# Section 4 now carries a SEPARATE switching_trigger alongside top_pain_point
+# (they were deliberately merged under the old 16-slot framework), and
+# advocacy is explicitly CATEGORY advocacy asked last.
 REQUIRED_SLOTS: dict[str, tuple] = {
+    # --- Section 1: 5 questions ------------------------------------------
     "consumer_profile": (
         ("usage_frequency", "usage frequency (how often/how many days)",
          r"(?i)how (often|many (days|times))\b"),
         ("primary_use_case", "primary use case (what they mainly use it for)",
          r"(?i)(mainly|mostly|most often|primarily)\s+use|what do you use .{0,40}\bfor\b"),
         ("ownership_tenure", "ownership tenure (how long they have had it)",
-         r"(?i)how long (have|has) you|how long .{0,25}(had|owned|kept)"),
-        ("usage_context", "usage context (situations/occasions)",
-         r"(?i)(when|where|which situations|what situations|what occasions)\b.{0,60}"
-         r"(use|wear|using|wearing)|(use|wear)\b.{0,40}\b(for|during|at)\b"),
+         r"(?i)how long (have|has) you|how long .{0,25}(had|owned|kept|been using)"),
+        # NOTE: must NOT match "what do you mainly use X for?" -- that is
+        # primary_use_case. Requires a place/occasion cue (when/where/which
+        # situations), never a bare "use ... for".
+        ("usage_context", "usage context (situations/occasions/places)",
+         r"(?i)\b(when|where|which situations?|what situations?|"
+         r"which occasions?|what occasions?|in which settings?)\b.{0,60}"
+         r"(use|wear|using|wearing)"),
+        ("item_variant", "item variant (which format/size/type they use)",
+         r"(?i)(which|what) (type|kind|format|size|version|variant|style)\b|"
+         r"which .{0,30}\bdo you (use|have|own)\b"),
     ),
+    # --- Section 2: 7 questions ------------------------------------------
     "buying_behavior": (
-        ("purchase_trigger", "purchase trigger (what made them buy)",
+        ("acquisition_trigger", "acquisition trigger (what made them buy)",
          r"(?i)(what (made|makes)|why did|what prompted) you\s+"
          r"(\w+\s+){0,3}?(buy|get|choose|purchase)"),
+        ("shopping_timeframe", "shopping timeframe (how long they researched)",
+         r"(?i)how long (did|do) you .{0,30}(spend|take|research|look|compar)|"
+         r"how much time .{0,25}(research|decid|compar|look)"),
+        ("information_sources", "information sources (where they learned about it)",
+         r"(?i)where (did|do) you\s+(\w+\s+){0,3}?(look|learn|read|research|find out)|"
+         r"(information|reviews?|advice)\b.{0,40}\bbefore\b"),
+        ("acquisition_channel", "acquisition channel (where they bought it)",
+         r"(?i)where (did|do) you\s+(\w+\s+){0,2}?(buy|get|purchase|order|shop)"),
         ("price_paid", "price paid (how much they spent)",
          r"(?i)how much did you (spend|pay)|how much .{0,20}(spend|pay)\b"),
         ("top_decision_driver", "top decision driver (what mattered most)",
-         r"(?i)(matter(s|ed)? most|most important|biggest influence)"),
-        ("purchase_channel", "purchase channel (where they bought/looked)",
-         r"(?i)where (did|do) you\s+(\w+\s+){0,2}?(buy|get|look|shop|find|purchase)"),
+         r"(?i)(matter(s|ed)? most|most important|biggest influence|"
+         r"single most)"),
+        ("alternative_consideration", "alternative consideration set (what else they considered)",
+         r"(?i)(what else|which other|other options|alternatives?|instead of)\b|"
+         r"(consider(ed)?)\b.{0,40}\b(before|other|besides)\b"),
     ),
+    # --- Section 3: 6 questions ------------------------------------------
     "preferences_expectations": (
-        ("must_have_features", "must-have features",
-         r"(?i)(must|need to) (a |an )?.{0,30}(have|do|include)|"
-         r"what (features|must)\b|which features"),
+        ("core_function_satisfaction", "core function satisfaction (rating of main capabilities)",
+         r"(?i)how (well|satisf).{0,40}(work|perform|do|does|job)|"
+         r"rate .{0,30}(performance|how well)"),
+        ("usability_ux", "usability / ease of use",
+         r"(?i)(easy|easier|difficult|hard|simple|straightforward)\b.{0,30}"
+         r"(to use|to set up|to operate|to figure)|how easy\b"),
         ("quality_signal", "quality signal (what tells them it is well made)",
          r"(?i)(well made|good quality|high quality|tells you .{0,30}(quality|work|made))"),
-        ("price_tradeoff", "price trade-off (what they would give up)",
-         r"(?i)(give up|compromise|trade off|willing to (give up|sacrifice))"),
+        ("essential_vs_nonessential", "essential vs non-essential features",
+         r"(?i)(must|need to) (a |an )?.{0,30}(have|do|include)|"
+         r"what (features|must)\b|which features|"
+         r"(could not|couldn't|cannot) (do without|live without)|rarely use"),
+        ("value_for_money", "perceived value for money",
+         r"(?i)(value for money|worth (the|what)|worth paying|"
+         r"good value|for (the|what) you paid)"),
         ("expectation_match", "expectation match (performance vs expected)",
          r"(?i)(as (well as )?you expected|compared to what you expected|"
          r"meet .{0,25}expectations?|live up to)"),
     ),
+    # --- Section 4: 5 questions ------------------------------------------
     "satisfaction_future_intent": (
         ("overall_satisfaction", "overall satisfaction",
          r"(?i)how satisf"),
-        ("advocacy_nps", "advocacy / NPS (recommend, 0-10 scale)",
-         r"(?i)(recommend|tell a friend|tell .{0,15}(others|someone))"),
-        ("top_pain_point", "top pain point / switching trigger",
+        ("top_pain_point", "top pain point (biggest frustration/unmet need)",
          r"(?i)(biggest (problem|issue|frustration)|most often disappoints|"
-         r"disappoints?\b|problem .{0,25}(bothers|most)|would make you switch)"),
-        ("future_intent", "future purchase intent (likely to buy again)",
-         r"(?i)how likely are you to (buy|purchase)|would you buy .{0,25}again"),
+         r"disappoints?\b|problem .{0,25}(bothers|most)|"
+         r"most frustrating|what annoys)"),
+        ("switching_trigger", "switching trigger (what would make them switch away)",
+         r"(?i)(would make you switch|make you (switch|stop|change)|"
+         r"switch to (a |an )?(different|another)|stop using)"),
+        ("future_intent", "future acquisition intent (likely to buy the same again)",
+         r"(?i)how likely are you to (buy|purchase|get)|"
+         r"would you buy .{0,25}again|buy .{0,20}same .{0,20}again"),
+        ("category_advocacy", "category advocacy (recommend, 0-10 scale)",
+         r"(?i)(recommend|tell a friend|tell .{0,15}(others|someone))"),
     ),
 }
 

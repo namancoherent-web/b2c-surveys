@@ -103,84 +103,96 @@ def _prefix_for(tab: str, blueprint: dict | None = None) -> str:
 # What each tab should cover (kept distinct to avoid cross-tab duplication).
 # change for b2c questionarie — consulting-grade; NO age/income/brand-name items
 #
-# change for b2c questionarie -- CHECK (user directive, 2026-09-08): survey
-# length is now hardcoded to EXACTLY 4 questions per section (16 total, see
-# question_plan.py QUESTIONS_PER_TAB_TARGET=4). At 4 slots there is no room
-# for the architect to freely explore a section's remit -- it must spend
-# every slot on the single highest-value question of its kind, not whatever
-# it generates first. Each tab's guidance below now names the 4 EXACT
-# question types that must fill those 4 slots, in this order, so a short
-# survey always keeps the questions that actually drive a business decision
-# instead of four random ones. This is advisory, not code-enforced (the
-# model still writes the actual wording) -- the construct-level duplicate
-# detector already in this file's generation loop is the backstop if the
-# model drifts from this list.
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+# framework is a FIXED 23-question instrument -- 5 / 7 / 6 / 5 across the four
+# behavioural sections, plus Profiling (age + gender only, added separately in
+# standard_sections.py). Each tab's guidance below names the EXACT question
+# types that must fill that section's slots, in order.
+#
+# Two things make this different from ordinary prompt guidance:
+#   1. It is GATED, not advisory. validator_critic.REQUIRED_SLOTS mirrors this
+#      list slot-for-slot and fails the pass until every one exists, so a
+#      missing type forces a regeneration instead of shipping.
+#   2. Section boundaries are strict. A question belonging to another
+#      section's remit is a defect even if it is a good question -- the slot
+#      lists below are mutually exclusive by construction.
 _TAB_GUIDANCE = {
     "consumer_profile": (
         "category relationship and usage context only — NOT age, income, or "
-        "where they live. Every question must be specific to the target "
-        "product. This section has EXACTLY 4 slots and ALL 4 are required — "
-        "fill them with these 4 question types, one each, in this order: "
-        "(1) USAGE FREQUENCY — how often/how many days they use the product; "
-        "(2) PRIMARY USE CASE — what they mainly use it for; "
-        "(3) OWNERSHIP TENURE — literally how LONG they have had their "
-        "current one (\"how long have you had...\"). This is NOT a count of "
-        "how many they own — a count question here is the wrong slot even if "
-        "the category genuinely varies in count, that would belong in slot 4 "
-        "instead, never slot 3; "
-        "(4) USAGE CONTEXT — the situations/occasions where they use it."
+        "where they live, and NOTHING about buying (that is Section 2). "
+        "Every question must be specific to the target product. This section "
+        "has EXACTLY 5 slots and ALL 5 are required — fill them with these 5 "
+        "question types, one each, in this order: "
+        "(1) USAGE FREQUENCY — how often / how many days they use it; "
+        "(2) PRIMARY USE CASE — the main job it does for them, what they "
+        "mainly use it for; "
+        "(3) OWNERSHIP TENURE — literally how LONG they have had or been "
+        "using their current one (\"how long have you had...\"). This is NOT "
+        "a count of how many they own; "
+        "(4) USAGE CONTEXT — the physical places, situations or occasions "
+        "where they use it (\"where do you usually...\", \"when do you...\"). "
+        "Must NOT be phrased as \"what do you use it for\" — that is slot 2; "
+        "(5) ITEM VARIANT — which format, size, type or version they "
+        "currently use, so user types can be told apart."
     ),
     "buying_behavior": (
-        "purchase journey for the target product — NEVER ask which brand or "
-        "company they buy (no manufacturer/name lists). This section has "
-        "EXACTLY 4 slots and ALL 4 are required — fill them with these 4 "
+        "the purchase journey for the target product — NEVER ask which brand "
+        "or company they buy (no manufacturer/name lists), and nothing about "
+        "how the product performs (that is Section 3). This section has "
+        "EXACTLY 7 slots and ALL 7 are required — fill them with these 7 "
         "question types, one each, in this order: "
-        "(1) PURCHASE TRIGGER — what specifically made them buy their "
-        "current/most recent one; "
-        "(2) PRICE PAID — how much they spent on it, in real local-currency "
+        "(1) ACQUISITION TRIGGER — the specific event that made them realise "
+        "they needed one; "
+        "(2) SHOPPING TIMEFRAME — how long they spent researching and "
+        "comparing before buying; "
+        "(3) INFORMATION SOURCES — where they went to learn about this kind "
+        "of product (reviews, demos, people they asked); "
+        "(4) ACQUISITION CHANNEL — the kind of shop, site or platform where "
+        "they actually bought it; "
+        "(5) PRICE PAID — how much they spent, in realistic local-currency "
         "bands; "
-        "(3) TOP DECISION DRIVER — the single factor that mattered most when "
-        "choosing; "
-        "(4) PURCHASE CHANNEL — where they bought it or looked for options "
-        "before buying."
+        "(6) TOP DECISION DRIVER — the single factor that mattered most; "
+        "(7) ALTERNATIVE CONSIDERATION SET — what other options or ways of "
+        "solving the same problem they seriously considered first."
     ),
     "preferences_expectations": (
-        "product attributes for the target product — never named competitor "
-        "brands or companies. This section has EXACTLY 4 slots and ALL 4 are "
-        "required — fill them with these 4 question types, one each, in this "
+        "how the product actually performs for them — never named competitor "
+        "brands or companies, and nothing about where or why they bought it "
+        "(that is Section 2). This section has EXACTLY 6 slots and ALL 6 are "
+        "required — fill them with these 6 question types, one each, in this "
         "order: "
-        "(1) MUST-HAVE FEATURES — what the product must have for them to buy "
-        "it (multi-select); "
-        "(2) QUALITY SIGNAL — what tells them a product in this category is "
-        "well made, before they buy it; "
-        "(3) PRICE TRADE-OFF — what they'd give up to get a lower price; "
-        "(4) EXPECTATION MATCH — how well their current product performs "
-        "compared to what they expected when they bought it."
+        "(1) CORE FUNCTION SATISFACTION — how well it does its main job; "
+        "(2) USABILITY / EASE OF USE — how easy or fiddly it is to use, set "
+        "up or operate; "
+        "(3) QUALITY SIGNAL — what tells them one is well made; "
+        "(4) ESSENTIAL vs NON-ESSENTIAL FEATURES — which features they could "
+        "not do without (multi-select); "
+        "(5) VALUE FOR MONEY — whether what they got was worth what they "
+        "paid; "
+        "(6) EXPECTATION MATCH — how it performs compared with what they "
+        "expected before buying."
     ),
     "satisfaction_future_intent": (
         "outcomes with the target product — no age/income/brand-name items. "
-        "This section has EXACTLY 4 slots; fill them with these 4 question "
-        "types, one each, in this order — all 4 are required, this section "
-        "has NO standard/anchor questions inserted automatically, so leaving "
-        "any of these 4 out is a real gap in the survey: "
-        "(1) OVERALL SATISFACTION — how satisfied they are with their "
-        "current product; "
-        "(2) ADVOCACY / NPS — how likely they are to recommend it to others. "
-        "This MUST be single_choice with EXACTLY 11 options, one per whole "
-        "number from 0 to 10 in order (\"0 - Not at all likely\", \"1\", "
-        "\"2\", ... \"9\", \"10 - Extremely likely\") — this exact 11-point "
-        "shape is what turns it into the standard 0-10 recommend scale at "
-        "publication; any other option count or wording will NOT be "
-        "recognised as that scale; "
-        "(3) TOP PAIN POINT — the single biggest problem or frustration with "
-        "it (this doubles as the switching-trigger signal — do not also add "
-        "a separate generic switching question); "
-        "(4) FUTURE PURCHASE INTENT — directly ask how LIKELY they are to "
-        "buy the same kind of product, or from the same brand, again (a "
-        "likelihood/propensity question, e.g. \"How likely are you to buy "
-        "X again?\" -> Very unlikely...Very likely). This is NOT a question "
-        "about what would make them buy SOONER or what would accelerate a "
-        "purchase — that is a different construct (urgency), not intent."
+        "This section has EXACTLY 5 slots and ALL 5 are required, and this "
+        "section has NO standard/anchor questions inserted automatically, so "
+        "leaving any of these out is a real gap: "
+        "(1) OVERALL SATISFACTION — how satisfied they are overall; "
+        "(2) TOP PAIN POINT — the single biggest frustration or unmet need "
+        "while using it; "
+        "(3) SWITCHING TRIGGER — what would realistically make them switch "
+        "away to a different kind of solution. This is DISTINCT from slot 2: "
+        "slot 2 is the problem they have TODAY, slot 3 is the change that "
+        "would make them LEAVE; "
+        "(4) FUTURE ACQUISITION INTENT — how likely they are to buy the same "
+        "kind of product again when they next need one. Ask likelihood, not "
+        "what would make them buy sooner; "
+        "(5) CATEGORY ADVOCACY — how likely they are to recommend this kind "
+        "of product to someone else. This MUST be single_choice with EXACTLY "
+        "11 options, one per whole number 0 to 10 in order (\"0 - Not at all "
+        "likely\", \"1\", \"2\", ... \"9\", \"10 - Extremely likely\") — that "
+        "exact 11-point shape is what makes it the standard 0-10 scale at "
+        "publication; any other option count will NOT be recognised."
     ),
 }
 

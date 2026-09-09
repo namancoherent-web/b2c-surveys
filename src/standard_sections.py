@@ -240,9 +240,13 @@ def profiling_questions(segment: str, currency: str = "$", geography: str = "") 
 
     # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
     # capped to the 3 most-used cross-tab cuts (age, gender, income) as part
-    # of the 15-16-question short-survey format. household_composition
-    # ("who else lives in your household") dropped -- least frequently
-    # analysed of the four, per explicit instruction.
+    # of the short-survey format. household_composition ("who else lives in
+    # your household") dropped -- least frequently analysed of the four.
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # 23-question framework specifies Profiling = age group + gender ONLY,
+    # so household income is dropped too. `currency`/`geography` are kept in
+    # the signature (callers still pass them, and _income_bands stays for
+    # the money questions the architect writes inside Section 2).
     """
     return [
         {
@@ -254,23 +258,13 @@ def profiling_questions(segment: str, currency: str = "$", geography: str = "") 
         },
         {
             # change for b2c questionarie — A13: gender is a standard cross-tab
-            # cut and was missing. Like age and income it lives only here, never
-            # as a behavioural question.
+            # cut and was missing. Like age it lives only here, never as a
+            # behavioural question.
             "id": "d2", "beat_id": "gender",
             "text": "What is your gender?",
             "type": "single_choice",
             "options": ["Woman", "Man", "Non-binary", "Prefer to self-describe",
                         "Prefer not to say"],
-            "profiling": True,
-        },
-        {
-            "id": "d3", "beat_id": "income_band",
-            "text": "What was your total household income before tax last year?",
-            "type": "single_choice",
-            # change for b2c questionarie — bands are rendered in the local
-            # currency at build time. Hardcoding dollars produced a German
-            # instrument that asked spend in euros and income in US dollars.
-            "options": _income_bands(currency, geography),
             "profiling": True,
         },
     ]

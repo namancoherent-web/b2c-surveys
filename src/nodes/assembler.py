@@ -15,6 +15,7 @@ from src.date_utils import current_date_context
 from src.question_plan import (
     CATEGORY_PLAN,
     GENERATION_MODE,
+    QUESTIONS_PER_SECTION,
     QUESTIONS_PER_TAB_TARGET,
     SAMPLE_SIZE,
     match_geographic_region,
@@ -1756,18 +1757,18 @@ def _build_delivery_json(
     # a capped section's existing narrative order (last-in-order first)
     # since sections are already ordered broadest/earliest to narrowest/
     # latest, so the earliest, most load-bearing questions are always kept.
-    # change for b2c questionarie -- CHECK (user directive, 2026-09-08):
-    # lowered 7 -> 4 to match the hardcoded 16-question format
-    # (question_plan.QUESTIONS_PER_TAB_TARGET = 4). At 7 this cap was dead
-    # code for the short format -- a section that over-generated to 5 or 6
-    # sailed straight through, which is why published files kept coming out
-    # at 17-19 behavioural questions instead of a clean 16.
-    _MAX_QUESTIONS_PER_BEHAVIOURAL_SECTION = 4
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # cap is now PER SECTION (5 / 7 / 6 / 5), not one flat number. A flat cap
+    # would trim Purchase Journey from its required 7 down to the smallest
+    # section's size and silently delete required question types. Keyed by
+    # canonical id so a renamed market section still gets the right cap.
     for tb in tabs_out:
         if tb["tab"] == standard_sections.PROFILING_SECTION_ID:
             continue
-        if len(tb["questions"]) > _MAX_QUESTIONS_PER_BEHAVIOURAL_SECTION:
-            tb["questions"] = tb["questions"][:_MAX_QUESTIONS_PER_BEHAVIOURAL_SECTION]
+        _canon = narrative.section_canonical(blueprint, tb["tab"])
+        _cap = QUESTIONS_PER_SECTION.get(_canon)
+        if _cap and len(tb["questions"]) > _cap:
+            tb["questions"] = tb["questions"][:_cap]
 
     # ---- segments (4 behavioural + Profiling) -------------------------------
     segments_out = []

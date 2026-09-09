@@ -685,8 +685,23 @@ def blueprint_digest(blueprint: dict | None) -> str:
 
 
 def plan_for(blueprint: dict | None, per_section: int) -> list[tuple[str, int]]:
-    """[(section_id, question target)] — the runtime replacement for CATEGORY_PLAN."""
-    return [(sid, per_section) for sid in section_ids(blueprint)]
+    """[(section_id, question target)] — the runtime replacement for CATEGORY_PLAN.
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # framework now specifies DIFFERENT counts per section (5 / 7 / 6 / 5 = 23
+    # behavioural), so a single flat ``per_section`` is no longer correct.
+    # Counts are keyed by CANONICAL section id, because a market-specific
+    # blueprint renames sections ("Product / Ecosystem Experience") while
+    # still declaring which canonical section each one maps onto.
+    # ``per_section`` stays the fallback for any section not in the map.
+    """
+    from src.question_plan import QUESTIONS_PER_SECTION
+
+    out: list[tuple[str, int]] = []
+    for sid in section_ids(blueprint):
+        canon = section_canonical(blueprint, sid)
+        out.append((sid, QUESTIONS_PER_SECTION.get(canon, per_section)))
+    return out
 
 
 # ---------------------------------------------------------------------------

@@ -701,6 +701,39 @@ sentence, everyday words, no research or marketing vocabulary, no stiff
 survey phrasing. If a word would make a child ask "what does that mean?",
 replace it with the ordinary word an adult would use talking to a friend.
 
+CRITICAL LINGUISTIC RULES — these are absolute, and they apply to every
+question stem AND every answer option you write:
+1. WRITE AT A 5TH-GRADE READING LEVEL. Use only the most common, everyday
+   English words (A1-A2 level). If a simpler word exists, it is the only
+   correct choice: use "buy" not "purchase", "get" not "acquire", "use" not
+   "utilise", "show" not "indicate", "start" not "initiate", "help" not
+   "facilitate", "about" not "regarding", "how long you've had it" not
+   "ownership tenure".
+2. NEVER USE PASSIVE VOICE. Ask directly, in the active voice, speaking to
+   the person as "you".
+     PASSIVE (wrong): "Which features are considered essential by you?"
+     ACTIVE (right):  "Which features do you really need?"
+     PASSIVE (wrong): "Where was your last pair purchased?"
+     ACTIVE (right):  "Where did you buy your last pair?"
+3. ABSOLUTELY NO CORPORATE JARGON, MARKETING TERMS, OR ABSTRACT NOUNS.
+   These words and anything like them are BANNED from what a respondent
+   reads: catalyst, demographics, tenure, proximity, sentiment, mitigate,
+   attribute, criteria, factor, driver, metric, touchpoint, journey,
+   ecosystem, leverage, utilise, optimise, engagement, perception,
+   consideration set, value proposition, pain point. The slot names in the
+   guidance above (e.g. "acquisition trigger", "ownership tenure",
+   "consideration set") are INTERNAL LABELS telling you what to ask about —
+   never copy those words into the question itself.
+     BANNED: "What was the catalyst for your purchase?"
+     PLAIN:  "What made you buy it?"
+     BANNED: "How would you rate your overall sentiment?"
+     PLAIN:  "How happy are you with it?"
+4. ANSWER OPTIONS MUST BE JUST AS SIMPLE AS THE QUESTION. Same rules apply:
+   short, everyday words, active voice, no jargon. A scale should read like
+   ordinary speech — "Very happy / Happy / Unhappy / Very unhappy" — not
+   "Highly satisfied / Moderately satisfied / Somewhat dissatisfied". Never
+   write an option a respondent would have to re-read to understand.
+
 STORYLINE — this survey tells one continuous story, and this chunk fills
 specific BEATS of it. The beats below are already in narrative order:
 
@@ -871,18 +904,24 @@ HYGIENE RULES (never violate):
   run "Not at all important … Extremely important". A survey that flips
   direction midway makes respondents mis-click and makes two sections
   non-comparable.
-- USE THESE EXACT SCALE LABELS. Consumer-research standards — do not invent
-  variants, and reuse the same wording every time the construct recurs:
-    Frequency:    Always or almost always / Often / Sometimes / Rarely / Never
-    Satisfaction: Very dissatisfied / Somewhat dissatisfied /
-                  Neither satisfied nor dissatisfied / Somewhat satisfied /
-                  Very satisfied
-    Likelihood:   Very unlikely / Somewhat unlikely /
-                  Neither likely nor unlikely / Somewhat likely / Very likely
-    Importance:   Not at all important / Slightly important /
-                  Moderately important / Very important / Extremely important
-    Purchase intent: Definitely will not buy / Probably will not buy /
-                  Might or might not buy / Probably will buy / Definitely will buy
+- USE THESE EXACT SCALE LABELS. Reuse the same wording every time the same
+  kind of scale comes up — do not invent variants.
+  change for b2c questionarie -- CHECK (user directive, 2026-09-09): these
+  were the formal research-standard labels ("Very dissatisfied / Somewhat
+  dissatisfied / Neither satisfied nor dissatisfied / ..."), which directly
+  contradicted the plain-language rule above. Two conflicting absolutes in
+  one brief is why option wording kept drifting. Replaced with the plainest
+  wording that still keeps a balanced, evenly-spaced scale:
+    Frequency:    Always / Often / Sometimes / Rarely / Never
+    Satisfaction: Very unhappy / Unhappy / Not sure / Happy / Very happy
+    Likelihood:   Definitely not / Probably not / Not sure /
+                  Probably yes / Definitely yes
+    Importance:   Not important / A little important / Quite important /
+                  Very important
+    Buying again: Definitely not / Probably not / Not sure /
+                  Probably yes / Definitely yes
+  Keep every scale in this order — worst/lowest first, best/highest last —
+  and never mix a plain label with a formal one inside the same scale.
   PREFER A CONSTRUCT-SPECIFIC SCALE OVER AGREE/DISAGREE. Instead of
   "I worry about ingredient safety" → Strongly disagree…Strongly agree, write
   "How concerned are you about ingredient safety?" → Not at all concerned /

@@ -294,12 +294,15 @@ def satisfaction_anchor_questions(segment: str) -> list[dict]:
             # your current X?" -- drops the throat-clearing "Overall," lead
             # the same way _UNNECESSARY_TIMEFRAME_LEAD_RE already strips
             # other filler leads, just for this hardcoded template string.
-            "text": f"How satisfied are you with your current {segment}?",
+            # change for b2c questionarie -- CHECK (user directive,
+            # 2026-09-09): plain-language scale, matching the labels now
+            # mandated in question_architect.py's prompt. This function is
+            # currently disabled (_SHORT_SURVEY_NO_ANCHORS) but is kept
+            # aligned so re-enabling it cannot reintroduce formal wording.
+            "text": f"How happy are you with your current {segment}?",
             "type": "likert_5",
             "options": [
-                "Very dissatisfied", "Somewhat dissatisfied",
-                "Neither satisfied nor dissatisfied",
-                "Somewhat satisfied", "Very satisfied",
+                "Very unhappy", "Unhappy", "Not sure", "Happy", "Very happy",
             ],
             "standard": True,
         },

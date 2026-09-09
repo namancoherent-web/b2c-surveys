@@ -472,13 +472,38 @@ def _delitteral_typical_period(text: str) -> str:
 # banned-word class rather than trusting compliance. Whole-word,
 # case-preserving replacement of known stiff verbs with the plain
 # equivalent a person would actually say.
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+# CRITICAL LINGUISTIC RULES ban corporate jargon outright. Prompt rules alone
+# have repeatedly proven unreliable for banned-word classes this session
+# (Title-Case segment leak, "in a typical week", "prompts you to buy"), so
+# every jargon word with a clean one-for-one plain swap is also corrected
+# here. Deliberately conservative: only substitutions that cannot break
+# grammar or change meaning. Words with no safe mechanical swap (catalyst,
+# demographics, sentiment, proximity, mitigate) are left to the prompt ban
+# and the validator's padding/jargon detectors -- a bad auto-rewrite of those
+# would read worse than the original.
+# Only substitutions that are grammatically safe in ANY position are listed.
+# Verified by test: context-blind swapping of "purchased"->"bought" and
+# "approximately"->"about" produced broken output ("Where did you bought...",
+# "How much did you spend about?"), so those are excluded and left to the
+# prompt ban instead. A wrong auto-rewrite reads worse than the original.
 _STIFF_WORD_RE = re.compile(
-    r"\b(utilize[sd]?|utilizing|indicate[sd]?|indicating)\b",
+    r"\b(utilize[sd]?|utilizing|indicate[sd]?|indicating|"
+    r"acquire[sd]?|acquiring|commence[sd]?|initiate[sd]?|facilitate[sd]?|"
+    r"additional|sufficient|tenure|proximity)\b",
     re.IGNORECASE,
 )
 _STIFF_WORD_MAP = {
     "utilize": "use", "utilizes": "use", "utilized": "used", "utilizing": "using",
     "indicate": "show", "indicates": "shows", "indicated": "showed", "indicating": "showing",
+    "acquire": "get", "acquires": "gets", "acquired": "got", "acquiring": "getting",
+    "commence": "start", "commenced": "started",
+    "initiate": "start", "initiated": "started",
+    "facilitate": "help", "facilitated": "helped",
+    "additional": "extra",
+    "sufficient": "enough",
+    "tenure": "time",
+    "proximity": "closeness",
 }
 # "prompt(s)/prompted you TO buy" needs the "to" dropped when swapped for
 # "make(s)/made you buy" -- "make" doesn't take "to" the way "prompt" does

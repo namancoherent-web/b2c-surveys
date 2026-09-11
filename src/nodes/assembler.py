@@ -462,6 +462,44 @@ def _delitteral_typical_period(text: str) -> str:
     return text
 
 
+# change for b2c questionarie -- CHECK (live, Japan health devices,
+# 2026-09-09): question_architect.py's own prompt used to RECOMMEND "In the
+# last 30 days, how often..." as good, concrete-timeframe phrasing -- a
+# direct contradiction of the plain-wording rules added later, and it shipped
+# live as a Section 1 OPENER ("In the past 30 days, on how many days did you
+# use your home health monitoring device?"), the exact stiff, form-like
+# question the newer rules ban. The prompt contradiction is fixed at the
+# source, but validator_critic.py's _UNNECESSARY_TIMEFRAME_LEAD_RE only
+# FLAGS this pattern for revision feedback -- it does not rewrite it, and
+# flag-and-hope has repeatedly proven unreliable this session. This is the
+# deterministic backstop: strip a leading "In the past/last N days/months/
+# year," clause in front of a standing-habit question and ask the habit
+# directly, the same fix the validator's own message describes.
+_LEADING_TIMEFRAME_CLAUSE_RE = re.compile(
+    r"(?i)^\s*in\s+the\s+(past|last)\s+(\d+\s*)?(day|week|month|year)s?,?\s*"
+)
+# "on how many days did you X" reads as a bare strip artefact, not a
+# question a person would ask -- rephrase the common "how many days /
+# how often" residue into the natural "how often do you X" form.
+_RESIDUE_HOW_MANY_DAYS_RE = re.compile(
+    r"(?i)^on how many days (did|do) you\s+(.+?)\??$"
+)
+
+
+def _delitteral_leading_timeframe(text: str) -> str:
+    """Strip a leading "In the past/last N <period>," clause; capitalise the rest."""
+    t = (text or "").strip()
+    if not t:
+        return text
+    new = _LEADING_TIMEFRAME_CLAUSE_RE.sub("", t)
+    if new == t or not new:
+        return text
+    m = _RESIDUE_HOW_MANY_DAYS_RE.match(new)
+    if m:
+        return f"How often do you {m.group(2)}?"
+    return new[0].upper() + new[1:]
+
+
 # change for b2c questionarie -- CHECK (user directive, 2026-09-08): "What
 # usually prompts you to buy X?" shipped live -- "prompts" is not a word a
 # 6-year-old uses, even though the underlying prompt guidance already said
@@ -1724,21 +1762,50 @@ def _build_delivery_json(
             f"Makes their own {segment_label} purchase decisions",
             "Aged 18 or older",
         ]
+    # change for b2c questionarie -- CHECK (spec v3 Part C / change-spec
+    # Part C.4, 2026-09-11): brand_verified must be written into the output
+    # so downstream consumers can see whether this survey names real,
+    # country-verified brands or fell back to brand-free phrasing. The
+    # lookup is cache-only here -- the architect already resolved it, and a
+    # miss correctly reports brand-free rather than triggering a late
+    # network call during assembly.
+    _brand_country = (
+        state.get("country") or state.get("geography_label") or ""
+    ).strip()
+    try:
+        from src import brand_allowlist as _ba_asm
+
+        _brand_verified = bool(
+            _ba_asm.brand_names(_brand_country, segment_label, allow_search=False)
+        ) if _brand_country else False
+    except Exception:  # noqa: BLE001
+        _brand_verified = False
+
+    _not_asked = [
+        "Age or household income as behavioural questions — asked once, "
+        "at the end, in Profiling, and used only to cross-tabulate the "
+        "behavioural results, never to drive a finding.",
+        f"Anything about adjacent categories outside {segment_label}.",
+    ]
+    if not _brand_verified:
+        # Only true when the survey really is brand-free. Stating it on a
+        # brand-bearing survey would be a false claim in the deliverable.
+        _not_asked.insert(
+            1,
+            "Brand, company or manufacturer names — no verified brand list "
+            "was available for this country and category, so the survey "
+            "stays at category level.",
+        )
+
     survey_scope = {
         "title": f"{segment_label} — Consumer Survey ({region_name})",
         "category": segment_label,
         "region": region_name,
         "audienceType": "B2C Consumer",
+        "brandVerified": _brand_verified,
         "definition": definition_text,
         "customersWeSurveyed": qualifiers,
-        "whatIsNotAsked": [
-            "Age or household income as behavioural questions — asked once, "
-            "at the end, in Profiling, and used only to cross-tabulate the "
-            "behavioural results, never to drive a finding.",
-            "Brand, company or manufacturer names — the survey stays at "
-            "category level so findings are not tied to one competitor set.",
-            f"Anything about adjacent categories outside {segment_label}.",
-        ],
+        "whatIsNotAsked": _not_asked,
         "howToReadTheNumbers": (
             "Percentages are modelled example response shapes for "
             "survey-design review, not measurements from fielded "
@@ -1795,6 +1862,9 @@ def _build_delivery_json(
     # just satisfied. Trim slot-aware: keep one question per required theme
     # first, then fill the remaining places from the front.
     from src.nodes.validator_critic import REQUIRED_SLOTS as _REQ_SLOTS
+    from src.nodes.validator_critic import (
+        slot_satisfied_by as _val_slot_satisfied_by,
+    )
 
     # change for b2c questionarie -- CHECK (live, UK vitamins 2026-09-09):
     # the architect's slot guarantee is not the last word. An advocacy/NPS
@@ -1820,7 +1890,11 @@ def _build_delivery_json(
         )
         if not _adv_pat:
             continue
-        if any(re.search(_adv_pat, q.get("text") or "") for q in tb["questions"]):
+        # Respect an approved alternate (e.g. endorsement_strength) so the
+        # deterministic restore does not append a SECOND advocacy question
+        # on top of a variant that already covers the construct.
+        if any(_val_slot_satisfied_by(q.get("text") or "", "category_advocacy", _adv_pat)
+               for q in tb["questions"]):
             continue
         _n = int((tb["questions"][0] or {}).get("sample_size") or SAMPLE_SIZE)
         _labels = (["0 - Not at all likely"] + [str(i) for i in range(1, 10)]
@@ -1887,7 +1961,8 @@ def _build_delivery_json(
             _pat4 = next((p for k, _l, p in _s4 if k == _key), None)
             if not _pat4:
                 continue
-            if any(re.search(_pat4, q.get("text") or "") for q in tb["questions"]):
+            if any(_val_slot_satisfied_by(q.get("text") or "", _key, _pat4)
+                   for q in tb["questions"]):
                 continue
             _n4 = int((tb["questions"][0] or {}).get("sample_size") or SAMPLE_SIZE)
             tb["questions"].append({
@@ -1930,7 +2005,8 @@ def _build_delivery_json(
             for _q in tb["questions"]:
                 if id(_q) in _claimed:
                     continue
-                if re.search(_p, _q.get("text") or ""):
+                if (_val_slot_satisfied_by(_q.get("text") or "", _k, _p)
+                        or _q.get("_substituted_for") == _l):
                     _kept.append(_q)
                     _claimed.add(id(_q))
                     break
@@ -1961,8 +2037,10 @@ def _build_delivery_json(
 
         def _rank_ord(q, _s=_slots_ord, _b=_big):
             _t = q.get("text") or ""
+            _sub = q.get("_substituted_for")
             for _i, (_k, _l, _p) in enumerate(_s):
-                if re.search(_p, _t):
+                if (_val_slot_satisfied_by(_t, _k, _p)
+                        or (_sub and _sub == _l)):
                     return _i
             return _b
 
@@ -2013,10 +2091,12 @@ def _build_delivery_json(
             questions_out.append({
                 "id": f"Q{qn}",
                 "text": _lowercase_segment_mid_sentence(
-                    _delitteral_typical_period(
-                        _plain_word_substitute(
-                            _apply_manager_wording_rewrite(
-                                _clean_stem(_tighten_stem(q.get("text")))
+                    _delitteral_leading_timeframe(
+                        _delitteral_typical_period(
+                            _plain_word_substitute(
+                                _apply_manager_wording_rewrite(
+                                    _clean_stem(_tighten_stem(q.get("text")))
+                                )
                             )
                         )
                     ),
@@ -2093,6 +2173,9 @@ def build_survey_json(state: SurveyState) -> dict:
     from src.nodes.validator_critic import (
         find_offtheme_questions as _val_find_offtheme_questions,
     )
+    from src.nodes.validator_critic import (
+        find_drifted_theme_questions as _val_find_drifted_theme_questions,
+    )
 
     def _is_zero_tolerance_clean(qs: list) -> bool:
         expected = standard_sections.currency_for(
@@ -2142,8 +2225,46 @@ def build_survey_json(state: SurveyState) -> dict:
         # pass dirty here too, not just during the revision loop.
         if _val_find_offtheme_questions(qs, _canon_to_market):
             return False
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+        # mirrors the same drift check used during the revision loop, so a
+        # pass with a semantically-collided pair (matches its own slot but
+        # reads as a sibling theme) cannot be crowned "best" at final
+        # restore either.
+        if _val_find_drifted_theme_questions(qs, _canon_to_market):
+            return False
         if _val_find_nps_shape_issue(qs):
             return False
+        # change for b2c questionarie -- CHECK (spec v3 Part D / change-spec
+        # Part C.4, 2026-09-11): mirror the register and brand gates here
+        # too. The spec states plainly that a pass "is dirty and cannot be
+        # published if it ... carries a brand outside a [BRAND SLOT], or
+        # carries a brand absent from the allowlist for that country and
+        # category" -- so these must bite at final restore, not only inside
+        # the revision loop.
+        try:
+            from src.nodes.validator_critic import (
+                find_brand_issues as _val_find_brand_issues,
+                find_grammar_issues as _val_find_grammar_issues,
+                find_parallelism_issues as _val_find_parallelism_issues,
+                find_register_issues as _val_find_register_issues,
+            )
+
+            if (_val_find_register_issues(qs)
+                    or _val_find_parallelism_issues(qs)
+                    or _val_find_grammar_issues(qs)):
+                return False
+            from src import brand_allowlist as _ba_gate
+
+            _bc = (state.get("country") or state.get("geography_label") or "").strip()
+            _allowed = (
+                _ba_gate.brand_names(_bc, state.get("segment") or "", allow_search=False)
+                if _bc else []
+            )
+            if _val_find_brand_issues(qs, allowed_brands=_allowed,
+                                      section_ids=_canon_to_market):
+                return False
+        except Exception:  # noqa: BLE001 — a gate failure must not crash assembly
+            pass
         return True
 
     restored_from = None

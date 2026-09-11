@@ -14,9 +14,11 @@ from concurrent.futures import ThreadPoolExecutor
 from src import cache_store, config, narrative, standard_sections
 from src.date_utils import current_date_context
 from src.llm import get_structured_llm
-from src.models import TabQuestionBatch
+from src.models import SectionFitReview, TabQuestionBatch
 from src.nodes.validator_critic import CONSTRUCTS as _VALIDATOR_CONSTRUCTS
 from src.nodes.validator_critic import REQUIRED_SLOTS as _REQUIRED_SLOTS
+from src.nodes.validator_critic import ALTERNATE_SLOTS as _ALTERNATE_SLOTS
+from src.nodes.validator_critic import slot_satisfied_by as _slot_satisfied_by
 from src.question_plan import (
     CATEGORY_PLAN,
     CORE_PER_TAB,
@@ -180,10 +182,17 @@ _TAB_GUIDANCE = {
         "(3) QUALITY SIGNAL — what tells them one is well made; "
         "(4) ESSENTIAL vs NON-ESSENTIAL FEATURES — which features they could "
         "not do without (multi-select); "
-        "(5) VALUE FOR MONEY — whether what they got was worth what they "
-        "paid; "
+        "(5) VALUE FOR MONEY — this MUST be anchored explicitly to the "
+        "MONEY they paid, not a generic \"was it worth it\" (which reads as "
+        "a restatement of slot 6). Ask directly about price vs. benefit — "
+        "\"Did you get good value for the money you paid?\" — the word "
+        "money/price/paid must appear in the question; "
         "(6) EXPECTATION MATCH — how it performs compared with what they "
-        "expected before buying."
+        "expected before buying, with NO mention of price or money — this "
+        "is about performance meeting hopes, not about whether it was worth "
+        "the cost. If your slot-5 and slot-6 questions would get the same "
+        "answer from the same person, slot 5 has drifted — rewrite it to "
+        "name the money explicitly."
     ),
     "satisfaction_future_intent": (
         "outcomes with the target product — no age/income/brand-name items. "
@@ -210,12 +219,194 @@ _TAB_GUIDANCE = {
 }
 
 
-def _guidance_for(tab: str, beats: list | None, blueprint: dict | None) -> str:
+# change for b2c questionarie -- CHECK (user directive, 2026-09-10): the
+# per-slot "required, fill it" framing in _TAB_GUIDANCE has no escape hatch
+# for a theme that is a poor fit for THIS category, and that gap shipped
+# live -- "What do you mainly use it for?" (everyday clothes and towels /
+# baby clothes / uniforms / ...) and "Where do you usually do your laundry?"
+# (at home in my own washer / laundromat / ...) both technically match their
+# required slot but collapse to a near-universal answer for most respondents,
+# telling a brand manager nothing. This exact test already existed for the
+# narrow slot-guarantee top-up path (_SINGLE_SLOT_PROMPT's "[SUBSTITUTE]"
+# marker), but the main bulk generation pass that writes most of the survey
+# never got the same permission. Appending it once here (rather than to each
+# of the four _TAB_GUIDANCE strings) applies it uniformly without duplicating
+# the instruction four times.
+# change for b2c questionarie -- CHECK (user directive, 2026-09-10): built
+# from ALTERNATE_SLOTS at import time rather than written out by hand, so
+# the themes offered to the model and the patterns the gate accepts are
+# guaranteed to be the same list. Adding an alternate to the table is all it
+# takes for the model to start being offered it.
+def _format_alternates_for(canon: str) -> str:
+    """Human-readable alternates menu for the slots in one section."""
+    slots = _REQUIRED_SLOTS.get(canon) or ()
+    lines = []
+    for key, label, _pat in slots:
+        alts = _ALTERNATE_SLOTS.get(key) or ()
+        if not alts:
+            continue
+        alt_txt = "; ".join(f"{alt_label}" for _ak, alt_label, _ap in alts)
+        # ASCII arrow on purpose: this string reaches Windows consoles and
+        # log files that default to cp1252, where a unicode arrow raises
+        # UnicodeEncodeError on print.
+        lines.append(f"      - instead of {label} -> {alt_txt}")
+    if not lines:
+        return ""
+    return (
+        "\n    PRE-APPROVED ALTERNATES for this section (each measures the "
+        "SAME underlying thing as the slot it replaces, just asked a way "
+        "that suits a different kind of category):\n"
+        + "\n".join(lines)
+    )
+
+
+_SLOT_USEFULNESS_TEST = (
+    " HOW TO HANDLE A REQUIRED SLOT THAT DOES NOT SUIT THIS CATEGORY — work "
+    "down this ladder in order, and stop at the first step that gives you a "
+    "question worth asking:\n"
+    "    STEP 1 — WRITE THE SLOT AS SPECIFIED. This is the right answer most "
+    "of the time. Only leave step 1 if the question you would write fails "
+    "the variance test below.\n"
+    "    STEP 2 — USE A PRE-APPROVED ALTERNATE. If one is listed for that "
+    "slot (see the alternates for this section, if any), use it. It covers "
+    "the same underlying construct, so nothing is lost from the study. "
+    "Prefer this over inventing something.\n"
+    "    STEP 3 — INVENT A BETTER QUESTION ON THE SAME CONSTRUCT. If no "
+    "listed alternate fits either, write your own question that still "
+    "measures what that slot exists to measure, in whatever way genuinely "
+    "works for this category. Begin ONLY that question's text with the exact "
+    "marker \"[SUBSTITUTE] \" so the swap is recorded rather than hidden.\n"
+    "    THE VARIANCE TEST that decides whether to leave step 1: would the "
+    "honest answer be the same for nearly every respondent? Proven failures "
+    "from real runs — for laundry detergent, \"Where do you usually do your "
+    "laundry?\" (about 71% say \"at home, my own washer\") and \"What do you "
+    "mainly use it for?\" (about 58% say \"everyday clothes\"); for a vitamin "
+    "subscription, \"Where do you usually take your vitamins?\". Each is "
+    "technically on-theme and each is worthless, because no business "
+    "decision changes based on the answer. If your question looks like one "
+    "of those, go to step 2.\n"
+    "    Do not use this as a licence to rewrite the framework: most slots "
+    "in most categories should ship exactly as step 1 specifies."
+)
+
+
+# change for b2c questionarie -- CHECK (spec: b2c_survey_question_structure
+# _v3.txt Part A, 2026-09-11): a survey is READ off a screen with no
+# interviewer present, so the wording has to work on the page. That means
+# removing SPOKEN artifacts -- contractions, first-person option sentences,
+# casual verbs, dashes standing in for pauses.
+#
+# The trap, which v3 calls out in a standing WARNING because an earlier
+# draft of this rule fell into it: "written register" does NOT mean formal.
+# A question that sounds more professional but is harder to read is a
+# REGRESSION. Both the rules and the worked examples below therefore pull in
+# two directions at once -- away from casual, and away from corporate.
+_WRITTEN_REGISTER_RULES = """\
+WRITTEN REGISTER — the survey is read on a screen, not spoken aloud:
+- WRITE EVERY QUESTION AS A COMPLETE, GRAMMATICALLY CORRECT ENGLISH
+  QUESTION. This is the first thing a client notices and the fastest way to
+  make a survey look machine-written. Full standard word order, with the
+  auxiliary verb in its proper place — never a clipped or spoken-shorthand
+  form.
+    WRONG:  "What you name is?"              RIGHT: "What is your name?"
+    WRONG:  "Where you bought it?"           RIGHT: "Where did you buy it?"
+    WRONG:  "How often you use it?"          RIGHT: "How often do you use it?"
+    WRONG:  "What matter most when you pick one?"
+    RIGHT:  "What matters most when you choose one?"
+    WRONG:  "Which tells you a toothpaste is well made?"
+    RIGHT:  "What tells you a toothpaste is well made?"
+  Use "Which" only when a set follows it ("Which brand...", "Which of
+  these..."); otherwise use "What". Check subject-verb agreement on every
+  question before you return it. Read each question back to yourself as a
+  sentence — if it would look wrong printed in a client report, rewrite it.
+- NO CONTRACTIONS anywhere. "do not", not "don't". "it is", not "it's".
+  (Possessives are fine: "a dentist's recommendation" is correct English.)
+- OPTIONS ARE LABELS, NOT SPEECH. Drop a leading "I" where the meaning
+  survives, but do NOT trade it for an abstract noun phrase that is harder
+  to read.
+    BAD  (spoken):        "I bought it the same day I started looking"
+    GOOD (written):       "Same day I started looking"
+    BAD  (over-corrected): "Same-day acquisition following initial research"
+- PLAIN VERBS, NOT CASUAL ONES: choose/select not pick or grab; compare or
+  consider not check out; bought or received not got or grabbed; stops
+  working not dies or konks out.
+- BUT DO NOT REACH FOR LONGER FORMAL WORDS. "buy" -> "purchase" is fine.
+  "buy" -> "procure" or "acquire" is WRONG. Never use: procure, acquire,
+  obtain, utilise, discontinue, "under which circumstance", "relative to".
+    WRONG:  "Under which circumstance would you discontinue use of this
+             product category entirely?"
+    RIGHT:  "What would cause you to stop using this product completely?"
+    WRONG:  "How would you rate the value received relative to the price paid?"
+    RIGHT:  "How good is the value for the price you paid?"
+- NO CONVERSATIONAL OPENERS: no well, so, now, actually, basically, honestly.
+  A question opens with its question word or its subject.
+- NO DASHES AS SPOKEN PAUSES inside an option. Rewrite as one clean phrase.
+  (The 0-10 advocacy labels keep their standard "0 - Not at all likely"
+  form -- that is a scale label, not a pause.)
+- GRAMMATICAL PARALLELISM: every option in one question shares one shape --
+  all noun phrases, or all "-ing" clauses. Never a mix.
+- LENGTH CEILINGS, HARD: option labels 3-9 words (absolute maximum 12);
+  question text 8-16 words (absolute maximum 20).
+- READING LEVEL: 8th grade. If a rewrite adds syllables without adding
+  clarity, revert it. Sentence case, no trailing full stops on options, no
+  exclamation marks.
+"""
+
+
+def _brand_rules_for(canon: str, brands: list, country: str) -> str:
+    """Brand instructions for one section (spec v3 Part C / change-spec B).
+
+    With no verified brands the section is told, in plain terms, to stay
+    brand-free -- the spec's mandated fallback. With verified brands, only
+    the permitted slots may name them, and the option structure is fixed.
+    """
+    from src import brand_allowlist as _ba
+
+    slots = _REQUIRED_SLOTS.get(canon) or ()
+    brand_slots_here = [(k, l) for k, l, _p in slots if _ba.is_brand_slot(k)]
+    if not brand_slots_here:
+        return (
+            "\n    BRANDS: no question in this section may name a brand, "
+            "company, manufacturer or retailer."
+        )
+    if not brands:
+        return (
+            "\n    BRANDS: no verified brand list exists for this country and "
+            "category, so this survey is BRAND-FREE. Use category-neutral "
+            "phrasing everywhere (\"a different type of product\", \"a "
+            "lower-priced alternative\", \"an online marketplace\", \"a "
+            "specialist retailer\"). Never invent a brand name to fill the "
+            "gap -- an unverified brand invalidates the whole survey."
+        )
+    names = ", ".join(brands)
+    slot_txt = "; ".join(l for _k, l in brand_slots_here)
+    return (
+        f"\n    BRANDS: these slots MAY name brands -- {slot_txt}. "
+        f"No other question in this section may name a brand.\n"
+        f"    The ONLY brands you may use, verified as sold in {country} for "
+        f"this category, are: {names}. Never add a brand outside this list, "
+        f"never invent a local sub-brand, and never use a brand as a synonym "
+        f"for the category.\n"
+        f"    A brand question carries 4-6 options, ordered with the "
+        f"strongest market presence first, and MUST end with the catch-all "
+        f"\"{_ba.CATCHALL}\" carrying a real (never zero) share. For the "
+        f"consideration-set question you may also add \"{_ba.CATCHALL_NO_RECALL}\". "
+        f"Shares must be plausible for {country}: the market leader leads."
+    )
+
+
+def _guidance_for(tab: str, beats: list | None, blueprint: dict | None,
+                  *, brands: list | None = None, country: str = "") -> str:
     """What this section must cover.
 
     # change for b2c questionarie — a market-specific section carries its own
     # ``remit`` from the planner; fall back to the canonical section's standing
     # guidance so the banned-content rules always come through.
+    # change for b2c questionarie -- CHECK (spec v3, 2026-09-11): now also
+    # carries the written-register rules and this section's brand policy.
+    # ``brands`` is the VERIFIED allowlist for the survey's country; empty
+    # (the default) means the section is told to stay brand-free, which is
+    # the spec's mandated fallback and the safe state.
     """
     remit = ""
     for s in narrative.sections_for(blueprint):
@@ -224,6 +415,16 @@ def _guidance_for(tab: str, beats: list | None, blueprint: dict | None) -> str:
             break
     canon = narrative.section_canonical(blueprint, tab)
     base = _TAB_GUIDANCE.get(tab) or _TAB_GUIDANCE.get(canon, "")
+    if base:
+        # Slot rules, then the escape ladder, then the concrete alternates
+        # menu for THIS section's slots (empty string when none are listed),
+        # then the register rules and this section's brand policy.
+        base = (
+            f"{base}{_SLOT_USEFULNESS_TEST}"
+            f"{_format_alternates_for(canon or tab)}"
+            f"\n    {_WRITTEN_REGISTER_RULES}"
+            f"{_brand_rules_for(canon or tab, list(brands or ()), country or 'this country')}"
+        )
     if remit and base:
         return f"{remit} In research terms this section is the {canon} stage: {base}"
     return remit or base
@@ -549,9 +750,32 @@ QUESTION CRAFT — this is where most drafts go wrong. Read carefully.
      "attributes", "drivers", "criteria", "consumption occasion", "purchase
      journey", "trade-off". Those words belong in the section heading, never
      in what a respondent reads.
-   - SELF-CONTAINED. Name the product in the stem — a question must make sense
-     on its own, without the section heading above it. Never "them", "it" or
-     "this product" where the category name would do.
+   - SELF-CONTAINED, BUT NOT REPETITIVE. Name the product ONCE near the start
+     of the question, so it makes sense on its own without the section
+     heading above it — then use "it" / "them" / "yours" / "your current
+     one" for every other mention in THE SAME question. This matters most
+     for a long category name (e.g. "home health monitoring device"): naming
+     it twice in one sentence, or naming it in every single question across
+     the whole section, reads as a machine-stamped template, not something a
+     person wrote.
+       BAD (named twice in one question): "How much money did you pay for
+         the home health monitoring device you use most often?"
+       GOOD (named once): "How much did you pay for the one you use most
+         often?" — the section heading and the surrounding questions already
+         make the category unambiguous.
+       BAD (every question in the section repeats the full name): "How long
+         have you had the home health monitoring device you use most
+         often?" ... "Which type of home health monitoring device do you use
+         most often?" — two sentences in a row both spelling out the full
+         category name is the clearest sign of templated, not written, text.
+       GOOD: name it once when a beat/topic changes, then carry "it" across
+         the rest of that topic's questions.
+     change for b2c questionarie -- CHECK (live, Japan health devices,
+     2026-09-09): the old version of this rule said the OPPOSITE — never use
+     "it/them" where the category name would do — which is exactly backwards
+     for a long, multi-word category name. It shipped a 23-question survey
+     that named "home health monitoring device(s)" in nearly every single
+     question, sometimes twice in one sentence.
    - Give the timeframe when it changes the answer, but say it the plain way,
      never "in a typical week/day/month" — that phrasing is BANNED, it is
      stiff survey-speak, not how a person talks:
@@ -903,8 +1127,17 @@ PLAIN LANGUAGE — WRITE THE WAY PEOPLE TALK (never violate):
 HYGIENE RULES (never violate):
 - ONE idea per question — never double-barreled ("price and service", "quality
   and value"). Split into separate questions.
-- NEUTRAL wording — prefer "How would you rate…", "In the last 30 days, how
-  often…". Never "Wouldn't you agree…", "Don't you think…", or guilt/praise frames.
+- NEUTRAL wording — prefer "How would you rate…", "How often do you…"
+  # change for b2c questionarie -- CHECK (live, Japan health devices,
+  # 2026-09-09): this used to recommend "In the last 30 days, how often…"
+  # as a GOOD example. That directly contradicts the CRITICAL LINGUISTIC
+  # RULES elsewhere in this brief (plain, active, no stiff survey-report
+  # framing) and shipped live as a Section 1 OPENER: "In the past 30 days,
+  # on how many days did you use your home health monitoring device?" —
+  # exactly the stiff, form-like phrasing the newer rules ban. A leading
+  # timeframe clause is filler when the question is about a standing habit
+  # (see the separate rule on this a few lines below) — never lead with one.
+  . Never "Wouldn't you agree…", "Don't you think…", or guilt/praise frames.
 - MECE options — mutually exclusive, collectively exhaustive; numeric ranges
   must not overlap. For categorical single_choice lists, include exactly one
   escape hatch ('Other' / 'None of the above' / 'N/A') where the set is not an
@@ -957,8 +1190,12 @@ HYGIENE RULES (never violate):
   Comfort when buying {segment}?") with a standard importance scale as options.
   Never pair an "each of the following" stem with only a likert scale and no
   factors listed.
-- CONCRETE timeframes — prefer "In the last 30 days…" / "In the past 12 months…"
-  over vague "Generally…" / "Usually…".
+- CONCRETE timeframes when a timeframe genuinely changes the answer — but say
+  it the plain way, never lead the sentence with "In the last 30 days…" / "In
+  the past 12 months…" (that leading-clause phrasing is BANNED elsewhere in
+  this brief — see the timeframe-lead rule and the CRITICAL LINGUISTIC RULES).
+  Prefer "How often do you…" / "…a week" / "…a month" over vague "Generally…"
+  / "Usually…", and over a stiff leading date-range clause.
 - HARD UNIQUENESS — no two questions may collect the same or highly similar
   information (same construct, paraphrase, or overlapping options). If unsure,
   drop one. Cross-tab near-duplicates are forbidden.
@@ -1301,6 +1538,143 @@ def _first_construct_match(text: str) -> str | None:
     return None
 
 
+# change for b2c questionarie -- CHECK (user directive, 2026-09-10): every
+# gate in this pipeline checks STRUCTURE -- is the slot filled, is the
+# wording plain, is the scale the right shape. None of them can answer the
+# only question a client actually cares about: is this worth asking for THIS
+# market? That is a judgement call, and its absence is what let "Where do
+# you usually do your laundry?" (71% "at home") and "What do you mainly use
+# it for?" (58% "everyday clothes") ship. So the model grades its own
+# finished section, and a question it cannot defend is replaced.
+#
+# The replacement is NOT free-form: it must still satisfy whatever required
+# slot the original question was filling, checked in code below before it is
+# accepted. A review pass that could quietly delete a required theme would
+# trade one defect class for a worse one.
+_FIT_REVIEW_PROMPT = """\
+You are reviewing the finished "{tab}" section of a consumer survey on
+{segment} ({region}) before it goes to the client. You wrote these questions;
+now read them as the client's research director would.
+
+THE QUESTIONS:
+{numbered_questions}
+
+For EACH question, give a verdict:
+
+- "keep" — a strong question for this specific category. Answers will spread
+  across the options, and a brand manager could act on the result.
+
+- "weak" — EITHER the grammar is wrong, OR the honest answer would be
+  near-identical for almost every respondent, OR no real business decision
+  turns on the answer.
+
+  GRAMMAR FIRST — read each question back as a plain English sentence. If it
+  is not a complete, correctly ordered question, mark it weak and supply the
+  corrected wording. This has shipped to clients before and must be caught
+  here:
+      "What matter most when you pick one?"
+          -> "What matters most when you choose one?"
+      "Which tells you a toothpaste is well made?"
+          -> "What tells you a toothpaste is well made?"
+      "Where you bought it?"       -> "Where did you buy it?"
+      "What you name is?"          -> "What is your name?"
+
+  THEN VALUE — these are the questions that make a survey look automated.
+  Real examples that should have been caught: for laundry detergent, "Where
+  do you usually do your laundry?" (about 71% answer "at home, in my own
+  washer") and "What do you mainly use it for?" (about 58% answer "everyday
+  clothes"); for a vitamin subscription, "Where do you usually take your
+  vitamins?". Each is grammatically fine, on-theme, and useless.
+
+When you mark a question "weak", you MUST supply replacement_text and
+replacement_options that measure THE SAME UNDERLYING THING as the question
+you are replacing — same purpose in the survey, asked a way that actually
+varies for this category. Do not drift to a different topic, and do not
+change what the question is for. Keep the plain-language and option rules
+you already followed.
+
+Be honest but not destructive: in a well-written section most questions are
+"keep". If everything genuinely works, return "keep" for all of them.
+"""
+
+
+def _review_section_fit(
+    *, questions: list, tab: str, canon: str, segment: str, region: str,
+    notes: list,
+) -> list:
+    """Self-review a finished section; replace questions that fail category fit.
+
+    A replacement is only accepted when it still fills the same required
+    slot as the question it replaces (or when the original filled no slot at
+    all, in which case any improvement is safe). Coverage can therefore
+    never regress as a result of this pass.
+    """
+    if not questions:
+        return questions
+
+    numbered = "\n".join(
+        f"  {i}. {q.get('text', '')}\n     options: "
+        f"{', '.join(str(o) for o in (q.get('options') or [])[:8])}"
+        for i, q in enumerate(questions, start=1)
+    )
+    prompt = _FIT_REVIEW_PROMPT.format(
+        tab=tab, segment=segment, region=region, numbered_questions=numbered,
+    )
+    try:
+        llm = get_structured_llm(SectionFitReview, temperature=0.2, max_tokens=4000)
+        review: SectionFitReview = llm.invoke(prompt)
+    except Exception as exc:  # noqa: BLE001 — review must never sink the tab
+        notes.append(f"fit review skipped ({tab}): {exc}")
+        return questions
+
+    slots = _REQUIRED_SLOTS.get(canon) or ()
+    swapped = 0
+    for v in review.verdicts or ():
+        if (v.verdict or "").strip().lower() != "weak":
+            continue
+        idx = int(v.question_number or 0) - 1
+        if idx < 0 or idx >= len(questions):
+            continue
+        new_text = (v.replacement_text or "").strip()
+        new_opts = [str(o) for o in (v.replacement_options or []) if str(o).strip()]
+        if not new_text or len(new_opts) < 2:
+            notes.append(
+                f"fit review flagged '{questions[idx].get('text', '')[:55]}' "
+                "as weak but gave no usable replacement — kept original"
+            )
+            continue
+
+        old_text = questions[idx].get("text") or ""
+        # Which required slot (if any) was the original carrying?
+        old_slot = next(
+            ((k, l, p) for k, l, p in slots
+             if _slot_satisfied_by(old_text, k, p)),
+            None,
+        )
+        if old_slot is not None:
+            _k, _l, _p = old_slot
+            if not _slot_satisfied_by(new_text, _k, _p):
+                notes.append(
+                    f"fit review replacement REJECTED for '{old_text[:45]}' — "
+                    f"would have dropped required theme '{_l}'"
+                )
+                continue
+
+        questions[idx]["text"] = new_text
+        questions[idx]["options"] = new_opts
+        questions[idx]["_fit_replaced"] = True
+        swapped += 1
+        notes.append(
+            f"fit review REPLACED (weak for this category: "
+            f"{(v.reason or 'no reason given')[:60]}): "
+            f"'{old_text[:45]}' -> '{new_text[:45]}'"
+        )
+
+    if swapped:
+        notes.append(f"fit review: {swapped} question(s) replaced in {tab}")
+    return questions
+
+
 # change for b2c questionarie -- CHECK (user directive, 2026-09-09): a
 # focused, single-slot prompt. Asking for ONE named question is a far easier
 # target than "write 7 questions covering 7 themes", and the answer is
@@ -1469,8 +1843,13 @@ def _order_by_template(questions: list, canon: str) -> list:
 
     def _rank(q: dict) -> int:
         text = q.get("text") or ""
+        sub_label = q.get("_substituted_for")
         for i, (_k, _l, pat) in enumerate(slots):
-            if re.search(pat, text):
+            # An alternate variant sorts to its PRIMARY slot's position, so
+            # the template's narrative order holds regardless of which
+            # variant a category ended up using.
+            if (_slot_satisfied_by(text, _k, pat)
+                    or (sub_label and sub_label == _l)):
                 return i
         return big
 
@@ -1500,10 +1879,16 @@ def _fill_missing_slots_for_section(
     if not slots:
         return merged
 
-    def _filled(pat: str, qs: list) -> bool:
-        return any(re.search(pat, q.get("text") or "") for q in qs)
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-10): a
+    # slot counts as filled by its primary pattern OR any construct-
+    # equivalent alternate, so the guarantee does not force a second
+    # question for a theme an approved alternate already covers.
+    def _filled(key: str, pat: str, qs: list) -> bool:
+        return any(
+            _slot_satisfied_by(q.get("text") or "", key, pat) for q in qs
+        )
 
-    gaps = [(k, l, p) for k, l, p in slots if not _filled(p, merged)]
+    gaps = [(k, l, p) for k, l, p in slots if not _filled(k, p, merged)]
     if not gaps:
         return merged
 
@@ -1511,7 +1896,18 @@ def _fill_missing_slots_for_section(
 
     figures, voice, personas = _tab_evidence_from_mkp(tab, mkp or {}, catalog or {}, index or {})
     llm = get_structured_llm(TabQuestionBatch, temperature=0.4, max_tokens=4000)
-    guidance = _guidance_for(tab, beats, blueprint)
+    # Same brand policy as the bulk pass -- a top-up question must not be the
+    # one place an unverified brand slips in. Cache-only lookup: the bulk
+    # pass has already populated it, and a miss correctly means brand-free.
+    try:
+        from src import brand_allowlist as _ba_mod
+
+        _brands = (_ba_mod.brand_names(geo_label, segment, allow_search=False)
+                   if geo_label else [])
+    except Exception:  # noqa: BLE001
+        _brands = []
+    guidance = _guidance_for(tab, beats, blueprint,
+                             brands=_brands, country=(geo_label or "").strip())
     currency = standard_sections.currency_for(geo_label or region)
 
     for key, label, pat in gaps:
@@ -1532,10 +1928,12 @@ def _fill_missing_slots_for_section(
         got["question_layer"] = got.get("question_layer") or "module"
         if len(merged) >= count:
             # Make room by dropping a question that fills NO required slot.
+            # An alternate variant DOES fill one, so it must never be the
+            # question sacrificed to make room.
             spare = next(
                 (
                     q for q in reversed(merged)
-                    if not any(re.search(p2, q.get("text") or "")
+                    if not any(_slot_satisfied_by(q.get("text") or "", _k2, p2)
                                for _k2, _l2, p2 in slots)
                 ),
                 None,
@@ -1604,6 +2002,26 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                 + "".join(f"    * {c}\n" for c in _cov)
                 + base_feedback
             )
+    # change for b2c questionarie -- CHECK (spec v3 Part C, 2026-09-11):
+    # resolve the VERIFIED brand allowlist once per tab. The lookup is keyed
+    # on the survey's COUNTRY, never its region ("a region is not a market"),
+    # and an empty result is the spec's mandated fallback: generate
+    # brand-free. Any failure here degrades to brand-free rather than
+    # raising, because a brand-free survey is always valid and an
+    # unverified-brand survey never is.
+    _brand_country = (geo_label or "").strip()
+    try:
+        from src import brand_allowlist as _ba_mod
+
+        _brands = _ba_mod.brand_names(_brand_country, segment) if _brand_country else []
+    except Exception as _bexc:  # noqa: BLE001
+        notes.append(f"brand allowlist unavailable, generating brand-free: {_bexc}")
+        _brands = []
+    if _brand_country and not _brands:
+        notes.append(
+            f"no verified brands for ({_brand_country}, {segment}) -> brand-free"
+        )
+
     llm = get_structured_llm(TabQuestionBatch, temperature=0.4, max_tokens=16000)
 
     # Regional modules pick their own beats (few questions, placed where the
@@ -1723,7 +2141,8 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                 segments_block=_segments_block(blueprint),
                 must_cover_block=_must_cover_block(blueprint),
                 regions=", ".join(GEOGRAPHIC_REGIONS),
-                guidance=_guidance_for(tab, beats, blueprint),
+                guidance=_guidance_for(tab, beats, blueprint,
+                                       brands=_brands, country=_brand_country),
                 beats_block=beats_block,
                 figures_json=figures_json, voice_json=voice_json,
                 persona_json=persona_json,
@@ -1768,6 +2187,21 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                 text = data.get("text", "")
                 if not text:
                     continue
+                # change for b2c questionarie -- CHECK (user directive,
+                # 2026-09-10): the main bulk-generation pass now carries the
+                # same "[SUBSTITUTE] " usefulness-test permission granted to
+                # the narrow single-slot top-up path (see
+                # _SLOT_USEFULNESS_TEST) — strip the marker here so it never
+                # reaches dedup/off-theme checks as literal text. Which
+                # REQUIRED_SLOTS label this substitute is credited against is
+                # resolved later, once all of this tab's questions are known,
+                # by matching it to whichever slot is still genuinely empty
+                # (see the reconciliation pass below the per-slot top-up loop).
+                _is_sub = text.startswith("[SUBSTITUTE]")
+                if _is_sub:
+                    text = text[len("[SUBSTITUTE]"):].strip()
+                    data["text"] = text
+                    data["_pending_substitute"] = True
                 if too_similar_to_any(
                     text, running, segment=segment, threshold=LOOSE_JACCARD
                 ):
@@ -1817,6 +2251,41 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
                 f"{[b['beat_id'] for b in chunk_beats]}"
             )
 
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-10):
+    # resolve any bulk-pass "[SUBSTITUTE]"-marked questions (stripped above,
+    # flagged `_pending_substitute`) against whichever required slots are
+    # genuinely still empty after all of this tab's normal generation. A
+    # substitute only "counts" as filling a slot if that slot has no other
+    # question satisfying its own pattern — this must run BEFORE the
+    # per-slot top-up loop below, otherwise the top-up would fight to
+    # re-fill a slot the model already validly substituted for, producing a
+    # second (forced, low-value) question for the same theme.
+    _canon_for_credit = narrative.section_canonical(blueprint, tab) or tab
+    _credit_slots = _REQUIRED_SLOTS.get(_canon_for_credit) or ()
+    if _credit_slots:
+        _open_labels = [
+            (_k, _l, _p) for _k, _l, _p in _credit_slots
+            if not any(_slot_satisfied_by(c.get("text") or "", _k, _p)
+                       for c in collected
+                       if not c.get("_pending_substitute"))
+        ]
+        for c in collected:
+            if not c.get("_pending_substitute"):
+                continue
+            c.pop("_pending_substitute", None)
+            if _open_labels:
+                _k, _label, _p = _open_labels.pop(0)
+                c["_substituted_for"] = _label
+                notes.append(
+                    f"bulk-pass SUBSTITUTED '{_label}' (poor fit for this "
+                    f"category) with: {c.get('text', '')[:70]}"
+                )
+            else:
+                notes.append(
+                    f"bulk-pass substitute had no open slot to credit, kept as "
+                    f"ordinary question: {c.get('text', '')[:70]}"
+                )
+
     # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
     # required 23 slots MUST all be present, every market, every run. Asking
     # for a whole section and hoping every theme appears is a lottery -- the
@@ -1836,13 +2305,18 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
         for _key, _label, _pat in _slots:
             if len(collected) >= count:
                 break
-            if any(re.search(_pat, c.get("text") or "") for c in collected):
-                continue  # slot already filled
+            if any(_slot_satisfied_by(c.get("text") or "", _key, _pat)
+                   for c in collected):
+                continue  # slot already filled (primary or alternate)
+            if any(c.get("_substituted_for") == _label for c in collected):
+                continue  # slot deliberately substituted in the bulk pass above
             _topup = _generate_single_slot(
                 llm=llm, tab=tab, segment=segment, region=region, today=today,
                 slot_label=_label, slot_pattern=_pat,
                 existing=[c.get("text") or "" for c in collected] + list(avoid_texts),
-                beats=beats, blueprint=blueprint, guidance=_guidance_for(tab, beats, blueprint),
+                beats=beats, blueprint=blueprint,
+                guidance=_guidance_for(tab, beats, blueprint,
+                                       brands=_brands, country=_brand_country),
                 currency=standard_sections.currency_for(geo_label or region),
                 figures_json=figures_json, voice_json=voice_json,
                 persona_json=persona_json, geo_label=geo_label, layer=layer,
@@ -1871,7 +2345,8 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
             for c in collected:
                 if id(c) in _claimed:
                     continue
-                if re.search(_pat, c.get("text") or ""):
+                if (_slot_satisfied_by(c.get("text") or "", _key, _pat)
+                        or c.get("_substituted_for") == _label):
                     _kept.append(c)
                     _claimed.add(id(c))
                     break
@@ -1890,6 +2365,20 @@ def _generate_tab(tab: str, count: int, index: dict, segment: str, region: str,
         collected = _kept[:count]
     else:
         collected = collected[:count]
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-10):
+    # final category-fit review of the finished section. Runs AFTER the trim
+    # so it reviews exactly what will ship, and BEFORE ordering/id
+    # assignment so a replacement still sorts into its template position.
+    # Skipped for the regional module layer (a handful of local questions,
+    # not a full section arc) and when there is nothing to review.
+    if collected and layer != "module":
+        collected = _review_section_fit(
+            questions=collected, tab=tab,
+            canon=narrative.section_canonical(blueprint, tab) or tab,
+            segment=segment, region=region, notes=notes,
+        )
+
     # Narrative order is decided here, in code — never by the model's list order.
     collected = narrative.order_questions(collected, beats)
 
@@ -1992,16 +2481,38 @@ def _build_tabs(
             generated = {tab: fut.result() for tab, fut in futures.items()}
 
     results = {}
+    # change for b2c questionarie -- CHECK (2026-09-10): _generate_tab has
+    # always returned a "notes" list -- chunk failures, dropped duplicates,
+    # beat shortfalls, and now the category-fit review's verdicts -- and NO
+    # caller has ever read it. Every one of those notes was discarded, which
+    # is why a live run could not be checked for whether the fit review had
+    # even run. Surface them the same way the slot-guarantee notes are
+    # surfaced, so a run's decisions are visible in its log.
+    _tab_notes: list[str] = []
     for tab, existing, spec in plans:
         if not spec:
             results[tab] = existing
             continue
         tab_qs = existing + generated[tab]["questions"]
+        for _n in (generated[tab].get("notes") or ()):
+            _tab_notes.append(f"[{tab}] {_n}")
         results[tab] = tab_qs
         for q in tab_qs:
             t = q.get("text") or ""
             if t and t not in global_avoid:
                 global_avoid.append(t)
+
+    # Print the notes that actually explain a decision. Pure-noise notes
+    # (near-duplicate drops) are counted rather than listed so the
+    # meaningful ones are not buried.
+    if _tab_notes:
+        _loud = [n for n in _tab_notes
+                 if not re.search(r"(?i)dropped (near-duplicate|construct-duplicate)", n)]
+        _quiet = len(_tab_notes) - len(_loud)
+        for _n in _loud[:12]:
+            print(f"  tab note: {_n}")
+        if _quiet:
+            print(f"  tab note: (+{_quiet} duplicate-drop notes)")
 
     questions, counts_by_tab = [], {}
     for tab, _count in tab_targets:

@@ -316,17 +316,32 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         # complete at 6/7, and the real information-sources gap was hidden.
         # This theme is about WHERE they looked, so it must name a source or
         # ask "where" -- never merely mention the word "information".
+        # change for b2c questionarie -- CHECK (2026-09-10): added the
+        # "get/find information" phrasing. The verb list only covered
+        # look/learn/read/research, so the equally natural "Where did you GET
+        # INFORMATION or ideas about which one to buy?" fell through to
+        # acquisition_channel instead (see the exclusion added there).
         ("information_sources", "information sources (where they learned about it)",
          r"(?i)where (did|do) you\s+(\w+\s+){0,3}?"
          r"(look|learn|read|research|find out|go to (learn|find))|"
+         r"where (did|do) you\s+(get|find)\s+"
+         r"(information|ideas?|advice|reviews?|tips?|recommendations?)|"
          r"(which|what)\s+(sources?|websites?|places?)\b|"
          r"(where|which|what).{0,30}(reviews?|advice|recommendations?)\b"),
         # Widened after the UK run: a SUBSCRIPTION is "signed up for", not
         # "bought", so "Where did you sign up for your subscription?" is the
         # channel question for this category and must match.
+        # change for b2c questionarie -- CHECK (2026-09-10): "get" made this
+        # swallow "Where did you GET INFORMATION or ideas about which one to
+        # buy?", which is information_sources, not the purchase channel. The
+        # object of the verb is what separates them -- getting INFORMATION is
+        # research, getting THE PRODUCT is the channel -- so exclude the
+        # research nouns explicitly.
         ("acquisition_channel", "acquisition channel (where they bought it)",
          r"(?i)where (did|do) you\s+(\w+\s+){0,3}?"
-         r"(buy|get|purchase|order|shop|sign up|subscribe|join)"),
+         r"(buy|get|purchase|order|shop|sign up|subscribe|join)\b"
+         r"(?!\s+(information|ideas?|advice|reviews?|tips?|recommendations?"
+         r"|details?|help)\b)"),
         ("price_paid", "price paid (how much they spent)",
          r"(?i)how much did you (spend|pay)|how much .{0,20}(spend|pay)\b"),
         ("top_decision_driver", "top decision driver (what mattered most)",
@@ -357,10 +372,20 @@ REQUIRED_SLOTS: dict[str, tuple] = {
         # was being claimed by overall_satisfaction instead. The "with how
         # well" cue is what distinguishes the two: overall satisfaction is
         # about the product as a whole, this one is about how it PERFORMS.
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-09):
+        # "How satisfied are you with how well it does its main job?" read as
+        # a near-restatement of overall_satisfaction in a client PDF, even
+        # though the two are structurally distinct. For a category with an
+        # obvious primary capability (accuracy for a health monitor, battery
+        # life for wireless earbuds), asking about THAT capability by name is
+        # a clearer, more distinct version of this theme than a generic
+        # "how well does it work" -- widened to accept "how accurate/
+        # reliable/precise" as a valid capability-specific phrasing.
         ("core_function_satisfaction", "core function satisfaction (rating of main capabilities)",
          r"(?i)how (well|satisf).{0,40}(work|perform|do|does|job)|"
          r"rate .{0,30}(performance|how well)|"
-         r"how (happy|satisf)\w*\s+are you\s+with how well\b"),
+         r"how (happy|satisf)\w*\s+are you\s+with how well\b|"
+         r"how (accurate|reliable|precise|consistent)\b"),
         ("usability_ux", "usability / ease of use",
          r"(?i)(easy|easier|difficult|hard|simple|straightforward)\b.{0,30}"
          r"(to use|to set up|to operate|to figure)|how easy\b"),
@@ -372,19 +397,39 @@ REQUIRED_SLOTS: dict[str, tuple] = {
          r"(?i)(must|need to) (a |an )?.{0,30}(have|do|include)|"
          r"what (features|must)\b|which features|"
          r"(could not|couldn't|cannot) (do without|live without)|rarely use"),
+        # change for b2c questionarie -- CHECK (live, oral care 2026-09-10):
+        # this required "good value" ADJACENT, so the model's perfectly good
+        # "Think about the money you paid ... How good is THE VALUE you
+        # get?" was rejected as off-theme three times in one run and the
+        # slot shipped empty. Same word-adjacency trap that broke
+        # routine_integration and dealbreaker. Allow words between the
+        # judgement word and "value", and accept the "money you paid ...
+        # value" construction directly.
         ("value_for_money", "perceived value for money",
          r"(?i)(value for money|worth (the|what)|worth paying|"
-         r"good value|for (the|what) you paid)"),
+         r"good value|for (the|what) you paid|"
+         r"(good|fair|poor|bad|rate)\b.{0,15}\bvalue\b|"
+         r"\bvalue\b.{0,25}(you get|for the money|for what you)|"
+         r"(money|price) you paid.{0,40}\bvalue\b)"),
         # change for b2c questionarie -- CHECK (live, UK vitamins 2026-09-09):
         # only three literal phrasings were accepted, so the natural
         # "better or worse than you expected" and "compare WITH what you
         # expected" both failed. Anchor on the word "expect" plus any
         # comparison cue instead of fixed phrases.
+        # change for b2c questionarie -- CHECK (live, oral care 2026-09-10):
+        # "Think about what you HOPED it would do before you bought it..."
+        # is this theme stated with "hoped" rather than "expected", and was
+        # rejected. Accept the hoped-for / claims framings too; the drift
+        # anchor (see DRIFT_ANCHORS) is what keeps this distinct from
+        # value_for_money, so widening the surface here is safe.
         ("expectation_match", "expectation match (performance vs expected)",
          r"(?i)(as (well as )?you expected|compare[ds]?\s+(to|with)\s+"
          r".{0,25}expect|meet .{0,25}expectations?|live(d)? up to|"
          r"(better|worse|more|less)\s+.{0,25}than you expected|"
-         r"than (you )?expected)"),
+         r"than (you )?expected|"
+         r"(hoped|thought) it would\b|"
+         r"what you (hoped|thought).{0,40}(before|would)|"
+         r"as (advertised|described|promised)|\bclaims? it will\b)"),
     ),
     # --- Section 4: 5 questions ------------------------------------------
     "satisfaction_future_intent": (
@@ -412,6 +457,297 @@ REQUIRED_SLOTS: dict[str, tuple] = {
          r"(?i)(recommend|tell a friend|tell .{0,15}(others|someone))"),
     ),
 }
+
+
+# change for b2c questionarie -- CHECK (user directive, 2026-09-10): the slot
+# list above was a CLOSED list -- exactly these 23 themes, nothing else. That
+# is right for the ~80% of categories the framework was designed around, and
+# wrong for the rest, and the failure is not hypothetical:
+#
+#   * laundry detergent, usage_context -> "Where do you usually do your
+#     laundry?" (at home / laundromat). ~71% answer "at home, my own washer".
+#     Near-zero variance, no decision rides on it.
+#   * laundry detergent, primary_use_case -> "What do you mainly use it for?"
+#     (everyday clothes and towels / baby clothes / ...). ~58% "everyday
+#     clothes". Same problem.
+#   * UK vitamin subscriptions, usage_context -> "Where do you usually take
+#     your daily vitamins?" -- where someone swallows a pill is not a
+#     decision anyone acts on.
+#
+# In every one of those cases the SECTION still needed intelligence at that
+# position in the arc -- what was wrong was the specific question SHAPE the
+# slot demanded, not the slot's underlying purpose. So the fix is not to drop
+# the slot; it is to let the same CONSTRUCT be measured a different way.
+#
+# ALTERNATE_SLOTS gives each primary slot a small set of pre-approved
+# fallbacks that measure the SAME underlying construct through a different
+# question shape. A section satisfies a required slot when it matches the
+# primary pattern OR any of that slot's alternates. The framework's coverage
+# promise is unchanged -- every slot is still filled, still gated, still in
+# template order -- but a category can reach it by the road that fits it.
+#
+# Format: {slot_key: ((alt_key, human_label, regex), ...)}, listed
+# best-fit-first. `alt_key` is recorded on the question so a reader can see
+# WHICH variant was used and why, rather than the swap being invisible.
+ALTERNATE_SLOTS: dict[str, tuple] = {
+    # --- Section 1 --------------------------------------------------------
+    # "What do you mainly use it for?" collapses for single-purpose products
+    # (detergent, toothpaste, dish soap). What still varies, and still drives
+    # positioning, is WHICH JOB IS HARDEST -- the demanding use case that
+    # decides which formula/format they need.
+    "primary_use_case": (
+        ("hardest_use_case", "hardest/most demanding use case (the job that decides what they need)",
+         r"(?i)(hardest|toughest|most difficult|most demanding|biggest challenge)"
+         r".{0,40}(use|clean|handle|deal with|job|task)|"
+         r"which .{0,30}(hardest|toughest|most difficult)\b"),
+        # The volume noun and the time window can sit far apart -- "How many
+        # LOADS of laundry does your household wash in a typical WEEK?" is
+        # 40+ chars between them -- so the gap allowance has to be generous.
+        ("usage_intensity", "usage intensity (how heavily they use it per occasion)",
+         r"(?i)how (many|much) .{0,25}(loads?|servings?|uses?|applications?|"
+         r"portions?|cycles?|washes?|scoops?|doses?)\b"
+         r".{0,60}(week|day|month|typical|usually|time)"),
+    ),
+    # "Where/when do you usually use it?" collapses for products used in one
+    # obvious place. The construct underneath is ROUTINE SHAPE -- how the
+    # product fits into their life -- which can be reached by asking who else
+    # is involved, or how the routine is organised.
+    "usage_context": (
+        ("household_involvement", "who else in the household uses or decides on it",
+         r"(?i)who (else )?(in your (home|household)|usually|normally)\b|"
+         r"(anyone else|other people|others in your (home|household))"
+         r".{0,30}(use|decide|buy|choose)"),
+        # "alongside OTHER LAUNDRY PRODUCTS" -- a category word sits between
+        # "other" and "products", so the two cannot be required adjacent.
+        ("routine_integration", "how it fits their routine (alongside what, at which step)",
+         r"(?i)(along ?side|together with|at the same time as|as part of)"
+         r".{0,45}(routine|regimen|products?|items?)|"
+         r"(do you|how do you) .{0,30}(combine|pair|use it with)\b"),
+        ("usage_variation", "whether usage changes by season/situation",
+         r"(?i)(change|differ|vary|more|less).{0,40}"
+         r"(season|summer|winter|time of year|weather|situation)"),
+    ),
+    # --- Section 2 --------------------------------------------------------
+    # "How long did you research?" is meaningless in habitual replenishment
+    # categories where the honest answer is "I didn't". The construct is
+    # DELIBERATION DEPTH, which is better reached by asking whether they
+    # compared at all.
+    "shopping_timeframe": (
+        ("deliberation_depth", "deliberation depth (did they compare, or buy on autopilot)",
+         r"(?i)(compare|considered?|look(ed)? at)\s+(more than one|other|"
+         r"several|two or three|different)|"
+         r"(straight for|stuck with|went with) (your|my|their) usual|"
+         r"(without (thinking|comparing|looking)|on autopilot)"),
+        ("purchase_planning", "how planned vs spontaneous the purchase was",
+         r"(?i)(planned|decided) (in advance|ahead|before you|beforehand)|"
+         r"(spur of the moment|on the spot|spontaneous|impulse)|"
+         r"(know|knew) what you wanted before"),
+    ),
+    # For habitual categories nobody "researches", but they DO get influenced.
+    "information_sources": (
+        ("influence_source", "what most influenced the choice (even passively)",
+         r"(?i)what .{0,30}(influenced|swayed|convinced|persuaded) you|"
+         r"(most|biggest) (influence|impact) on (your|the) (choice|decision)"),
+        ("discovery_route", "how they first came across it",
+         r"(?i)how did you (first )?(hear about|come across|find out about|discover)|"
+         r"(first|originally) (hear about|learn about|notice)"),
+    ),
+    # A single "what mattered most" is weak where the real story is the
+    # TRADE-OFF between two things people cannot have at once.
+    "top_decision_driver": (
+        ("tradeoff_choice", "the trade-off they made (what they gave up for what)",
+         r"(?i)(trade[ -]?off|give up|sacrific|compromise|"
+         r"(more important|would you rather|which matters more))|"
+         r"if you (had to|could only) (choose|pick) (one|between)"),
+        # "rule an option OUT" splits the verb particle, so allow words
+        # between "rule" and "out" rather than requiring them adjacent.
+        ("dealbreaker", "the dealbreaker (what rules an option out entirely)",
+         r"(?i)(deal[ -]?breaker|rule(s)?\b.{0,20}\bout\b|never buy|"
+         r"refuse to buy|would stop you (from )?buying|"
+         r"automatically (skip|reject|avoid))"),
+    ),
+    # --- Section 3 --------------------------------------------------------
+    # "How easy is it to use?" is near-universal-positive for simple products.
+    # The construct is FRICTION, better reached by naming the friction.
+    "usability_ux": (
+        ("friction_point", "the specific friction/annoyance in using it",
+         r"(?i)(annoying|frustrating|hassle|messy|fiddly|awkward|inconvenient|"
+         r"spills?|drips?|leaks?)\b|"
+         r"what .{0,30}(gets in the way|slows you down|goes wrong) "),
+        ("effort_required", "how much effort/attention each use takes",
+         r"(?i)how much (effort|work|attention|thought|time)"
+         r".{0,35}(take|need|require|spend)"),
+    ),
+    # "Which features are must-have vs nice-to-have" is a device/service
+    # framing. For simple consumables the same construct is REQUIREMENT
+    # THRESHOLD -- what it must achieve to keep earning the purchase.
+    "essential_vs_nonessential": (
+        ("minimum_requirement", "the minimum it must deliver to keep being bought",
+         r"(?i)(must|has to|needs to) (be able to|do|deliver|achieve|"
+         r"work|handle|manage)\b|"
+         r"what .{0,30}(must|has to) .{0,25}(do|deliver|achieve) "
+         r"for you to keep\b|"
+         r"(bare minimum|at (a |the )?minimum|non[- ]negotiable)"),
+        # Also covers the price-removed forced-priority framing ("if price
+        # were no object, what one thing would you want it to do better?"),
+        # which measures the same thing -- which improvement actually has
+        # value to them -- without naming money.
+        ("feature_worth_paying", "which improvement they would actually pay more for / value most",
+         r"(?i)(pay|spend) (more|extra).{0,40}(for|to get)\b|"
+         r"worth paying (more|extra) for|"
+         r"which .{0,30}would you pay (more|extra)|"
+         r"if (price|cost|money) (were|was|weren't|wasn't|is) "
+         r"(not|no) (a factor|an object|important)|"
+         r"(single|one) thing .{0,25}(do better|improve|change)"),
+    ),
+    # --- Section 4 --------------------------------------------------------
+    # Where a category has no meaningful "recommend to a friend" dynamic,
+    # the construct is still ADVOCACY/ENDORSEMENT STRENGTH.
+    "category_advocacy": (
+        ("endorsement_strength", "how strongly they would endorse it to someone else",
+         r"(?i)(how likely are you to|would you) .{0,30}"
+         r"(suggest|endorse|speak (well|highly) of|vouch for)|"
+         r"how likely .{0,25}(to mention|to bring (it )?up)"),
+    ),
+}
+
+
+# Flat lookup: alt_key -> (parent_slot_key, human_label). Built once at import
+# so gates can resolve an alternate back to the primary slot it satisfies
+# without re-walking the nested table on every question.
+_ALT_TO_PRIMARY: dict[str, tuple] = {
+    alt_key: (primary_key, alt_label)
+    for primary_key, alts in ALTERNATE_SLOTS.items()
+    for alt_key, alt_label, _pat in alts
+}
+
+
+def slot_patterns_for(primary_key: str, primary_pattern: str) -> list:
+    """Every accepted pattern for a slot: its own, plus any alternates.
+
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-10):
+    # single place that answers "does this section satisfy this slot?", so
+    # the primary-or-alternate rule cannot drift between the validator gate,
+    # the architect's slot guarantee, the trim logic and the ordering pass.
+    """
+    pats = [primary_pattern]
+    for _alt_key, _alt_label, alt_pat in ALTERNATE_SLOTS.get(primary_key, ()):
+        pats.append(alt_pat)
+    return pats
+
+
+def slot_satisfied_by(text: str, primary_key: str, primary_pattern: str) -> bool:
+    """True when ``text`` fills this slot via its primary OR any alternate."""
+    return any(
+        re.search(p, text or "")
+        for p in slot_patterns_for(primary_key, primary_pattern)
+    )
+
+
+# change for b2c questionarie -- CHECK (user directive, 2026-09-09): two
+# slots can each correctly match their own REQUIRED_SLOTS pattern and STILL
+# read as the same question to a human. Confirmed live: "Do you feel it was
+# worth what you paid?" (value_for_money) and "Compared with what you
+# expected, how does it perform?" (expectation_match) share ZERO tokens and
+# ZERO options (token_set_jaccard = 0.0, option_jaccard = 0.0), so the
+# existing lexical-similarity dedup cannot see the collision at all -- this
+# is a semantic drift, not a paraphrase. No regex/Jaccard approach catches
+# this reliably, so the fix is structural: pin each theme in a
+# near-duplicate-prone PAIR to a required anchor word that its sibling is
+# forbidden to use. If a question matches its own slot but is MISSING its
+# anchor, or matches the sibling's forbidden word, it has drifted toward the
+# sibling even though the slot regex still technically fired.
+#
+# Format: {slot_key: (must_contain_regex, forbidden_regex, sibling_key)}.
+# Only slot-pairs with a proven drift risk are listed; most slots need no
+# entry because their sibling patterns are already lexically distinct.
+DRIFT_ANCHORS: dict[str, tuple] = {
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): the
+    # first version of this anchor required a money-word to be PRESENT, but
+    # the actual drifted question ("Do you feel it was worth what you
+    # paid?") already contains "paid" -- it fails on VAGUENESS, not absence
+    # of a money word. "Worth it" / "worth what you paid" is exactly as
+    # applicable to "did this meet my expectations" as it is to "was the
+    # price fair", so it reads as either theme depending on the reader. The
+    # anchor must therefore be the FORBIDDEN side: ban the vague "worth
+    # it / worth what you paid" framing outright, and require the value
+    # judgement to be phrased explicitly as a value-for-MONEY comparison.
+    # change for b2c questionarie -- CHECK (2026-09-10): the must-pattern
+    # had the same word-adjacency trap as the slot pattern it guards -- it
+    # required "good value" adjacent, so "How GOOD IS THE VALUE you get?"
+    # was reported as drift even though it is textbook value-for-money.
+    # Keep the two must-patterns in step with their slot patterns.
+    "value_for_money": (
+        r"(?i)(value for( the)? money|good value|fair (price|value)|"
+        r"reasonable price|worth the (price|money|cost)|"
+        r"(good|fair|poor|bad|rate)\b.{0,15}\bvalue\b|"
+        r"\bvalue\b.{0,25}(you get|for the money|for what you))",
+        r"(?i)\b(worth it|worth what you paid|expect)\b",
+        "expectation_match",
+    ),
+    # change for b2c questionarie -- CHECK (2026-09-10): the anchor was the
+    # bare word "expect", which flagged the perfectly valid claims-based
+    # phrasing "Does it live up to what the bottle CLAIMS it will do?" as
+    # drift. Living up to a stated claim IS an expectation comparison -- the
+    # expectation is just set by the label rather than by the buyer's head.
+    # Accept either framing; the forbidden money words still keep this
+    # distinct from value_for_money, which is the collision that matters.
+    "expectation_match": (
+        r"(?i)(\bexpect|live(s)? up to|as (advertised|described|promised)|"
+        r"\bclaims?\b|what .{0,20}(says?|promises?) it|"
+        r"(hoped|thought) it would\b|what you (hoped|thought))",
+        r"(?i)\b(money|price|paid|pay|cost|worth it)\b",
+        "value_for_money",
+    ),
+}
+
+
+def find_drifted_theme_questions(answered: list, section_ids: dict) -> dict:
+    """Questions that match their own slot but have drifted toward a sibling.
+
+    Returns {canonical_id: [(slot_key, question_text, reason), ...]}.
+    Unlike find_offtheme_questions (which checks "does this match SOME slot
+    in this section"), this checks "does this question stay anchored to ITS
+    slot's defining word, or has it become interchangeable with a sibling
+    slot's question". Both call sites for the other coverage checks should
+    treat a non-empty result here as required_slot_fail too.
+    """
+    by_canon: dict[str, list] = {}
+    for q in answered:
+        if (q.get("question_layer") or "") in ("screening", "profiling"):
+            continue
+        canon = _canonical_tab(q)
+        for cid, market_id in (section_ids or {}).items():
+            if canon == market_id:
+                canon = cid
+                break
+        by_canon.setdefault(canon, []).append(q.get("text") or "")
+
+    drifted: dict[str, list] = {}
+    for canon, slots in REQUIRED_SLOTS.items():
+        stems = by_canon.get(canon) or []
+        for key, label, pat in slots:
+            anchor = DRIFT_ANCHORS.get(key)
+            if not anchor:
+                continue
+            must, forbidden, sibling = anchor
+            hit = next((s for s in stems if re.search(pat, s)), None)
+            if not hit:
+                continue  # missing entirely -- find_missing_required_slots' job
+            if not re.search(must, hit):
+                drifted.setdefault(canon, []).append(
+                    (key, hit,
+                     f"matches the '{key}' slot but never names its own "
+                     f"anchor concept -- reads as a restatement of "
+                     f"'{sibling}' instead")
+                )
+            elif re.search(forbidden, hit):
+                drifted.setdefault(canon, []).append(
+                    (key, hit,
+                     f"borrows '{sibling}'s' anchor word -- the two themes "
+                     "will read as the same question")
+                )
+    return drifted
 
 
 def _canonical_tab(q: dict) -> str:
@@ -454,9 +790,15 @@ def find_missing_required_slots(answered: list, section_ids: dict) -> dict:
     for canon, slots in REQUIRED_SLOTS.items():
         stems = by_canon.get(canon) or []
         subs = _substituted.get(canon) or set()
+        # change for b2c questionarie -- CHECK (user directive, 2026-09-10):
+        # a slot is filled by its PRIMARY pattern or by any of its
+        # construct-equivalent ALTERNATE_SLOTS variants, so a category that
+        # cannot support the primary question shape can still satisfy the
+        # slot honestly rather than being forced into a dead question.
         gaps = [
             (key, label) for key, label, pat in slots
-            if label not in subs and not any(re.search(pat, s) for s in stems)
+            if label not in subs
+            and not any(slot_satisfied_by(s, key, pat) for s in stems)
         ]
         if gaps:
             missing[canon] = gaps
@@ -503,7 +845,12 @@ def find_offtheme_questions(answered: list, section_ids: dict) -> dict:
         if not own:
             continue  # unknown section (e.g. profiling) -- not gated here
         for stem in stems:
-            if any(re.search(pat, stem) for _k, _l, pat in own):
+            # change for b2c questionarie -- CHECK (user directive,
+            # 2026-09-10): an approved ALTERNATE variant is on-theme by
+            # definition -- it measures the slot's own construct. Without
+            # this the closed-list gate would reject the very question the
+            # alternates table exists to allow.
+            if any(slot_satisfied_by(stem, _k, pat) for _k, _l, pat in own):
                 continue
             # Does it belong to a DIFFERENT section's slot list?
             belongs_to = next(
@@ -511,7 +858,8 @@ def find_offtheme_questions(answered: list, section_ids: dict) -> dict:
                     other
                     for other, slots in REQUIRED_SLOTS.items()
                     if other != canon
-                    and any(re.search(pat, stem) for _k, _l, pat in slots)
+                    and any(slot_satisfied_by(stem, _k, pat)
+                            for _k, _l, pat in slots)
                 ),
                 None,
             )
@@ -522,6 +870,358 @@ def find_offtheme_questions(answered: list, section_ids: dict) -> dict:
             )
             offtheme.setdefault(canon, []).append((stem, note))
     return offtheme
+
+
+# ===========================================================================
+# WRITTEN-REGISTER CHECKS (spec: b2c_survey_question_structure_v3.txt Part A)
+# ===========================================================================
+# change for b2c questionarie -- CHECK (spec v3, 2026-09-11): a survey is
+# READ off a screen, not heard, so spoken artifacts (contractions, "I ..."
+# option sentences, casual verbs, dashes as pauses) do not belong.
+#
+# v3 supersedes the earlier change-spec and carries an explicit WARNING that
+# the earlier draft over-corrected toward formal phrasing. That warning
+# drives the limits used here: v3's ceilings (12-word options, 20-word
+# questions, 8th-grade reading level) are TIGHTER than the earlier draft's
+# (14 / 24 / unstated) precisely because "more professional but harder to
+# read is a REGRESSION". So these checks police BOTH directions -- casual
+# artifacts AND creeping formality.
+
+# change for b2c questionarie -- CHECK (2026-09-11): a naive \w+'s rule
+# flags POSSESSIVES, not contractions -- "Dentist's office" is correct
+# written English and must not be a defect. English cannot disambiguate
+# "'s" by shape alone, so only the unambiguous contractions are listed,
+# plus the handful of pronoun+'s forms that are always contractions
+# ("it's", "that's", "there's", "what's", "who's", "let's").
+_CONTRACTION_RE = re.compile(
+    r"(?i)\b(\w+['’](t|re|ve|ll|m)"
+    r"|(it|that|there|what|who|let|he|she|here)['’]s"
+    r"|\w+['’]d)\b"
+)
+# The advocacy scale's mandated labels ("0 - Not at all likely" ...
+# "10 - Extremely likely") contain a dash BY SPEC. Exempt them, or every
+# compliant survey would be permanently dirty on dash_in_option_check.
+_NPS_LABEL_RE = re.compile(
+    r"(?i)^\s*(10|[0-9])\s*[-–—]\s*(not at all|extremely)\b"
+)
+# Formal words v3 names as the wrong direction. "purchase" is explicitly
+# ALLOWED ("buy -> purchase is acceptable"); procure/acquire are not.
+_OVERFORMAL_RE = re.compile(
+    r"(?i)\b(procure|acquire|obtain|utili[sz]e|discontinue|"
+    r"circumstance|relative to|commence|initiate|facilitate|"
+    r"aforementioned|endeavou?r|ascertain|remuneration)\b"
+)
+_DASH_IN_OPTION_RE = re.compile(r"\s[-–—]\s")
+_FILLER_OPENER_RE = re.compile(
+    r"(?i)^\s*(well|so|now|actually|basically|honestly|you know)\b[\s,]"
+)
+
+# v3 Part A7 hard ceilings.
+MAX_OPTION_WORDS = 12
+MAX_QUESTION_WORDS = 20
+
+# ---------------------------------------------------------------------------
+# INTERROGATIVE GRAMMAR (manager directive, 2026-09-11)
+# ---------------------------------------------------------------------------
+# change for b2c questionarie -- CHECK: the reported defect is "What you name
+# is?" shipping where "What is your name?" is wanted. That is WORD ORDER, not
+# register, so none of the Part A checks could see it. Confirmed live: the
+# oral care run shipped BOTH "What matter most when you pick one?"
+# (subject-verb disagreement) and "Which tells you a toothpaste is well
+# made?" ("Which" where "What" is required), and neither was flagged.
+#
+# The prompt now instructs the model to write proper questions and the
+# self-review pass checks grammar first -- this is the backstop for what
+# still slips through, because "flag-and-hope" has failed repeatedly on this
+# pipeline while deterministic checks have held.
+#
+# English question grammar is too irregular to validate in full with regex,
+# so this targets ONLY high-confidence, mechanically-detectable breakages.
+# Anything ambiguous is deliberately left alone: a noisy grammar check that
+# flags correct questions would get switched off, which is worse than a
+# narrow one that is always right.
+
+# 1. Missing/!inverted auxiliary: "What you name IS?", "Where you bought it?"
+#    -- a wh-word, then a subject pronoun, no auxiliary, ending on a verb.
+# NOTE: the auxiliary exclusion must look only at the word IMMEDIATELY after
+# the subject. An earlier version allowed "\s*\w*\s*" before the auxiliary,
+# which let the lookahead scan forward and find the very trailing verb this
+# rule exists to catch -- so "What you name is?" cancelled its own match and
+# the manager's exact example went undetected.
+_WH_NO_AUX_RE = re.compile(
+    r"(?i)^\s*(what|where|when|which|who|how)\s+"
+    r"(you|your|they|their|it|he|she|we)\b"
+    r"(?!\s+(do|does|did|have|has|had|are|is|was|were|will|would|can|"
+    r"could|should|may|might|must)\b)"
+    r"[^?]*\b(is|are|was|were|bought|paid|used|chose|use|pay|buy)\s*\??\s*$"
+)
+
+# 2. Wh-subject + bare plural verb: "What MATTER most" -> "What matters".
+#    Only the verbs whose -s form is unambiguous, and only when the wh-word
+#    is directly the subject.
+_WH_SUBJECT_AGREEMENT_RE = re.compile(
+    r"(?i)^\s*(what|which|who)\s+"
+    r"(matter|make|tell|cause|drive|influence|help|happen|come|"
+    r"seem|count|apply|stop|keep)\b(?!s)"
+)
+
+# 3. Bare "which" + verb: "WHICH tells you..." -> "What tells you...".
+#    "Which" is a selector and needs a set ("which brand", "which of these").
+_BARE_WHICH_RE = re.compile(
+    r"(?i)^\s*which\s+"
+    r"(tells?|makes?|matters?|causes?|describes?|shows?|happens?)\b"
+)
+
+# 4. Missing auxiliary before a bare verb: "How often you use it?" and the
+#    past-tense form "Where you bought it?" (which rule 1 cannot see,
+#    because that sentence ends on "it" rather than on the verb).
+_MISSING_AUX_RE = re.compile(
+    r"(?i)^\s*(how (often|long|much|many)|what|where|when|why)\s+"
+    r"(you|they|it)\s+"
+    r"(use|buy|pay|choose|spend|go|get|"
+    r"used|bought|paid|chose|spent|went|got)\b"
+)
+
+
+def find_grammar_issues(answered: list) -> list[str]:
+    """Malformed question grammar (manager directive, 2026-09-11).
+
+    Word-order and agreement breakages the register checks cannot see --
+    "What you name is?" where "What is your name?" is wanted. Narrow by
+    design; see the note above on why.
+    """
+    issues: list[str] = []
+    for q in _behavioural(answered):
+        text = (q.get("text") or "").strip()
+        if not text:
+            continue
+        if _WH_NO_AUX_RE.search(text):
+            issues.append(
+                "question has inverted word order / a missing auxiliary verb "
+                "(\"What you name is?\" should be \"What is your name?\"): "
+                f"{text[:70]}"
+            )
+            continue
+        if _WH_SUBJECT_AGREEMENT_RE.search(text):
+            issues.append(
+                "subject-verb disagreement after the question word "
+                "(\"What matter most\" should be \"What matters most\"): "
+                f"{text[:70]}"
+            )
+            continue
+        if _BARE_WHICH_RE.search(text):
+            issues.append(
+                "\"Which\" used without a following noun -- use \"What\" "
+                "(\"Which tells you...\" should be \"What tells you...\"): "
+                f"{text[:70]}"
+            )
+            continue
+        if _MISSING_AUX_RE.search(text):
+            issues.append(
+                "question is missing its auxiliary verb (\"How often you use "
+                "it?\" should be \"How often do you use it?\"): "
+                f"{text[:70]}"
+            )
+    return issues
+
+
+def _words(text: str) -> int:
+    return len((text or "").split())
+
+
+def _opt_labels(q: dict) -> list[str]:
+    """Option labels regardless of shape (plain strings or {'label': ...})."""
+    out = []
+    for o in q.get("options") or ():
+        if isinstance(o, dict):
+            lbl = o.get("label")
+        else:
+            lbl = o
+        if lbl:
+            out.append(str(lbl))
+    return out
+
+
+def _behavioural(answered: list) -> list:
+    return [
+        q for q in answered
+        if (q.get("question_layer") or "") not in ("screening", "profiling")
+    ]
+
+
+def find_register_issues(answered: list) -> list[str]:
+    """Spoken-register and over-formality defects (v3 Part A).
+
+    Returns a list of human-readable defects; empty means clean. Every
+    message is prefixed by the caller with "register:" so graph.py routes it
+    back to the architect.
+    """
+    issues: list[str] = []
+    for q in _behavioural(answered):
+        text = q.get("text") or ""
+        labels = _opt_labels(q)
+
+        # A1 - no contractions, in question text or option labels.
+        for where, s in [("question", text)] + [("option", l) for l in labels]:
+            m = _CONTRACTION_RE.search(s)
+            if m:
+                issues.append(
+                    f"contraction {m.group(0)!r} in {where}: {s[:60]}"
+                )
+                break
+
+        # A2 - options are labels, not spoken sentences.
+        for l in labels:
+            if re.match(r"(?i)^\s*I\s+\w", l):
+                issues.append(f"option starts with 'I ': {l[:60]}")
+                break
+
+        # A4 - no conversational openers.
+        if _FILLER_OPENER_RE.search(text):
+            issues.append(f"conversational opener in question: {text[:60]}")
+
+        # A5 - no dashes used as spoken pauses inside option labels. The
+        # 0-10 advocacy labels are dashed by spec and are exempt.
+        for l in labels:
+            if _DASH_IN_OPTION_RE.search(l) and not _NPS_LABEL_RE.match(l):
+                issues.append(f"dash used as a pause in option: {l[:60]}")
+                break
+
+        # A7 - length ceilings.
+        if _words(text) > MAX_QUESTION_WORDS:
+            issues.append(
+                f"question is {_words(text)} words (max {MAX_QUESTION_WORDS}): "
+                f"{text[:60]}"
+            )
+        for l in labels:
+            if _words(l) > MAX_OPTION_WORDS:
+                issues.append(
+                    f"option is {_words(l)} words (max {MAX_OPTION_WORDS}): {l[:60]}"
+                )
+                break
+
+        # A3/A8 - the over-correction guard. v3 is emphatic that formality
+        # bought at the cost of readability is a regression, not a fix.
+        for where, s in [("question", text)] + [("option", l) for l in labels]:
+            m = _OVERFORMAL_RE.search(s)
+            if m:
+                issues.append(
+                    f"over-formal word {m.group(0)!r} in {where} "
+                    f"(v3 Part A: plain wording beats formal wording): {s[:60]}"
+                )
+                break
+
+    return issues
+
+
+def find_parallelism_issues(answered: list) -> list[str]:
+    """Options within one question must share one grammatical shape (A6).
+
+    Deliberately conservative: only flags a question where the option set
+    splits cleanly between "-ing" clauses and non-"-ing" phrases AND both
+    groups are substantial. A stricter shape-classifier produced false
+    positives on legitimate mixed-noun option sets during testing, and a
+    noisy check that cries wolf gets ignored.
+    """
+    issues: list[str] = []
+    for q in _behavioural(answered):
+        labels = [l for l in _opt_labels(q)
+                  if not re.match(r"(?i)^(other|none|not sure|do not|prefer not)", l)]
+        if len(labels) < 3:
+            continue
+        ing = [l for l in labels if re.match(r"(?i)^\s*\w+ing\b", l)]
+        if 0 < len(ing) < len(labels) and min(len(ing), len(labels) - len(ing)) >= 2:
+            issues.append(
+                f"mixed option shapes ({len(ing)} '-ing' vs "
+                f"{len(labels) - len(ing)} other) in: {(q.get('text') or '')[:55]}"
+            )
+    return issues
+
+
+# ===========================================================================
+# BRAND CHECKS (spec: v3 Part C / change-spec Part B)
+# ===========================================================================
+def find_brand_issues(answered: list, *, allowed_brands: list,
+                      section_ids: dict | None = None) -> list[str]:
+    """Brand-policy defects. Every message is routed with a "brand:" prefix.
+
+    ``allowed_brands`` is the verified allowlist for THIS survey's country
+    and category (empty list => the survey must be entirely brand-free).
+
+    Covers brand_slot_check, brand_region_check, brand_catchall_check and
+    brand_count_check from the spec. A failure here is never repaired by
+    swapping in a different brand -- the spec requires dropping to
+    brand-free phrasing for that slot.
+    """
+    from src import brand_allowlist as _ba
+
+    issues: list[str] = []
+    allowed_norm = {(b or "").strip().lower() for b in allowed_brands if b}
+    brand_questions = 0
+
+    for q in _behavioural(answered):
+        labels = _opt_labels(q)
+        text = q.get("text") or ""
+        canon = _canonical_tab(q)
+        for cid, market_id in (section_ids or {}).items():
+            if canon == market_id:
+                canon = cid
+                break
+
+        # Which required slot is this question filling?
+        slot_key = None
+        for k, _l, p in REQUIRED_SLOTS.get(canon, ()):
+            if slot_satisfied_by(text, k, p):
+                slot_key = k
+                break
+
+        # Any option matching an allowlisted brand marks this as a brand
+        # question. Detection is limited to the allowlist on purpose: a
+        # generic "does this look like a brand?" heuristic cannot tell a
+        # brand from an ordinary noun, and guessing is what the spec bans.
+        hits = [l for l in labels
+                if any(b in l.strip().lower() for b in allowed_norm)] if allowed_norm else []
+
+        # brand_region_check -- an unverified brand can never be present,
+        # which for an empty allowlist means the survey must be brand-free.
+        # Only reported for slots that are ALLOWED to carry brands; a brand
+        # anywhere else is caught by brand_slot_check below.
+        if hits:
+            brand_questions += 1
+            if slot_key is not None and not _ba.is_brand_slot(slot_key):
+                issues.append(
+                    f"brand name in '{slot_key}', which is not a permitted "
+                    f"brand slot: {text[:55]}"
+                )
+            # brand_catchall_check
+            if not any(
+                re.search(r"(?i)(another brand|other brand|not listed|"
+                          r"do not (remember|recall)|none of these)", l)
+                for l in labels
+            ):
+                issues.append(
+                    f"brand question has no catch-all option: {text[:55]}"
+                )
+            # Catch-all must carry a real share, never 0 (v3 Part C).
+            for o in q.get("options") or ():
+                if not isinstance(o, dict):
+                    continue
+                if re.search(r"(?i)(another brand|not listed)", str(o.get("label") or "")):
+                    try:
+                        if float(o.get("pct") or 0) <= 0:
+                            issues.append(
+                                f"brand catch-all carries 0% share: {text[:55]}"
+                            )
+                    except (TypeError, ValueError):
+                        pass
+
+    # brand_count_check
+    if brand_questions > _ba.MAX_BRAND_QUESTIONS:
+        issues.append(
+            f"{brand_questions} brand-bearing questions "
+            f"(max {_ba.MAX_BRAND_QUESTIONS})"
+        )
+    return issues
 
 
 def find_nps_shape_issue(answered: list) -> str | None:
@@ -3207,11 +3907,59 @@ def validator_critic(state: SurveyState) -> dict:
         required_slot_fail = True
         hygiene_fail = True
 
+    # change for b2c questionarie -- CHECK (user directive, 2026-09-09): a
+    # question can correctly match its own required slot and STILL read as
+    # the same question as a sibling slot (proven live: value_for_money vs
+    # expectation_match shared zero tokens and zero options, so the lexical
+    # dedup could not see it). find_drifted_theme_questions() catches this
+    # class specifically -- vague phrasing that could belong to either theme.
+    for _canon, _drifts in find_drifted_theme_questions(answered, _canon_to_market).items():
+        for _key, _stem, _reason in _drifts:
+            feedback.append(
+                f"coverage: drifted question in section '{_canon}' "
+                f"('{_key}' {_reason}): \"{_stem[:70]}\". Rewrite it to "
+                "explicitly name its own theme's concept so it cannot be "
+                "read as the sibling question."
+            )
+        required_slot_fail = True
+        hygiene_fail = True
+
     _nps_issue = find_nps_shape_issue(answered)
     if _nps_issue:
         feedback.append(f"coverage: {_nps_issue}")
         required_slot_fail = True
         hygiene_fail = True
+
+    # change for b2c questionarie -- CHECK (spec v3 Part A + change-spec
+    # Part C.5, 2026-09-11): written-register defects route back with a
+    # "register:" prefix, brand defects with "brand:", exactly as the spec
+    # requires. Both mark the pass dirty so a register- or brand-broken
+    # survey can never be crowned "best" by the score-based restore.
+    for _reg in (find_register_issues(answered)
+                 + find_parallelism_issues(answered)
+                 + find_grammar_issues(answered)):
+        feedback.append(f"register: {_reg}")
+        hygiene_fail = True
+
+    # Brand gating needs the survey's COUNTRY (not its region -- the spec is
+    # emphatic that "a region is not a market"). geography_label carries the
+    # country on country jobs; fall back to region only to build the lookup,
+    # which will simply return empty and force brand-free output.
+    try:
+        from src import brand_allowlist as _ba
+
+        _country = (state.get("country") or state.get("geography_label") or "").strip()
+        _category = (state.get("segment") or "").strip()
+        # allow_search=False: the validator must never trigger a network
+        # lookup mid-critique. It reads the cache the architect populated;
+        # a cold cache means "no verified brands", which is the safe state.
+        _allowed = _ba.brand_names(_country, _category, allow_search=False) if _country else []
+        for _br in find_brand_issues(answered, allowed_brands=_allowed,
+                                     section_ids=_canon_to_market):
+            feedback.append(f"brand: {_br}")
+            hygiene_fail = True
+    except Exception as _exc:  # noqa: BLE001 — brand gating must not sink a run
+        logger.warning("brand checks skipped: %s", _exc)
     for tab in narrative.section_ids(blueprint):
         c = counts_by_tab.get(tab)
         if c is None:

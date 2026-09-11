@@ -75,6 +75,13 @@ def route_after_validator(state) -> str:
         # actually regenerate, and the run would burn all 6 revisions still
         # missing the same question.
         or "coverage:" in feedback_blob
+        # change for b2c questionarie -- CHECK (spec: change-spec Part C.5 /
+        # v3 Part D, 2026-09-11): register defects (contractions, "I ..."
+        # options, over-formal wording, length ceilings) and brand-policy
+        # defects are both rewrites of question TEXT and OPTION LABELS, so
+        # like coverage they can only be fixed by the architect.
+        or "register:" in feedback_blob
+        or "brand:" in feedback_blob
     )
     if needs_architect:
         return "question_architect"

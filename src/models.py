@@ -439,6 +439,59 @@ class SurveyQuestion(BaseModel):
         } else "bar"
 
 
+# change for b2c questionarie -- CHECK (spec: survey_wording_and_brand_policy
+# _update.txt Part B / b2c_survey_question_structure_v3.txt Part C,
+# 2026-09-11): brand names are now permitted, but ONLY when they survive a
+# five-gate country check. A brand in a survey is a factual claim about a
+# market -- if it is not actually sold in that country, every response
+# distribution attached to it is fabricated and the survey is invalid. The
+# model is explicitly NOT trusted as the source ("traceable to a
+# verification step, not to the model's memory"), so the model's only job
+# here is to JUDGE evidence that web search actually returned.
+class BrandVerdict(BaseModel):
+    """One candidate brand, judged against the five region gates."""
+
+    brand: str = Field(
+        description="Brand name exactly as marketed in the survey country.",
+    )
+    available: bool = Field(
+        description="Gate 1 - sold through normal retail/distribution in that country.",
+    )
+    category_match: bool = Field(
+        description="Gate 2 - sells THIS category in THAT country.",
+    )
+    active: bool = Field(
+        description="Gate 3 - has not exited/withdrawn/discontinued the category there.",
+    )
+    local_name_correct: bool = Field(
+        description="Gate 4 - written as it is actually marketed in that country.",
+    )
+    meaningful_presence: bool = Field(
+        description="Gate 5 - real distribution, not a token listing.",
+    )
+    presence_rank: int = Field(
+        default=99,
+        description="1 = market leader. Used to order options by plausible presence.",
+    )
+    evidence_url: str = Field(
+        default="",
+        description="URL of the search result that supports this judgement.",
+    )
+    reason: str = Field(
+        default="",
+        description="One short sentence justifying the verdict.",
+    )
+
+
+class BrandVerification(BaseModel):
+    """The verified brand set for one (country, category) pair."""
+
+    verdicts: List[BrandVerdict] = Field(
+        default_factory=list,
+        description="One verdict per candidate brand considered.",
+    )
+
+
 class TabQuestionBatch(BaseModel):
     """The questions generated for a single tab by one LLM call."""
 
@@ -447,6 +500,54 @@ class TabQuestionBatch(BaseModel):
     notes: List[str] = Field(
         default_factory=list,
         description="Generation notes — e.g. evidence used, shortfalls, or thin-grounding caveats.",
+    )
+
+
+# change for b2c questionarie -- CHECK (user directive, 2026-09-10): a final
+# category-fit review of the finished section. Slot coverage and wording
+# rules are both enforced in code, but neither can tell whether a question
+# is WORTH ASKING for this particular market -- that is a judgement call,
+# and it is the one that produced the "Where do you usually do your laundry?"
+# class of defect. This is the model grading its own finished work.
+class QuestionFitVerdict(BaseModel):
+    """One question's category-fit verdict from the self-review pass."""
+
+    question_number: int = Field(
+        description="1-based position of the question in the list shown for review.",
+    )
+    verdict: str = Field(
+        description=(
+            "Exactly one of: 'keep' (a strong question for this category) or "
+            "'weak' (the honest answer would be near-identical for almost "
+            "every respondent, or no business decision turns on it)."
+        ),
+    )
+    reason: str = Field(
+        default="",
+        description="One short sentence — only required when verdict is 'weak'.",
+    )
+    replacement_text: str = Field(
+        default="",
+        description=(
+            "When verdict is 'weak': a better question measuring the SAME "
+            "underlying thing, written for this category. Empty when 'keep'."
+        ),
+    )
+    replacement_options: List[str] = Field(
+        default_factory=list,
+        description=(
+            "Answer options for replacement_text (4-7, mutually exclusive). "
+            "Empty when 'keep'."
+        ),
+    )
+
+
+class SectionFitReview(BaseModel):
+    """Verdicts for every question in one finished section."""
+
+    verdicts: List[QuestionFitVerdict] = Field(
+        default_factory=list,
+        description="One verdict per question reviewed, in the order shown.",
     )
 
 
